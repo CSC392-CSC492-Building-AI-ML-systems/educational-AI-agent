@@ -1,1 +1,7 @@
-# educational-AI-agent
+## educational-AI-agent
+
+### Project Background
+The Human Feedback Foundation has an opportunity for students to work with an experienced small group of developers, based in Germany, led by Julia Longtin (https://github.com/julialongtin). These developers have been training each other on how to write the code that AI is built on top of right now; working with Llama CPP and internal infrastructure code. They are producing an annotated educational dataset, as they record everything (all the conversations, code, explanations, corrections, and more) using the tool of Asciinema (https://asciinema.org/) that’s been modified for the purpose. They’re using these recordings for both having a conversation and making sure that the person whose work is recorded understands everything that happened; and then annotate the recordings into sections, so then there’s a labelled recording of the work.
+
+### Project Description
+The primary goal is to train AI in writing the code that AI is made out of; specifically, they’re working with a lot of different architectures - from CPU to GPU-based — and the developers in the group are teaching each other all these architectures and what it takes to run AI on them. At the same time, they’re labelling the information to produce AI that can do the job and is able to explain how it’s done — the project is capturing the explanations and questions among developers. 
