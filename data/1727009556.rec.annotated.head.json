@@ -1,0 +1,51 @@
+{
+   "env" : {
+      "SHELL" : "/bin/bash",
+      "TERM" : "xterm"
+   },
+   "height" : 92,
+   "librecode_annotations" : {
+       "note": "librecode annotations",
+       "version": 1,
+       "layers": [
+           {
+               "annotations": [
+                   {
+                       "beginning": 3724,
+                       "end": 31592,
+                       "text": "Goal: Interactively log into the \"demo\" account on 10.0.7.138.\nTool: The \"ssh\"command included with OpenSSH.\nResult: successResult"
+                   },
+                   {
+                       "beginning": 33646,
+                       "end": 33647.764,
+                       "text": "Goal: End Asciinema recording\nTool: The \"EOF\" character is sent to \"exit\" of the shell recording session (by pressing control+D on the user's keyboard).\nResult: successResult"
+                   }
+               ],
+               "title": "Recording system shell session"
+           },
+           {
+               "annotations": [
+                   {
+                       "beginning": 11985,
+                       "end": 29340,
+                       "text": "Goal: Change the password for the \"demo\" account.\nTool: The \"passwd\" command.\nResult: successResult"
+                   },
+                   {
+                       "beginning": 31580,
+                       "end": 31592,
+                       "text": "Goal: Log out of the SSH shell session.\nTool: The \"EOF\" character is sent to \"logout\" of the shell session (by pressing control+D on the user's keyboard).\nResult: successResult"
+                   }
+               ],
+               "title": "demo@10.0.7.138 shell"
+           },
+           {
+               "annotations": [
+               ],
+               "title": "SECRETS"
+           }
+       ]
+   },
+   "timestamp" : 1727009557,
+   "version" : 2,
+   "width" : 319
+}
