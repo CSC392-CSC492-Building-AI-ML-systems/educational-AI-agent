@@ -15,28 +15,29 @@ from peft import (
     prepare_model_for_kbit_training
 )
 from transformers import (
-    AutoConfig,
+    # AutoConfig,
     AutoModelForCausalLM,
     AutoTokenizer,
-    BitsAndBytesConfig
+    # BitsAndBytesConfig
 )
 
 os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 MODEL_NAME = "vilsonrodrigues/falcon-7b-instruct-sharded"
 
-bnb_config = BitsAndBytesConfig(
-    load_in_4bit=True,
-    bnb_4bit_use_double_quant=True,
-    bnb_4bit_quant_type="nf4",
-    bnb_4bit_compute_dtype=torch.bfloat16
-)
+# bnb_config = BitsAndBytesConfig(
+#     load_in_4bit=True,
+#     bnb_4bit_use_double_quant=True,
+#     bnb_4bit_quant_type="nf4",
+#     bnb_4bit_compute_dtype=torch.bfloat16
+# )
 
 def train_model(data):
     model = AutoModelForCausalLM.from_pretrained(
         MODEL_NAME,
         device_map="auto",
         trust_remote_code=True,
-        quantization_config=bnb_config
+        # quantization_config=bnb_config
+        torch_dtype=torch.float16
     )
 
     tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
@@ -113,8 +114,9 @@ def test_model(data):
     model = AutoModelForCausalLM.from_pretrained(
         config.base_model_name_or_path,
         return_dict=True,
-        quantization_config=bnb_config,
+        # quantization_config=bnb_config,
         device_map="auto",
+        torch_dtype=torch.float16,
         trust_remote_code=True
     )
 
