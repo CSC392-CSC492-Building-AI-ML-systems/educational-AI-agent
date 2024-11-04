@@ -93,7 +93,7 @@ def train_model(data):
         save_total_limit=3,
         logging_steps=1,
         output_dir="experiments",
-        optim="paged_adamw_8bit",
+        optim="adamw_hf",
         lr_scheduler_type="cosine",
         warmup_ratio=0.05,
     )
