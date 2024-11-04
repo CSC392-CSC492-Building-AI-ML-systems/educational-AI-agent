@@ -1,15 +1,12 @@
 import argparse
-import json
 import os
-from copy import deepcopy
 
 # from pprint import pprint
 # import bitsandbytes as bnb
 import torch
 # import torch.nn as nn
 import transformers
-from random import shuffle
-# from datasets import load_dataset
+from datasets import load_dataset
 from peft import (
     LoraConfig,
     PeftConfig,
@@ -85,9 +82,7 @@ def train_model(data):
         tokenized_full_prompt = tokenizer(full_prompt, padding=True, truncation=True)
         return tokenized_full_prompt
 
-    data = deepcopy(data["train"])
-    shuffle(data)
-    data = data.map(generate_and_tokenize_prompt)
+    data = data["train"].shuffle().map(generate_and_tokenize_prompt)
 
     training_args = transformers.TrainingArguments(
         per_device_train_batch_size=1,
@@ -163,8 +158,9 @@ if __name__ == "__main__":
     parser.add_argument("train_or_test", help="Train or test?.")
     args = parser.parse_args()
 
-    data = json.load(open(args.input_file))
-
+    data = load_dataset('json', data_files={
+        "train": args.input_file,
+    })
     if args.train_or_test == "train":
         # Load and parse data
         train_model(data)
