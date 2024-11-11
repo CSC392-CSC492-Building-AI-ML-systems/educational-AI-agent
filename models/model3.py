@@ -21,9 +21,10 @@ from transformers import (
     # BitsAndBytesConfig
 )
 
-os.environ["CUDA_VISIBLE_DEVICES"] = "0"
-MODEL_NAME = "vilsonrodrigues/falcon-7b-instruct-sharded"
-
+os.environ["CUDA_VISIBLE_DEVICES"] = "0,1,2,3"
+#MODEL_NAME = "vilsonrodrigues/falcon-7b-instruct-sharded"
+MODEL_NAME = "01-ai/Yi-6B"
+# torch.cuda.set_device(0) 
 # bnb_config = BitsAndBytesConfig(
 #     load_in_4bit=True,
 #     bnb_4bit_use_double_quant=True,
@@ -37,11 +38,19 @@ def train_model(data):
         device_map="auto",
         trust_remote_code=True,
         # quantization_config=bnb_config
+        #ignore_mismatched_sizes=True,
         torch_dtype=torch.float16
     )
 
     tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
     tokenizer.pad_token = tokenizer.eos_token
+    special_tokens = {
+        "additional_special_tokens": ["<history>", "<entry>", "<input>", "<output>", "<annotation>", "<current-entry>",
+                                      "</history>", "</entry>", "</input>", "</output>", "</annotation>",
+                                      "</current-entry>", "[BLANK]", "[NO_OUTPUT]", "<data-piece>", "</data-piece>"]
+    }
+    tokenizer.add_special_tokens(special_tokens)
+    model.resize_token_embeddings(len(tokenizer))
 
     def print_trainable_parameters(model):
         """
@@ -62,7 +71,7 @@ def train_model(data):
     config = LoraConfig(
         r=16,
         lora_alpha=32,
-        target_modules=["query_key_value"],
+        target_modules=["q_proj", "k_proj", "v_proj", "o_proj", "gate_proj", "up_proj", "down_proj"],
         lora_dropout=0.05,
         bias="none",
         task_type="CAUSAL_LM"
@@ -70,25 +79,30 @@ def train_model(data):
 
     model = get_peft_model(model, config)
     print_trainable_parameters(model)
+    print(model.config.max_position_embeddings)
 
     def generate_prompt(data_point):
-        return f"""
-    <human>: {data_point["User"]}
-    <assistant>: {data_point["Prompt"]}
-    """.strip()
+        return f"""<human>: This is a snapshot of a recording of someone working on something in the terminal, such as some code. There is a history of entries, which compile inputs and outputs, and each are annotated, at possibly multiple levels. There is a special entry at the end, which is the current snapshot's entry. One of the annotation levels has a [BLANK], and you should output what that level's annotation should be, based on the data.
+
+{data_point["User"]}
+
+<assistant>: {data_point["Prompt"]}"""
 
     def generate_and_tokenize_prompt(data_point):
         full_prompt = generate_prompt(data_point)
         tokenized_full_prompt = tokenizer(full_prompt, padding=True, truncation=True)
         return tokenized_full_prompt
+    
+    print("CUDA available:", torch.cuda.is_available())
+    print("Number of GPUs:", torch.cuda.device_count())
 
     data = data["train"].shuffle().map(generate_and_tokenize_prompt)
 
     training_args = transformers.TrainingArguments(
         per_device_train_batch_size=1,
         gradient_accumulation_steps=4,
-        num_train_epochs=1,
-        learning_rate=2e-4,
+        num_train_epochs=1.5,
+        learning_rate=1e-4,
         fp16=True,
         save_total_limit=3,
         logging_steps=1,
@@ -107,6 +121,7 @@ def train_model(data):
     model.config.use_cache = False
     trainer.train()
     model.save_pretrained("trained-model")
+    tokenizer.save_pretrained("trained-model")
 
 
 def test_model(data):
@@ -120,9 +135,9 @@ def test_model(data):
         trust_remote_code=True
     )
 
-    tokenizer = AutoTokenizer.from_pretrained(config.base_model_name_or_path)
+    tokenizer = AutoTokenizer.from_pretrained("trained-model")
     tokenizer.pad_token = tokenizer.eos_token
-
+    model.resize_token_embeddings(len(tokenizer))
     model = PeftModel.from_pretrained(model, "trained-model")
 
     generation_config = model.generation_config
@@ -134,21 +149,27 @@ def test_model(data):
     generation_config.eos_token_id = tokenizer.eos_token_id
 
     device = "cuda:0"
+    
+    for datum in data:
+        datapoint = datum["User"]
+        original_out = datum["Prompt"]
 
-    prompt = f"""
-    <human>: {data}
-    <assistant>:
-    """.strip()
+        prompt = f"""<human>: This is a snapshot of a recording of someone working on something in the terminal, such as some code. There is a history of entries, which compile inputs and outputs, and each are annotated, at possibly multiple levels. There is a special entry at the end, which is the current snapshot's entry. One of the annotation levels has a [BLANK], and you should output what that level's annotation should be, based on the data.
 
-    encoding = tokenizer(prompt, return_tensors="pt").to(device)
-    with torch.inference_mode():
-        outputs = model.generate(
-            input_ids=encoding.input_ids,
-            attention_mask=encoding.attention_mask,
-            generation_config=generation_config
-        )
+{datapoint}
 
-    return tokenizer.decode(outputs[0], skip_special_tokens=True)
+<assistant>: """
+
+        encoding = tokenizer(prompt, return_tensors="pt").to(device)
+        with torch.inference_mode():
+            outputs = model.generate(
+                input_ids=encoding.input_ids,
+                attention_mask=encoding.attention_mask,
+                generation_config=generation_config
+            )
+
+        out = tokenizer.decode(outputs[0], skip_special_tokens=True)
+        print(f"Out: {out}\n\nOriginal: {original_out}\n\n\n")
 
 if __name__ == "__main__":
 
@@ -165,9 +186,5 @@ if __name__ == "__main__":
         # Load and parse data
         train_model(data)
     else:
-        for i in range(len(data["inputs"])):
-            datapoint = data["inputs"][i]
-            original_out = data["outputs"][i]
-            out = test_model(datapoint)
-            print(f"Out: {out}\n\nOriginal: {original_out}\n\n\n")
+        test_model(data["train"])
 
