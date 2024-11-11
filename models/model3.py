@@ -1,10 +1,7 @@
 import argparse
 import os
 
-# from pprint import pprint
-# import bitsandbytes as bnb
 import torch
-# import torch.nn as nn
 import transformers
 from datasets import load_dataset
 from peft import (
@@ -15,35 +12,23 @@ from peft import (
     prepare_model_for_kbit_training
 )
 from transformers import (
-    # AutoConfig,
     AutoModelForCausalLM,
     AutoTokenizer,
-    # BitsAndBytesConfig
 )
+from trl import DataCollatorForCompletionOnlyLM
 
 os.environ["CUDA_VISIBLE_DEVICES"] = "0,1,2,3"
-#MODEL_NAME = "vilsonrodrigues/falcon-7b-instruct-sharded"
 MODEL_NAME = "01-ai/Yi-6B"
-# torch.cuda.set_device(0) 
-# bnb_config = BitsAndBytesConfig(
-#     load_in_4bit=True,
-#     bnb_4bit_use_double_quant=True,
-#     bnb_4bit_quant_type="nf4",
-#     bnb_4bit_compute_dtype=torch.bfloat16
-# )
 
 def train_model(data):
     model = AutoModelForCausalLM.from_pretrained(
         MODEL_NAME,
         device_map="auto",
         trust_remote_code=True,
-        # quantization_config=bnb_config
-        #ignore_mismatched_sizes=True,
         torch_dtype=torch.float16
     )
 
     tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
-    tokenizer.pad_token = tokenizer.eos_token
     special_tokens = {
         "additional_special_tokens": ["<history>", "<entry>", "<input>", "<output>", "<annotation>", "<current-entry>",
                                       "</history>", "</entry>", "</input>", "</output>", "</annotation>",
@@ -81,12 +66,19 @@ def train_model(data):
     print_trainable_parameters(model)
     print(model.config.max_position_embeddings)
 
-    def generate_prompt(data_point):
-        return f"""<human>: This is a snapshot of a recording of someone working on something in the terminal, such as some code. There is a history of entries, which compile inputs and outputs, and each are annotated, at possibly multiple levels. There is a special entry at the end, which is the current snapshot's entry. One of the annotation levels has a [BLANK], and you should output what that level's annotation should be, based on the data.
-
-{data_point["User"]}
-
-<assistant>: {data_point["Prompt"]}"""
+    def generate_prompt(example):
+        return {"text": """### Human: You are given a recording of someone working on the terminal, such as on "
+                "some code. There is a history, marked by <history> and </history> of entries, "
+                "marked by <entry> and </entry>, signifying a block of the terminal"
+                "inputs and outputs in a certain period of time, with entry with its own "
+                "annotations, marked by <annotation> and </annotation> on"
+                "multiple levels. An annotation can repeat the previous entry's annotation on "
+                "some or all of the levels. An annotation can be empty. There is a current entry, "
+                "marked by <current-entry> and </current-entry>, at the end, with one of the"
+                "annotations being [BLANK]. Your task is to predict what that annotation should "
+                "be, or to return [NO-OUTPUT] if it should be empty. Do not output anything else, "
+                "just the annotation, or [NO-OUTPUT].\n""" + example["prompt"] +
+                "\n\n### Assistant: " + example["chosen"] + tokenizer.eos_token}
 
     def generate_and_tokenize_prompt(data_point):
         full_prompt = generate_prompt(data_point)
@@ -97,6 +89,8 @@ def train_model(data):
     print("Number of GPUs:", torch.cuda.device_count())
 
     data = data["train"].shuffle().map(generate_and_tokenize_prompt)
+    response_template = "### Assistant:"
+    collator = DataCollatorForCompletionOnlyLM(response_template=response_template, tokenizer=tokenizer)
 
     training_args = transformers.TrainingArguments(
         per_device_train_batch_size=1,
@@ -116,7 +110,7 @@ def train_model(data):
         model=model,
         train_dataset=data,
         args=training_args,
-        data_collator=transformers.DataCollatorForLanguageModeling(tokenizer, mlm=False)
+        data_collator=collator
     )
     model.config.use_cache = False
     trainer.train()
