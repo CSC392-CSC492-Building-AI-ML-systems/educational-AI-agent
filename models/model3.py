@@ -82,11 +82,15 @@ def train_model(data):
     print(model.config.max_position_embeddings)
 
     def generate_prompt(data_point):
-        return data_point["prompt"]
+        return f"""<human>: This is a snapshot of a recording of someone working on something in the terminal, such as some code. There is a history of entries, which compile inputs and outputs, and each are annotated, at possibly multiple levels. There is a special entry at the end, which is the current snapshot's entry. One of the annotation levels has a [BLANK], and you should output what that level's annotation should be, based on the data.
+
+{data_point["User"]}
+
+<assistant>: {data_point["Prompt"]}"""
 
     def generate_and_tokenize_prompt(data_point):
         full_prompt = generate_prompt(data_point)
-        tokenized_full_prompt = tokenizer(full_prompt, padding=True, truncation=False)
+        tokenized_full_prompt = tokenizer(full_prompt, padding=True, truncation=True)
         return tokenized_full_prompt
     
     print("CUDA available:", torch.cuda.is_available())

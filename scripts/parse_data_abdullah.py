@@ -452,38 +452,16 @@ class AnnotationProcessor:
                         f"</entry>"
                 )
 
-                current_tokens = self.count_tokens("Human: You are given a recording of someone working on the terminal, such as on "
-                                                    "some code. There is a history, marked by <history> and </history> of entries, "
-                                                    "marked by <entry> and </entry>, signifying a block of the terminal"
-                                                    "inputs and outputs in a certain period of time, with entry with its own "
-                                                    "annotations, marked by <annotation> and </annotation> on"
-                                                    "multiple levels. An annotation can repeat the previous entry's annotation on "
-                                                    "some or all of the levels. An annotation can be empty. There is a current entry, "
-                                                    "marked by <current-entry> and </current-entry>, at the end, with one of the"
-                                                    "annotations being [BLANK]. Your task is to predict what that annotation should "
-                                                    "be, or to return [NO-OUTPUT] if it should be empty. Do not output anything else, "
-                                                    "just the annotation, or [NO-OUTPUT].\n" + "".join(xml_parts) +
-                                                    "\n\nAssistant: ")
-                print(f"Current tokens: {current_tokens}")
-                if current_tokens > self.context_size:
+                current_tokens = self.count_tokens("".join(xml_parts) + output_ann)
+                # print(f"Current tokens: {current_tokens}")
+                if current_tokens > self.context_size - 256:
                     xml_parts.pop(2)
-                    print("Token limit reached. Stopping further entries.")
+                    logger.info("Token limit reached. Stopping further entries.")
                     break
 
                 # total_tokens += entry_tokens
 
-            final.append({"prompt": "Human: You are given a recording of someone working on the terminal, such as on "
-                                    "some code. There is a history, marked by <history> and </history> of entries, "
-                                    "marked by <entry> and </entry>, signifying a block of the terminal"
-                                    "inputs and outputs in a certain period of time, with entry with its own "
-                                    "annotations, marked by <annotation> and </annotation> on"
-                                    "multiple levels. An annotation can repeat the previous entry's annotation on "
-                                    "some or all of the levels. An annotation can be empty. There is a current entry, "
-                                    "marked by <current-entry> and </current-entry>, at the end, with one of the"
-                                    "annotations being [BLANK]. Your task is to predict what that annotation should "
-                                    "be, or to return [NO-OUTPUT] if it should be empty. Do not output anything else, "
-                                    "just the annotation, or [NO-OUTPUT].\n" + "".join(xml_parts) +
-                                    "\n\nAssistant: ", "chosen": output_ann + "</s>"})
+            final.append({"prompt": "".join(xml_parts), "chosen": output_ann})
             # input(final[-1])
         return final
 
@@ -497,7 +475,7 @@ class AnnotationProcessor:
 
 
 def parse_and_save_file(input_file: str, output_dir: str, token_limit: int = 400, tokenizer_name: str = "01-ai/Yi-6B-200k",
-                        context_size: int = 199000):
+                        context_size: int = 200000):
     """
     Parses an asciinema recording and saves XML data-pieces to the output directory.
 
