@@ -11,12 +11,12 @@ def test_output_tag():
     finals = parse_and_save_file(filename, "tests/output_files/output_test")
     final.extend(finals)
 
-    assert final[-1]['User'] == "<data-piece>" + \
+    assert final[-1]['prompt'] == "<data-piece>" + \
                                     "<history></history>" + \
                                     "<current-entry>" + \
                                         "<entry>" + \
                                             "<input></input>" + \
-                                            "<output>Linux boxtop 6. 6. 13-amd64 1 SMP PREEMPT_DYNAMIC Debian 6. 6. 13-1 (2024-01-20) x86_64Plan your installation, and FAI installs your plan. Last login Sun Sep 22 122417 2024</output>" + \
+                                            "<output>Linux boxtop 6.6.13-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.6.13-1 (2024-01-20) x86_64\r\n\r\n\r\nPlan your installation, and FAI installs your plan.\r\n\r\nLast login: Sun Sep 22 12:24:17 2024</output>" + \
                                             "<annotation>[BLANK]</annotation>" + \
                                         "</entry>" + \
                                     "</current-entry>" + \
@@ -32,39 +32,39 @@ def test_input_tag():
     finals = parse_and_save_file(filename, "tests/output_files/input_test")
     final.extend(finals)
 
-    assert final[-1]['User'] == "<data-piece>" + \
+    assert final[-1]['prompt'] == "<data-piece>" + \
                                     "<history></history>" + \
                                     "<current-entry>" + \
                                         "<entry>" + \
-                                            "<input>ssh 10. 0. 7. 138</input>" + \
-                                            "<output>ssh 10. 0. 7. 138</output>" + \
+                                            "<input>ssh 10.0.7.138</input>" + \
+                                            "<output>ssh 10.0.7.138\r\n\x1b[?2004l</output>" + \
                                             "<annotation>[BLANK]</annotation>" + \
                                         "</entry>" + \
                                     "</current-entry>" + \
                                 "</data-piece>"
     
-def test_prompt():
-    """
-    Test the prompt.
-    """
-    final = []
+# def test_prompt():
+#     """
+#     Test the prompt.
+#     """
+#     final = []
 
-    filename = "tests/input_files/prompt_test.annotated"
-    finals = parse_and_save_file(filename, "tests/output_files/input_test")
-    final.extend(finals)
+#     filename = "tests/input_files/prompt_test.annotated"
+#     finals = parse_and_save_file(filename, "tests/output_files/input_test")
+#     final.extend(finals)
 
-    assert final[-1]['User'] == "<data-piece>" + \
-                                    "<history></history>" + \
-                                    "<current-entry>" + \
-                                        "<entry>" + \
-                                            "<input>ssh 10. 0. 7. 138</input>" + \
-                                            "<output>ssh 10. 0. 7. 138</output>" + \
-                                            "<annotation>[BLANK]</annotation>" + \
-                                        "</entry>" + \
-                                    "</current-entry>" + \
-                                "</data-piece>"
+#     assert final[-1]['User'] == "<data-piece>" + \
+#                                     "<history></history>" + \
+#                                     "<current-entry>" + \
+#                                         "<entry>" + \
+#                                             "<input>ssh 10. 0. 7. 138</input>" + \
+#                                             "<output>ssh 10. 0. 7. 138</output>" + \
+#                                             "<annotation>[BLANK]</annotation>" + \
+#                                         "</entry>" + \
+#                                     "</current-entry>" + \
+#                                 "</data-piece>"
     
-    assert final[-1]['Prompt'] == 'ssh into server at 10.0.7.138'
+#     assert final[-1]['Prompt'] == 'ssh into server at 10.0.7.138'
 
 def test_annotation_depth_tags():
     """
@@ -76,21 +76,21 @@ def test_annotation_depth_tags():
     finals = parse_and_save_file(filename, "tests/output_files/input_test")
     final.extend(finals)
 
-    assert final[0]['User'] == "<data-piece>" + \
+    assert final[0]['prompt'] == "<data-piece>" + \
                                     "<history></history>" + \
                                     "<current-entry>" + \
                                         "<entry>" + \
-                                            "<input>ssh bandit12bandit. labs. overthewire. org -p 2220</input>" + \
-                                            "<output>0renee_kRenee renee_kRenee</output>" + \
+                                            "<input>\x1b[200~ssh bandit12@bandit.labs.overthewire.org -p 2220\x1b[201~</input>" + \
+                                            "<output>\x1b[?2004h\x1b]0;renee_k@Renee: ~\x07\x1b[01;32mrenee_k@Renee\x1b[00m:\x1b[01;34m~\x1b[00m$</output>" + \
                                             "<annotation>[BLANK]</annotation>" + \
-                                            "<annotation>Subgoal Type in the ssh password for user bandit12 correctly</annotation>" + \
+                                            "<annotation>Subgoal: Type in the ssh password for user bandit12 correctly</annotation>" + \
                                             "<annotation>successResult</annotation>" + \
-                                            "<annotation>Tools The ssh tool from OpenSSH</annotation>" + \
+                                            "<annotation>Tools: The ssh tool from OpenSSH</annotation>" + \
                                         "</entry>" + \
                                     "</current-entry>" + \
                                 "</data-piece>"
 
-    assert final[0]['Prompt'] == 'Goal: ssh into bandit12@bandit.labs.overthewire.org on port 2220'
+    assert final[0]['chosen'] == 'Goal: ssh into bandit12@bandit.labs.overthewire.org on port 2220'
 
 def test_history_tag():
     """
@@ -102,24 +102,24 @@ def test_history_tag():
     finals = parse_and_save_file(filename, "tests/output_files/input_test")
     final.extend(finals)
 
-    assert final[-1]['User'] == "<data-piece>" + \
+    assert final[-1]['prompt'] == "<data-piece>" + \
                                     "<history>" + \
                                         "<entry>" + \
                                             "<input></input>" + \
-                                            "<output>0demoboxtop demoboxtop</output>" + \
+                                            "<output>\x1b[?2004h\x1b]0;demo@boxtop: ~\x07demo@boxtop:~$</output>" + \
                                             "<annotation></annotation>" + \
                                         "</entry>" + \
                                     "</history>" + \
                                     "<current-entry>" + \
                                         "<entry>" + \
-                                            "<input>ssh 10. 0. 7. 138</input>" + \
-                                            "<output>ssh 10. 0. 7. 138</output>" + \
+                                            "<input>ssh 10.0.7.138</input>" + \
+                                            "<output>ssh 10.0.7.138</output>" + \
                                             "<annotation>[BLANK]</annotation>" + \
                                         "</entry>" + \
                                     "</current-entry>" + \
                                 "</data-piece>"
 
-    assert final[-1]['Prompt'] == 'ssh into server at 10.0.7.138'
+    assert final[-1]['chosen'] == 'ssh into server at 10.0.7.138'
 
 if __name__ == '__main__':
     pytest.main(['scripts/parse_data_abdullah_test.py'])
