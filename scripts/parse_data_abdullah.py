@@ -69,6 +69,13 @@ class AnnotationProcessor:
         self.context_size = context_size
 
         self.tokenizer = AutoTokenizer.from_pretrained(tokenizer_name, use_fast=True)
+        special_tokens = {
+            "additional_special_tokens": ["<history>", "<entry>", "<input>", "<output>", "<annotation>",
+                                          "<current-entry>",
+                                          "</history>", "</entry>", "</input>", "</output>", "</annotation>",
+                                          "</current-entry>", "[BLANK]", "[NO_OUTPUT]", "<data-piece>", "</data-piece>"]
+        }
+        self.tokenizer.add_special_tokens(special_tokens)
 
         self.ansi_escape = re.compile(r'\x1B(?:[@-Z\\-_]|\[[0-?]*[ -/]*[@-~])')
         self.control_chars = re.compile(r'[\r\n\t\x00-\x1F\x7F-\x9F]')
@@ -154,11 +161,13 @@ class AnnotationProcessor:
                     text = bytes(match.group(3), "utf-8").decode("unicode_escape")
                 except UnicodeDecodeError:
                     text = match.group(3)  # If decoding fails, keep original
-                self.events.append({
-                    "timestamp": timestamp_ms,
-                    "type": event_type,
-                    "text": text
-                })
+
+                for char in text:
+                    self.events.append({
+                        "timestamp": timestamp_ms,
+                        "type": event_type,
+                        "text": char
+                    })
             else:
                 logger.warning(f"Line didn't match event pattern and was skipped: {line}")
 
@@ -168,13 +177,13 @@ class AnnotationProcessor:
         """
         Cleans the text by removing characters that aren't useful TOGGLE
         """
-        text = self.ansi_escape.sub('', text)
-        text = self.control_chars.sub('', text)
-        text = self.multiple_periods.sub('...', text)
-        text = self.punctuation_spacing.sub(r'\1 \2', text)
+        # text = self.ansi_escape.sub('', text)
+        # text = self.control_chars.sub('', text)
+        # text = self.multiple_periods.sub('...', text)
+        # text = self.punctuation_spacing.sub(r'\1 \2', text)
         text = self.multiple_spaces.sub(' ', text)
-        text = self.ip_address.sub(r'\1', text)
-        text = self.special_characters.sub('', text)
+        # text = self.ip_address.sub(r'\1', text)
+        # text = self.special_characters.sub('', text)
         text = text.strip()
         return text
 
@@ -191,30 +200,50 @@ class AnnotationProcessor:
             times.append(annotation.end)
         times.append(self.events[-1]["timestamp"])
         times.sort()
-
         for i in range(len(times) - 1):
             start_time = times[i]
             end_time = times[i + 1]
-            inputs = ''.join([event["text"] for event in self.events
-                              if event["type"] == 'i' and start_time <= event["timestamp"] < end_time])
-            outputs = ''.join([event["text"] for event in self.events
-                               if event["type"] == 'o' and start_time <= event["timestamp"] < end_time])
-            if not inputs and not outputs:
-                continue
+            events = [event for event in self.events if start_time <= event["timestamp"] < end_time]
+            events_list = [events]
+            there_is = True
+            while there_is:
+                there_is = False
+                new_events_list = []
+                for events in events_list:
+                    if self.count_tokens(''.join(event["text"] for event in events)) > self.token_limit:
+                        there_is = True
+                        new_events_list.append(events[len(events) // 2:])
+                        new_events_list.append(events[:len(events) // 2])
+                    else:
+                        new_events_list.append(events)
+                events_list = new_events_list
 
-            entry = Entry(
-                input=inputs,
-                output=outputs
-            )
-            # Associate annotations based on overlapping
-            entry.annotations = [
-                ann for ann in self.annotations
-                if (start_time < ann.end and ann.beginning < end_time)
-            ]
-            # # Add the entry to the annotations' entry_list
-            # for ann in entry.annotations:
-            #     ann.entry_list.append(entry)
-            self.history.entries.append(entry)
+            for events in events_list:
+                inputs = ''.join([event["text"] for event in events
+                                  if event["type"] == 'i'])
+                outputs = ''.join([event["text"] for event in events
+                                   if event["type"] == 'o'])
+
+                inputs = self.clean_text(inputs)
+                outputs = self.clean_text(outputs)
+
+                if not inputs and not outputs:
+                    continue
+
+                entry = Entry(
+                    input=inputs,
+                    output=outputs
+                )
+
+                # Associate annotations based on overlapping
+                entry.annotations = [
+                    ann for ann in self.annotations
+                    if (start_time < ann.end and ann.beginning < end_time)
+                ]
+                # # Add the entry to the annotations' entry_list
+                # for ann in entry.annotations:
+                #     ann.entry_list.append(entry)
+                self.history.entries.append(entry)
 
         # state = 'idle'  # Possible states: 'idle', 'inputting', 'waiting_output'
         # current_input = []
@@ -387,8 +416,8 @@ class AnnotationProcessor:
                 xml_parts.append(
                     f"<current-entry>"
                     f"<entry>"
-                    f"<input>{clean_and_escape(entry.input)}</input>"
-                    f"<output>{clean_and_escape(entry.output)}</output>"
+                    f"<input>{entry.input}</input>"
+                    f"<output>{entry.output}</output>"
                     f"{annotations_xml}"
                     f"</entry>"
                     f"</current-entry>"
@@ -417,21 +446,45 @@ class AnnotationProcessor:
                 xml_parts.insert(
                         2,
                         f"<entry>"
-                        f"<input>{clean_and_escape(entry.input)}</input>"
-                        f"<output>{clean_and_escape(entry.output)}</output>"
+                        f"<input>{entry.input}</input>"
+                        f"<output>{entry.output}</output>"
                         f"{annotations_xml}"
                         f"</entry>"
                 )
 
-                # current_tokens = self.count_tokens("\n".join(xml_parts))
-                # if current_tokens > self.token_limit:
-                #     xml_parts.pop(2)
-                #     logger.info("Token limit reached. Stopping further entries.")
-                #     break
+                current_tokens = self.count_tokens("Human: You are given a recording of someone working on the terminal, such as on "
+                                                    "some code. There is a history, marked by <history> and </history> of entries, "
+                                                    "marked by <entry> and </entry>, signifying a block of the terminal"
+                                                    "inputs and outputs in a certain period of time, with entry with its own "
+                                                    "annotations, marked by <annotation> and </annotation> on"
+                                                    "multiple levels. An annotation can repeat the previous entry's annotation on "
+                                                    "some or all of the levels. An annotation can be empty. There is a current entry, "
+                                                    "marked by <current-entry> and </current-entry>, at the end, with one of the"
+                                                    "annotations being [BLANK]. Your task is to predict what that annotation should "
+                                                    "be, or to return [NO-OUTPUT] if it should be empty. Do not output anything else, "
+                                                    "just the annotation, or [NO-OUTPUT].\n" + "".join(xml_parts) +
+                                                    "\n\nAssistant: ")
+                print(f"Current tokens: {current_tokens}")
+                if current_tokens > self.context_size:
+                    xml_parts.pop(2)
+                    print("Token limit reached. Stopping further entries.")
+                    break
 
                 # total_tokens += entry_tokens
 
-            final.append({"User": "".join(xml_parts), "Prompt": output_ann})
+            final.append({"prompt": "Human: You are given a recording of someone working on the terminal, such as on "
+                                    "some code. There is a history, marked by <history> and </history> of entries, "
+                                    "marked by <entry> and </entry>, signifying a block of the terminal"
+                                    "inputs and outputs in a certain period of time, with entry with its own "
+                                    "annotations, marked by <annotation> and </annotation> on"
+                                    "multiple levels. An annotation can repeat the previous entry's annotation on "
+                                    "some or all of the levels. An annotation can be empty. There is a current entry, "
+                                    "marked by <current-entry> and </current-entry>, at the end, with one of the"
+                                    "annotations being [BLANK]. Your task is to predict what that annotation should "
+                                    "be, or to return [NO-OUTPUT] if it should be empty. Do not output anything else, "
+                                    "just the annotation, or [NO-OUTPUT].\n" + "".join(xml_parts) +
+                                    "\n\nAssistant: ", "chosen": output_ann + "</s>"})
+            # input(final[-1])
         return final
 
     def process(self):
@@ -443,8 +496,8 @@ class AnnotationProcessor:
         return self.generate_data_pieces()
 
 
-def parse_and_save_file(input_file: str, output_dir: str, token_limit: int = 512, tokenizer_name: str = "t5-large",
-                        context_size: int = 50):
+def parse_and_save_file(input_file: str, output_dir: str, token_limit: int = 400, tokenizer_name: str = "01-ai/Yi-6B-200k",
+                        context_size: int = 199000):
     """
     Parses an asciinema recording and saves XML data-pieces to the output directory.
 
@@ -471,11 +524,10 @@ if __name__ == "__main__":
 
     for file in os.scandir(args.input_file):
         filename = file.path
-        finals = parse_and_save_file(filename, args.output_dir, args.token_limit, args.tokenizer,
-                                              args.context_size)
+        finals = parse_and_save_file(filename, args.output_dir)
         final.extend(finals)
 
-    json.dump(final, open(os.path.join(args.output_dir, "data3.json"), "w"), indent=4)
+    json.dump(final, open(os.path.join(args.output_dir, "data_unclean_no_multiple_spaces_split_400_200k.json"), "w"), indent=4)
 
     # take a directory
     # parse all files in the directory
