@@ -1,3 +1,0 @@
-{
-    "annotation": "<data-piece><history><entry><input>ssh user@remote-server.com</input><output>Welcome to remote server!</output><annotation>Connecting to a remote server via SSH</annotation></entry><entry><input>uname -r</input><output>5.11.0-1028-generic</output><annotation>Checking the kernel version of the remote server</annotation></entry><entry><input>sudo apt update</input><output>Get:1 http://archive.ubuntu.com/ubuntu focal InRelease [123 kB]</output><annotation>Updating package lists on the remote server using apt</annotation></entry></history><current-entry><input>exit</input><output>exit</output><annotation>Stopping the Asciinema recording</annotation></current-entry></data-piece>"
-}
