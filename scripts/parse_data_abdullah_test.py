@@ -223,7 +223,7 @@ def test_chosen_multiple_depth():
     finals = parse_and_save_file(filename, "tests/output_files/chosen_depth_test")
     final.extend(finals)
 
-    # each chosen's annotation is one depth more then the previous one
+    # each chosen's annotation is one depth deeper then the previous one
     chosens = ["Goal: ssh into bandit12@bandit.labs.overthewire.org on port 2220",
                 "Subgoal: Type in the ssh password for user bandit12 correctly",
                 "successResult", "Tools: The ssh tool from OpenSSH"]
