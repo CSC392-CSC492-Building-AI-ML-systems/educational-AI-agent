@@ -1,4 +1,5 @@
 import json
+import random
 import re
 import sys
 from typing import List, Dict, Optional
@@ -8,6 +9,8 @@ import argparse
 import logging
 from transformers import AutoTokenizer
 import os
+
+from model.model import tokenizer
 
 # from model.model import outputs
 
@@ -76,6 +79,7 @@ class AnnotationProcessor:
                                           "</current-entry>", "[BLANK]", "[NO_OUTPUT]", "<data-piece>", "</data-piece>"]
         }
         self.tokenizer.add_special_tokens(special_tokens)
+        tokenizer.chat_template
 
         self.ansi_escape = re.compile(r'\x1B(?:[@-Z\\-_]|\[[0-?]*[ -/]*[@-~])')
         self.control_chars = re.compile(r'[\r\n\t\x00-\x1F\x7F-\x9F]')
@@ -361,7 +365,8 @@ class AnnotationProcessor:
             return
 
         final = []
-        for i, current_entry in enumerate(self.history.entries):
+        for i in range(0, len(self.history.entries), 10):   # NEW
+            current_entry = self.history.entries[i]
             # Get the context (previous entries) and create the data-piece
             history_entries = self.history.entries[:i]
             # history_entries = self.history.entries[max(0, i - self.context_size):i]
@@ -423,10 +428,15 @@ class AnnotationProcessor:
                     f"</current-entry>"
                 )
 
+            if output_ann == "[NO-OUTPUT]":    # NEW
+                if random.random() >= 0.1:
+                    continue
+
             xml_parts.append("</data-piece>")
 
+            wait_until = 0
             # Process history entries
-            for entry in data_piece.history.entries[::-1]:
+            for i, entry in enumerate(data_piece.history.entries[::-1]):
                 # entry_tokens = (self.count_tokens(entry.input) +
                 #                 self.count_tokens(entry.output) +
                 #                 sum(self.count_tokens(ann.text) for ann in entry.annotations))
@@ -451,13 +461,14 @@ class AnnotationProcessor:
                         f"{annotations_xml}"
                         f"</entry>"
                 )
-
-                current_tokens = self.count_tokens("".join(xml_parts) + output_ann)
-                # print(f"Current tokens: {current_tokens}")
-                if current_tokens > self.context_size - 256:
-                    xml_parts.pop(2)
-                    logger.info("Token limit reached. Stopping further entries.")
-                    break
+                if i >= wait_until:
+                    current_tokens = self.count_tokens("".join(xml_parts) + output_ann)
+                    # print(f"Current tokens: {current_tokens}")
+                    if current_tokens > self.context_size - 256:
+                        xml_parts.pop(2)
+                        logger.info("Token limit reached. Stopping further entries.")
+                        break
+                    wait_until += ((self.context_size - 256) - current_tokens) // (self.token_limit * 1.2 + 100) - 2
 
                 # total_tokens += entry_tokens
 
@@ -474,20 +485,19 @@ class AnnotationProcessor:
         return self.generate_data_pieces()
 
 
-def parse_and_save_file(input_file: str, output_dir: str, token_limit: int = 400, tokenizer_name: str = "01-ai/Yi-6B-200k",
-                        context_size: int = 200000):
+def parse_and_save_file(input_file: str, output_dir: str, token_limit: int = 400, tokenizer_name: str = "01-ai/Yi-6B",
+                        context_size: int = 4096):
     """
     Parses an asciinema recording and saves XML data-pieces to the output directory.
 
     Args:
         input_file (str): Path to the asciinema recording file.
         output_dir (str): Directory to save data-pieces.
-        token_limit (int, optional): Max tokens per data-piece.
-        tokenizer_name (str, optional): Tokenizer for token counting. Defaults to "t5-large".
-        context_size (int, optional): Context entries per data-piece. Defaults to 5.
+        token_limit (int, optional): Max tokens per entry. Defaults to 400.
+        tokenizer_name (str, optional): Tokenizer for token counting. Defaults to "01-ai/Yi-6B".
+        context_size (int, optional): Max tokens per data-piece. Defaults to 4096.
     """
     return AnnotationProcessor(input_file, output_dir, token_limit, tokenizer_name, context_size).process()
-
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Process asciinema recordings into XML data-pieces.")
@@ -505,7 +515,7 @@ if __name__ == "__main__":
         finals = parse_and_save_file(filename, args.output_dir)
         final.extend(finals)
 
-    json.dump(final, open(os.path.join(args.output_dir, "data_unclean_no_multiple_spaces_split_400_200k.json"), "w"), indent=4)
+    json.dump(final, open(os.path.join(args.output_dir, "file.json"), "w"), indent=4)
 
     # take a directory
     # parse all files in the directory
