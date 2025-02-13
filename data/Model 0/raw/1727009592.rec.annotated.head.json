@@ -1,0 +1,171 @@
+{
+   "env" : {
+      "SHELL" : "/bin/bash",
+      "TERM" : "xterm"
+   },
+   "height" : 92,
+   "librecode_annotations" : {
+       "note": "librecode annotations",
+       "version": 1,
+       "layers": [
+           {
+               "annotations": [
+                   {
+                       "beginning": 1954,
+                       "end": 14284448,
+                       "text": "Goal: Log into and interact with the host at 10.0.7.138.\nTool: The \"ssh\" command included with OpenSSH\nSubtool: \"logout\" command\nResult: successResult"
+                   },
+                   {
+                       "beginning": 14284448,
+                       "end": 14285450.558,
+                       "text": "Goal: End Asciinema recording\nTool: The \"EOF\" character is sent to \"exit\" of the shell recording session (by pressing control+D on the user's keyboard).\nResult: successResult"
+                   }
+               ],
+               "title": "Recording system shell"
+           },
+           {
+               "annotations": [
+                   {
+                       "beginning": 18475,
+                       "end": 123377,
+                       "text": "Goal: Update cached Debian package lists on the system\nTool: The \"sudo\" command elevates the privileges for \"demo\".\nSubtool: The \"update\" subcommand of the \"apt\" package manager.\nDiscovery: The \"contrib\" and \"non-free\" repositories are enabled against the user's wishes.\nResult: successUnknown"
+                   },
+                   {
+                       "beginning": 123377,
+                       "end": 242512,
+                       "text": "Goal: Remove the \"contrib\" and \"non-free\" repositories from \"/etc/apt/sources.list\"\nTool: The \"sudo\" command elevates the privileges for \"demo\".\nSubtool: The \"emacs\" editor is invoked from the command-line.\nResult: successResult"
+                   },
+                   {
+                       "beginning": 242513,
+                       "end": 254610.732,
+                       "text": "Goal: Update cached Debian package lists on the system\nTool: The \"sudo\" command elevates the privileges for \"demo\".\nSubtool: The \"update\" subcommand of the \"apt\" package manager.\nResult: successResult"
+                   },
+                   {
+                       "beginning": 254610.732,
+                       "end": 281385.79,
+                       "text": "Goal: Upgrade Debian packages installed on the system.\nTool: The \"sudo\" command elevates the privileges for \"demo\".\nSubtool: The \"dist-upgrade\" subcommand of the \"apt\" package manager.\nResult: successUnknown; user interrupts the process before the upgrade can begin."
+                   },
+                   {
+                       "beginning": 281385.79,
+                       "end": 2892143.669,
+                       "text": "Goal: Upgrade Debian packages installed on the system.\nTool: The \"sudo\" command elevates the privileges for \"demo\".\nSubtool: The \"dist-upgrade\" subcommand of the \"apt\" package manager.\nDiscovery: There is a conflicting Python file in the \"libgio-2.0-dev-bin\" package that causes the upgrade to fail.\nResult: successFailure"
+                   },
+                   {
+                       "beginning": 2892143.669,
+                       "end": 3235394.105,
+                       "text": "Goal: Try and force the Debian system upgrade through.\nTool: The \"sudo\" command elevates the privileges for \"demo\".\nSubtool: The \"dist-upgrade\" subcommand of the \"apt\" package manager is invoked with a \"--force-overwrite\" flag.\nMistake: The \"--force-overwrite\" flag does not exist\nResult: successFailure"
+                   },
+                   {
+                       "beginning": 3235394.105,
+                       "end": 3529763.961,
+                       "text": "Goal: Tell Debian's packager to finish processing pending upgrades\nTool: The \"sudo\" command elevates the privileges for \"demo\".\nSubtool: The \"dpkg\" packager command is used with the \"--configure\" and \"-a\" flags.\nDiscovery: Many packages are broken.\nResult: successFailure"
+                   },
+                   {
+                       "beginning": 3529763.961,
+                       "end": 3951357.95,
+                       "text": "Goal: Upgrade Debian packages installed on the system.\nTool: The \"sudo\" command elevates the privileges for \"demo\".\nSubtool: The \"dist-upgrade\" subcommand of the \"apt\" package manager.\nDiscovery: Packages are still broken.\nResult: successFailure"
+                   },
+                   {
+                       "beginning": 3951357.95,
+                       "end": 5140852.663,
+                       "text": "Goal: Fix broken packages on the Debian system.\nTool: The \"sudo\" command elevates the privileges for \"demo\".\nSubtool: The \"install\" subcommand of the \"apt\" package manager is invoked with the \"--fix-broken\" flag.\nResult: successResult"
+                   },
+                   {
+                       "beginning": 5140852.663,
+                       "end": 5945742.581,
+                       "text": "Goal: Double-check that all of the broken packages are fixed.\nTool: The \"sudo\" command elevates the privileges for \"demo\".\nSubtool: The \"install\" subcommand of the \"apt\" package manager is invoked with the \"--fix-broken\" flag.\nDiscovery: Several packages are installed that are no longer required.\nResult: successResult"
+                   },
+                   {
+                       "beginning": 5945742.581,
+                       "end": 5977969.631,
+                       "text": "Goal: Tell the system's Debian packager to remove unused packages.\nTool: The \"sudo\" command elevates the privileges for \"demo\".\nSubtool: The \"autoremove\" subcommand of the \"apt\" package management command is used.\nResult: successResult"
+                   },
+                   {
+                       "beginning": 5977969.631,
+                       "end": 7827895.37,
+                       "text": "Goal: Upgrade Debian packages installed on the system.\nTool: The \"sudo\" command elevates the privileges for \"demo\".\nSubtool: The \"dist-upgrade\" subcommand of the \"apt\" package manager.\nDiscovery: The system does not have enough space to complete the upgrade.\nResult: successFailure"
+                   },
+                   {
+                       "beginning": 13819960,
+                       "end": 13821487.585,
+                       "text": "Goal: Inspect how much space is left on the system's disks\nTool: The \"df\" command.\nResult: successResult"
+                   },
+                   {
+                       "beginning": 13821487.585,
+                       "end": 13828840.746,
+                       "text": "Goal: Search the \"/boot\" partition on the system for unused kernels/initramfs images that we can uninstall.\nTool: The \"ls\" command is invoked on \"/boot\" with the \"-l\" and \"-a\" flags.\nDiscovery: There are a few kernels and images that can be uninstalled.\nResult: successResult"
+                   },
+                   {
+                       "beginning": 13828840.746,
+                       "end": 13838158.025,
+                       "text": "Goal: List Linux image packages installed from the Debian packager.\nTool: The \"dpkg\" with the \"-l\" flag is used to list packages.\nSubtool: The \"grep\" command is used to search output from \"dpkg\" to find packages matching the term \"linux-image\".\nDiscovery: There are many kernel images that can be uninstalled.\nResult: successResult"
+                   },
+                   {
+                       "beginning": 13838158.025,
+                       "end": 13840934.991,
+                       "text": "Goal: Get the running kernel version, to ensure we don't uninstall it.\nTool: The \"uname\" command is invoked with the \"-a\" flag.\nDiscovery: We are running Linux kernel version 6.6.13-amd64\nResult: successResult"
+                   },
+                   {
+                       "beginning": 13840934.991,
+                       "end": 14028541.108,
+                       "text": "Goal: Purge all kernel packages, save for 6.6.13-amd64 and the latest one.\nTool: The \"sudo\" command elevates the privileges for \"demo\".\nThe \"dpkg\" command is called with the \"--purge\" flag on each kernel package, one by one.\nResult: successResult"
+                   },
+                   {
+                       "beginning": 14028541.108,
+                       "end": 14210499.534,
+                       "text": "Goal: Make sure that all pending packages are finished processing.\nTool: The \"sudo\" command elevates the privileges for \"demo\".\nSubtool: The \"dpkg\" packager command is used with the \"--configure\" and \"-a\" flags.\nResult: successResult"
+                   },
+                   {
+                       "beginning": 14210499.534,
+                       "end": 14257402.214,
+                       "text": "Goal: Upgrade Debian packages installed on the system.\nTool: The \"sudo\" command elevates the privileges for \"demo\".\nSubtool: The \"dist-upgrade\" subcommand of the \"apt\" package manager.\nResult: successResult"
+                   },
+                   {
+                       "beginning": 14257402.214,
+                       "end": 14271736,
+                       "text": "Goal: List installed packages on the system.\nTool: The \"dpkg\" command with the \"-l\" flag is used to list packages\nSubtool: The \"cat\" command receives the \"dpkg\" output in a pipe to keep \"dpkg\" from calling a pager.\nResult: successResult"
+                   },
+                   {
+                       "beginning": 14271736,
+                       "end": 14284092.147,
+                       "text": "Goal: Log out of the SSH shell session.\nTool: The \"EOF\" character is sent to \"logout\" of the shell session (by pressing control+D on the user's keyboard).\nResult: successResult"
+                   }
+               ],
+               "title": "demo@10.0.7.138 shell"
+           },
+           {
+               "annotations": [
+                   {
+                       "beginning": 4949,
+                       "end": 8915,
+                       "text": "Goal: Enter demo@10.0.7.138's password\nTool: Interactive password prompt from earlier \"ssh\" command\nSecrets: passwordPrompt\nResult: successResult"
+                   },
+                   {
+                       "beginning": 20719,
+                       "end": 25608,
+                       "text": "Goal: Enter demo@10.0.7.138's password\nTool: Interactive password prompt from \"sudo\" command.Secrets: passwordPrompt\nResult: successResult"
+                   },
+                   {
+                       "beginning": 3218203,
+                       "end": 3235392.557,
+                       "text": "Goal: Enter demo@10.0.7.138's password\nTool: Interactive password prompt from \"sudo\" command.Secrets: passwordPrompt\nResult: successResult"
+                   },
+                   {
+                       "beginning": 5934453.089,
+                       "end": 5944320.757,
+                       "text": "Goal: Enter demo@10.0.7.138's password\nTool: Interactive password prompt from \"sudo\" command.Secrets: passwordPrompt\nResult: successResult"
+                   },
+                   {
+                       "beginning": 13861811.176,
+                       "end": 13876290.72,
+                       "text": "Goal: Enter demo@10.0.7.138's password\nTool: Interactive password prompt from \"sudo\" command.Secrets: passwordPrompt\nResult: successResult"
+                   }
+               ]
+           },
+               "title": "SECRETS"
+       ]
+   },
+   "timestamp" : 1727009592,
+   "version" : 2,
+   "width" : 319
+}
