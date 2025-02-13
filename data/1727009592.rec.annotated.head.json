@@ -161,8 +161,8 @@
                        "text": "Goal: Enter demo@10.0.7.138's password\nTool: Interactive password prompt from \"sudo\" command.Secrets: passwordPrompt\nResult: successResult"
                    }
                ]
-           },
-               "title": "SECRETS"
+           }
+               
        ]
    },
    "timestamp" : 1727009592,
