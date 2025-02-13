@@ -1,0 +1,3 @@
+{
+    "annotation": "<data-piece><history><entry><input>curl https://api.github.com/users/octocat</input><output>{\"login\": \"octocat\", \"id\": 1, \"node_id\": \"MDQ6VXNlcjE=\", \"avatar_url\": \"https://avatars.githubusercontent.com/u/1?v=4\"}</output><annotation>Fetch data from the GitHub API for the `octocat` user.</annotation><annotation></annotation></entry><entry><input>curl -I https://api.github.com/users/octocat</input><output>HTTP/1.1 200 OK</output><annotation>Fetch headers to check the response status.</annotation><annotation></annotation></entry></history><current-entry><entry><input>exit</input><output>exit</output><annotation>End the session after testing the `curl` commands.</annotation><annotation></annotation></entry></current-entry></data-piece>"
+}  
