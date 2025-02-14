@@ -1,0 +1,3 @@
+{
+    "annotation": "<data-piece><history><entry><input>top</input><output>top - 10:05:10 up  2:39,  2 users,  load average: 0.15, 0.25, 0.20</output><annotation>Run the `top` command to monitor system resources.</annotation><annotation></annotation></entry><entry><input>kill 1234</input><output></output><annotation>Terminate a process with PID 1234.</annotation><annotation></annotation></entry></history><current-entry><entry><input>exit</input><output>exit</output><annotation>End the session after managing system processes.</annotation><annotation></annotation></entry></current-entry></data-piece>"
+}  
