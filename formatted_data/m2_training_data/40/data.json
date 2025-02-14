@@ -1,3 +1,0 @@
-{
-    "annotation": "<data-piece><history><entry><input>grep 'pattern' file.txt</input><output>pattern found in file.txt</output><annotation>Search for a specific string `pattern` in the file `file.txt`.</annotation></entry><entry><input>grep -i 'pattern' file.txt</input><output>pattern found in file.txt</output><annotation>Search for the string in `file.txt`, case-insensitive.</annotation></entry></history><current-entry><entry><input>exit</input><output>exit</output><annotation>End the session and close the terminal.</annotation></entry></current-entry></data-piece>"
-}  

@@ -1,3 +1,0 @@
-{
-    "annotation": "<data-piece><history><entry><input>echo 'Hello, World!'</input><output>Hello, World!</output><annotation>Display a simple greeting message.</annotation></entry></history><current-entry><entry><input>exit</input><output>exit</output><annotation>End the session after displaying the message.</annotation></entry></current-entry></data-piece>"
-}  
