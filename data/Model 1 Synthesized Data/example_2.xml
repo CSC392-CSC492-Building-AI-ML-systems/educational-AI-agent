@@ -1,0 +1,25 @@
+<event>
+<user_input>
+git clone https://github.com/asusername/case-deadline-calculator.gi
+</user_input>
+<system_output>
+Cloning into 'case-deadline-calculator.gi'...
+remote: Repository not found.
+fatal: repository 'https://github.com/asusername/case-deadline-calculator.gi/' not found
+</system_output>
+<user_input>
+git clone https://github.com/asusername/case-deadline-calculator.git
+</user_input>
+<system_output>
+Cloning into 'case-deadline-calculator'...
+remote: Enumerating objects: 6100, done.
+remote: Counting objects: 100% (6100/6100), done.
+remote: Compressing objects: 100% (2271/2271), done.
+remote: Total 6100 (delta 3493), reused 6082 (delta 3476), pack-reused 0 (from 0)
+Receiving objects: 100% (6100/6100), 26.11 MiB | 17.65 MiB/s, done.
+Resolving deltas: 100% (3493/3493), done.
+</system_output>
+<annotation>
+Git cloned case-deadline-calculator.
+</annotation>
+</event>

@@ -1,0 +1,67 @@
+<event>
+<user_input>
+git status
+</user_input>
+<system_output>
+On branch SR20-nav-component
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   package-lock.json
+        modified:   package.json
+        modified:   src/App.tsx
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        src/screens/settings/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+</system_output>
+<user_input>
+git add --all
+</user_input>
+<system_output>
+On branch SR20-nav-component
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   package-lock.json
+        modified:   package.json
+        modified:   src/App.tsx
+        new file:   src/screens/settings/Settings.jsx
+        new file:   src/screens/settings/Settings.module.scss
+</system_output>
+<user_input>
+git push
+</user_input>
+<system_output>
+fatal: The current branch SR20-nav-component has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin SR20-nav-component
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+</system_output>
+<user_input>
+git push --set-upstream origin SR20-nav-component
+</user_input>
+<system_output>
+Enumerating objects: 16, done.
+Counting objects: 100% (16/16), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (10/10), done.
+Writing objects: 100% (10/10), 2.03 KiB | 2.03 MiB/s, done.
+Total 10 (delta 6), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (6/6), completed with 6 local objects.
+remote: 
+remote: Create a pull request for 'SR20-nav-component' on GitHub by visiting:
+remote:      https://github.com/anotherusername/Web_Client/pull/new/SR20-nav-component
+remote: 
+To https://github.com/anotherusername/Web_Client.git
+ * [new branch]      SR20-nav-component -> SR20-nav-component
+branch 'SR20-nav-component' set up to track 'origin/SR20-nav-component'.
+</system_output>
+<annotation>
+Pushed local changes on SR20-nav-component branch to Web_Client repository.
+</annotation>
+</event>
