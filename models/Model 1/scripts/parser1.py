@@ -25,7 +25,7 @@ for i, line in enumerate(xml_data):
         xml_parsed.append("<annotation>\n</annotation>\n</event>\n")
     xml_parsed.append(line)
 
-with open(f"output/{xml[:-4]}_parsed.xml", "w") as f:
+with open(f"{xml[:-4]}_parsed.xml", "w") as f:
     f.writelines(xml_parsed)
 
 print(f"Parsed XML saved as {xml[:-4]}_parsed.xml")
