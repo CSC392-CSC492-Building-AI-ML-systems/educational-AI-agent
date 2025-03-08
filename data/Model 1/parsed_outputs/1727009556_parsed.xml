@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <recording version="2" width="319" height="92" timestamp="1727009557">
-<event depth="-1">
+<event depth="-2">
   <system_output timestamp="0.071459">[?2004h]0;demo@boxtop: ~demo@boxtop:~$ </system_output>
   <user_input timestamp="3.724374">s</user_input>
   <system_output timestamp="3.725312">s</system_output>
@@ -66,7 +66,7 @@ Last login: Sun Sep 22 12:50:30 2024 from 10.0.7.1
 <annotation>
 </annotation>
 </event>
-<event depth="-1">
+<event depth="-2">
   <user_input timestamp="11.985103">p</user_input>
   <system_output timestamp="11.988199">p</system_output>
   <user_input timestamp="12.146566">a</user_input>
@@ -144,7 +144,7 @@ Retype new password: </system_output>
 <annotation>
 </annotation>
 </event>
-<event depth="-1">
+<event depth="-2">
   <user_input timestamp="31.580684"/>
   <system_output timestamp="31.585122">[?2004l
 
@@ -158,7 +158,7 @@ logout
 <annotation>
 </annotation>
 </event>
-<event depth="-1">
+<event depth="-2">
   <user_input timestamp="33.647017"/>
   <system_output timestamp="33.647764">[?2004l
 

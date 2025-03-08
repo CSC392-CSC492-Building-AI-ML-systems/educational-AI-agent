@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <recording>
-<event depth="-1">
+<event depth="-2">
   <user_input timestamp="2.364169">[200~ssh bandit12@bandit.labs.o</user_input>
   <user_input timestamp="2.364562">verthewire.org -</user_input>
   <user_input timestamp="2.36486">p 2220[201~</user_input>
@@ -247,7 +247,7 @@ discord or IRC.
 <annotation>
 </annotation>
 </event>
-<event depth="-1">
+<event depth="-2">
   <user_input timestamp="42.919488">m</user_input>
   <system_output timestamp="43.072134">m</system_output>
   <user_input timestamp="43.11168">v</user_input>
@@ -314,7 +314,7 @@ discord or IRC.
 <annotation>
 </annotation>
 </event>
-<event depth="-1">
+<event depth="-2">
   <user_input timestamp="63.016555">[A</user_input>
   <system_output timestamp="63.168725">cd ~</system_output>
   <user_input timestamp="63.234553">[A</user_input>
@@ -356,7 +356,7 @@ discord or IRC.
 <annotation>
 </annotation>
 </event>
-<event depth="-1">
+<event depth="-2">
   <user_input timestamp="84.415804">[D</user_input>
   <system_output timestamp="84.439681"/>
   <user_input timestamp="84.449865">[D</user_input>
@@ -2013,7 +2013,7 @@ Try 'tar --help' or 'tar --usage' for more information.
 <annotation>
 </annotation>
 </event>
-<event depth="-1">
+<event depth="-2">
   <system_output timestamp="370.606208">tar: You must specify one of the '-Acdtrux', '--delete' or '--test-label' options
 Try 'tar --help' or 'tar --usage' for more information.
 </system_output>
@@ -7988,7 +7988,7 @@ logout
 <annotation>
 </annotation>
 </event>
-<event depth="-1">
+<event depth="-2">
   <system_output timestamp="683.543641">[?2004h]0;renee_k@Renee: ~[01;32mrenee_k@Renee[00m:[01;34m~[00m$ </system_output>
   <user_input timestamp="684.806214">[A</user_input>
   <system_output timestamp="684.806605">ssh bandit12@bandit.labs.overthewire.org -p 2220</system_output>
