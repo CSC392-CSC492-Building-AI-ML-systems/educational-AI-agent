@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <recording>
-<event depth="-1">
+<event depth="-2">
   <user_input timestamp="1.002062">c</user_input>
   <system_output timestamp="1.002324">c</system_output>
   <user_input timestamp="1.14847">d</user_input>
@@ -104,7 +104,7 @@ cd ..
 <annotation>
 </annotation>
 </event>
-<event depth="-1">
+<event depth="-2">
   <user_input timestamp="68.583536">c</user_input>
   <system_output timestamp="68.583913">c</system_output>
   <user_input timestamp="68.741339">d</user_input>
@@ -258,7 +258,7 @@ cd ..
 <annotation>
 </annotation>
 </event>
-<event depth="-1">
+<event depth="-2">
   <user_input timestamp="166.814336">g</user_input>
   <system_output timestamp="166.814566">g</system_output>
   <user_input timestamp="166.856489">i</user_input>
@@ -834,7 +834,7 @@ Resolving deltas:  83% (57/68)
 <annotation>
 </annotation>
 </event>
-<event depth="-1">
+<event depth="-2">
   <system_output timestamp="224.171468">[?2004h]0;renee_k@Renee: ~/MCSS[01;32mrenee_k@Renee[00m:[01;34m~/MCSS[00m$ </system_output>
   <user_input timestamp="224.89415">g</user_input>
   <system_output timestamp="224.894443">g</system_output>

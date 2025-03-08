@@ -18,9 +18,9 @@ breaks = set(counter[i-1] for i in range(len(counter)) if counter[i] == 0)
 xml_parsed = []
 for i, line in enumerate(xml_data):
     if i in breaks:
-        xml_parsed.append("<annotation>\n</annotation>\n</event>\n<event depth=\"-1\">\n")
+        xml_parsed.append("<annotation>\n</annotation>\n</event>\n<event depth=\"-2\">\n")
     elif i == 2:
-        xml_parsed.append("<event depth=\"-1\">\n")
+        xml_parsed.append("<event depth=\"-2\">\n")
     elif i == len(xml_data) - 1:
         xml_parsed.append("<annotation>\n</annotation>\n</event>\n")
     xml_parsed.append(line)
