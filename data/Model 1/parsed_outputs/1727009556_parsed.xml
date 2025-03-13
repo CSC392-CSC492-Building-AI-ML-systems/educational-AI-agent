@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <recording version="2" width="319" height="92" timestamp="1727009557">
-<event depth="-2">
+<event depth="0">
   <system_output timestamp="0.071459">[?2004h]0;demo@boxtop: ~demo@boxtop:~$ </system_output>
   <user_input timestamp="3.724374">s</user_input>
   <system_output timestamp="3.725312">s</system_output>
@@ -63,10 +63,10 @@ Last login: Sun Sep 22 12:50:30 2024 from 10.0.7.1
 
 </system_output>
   <system_output timestamp="11.587303">[?2004h]0;demo@boxtop: ~demo@boxtop:~$ </system_output>
-<annotation>
+<annotation>User connects to remote server via SSH using the command 'ssh 10.0.7.138' and enters password
 </annotation>
 </event>
-<event depth="-2">
+<event depth="-1">
   <user_input timestamp="11.985103">p</user_input>
   <system_output timestamp="11.988199">p</system_output>
   <user_input timestamp="12.146566">a</user_input>
@@ -141,10 +141,10 @@ Retype new password: </system_output>
 </system_output>
   <system_output timestamp="29.339981">passwd: password updated successfully
 [?2004h]0;demo@boxtop: ~demo@boxtop:~$ </system_output>
-<annotation>
+<annotation>User changes their password on the remote server from '1M3T567!' to 'OpenYourHeartGPT'
 </annotation>
 </event>
-<event depth="-2">
+<event depth="1">
   <user_input timestamp="31.580684"/>
   <system_output timestamp="31.585122">[?2004l
 
@@ -155,16 +155,16 @@ logout
 </system_output>
   <system_output timestamp="31.591579">[?2004h</system_output>
   <system_output timestamp="31.591914">]0;demo@boxtop: ~demo@boxtop:~$ </system_output>
-<annotation>
+<annotation>User logs out of the SSH session and connection to the remote server is closed
 </annotation>
 </event>
-<event depth="-2">
+<event depth="0">
   <user_input timestamp="33.647017"/>
   <system_output timestamp="33.647764">[?2004l
 
 exit
 </system_output>
-<annotation>
+<annotation>User exits the terminal
 </annotation>
 </event>
 </recording>
