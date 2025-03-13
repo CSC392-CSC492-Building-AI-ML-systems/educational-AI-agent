@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <recording>
-<event depth="-2">
+<event depth="0">
   <user_input timestamp="2.364169">[200~ssh bandit12@bandit.labs.o</user_input>
   <user_input timestamp="2.364562">verthewire.org -</user_input>
   <user_input timestamp="2.36486">p 2220[201~</user_input>
@@ -245,9 +245,10 @@ discord or IRC.
 [?2004l
 [?2004h]0;bandit12@bandit: ~[01;32mbandit12@bandit[00m:[01;34m~[00m$ </system_output>
 <annotation>
+User connects to bandit12@bandit.labs.overthewire.org, a wargame server for learning security concepts. After authenticating, they view the contents of data.txt file which appears to be in hexdump format, then create a temporary directory using mktemp -d.
 </annotation>
 </event>
-<event depth="-2">
+<event depth="-1">
   <user_input timestamp="42.919488">m</user_input>
   <system_output timestamp="43.072134">m</system_output>
   <user_input timestamp="43.11168">v</user_input>
@@ -312,9 +313,10 @@ discord or IRC.
 [?2004l
 [?2004h]0;bandit12@bandit: ~[01;32mbandit12@bandit[00m:[01;34m~[00m$ </system_output>
 <annotation>
+User attempts to move data.txt to their temporary directory but encounters a permission denied error. They navigate between directories trying to resolve the issue.
 </annotation>
 </event>
-<event depth="-2">
+<event depth="-1">
   <user_input timestamp="63.016555">[A</user_input>
   <system_output timestamp="63.168725">cd ~</system_output>
   <user_input timestamp="63.234553">[A</user_input>
@@ -354,9 +356,10 @@ discord or IRC.
   <user_input timestamp="84.380451">[D</user_input>
   <system_output timestamp="84.400678"/>
 <annotation>
+User tries different command approaches, switching from mv to cp to copy the data.txt file to their temporary working directory.
 </annotation>
 </event>
-<event depth="-2">
+<event depth="-1">
   <user_input timestamp="84.415804">[D</user_input>
   <system_output timestamp="84.439681"/>
   <user_input timestamp="84.449865">[D</user_input>
@@ -2011,9 +2014,10 @@ Try 'tar --help' or 'tar --usage' for more information.
 [?2004l
 </system_output>
 <annotation>
+User successfully copies data.txt to their temporary directory and begins analyzing it. They discover it's gzip compressed data and start the decompression process using various command-line tools including reading the gzip manual and using gzip -d to decompress the file.
 </annotation>
 </event>
-<event depth="-2">
+<event depth="1">
   <system_output timestamp="370.606208">tar: You must specify one of the '-Acdtrux', '--delete' or '--test-label' options
 Try 'tar --help' or 'tar --usage' for more information.
 </system_output>
@@ -7986,9 +7990,10 @@ logout
 
 </system_output>
 <annotation>
+User logged out of the bandit SSH session after viewing the password for level 13 at /etc/bandit_pass/bandit13.
 </annotation>
 </event>
-<event depth="-2">
+<event depth="1">
   <system_output timestamp="683.543641">[?2004h]0;renee_k@Renee: ~[01;32mrenee_k@Renee[00m:[01;34m~[00m$ </system_output>
   <user_input timestamp="684.806214">[A</user_input>
   <system_output timestamp="684.806605">ssh bandit12@bandit.labs.overthewire.org -p 2220</system_output>
@@ -9666,6 +9671,7 @@ logout
 exit
 </system_output>
 <annotation>
+User exited the local terminal session.
 </annotation>
 </event>
 </recording>
