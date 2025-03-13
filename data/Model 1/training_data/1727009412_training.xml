@@ -1,0 +1,513 @@
+<?xml version="1.0" ?>
+<recording version="2" width="319" height="92" timestamp="1727009412">
+<event depth="0">
+  <system_output timestamp="0.096022">[?2004h]0;demo@boxtop: ~demo@boxtop:~$ </system_output>
+  <user_input timestamp="9.163614">s</user_input>
+  <system_output timestamp="9.164051">s</system_output>
+  <user_input timestamp="9.365744">s</user_input>
+  <system_output timestamp="9.366263">s</system_output>
+  <user_input timestamp="9.589844">h</user_input>
+  <system_output timestamp="9.59026">h</system_output>
+  <user_input timestamp="9.708352"> </user_input>
+  <system_output timestamp="9.708844"> </system_output>
+  <user_input timestamp="10.1118">1</user_input>
+  <system_output timestamp="10.112236">1</system_output>
+  <user_input timestamp="10.270878">0</user_input>
+  <system_output timestamp="10.271223">0</system_output>
+  <user_input timestamp="10.471565">.</user_input>
+  <system_output timestamp="10.471898">.</system_output>
+  <user_input timestamp="10.594981">0</user_input>
+  <system_output timestamp="10.595383">0</system_output>
+  <user_input timestamp="10.757499">.</user_input>
+  <system_output timestamp="10.757882">.</system_output>
+  <user_input timestamp="11.140897">7</user_input>
+  <system_output timestamp="11.14119">7</system_output>
+  <user_input timestamp="11.603706">.</user_input>
+  <system_output timestamp="11.604019">.</system_output>
+  <user_input timestamp="12.330584">1</user_input>
+  <system_output timestamp="12.331455">1</system_output>
+  <user_input timestamp="12.632256">3</user_input>
+  <system_output timestamp="12.633323">3</system_output>
+  <user_input timestamp="13.446626">8</user_input>
+  <system_output timestamp="13.447562">8</system_output>
+  <user_input timestamp="14.510021">
+</user_input>
+  <system_output timestamp="14.511984">
+[?2004l
+</system_output>
+<annotation>
+  User initiates SSH connection to server 10.0.7.138
+</annotation>
+</event>
+<event depth="-1">
+  <system_output timestamp="15.137032">
+</system_output>
+  <system_output timestamp="15.137135">demo@10.0.7.138's password: </system_output>
+  <user_input timestamp="16.035531">1</user_input>
+  <user_input timestamp="16.141913">M</user_input>
+  <user_input timestamp="16.28724">3</user_input>
+  <user_input timestamp="16.411445">T</user_input>
+  <user_input timestamp="16.599216">5</user_input>
+  <user_input timestamp="16.683584">6</user_input>
+  <user_input timestamp="17.022337">7</user_input>
+  <user_input timestamp="17.189268">!</user_input>
+  <user_input timestamp="17.357498">
+</user_input>
+  <system_output timestamp="17.358007">
+</system_output>
+  <system_output timestamp="17.615744">Linux boxtop 6.6.13-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.6.13-1 (2024-01-20) x86_64
+
+
+Plan your installation, and FAI installs your plan.
+
+Last login: Sun Sep 22 12:24:17 2024
+
+</system_output>
+<annotation>
+  User authenticates and logs into the remote machine
+</annotation>
+</event>
+<event depth="-1">
+  <system_output timestamp="17.695544">[?2004h]0;demo@boxtop: ~demo@boxtop:~$ </system_output>
+  <user_input timestamp="50.779737">s</user_input>
+  <system_output timestamp="50.785513">s</system_output>
+  <user_input timestamp="50.909348">u</user_input>
+  <system_output timestamp="50.929251">u</system_output>
+  <user_input timestamp="51.059491">d</user_input>
+  <system_output timestamp="51.077306">d</system_output>
+  <user_input timestamp="51.165163">o</user_input>
+  <system_output timestamp="51.185758">o</system_output>
+  <user_input timestamp="51.289441"> </user_input>
+  <system_output timestamp="51.307487"> </system_output>
+  <user_input timestamp="51.460031">a</user_input>
+  <system_output timestamp="51.476206">a</system_output>
+  <user_input timestamp="51.629897">p</user_input>
+  <system_output timestamp="51.644986">p</system_output>
+  <user_input timestamp="51.755593">t</user_input>
+  <system_output timestamp="51.779092">t</system_output>
+  <user_input timestamp="51.859546"> </user_input>
+  <system_output timestamp="51.876647"> </system_output>
+  <user_input timestamp="52.05049">i</user_input>
+  <system_output timestamp="52.065611">i</system_output>
+  <user_input timestamp="52.156245">n</user_input>
+  <system_output timestamp="52.169695">n</system_output>
+  <user_input timestamp="52.368514">s</user_input>
+  <system_output timestamp="52.381522">s</system_output>
+  <user_input timestamp="52.622719">t</user_input>
+  <system_output timestamp="52.638302">t</system_output>
+  <user_input timestamp="52.686466">a</user_input>
+  <system_output timestamp="52.707565">a</system_output>
+  <user_input timestamp="52.898326">l</user_input>
+  <system_output timestamp="52.910315">l</system_output>
+  <user_input timestamp="53.109675">l</user_input>
+  <system_output timestamp="53.120177">l</system_output>
+  <user_input timestamp="53.215973"> </user_input>
+  <system_output timestamp="53.223295"> </system_output>
+  <user_input timestamp="53.385973">a</user_input>
+  <system_output timestamp="53.40751">a</system_output>
+  <user_input timestamp="53.917984">s</user_input>
+  <system_output timestamp="53.941766">s</system_output>
+  <user_input timestamp="54.212927">c</user_input>
+  <system_output timestamp="54.238035">c</system_output>
+  <user_input timestamp="54.337781">i</user_input>
+  <system_output timestamp="54.359774">i</system_output>
+  <user_input timestamp="54.526403">i</user_input>
+  <system_output timestamp="54.546002">i</system_output>
+  <user_input timestamp="54.737875">n</user_input>
+  <system_output timestamp="54.755866">n</system_output>
+  <user_input timestamp="54.863354">e</user_input>
+  <system_output timestamp="54.882436">e</system_output>
+  <user_input timestamp="55.05371">m</user_input>
+  <system_output timestamp="55.07592">m</system_output>
+  <user_input timestamp="55.179776">a</user_input>
+  <system_output timestamp="55.194304">a</system_output>
+  <user_input timestamp="55.521296">
+</user_input>
+  <system_output timestamp="55.531082">
+[?2004l
+</system_output>
+  <system_output timestamp="55.599634">[sudo] password for demo: </system_output>
+  <user_input timestamp="56.734342">1</user_input>
+  <user_input timestamp="56.796564">M</user_input>
+  <user_input timestamp="56.966325">3</user_input>
+  <user_input timestamp="57.051715">T</user_input>
+  <user_input timestamp="57.222621">5</user_input>
+  <user_input timestamp="57.33007">6</user_input>
+  <user_input timestamp="57.644952">7</user_input>
+  <user_input timestamp="57.816517">!</user_input>
+  <user_input timestamp="57.942359">
+</user_input>
+  <system_output timestamp="57.96572">
+</system_output>
+  <system_output timestamp="58.325505">
+Reading package lists... 0%
+</system_output>
+  <system_output timestamp="59.329103">
+Reading package lists... 100%
+
+Reading package lists... Done
+
+</system_output>
+  <system_output timestamp="59.339157">
+Building dependency tree... 0%
+
+Building dependency tree... 0%
+</system_output>
+  <system_output timestamp="59.452924">
+Building dependency tree... 50%
+
+Building dependency tree... 50%
+</system_output>
+  <system_output timestamp="59.775119">
+Building dependency tree... Done
+
+
+Reading state information... 0% 
+</system_output>
+  <system_output timestamp="59.777949">
+Reading state information... 0%
+</system_output>
+  <system_output timestamp="59.779622">
+Reading state information... Done
+
+</system_output>
+  <system_output timestamp="60.428781">The following packages were automatically installed and are no longer required:
+</system_output>
+  <system_output timestamp="60.43437">  libatm1 libavutil57 libboost-regex1.74.0 libcodec2-1.1 libllvm16 libmagickcore-6.q16-6 libmagickcore-6.q16-6-extra libmagickwand-6.q16-6 libperl5.36 libplacebo292 libutf8proc2 libzxing2 linux-image-6.4.0-2-amd64 lua-lpeg perl-modules-5.36
+Use 'sudo apt autoremove' to remove them.
+</system_output>
+  <system_output timestamp="60.653356">The following NEW packages will be installed:
+</system_output>
+  <system_output timestamp="60.658893">  asciinema
+</system_output>
+  <system_output timestamp="60.699477">0 upgraded, 1 newly installed, 0 to remove and 392 not upgraded.
+</system_output>
+  <system_output timestamp="60.706205">Need to get 74.4 kB of archives.
+After this operation, 189 kB of additional disk space will be used.
+</system_output>
+  <system_output timestamp="60.726608">[33m
+0% [Working][0m</system_output>
+  <system_output timestamp="60.908482">
+            
+Get:1 http://ftp.de.debian.org/debian testing/main amd64 asciinema all 2.4.0-1 [74.4 kB]
+[33m
+7% [1 asciinema 6,554 B/74.4 kB 9%][0m</system_output>
+  <system_output timestamp="61.102925">[33m
+                                   
+100% [Working][0m
+              
+Fetched 74.4 kB in 0s (190 kB/s)
+</system_output>
+  <system_output timestamp="63.479784">
+7[0;91r8[1A</system_output>
+  <system_output timestamp="64.323318">Selecting previously unselected package asciinema.
+(Reading database ... 
+</system_output>
+  <system_output timestamp="64.532274">(Reading database ... 5%
+(Reading database ... 10%
+(Reading database ... 15%
+(Reading database ... 20%
+(Reading database ... 25%
+(Reading database ... 30%
+(Reading database ... 35%
+(Reading database ... 40%
+(Reading database ... 45%
+(Reading database ... 50%
+(Reading database ... 55%
+</system_output>
+  <system_output timestamp="64.674661">(Reading database ... 60%
+</system_output>
+  <system_output timestamp="64.95745">(Reading database ... 65%
+</system_output>
+  <system_output timestamp="65.140018">(Reading database ... 70%
+</system_output>
+  <system_output timestamp="65.311898">(Reading database ... 75%
+</system_output>
+  <system_output timestamp="65.513479">(Reading database ... 80%
+</system_output>
+  <system_output timestamp="65.742355">(Reading database ... 85%
+</system_output>
+  <system_output timestamp="66.227265">(Reading database ... 90%
+</system_output>
+  <system_output timestamp="66.442044">(Reading database ... 95%
+</system_output>
+  <system_output timestamp="66.772155">(Reading database ... 100%
+(Reading database ... 136173 files and directories currently installed.)
+</system_output>
+  <system_output timestamp="66.781433">Preparing to unpack .../asciinema_2.4.0-1_all.deb ...
+7[92;0f[42m[30mProgress: [  0%][49m[39m [.........................................................................................................................................................................................................................................................................................................] 87[92;0f[42m[30mProgress: [ 20%][49m[39m [###########################################################..............................................................................................................................................................................................................................................] 8</system_output>
+  <system_output timestamp="68.167942">Unpacking asciinema (2.4.0-1) ...
+</system_output>
+  <system_output timestamp="68.967246">7[92;0f[42m[30mProgress: [ 40%][49m[39m [######################################################################################################################...................................................................................................................................................................................] 8</system_output>
+  <system_output timestamp="69.787492">Setting up asciinema (2.4.0-1) ...
+</system_output>
+  <system_output timestamp="69.797095">7[92;0f[42m[30mProgress: [ 60%][49m[39m [##################################################################################################################################################################################.......................................................................................................................] 8</system_output>
+  <system_output timestamp="70.469715">7[92;0f[42m[30mProgress: [ 80%][49m[39m [#############################################################################################################################################################################################################################################............................................................] 8</system_output>
+  <system_output timestamp="70.493594">Processing triggers for man-db (2.12.0-3) ...
+</system_output>
+  <system_output timestamp="135.625963">
+7[0;92r8[1A[J</system_output>
+  <system_output timestamp="136.611219">Scanning processes... [                                                                                                                                                                                                                                                                                                       ]
+Scanning processes... [=                                                                                                                                                                                                                                                                                                      ]
+</system_output>
+  <system_output timestamp="136.691321">Scanning processes... [===                                                                                                                                                                                                                                                                                                    ]
+Scanning processes... [=====                                                                                                                                                                                                                                                                                                  ]
+Scanning processes... [======                                                                                                                                                                                                                                                                                                 ]
+Scanning processes... [========                                                                                                                                                                                                                                                                                               ]
+Scanning processes... [==========                                                                                                                                                                                                                                                                                             ]
+</system_output>
+  <system_output timestamp="136.692131">Scanning processes... [============                                                                                                                                                                                                                                                                                           ]
+Scanning processes... [=============                                                                                                                                                                                                                                                                                          ]
+Scanning processes... [===============                                                                                                                                                                                                                                                                                        ]
+Scanning processes... [=================                                                                                                                                                                                                                                                                                      ]
+Scanning processes... [==================                                                                                                                                                                                                                                                                                     ]
+Scanning processes... [====================                                                                                                                                                                                                                                                                                   ]
+Scanning processes... [======================                                                                                   </system_output>
+  <system_output timestamp="136.693074">                                                                                                                                                                                              ]
+Scanning processes... [========================                                                                                                                                                                                                                                                                               ]
+Scanning processes... [=========================                                                                                                                                                                                                                                                                              ]
+Scanning processes... [===========================                                                                                                                                                                                                                                                                            ]
+Scanning processes... [=============================                                                                                                                                                                                                                                                                          ]
+Scanning processes... [===============================                                                                                                                                                                                                                                                                        ]
+Scanning processes... [================================                                                                                                                                                                                                                                                                       ]
+Scanning processes... [==================================                                                                                                                                                                                                                                                                     ]
+Scanning processes... [====================================                                                                                                                                                                                                                                                                   ]
+Scanning processes... [=====================================                                                                                                                                                                                                                                                                  ]
+Scanning processes... [=======================================                                                                                                                                                                                                                                                                ]
+Scanning processes... [=========================================                                                                                                                                                                                                                                                              ]
+Scanning processes... [===========================================                                                                                                                                                                                                                                                            ]
+Scanning processes... [========================================</system_output>
+  <system_output timestamp="136.693408">====                                                                                                                                                                                                                                                           ]
+</system_output>
+  <system_output timestamp="136.701178">Scanning processes... [==============================================                                                                                                                                                                                                                                                         ]
+Scanning processes... [================================================                                                                                                                                                                                                                                                       ]
+Scanning processes... [==================================================                                                                                                                                                                                                                                                     ]
+Scanning processes... [===================================================                                                                                                                                                                                                                                                    ]
+Scanning processes... [=====================================================                                                                                                                                                                                                                                                  ]
+Scanning processes... [=======================================================                                                                                                                                                                                                                                                ]
+Scanning processes... [========================================================                                                                                                                                                                                                                                               ]
+Scanning processes... [==========================================================                                                                                                                                                                                                                                             ]
+Scanning processes... [============================================================                                                                                                                                                                                                                                           ]
+Scanning processes... [==============================================================                                                                                                                                                                                                                                         ]
+Scanning processes... [===============================================================                                                                                                                                                                                                                                        ]
+Scanning processes... [=================================================================                                                                                                                                                                                                                                      ]
+Scanning processes... [===================================================================                                                                                                                                                                     </system_output>
+  <system_output timestamp="136.701486">                                                               ]
+Scanning processes... [=====================================================================                                                                                                                                                                                                                                  ]
+Scanning processes... [======================================================================                                                                                                                                                                                                                                 ]
+Scanning processes... [========================================================================                                                                                                                                                                                                                               ]
+Scanning processes... [==========================================================================                                                                                                                                                                                                                             ]
+Scanning processes... [===========================================================================                                                                                                                                                                                                                            ]
+Scanning processes... [=============================================================================                                                                                                                                                                                                                          ]
+Scanning processes... [===============================================================================                                                                                                                                                                                                                        ]
+Scanning processes... [=================================================================================                                                                                                                                                                                                                      ]
+</system_output>
+  <system_output timestamp="136.708057">Scanning processes... [==================================================================================                                                                                                                                                                                                                     ]
+Scanning processes... [====================================================================================                                                                                                                                                                                                                   ]
+Scanning processes... [======================================================================================                                                                                                                                                                                                                 ]
+</system_output>
+  <system_output timestamp="136.710014">Scanning processes... [=======================================================================================                                                                                                                                                                                                                ]
+Scanning processes... [=========================================================================================                                                                                                                                                                                                              ]
+Scanning processes... [===========================================================================================                                                                                                                                                                                                            ]
+Scanning processes... [=============================================================================================                                                                                                                                                                                                          ]
+Scanning processes... [==============================================================================================                                                                                                                                                                                                         ]
+Scanning processes... [================================================================================================                                                                                                                                                                                                       ]
+Scanning processes... [==================================================================================================                                                                                                                                                                                                     ]
+Scanning processes... [====================================================================================================                                                                                                                                                                                                   ]
+Scanning processes... [=====================================================================================================                                                                                                                                                                                                  ]
+Scanning processes... [=======================================================================================================                                                                                                                                                                                                ]
+Scanning processes... [=========================================================================================================                                                                                                                                                                                              ]
+Scanning processes... [==========================================================================================================                                                                                                                                                                                             ]
+Scanning processes... [============================================================================================================                                                                                                                                                                                           ]
+Scanning processes... [==============================================================================================================                                                                                                                                                                                         ]
+Scanning processes... [================================================================================================================                                                                                                                                                                                       ]</system_output>
+  <system_output timestamp="136.710588">
+Scanning processes... [=================================================================================================================                                                                                                                                                                                      ]
+Scanning processes... [===================================================================================================================                                                                                                                                                                                    ]
+Scanning processes... [=====================================================================================================================                                                                                                                                                                                  ]
+Scanning processes... [=======================================================================================================================                                                                                                                                                                                ]
+Scanning processes... [========================================================================================================================                                                                                                                                                                               ]
+Scanning processes... [==========================================================================================================================                                                                                                                                                                             ]
+Scanning processes... [============================================================================================================================                                                                                                                                                                           ]
+</system_output>
+  <system_output timestamp="136.711745">Scanning processes... [=============================================================================================================================                                                                                                                                                                          ]
+Scanning processes... [===============================================================================================================================                                                                                                                                                                        ]
+Scanning processes... [=================================================================================================================================                                                                                                                                                                      ]
+Scanning processes... [===================================================================================================================================                                                                                                                                                                    ]
+Scanning processes... [====================================================================================================================================                                                                                                                                                                   ]
+Scanning processes... [======================================================================================================================================                                                                                                                                                                 ]
+Scanning processes... [========================================================================================================================================                                                                                                                                                               ]
+Scanning processes... [==========================================================================================================================================                                                                                                                                                             ]
+Scanning processes... [===========================================================================================================================================                                                                                                                                                            ]
+Scanning processes... [=============================================================================================================================================                                                                                                                                                          ]
+Scanning processes... [===============================================================================================================================================                                                                                                                                                        ]
+Scanning processes... [================================================================================================================================================                                                                                                                                                       ]
+Scanning processes... [==================================================================================================================================================                                                                                      </system_output>
+  <system_output timestamp="136.712098">                                                               ]
+Scanning processes... [====================================================================================================================================================                                                                                                                                                   ]
+Scanning processes... [======================================================================================================================================================                                                                                                                                                 ]
+Scanning processes... [=======================================================================================================================================================                                                                                                                                                ]
+Scanning processes... [=========================================================================================================================================================                                                                                                                                              ]
+Scanning processes... [===========================================================================================================================================================                                                                                                                                            ]
+Scanning processes... [============================================================================================================================================================                                                                                                                                           ]
+Scanning processes... [==============================================================================================================================================================                                                                                                                                         ]
+Scanning processes... [================================================================================================================================================================                                                                                                                                       ]
+Scanning processes... [==================================================================================================================================================================                                                                                                                                     ]
+</system_output>
+  <system_output timestamp="136.716146">Scanning processes... [===================================================================================================================================================================                                                                                                                                    ]
+Scanning processes... [=====================================================================================================================================================================                                                                                                                                  ]
+Scanning processes... [=======================================================================================================================================================================                                                                                                                                ]
+Scanning processes... [=========================================================================================================================================================================                                                                                                                              ]
+Scanning processes... [==========================================================================================================================================================================                                                                                                                             ]
+Scanning processes... [============================================================================================================================================================================                                                                                                                           ]
+Scanning processes... [==============================================================================================================================================================================                                                                                                                         ]
+Scanning processes... [===============================================================================================================================================================================                                                                                                                        ]
+</system_output>
+  <system_output timestamp="136.7169">Scanning processes... [=================================================================================================================================================================================                                                                                                                      ]
+Scanning processes... [===================================================================================================================================================================================                                                                                                                    ]
+Scanning processes... [=====================================================================================================================================================================================                                                                                                                  ]
+Scanning processes... [======================================================================================================================================================================================                                                                                                                 ]
+Scanning processes... [========================================================================================================================================================================================                                                                                                               ]
+Scanning processes... [==========================================================================================================================================================================================                                                                                                             ]
+Scanning processes... [============================================================================================================================================================================================                                                                                                           ]
+Scanning processes... [=============================================================================================================================================================================================                                                                                                          ]
+Scanning processes... [===============================================================================================================================================================================================                                                                                                        ]
+Scanning processes... [=================================================================================================================================================================================================                                                                                                      ]
+Scanning processes... [==================================================================================================================================================================================================                                                                                                     ]
+Scanning processes... [====================================================================================================================================================================================================                                                                                                   ]
+Scanning processes... [======================================================================================================================================================================================================                                  </system_output>
+  <system_output timestamp="136.717502">                                                               ]
+Scanning processes... [========================================================================================================================================================================================================                                                                                               ]
+Scanning processes... [=========================================================================================================================================================================================================                                                                                              ]
+Scanning processes... [===========================================================================================================================================================================================================                                                                                            ]
+Scanning processes... [=============================================================================================================================================================================================================                                                                                          ]
+Scanning processes... [===============================================================================================================================================================================================================                                                                                        ]
+</system_output>
+  <system_output timestamp="136.718174">Scanning processes... [================================================================================================================================================================================================================                                                                                       ]
+Scanning processes... [==================================================================================================================================================================================================================                                                                                     ]
+Scanning processes... [====================================================================================================================================================================================================================                                                                                   ]
+Scanning processes... [=====================================================================================================================================================================================================================                                                                                  ]
+Scanning processes... [=======================================================================================================================================================================================================================                                                                                ]
+Scanning processes... [=========================================================================================================================================================================================================================                                                                              ]
+Scanning processes... [=========================================================================================================</system_output>
+  <system_output timestamp="136.718546">==================================================================================================================                                                                            ]
+Scanning processes... [============================================================================================================================================================================================================================                                                                           ]
+Scanning processes... [==============================================================================================================================================================================================================================                                                                         ]
+Scanning processes... [================================================================================================================================================================================================================================                                                                       ]
+Scanning processes... [=================================================================================================================================================================================================================================                                                                      ]
+Scanning processes... [===================================================================================================================================================================================================================================                                                                    ]
+Scanning processes... [=====================================================================================================================================================================================================================================                                                                  ]
+Scanning processes... [=======================================================================================================================================================================================================================================                                                                ]
+Scanning processes... [========================================================================================================================================================================================================================================                                                               ]
+Scanning processes... [==========================================================================================================================================================================================================================================                                                             ]
+</system_output>
+  <system_output timestamp="137.276939">Scanning processes... [============================================================================================================================================================================================================================================                                                           ]
+</system_output>
+  <system_output timestamp="137.27784">Scanning processes... [==============================================================================================================================================================================================================================================                                                         ]
+</system_output>
+  <system_output timestamp="137.280681">Scanning processes... [===============================================================================================================================================================================================================================================                                                        ]
+</system_output>
+  <system_output timestamp="137.283995">Scanning processes... [=================================================================================================================================================================================================================================================                                                      ]
+</system_output>
+  <system_output timestamp="137.285939">Scanning processes... [===================================================================================================================================================================================================================================================                                                    ]
+</system_output>
+  <system_output timestamp="137.287736">Scanning processes... [====================================================================================================================================================================================================================================================                                                   ]
+Scanning processes... [======================================================================================================================================================================================================================================================                                                 ]
+Scanning processes... [========================================================================================================================================================================================================================================================                                               ]
+</system_output>
+  <system_output timestamp="137.289443">Scanning processes... [==========================================================================================================================================================================================================================================================                                             ]
+Scanning processes... [===========================================================================================================================================================================================================================================================                                            ]
+</system_output>
+  <system_output timestamp="137.290267">Scanning processes... [=============================================================================================================================================================================================================================================================                                          ]
+</system_output>
+  <system_output timestamp="137.294624">Scanning processes... [===============================================================================================================================================================================================================================================================                                        ]
+</system_output>
+  <system_output timestamp="137.306931">Scanning processes... [=================================================================================================================================================================================================================================================================                                      ]
+</system_output>
+  <system_output timestamp="137.307694">Scanning processes... [==================================================================================================================================================================================================================================================================                                     ]
+</system_output>
+  <system_output timestamp="137.31339">Scanning processes... [====================================================================================================================================================================================================================================================================                                   ]
+Scanning processes... [======================================================================================================================================================================================================================================================================                                 ]
+Scanning processes... [=======================================================================================================================================================================================================================================================================                                ]
+Scanning processes... [=========================================================================================================================================================================================================================================================================                              ]
+Scanning processes... [===========================================================================================================================================================================================================================================================================                            ]
+Scanning processes... [=============================================================================================================================================================================================================================================================================                          ]
+Scanning processes... [==============================================================================================================================================================================================================================================================================                         ]
+Scanning processes... [================================================================================================================================================================================================================================================================================                       ]
+Scanning processes... [==================================================================================================================================================================================================================================================================================                     ]
+</system_output>
+  <system_output timestamp="137.313848">Scanning processes... [====================================================================================================================================================================================================================================================================================                   ]
+</system_output>
+  <system_output timestamp="137.325328">Scanning processes... [=====================================================================================================================================================================================================================================================================================                  ]
+Scanning processes... [=======================================================================================================================================================================================================================================================================================                ]
+</system_output>
+  <system_output timestamp="137.326087">Scanning processes... [=========================================================================================================================================================================================================================================================================================              ]
+Scanning processes... [==========================================================================================================================================================================================================================================================================================             ]
+Scanning processes... [============================================================================================================================================================================================================================================================================================           ]
+Scanning processes... [==============================================================================================================================================================================================================================================================================================         ]
+Scanning processes... [================================================================================================================================================================================================================================================================================================       ]
+Scanning processes... [=================================================================================================================================================================================================================================================================================================      ]
+Scanning processes... [===================================================================================================================================================================================================================================================================================================    ]
+Scanning processes... [=====================================================================================================================================================================================================================================================================================================  ]
+Scanning processes... [=======================================================================================================================================================================================================================================================================================================]
+Scanning processes...                                                                                                                                                                                                                                                                                                          
+</system_output>
+  <system_output timestamp="137.338221">Scanning processor microcode... [                                                                                                                                                                                                                                                                                             ]
+</system_output>
+  <system_output timestamp="137.343173">Scanning processor microcode... [==============================================================================================================================================                                                                                                                                               ]
+</system_output>
+  <system_output timestamp="137.365622">Scanning processor microcode... [=============================================================================================================================================================================================================================================================================================]
+Scanning processor microcode...                                                                                                                                                                                                                                                                                                
+</system_output>
+  <system_output timestamp="137.370652">Scanning linux images... [                                                                                                                                                                                                                                                                                                    ]
+Scanning linux images... [=================================================================================================                                                                                                                                                                                                   ]
+</system_output>
+  <system_output timestamp="137.375885">Scanning linux images... [==================================================================================================================================================================================================                                                                                                  ]
+</system_output>
+  <system_output timestamp="137.378252">Scanning linux images... [====================================================================================================================================================================================================================================================================================================]
+</system_output>
+  <system_output timestamp="137.382422">Scanning linux images...                                                                                                                                                                                                                                                                                                       
+</system_output>
+  <system_output timestamp="137.383961">
+Running kernel seems to be up-to-date.
+
+The processor microcode seems to be up-to-date.
+
+No services need to be restarted.
+
+No containers need to be restarted.
+
+No user sessions are running outdated binaries.
+
+No VM guests are running outdated hypervisor (qemu) binaries on this host.
+</system_output>
+<annotation>
+  User installs asciinema package using sudo apt
+</annotation>
+</event>
+<event depth="1">
+  <system_output timestamp="138.520613">[?2004h]0;demo@boxtop: ~demo@boxtop:~$ </system_output>
+  <user_input timestamp="140.539508"/>
+  <system_output timestamp="140.550093">[?2004l
+
+logout
+</system_output>
+  <system_output timestamp="140.560274">Connection to 10.0.7.138 closed.
+
+</system_output>
+  <system_output timestamp="140.561212">[?2004h]0;demo@boxtop: ~demo@boxtop:~$ </system_output>
+<annotation>
+  User logs out of the remote SSH session
+</annotation>
+</event>
+<event depth="0">
+  <user_input timestamp="142.075182"/>
+  <system_output timestamp="142.076489">[?2004l
+
+exit
+</system_output>
+<annotation>
+  User exits the local terminal session
+</annotation>
+</event>
+</recording>
