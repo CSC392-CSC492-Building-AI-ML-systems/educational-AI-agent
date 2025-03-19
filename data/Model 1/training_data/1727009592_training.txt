@@ -12,11 +12,11 @@ User changes password
 User upgrades packages using sudo apt dist-upgrade command
 0
 User upgrades packages using sudo apt dist-upgrade command
-1
+0
 User troubleshoots package dependency errors after apt dist-upgrade
 0
 User attempts to fix package dependencies using apt dist-upgrade with force-overwrite option
-0
+1
 User upgrades packages using sudo apt dist-upgrade command
 0
 User prepares to run apt --fix-broken install to resolve package dependencies
@@ -38,9 +38,9 @@ User prepares to install additional packages
 User executes &#x27;sudo apt&#x27; command
 0
 User completes package management operations
-0
-User connects to remote server via SSH and enters password
 -1
+User connects to remote server via SSH and enters password
+0
 User views the contents of network using less command
 1
 User logs out of the SSH session and connection to the remote server is closed
