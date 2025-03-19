@@ -1,0 +1,8 @@
+0
+User navigates to the deerhacks directory, runs "yarn dev" to start a Next.js application, stops it with Ctrl+C, then navigates back up to the parent directory.
+0
+User navigates to the deerhacks-backend directory, runs "go build" to build a Go application, attempts to run the application with "go run main.go" but encounters an error about missing .env file, then navigates back to the parent directory.
+0
+User navigates to the deerhacks-cms directory, attempts to run "yarn install" but encounters an error about incompatible Node.js version, then navigates back to the parent directory.
+0
+User clones the deerhacks3-bot repository, navigates into it, installs Python dependencies with "pip install -r requirements.txt", attempts to run "python3 app.py" but encounters a KeyError about missing PREFIX environment variable, navigates back to the parent directory, then exits the terminal.
