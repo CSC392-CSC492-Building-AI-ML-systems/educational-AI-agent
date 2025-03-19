@@ -1,0 +1,10 @@
+0
+User initiates SSH connection to server 10.0.7.138
+-1
+User authenticates and logs into the remote machine
+0
+User installs asciinema package using sudo apt
+1
+User logs out of the remote SSH session
+0
+User exits the local terminal session

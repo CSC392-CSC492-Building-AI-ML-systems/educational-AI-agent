@@ -1,0 +1,8 @@
+0
+User connects to remote server via SSH using the command 'ssh 10.0.7.138' and enters password
+-1
+User changes their password on the remote server from '1M3T567!' to 'OpenYourHeartGPT'
+1
+User logs out of the SSH session and connection to the remote server is closed
+0
+User exits the terminal
