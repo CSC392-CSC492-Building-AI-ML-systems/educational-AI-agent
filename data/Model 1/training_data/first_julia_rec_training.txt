@@ -1,0 +1,8 @@
+0
+User connects to 10.0.7.138 via SSH and logs in with password
+-1
+User begins installing asciinema package using sudo apt install
+0
+System completes asciinema installation and performs system checks
+1
+User logs out of SSH session and exits the terminal
