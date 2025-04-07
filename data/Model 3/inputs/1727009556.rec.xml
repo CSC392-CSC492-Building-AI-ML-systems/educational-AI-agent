@@ -1,0 +1,180 @@
+<?xml version="1.0" ?>
+<recording version="2" width="319" height="92" timestamp="1727009557">
+<annotations>
+  <layer>
+      <annotation beginning="0071459" end="29339981">User connects to a remote server using an SSH command and enters their password.
+      Tool: Alpine Linux.
+      Subtool: Busybox shell
+      Result: successResult
+    </annotation>
+      <annotation beginning="31580684" end="31591914">User logs out of the SSH session and prepares to exit the terminal.
+      Tool: Alpine Linux.
+      Subtool: Busybox shell
+      Result: successResult
+    </annotation>
+  </layer>
+  <layer title="Individual commands">
+    <annotation beginning="11985103" end="29339981">User attempts to change their password to a new value. 
+      Tool: Alpine Linux.
+      Subtool: Busybox shell
+      Result: successResult
+    </annotation>
+    <annotation beginning="33647017" end="33647764">User exits the local terminal session.
+      Tool: Alpine Linux.
+      Subtool: Busybox shell
+      Result: successResult
+    </annotation>
+  </layer>
+</annotations>
+  <system_output timestamp="0.071459">[?2004h]0;demo@boxtop: ~demo@boxtop:~$ </system_output>
+  <user_input timestamp="3.724374">s</user_input>
+  <system_output timestamp="3.725312">s</system_output>
+  <user_input timestamp="3.944484">s</user_input>
+  <system_output timestamp="3.945402">s</system_output>
+  <user_input timestamp="4.166899">h</user_input>
+  <system_output timestamp="4.167862">h</system_output>
+  <user_input timestamp="4.3286"> </user_input>
+  <system_output timestamp="4.329581"> </system_output>
+  <user_input timestamp="4.648216">1</user_input>
+  <system_output timestamp="4.64918">1</system_output>
+  <user_input timestamp="4.828329">0</user_input>
+  <system_output timestamp="4.829196">0</system_output>
+  <user_input timestamp="5.090241">.</user_input>
+  <system_output timestamp="5.091185">.</system_output>
+  <user_input timestamp="5.250818">0</user_input>
+  <system_output timestamp="5.251636">0</system_output>
+  <user_input timestamp="5.431616">.</user_input>
+  <system_output timestamp="5.432483">.</system_output>
+  <user_input timestamp="5.85454">7</user_input>
+  <system_output timestamp="5.855438">7</system_output>
+  <user_input timestamp="6.074859">.</user_input>
+  <system_output timestamp="6.075734">.</system_output>
+  <user_input timestamp="6.435266">1</user_input>
+  <system_output timestamp="6.43612">1</system_output>
+  <user_input timestamp="6.778539">3</user_input>
+  <system_output timestamp="6.779415">3</system_output>
+  <user_input timestamp="7.178519">7</user_input>
+  <system_output timestamp="7.179402">7</system_output>
+  <user_input timestamp="7.663922"></user_input>
+  <system_output timestamp="7.664737">[K</system_output>
+  <user_input timestamp="7.887423">8</user_input>
+  <system_output timestamp="7.888286">8</system_output>
+  <user_input timestamp="9.000601">
+</user_input>
+  <system_output timestamp="9.001515">
+</system_output>
+  <system_output timestamp="9.001629">[?2004l
+</system_output>
+  <system_output timestamp="9.586503">
+demo@10.0.7.138's password: </system_output>
+  <user_input timestamp="9.958319">1</user_input>
+  <user_input timestamp="10.038434">M</user_input>
+  <user_input timestamp="10.198845">3</user_input>
+  <user_input timestamp="10.298877">T</user_input>
+  <user_input timestamp="10.480309">5</user_input>
+  <user_input timestamp="10.579129">6</user_input>
+  <user_input timestamp="10.920891">7</user_input>
+  <user_input timestamp="11.103528">!</user_input>
+  <user_input timestamp="11.241265">
+</user_input>
+  <system_output timestamp="11.242199">
+</system_output>
+  <system_output timestamp="11.518481">Linux boxtop 6.6.13-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.6.13-1 (2024-01-20) x86_64
+
+
+Plan your installation, and FAI installs your plan.
+
+Last login: Sun Sep 22 12:50:30 2024 from 10.0.7.1
+
+</system_output>
+  <system_output timestamp="11.587303">[?2004h]0;demo@boxtop: ~demo@boxtop:~$ </system_output>
+  <user_input timestamp="11.985103">p</user_input>
+  <system_output timestamp="11.988199">p</system_output>
+  <user_input timestamp="12.146566">a</user_input>
+  <system_output timestamp="12.158429">a</system_output>
+  <user_input timestamp="12.308408">s</user_input>
+  <system_output timestamp="12.323088">s</system_output>
+  <user_input timestamp="12.490203">s</user_input>
+  <system_output timestamp="12.513615">s</system_output>
+  <user_input timestamp="12.748143">w</user_input>
+  <system_output timestamp="12.770986">w</system_output>
+  <user_input timestamp="13.071223">d</user_input>
+  <system_output timestamp="13.079019">d</system_output>
+  <user_input timestamp="13.352127">
+</user_input>
+  <system_output timestamp="13.375242">
+[?2004l
+</system_output>
+  <system_output timestamp="14.956765">Changing password for demo.
+Current password: </system_output>
+  <user_input timestamp="15.932853">1</user_input>
+  <user_input timestamp="16.033733">M</user_input>
+  <user_input timestamp="16.195366">3</user_input>
+  <user_input timestamp="16.317828">T</user_input>
+  <user_input timestamp="16.517665">5</user_input>
+  <user_input timestamp="16.57855">6</user_input>
+  <user_input timestamp="16.937213">7</user_input>
+  <user_input timestamp="17.118217">!</user_input>
+  <user_input timestamp="17.297791">
+</user_input>
+  <system_output timestamp="17.32098">
+</system_output>
+  <system_output timestamp="17.416283">New password: </system_output>
+  <user_input timestamp="19.239669">O</user_input>
+  <user_input timestamp="19.462807">p</user_input>
+  <user_input timestamp="19.663239">e</user_input>
+  <user_input timestamp="19.823472">n</user_input>
+  <user_input timestamp="20.165214">Y</user_input>
+  <user_input timestamp="20.328604">o</user_input>
+  <user_input timestamp="20.467273">u</user_input>
+  <user_input timestamp="20.684951">r</user_input>
+  <user_input timestamp="21.066578">H</user_input>
+  <user_input timestamp="21.224623">e</user_input>
+  <user_input timestamp="21.324622">a</user_input>
+  <user_input timestamp="21.46358">r</user_input>
+  <user_input timestamp="21.725808">t</user_input>
+  <user_input timestamp="22.108267">G</user_input>
+  <user_input timestamp="22.204951">P</user_input>
+  <user_input timestamp="22.423659">T</user_input>
+  <user_input timestamp="22.764709">
+</user_input>
+  <system_output timestamp="22.788938">
+Retype new password: </system_output>
+  <user_input timestamp="23.582787">O</user_input>
+  <user_input timestamp="23.804832">p</user_input>
+  <user_input timestamp="24.002847">e</user_input>
+  <user_input timestamp="24.184193">n</user_input>
+  <user_input timestamp="24.486491">Y</user_input>
+  <user_input timestamp="24.665441">o</user_input>
+  <user_input timestamp="24.804858">u</user_input>
+  <user_input timestamp="25.024414">r</user_input>
+  <user_input timestamp="25.449668">H</user_input>
+  <user_input timestamp="25.652843">e</user_input>
+  <user_input timestamp="25.77554">a</user_input>
+  <user_input timestamp="25.996544">r</user_input>
+  <user_input timestamp="26.261924">t</user_input>
+  <user_input timestamp="26.706184">G</user_input>
+  <user_input timestamp="26.765363">P</user_input>
+  <user_input timestamp="27.001545">T</user_input>
+  <user_input timestamp="27.340847">
+</user_input>
+  <system_output timestamp="27.350003">
+</system_output>
+  <system_output timestamp="29.339981">passwd: password updated successfully
+[?2004h]0;demo@boxtop: ~demo@boxtop:~$ </system_output>
+  <user_input timestamp="31.580684"/>
+  <system_output timestamp="31.585122">[?2004l
+
+logout
+</system_output>
+  <system_output timestamp="31.590318">Connection to 10.0.7.138 closed.
+
+</system_output>
+  <system_output timestamp="31.591579">[?2004h</system_output>
+  <system_output timestamp="31.591914">]0;demo@boxtop: ~demo@boxtop:~$ </system_output>
+  <user_input timestamp="33.647017"/>
+  <system_output timestamp="33.647764">[?2004l
+
+exit
+</system_output>
+</recording>
