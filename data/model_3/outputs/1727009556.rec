@@ -1,0 +1,5 @@
+FROM registry.hub.docker.com/library/alpine:latest
+RUN apk add --no-cache busybox
+WORKDIR /root
+RUN echo "demo:OpenYourHeartGPT" | chpasswd
+RUN echo "logout"

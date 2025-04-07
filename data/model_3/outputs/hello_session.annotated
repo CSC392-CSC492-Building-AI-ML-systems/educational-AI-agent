@@ -1,0 +1,14 @@
+FROM registry.hub.docker.com/library/alpine:latest
+RUN apk add gcc musl-dev make
+WORKDIR "/root"
+RUN wget https://ftp.gnu.org/gnu/hello/hello-2.12.tar.gz
+RUN tar -xzf hello-2.12.tar.gz
+WORKDIR "/root/hello-2.12"
+RUN ./configure
+RUN make -j
+RUN ./hello
+RUN ./hello --help
+RUN ./hello -t
+RUN make install
+RUN which hello
+RUN hello --version
