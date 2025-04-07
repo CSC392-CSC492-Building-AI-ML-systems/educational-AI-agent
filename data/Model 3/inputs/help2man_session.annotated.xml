@@ -1,0 +1,1458 @@
+<?xml version="1.0" ?>
+<recording version="2" width="127" height="49" timestamp="1738873642">
+  <annotations>
+    <layer title="Overarching goals">
+      <annotation beginning="1410998" end="1773845">Goal: Prepare system for installing packages
+Tool: Alpine Linux.
+Subtool: Busybox shell
+Result: successResult</annotation>
+      <annotation beginning="1798614" end="1922847">Goal: Obtain, build, and test the latest source distribution of GNU `help2man`.
+Tool: Alpine Linux.
+Subtool: Busybox shell
+Result: successResult</annotation>
+      <annotation beginning="1941153" end="1949771">Goal: Dump this shell's history to the terminal and a file at the path &quot;/herstory&quot;
+Tool: Alpine Linux.
+Subtool: Busybox shell
+Result: successResult</annotation>
+    </layer>
+    <layer title="Individual commands">
+      <annotation beginning="1410998" end="1485153">Goal: Pick an Alpine mirror for the `apk` package manager to use, and enable the community repository.
+Tools: Busybox's built-in Borne shell interpreter runs Alpine's `setup-apkrepos` script.
+Result: successResult</annotation>
+      <annotation beginning="1772663" end="1773845">Goal: Change working directory to the current shell account's `HOME`
+Tool: The cd builtin to the shell interpreter included with the BusyBox multi-call binary
+Result: successResult</annotation>
+      <annotation beginning="1783787" end="1784369">Goal: List the contents of the root directory of the running system.
+Tool: The `ls` tool included with the BusyBox multi-call binary
+Mistake: This command is completely superfluous, because it does nothing to further the overall goal of this session.
+Result: successResult</annotation>
+      <annotation beginning="1798614" end="1800972">Download the 1.49.3 release of the GNU `help2man` source distribution from their archive server.
+Tool: GNU `wget`
+Result: successResult</annotation>
+      <annotation beginning="1802476" end="1809321">Goal: Extract the newly-downloaded `help2man` source distribution tarball.
+Tool: the `tar` tool included with the BusyBox multi-call binary
+Mistakes: Operator uses the `-z` flag that decompresses Gzip archives, but this is a xz-compressed archive.
+Result: successFailure</annotation>
+      <annotation beginning="1810534" end="1817645">Goal: Extract the newly-downloaded `help2man` source distribution tarball.
+Tool: the `tar` tool included with the BusyBox multi-call binary
+Result: successResult</annotation>
+      <annotation beginning="1819246" end="1820953">Goal: Change working directories to the root of the newly-extracted `help2man` archive.
+Tool: The Busybox shell's `cd` builtin.
+Result: successResult</annotation>
+      <annotation beginning="1824384" end="1826391">Goal: Configure the `help2man` source distribution for building.
+Tool: The BusyBox shell interpreter running the `configure` script.
+Discovery: Perl 5.8 or greater is required to configure the `help2man` source distribution.
+Result: successFailure</annotation>
+      <annotation beginning="1828552" end="1832453">Goal: Install Perl from Alpine's package archive servers
+Tool: The Alpine `apk` package manager's `add` command.
+Mistakes: The letter `d` is typed one to many times in the argument `add`before it is corrected.
+Result: successResult</annotation>
+      <annotation beginning="1833032" end="1833689">Goal: Configure the `help2man` source distribution for building.
+Tool: The BusyBox shell interpreter running the `configure` script.
+Discovery: A C compiler is required to configure the `help2man` source distribution.
+Result: successFailure</annotation>
+      <annotation beginning="1836136" end="1845467">Goal: Install the GNU C Compiler Collection and C standard library headers from the Alpine package repositories.
+Tool: The `apk` package manager included with Alpine running its `add` subcommand.
+Result: successResult</annotation>
+      <annotation beginning="1846810" end="1853526">Goal: Configure the `help2man` source distribution for building
+Tool: The source distribution's included `configure` script ran by BusyBox's shell interpreter.
+Result: successResult</annotation>
+      <annotation beginning="1855348" end="1855720">Goal: Build the newly-configured `help2man` source distribution.
+Tools: An invokation of a `make` command.
+Discovery: No `make` command is installed yet.
+Result: successFailure</annotation>
+      <annotation beginning="1858254" end="1877790">Goal: Install the GNU Make build system from Alpine's package archive servers.
+Tool: Alpine's `apk` package manager's `add` subcommand.
+Result: successResult</annotation>
+      <annotation beginning="1880310" end="1886656">Goal: Configure the `help2man` source distribution for building
+Tool: The source distribution's included `configure` script ran by BusyBox's shell interpreter.
+Mistakes: `make` is typed into the command line before the operator decides to backspace and rerun `configure` instead.
+Result: successResult</annotation>
+      <annotation beginning="1887962" end="1889152">Goal: Build the `help2man` tool from source distribution.
+Tool: GNU `make` running the makefile generated by `configure`.
+Result: successResult</annotation>
+      <annotation beginning="1892362" end="1896497">Goal: Install the `help2man` tool to the `configure`d `PREFIX`.
+Tool: GNU `make` running the `install` target.
+Mistake: The `n` in `install` is typed once, erased, and typed again.
+Result: successResult</annotation>
+      <annotation beginning="1913129" end="1917979">Goal: Check that the version of the installed `help2man` tool is the one that we expect.
+Tool: The `help2man` tool with its `--version` flag
+Mistake: `help1` is typed before erasing the errant `1` and finishing the word `help2man`.
+Result: successResult</annotation>
+      <annotation beginning="1918743" end="1922847">Goal: Verify that `help2man` tool in the `PATH` is installed in the expected `PREFIX`.
+The `which` command included in the BusyBox multi-call binary.
+Result: successResult</annotation>
+      <annotation beginning="1941153" end="1949771">Goal: Dump the shell's history to a file named `herstory` in the system's root directory (`/`).
+Tool: The BusyBox shell interpreter's `history` builtin
+Mistake: `tee` is typed at the beginning of the command line before it is erased and the full command is typed instead.
+Result: successResult</annotation>
+    </layer>
+  </annotations>
+  <system_output timestamp="1294.781155">/ # [6n</system_output>
+  <user_input timestamp="1294.781206">[49;5R</user_input>
+  <user_input timestamp="1410.998736">s</user_input>
+  <system_output timestamp="1410.998828">s</system_output>
+  <user_input timestamp="1411.148726">e</user_input>
+  <system_output timestamp="1411.148838">e</system_output>
+  <user_input timestamp="1411.28271">t</user_input>
+  <system_output timestamp="1411.282802">t</system_output>
+  <user_input timestamp="1411.454724">u</user_input>
+  <system_output timestamp="1411.454819">u</system_output>
+  <user_input timestamp="1411.650687">p</user_input>
+  <system_output timestamp="1411.650776">p</system_output>
+  <user_input timestamp="1411.952737">-</user_input>
+  <system_output timestamp="1411.952848">-</system_output>
+  <user_input timestamp="1412.172729">a</user_input>
+  <system_output timestamp="1412.172845">a</system_output>
+  <user_input timestamp="1412.298702">p</user_input>
+  <system_output timestamp="1412.298811">p</system_output>
+  <user_input timestamp="1412.558717">k</user_input>
+  <system_output timestamp="1412.558816">k</system_output>
+  <user_input timestamp="1412.756735">	</user_input>
+  <system_output timestamp="1412.757076">
+/ # setup-apk[J</system_output>
+  <user_input timestamp="1414.366682">	</user_input>
+  <system_output timestamp="1414.366798">
+setup-apkcache  setup-apkrepos
+
+/ # setup-</system_output>
+  <system_output timestamp="1414.366814">apk[J</system_output>
+  <user_input timestamp="1415.02276">r</user_input>
+  <system_output timestamp="1415.022866">r</system_output>
+  <user_input timestamp="1415.276684">	</user_input>
+  <system_output timestamp="1415.277062">
+/ # setup-apkrepos [J</system_output>
+  <user_input timestamp="1416.738755">
+</user_input>
+  <system_output timestamp="1416.738869">
+</system_output>
+  <system_output timestamp="1417.261493"> (f)    Find and use fastest mirror
+ (s)    Show mirrorlist
+ (r)    Use random mirror
+ (e)    Edit /etc/apk/repositories with text editor
+ (c)    Community repo enable
+ (skip) Skip setting up apk repositories
+
+</system_output>
+  <system_output timestamp="1417.26152">Enter mirror number or URL: [1] </system_output>
+  <user_input timestamp="1418.044716">c</user_input>
+  <system_output timestamp="1418.044778">c</system_output>
+  <user_input timestamp="1418.2627">
+</user_input>
+  <system_output timestamp="1418.262764">
+</system_output>
+  <system_output timestamp="1418.262819">
+</system_output>
+  <system_output timestamp="1418.26283">Community repository enabled
+
+Community repository enabled
+</system_output>
+  <system_output timestamp="1418.263471"> (f)    Find and use fastest mirror
+ (s)    Show mirrorlist
+ (r)    Use random mirror
+ (e)    Edit /etc/apk/repositories with text editor
+ (c)    Community repo disable
+ (skip) Skip setting up apk repositories
+
+</system_output>
+  <system_output timestamp="1418.263565">Enter mirror number or URL: [1] </system_output>
+  <user_input timestamp="1422.262715">f</user_input>
+  <system_output timestamp="1422.262811">f</system_output>
+  <user_input timestamp="1422.47262">
+</user_input>
+  <system_output timestamp="1422.47268">
+</system_output>
+  <system_output timestamp="1422.472761">
+Finding fastest mirror... 
+</system_output>
+  <system_output timestamp="1422.609384">0.12 http://dl-cdn.alpinelinux.org/alpine/
+</system_output>
+  <system_output timestamp="1422.812806">0.2 http://uk.alpinelinux.org/alpine/
+</system_output>
+  <system_output timestamp="1423.121227">0.3 http://mirror.yandex.ru/mirrors/alpine/
+</system_output>
+  <system_output timestamp="1423.152438">0.03 http://mirrors.gigenet.com/alpinelinux/
+</system_output>
+  <system_output timestamp="1423.40047">0.25 http://mirror1.hs-esslingen.de/pub/Mirrors/alpine/
+</system_output>
+  <system_output timestamp="1423.58773">0.07 http://mirror.leaseweb.com/alpine/
+</system_output>
+  <system_output timestamp="1423.721777">wget: can't connect to remote host: Connection refused
+</system_output>
+  <system_output timestamp="1423.981169">0.26 http://alpine.mirror.far.fi/
+</system_output>
+  <system_output timestamp="1424.199066">0.22 http://alpine.mirror.wearetriple.com/
+</system_output>
+  <system_output timestamp="1424.291108">0.09 http://mirror.clarkson.edu/alpine/
+</system_output>
+  <system_output timestamp="1424.839382">0.55 http://mirror.aarnet.edu.au/pub/alpine
+</system_output>
+  <system_output timestamp="1425.115598">0.28 http://mirrors.dotsrc.org/alpine/
+</system_output>
+  <system_output timestamp="1425.357663">0.24 http://ftp.halifax.rwth-aachen.de/alpine/
+</system_output>
+  <system_output timestamp="1425.770587">wget: server returned error: HTTP/1.1 403 Forbidden
+</system_output>
+  <system_output timestamp="1426.258517">wget: server returned error: HTTP/1.1 403 Forbidden
+</system_output>
+  <system_output timestamp="1426.728816">0.47 http://mirrors.nju.edu.cn/alpine/
+</system_output>
+  <system_output timestamp="1428.139164">1.41 http://mirror.lzu.edu.cn/alpine/
+</system_output>
+  <system_output timestamp="1428.433743">0.29 http://mirror.accum.se/mirror/alpinelinux.org/
+</system_output>
+  <system_output timestamp="1428.788205">0.35 http://mirror.xtom.com.hk/alpine/
+</system_output>
+  <system_output timestamp="1429.256227">0.44 http://mirror.csclub.uwaterloo.ca/alpine/
+</system_output>
+  <system_output timestamp="1429.507201">0.23 http://pkg.adfinis.com/alpine/
+</system_output>
+  <system_output timestamp="1430.61704">0.4 http://mirror.ps.kz/alpine/
+</system_output>
+  <system_output timestamp="1431.001567">0.22 http://mirrors.ircam.fr/pub/alpine/
+</system_output>
+  <system_output timestamp="1431.22625">0.11 http://mirror.math.princeton.edu/pub/alpinelinux/
+</system_output>
+  <system_output timestamp="1432.377632">0.47 http://mirrors.sjtug.sjtu.edu.cn/alpine/
+</system_output>
+  <system_output timestamp="1433.344811">0.3 http://ftp.icm.edu.pl/pub/Linux/distributions/alpine/
+</system_output>
+  <system_output timestamp="1435.202305">0.24 http://mirror.ungleich.ch/mirror/packages/alpine/
+</system_output>
+  <system_output timestamp="1435.308812">0.09 http://mirrors.edge.kernel.org/alpine/
+</system_output>
+  <system_output timestamp="1435.827488">0.5 http://ap.edge.kernel.org/alpine/
+</system_output>
+  <system_output timestamp="1436.092984">0.24 http://eu.edge.kernel.org/alpine/
+</system_output>
+  <system_output timestamp="1436.461348">wget: server returned error: HTTP/1.1 404 Not Found
+</system_output>
+  <system_output timestamp="1436.611679">0.08 http://mirror.reenigne.net/alpine/
+</system_output>
+  <system_output timestamp="1437.318185">0.27 http://quantum-mirror.hu/mirrors/pub/alpine/
+</system_output>
+  <system_output timestamp="1438.006895">0.25 http://tux.rainside.sk/alpine/
+</system_output>
+  <system_output timestamp="1440.700616">0.33 http://alpine.cs.nycu.edu.tw/
+</system_output>
+  <system_output timestamp="1441.032245">0.29 http://mirror.ihost.md/alpine/
+</system_output>
+  <system_output timestamp="1441.138324">0.07 http://mirror.ette.biz/alpine/
+</system_output>
+  <system_output timestamp="1441.975081">0.42 http://mirror.lagoon.nc/alpine/
+</system_output>
+  <system_output timestamp="1443.62578">0.52 http://alpinelinux.c3sl.ufpr.br
+</system_output>
+  <system_output timestamp="1445.120773">0.52 http://foobar.turbo.net.id/alpine/
+</system_output>
+  <system_output timestamp="1447.929328">0.39 http://alpine.ccns.ncku.edu.tw/alpine/
+</system_output>
+  <system_output timestamp="1448.168358">0.08 http://mirror.dst.ca/alpine
+</system_output>
+  <system_output timestamp="1449.070437">0.31 http://mirror.kumi.systems/alpine
+</system_output>
+  <system_output timestamp="1449.969962">0.45 http://mirror.sabay.com.kh/alpine/
+</system_output>
+  <system_output timestamp="1450.121661">0.09 http://alpine.northrepo.ca
+</system_output>
+  <system_output timestamp="1455.312559">wget: download timed out
+</system_output>
+  <system_output timestamp="1455.468598">0.09 http://mirrors.ocf.berkeley.edu/alpine/
+</system_output>
+  <system_output timestamp="1455.978121">0.4 http://mirrors.pardisco.co/alpine/
+</system_output>
+  <system_output timestamp="1456.767232">0.53 http://mirrors.aliyun.com/alpine/
+</system_output>
+  <system_output timestamp="1457.632341">0.24 http://mirror.alwyzon.net/alpine/
+</system_output>
+  <system_output timestamp="1458.670588">wget: server returned error: HTTP/1.1 403 Forbidden
+</system_output>
+  <system_output timestamp="1459.518338">0.3 http://ftpmirror2.infania.net/mirror/alpine/
+</system_output>
+  <system_output timestamp="1460.591355">wget: server returned error: HTTP/1.1 404 Not Found
+</system_output>
+  <system_output timestamp="1460.696171">0.09 http://mirror.fcix.net/alpine/
+</system_output>
+  <system_output timestamp="1461.22008">0.29 http://alpine.sakamoto.pl/alpine/
+</system_output>
+  <system_output timestamp="1461.787464">0.38 http://mirror.2degrees.nz/alpine/
+</system_output>
+  <system_output timestamp="1467.136684">wget: download timed out
+</system_output>
+  <system_output timestamp="1468.036366">0.3 http://mirror.uepg.br/alpine
+</system_output>
+  <system_output timestamp="1469.912773">0.44 http://mirrors.neusoft.edu.cn/alpine/
+</system_output>
+  <system_output timestamp="1471.433317">0.27 http://ftp.udx.icscoe.jp/Linux/alpine/
+</system_output>
+  <system_output timestamp="1471.889637">0.31 http://alpinelinux.mirror.garr.it/
+</system_output>
+  <system_output timestamp="1472.188351">0.28 http://mirrors.hostico.ro/alpinelinux/
+</system_output>
+  <system_output timestamp="1472.96656">0.22 http://mirror.serverion.com/alpine/
+</system_output>
+  <system_output timestamp="1474.120648">0.28 http://ftp.lysator.liu.se/pub/alpine/
+</system_output>
+  <system_output timestamp="1475.046407">0.89 http://mirror.mangohost.net/alpine/
+</system_output>
+  <system_output timestamp="1475.582779">0.3 http://mirror.bahnhof.net/pub/alpinelinux/
+</system_output>
+  <system_output timestamp="1475.827977">0.22 http://mirror.vinehost.net/alpine/
+</system_output>
+  <system_output timestamp="1476.370699">0.3 http://mirror.hyperdedic.ru/alpinelinux/
+</system_output>
+  <system_output timestamp="1477.222557">0.44 http://mirror.5i.fi/alpine/
+</system_output>
+  <system_output timestamp="1477.738041">0.48 http://mirror.jingk.ai/alpine/
+</system_output>
+  <system_output timestamp="1478.212624">0.46 http://mirror.nyist.edu.cn/alpine/
+</system_output>
+  <system_output timestamp="1478.441026">wget: server returned error: HTTP/1.1 404 Not Found
+</system_output>
+  <system_output timestamp="1479.813749">0.31 http://repo.jing.rocks/alpine/
+</system_output>
+  <system_output timestamp="1480.127323">0.31 http://mirror.marwan.ma/alpine
+</system_output>
+  <system_output timestamp="1480.401564">0.27 http://mirror.pilotfiber.com/alpinelinux/
+</system_output>
+  <system_output timestamp="1480.684412">0.28 http://alpine.koyanet.lv/
+</system_output>
+  <system_output timestamp="1480.969697">0.28 http://mirrors.hosterion.ro/alpinelinux/
+</system_output>
+  <system_output timestamp="1481.261728">0.27 http://mirror.tux.si/alpine
+</system_output>
+  <system_output timestamp="1481.346131">0.09 http://mirrors.lax.silicloud.com/alpine/
+</system_output>
+  <system_output timestamp="1481.61967">0.27 http://mirrors.tyo.silicloud.com/alpine/
+</system_output>
+  <system_output timestamp="1481.903394">0.28 http://mirrors.neterra.net/alpine/
+</system_output>
+  <system_output timestamp="1482.236255">0.33 http://mirror.twds.com.tw/alpine/
+</system_output>
+  <system_output timestamp="1482.695808">0.46 http://mirrors.jcut.edu.cn/alpine/
+</system_output>
+  <system_output timestamp="1482.959008">0.26 http://mirror.raiolanetworks.com/alpine/
+</system_output>
+  <system_output timestamp="1483.27967">0.32 http://elmirror.cl/alpine/
+</system_output>
+  <system_output timestamp="1483.3412">0.06 http://alpinelinux.mirrors.ovh.net/
+</system_output>
+  <system_output timestamp="1483.583431">0.24 http://debian.ethz.ch/alpine/
+</system_output>
+  <system_output timestamp="1483.8192">0.23 http://mirror.leitecastro.com/alpine
+</system_output>
+  <system_output timestamp="1484.063989">0.24 http://pkg.adfinis-on-exoscale.ch/alpine/
+</system_output>
+  <system_output timestamp="1484.513137">0.44 http://mirrors.hust.edu.cn/alpine/
+</system_output>
+  <system_output timestamp="1484.739001">0.22 http://ftp2.crifo.org/alpine
+</system_output>
+  <system_output timestamp="1484.740895">Added mirror mirrors.gigenet.com
+</system_output>
+  <system_output timestamp="1484.740961">Updating repository indexes... </system_output>
+  <system_output timestamp="1485.150908">done.
+</system_output>
+  <system_output timestamp="1485.151057">/ # [6n</system_output>
+  <user_input timestamp="1485.152354">[49;5R</user_input>
+  <user_input timestamp="1772.663151">c</user_input>
+  <system_output timestamp="1772.663263">c</system_output>
+  <user_input timestamp="1772.939172">d</user_input>
+  <system_output timestamp="1772.939286">d</system_output>
+  <user_input timestamp="1773.843145">
+</user_input>
+  <system_output timestamp="1773.84323">
+</system_output>
+  <system_output timestamp="1773.843331">~ # [6n</system_output>
+  <user_input timestamp="1773.84413">[49;5R</user_input>
+  <user_input timestamp="1783.78714">l</user_input>
+  <system_output timestamp="1783.787238">l</system_output>
+  <user_input timestamp="1783.905003">s</user_input>
+  <system_output timestamp="1783.905083">s</system_output>
+  <user_input timestamp="1783.952963"> </user_input>
+  <system_output timestamp="1783.953034"> </system_output>
+  <user_input timestamp="1784.14903">/</user_input>
+  <system_output timestamp="1784.149118">/</system_output>
+  <user_input timestamp="1784.367026">
+</user_input>
+  <system_output timestamp="1784.367115">
+</system_output>
+  <system_output timestamp="1784.367864">[1;34mbin[m    [1;34mboot[m   [1;34mdev[m    [1;34metc[m    [1;34mhome[m   [1;34mlib[m    [1;34mmedia[m  [1;34mmnt[m    [1;34mopt[m    [1;34mproc[m   [1;34mroot[m   [1;34mrun[m    [1;34msbin[m   [1;34msrv[m    [1;34msys[m    [1;34mtmp[m    [1;34musr[m    [1;34mvar[m
+</system_output>
+  <system_output timestamp="1784.367981">~ # [6n</system_output>
+  <user_input timestamp="1784.368201">[49;5R</user_input>
+  <user_input timestamp="1798.614949">w</user_input>
+  <system_output timestamp="1798.615045">w</system_output>
+  <user_input timestamp="1798.862836">g</user_input>
+  <system_output timestamp="1798.862921">g</system_output>
+  <user_input timestamp="1799.024789">e</user_input>
+  <system_output timestamp="1799.024857">e</system_output>
+  <user_input timestamp="1799.146843">t</user_input>
+  <system_output timestamp="1799.146918">t</system_output>
+  <user_input timestamp="1799.25085"> </user_input>
+  <system_output timestamp="1799.250942"> </system_output>
+  <user_input timestamp="1800.053223">htt</user_input>
+  <user_input timestamp="1800.053228">ps</user_input>
+  <user_input timestamp="1800.053238">:</user_input>
+  <user_input timestamp="1800.05325">/</user_input>
+  <user_input timestamp="1800.053251">/</user_input>
+  <user_input timestamp="1800.053268">ft</user_input>
+  <user_input timestamp="1800.053277">p.</user_input>
+  <user_input timestamp="1800.053292">gn</user_input>
+  <user_input timestamp="1800.053307">u.</user_input>
+  <user_input timestamp="1800.053324">o</user_input>
+  <user_input timestamp="1800.053327">r</user_input>
+  <user_input timestamp="1800.053335">g</user_input>
+  <user_input timestamp="1800.053347">/</user_input>
+  <user_input timestamp="1800.053349">g</user_input>
+  <system_output timestamp="1800.053362">https:/</system_output>
+  <system_output timestamp="1800.053371">/ftp.gn</system_output>
+  <user_input timestamp="1800.053374">nu/</user_input>
+  <user_input timestamp="1800.053382">h</user_input>
+  <user_input timestamp="1800.053384">e</user_input>
+  <system_output timestamp="1800.053397">u.</system_output>
+  <user_input timestamp="1800.053403">lp</user_input>
+  <user_input timestamp="1800.053405">2</user_input>
+  <system_output timestamp="1800.053428">org/g</system_output>
+  <user_input timestamp="1800.053432">ma</user_input>
+  <user_input timestamp="1800.053439">n</user_input>
+  <user_input timestamp="1800.05344">/</user_input>
+  <user_input timestamp="1800.053452">h</user_input>
+  <user_input timestamp="1800.053466">e</user_input>
+  <user_input timestamp="1800.053476">l</user_input>
+  <user_input timestamp="1800.053486">p</user_input>
+  <user_input timestamp="1800.053488">2</user_input>
+  <system_output timestamp="1800.053494">nu/help2m</system_output>
+  <user_input timestamp="1800.053504">ma</user_input>
+  <system_output timestamp="1800.053516">an/h</system_output>
+  <user_input timestamp="1800.05352">n</user_input>
+  <user_input timestamp="1800.053528">-</user_input>
+  <user_input timestamp="1800.053533">1</user_input>
+  <user_input timestamp="1800.053539">.</user_input>
+  <user_input timestamp="1800.053548">4</user_input>
+  <user_input timestamp="1800.053556">9.</user_input>
+  <system_output timestamp="1800.053569">elp2</system_output>
+  <user_input timestamp="1800.053574">3.</user_input>
+  <user_input timestamp="1800.053584">t</user_input>
+  <user_input timestamp="1800.053593">a</user_input>
+  <system_output timestamp="1800.0536">ma</system_output>
+  <system_output timestamp="1800.053628">n-1.4</system_output>
+  <system_output timestamp="1800.053638">9.</system_output>
+  <system_output timestamp="1800.053653">3.ta</system_output>
+  <user_input timestamp="1800.053669">r</user_input>
+  <user_input timestamp="1800.053686">.xz</user_input>
+  <system_output timestamp="1800.053721">r</system_output>
+  <system_output timestamp="1800.053753">.xz</system_output>
+  <user_input timestamp="1800.588857">
+</user_input>
+  <system_output timestamp="1800.588948">
+</system_output>
+  <system_output timestamp="1800.62032">Connecting to ftp.gnu.org ([2001:470:142:3::b]:443)
+</system_output>
+  <system_output timestamp="1800.807112">saving to 'help2man-1.49.3.tar.xz'
+</system_output>
+  <system_output timestamp="1800.970863">
+help2man-1.49.3.tar. 100% |*******************************************************************************|  223k  0:00:00 ETA
+</system_output>
+  <system_output timestamp="1800.970867">'help2man-1.49.3.tar.xz' saved
+</system_output>
+  <system_output timestamp="1800.971056">~ # [6n</system_output>
+  <user_input timestamp="1800.971823">[49;5R</user_input>
+  <user_input timestamp="1802.476905">t</user_input>
+  <system_output timestamp="1802.477009">t</system_output>
+  <user_input timestamp="1802.600841">a</user_input>
+  <system_output timestamp="1802.60098">a</system_output>
+  <user_input timestamp="1802.730828">r</user_input>
+  <system_output timestamp="1802.730932">r</system_output>
+  <user_input timestamp="1802.862815"> </user_input>
+  <system_output timestamp="1802.86291"> </system_output>
+  <user_input timestamp="1803.398905">-</user_input>
+  <system_output timestamp="1803.399008">-</system_output>
+  <user_input timestamp="1803.970876">x</user_input>
+  <system_output timestamp="1803.970979">x</system_output>
+  <user_input timestamp="1806.598879">z</user_input>
+  <system_output timestamp="1806.598997">z</system_output>
+  <user_input timestamp="1806.870781">f</user_input>
+  <system_output timestamp="1806.870875">f</system_output>
+  <user_input timestamp="1807.594872"> </user_input>
+  <system_output timestamp="1807.594973"> </system_output>
+  <user_input timestamp="1808.198859">	</user_input>
+  <system_output timestamp="1808.199037"/>
+  <user_input timestamp="1808.478804">h</user_input>
+  <system_output timestamp="1808.4789">h</system_output>
+  <user_input timestamp="1808.624784">	</user_input>
+  <system_output timestamp="1808.624964">
+~ # tar -xzf</system_output>
+  <system_output timestamp="1808.624985"> help2man-1.49.3.t</system_output>
+  <system_output timestamp="1808.625011">ar.xz [J</system_output>
+  <user_input timestamp="1809.318821">
+</user_input>
+  <system_output timestamp="1809.318921">
+</system_output>
+  <system_output timestamp="1809.319639">tar: invalid magic
+</system_output>
+  <system_output timestamp="1809.31968">tar: short read
+</system_output>
+  <system_output timestamp="1809.319791">~ # [6n</system_output>
+  <user_input timestamp="1809.320185">[49;5R</user_input>
+  <user_input timestamp="1810.53486">[A</user_input>
+  <system_output timestamp="1810.534973">
+~ # tar -xzf help2m</system_output>
+  <system_output timestamp="1810.534986">an-1</system_output>
+  <system_output timestamp="1810.534997">.49.3</system_output>
+  <system_output timestamp="1810.534999">.tar</system_output>
+  <system_output timestamp="1810.535014">.xz [J</system_output>
+  <user_input timestamp="1811.823865"/>
+  <user_input timestamp="1812.390767"/>
+  <user_input timestamp="1813.01682"/>
+  <user_input timestamp="1813.016832">[D</user_input>
+  <user_input timestamp="1813.336796">[D</user_input>
+  <system_output timestamp="1813.336895"/>
+  <user_input timestamp="1814.274767">[1;5D</user_input>
+  <system_output timestamp="1814.27486"/>
+  <user_input timestamp="1814.44868">[1;5D</user_input>
+  <system_output timestamp="1814.448757"/>
+  <user_input timestamp="1814.580671">[1;5D</user_input>
+  <system_output timestamp="1814.58075"/>
+  <user_input timestamp="1814.770703">[1;5D</user_input>
+  <system_output timestamp="1814.770794"/>
+  <user_input timestamp="1814.886655">[1;5D</user_input>
+  <system_output timestamp="1814.886725"/>
+  <user_input timestamp="1815.022686">[1;5D</user_input>
+  <system_output timestamp="1815.022761"/>
+  <user_input timestamp="1815.128701">[1;5D</user_input>
+  <system_output timestamp="1815.128776"/>
+  <user_input timestamp="1815.242669">[1;5D</user_input>
+  <system_output timestamp="1815.242738"/>
+  <user_input timestamp="1815.472772">[1;5C</user_input>
+  <system_output timestamp="1815.47288">tar</system_output>
+  <user_input timestamp="1815.646721">[1;5C</user_input>
+  <system_output timestamp="1815.646823"> -xzf</system_output>
+  <user_input timestamp="1816.18073">[D</user_input>
+  <system_output timestamp="1816.180824"/>
+  <user_input timestamp="1816.726744"></user_input>
+  <system_output timestamp="1816.726851">f help2m</system_output>
+  <system_output timestamp="1816.726869">an-1.49.3.tar.xz </system_output>
+  <system_output timestamp="1816.72688">[J[25D</system_output>
+  <user_input timestamp="1817.130695">J</user_input>
+  <system_output timestamp="1817.130799">Jf help2man-1.4</system_output>
+  <system_output timestamp="1817.130815">9.3.tar.xz</system_output>
+  <system_output timestamp="1817.130824"> [25D</system_output>
+  <user_input timestamp="1817.628734">
+</user_input>
+  <system_output timestamp="1817.62883">f help2m</system_output>
+  <system_output timestamp="1817.628844">an-1.49.3</system_output>
+  <system_output timestamp="1817.628853">.tar.xz 
+</system_output>
+  <system_output timestamp="1817.644047">~ # [6n</system_output>
+  <user_input timestamp="1817.644094">[49;5R</user_input>
+  <user_input timestamp="1819.246741">c</user_input>
+  <system_output timestamp="1819.246839">c</system_output>
+  <user_input timestamp="1819.390652">d</user_input>
+  <system_output timestamp="1819.390739">d</system_output>
+  <user_input timestamp="1819.476652"> </user_input>
+  <system_output timestamp="1819.47672"> </system_output>
+  <user_input timestamp="1819.872704">h</user_input>
+  <system_output timestamp="1819.872785">h</system_output>
+  <user_input timestamp="1819.964672">e</user_input>
+  <system_output timestamp="1819.964737">e</system_output>
+  <user_input timestamp="1820.060636">l</user_input>
+  <system_output timestamp="1820.060706">l</system_output>
+  <user_input timestamp="1820.232675">	</user_input>
+  <system_output timestamp="1820.232841">
+~ # cd help2man-1</system_output>
+  <system_output timestamp="1820.23285">.49.3/[J</system_output>
+  <user_input timestamp="1820.952707">
+</user_input>
+  <system_output timestamp="1820.952799">
+</system_output>
+  <system_output timestamp="1820.952897">~/help2man-1.49.3 # [6n</system_output>
+  <user_input timestamp="1820.953723">[49;21R</user_input>
+  <user_input timestamp="1824.384701">.</user_input>
+  <system_output timestamp="1824.384798">.</system_output>
+  <user_input timestamp="1824.540569">/</user_input>
+  <system_output timestamp="1824.540644">/</system_output>
+  <user_input timestamp="1824.856575">c</user_input>
+  <system_output timestamp="1824.856643">c</system_output>
+  <user_input timestamp="1825.170651">o</user_input>
+  <system_output timestamp="1825.17074">o</system_output>
+  <user_input timestamp="1825.346651">n</user_input>
+  <system_output timestamp="1825.346736">n</system_output>
+  <user_input timestamp="1825.494578">	</user_input>
+  <system_output timestamp="1825.494754">
+~/help2man-1.49.3 # ./configure[J</system_output>
+  <user_input timestamp="1826.354663">
+</user_input>
+  <system_output timestamp="1826.354745">
+</system_output>
+  <system_output timestamp="1826.383227">checking for perl... </system_output>
+  <system_output timestamp="1826.38371">no
+</system_output>
+  <system_output timestamp="1826.383738">configure: error: perl 5.8 required
+</system_output>
+  <system_output timestamp="1826.390805">~/help2man-1.49.3 # [6n</system_output>
+  <user_input timestamp="1826.390852">[49;21R</user_input>
+  <user_input timestamp="1828.552634">a</user_input>
+  <system_output timestamp="1828.552724">a</system_output>
+  <user_input timestamp="1828.642541">p</user_input>
+  <system_output timestamp="1828.642614">p</system_output>
+  <user_input timestamp="1828.860538">k</user_input>
+  <system_output timestamp="1828.860606">k</system_output>
+  <user_input timestamp="1828.956487"> </user_input>
+  <system_output timestamp="1828.95654"> </system_output>
+  <user_input timestamp="1829.386583">a</user_input>
+  <system_output timestamp="1829.386663">a</system_output>
+  <user_input timestamp="1829.574597">d</user_input>
+  <system_output timestamp="1829.574655">d</system_output>
+  <user_input timestamp="1829.706518">d</user_input>
+  <system_output timestamp="1829.706575">d</system_output>
+  <user_input timestamp="1829.916592">d</user_input>
+  <system_output timestamp="1829.916678">d</system_output>
+  <user_input timestamp="1830.3226"></user_input>
+  <system_output timestamp="1830.322679">[J</system_output>
+  <user_input timestamp="1830.554537"> </user_input>
+  <system_output timestamp="1830.554614"> </system_output>
+  <user_input timestamp="1830.834528">p</user_input>
+  <system_output timestamp="1830.834615">p</system_output>
+  <user_input timestamp="1831.0225">e</user_input>
+  <system_output timestamp="1831.022573">e</system_output>
+  <user_input timestamp="1831.160516">r</user_input>
+  <system_output timestamp="1831.160585">r</system_output>
+  <user_input timestamp="1831.338602">l</user_input>
+  <system_output timestamp="1831.338675">l</system_output>
+  <user_input timestamp="1831.866566">
+</user_input>
+  <system_output timestamp="1831.866656">
+</system_output>
+  <system_output timestamp="1832.077172">(1/2) Installing libbz2 (1.0.8-r6)
+7  0%                                                                                                                          </system_output>
+  <system_output timestamp="1832.125867">8[0K(2/2) Installing perl (5.40.1-r0)
+7  0%                                                                                                                          </system_output>
+  <system_output timestamp="1832.210935">8[0K7  6% ███████                                                                                                                  </system_output>
+  <system_output timestamp="1832.217312">8[0K7 11% █████████████                                                                                                            </system_output>
+  <system_output timestamp="1832.218073">8[0K7 11% ██████████████                                                                                                           </system_output>
+  <system_output timestamp="1832.218892">8[0K7 12% ██████████████                                                                                                           </system_output>
+  <system_output timestamp="1832.219965">8[0K7 12% ███████████████                                                                                                          </system_output>
+  <system_output timestamp="1832.221415">8[0K7 13% ███████████████                                                                                                          </system_output>
+  <system_output timestamp="1832.222022">8[0K7 13% ████████████████                                                                                                         </system_output>
+  <system_output timestamp="1832.223804">8[0K7 14% ████████████████                                                                                                         </system_output>
+  <system_output timestamp="1832.22394">8[0K7 14% █████████████████                                                                                                        </system_output>
+  <system_output timestamp="1832.225442">8[0K7 14% ██████████████████                                                                                                       </system_output>
+  <system_output timestamp="1832.225517">8[0K7 15% ██████████████████                                                                                                       </system_output>
+  <system_output timestamp="1832.22787">8[0K7 16% ████████████████████                                                                                                     </system_output>
+  <system_output timestamp="1832.232752">8[0K7 22% ██████████████████████████                                                                                               </system_output>
+  <system_output timestamp="1832.233312">8[0K7 22% ███████████████████████████                                                                                              </system_output>
+  <system_output timestamp="1832.238279">8[0K7 27% █████████████████████████████████                                                                                        </system_output>
+  <system_output timestamp="1832.239896">8[0K7 29% ███████████████████████████████████                                                                                      </system_output>
+  <system_output timestamp="1832.244854">8[0K7 35% ██████████████████████████████████████████                                                                               </system_output>
+  <system_output timestamp="1832.245753">8[0K7 35% ███████████████████████████████████████████                                                                              </system_output>
+  <system_output timestamp="1832.245907">8[0K7 36% ███████████████████████████████████████████                                                                              </system_output>
+  <system_output timestamp="1832.251304">8[0K7 41% ██████████████████████████████████████████████████                                                                       </system_output>
+  <system_output timestamp="1832.252365">8[0K7 42% ██████████████████████████████████████████████████                                                                       </system_output>
+  <system_output timestamp="1832.252981">8[0K7 42% ███████████████████████████████████████████████████                                                                      </system_output>
+  <system_output timestamp="1832.254102">8[0K7 42% ████████████████████████████████████████████████████                                                                     </system_output>
+  <system_output timestamp="1832.254626">8[0K7 43% ████████████████████████████████████████████████████                                                                     </system_output>
+  <system_output timestamp="1832.259334">8[0K7 47% █████████████████████████████████████████████████████████                                                                </system_output>
+  <system_output timestamp="1832.261036">8[0K7 49% ███████████████████████████████████████████████████████████                                                              </system_output>
+  <system_output timestamp="1832.264139">8[0K7 51% ██████████████████████████████████████████████████████████████                                                           </system_output>
+  <system_output timestamp="1832.265426">8[0K7 52% ██████████████████████████████████████████████████████████████                                                           </system_output>
+  <system_output timestamp="1832.265508">8[0K7 52% ███████████████████████████████████████████████████████████████                                                          </system_output>
+  <system_output timestamp="1832.26739">8[0K7 53% ████████████████████████████████████████████████████████████████                                                         </system_output>
+  <system_output timestamp="1832.26831">8[0K7 53% █████████████████████████████████████████████████████████████████                                                        </system_output>
+  <system_output timestamp="1832.269254">8[0K7 54% █████████████████████████████████████████████████████████████████                                                        </system_output>
+  <system_output timestamp="1832.26955">8[0K7 54% ██████████████████████████████████████████████████████████████████                                                       </system_output>
+  <system_output timestamp="1832.270213">8[0K7 55% ██████████████████████████████████████████████████████████████████                                                       </system_output>
+  <system_output timestamp="1832.271047">8[0K7 55% ███████████████████████████████████████████████████████████████████                                                      </system_output>
+  <system_output timestamp="1832.271987">8[0K7 56% ███████████████████████████████████████████████████████████████████                                                      </system_output>
+  <system_output timestamp="1832.272435">8[0K7 56% ████████████████████████████████████████████████████████████████████                                                     </system_output>
+  <system_output timestamp="1832.274251">8[0K7 57% ████████████████████████████████████████████████████████████████████                                                     </system_output>
+  <system_output timestamp="1832.274371">8[0K7 57% █████████████████████████████████████████████████████████████████████                                                    </system_output>
+  <system_output timestamp="1832.276258">8[0K7 57% ██████████████████████████████████████████████████████████████████████                                                   </system_output>
+  <system_output timestamp="1832.276763">8[0K7 58% ██████████████████████████████████████████████████████████████████████                                                   </system_output>
+  <system_output timestamp="1832.277724">8[0K7 58% ███████████████████████████████████████████████████████████████████████                                                  </system_output>
+  <system_output timestamp="1832.278554">8[0K7 59% ███████████████████████████████████████████████████████████████████████                                                  </system_output>
+  <system_output timestamp="1832.279279">8[0K7 59% ████████████████████████████████████████████████████████████████████████                                                 </system_output>
+  <system_output timestamp="1832.28022">8[0K7 60% ████████████████████████████████████████████████████████████████████████                                                 </system_output>
+  <system_output timestamp="1832.280869">8[0K7 60% █████████████████████████████████████████████████████████████████████████                                                </system_output>
+  <system_output timestamp="1832.282093">8[0K7 61% ██████████████████████████████████████████████████████████████████████████                                               </system_output>
+  <system_output timestamp="1832.283489">8[0K7 62% ███████████████████████████████████████████████████████████████████████████                                              </system_output>
+  <system_output timestamp="1832.284683">8[0K7 62% ████████████████████████████████████████████████████████████████████████████                                             </system_output>
+  <system_output timestamp="1832.284771">8[0K7 63% ████████████████████████████████████████████████████████████████████████████                                             </system_output>
+  <system_output timestamp="1832.285986">8[0K7 63% █████████████████████████████████████████████████████████████████████████████                                            </system_output>
+  <system_output timestamp="1832.286394">8[0K7 64% █████████████████████████████████████████████████████████████████████████████                                            </system_output>
+  <system_output timestamp="1832.287394">8[0K7 64% ██████████████████████████████████████████████████████████████████████████████                                           </system_output>
+  <system_output timestamp="1832.288389">8[0K7 65% ███████████████████████████████████████████████████████████████████████████████                                          </system_output>
+  <system_output timestamp="1832.289113">8[0K7 66% ████████████████████████████████████████████████████████████████████████████████                                         </system_output>
+  <system_output timestamp="1832.292876">8[0K7 69% ████████████████████████████████████████████████████████████████████████████████████                                     </system_output>
+  <system_output timestamp="1832.293573">8[0K7 70% ████████████████████████████████████████████████████████████████████████████████████                                     </system_output>
+  <system_output timestamp="1832.294248">8[0K7 70% █████████████████████████████████████████████████████████████████████████████████████                                    </system_output>
+  <system_output timestamp="1832.295841">8[0K7 71% ██████████████████████████████████████████████████████████████████████████████████████                                   </system_output>
+  <system_output timestamp="1832.297339">8[0K7 72% ███████████████████████████████████████████████████████████████████████████████████████                                  </system_output>
+  <system_output timestamp="1832.298583">8[0K7 72% ████████████████████████████████████████████████████████████████████████████████████████                                 </system_output>
+  <system_output timestamp="1832.299185">8[0K7 73% ████████████████████████████████████████████████████████████████████████████████████████                                 </system_output>
+  <system_output timestamp="1832.300173">8[0K7 73% █████████████████████████████████████████████████████████████████████████████████████████                                </system_output>
+  <system_output timestamp="1832.301166">8[0K7 74% █████████████████████████████████████████████████████████████████████████████████████████                                </system_output>
+  <system_output timestamp="1832.302247">8[0K7 74% ██████████████████████████████████████████████████████████████████████████████████████████                               </system_output>
+  <system_output timestamp="1832.303725">8[0K7 75% ██████████████████████████████████████████████████████████████████████████████████████████                               </system_output>
+  <system_output timestamp="1832.30408">8[0K7 75% ███████████████████████████████████████████████████████████████████████████████████████████                              </system_output>
+  <system_output timestamp="1832.305551">8[0K7 76% ███████████████████████████████████████████████████████████████████████████████████████████                              </system_output>
+  <system_output timestamp="1832.305608">8[0K7 76% ████████████████████████████████████████████████████████████████████████████████████████████                             </system_output>
+  <system_output timestamp="1832.308008">8[0K7 76% █████████████████████████████████████████████████████████████████████████████████████████████                            </system_output>
+  <system_output timestamp="1832.308604">8[0K7 77% █████████████████████████████████████████████████████████████████████████████████████████████                            </system_output>
+  <system_output timestamp="1832.310709">8[0K7 77% ██████████████████████████████████████████████████████████████████████████████████████████████                           </system_output>
+  <system_output timestamp="1832.311507">8[0K7 78% ██████████████████████████████████████████████████████████████████████████████████████████████                           </system_output>
+  <system_output timestamp="1832.312884">8[0K7 78% ███████████████████████████████████████████████████████████████████████████████████████████████                          </system_output>
+  <system_output timestamp="1832.313892">8[0K7 79% ███████████████████████████████████████████████████████████████████████████████████████████████                          </system_output>
+  <system_output timestamp="1832.314589">8[0K7 79% ████████████████████████████████████████████████████████████████████████████████████████████████                         </system_output>
+  <system_output timestamp="1832.315924">8[0K7 80% ████████████████████████████████████████████████████████████████████████████████████████████████                         </system_output>
+  <system_output timestamp="1832.316681">8[0K7 80% █████████████████████████████████████████████████████████████████████████████████████████████████                        </system_output>
+  <system_output timestamp="1832.317671">8[0K7 81% ██████████████████████████████████████████████████████████████████████████████████████████████████                       </system_output>
+  <system_output timestamp="1832.319159">8[0K7 81% ███████████████████████████████████████████████████████████████████████████████████████████████████                      </system_output>
+  <system_output timestamp="1832.320063">8[0K7 82% ███████████████████████████████████████████████████████████████████████████████████████████████████                      </system_output>
+  <system_output timestamp="1832.320207">8[0K7 82% ████████████████████████████████████████████████████████████████████████████████████████████████████                     </system_output>
+  <system_output timestamp="1832.321004">8[0K7 83% ████████████████████████████████████████████████████████████████████████████████████████████████████                     </system_output>
+  <system_output timestamp="1832.32182">8[0K7 83% █████████████████████████████████████████████████████████████████████████████████████████████████████                    </system_output>
+  <system_output timestamp="1832.322447">8[0K7 84% █████████████████████████████████████████████████████████████████████████████████████████████████████                    </system_output>
+  <system_output timestamp="1832.322567">8[0K7 84% ██████████████████████████████████████████████████████████████████████████████████████████████████████                   </system_output>
+  <system_output timestamp="1832.327407">8[0K7 89% ████████████████████████████████████████████████████████████████████████████████████████████████████████████             </system_output>
+  <system_output timestamp="1832.328324">8[0K7 90% █████████████████████████████████████████████████████████████████████████████████████████████████████████████            </system_output>
+  <system_output timestamp="1832.329643">8[0K7 90% ██████████████████████████████████████████████████████████████████████████████████████████████████████████████           </system_output>
+  <system_output timestamp="1832.329807">8[0K7 91% ██████████████████████████████████████████████████████████████████████████████████████████████████████████████           </system_output>
+  <system_output timestamp="1832.332754">8[0K7 92% ███████████████████████████████████████████████████████████████████████████████████████████████████████████████          </system_output>
+  <system_output timestamp="1832.332829">8[0K7 92% ████████████████████████████████████████████████████████████████████████████████████████████████████████████████         </system_output>
+  <system_output timestamp="1832.336532">8[0K7 95% ████████████████████████████████████████████████████████████████████████████████████████████████████████████████████     </system_output>
+  <system_output timestamp="1832.336627">8[0K7 96% ████████████████████████████████████████████████████████████████████████████████████████████████████████████████████     </system_output>
+  <system_output timestamp="1832.339318">8[0K7 99% ███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████  </system_output>
+  <system_output timestamp="1832.339407">8[0K7 99% ████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████ </system_output>
+  <system_output timestamp="1832.396712">8[0K7100% █████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████</system_output>
+  <system_output timestamp="1832.397262">8[0KExecuting busybox-1.37.0-r12.trigger
+</system_output>
+  <system_output timestamp="1832.405719">OK: 674 MiB in 152 packages
+</system_output>
+  <system_output timestamp="1832.452452">~/help2man-1.49.3 # [6n</system_output>
+  <user_input timestamp="1832.452516">[49;21R</user_input>
+  <user_input timestamp="1833.032665">[A</user_input>
+  <system_output timestamp="1833.032785">
+~/help2man-1.49.3 # apk add </system_output>
+  <system_output timestamp="1833.032787">perl[J</system_output>
+  <user_input timestamp="1833.194554">[A</user_input>
+  <system_output timestamp="1833.194647">
+~/help2man-1.49.3 # ./configure[J</system_output>
+  <user_input timestamp="1833.648585">
+</user_input>
+  <system_output timestamp="1833.648675">
+</system_output>
+  <system_output timestamp="1833.676994">checking for perl... </system_output>
+  <system_output timestamp="1833.678466">perl
+</system_output>
+  <system_output timestamp="1833.678486">checking for module Locale::gettext... </system_output>
+  <system_output timestamp="1833.679749">no
+checking for msgfmt... </system_output>
+  <system_output timestamp="1833.679862">no
+</system_output>
+  <system_output timestamp="1833.679978">checking for gcc... </system_output>
+  <system_output timestamp="1833.680088">no
+</system_output>
+  <system_output timestamp="1833.680208">checking for cc... </system_output>
+  <system_output timestamp="1833.680326">no
+</system_output>
+  <system_output timestamp="1833.680444">checking for cl.exe... </system_output>
+  <system_output timestamp="1833.680571">no
+</system_output>
+  <system_output timestamp="1833.680707">checking for clang... </system_output>
+  <system_output timestamp="1833.680855">no
+</system_output>
+  <system_output timestamp="1833.680898">configure: error: in `/root/help2man-1.49.3':
+</system_output>
+  <system_output timestamp="1833.680921">configure: error: no acceptable C compiler found in $PATH
+See `config.log' for more details
+</system_output>
+  <system_output timestamp="1833.688055">~/help2man-1.49.3 # [6n</system_output>
+  <user_input timestamp="1833.688103">[49;21R</user_input>
+  <user_input timestamp="1836.136619">[A</user_input>
+  <system_output timestamp="1836.13674">
+~/help2man-1.49.3 # ./configure[J</system_output>
+  <user_input timestamp="1836.912549">[A</user_input>
+  <system_output timestamp="1836.912677">
+~/help2man-1.49.3 # apk add perl[J</system_output>
+  <user_input timestamp="1837.81455"></user_input>
+  <system_output timestamp="1837.814648">[J</system_output>
+  <user_input timestamp="1838.032493"></user_input>
+  <system_output timestamp="1838.032573">[J</system_output>
+  <user_input timestamp="1838.268479"></user_input>
+  <system_output timestamp="1838.268568">[J</system_output>
+  <user_input timestamp="1838.586602"></user_input>
+  <system_output timestamp="1838.586708">[J</system_output>
+  <user_input timestamp="1839.312537">g</user_input>
+  <system_output timestamp="1839.312644">g</system_output>
+  <user_input timestamp="1839.624476">c</user_input>
+  <system_output timestamp="1839.624571">c</system_output>
+  <user_input timestamp="1839.89648">c</user_input>
+  <system_output timestamp="1839.896585">c</system_output>
+  <user_input timestamp="1840.216494"> </user_input>
+  <system_output timestamp="1840.216583"> </system_output>
+  <user_input timestamp="1841.880511">m</user_input>
+  <system_output timestamp="1841.880603">m</system_output>
+  <user_input timestamp="1842.098501">u</user_input>
+  <system_output timestamp="1842.098607">u</system_output>
+  <user_input timestamp="1842.366429">s</user_input>
+  <system_output timestamp="1842.36653">s</system_output>
+  <user_input timestamp="1842.600453">l</user_input>
+  <system_output timestamp="1842.600556">l</system_output>
+  <user_input timestamp="1842.952397">-</user_input>
+  <system_output timestamp="1842.952504">-</system_output>
+  <user_input timestamp="1843.160421">d</user_input>
+  <system_output timestamp="1843.160525">d</system_output>
+  <user_input timestamp="1843.326473">e</user_input>
+  <system_output timestamp="1843.326589">e</system_output>
+  <user_input timestamp="1843.622469">v</user_input>
+  <system_output timestamp="1843.622576">v</system_output>
+  <user_input timestamp="1843.97845">
+</user_input>
+  <system_output timestamp="1843.978566">
+</system_output>
+  <system_output timestamp="1844.192786">(1/12) Installing libgcc (14.2.0-r4)
+7  0%                                                                                                                          </system_output>
+  <system_output timestamp="1844.262568">8[0K(2/12) Installing jansson (2.14-r4)
+7  0%                                                                                                                          </system_output>
+  <system_output timestamp="1844.279739">8[0K(3/12) Installing libstdc++ (14.2.0-r4)
+7  0%                                                                                                                          </system_output>
+  <system_output timestamp="1844.342794">8[0K7  1% █                                                                                                                        </system_output>
+  <system_output timestamp="1844.346923">8[0K(4/12) Installing binutils (2.43.1-r1)
+7  1% ██                                                                                                                       </system_output>
+  <system_output timestamp="1844.366622">8[0K7  2% ██                                                                                                                       </system_output>
+  <system_output timestamp="1844.378046">8[0K7  3% ████                                                                                                                     </system_output>
+  <system_output timestamp="1844.383682">8[0K7  4% █████                                                                                                                    </system_output>
+  <system_output timestamp="1844.387124">8[0K7  4% ██████                                                                                                                   </system_output>
+  <system_output timestamp="1844.390549">8[0K7  5% ██████                                                                                                                   </system_output>
+  <system_output timestamp="1844.397394">8[0K7  6% ███████                                                                                                                  </system_output>
+  <system_output timestamp="1844.400761">8[0K7  7% ████████                                                                                                                 </system_output>
+  <system_output timestamp="1844.403439">8[0K7  7% █████████                                                                                                                </system_output>
+  <system_output timestamp="1844.410996">8[0K(5/12) Installing libgomp (14.2.0-r4)
+7  7% █████████                                                                                                                </system_output>
+  <system_output timestamp="1844.427913">8[0K(6/12) Installing libatomic (14.2.0-r4)
+7  7% █████████                                                                                                                </system_output>
+  <system_output timestamp="1844.441999">8[0K(7/12) Installing gmp (6.3.0-r2)
+7  7% █████████                                                                                                                </system_output>
+  <system_output timestamp="1844.459293">8[0K(8/12) Installing isl26 (0.26-r1)
+7  8% █████████                                                                                                                </system_output>
+  <system_output timestamp="1844.485633">8[0K7  9% ███████████                                                                                                              </system_output>
+  <system_output timestamp="1844.486071">8[0K(9/12) Installing mpfr4 (4.2.1-r0)
+7  9% ███████████                                                                                                              </system_output>
+  <system_output timestamp="1844.504197">8[0K(10/12) Installing mpc1 (1.3.1-r1)
+7  9% ███████████                                                                                                              </system_output>
+  <system_output timestamp="1844.518686">8[0K(11/12) Installing gcc (14.2.0-r4)
+7  9% ████████████                                                                                                             </system_output>
+  <system_output timestamp="1844.546957">8[0K7 11% █████████████                                                                                                            </system_output>
+  <system_output timestamp="1844.561852">8[0K7 12% ██████████████                                                                                                           </system_output>
+  <system_output timestamp="1844.573238">8[0K7 13% ███████████████                                                                                                          </system_output>
+  <system_output timestamp="1844.582597">8[0K7 13% ████████████████                                                                                                         </system_output>
+  <system_output timestamp="1844.593008">8[0K7 14% █████████████████                                                                                                        </system_output>
+  <system_output timestamp="1844.604693">8[0K7 15% ██████████████████                                                                                                       </system_output>
+  <system_output timestamp="1844.619831">8[0K7 16% ████████████████████                                                                                                     </system_output>
+  <system_output timestamp="1844.638432">8[0K7 18% █████████████████████                                                                                                    </system_output>
+  <system_output timestamp="1844.658083">8[0K7 19% ███████████████████████                                                                                                  </system_output>
+  <system_output timestamp="1844.67691">8[0K7 20% ████████████████████████                                                                                                 </system_output>
+  <system_output timestamp="1844.692024">8[0K7 21% ██████████████████████████                                                                                               </system_output>
+  <system_output timestamp="1844.705696">8[0K7 23% ███████████████████████████                                                                                              </system_output>
+  <system_output timestamp="1844.71609">8[0K7 24% █████████████████████████████                                                                                            </system_output>
+  <system_output timestamp="1844.723566">8[0K7 25% ██████████████████████████████                                                                                           </system_output>
+  <system_output timestamp="1844.730572">8[0K7 26% ████████████████████████████████                                                                                         </system_output>
+  <system_output timestamp="1844.74182">8[0K7 27% █████████████████████████████████                                                                                        </system_output>
+  <system_output timestamp="1844.757462">8[0K7 29% ███████████████████████████████████                                                                                      </system_output>
+  <system_output timestamp="1844.7702">8[0K7 30% ████████████████████████████████████                                                                                     </system_output>
+  <system_output timestamp="1844.77722">8[0K7 31% ██████████████████████████████████████                                                                                   </system_output>
+  <system_output timestamp="1844.784281">8[0K7 32% ███████████████████████████████████████                                                                                  </system_output>
+  <system_output timestamp="1844.787999">8[0K7 34% █████████████████████████████████████████                                                                                </system_output>
+  <system_output timestamp="1844.795204">8[0K7 35% ██████████████████████████████████████████                                                                               </system_output>
+  <system_output timestamp="1844.803369">8[0K7 36% ████████████████████████████████████████████                                                                             </system_output>
+  <system_output timestamp="1844.806289">8[0K7 37% ████████████████████████████████████████████                                                                             </system_output>
+  <system_output timestamp="1844.80697">8[0K7 37% █████████████████████████████████████████████                                                                            </system_output>
+  <system_output timestamp="1844.812246">8[0K7 38% █████████████████████████████████████████████                                                                            </system_output>
+  <system_output timestamp="1844.812343">8[0K7 38% ██████████████████████████████████████████████                                                                           </system_output>
+  <system_output timestamp="1844.825052">8[0K7 39% ███████████████████████████████████████████████                                                                          </system_output>
+  <system_output timestamp="1844.830088">8[0K7 40% ████████████████████████████████████████████████                                                                         </system_output>
+  <system_output timestamp="1844.835047">8[0K7 41% █████████████████████████████████████████████████                                                                        </system_output>
+  <system_output timestamp="1844.83561">8[0K7 41% ██████████████████████████████████████████████████                                                                       </system_output>
+  <system_output timestamp="1844.840971">8[0K7 42% ██████████████████████████████████████████████████                                                                       </system_output>
+  <system_output timestamp="1844.842215">8[0K7 42% ███████████████████████████████████████████████████                                                                      </system_output>
+  <system_output timestamp="1844.849335">8[0K7 42% ████████████████████████████████████████████████████                                                                     </system_output>
+  <system_output timestamp="1844.849585">8[0K7 43% ████████████████████████████████████████████████████                                                                     </system_output>
+  <system_output timestamp="1844.857496">8[0K7 44% █████████████████████████████████████████████████████                                                                    </system_output>
+  <system_output timestamp="1844.8581">8[0K7 44% ██████████████████████████████████████████████████████                                                                   </system_output>
+  <system_output timestamp="1844.861084">8[0K7 45% ██████████████████████████████████████████████████████                                                                   </system_output>
+  <system_output timestamp="1844.864058">8[0K7 45% ███████████████████████████████████████████████████████                                                                  </system_output>
+  <system_output timestamp="1844.868163">8[0K7 46% ███████████████████████████████████████████████████████                                                                  </system_output>
+  <system_output timestamp="1844.871361">8[0K7 46% ████████████████████████████████████████████████████████                                                                 </system_output>
+  <system_output timestamp="1844.876661">8[0K7 47% ████████████████████████████████████████████████████████                                                                 </system_output>
+  <system_output timestamp="1844.877168">8[0K7 47% █████████████████████████████████████████████████████████                                                                </system_output>
+  <system_output timestamp="1844.884146">8[0K7 48% ██████████████████████████████████████████████████████████                                                               </system_output>
+  <system_output timestamp="1844.891418">8[0K7 49% ███████████████████████████████████████████████████████████                                                              </system_output>
+  <system_output timestamp="1844.900611">8[0K7 50% █████████████████████████████████████████████████████████████                                                            </system_output>
+  <system_output timestamp="1844.911323">8[0K7 51% ██████████████████████████████████████████████████████████████                                                           </system_output>
+  <system_output timestamp="1844.920408">8[0K7 52% ████████████████████████████████████████████████████████████████                                                         </system_output>
+  <system_output timestamp="1844.930694">8[0K7 54% █████████████████████████████████████████████████████████████████                                                        </system_output>
+  <system_output timestamp="1844.94014">8[0K7 55% ███████████████████████████████████████████████████████████████████                                                      </system_output>
+  <system_output timestamp="1844.949538">8[0K7 56% ████████████████████████████████████████████████████████████████████                                                     </system_output>
+  <system_output timestamp="1844.956146">8[0K7 57% ██████████████████████████████████████████████████████████████████████                                                   </system_output>
+  <system_output timestamp="1844.963592">8[0K7 59% ███████████████████████████████████████████████████████████████████████                                                  </system_output>
+  <system_output timestamp="1844.967925">8[0K7 60% █████████████████████████████████████████████████████████████████████████                                                </system_output>
+  <system_output timestamp="1844.975202">8[0K7 61% ██████████████████████████████████████████████████████████████████████████                                               </system_output>
+  <system_output timestamp="1844.990024">8[0K7 62% ███████████████████████████████████████████████████████████████████████████                                              </system_output>
+  <system_output timestamp="1845.00531">8[0K7 64% █████████████████████████████████████████████████████████████████████████████                                            </system_output>
+  <system_output timestamp="1845.017546">8[0K7 65% ██████████████████████████████████████████████████████████████████████████████                                           </system_output>
+  <system_output timestamp="1845.023208">8[0K7 66% ████████████████████████████████████████████████████████████████████████████████                                         </system_output>
+  <system_output timestamp="1845.030412">8[0K7 67% █████████████████████████████████████████████████████████████████████████████████                                        </system_output>
+  <system_output timestamp="1845.036252">8[0K7 68% ███████████████████████████████████████████████████████████████████████████████████                                      </system_output>
+  <system_output timestamp="1845.04989">8[0K7 70% ████████████████████████████████████████████████████████████████████████████████████                                     </system_output>
+  <system_output timestamp="1845.056331">8[0K7 70% █████████████████████████████████████████████████████████████████████████████████████                                    </system_output>
+  <system_output timestamp="1845.065188">8[0K7 71% ██████████████████████████████████████████████████████████████████████████████████████                                   </system_output>
+  <system_output timestamp="1845.082442">8[0K7 72% ████████████████████████████████████████████████████████████████████████████████████████                                 </system_output>
+  <system_output timestamp="1845.094066">8[0K7 74% █████████████████████████████████████████████████████████████████████████████████████████                                </system_output>
+  <system_output timestamp="1845.108952">8[0K7 75% ███████████████████████████████████████████████████████████████████████████████████████████                              </system_output>
+  <system_output timestamp="1845.12648">8[0K7 76% ████████████████████████████████████████████████████████████████████████████████████████████                             </system_output>
+  <system_output timestamp="1845.144479">8[0K7 77% ██████████████████████████████████████████████████████████████████████████████████████████████                           </system_output>
+  <system_output timestamp="1845.163793">8[0K7 79% ███████████████████████████████████████████████████████████████████████████████████████████████                          </system_output>
+  <system_output timestamp="1845.183248">8[0K7 80% █████████████████████████████████████████████████████████████████████████████████████████████████                        </system_output>
+  <system_output timestamp="1845.197">8[0K7 81% ██████████████████████████████████████████████████████████████████████████████████████████████████                       </system_output>
+  <system_output timestamp="1845.21035">8[0K7 82% ████████████████████████████████████████████████████████████████████████████████████████████████████                     </system_output>
+  <system_output timestamp="1845.21983">8[0K7 84% █████████████████████████████████████████████████████████████████████████████████████████████████████                    </system_output>
+  <system_output timestamp="1845.229087">8[0K7 85% ███████████████████████████████████████████████████████████████████████████████████████████████████████                  </system_output>
+  <system_output timestamp="1845.242055">8[0K7 86% ████████████████████████████████████████████████████████████████████████████████████████████████████████                 </system_output>
+  <system_output timestamp="1845.259501">8[0K7 87% ██████████████████████████████████████████████████████████████████████████████████████████████████████████               </system_output>
+  <system_output timestamp="1845.274152">8[0K7 88% ███████████████████████████████████████████████████████████████████████████████████████████████████████████              </system_output>
+  <system_output timestamp="1845.281856">8[0K7 90% █████████████████████████████████████████████████████████████████████████████████████████████████████████████            </system_output>
+  <system_output timestamp="1845.290296">8[0K7 91% ██████████████████████████████████████████████████████████████████████████████████████████████████████████████           </system_output>
+  <system_output timestamp="1845.294724">8[0K7 92% ████████████████████████████████████████████████████████████████████████████████████████████████████████████████         </system_output>
+  <system_output timestamp="1845.307893">8[0K7 93% █████████████████████████████████████████████████████████████████████████████████████████████████████████████████        </system_output>
+  <system_output timestamp="1845.31788">8[0K7 94% █████████████████████████████████████████████████████████████████████████████████████████████████████████████████        </system_output>
+  <system_output timestamp="1845.334155">8[0K(12/12) Installing musl-dev (1.2.5-r8)
+7 94% █████████████████████████████████████████████████████████████████████████████████████████████████████████████████        </system_output>
+  <system_output timestamp="1845.350399">8[0K7 94% ██████████████████████████████████████████████████████████████████████████████████████████████████████████████████       </system_output>
+  <system_output timestamp="1845.365691">8[0K7 96% ████████████████████████████████████████████████████████████████████████████████████████████████████████████████████     </system_output>
+  <system_output timestamp="1845.375579">8[0K7 97% █████████████████████████████████████████████████████████████████████████████████████████████████████████████████████    </system_output>
+  <system_output timestamp="1845.388564">8[0K7 98% ███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████  </system_output>
+  <system_output timestamp="1845.400166">8[0K7 99% ████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████ </system_output>
+  <system_output timestamp="1845.410841">8[0K7100% █████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████</system_output>
+  <system_output timestamp="1845.411024">8[0KExecuting busybox-1.37.0-r12.trigger
+</system_output>
+  <system_output timestamp="1845.420405">OK: 838 MiB in 164 packages
+</system_output>
+  <system_output timestamp="1845.467468">~/help2man-1.49.3 # [6n</system_output>
+  <user_input timestamp="1845.467538">[49;21R</user_input>
+  <user_input timestamp="1846.810521">[A</user_input>
+  <system_output timestamp="1846.810659">
+~/help2man-1.49.3 # apk add gcc musl-dev[J</system_output>
+  <user_input timestamp="1847.390492">[A</user_input>
+  <system_output timestamp="1847.390614">
+~/help2man-1.49.3 # ./configure[J</system_output>
+  <user_input timestamp="1853.128451">
+</user_input>
+  <system_output timestamp="1853.12855">
+</system_output>
+  <system_output timestamp="1853.1576">checking for perl... </system_output>
+  <system_output timestamp="1853.158827">perl
+</system_output>
+  <system_output timestamp="1853.158837">checking for module Locale::gettext... </system_output>
+  <system_output timestamp="1853.159865">no
+</system_output>
+  <system_output timestamp="1853.159883">checking for msgfmt... </system_output>
+  <system_output timestamp="1853.159997">no
+</system_output>
+  <system_output timestamp="1853.160129">checking for gcc... </system_output>
+  <system_output timestamp="1853.16024">gcc
+</system_output>
+  <system_output timestamp="1853.174967">checking whether the C compiler works... </system_output>
+  <system_output timestamp="1853.197275">yes
+</system_output>
+  <system_output timestamp="1853.197287">checking for C compiler default output file name... </system_output>
+  <system_output timestamp="1853.1973">a.out
+</system_output>
+  <system_output timestamp="1853.197763">checking for suffix of executables... </system_output>
+  <system_output timestamp="1853.218193">
+</system_output>
+  <system_output timestamp="1853.219002">checking whether we are cross compiling... </system_output>
+  <system_output timestamp="1853.24085">no
+</system_output>
+  <system_output timestamp="1853.241457">checking for suffix of object files... </system_output>
+  <system_output timestamp="1853.255563">o
+checking whether the compiler supports GNU C... </system_output>
+  <system_output timestamp="1853.269809">yes
+</system_output>
+  <system_output timestamp="1853.269831">checking whether gcc accepts -g... </system_output>
+  <system_output timestamp="1853.283957">yes
+</system_output>
+  <system_output timestamp="1853.284056">checking for gcc option to enable C11 features... </system_output>
+  <system_output timestamp="1853.331495">none needed
+</system_output>
+  <system_output timestamp="1853.33168">checking for library containing dlsym... </system_output>
+  <system_output timestamp="1853.355759">none required
+checking for library containing bindtextdomain... </system_output>
+  <system_output timestamp="1853.381375">none required
+</system_output>
+  <system_output timestamp="1853.381425">checking for a BSD-compatible install... </system_output>
+  <system_output timestamp="1853.472039">/usr/bin/install -c
+</system_output>
+  <system_output timestamp="1853.47205">checking for makeinfo... </system_output>
+  <system_output timestamp="1853.472184">./build-aux//missing makeinfo
+</system_output>
+  <system_output timestamp="1853.4722">checking for install-info... </system_output>
+  <system_output timestamp="1853.472299">./build-aux//missing install-info
+</system_output>
+  <system_output timestamp="1853.472306">checking for msgmerge... </system_output>
+  <system_output timestamp="1853.472391">./build-aux//missing msgmerge
+</system_output>
+  <system_output timestamp="1853.472401">checking for xgettext... </system_output>
+  <system_output timestamp="1853.472481">./build-aux//missing xgettext
+</system_output>
+  <system_output timestamp="1853.472493">checking for po4a-updatepo... </system_output>
+  <system_output timestamp="1853.472578">./build-aux//missing po4a-updatepo
+</system_output>
+  <system_output timestamp="1853.472587">checking for po4a-translate... </system_output>
+  <system_output timestamp="1853.472668">./build-aux//missing po4a-translate
+</system_output>
+  <system_output timestamp="1853.480118">configure: creating ./config.status
+</system_output>
+  <system_output timestamp="1853.510706">config.status: creating Makefile
+</system_output>
+  <system_output timestamp="1853.525092">~/help2man-1.49.3 # [6n</system_output>
+  <user_input timestamp="1853.525138">[49;21R</user_input>
+  <user_input timestamp="1855.348377">m</user_input>
+  <system_output timestamp="1855.34847">m</system_output>
+  <user_input timestamp="1855.480303">a</user_input>
+  <system_output timestamp="1855.480401">a</system_output>
+  <user_input timestamp="1855.528312">k</user_input>
+  <system_output timestamp="1855.5284">k</system_output>
+  <user_input timestamp="1855.640306">e</user_input>
+  <system_output timestamp="1855.640396">e</system_output>
+  <user_input timestamp="1855.71829">
+</user_input>
+  <system_output timestamp="1855.718378">
+</system_output>
+  <system_output timestamp="1855.718484">sh: make: not found
+</system_output>
+  <system_output timestamp="1855.718501">~/help2man-1.49.3 # [6n</system_output>
+  <user_input timestamp="1855.719292">[49;21R</user_input>
+  <user_input timestamp="1858.25434">a</user_input>
+  <system_output timestamp="1858.254445">a</system_output>
+  <user_input timestamp="1858.312247">p</user_input>
+  <system_output timestamp="1858.312324">p</system_output>
+  <user_input timestamp="1858.536322">k</user_input>
+  <system_output timestamp="1858.53642">k</system_output>
+  <user_input timestamp="1858.646301"> </user_input>
+  <system_output timestamp="1858.646397"> </system_output>
+  <user_input timestamp="1858.768224">a</user_input>
+  <system_output timestamp="1858.768286">a</system_output>
+  <user_input timestamp="1858.990285">d</user_input>
+  <system_output timestamp="1858.990367">d</system_output>
+  <user_input timestamp="1859.110276">d</user_input>
+  <system_output timestamp="1859.110365">d</system_output>
+  <user_input timestamp="1859.194221"> </user_input>
+  <system_output timestamp="1859.194293"> </system_output>
+  <user_input timestamp="1876.992154">m</user_input>
+  <system_output timestamp="1876.992261">m</system_output>
+  <user_input timestamp="1877.132101">a</user_input>
+  <system_output timestamp="1877.1322">a</system_output>
+  <user_input timestamp="1877.228068">k</user_input>
+  <system_output timestamp="1877.228153">k</system_output>
+  <user_input timestamp="1877.328031">e</user_input>
+  <system_output timestamp="1877.328092">e</system_output>
+  <user_input timestamp="1877.446057">
+</user_input>
+  <system_output timestamp="1877.446139">
+</system_output>
+  <system_output timestamp="1877.653249">(1/1) Installing make (4.4.1-r2)
+7  0%                                                                                                                          </system_output>
+  <system_output timestamp="1877.728776">8[0K7 98% ███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████  </system_output>
+  <system_output timestamp="1877.728971">8[0K7100% █████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████</system_output>
+  <system_output timestamp="1877.72912">8[0KExecuting busybox-1.37.0-r12.trigger
+</system_output>
+  <system_output timestamp="1877.738136">OK: 838 MiB in 165 packages
+</system_output>
+  <system_output timestamp="1877.789531">~/help2man-1.49.3 # [6n</system_output>
+  <user_input timestamp="1877.789595">[49;21R</user_input>
+  <user_input timestamp="1880.310162">m</user_input>
+  <system_output timestamp="1880.310271">m</system_output>
+  <user_input timestamp="1880.600121">a</user_input>
+  <system_output timestamp="1880.600206">a</system_output>
+  <user_input timestamp="1880.670013">k</user_input>
+  <system_output timestamp="1880.670075">k</system_output>
+  <user_input timestamp="1880.830023">e</user_input>
+  <system_output timestamp="1880.830093">e</system_output>
+  <user_input timestamp="1880.936019"> </user_input>
+  <system_output timestamp="1880.936083"> </system_output>
+  <user_input timestamp="1881.362095"></user_input>
+  <system_output timestamp="1881.362189">[J</system_output>
+  <user_input timestamp="1881.516062"></user_input>
+  <system_output timestamp="1881.516138">[J</system_output>
+  <user_input timestamp="1881.66207"></user_input>
+  <system_output timestamp="1881.662164">[J</system_output>
+  <user_input timestamp="1881.824073"></user_input>
+  <system_output timestamp="1881.824169">[J</system_output>
+  <user_input timestamp="1881.972049"></user_input>
+  <system_output timestamp="1881.972126">[J</system_output>
+  <user_input timestamp="1882.194081"></user_input>
+  <user_input timestamp="1882.336043"></user_input>
+  <user_input timestamp="1882.510034"></user_input>
+  <user_input timestamp="1882.926051">[A</user_input>
+  <system_output timestamp="1882.926155">
+~/help2man-1.49.3 # apk add</system_output>
+  <system_output timestamp="1882.926158"> make[J</system_output>
+  <user_input timestamp="1883.664108">[A</user_input>
+  <system_output timestamp="1883.664224">
+~/help2man-1.49.3 # make[J</system_output>
+  <user_input timestamp="1884.210123">[A</user_input>
+  <system_output timestamp="1884.210243">
+~/help2man-1.49.3 # ./configure[J</system_output>
+  <user_input timestamp="1886.258127">
+</user_input>
+  <system_output timestamp="1886.258231">
+</system_output>
+  <system_output timestamp="1886.286018">checking for perl... </system_output>
+  <system_output timestamp="1886.287233">perl
+checking for module Locale::gettext... </system_output>
+  <system_output timestamp="1886.288404">no
+checking for msgfmt... </system_output>
+  <system_output timestamp="1886.288544">no
+</system_output>
+  <system_output timestamp="1886.288694">checking for gcc... </system_output>
+  <system_output timestamp="1886.288793">gcc
+</system_output>
+  <system_output timestamp="1886.303918">checking whether the C compiler works... </system_output>
+  <system_output timestamp="1886.325219">yes
+checking for C compiler default output file name... a.out
+</system_output>
+  <system_output timestamp="1886.325655">checking for suffix of executables... </system_output>
+  <system_output timestamp="1886.346727">
+</system_output>
+  <system_output timestamp="1886.34766">checking whether we are cross compiling... </system_output>
+  <system_output timestamp="1886.369661">no
+</system_output>
+  <system_output timestamp="1886.370195">checking for suffix of object files... </system_output>
+  <system_output timestamp="1886.384383">o
+</system_output>
+  <system_output timestamp="1886.384402">checking whether the compiler supports GNU C... </system_output>
+  <system_output timestamp="1886.39934">yes
+</system_output>
+  <system_output timestamp="1886.399367">checking whether gcc accepts -g... </system_output>
+  <system_output timestamp="1886.414246">yes
+</system_output>
+  <system_output timestamp="1886.414358">checking for gcc option to enable C11 features... </system_output>
+  <system_output timestamp="1886.461904">none needed
+</system_output>
+  <system_output timestamp="1886.462015">checking for library containing dlsym... </system_output>
+  <system_output timestamp="1886.487307">none required
+checking for library containing bindtextdomain... </system_output>
+  <system_output timestamp="1886.512381">none required
+</system_output>
+  <system_output timestamp="1886.512429">checking for a BSD-compatible install... </system_output>
+  <system_output timestamp="1886.600798">/usr/bin/install -c
+checking for makeinfo... </system_output>
+  <system_output timestamp="1886.60088">./build-aux//missing makeinfo
+</system_output>
+  <system_output timestamp="1886.60089">checking for install-info... </system_output>
+  <system_output timestamp="1886.600995">./build-aux//missing install-info
+checking for msgmerge... </system_output>
+  <system_output timestamp="1886.601074">./build-aux//missing msgmerge
+</system_output>
+  <system_output timestamp="1886.601088">checking for xgettext... </system_output>
+  <system_output timestamp="1886.601177">./build-aux//missing xgettext
+</system_output>
+  <system_output timestamp="1886.601201">checking for po4a-updatepo... </system_output>
+  <system_output timestamp="1886.601338">./build-aux//missing po4a-updatepo
+</system_output>
+  <system_output timestamp="1886.601359">checking for po4a-translate... </system_output>
+  <system_output timestamp="1886.60145">./build-aux//missing po4a-translate
+</system_output>
+  <system_output timestamp="1886.609611">configure: creating ./config.status
+</system_output>
+  <system_output timestamp="1886.640388">config.status: creating Makefile
+</system_output>
+  <system_output timestamp="1886.655022">~/help2man-1.49.3 # [6n</system_output>
+  <user_input timestamp="1886.655068">[49;21R</user_input>
+  <user_input timestamp="1887.962112">m</user_input>
+  <system_output timestamp="1887.962221">m</system_output>
+  <user_input timestamp="1888.09199">a</user_input>
+  <system_output timestamp="1888.092081">a</system_output>
+  <user_input timestamp="1888.153903">k</user_input>
+  <system_output timestamp="1888.153961">k</system_output>
+  <user_input timestamp="1888.263982">e</user_input>
+  <system_output timestamp="1888.264052">e</system_output>
+  <user_input timestamp="1888.335938"> </user_input>
+  <system_output timestamp="1888.335999"> </system_output>
+  <user_input timestamp="1888.698006">-</user_input>
+  <system_output timestamp="1888.698088">-</system_output>
+  <user_input timestamp="1888.942036">j</user_input>
+  <system_output timestamp="1888.942145">j</system_output>
+  <user_input timestamp="1889.135955">
+</user_input>
+  <system_output timestamp="1889.136044">
+</system_output>
+  <system_output timestamp="1889.13751">perl help2man.PL 
+</system_output>
+  <system_output timestamp="1889.149951">Extracting help2man (with variable substitutions)
+</system_output>
+  <system_output timestamp="1889.151815">~/help2man-1.49.3 # [6n</system_output>
+  <user_input timestamp="1889.151856">[49;21R</user_input>
+  <user_input timestamp="1892.362042">m</user_input>
+  <system_output timestamp="1892.362149">m</system_output>
+  <user_input timestamp="1892.467943">a</user_input>
+  <system_output timestamp="1892.468033">a</system_output>
+  <user_input timestamp="1892.529932">k</user_input>
+  <system_output timestamp="1892.530007">k</system_output>
+  <user_input timestamp="1892.629943">e</user_input>
+  <system_output timestamp="1892.630019">e</system_output>
+  <user_input timestamp="1892.663944"> </user_input>
+  <system_output timestamp="1892.66402"> </system_output>
+  <user_input timestamp="1892.813941">i</user_input>
+  <system_output timestamp="1892.814013">i</system_output>
+  <user_input timestamp="1892.935944">n</user_input>
+  <system_output timestamp="1892.936017">n</system_output>
+  <user_input timestamp="1893.217988"></user_input>
+  <system_output timestamp="1893.218061">[J</system_output>
+  <user_input timestamp="1894.020005">n</user_input>
+  <system_output timestamp="1894.020106">n</system_output>
+  <user_input timestamp="1894.131953">s</user_input>
+  <system_output timestamp="1894.132023">s</system_output>
+  <user_input timestamp="1894.359957">t</user_input>
+  <system_output timestamp="1894.360034">t</system_output>
+  <user_input timestamp="1894.876012">	</user_input>
+  <system_output timestamp="1894.876205"/>
+  <user_input timestamp="1895.982029">a</user_input>
+  <system_output timestamp="1895.982127">a</system_output>
+  <user_input timestamp="1896.167937">l</user_input>
+  <system_output timestamp="1896.168011">l</system_output>
+  <user_input timestamp="1896.317934">l</user_input>
+  <system_output timestamp="1896.318013">l</system_output>
+  <user_input timestamp="1896.4819">
+</user_input>
+  <system_output timestamp="1896.481974">
+</system_output>
+  <system_output timestamp="1896.483281">./build-aux//mkinstalldirs /usr/local/bin
+</system_output>
+  <system_output timestamp="1896.483743">/usr/bin/install -c help2man /usr/local/bin
+</system_output>
+  <system_output timestamp="1896.484231">./build-aux//mkinstalldirs /usr/local/share/man/man1
+</system_output>
+  <system_output timestamp="1896.487758">umask 22
+</system_output>
+  <system_output timestamp="1896.487813">mkdir /usr/local/share/man
+</system_output>
+  <system_output timestamp="1896.488486">mkdir /usr/local/share/man/man1
+</system_output>
+  <system_output timestamp="1896.48904">/usr/bin/install -c -m 644 $(./build-aux//find-vpath   help2man.1) /usr/local/share/man/man1
+</system_output>
+  <system_output timestamp="1896.490079">./build-aux//mkinstalldirs /usr/local/share/info
+</system_output>
+  <system_output timestamp="1896.493653">umask 22
+</system_output>
+  <system_output timestamp="1896.493739">mkdir /usr/local/share/info
+</system_output>
+  <system_output timestamp="1896.494369">/usr/bin/install -c -m 644 $(./build-aux//find-vpath   help2man.info) \
+    /usr/local/share/info/help2man.info
+</system_output>
+  <system_output timestamp="1896.495428">if test -f /usr/local/share/info/dir; \
+then \
+    ./build-aux//missing install-info --info-dir=/usr/local/share/info \
+	/usr/local/share/info/help2man.info; \
+fi
+</system_output>
+  <system_output timestamp="1896.495871">~/help2man-1.49.3 # [6n</system_output>
+  <user_input timestamp="1896.49612">[49;21R</user_input>
+  <user_input timestamp="1913.129816">h</user_input>
+  <system_output timestamp="1913.129927">h</system_output>
+  <user_input timestamp="1913.249702">e</user_input>
+  <system_output timestamp="1913.249787">e</system_output>
+  <user_input timestamp="1913.339721">l</user_input>
+  <system_output timestamp="1913.339802">l</system_output>
+  <user_input timestamp="1913.595701">p</user_input>
+  <system_output timestamp="1913.595782">p</system_output>
+  <user_input timestamp="1913.933803">	</user_input>
+  <system_output timestamp="1913.934263">
+~/help2man-1.49.3 # help[J</system_output>
+  <user_input timestamp="1914.207744">	</user_input>
+  <system_output timestamp="1914.207841">
+help      help2man
+
+~/help2man-1.49.3 # help[J</system_output>
+  <user_input timestamp="1914.585741">1</user_input>
+  <system_output timestamp="1914.585816">1</system_output>
+  <user_input timestamp="1914.985791"></user_input>
+  <system_output timestamp="1914.985877">[J</system_output>
+  <user_input timestamp="1915.213722">2</user_input>
+  <system_output timestamp="1915.213791">2</system_output>
+  <user_input timestamp="1915.701741">	</user_input>
+  <system_output timestamp="1915.702161">
+~/help2man-1.49.3 # help2man [J</system_output>
+  <user_input timestamp="1916.69576">-</user_input>
+  <system_output timestamp="1916.695843">-</system_output>
+  <user_input timestamp="1916.865756">-</user_input>
+  <system_output timestamp="1916.865837">-</system_output>
+  <user_input timestamp="1917.045669">v</user_input>
+  <system_output timestamp="1917.045754">v</system_output>
+  <user_input timestamp="1917.191692">e</user_input>
+  <system_output timestamp="1917.191789">e</system_output>
+  <user_input timestamp="1917.309652">r</user_input>
+  <system_output timestamp="1917.309741">r</system_output>
+  <user_input timestamp="1917.507663">s</user_input>
+  <system_output timestamp="1917.507746">s</system_output>
+  <user_input timestamp="1917.611651">i</user_input>
+  <system_output timestamp="1917.611735">i</system_output>
+  <user_input timestamp="1917.713633">o</user_input>
+  <system_output timestamp="1917.713717">o</system_output>
+  <user_input timestamp="1917.833697">n</user_input>
+  <system_output timestamp="1917.833782">n</system_output>
+  <user_input timestamp="1917.955679">
+</user_input>
+  <system_output timestamp="1917.955756">
+</system_output>
+  <system_output timestamp="1917.9778">GNU help2man 1.49.3
+
+Copyright (C) 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2009,
+2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2020, 2021, 2022 Free Software
+Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Written by Brendan O'Dea &lt;bod@debian.org&gt;
+</system_output>
+  <system_output timestamp="1917.978475">~/help2man-1.49.3 # [6n</system_output>
+  <user_input timestamp="1917.978738">[49;21R</user_input>
+  <user_input timestamp="1918.743759">[A</user_input>
+  <system_output timestamp="1918.743896">
+~/help2man-1.49.3 # help2man --v</system_output>
+  <system_output timestamp="1918.743898">ersio</system_output>
+  <system_output timestamp="1918.743911">n[J</system_output>
+  <user_input timestamp="1919.315782"></user_input>
+  <system_output timestamp="1919.315909">[J</system_output>
+  <user_input timestamp="1919.487641"></user_input>
+  <system_output timestamp="1919.487719">[J</system_output>
+  <user_input timestamp="1919.621693"></user_input>
+  <system_output timestamp="1919.621779">[J</system_output>
+  <user_input timestamp="1919.855733"></user_input>
+  <system_output timestamp="1919.855857">[J</system_output>
+  <user_input timestamp="1919.993718"></user_input>
+  <system_output timestamp="1919.993827">[J</system_output>
+  <user_input timestamp="1920.129674"></user_input>
+  <system_output timestamp="1920.129777">[J</system_output>
+  <user_input timestamp="1920.259624"></user_input>
+  <system_output timestamp="1920.259716">[J</system_output>
+  <user_input timestamp="1920.365635"></user_input>
+  <system_output timestamp="1920.365736">[J</system_output>
+  <user_input timestamp="1920.511651"></user_input>
+  <system_output timestamp="1920.511765">[J</system_output>
+  <user_input timestamp="1921.045728"></user_input>
+  <system_output timestamp="1921.045853">[J</system_output>
+  <user_input timestamp="1921.291692">[H</user_input>
+  <system_output timestamp="1921.291807">[8D</system_output>
+  <user_input timestamp="1922.015714">w</user_input>
+  <system_output timestamp="1922.015828">whelp2man[8D</system_output>
+  <user_input timestamp="1922.08962">h</user_input>
+  <system_output timestamp="1922.089723">hhelp2man</system_output>
+  <system_output timestamp="1922.089726">[8D</system_output>
+  <user_input timestamp="1922.227621">i</user_input>
+  <system_output timestamp="1922.227724">ihelp2man[8D</system_output>
+  <user_input timestamp="1922.353626">c</user_input>
+  <system_output timestamp="1922.353715">chelp2man[8D</system_output>
+  <user_input timestamp="1922.445572">h</user_input>
+  <system_output timestamp="1922.445668">hhelp2man[8D</system_output>
+  <user_input timestamp="1922.567605"> </user_input>
+  <system_output timestamp="1922.567688"> help2man</system_output>
+  <system_output timestamp="1922.56769">[8D</system_output>
+  <user_input timestamp="1922.84572">
+</user_input>
+  <system_output timestamp="1922.845828">help2man
+</system_output>
+  <system_output timestamp="1922.846416">/usr/local/bin/help2man
+</system_output>
+  <system_output timestamp="1922.84651">~/help2man-1.49.3 # [6n</system_output>
+  <user_input timestamp="1922.846761">[49;21R</user_input>
+  <user_input timestamp="1941.153531">t</user_input>
+  <system_output timestamp="1941.153648">t</system_output>
+  <user_input timestamp="1941.343412">e</user_input>
+  <system_output timestamp="1941.343474">e</system_output>
+  <user_input timestamp="1941.4634">e</user_input>
+  <system_output timestamp="1941.463495">e</system_output>
+  <user_input timestamp="1942.425473"> </user_input>
+  <system_output timestamp="1942.425583"> </system_output>
+  <user_input timestamp="1943.329513"></user_input>
+  <system_output timestamp="1943.329629">[J</system_output>
+  <user_input timestamp="1943.489376"></user_input>
+  <system_output timestamp="1943.489464">[J</system_output>
+  <user_input timestamp="1943.715428"></user_input>
+  <system_output timestamp="1943.715511">[J</system_output>
+  <user_input timestamp="1943.853422"></user_input>
+  <system_output timestamp="1943.853521">[J</system_output>
+  <user_input timestamp="1944.143446">h</user_input>
+  <system_output timestamp="1944.143554">h</system_output>
+  <user_input timestamp="1944.259378">i</user_input>
+  <system_output timestamp="1944.259445">i</system_output>
+  <user_input timestamp="1944.357385">s</user_input>
+  <system_output timestamp="1944.357488">s</system_output>
+  <user_input timestamp="1944.489472">t</user_input>
+  <system_output timestamp="1944.489564">t</system_output>
+  <user_input timestamp="1944.637436">o</user_input>
+  <system_output timestamp="1944.637527">o</system_output>
+  <user_input timestamp="1944.743422">r</user_input>
+  <system_output timestamp="1944.743514">r</system_output>
+  <user_input timestamp="1944.849401">y</user_input>
+  <system_output timestamp="1944.849493">y</system_output>
+  <user_input timestamp="1944.975407"> </user_input>
+  <system_output timestamp="1944.975499"> </system_output>
+  <user_input timestamp="1945.555406">|</user_input>
+  <system_output timestamp="1945.555496">|</system_output>
+  <user_input timestamp="1945.687362"> </user_input>
+  <system_output timestamp="1945.687446"> </system_output>
+  <user_input timestamp="1945.879404">t</user_input>
+  <system_output timestamp="1945.8795">t</system_output>
+  <user_input timestamp="1946.061412">e</user_input>
+  <system_output timestamp="1946.061501">e</system_output>
+  <user_input timestamp="1946.175393">e</user_input>
+  <system_output timestamp="1946.175472">e</system_output>
+  <user_input timestamp="1946.295388"> </user_input>
+  <system_output timestamp="1946.295476"> </system_output>
+  <user_input timestamp="1946.487347">/</user_input>
+  <system_output timestamp="1946.487431">/</system_output>
+  <user_input timestamp="1947.769447">h</user_input>
+  <system_output timestamp="1947.769538">h</system_output>
+  <user_input timestamp="1947.871379">e</user_input>
+  <system_output timestamp="1947.87146">e</system_output>
+  <user_input timestamp="1947.995375">r</user_input>
+  <system_output timestamp="1947.995455">r</system_output>
+  <user_input timestamp="1948.24738">s</user_input>
+  <system_output timestamp="1948.24745">s</system_output>
+  <user_input timestamp="1948.523333">t</user_input>
+  <system_output timestamp="1948.523404">t</system_output>
+  <user_input timestamp="1948.65335">o</user_input>
+  <system_output timestamp="1948.653441">o</system_output>
+  <user_input timestamp="1948.761367">r</user_input>
+  <system_output timestamp="1948.761446">r</system_output>
+  <user_input timestamp="1949.015397">y</user_input>
+  <system_output timestamp="1949.015502">y</system_output>
+  <user_input timestamp="1949.7694">
+</user_input>
+  <system_output timestamp="1949.769481">
+</system_output>
+  <system_output timestamp="1949.770189">   0 setup-apkrepos 
+   1 cd
+   2 ls /
+   3 wget https://ftp.gnu.org/gnu/help2man/help2man-1.49.3.tar.xz
+   4 tar -xzf help2man-1.49.3.tar.xz 
+   5 tar -xJf help2man-1.49.3.tar.xz 
+   6 cd help2man-1.49.3/
+   7 ./configure
+   8 apk add perl
+   9 ./configure
+  10 apk add gcc musl-dev
+  11 ./configure
+  12 make
+  13 apk add make
+  14 ./configure
+  15 make -j
+  16 make install
+  17 help2man --version
+  18 which help2man
+  19 history | tee /herstory
+</system_output>
+  <system_output timestamp="1949.770289">~/help2man-1.49.3 # [6n</system_output>
+  <user_input timestamp="1949.770566">[49;21R</user_input>
+</recording>
