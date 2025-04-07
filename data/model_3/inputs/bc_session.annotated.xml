@@ -1,0 +1,2384 @@
+<?xml version="1.0" ?>
+<recording version="2" width="127" height="49" timestamp="1738873647">
+  <annotations>
+    <layer title="Overarching goals">
+      <annotation beginning="1332673" end="1719680">Goal: Build and test GNU's latest source distribution of the `bc` command-line calculator.
+Tool: Alpine Linux
+Subtool: BusyBox shell
+Result: successResult</annotation>
+      <annotation beginning="1723067" end="1731685">Goal: Dump this shell's history to the terminal and a file at the path &quot;/herstory&quot;
+Tool: Alpine Linux.
+Subtool: Busybox shell
+Result: successResult</annotation>
+    </layer>
+    <layer title="Subgoals">
+      <annotation beginning="1337257" end="1364067">Goal: Obtain a buildable source distribution of GNU `bc`.
+Tool: The `cd` builtin included in the BusyBox multi-call binary's shell interpreter
+Tool: GNU `wget`
+Tool: The `tar` unarchiver included in the BusyBox multi-call binary
+Result: successResult</annotation>
+      <annotation beginning="1364807" end="1675074">Goal: Configure the downloaded source distribution of GNU `bc` for building, installing dependencies as needed.
+Tool: BusyBox's shell interpreter running the `configure` shell script included with the `bc` source distribution
+Tool: The `setup-apkrepos` shell script included with Alpine Linux
+Tool: Alpine's `apk` package manager
+Tool: The `vi` command built into the BusyBox multi-call binary
+Result: successResult</annotation>
+      <annotation beginning="1675954" end="1693746">Goal: Build and install GNU `bc` from the freshly-configured source distribution.
+Tool: GNU `make`
+Tool: Alpine's `apk` package manager
+Result: successResult</annotation>
+      <annotation beginning="1695727" end="1719680">Goal: Test that the `bc` from the source distribution is installed correctly.
+Tool: GNU `bc`
+Tool: `which` built into the BusyBox multi-call binary
+Result: successResult</annotation>
+    </layer>
+    <layer title="Individual commands">
+      <annotation beginning="1332673" end="1332965">Goal: Change working directories to the current shell account's `HOME`.
+Tool: The `cd` builtin included with the BusyBox multi-call binary's shell interpreter.
+Result: successResult</annotation>
+      <annotation beginning="1337257" end="1353697">Goal: Download the v1.08.1 source distribution of the GNU `bc` calculator.
+Tool: GNU `wget`
+Mistakes: The command line `setup-apk` (an incomplete `setup-apkrepos` invocation) is typed before the operator changes their mind.
+Result: successResult</annotation>
+      <annotation beginning="1354587" end="1360677">Goal: Extract the newly-downloaded xz-compressed source distribution tarball.
+Tool: `tar` included with the BusyBox multi-call binary
+Mistakes: A `cd` command line is typed by mistake and then erased by the operator.
+Result: successResult</annotation>
+      <annotation beginning="1361829" end="1363015">Goal: Change working directories to the root of the newly-extracted `bc` source distribution.
+Tool: The `cd` builtin too the shell interpreter included with the BusyBox multi-call binary
+Result: successResult</annotation>
+      <annotation beginning="1363747" end="1364067">Goal: List the contents of the current working directory (the root of the extracted `bc` source distribution).
+Tool: The `ls` tool included with the BusyBox multi-call binary
+Result: successResult</annotation>
+      <annotation beginning="1364807" end="1368295">Goal: Configure the downloaded `bc` source distribution for building.
+Tool: The `configure` script included with the source distribution (evaluated by the BusyBox shell interpreter)
+Discoveries: A working C compiler is required to build GNU `bc`.
+Result: successFailure</annotation>
+      <annotation beginning="1370801" end="1454895">Goal: Pick an Alpine mirror for the `apk` package manager to use, and enable the community repository.
+Tools: Busybox's built-in Borne shell interpreter runs Alpine's `setup-apkrepos` script.
+Result: successResult</annotation>
+      <annotation beginning="1601560" end="1605958">Goal: Configure the downloaded `bc` source distribution for building.
+Tool: The `configure` script included with the source distribution (evaluated by the BusyBox shell interpreter)
+Mistakes: Operator forgets to install the C compiler before re-running `configure`.
+Discoveries: A working C compiler is still required to build GNU `bc`.
+Result: successFailure</annotation>
+      <annotation beginning="1609740" end="1613209">Goal: Install the GNU Compiler Collection package from Alpine's archives.
+Tool: The `add` subcommand of the `apk` package manager included with Alpine.
+Result: successResult</annotation>
+      <annotation beginning="1614706" end="1625766">Goal: Configure the downloaded `bc` source distribution for building.
+Tool: The `configure` script included with the source distribution (evaluated by the BusyBox shell interpreter)
+Discovery: After installing the `gcc` package, `configure` still fails to detect a working C compiler.
+Result: successFailure</annotation>
+      <annotation beginning="1628916" end="1647800">Goal: Inspect configure's `config.log` to see what went wrong.
+Tool: The `vi` tool included with the BusyBox multi-call binary
+Discovery: The header files for the system's musl libC were not included in the previously-installed `gcc` package.
+Result: successResult</annotation>
+      <annotation beginning="1653358" end="1658234">Goal: Install the missing musl standard C development headers.
+Tool: The `add` subcommand of Alpine's `apk` package manager.
+Result: successResult</annotation>
+      <annotation beginning="1658704" end="1661354">Goal: Configure the downloaded `bc` source distribution for building.
+Tool: The `configure` script included with the source distribution (evaluated by the BusyBox shell interpreter)
+Discovery: GNU `make` required to build `bc`.
+Result: successFailure</annotation>
+      <annotation beginning="1667840" end="1671651">Goal: Install the Alpine package for the GNU Make program.
+Tool: The `add` subcommand belonging to Alpine's `apk` packager.
+Result: successResult</annotation>
+      <annotation beginning="1672518" end="1675074">Goal: Configure the downloaded `bc` source distribution for building.
+Tool: The `configure` script included with the source distribution (evaluated by the BusyBox shell interpreter)
+Result: successResult</annotation>
+      <annotation beginning="1675954" end="1679265">Goal: Build the GNU `bc` source distribution
+Tool: GNU `make`
+Discovery: The `texinfo` package's `makeinfo` program is required to finish building `bc`.
+Result: successFailure</annotation>
+      <annotation beginning="1682637" end="1686141">Goal: Install Alpine's binary `texinfo` package from their archive servers.
+Tool: The `add` subcommand` of Alpine's `apk` package manager.
+Result: successResult</annotation>
+      <annotation beginning="1686140" end="1688257">Goal: Build the GNU `bc` source distribution
+Tool: GNU `make`
+Result: successResult</annotation>
+      <annotation beginning="1689505" end="1693746">Goal: Install the built `bc` software to the `configure`d `PREFIX`.
+Tool: The `install` target in `bc`'s makefile, invoked via the `make` command
+Result: successResult</annotation>
+      <annotation beginning="1695727" end="1702313">Goal: Verify that the version of the installed `bc` runs from the shell's `PATH`
+Tool: The newly-installed `bc`, invoked with its `--version` flag
+Mistake: A stray `w` is typed and then erased before typing the eventual command line.
+Result: successResult</annotation>
+      <annotation beginning="1702312" end="1704478">Goal: Verify that the `bc` program that was just run from the shell's `PATH` got installed to the correct `PREFIX`.
+Tool: The `which` tool included with the BusyBox multi-call binary
+Result: successResult</annotation>
+      <annotation beginning="1704951" end="1719680">Goal: Test `bc` by running commands in its interactive REPL shell.
+Tool: GNU `bc`
+Result: successResult</annotation>
+      <annotation beginning="1723067" end="1731685">Goal: Dump this shell's history to the terminal and a file at the path &quot;/herstory&quot;
+Tool: The `history` command built into the BusyBox shell interpreter
+Result: successResult</annotation>
+    </layer>
+    <layer title="bc interactive REPL">
+      <annotation beginning="1706897" end="1708890">Goal: Add `2` and `2` together
+Tool: `bc`'s `+` operator.
+Result: successResult</annotation>
+      <annotation beginning="1714987" end="1719680">Goal: Exit the `bc` interactive REPL.
+Tool: The EOF escape sequence is issued by pressing `Ctrl`+`d` on the keyboard.
+Mistakes: Operator types the number `4` before deciding to exit the calculator instead.
+Result: successResult</annotation>
+    </layer>
+  </annotations>
+  <system_output timestamp="1186.623802">/ # [6n</system_output>
+  <user_input timestamp="1186.623842">[49;5R</user_input>
+  <user_input timestamp="1332.673449">c</user_input>
+  <system_output timestamp="1332.673551">c</system_output>
+  <user_input timestamp="1332.835389">d</user_input>
+  <system_output timestamp="1332.835477">d</system_output>
+  <user_input timestamp="1332.963335">
+</user_input>
+  <system_output timestamp="1332.963425">
+</system_output>
+  <system_output timestamp="1332.963619">~ # [6n</system_output>
+  <user_input timestamp="1332.964344">[49;5R</user_input>
+  <user_input timestamp="1337.257387">s</user_input>
+  <system_output timestamp="1337.257494">s</system_output>
+  <user_input timestamp="1337.415262">e</user_input>
+  <system_output timestamp="1337.415345">e</system_output>
+  <user_input timestamp="1337.583245">t</user_input>
+  <system_output timestamp="1337.583323">t</system_output>
+  <user_input timestamp="1337.811335">u</user_input>
+  <system_output timestamp="1337.81143">u</system_output>
+  <user_input timestamp="1338.019377">p</user_input>
+  <system_output timestamp="1338.019466">p</system_output>
+  <user_input timestamp="1338.93138">-</user_input>
+  <system_output timestamp="1338.9315">-</system_output>
+  <user_input timestamp="1339.085292">a</user_input>
+  <system_output timestamp="1339.085398">a</system_output>
+  <user_input timestamp="1339.261324">p</user_input>
+  <system_output timestamp="1339.261422">p</system_output>
+  <user_input timestamp="1339.433229">	</user_input>
+  <system_output timestamp="1339.433531">
+~ # setup-apk[J</system_output>
+  <user_input timestamp="1341.183349"></user_input>
+  <system_output timestamp="1341.183434">[J</system_output>
+  <user_input timestamp="1341.78338"></user_input>
+  <system_output timestamp="1341.783469">[J</system_output>
+  <user_input timestamp="1341.823351"></user_input>
+  <system_output timestamp="1341.823423">[J</system_output>
+  <user_input timestamp="1341.863341"></user_input>
+  <system_output timestamp="1341.863423">[J</system_output>
+  <user_input timestamp="1341.903379"></user_input>
+  <system_output timestamp="1341.903457">[J</system_output>
+  <user_input timestamp="1341.943364"></user_input>
+  <system_output timestamp="1341.943429">[J</system_output>
+  <user_input timestamp="1341.983387"></user_input>
+  <system_output timestamp="1341.983455">[J</system_output>
+  <user_input timestamp="1342.023434"></user_input>
+  <system_output timestamp="1342.023498">[J</system_output>
+  <user_input timestamp="1342.063447"></user_input>
+  <system_output timestamp="1342.063522">[J</system_output>
+  <user_input timestamp="1342.103407"></user_input>
+  <user_input timestamp="1342.14342"></user_input>
+  <user_input timestamp="1342.183426"></user_input>
+  <user_input timestamp="1344.175349">w</user_input>
+  <system_output timestamp="1344.175464">w</system_output>
+  <user_input timestamp="1344.523324">g</user_input>
+  <system_output timestamp="1344.52341">g</system_output>
+  <user_input timestamp="1344.673278">e</user_input>
+  <system_output timestamp="1344.673361">e</system_output>
+  <user_input timestamp="1344.80723">t</user_input>
+  <system_output timestamp="1344.807301">t</system_output>
+  <user_input timestamp="1344.921196"> </user_input>
+  <system_output timestamp="1344.921274"> </system_output>
+  <user_input timestamp="1345.949799">https</user_input>
+  <user_input timestamp="1345.949804">:/</user_input>
+  <user_input timestamp="1345.949823">/f</user_input>
+  <user_input timestamp="1345.949831">t</user_input>
+  <user_input timestamp="1345.949838">p</user_input>
+  <user_input timestamp="1345.949845">.</user_input>
+  <user_input timestamp="1345.949852">gn</user_input>
+  <user_input timestamp="1345.949867">u.</user_input>
+  <user_input timestamp="1345.949902">org/</user_input>
+  <user_input timestamp="1345.949906">g</user_input>
+  <user_input timestamp="1345.949943">nu/bc</user_input>
+  <user_input timestamp="1345.949947">/</user_input>
+  <system_output timestamp="1345.949955">https://ftp.</system_output>
+  <user_input timestamp="1345.949961">bc</user_input>
+  <user_input timestamp="1345.949972">-</user_input>
+  <system_output timestamp="1345.949977">gnu.</system_output>
+  <user_input timestamp="1345.950007">1.</user_input>
+  <system_output timestamp="1345.95002">org/g</system_output>
+  <system_output timestamp="1345.950022">nu/bc</system_output>
+  <user_input timestamp="1345.950025">08</user_input>
+  <user_input timestamp="1345.950031">.</user_input>
+  <user_input timestamp="1345.950038">1</user_input>
+  <user_input timestamp="1345.950046">.</user_input>
+  <user_input timestamp="1345.950054">t</user_input>
+  <user_input timestamp="1345.950061">a</user_input>
+  <user_input timestamp="1345.950064">r</user_input>
+  <system_output timestamp="1345.950069">/bc-1.</system_output>
+  <user_input timestamp="1345.950076">.</user_input>
+  <user_input timestamp="1345.950089">xz</user_input>
+  <system_output timestamp="1345.950114">08.</system_output>
+  <system_output timestamp="1345.950124">1.ta</system_output>
+  <system_output timestamp="1345.950141">r.xz</system_output>
+  <user_input timestamp="1353.213279">
+</user_input>
+  <system_output timestamp="1353.21337">
+</system_output>
+  <system_output timestamp="1353.214276">Connecting to ftp.gnu.org ([2001:470:142:3::b]:443)
+</system_output>
+  <system_output timestamp="1353.404215">saving to 'bc-1.08.1.tar.xz'
+</system_output>
+  <system_output timestamp="1353.695368">
+bc-1.08.1.tar.xz     100% |*******************************************************************************|  322k  0:00:00 ETA
+'bc-1.08.1.tar.xz' saved
+</system_output>
+  <system_output timestamp="1353.695534">~ # [6n</system_output>
+  <user_input timestamp="1353.696267">[49;5R</user_input>
+  <user_input timestamp="1354.587209">c</user_input>
+  <system_output timestamp="1354.58729">c</system_output>
+  <user_input timestamp="1354.755148">d</user_input>
+  <system_output timestamp="1354.755239">d</system_output>
+  <user_input timestamp="1354.853114"> </user_input>
+  <system_output timestamp="1354.853187"> </system_output>
+  <user_input timestamp="1355.163221"></user_input>
+  <system_output timestamp="1355.163308">[J</system_output>
+  <user_input timestamp="1355.29716"></user_input>
+  <system_output timestamp="1355.297232">[J</system_output>
+  <user_input timestamp="1355.397119"></user_input>
+  <system_output timestamp="1355.397199">[J</system_output>
+  <user_input timestamp="1356.03314">t</user_input>
+  <system_output timestamp="1356.033237">t</system_output>
+  <user_input timestamp="1356.167204">a</user_input>
+  <system_output timestamp="1356.167291">a</system_output>
+  <user_input timestamp="1356.279171">r</user_input>
+  <system_output timestamp="1356.279256">r</system_output>
+  <user_input timestamp="1356.383101"> </user_input>
+  <system_output timestamp="1356.383185"> </system_output>
+  <user_input timestamp="1356.621108">-</user_input>
+  <system_output timestamp="1356.621172">-</system_output>
+  <user_input timestamp="1357.049343">x</user_input>
+  <system_output timestamp="1357.049426">x</system_output>
+  <user_input timestamp="1358.41118">J</user_input>
+  <system_output timestamp="1358.411289">J</system_output>
+  <user_input timestamp="1359.057175">f</user_input>
+  <system_output timestamp="1359.057262">f</system_output>
+  <user_input timestamp="1359.191105"> </user_input>
+  <system_output timestamp="1359.191194"> </system_output>
+  <user_input timestamp="1359.655167">b</user_input>
+  <system_output timestamp="1359.655258">b</system_output>
+  <user_input timestamp="1360.06711">	</user_input>
+  <system_output timestamp="1360.067256">
+~ # tar -xJ</system_output>
+  <system_output timestamp="1360.067274">f bc-1.08.1</system_output>
+  <system_output timestamp="1360.067287">.tar.xz [J</system_output>
+  <user_input timestamp="1360.655148">
+</user_input>
+  <system_output timestamp="1360.655245">
+</system_output>
+  <system_output timestamp="1360.675983">~ # [6n</system_output>
+  <user_input timestamp="1360.676033">[49;5R</user_input>
+  <user_input timestamp="1361.829176">c</user_input>
+  <system_output timestamp="1361.829279">c</system_output>
+  <user_input timestamp="1361.985036">d</user_input>
+  <system_output timestamp="1361.9851">d</system_output>
+  <user_input timestamp="1362.099279"> </user_input>
+  <system_output timestamp="1362.09936"> </system_output>
+  <user_input timestamp="1362.273123">b</user_input>
+  <system_output timestamp="1362.273208">b</system_output>
+  <user_input timestamp="1362.523059">	</user_input>
+  <system_output timestamp="1362.523191">
+~ # cd bc-1.08</system_output>
+  <system_output timestamp="1362.523201">.1/[J</system_output>
+  <user_input timestamp="1363.013123">
+</user_input>
+  <system_output timestamp="1363.01321">
+</system_output>
+  <system_output timestamp="1363.013309">~/bc-1.08.1 # [6n</system_output>
+  <user_input timestamp="1363.014129">[49;15R</user_input>
+  <user_input timestamp="1363.747096">l</user_input>
+  <system_output timestamp="1363.747174">l</system_output>
+  <user_input timestamp="1363.909077">s</user_input>
+  <system_output timestamp="1363.909182">s</system_output>
+  <user_input timestamp="1364.065024">
+</user_input>
+  <system_output timestamp="1364.065102">
+</system_output>
+  <system_output timestamp="1364.065848">[0;0mAUTHORS[m       [1;34mExamples[m      [0;0mMakefile.in[m   [0;0maclocal.m4[m    [0;0mconfig.h.in[m   [1;32mdepcomp[m       [1;34mlib[m
+[0;0mCOPYING[m       [0;0mFAQ[m           [0;0mNEWS[m          [1;32mar-lib[m        [1;32mconfigure[m     [1;34mdoc[m           [1;34mm4[m
+</system_output>
+  <system_output timestamp="1364.065881">[0;0mCOPYING.LIB[m   [0;0mINSTALL[m       [0;0mREADME[m        [1;34mbc[m            [0;0mconfigure.ac[m  [1;34mh[m             [1;32mmissing[m
+[0;0mChangeLog[m     [0;0mMakefile.am[m   [1;34mTest[m          [1;32mcompile[m       [1;34mdc[m            [1;32minstall-sh[m    [1;32mylwrap[m
+</system_output>
+  <system_output timestamp="1364.066002">~/bc-1.08.1 # [6n</system_output>
+  <user_input timestamp="1364.066772">[49;15R</user_input>
+  <user_input timestamp="1364.807075">.</user_input>
+  <system_output timestamp="1364.807169">.</system_output>
+  <user_input timestamp="1364.949254">/</user_input>
+  <system_output timestamp="1364.949323">/</system_output>
+  <user_input timestamp="1365.24509">c</user_input>
+  <system_output timestamp="1365.245182">c</system_output>
+  <user_input timestamp="1365.326978">o</user_input>
+  <system_output timestamp="1365.327051">o</system_output>
+  <user_input timestamp="1365.469013">n</user_input>
+  <system_output timestamp="1365.469099">n</system_output>
+  <user_input timestamp="1365.577004">f</user_input>
+  <system_output timestamp="1365.577098">f</system_output>
+  <user_input timestamp="1365.769018">i</user_input>
+  <system_output timestamp="1365.769095">i</system_output>
+  <user_input timestamp="1366.073057">g</user_input>
+  <system_output timestamp="1366.073137">g</system_output>
+  <user_input timestamp="1366.28507">	</user_input>
+  <system_output timestamp="1366.285222">
+~/bc-1.08.1 # ./config[J</system_output>
+  <user_input timestamp="1366.721094">	</user_input>
+  <system_output timestamp="1366.721203">
+config.h.in   configure     configure.ac
+
+~/bc-1.08.1 # ./config[J</system_output>
+  <user_input timestamp="1366.897025">u</user_input>
+  <system_output timestamp="1366.897102">u</system_output>
+  <user_input timestamp="1366.999201">	</user_input>
+  <system_output timestamp="1366.999328">
+~/bc-1.08.1 # ./conf</system_output>
+  <system_output timestamp="1366.999337">igure[J</system_output>
+  <user_input timestamp="1367.923068">
+</user_input>
+  <system_output timestamp="1367.923169">
+</system_output>
+  <system_output timestamp="1367.950263">checking for a BSD-compatible install... </system_output>
+  <system_output timestamp="1368.04115">/usr/bin/install -c
+</system_output>
+  <system_output timestamp="1368.041166">checking whether sleep supports fractional seconds... </system_output>
+  <system_output timestamp="1368.042639">yes
+checking filesystem timestamp resolution... </system_output>
+  <system_output timestamp="1368.268223">2
+checking whether build environment is sane... </system_output>
+  <system_output timestamp="1368.269638">yes
+</system_output>
+  <system_output timestamp="1368.271653">checking for a race-free mkdir -p... </system_output>
+  <system_output timestamp="1368.274818">/bin/mkdir -p
+</system_output>
+  <system_output timestamp="1368.274883">checking for gawk... </system_output>
+  <system_output timestamp="1368.274954">no
+</system_output>
+  <system_output timestamp="1368.274962">checking for mawk... </system_output>
+  <system_output timestamp="1368.275029">no
+</system_output>
+  <system_output timestamp="1368.275044">checking for nawk... </system_output>
+  <system_output timestamp="1368.275105">no
+</system_output>
+  <system_output timestamp="1368.27512">checking for awk... </system_output>
+  <system_output timestamp="1368.275173">awk
+</system_output>
+  <system_output timestamp="1368.275208">checking whether make sets $(MAKE)... </system_output>
+  <system_output timestamp="1368.27727">no
+</system_output>
+  <system_output timestamp="1368.278491">checking whether make supports nested variables... </system_output>
+  <system_output timestamp="1368.278787">no
+</system_output>
+  <system_output timestamp="1368.279996">checking xargs -n works... </system_output>
+  <system_output timestamp="1368.281241">yes
+</system_output>
+  <system_output timestamp="1368.28219">checking for gcc... </system_output>
+  <system_output timestamp="1368.28226">no
+</system_output>
+  <system_output timestamp="1368.282385">checking for cc... </system_output>
+  <system_output timestamp="1368.282447">no
+</system_output>
+  <system_output timestamp="1368.282574">checking for cl.exe... </system_output>
+  <system_output timestamp="1368.282633">no
+</system_output>
+  <system_output timestamp="1368.282744">checking for clang... </system_output>
+  <system_output timestamp="1368.282782">no
+</system_output>
+  <system_output timestamp="1368.282828">configure: error: in '/root/bc-1.08.1':
+</system_output>
+  <system_output timestamp="1368.282854">configure: error: no acceptable C compiler found in $PATH
+See 'config.log' for more details
+</system_output>
+  <system_output timestamp="1368.2948">~/bc-1.08.1 # [6n</system_output>
+  <user_input timestamp="1368.294853">[49;15R</user_input>
+  <user_input timestamp="1370.801032">s</user_input>
+  <system_output timestamp="1370.80112">s</system_output>
+  <user_input timestamp="1370.936974">e</user_input>
+  <system_output timestamp="1370.937058">e</system_output>
+  <user_input timestamp="1371.08101">t</user_input>
+  <system_output timestamp="1371.081097">t</system_output>
+  <user_input timestamp="1371.210955">u</user_input>
+  <system_output timestamp="1371.211052">u</system_output>
+  <user_input timestamp="1371.35899">p</user_input>
+  <system_output timestamp="1371.359091">p</system_output>
+  <user_input timestamp="1371.788998">-</user_input>
+  <system_output timestamp="1371.789088">-</system_output>
+  <user_input timestamp="1371.926962">a</user_input>
+  <system_output timestamp="1371.927063">a</system_output>
+  <user_input timestamp="1372.024954">p</user_input>
+  <system_output timestamp="1372.025058">p</system_output>
+  <user_input timestamp="1372.312989">k</user_input>
+  <system_output timestamp="1372.313082">k</system_output>
+  <user_input timestamp="1372.907012">r</user_input>
+  <system_output timestamp="1372.907109">r</system_output>
+  <user_input timestamp="1373.266963">	</user_input>
+  <system_output timestamp="1373.267282">
+~/bc-1.08.1 # setup-ap</system_output>
+  <system_output timestamp="1373.267285">krepos</system_output>
+  <system_output timestamp="1373.267297"> [J</system_output>
+  <user_input timestamp="1374.165002">
+</user_input>
+  <system_output timestamp="1374.165113">
+</system_output>
+  <system_output timestamp="1374.768879"> (f)    Find and use fastest mirror
+ (s)    Show mirrorlist
+ (r)    Use random mirror
+ (e)    Edit /etc/apk/repositories with text editor
+ (c)    Community repo enable
+ (skip) Skip setting up apk repositories
+
+</system_output>
+  <system_output timestamp="1374.768921">Enter mirror number or URL: [1] </system_output>
+  <user_input timestamp="1382.032993">c</user_input>
+  <system_output timestamp="1382.033068">c</system_output>
+  <user_input timestamp="1382.360947">
+</user_input>
+  <system_output timestamp="1382.36101">
+</system_output>
+  <system_output timestamp="1382.361061">
+</system_output>
+  <system_output timestamp="1382.361076">Community repository enabled
+
+Community repository enabled
+</system_output>
+  <system_output timestamp="1382.361757"> (f)    Find and use fastest mirror
+ (s)    Show mirrorlist
+ (r)    Use random mirror
+ (e)    Edit /etc/apk/repositories with text editor
+ (c)    Community repo disable
+ (skip) Skip setting up apk repositories
+
+</system_output>
+  <system_output timestamp="1382.361854">Enter mirror number or URL: [1] </system_output>
+  <user_input timestamp="1383.164891">f</user_input>
+  <system_output timestamp="1383.164967">f</system_output>
+  <user_input timestamp="1383.382896">
+</user_input>
+  <system_output timestamp="1383.382965">
+</system_output>
+  <system_output timestamp="1383.383022">
+</system_output>
+  <system_output timestamp="1383.38303">Finding fastest mirror... 
+</system_output>
+  <system_output timestamp="1383.743374">0.35 http://dl-cdn.alpinelinux.org/alpine/
+</system_output>
+  <system_output timestamp="1384.000722">0.19 http://uk.alpinelinux.org/alpine/
+</system_output>
+  <system_output timestamp="1384.505141">0.36 http://mirror.yandex.ru/mirrors/alpine/
+</system_output>
+  <system_output timestamp="1384.549636">0.03 http://mirrors.gigenet.com/alpinelinux/
+</system_output>
+  <system_output timestamp="1384.808731">0.24 http://mirror1.hs-esslingen.de/pub/Mirrors/alpine/
+</system_output>
+  <system_output timestamp="1384.995232">0.07 http://mirror.leaseweb.com/alpine/
+</system_output>
+  <system_output timestamp="1386.034155">wget: can't connect to remote host: Connection refused
+</system_output>
+  <system_output timestamp="1386.348802">0.26 http://alpine.mirror.far.fi/
+</system_output>
+  <system_output timestamp="1386.820269">0.22 http://alpine.mirror.wearetriple.com/
+</system_output>
+  <system_output timestamp="1386.993124">0.15 http://mirror.clarkson.edu/alpine/
+</system_output>
+  <system_output timestamp="1388.401134">0.54 http://mirror.aarnet.edu.au/pub/alpine
+</system_output>
+  <system_output timestamp="1388.690859">0.27 http://mirrors.dotsrc.org/alpine/
+</system_output>
+  <system_output timestamp="1389.149833">0.24 http://ftp.halifax.rwth-aachen.de/alpine/
+</system_output>
+  <system_output timestamp="1390.398832">wget: server returned error: HTTP/1.1 403 Forbidden
+</system_output>
+  <system_output timestamp="1392.265186">wget: server returned error: HTTP/1.1 403 Forbidden
+</system_output>
+  <system_output timestamp="1393.211212">0.46 http://mirrors.nju.edu.cn/alpine/
+</system_output>
+  <system_output timestamp="1395.937109">1.41 http://mirror.lzu.edu.cn/alpine/
+</system_output>
+  <system_output timestamp="1396.800237">0.29 http://mirror.accum.se/mirror/alpinelinux.org/
+</system_output>
+  <system_output timestamp="1397.176434">0.34 http://mirror.xtom.com.hk/alpine/
+</system_output>
+  <system_output timestamp="1397.320586">0.11 http://mirror.csclub.uwaterloo.ca/alpine/
+</system_output>
+  <system_output timestamp="1397.58798">0.23 http://pkg.adfinis.com/alpine/
+</system_output>
+  <system_output timestamp="1398.68754">0.4 http://mirror.ps.kz/alpine/
+</system_output>
+  <system_output timestamp="1399.046555">0.22 http://mirrors.ircam.fr/pub/alpine/
+</system_output>
+  <system_output timestamp="1399.161589">0.1 http://mirror.math.princeton.edu/pub/alpinelinux/
+</system_output>
+  <system_output timestamp="1400.33186">0.47 http://mirrors.sjtug.sjtu.edu.cn/alpine/
+</system_output>
+  <system_output timestamp="1401.833747">0.37 http://ftp.icm.edu.pl/pub/Linux/distributions/alpine/
+</system_output>
+  <system_output timestamp="1403.662102">0.24 http://mirror.ungleich.ch/mirror/packages/alpine/
+</system_output>
+  <system_output timestamp="1403.767595">0.09 http://mirrors.edge.kernel.org/alpine/
+</system_output>
+  <system_output timestamp="1404.270884">0.48 http://ap.edge.kernel.org/alpine/
+</system_output>
+  <system_output timestamp="1404.536767">0.25 http://eu.edge.kernel.org/alpine/
+</system_output>
+  <system_output timestamp="1404.901523">wget: server returned error: HTTP/1.1 404 Not Found
+</system_output>
+  <system_output timestamp="1405.040439">0.08 http://mirror.reenigne.net/alpine/
+</system_output>
+  <system_output timestamp="1405.531642">0.27 http://quantum-mirror.hu/mirrors/pub/alpine/
+</system_output>
+  <system_output timestamp="1406.150757">0.24 http://tux.rainside.sk/alpine/
+</system_output>
+  <system_output timestamp="1408.523669">0.33 http://alpine.cs.nycu.edu.tw/
+</system_output>
+  <system_output timestamp="1408.857028">0.3 http://mirror.ihost.md/alpine/
+</system_output>
+  <system_output timestamp="1408.989645">0.07 http://mirror.ette.biz/alpine/
+</system_output>
+  <system_output timestamp="1409.801869">0.41 http://mirror.lagoon.nc/alpine/
+</system_output>
+  <system_output timestamp="1411.423416">0.3 http://alpinelinux.c3sl.ufpr.br
+</system_output>
+  <system_output timestamp="1412.704379">0.52 http://foobar.turbo.net.id/alpine/
+</system_output>
+  <system_output timestamp="1416.0391">0.38 http://alpine.ccns.ncku.edu.tw/alpine/
+</system_output>
+  <system_output timestamp="1416.200076">0.08 http://mirror.dst.ca/alpine
+</system_output>
+  <system_output timestamp="1417.106316">0.31 http://mirror.kumi.systems/alpine
+</system_output>
+  <system_output timestamp="1418.008934">0.47 http://mirror.sabay.com.kh/alpine/
+</system_output>
+  <system_output timestamp="1418.140518">0.1 http://alpine.northrepo.ca
+</system_output>
+  <system_output timestamp="1423.537354">wget: download timed out
+</system_output>
+  <system_output timestamp="1423.823959">0.09 http://mirrors.ocf.berkeley.edu/alpine/
+</system_output>
+  <system_output timestamp="1424.336185">0.4 http://mirrors.pardisco.co/alpine/
+</system_output>
+  <system_output timestamp="1424.539666">0.08 http://mirrors.aliyun.com/alpine/
+</system_output>
+  <system_output timestamp="1425.55383">0.25 http://mirror.alwyzon.net/alpine/
+</system_output>
+  <system_output timestamp="1426.48035">wget: server returned error: HTTP/1.1 403 Forbidden
+</system_output>
+  <system_output timestamp="1427.366819">0.34 http://ftpmirror2.infania.net/mirror/alpine/
+</system_output>
+  <system_output timestamp="1429.020352">wget: server returned error: HTTP/1.1 404 Not Found
+</system_output>
+  <system_output timestamp="1429.116094">0.08 http://mirror.fcix.net/alpine/
+</system_output>
+  <system_output timestamp="1429.613445">0.3 http://alpine.sakamoto.pl/alpine/
+</system_output>
+  <system_output timestamp="1430.590553">0.37 http://mirror.2degrees.nz/alpine/
+</system_output>
+  <system_output timestamp="1431.830984">0.53 http://mirror.kku.ac.th/alpine
+</system_output>
+  <system_output timestamp="1432.78618">0.31 http://mirror.uepg.br/alpine
+</system_output>
+  <system_output timestamp="1434.342636">0.46 http://mirrors.neusoft.edu.cn/alpine/
+</system_output>
+  <system_output timestamp="1436.516644">0.27 http://ftp.udx.icscoe.jp/Linux/alpine/
+</system_output>
+  <system_output timestamp="1436.976355">0.32 http://alpinelinux.mirror.garr.it/
+</system_output>
+  <system_output timestamp="1437.807455">0.29 http://mirrors.hostico.ro/alpinelinux/
+</system_output>
+  <system_output timestamp="1438.286403">0.23 http://mirror.serverion.com/alpine/
+</system_output>
+  <system_output timestamp="1438.580337">0.28 http://ftp.lysator.liu.se/pub/alpine/
+</system_output>
+  <system_output timestamp="1439.657012">0.9 http://mirror.mangohost.net/alpine/
+</system_output>
+  <system_output timestamp="1440.454929">0.27 http://mirror.bahnhof.net/pub/alpinelinux/
+</system_output>
+  <system_output timestamp="1440.754733">0.22 http://mirror.vinehost.net/alpine/
+</system_output>
+  <system_output timestamp="1441.176835">0.3 http://mirror.hyperdedic.ru/alpinelinux/
+</system_output>
+  <system_output timestamp="1441.80832">0.3 http://mirror.5i.fi/alpine/
+</system_output>
+  <system_output timestamp="1442.334287">0.5 http://mirror.jingk.ai/alpine/
+</system_output>
+  <system_output timestamp="1442.809385">0.46 http://mirror.nyist.edu.cn/alpine/
+</system_output>
+  <system_output timestamp="1442.938726">wget: server returned error: HTTP/1.1 404 Not Found
+</system_output>
+  <system_output timestamp="1443.808427">0.3 http://repo.jing.rocks/alpine/
+</system_output>
+  <system_output timestamp="1444.811303">0.31 http://mirror.marwan.ma/alpine
+</system_output>
+  <system_output timestamp="1445.11573">0.28 http://mirror.pilotfiber.com/alpinelinux/
+</system_output>
+  <system_output timestamp="1446.243736">0.28 http://alpine.koyanet.lv/
+</system_output>
+  <system_output timestamp="1446.554933">0.29 http://mirrors.hosterion.ro/alpinelinux/
+</system_output>
+  <system_output timestamp="1447.017643">0.36 http://mirror.tux.si/alpine
+</system_output>
+  <system_output timestamp="1447.13575">0.08 http://mirrors.lax.silicloud.com/alpine/
+</system_output>
+  <system_output timestamp="1447.443302">0.28 http://mirrors.tyo.silicloud.com/alpine/
+</system_output>
+  <system_output timestamp="1448.312372">0.28 http://mirrors.neterra.net/alpine/
+</system_output>
+  <system_output timestamp="1448.662646">0.33 http://mirror.twds.com.tw/alpine/
+</system_output>
+  <system_output timestamp="1449.841635">0.49 http://mirrors.jcut.edu.cn/alpine/
+</system_output>
+  <system_output timestamp="1450.115453">0.26 http://mirror.raiolanetworks.com/alpine/
+</system_output>
+  <system_output timestamp="1450.50625">0.32 http://elmirror.cl/alpine/
+</system_output>
+  <system_output timestamp="1450.776565">0.06 http://alpinelinux.mirrors.ovh.net/
+</system_output>
+  <system_output timestamp="1451.335559">0.24 http://debian.ethz.ch/alpine/
+</system_output>
+  <system_output timestamp="1451.607771">0.24 http://mirror.leitecastro.com/alpine
+</system_output>
+  <system_output timestamp="1451.943991">0.24 http://pkg.adfinis-on-exoscale.ch/alpine/
+</system_output>
+  <system_output timestamp="1453.109714">0.45 http://mirrors.hust.edu.cn/alpine/
+</system_output>
+  <system_output timestamp="1454.471704">1.24 http://ftp2.crifo.org/alpine
+</system_output>
+  <system_output timestamp="1454.473426">Added mirror mirrors.gigenet.com
+</system_output>
+  <system_output timestamp="1454.47345">Updating repository indexes... </system_output>
+  <system_output timestamp="1454.893346">done.
+</system_output>
+  <system_output timestamp="1454.893492">~/bc-1.08.1 # [6n</system_output>
+  <user_input timestamp="1454.894733">[49;15R</user_input>
+  <user_input timestamp="1601.560777">.</user_input>
+  <system_output timestamp="1601.560875">.</system_output>
+  <user_input timestamp="1601.806793">/</user_input>
+  <system_output timestamp="1601.8069">/</system_output>
+  <user_input timestamp="1603.278734">c</user_input>
+  <system_output timestamp="1603.278841">c</system_output>
+  <user_input timestamp="1603.354667">o</user_input>
+  <system_output timestamp="1603.354747">o</system_output>
+  <user_input timestamp="1603.512672">n</user_input>
+  <system_output timestamp="1603.512786">n</system_output>
+  <user_input timestamp="1603.676686">f</user_input>
+  <system_output timestamp="1603.676794">f</system_output>
+  <user_input timestamp="1603.786634">i</user_input>
+  <system_output timestamp="1603.786723">i</system_output>
+  <user_input timestamp="1603.936663">g</user_input>
+  <system_output timestamp="1603.936776">g</system_output>
+  <user_input timestamp="1604.168691">	</user_input>
+  <system_output timestamp="1604.168885">
+~/bc-1.08.1 # ./config[J</system_output>
+  <user_input timestamp="1604.598724">	</user_input>
+  <system_output timestamp="1604.598815">
+config.h.in   config.log    configure     configure.ac
+</system_output>
+  <system_output timestamp="1604.598834">
+~/bc-1.08.1 # ./config[J</system_output>
+  <user_input timestamp="1605.038714">u</user_input>
+  <system_output timestamp="1605.038822">u</system_output>
+  <user_input timestamp="1605.240666">	</user_input>
+  <system_output timestamp="1605.240828">
+~/bc-1.08.1 # ./conf</system_output>
+  <system_output timestamp="1605.240837">igure[J</system_output>
+  <user_input timestamp="1605.586692">
+</user_input>
+  <system_output timestamp="1605.586804">
+</system_output>
+  <system_output timestamp="1605.615267">checking for a BSD-compatible install... </system_output>
+  <system_output timestamp="1605.703663">/usr/bin/install -c
+</system_output>
+  <system_output timestamp="1605.703668">checking whether sleep supports fractional seconds... </system_output>
+  <system_output timestamp="1605.705165">yes
+</system_output>
+  <system_output timestamp="1605.705177">checking filesystem timestamp resolution... </system_output>
+  <system_output timestamp="1605.930871">2
+</system_output>
+  <system_output timestamp="1605.930887">checking whether build environment is sane... </system_output>
+  <system_output timestamp="1605.932326">yes
+</system_output>
+  <system_output timestamp="1605.934388">checking for a race-free mkdir -p... </system_output>
+  <system_output timestamp="1605.93767">/bin/mkdir -p
+</system_output>
+  <system_output timestamp="1605.937737">checking for gawk... </system_output>
+  <system_output timestamp="1605.937838">no
+checking for mawk... </system_output>
+  <system_output timestamp="1605.937914">no
+checking for nawk... </system_output>
+  <system_output timestamp="1605.937988">no
+checking for awk... </system_output>
+  <system_output timestamp="1605.938045">awk
+</system_output>
+  <system_output timestamp="1605.938069">checking whether make sets $(MAKE)... </system_output>
+  <system_output timestamp="1605.939934">no
+</system_output>
+  <system_output timestamp="1605.941152">checking whether make supports nested variables... </system_output>
+  <system_output timestamp="1605.941432">no
+</system_output>
+  <system_output timestamp="1605.942701">checking xargs -n works... </system_output>
+  <system_output timestamp="1605.943936">yes
+</system_output>
+  <system_output timestamp="1605.944956">checking for gcc... </system_output>
+  <system_output timestamp="1605.944992">no
+</system_output>
+  <system_output timestamp="1605.945106">checking for cc... </system_output>
+  <system_output timestamp="1605.945145">no
+</system_output>
+  <system_output timestamp="1605.945247">checking for cl.exe... </system_output>
+  <system_output timestamp="1605.945289">no
+</system_output>
+  <system_output timestamp="1605.945393">checking for clang... </system_output>
+  <system_output timestamp="1605.945434">no
+</system_output>
+  <system_output timestamp="1605.945469">configure: error: in '/root/bc-1.08.1':
+</system_output>
+  <system_output timestamp="1605.945489">configure: error: no acceptable C compiler found in $PATH
+See 'config.log' for more details
+</system_output>
+  <system_output timestamp="1605.957776">~/bc-1.08.1 # [6n</system_output>
+  <user_input timestamp="1605.957834">[49;15R</user_input>
+  <user_input timestamp="1609.740657">a</user_input>
+  <system_output timestamp="1609.740756">a</system_output>
+  <user_input timestamp="1609.80458">p</user_input>
+  <system_output timestamp="1609.804652">p</system_output>
+  <user_input timestamp="1609.998619">k</user_input>
+  <system_output timestamp="1609.9987">k</system_output>
+  <user_input timestamp="1610.124568"> </user_input>
+  <system_output timestamp="1610.124652"> </system_output>
+  <user_input timestamp="1610.216568">a</user_input>
+  <system_output timestamp="1610.216665">a</system_output>
+  <user_input timestamp="1610.442632">d</user_input>
+  <system_output timestamp="1610.442731">d</system_output>
+  <user_input timestamp="1610.55661">d</user_input>
+  <system_output timestamp="1610.556703">d</system_output>
+  <user_input timestamp="1610.640598"> </user_input>
+  <system_output timestamp="1610.640701"> </system_output>
+  <user_input timestamp="1610.900592">g</user_input>
+  <system_output timestamp="1610.900711">g</system_output>
+  <user_input timestamp="1611.216612">c</user_input>
+  <system_output timestamp="1611.216697">c</system_output>
+  <user_input timestamp="1611.334571">c</user_input>
+  <system_output timestamp="1611.334678">c</system_output>
+  <user_input timestamp="1611.890617">
+</user_input>
+  <system_output timestamp="1611.890727">
+</system_output>
+  <system_output timestamp="1612.084906">(1/11) Installing libgcc (14.2.0-r4)
+7  0%                                                                                                                          </system_output>
+  <system_output timestamp="1612.155198">8[0K(2/11) Installing jansson (2.14-r4)
+7  0%                                                                                                                          </system_output>
+  <system_output timestamp="1612.172621">8[0K(3/11) Installing libstdc++ (14.2.0-r4)
+7  0%                                                                                                                          </system_output>
+  <system_output timestamp="1612.236428">8[0K7  1% █                                                                                                                        </system_output>
+  <system_output timestamp="1612.241464">8[0K(4/11) Installing binutils (2.43.1-r1)
+7  1% ██                                                                                                                       </system_output>
+  <system_output timestamp="1612.262353">8[0K7  2% ██                                                                                                                       </system_output>
+  <system_output timestamp="1612.272959">8[0K7  3% ████                                                                                                                     </system_output>
+  <system_output timestamp="1612.278521">8[0K7  4% █████                                                                                                                    </system_output>
+  <system_output timestamp="1612.281791">8[0K7  5% ██████                                                                                                                   </system_output>
+  <system_output timestamp="1612.286889">8[0K7  5% ███████                                                                                                                  </system_output>
+  <system_output timestamp="1612.295994">8[0K7  6% ████████                                                                                                                 </system_output>
+  <system_output timestamp="1612.298162">8[0K7  7% ████████                                                                                                                 </system_output>
+  <system_output timestamp="1612.299838">8[0K7  7% █████████                                                                                                                </system_output>
+  <system_output timestamp="1612.303015">8[0K7  8% █████████                                                                                                                </system_output>
+  <system_output timestamp="1612.310362">8[0K(5/11) Installing libgomp (14.2.0-r4)
+7  8% █████████                                                                                                                </system_output>
+  <system_output timestamp="1612.326698">8[0K(6/11) Installing libatomic (14.2.0-r4)
+7  8% ██████████                                                                                                               </system_output>
+  <system_output timestamp="1612.34049">8[0K(7/11) Installing gmp (6.3.0-r2)
+7  8% ██████████                                                                                                               </system_output>
+  <system_output timestamp="1612.357505">8[0K(8/11) Installing isl26 (0.26-r1)
+7  8% ██████████                                                                                                               </system_output>
+  <system_output timestamp="1612.384621">8[0K7 10% ████████████                                                                                                             </system_output>
+  <system_output timestamp="1612.385054">8[0K(9/11) Installing mpfr4 (4.2.1-r0)
+7 10% ████████████                                                                                                             </system_output>
+  <system_output timestamp="1612.403008">8[0K(10/11) Installing mpc1 (1.3.1-r1)
+7 10% ████████████                                                                                                             </system_output>
+  <system_output timestamp="1612.4176">8[0K(11/11) Installing gcc (14.2.0-r4)
+7 10% ████████████                                                                                                             </system_output>
+  <system_output timestamp="1612.443093">8[0K7 11% ██████████████                                                                                                           </system_output>
+  <system_output timestamp="1612.454984">8[0K7 13% ███████████████                                                                                                          </system_output>
+  <system_output timestamp="1612.463993">8[0K7 13% ████████████████                                                                                                         </system_output>
+  <system_output timestamp="1612.472057">8[0K7 14% █████████████████                                                                                                        </system_output>
+  <system_output timestamp="1612.480338">8[0K7 15% ██████████████████                                                                                                       </system_output>
+  <system_output timestamp="1612.489726">8[0K7 16% ████████████████████                                                                                                     </system_output>
+  <system_output timestamp="1612.501618">8[0K7 17% █████████████████████                                                                                                    </system_output>
+  <system_output timestamp="1612.516051">8[0K7 19% ███████████████████████                                                                                                  </system_output>
+  <system_output timestamp="1612.531249">8[0K7 20% ████████████████████████                                                                                                 </system_output>
+  <system_output timestamp="1612.546435">8[0K7 21% ██████████████████████████                                                                                               </system_output>
+  <system_output timestamp="1612.56225">8[0K7 23% ████████████████████████████                                                                                             </system_output>
+  <system_output timestamp="1612.573088">8[0K7 24% █████████████████████████████                                                                                            </system_output>
+  <system_output timestamp="1612.582851">8[0K7 25% ███████████████████████████████                                                                                          </system_output>
+  <system_output timestamp="1612.58914">8[0K7 27% ████████████████████████████████                                                                                         </system_output>
+  <system_output timestamp="1612.594572">8[0K7 28% ██████████████████████████████████                                                                                       </system_output>
+  <system_output timestamp="1612.605118">8[0K7 29% ███████████████████████████████████                                                                                      </system_output>
+  <system_output timestamp="1612.620369">8[0K7 30% █████████████████████████████████████                                                                                    </system_output>
+  <system_output timestamp="1612.633023">8[0K7 32% ███████████████████████████████████████                                                                                  </system_output>
+  <system_output timestamp="1612.639881">8[0K7 33% ████████████████████████████████████████                                                                                 </system_output>
+  <system_output timestamp="1612.647468">8[0K7 34% ██████████████████████████████████████████                                                                               </system_output>
+  <system_output timestamp="1612.651641">8[0K7 36% ███████████████████████████████████████████                                                                              </system_output>
+  <system_output timestamp="1612.659393">8[0K7 37% █████████████████████████████████████████████                                                                            </system_output>
+  <system_output timestamp="1612.667564">8[0K7 38% ██████████████████████████████████████████████                                                                           </system_output>
+  <system_output timestamp="1612.668779">8[0K7 38% ███████████████████████████████████████████████                                                                          </system_output>
+  <system_output timestamp="1612.670507">8[0K7 39% ███████████████████████████████████████████████                                                                          </system_output>
+  <system_output timestamp="1612.672007">8[0K7 39% ████████████████████████████████████████████████                                                                         </system_output>
+  <system_output timestamp="1612.67313">8[0K7 40% ████████████████████████████████████████████████                                                                         </system_output>
+  <system_output timestamp="1612.677597">8[0K7 40% █████████████████████████████████████████████████                                                                        </system_output>
+  <system_output timestamp="1612.69139">8[0K7 41% ██████████████████████████████████████████████████                                                                       </system_output>
+  <system_output timestamp="1612.697856">8[0K7 42% ███████████████████████████████████████████████████                                                                      </system_output>
+  <system_output timestamp="1612.70342">8[0K7 43% █████████████████████████████████████████████████████                                                                    </system_output>
+  <system_output timestamp="1612.70581">8[0K7 44% █████████████████████████████████████████████████████                                                                    </system_output>
+  <system_output timestamp="1612.710136">8[0K7 44% ██████████████████████████████████████████████████████                                                                   </system_output>
+  <system_output timestamp="1612.713951">8[0K7 45% ██████████████████████████████████████████████████████                                                                   </system_output>
+  <system_output timestamp="1612.717015">8[0K7 45% ███████████████████████████████████████████████████████                                                                  </system_output>
+  <system_output timestamp="1612.722084">8[0K7 46% ███████████████████████████████████████████████████████                                                                  </system_output>
+  <system_output timestamp="1612.72412">8[0K7 46% ████████████████████████████████████████████████████████                                                                 </system_output>
+  <system_output timestamp="1612.727245">8[0K7 47% █████████████████████████████████████████████████████████                                                                </system_output>
+  <system_output timestamp="1612.734027">8[0K7 48% ██████████████████████████████████████████████████████████                                                               </system_output>
+  <system_output timestamp="1612.737801">8[0K7 48% ███████████████████████████████████████████████████████████                                                              </system_output>
+  <system_output timestamp="1612.739704">8[0K7 49% ███████████████████████████████████████████████████████████                                                              </system_output>
+  <system_output timestamp="1612.744557">8[0K7 49% ████████████████████████████████████████████████████████████                                                             </system_output>
+  <system_output timestamp="1612.747284">8[0K7 50% ████████████████████████████████████████████████████████████                                                             </system_output>
+  <system_output timestamp="1612.750579">8[0K7 50% █████████████████████████████████████████████████████████████                                                            </system_output>
+  <system_output timestamp="1612.75416">8[0K7 51% █████████████████████████████████████████████████████████████                                                            </system_output>
+  <system_output timestamp="1612.761551">8[0K7 52% ███████████████████████████████████████████████████████████████                                                          </system_output>
+  <system_output timestamp="1612.770701">8[0K7 53% ████████████████████████████████████████████████████████████████                                                         </system_output>
+  <system_output timestamp="1612.781614">8[0K7 54% ██████████████████████████████████████████████████████████████████                                                       </system_output>
+  <system_output timestamp="1612.791215">8[0K7 56% ████████████████████████████████████████████████████████████████████                                                     </system_output>
+  <system_output timestamp="1612.801653">8[0K7 57% █████████████████████████████████████████████████████████████████████                                                    </system_output>
+  <system_output timestamp="1612.811391">8[0K7 58% ███████████████████████████████████████████████████████████████████████                                                  </system_output>
+  <system_output timestamp="1612.821629">8[0K7 60% ████████████████████████████████████████████████████████████████████████                                                 </system_output>
+  <system_output timestamp="1612.8298">8[0K7 61% ██████████████████████████████████████████████████████████████████████████                                               </system_output>
+  <system_output timestamp="1612.838923">8[0K7 62% ███████████████████████████████████████████████████████████████████████████                                              </system_output>
+  <system_output timestamp="1612.84416">8[0K7 64% █████████████████████████████████████████████████████████████████████████████                                            </system_output>
+  <system_output timestamp="1612.853223">8[0K7 65% ███████████████████████████████████████████████████████████████████████████████                                          </system_output>
+  <system_output timestamp="1612.86758">8[0K7 66% ████████████████████████████████████████████████████████████████████████████████                                         </system_output>
+  <system_output timestamp="1612.882071">8[0K7 67% ██████████████████████████████████████████████████████████████████████████████████                                       </system_output>
+  <system_output timestamp="1612.89256">8[0K7 69% ███████████████████████████████████████████████████████████████████████████████████                                      </system_output>
+  <system_output timestamp="1612.898505">8[0K7 70% █████████████████████████████████████████████████████████████████████████████████████                                    </system_output>
+  <system_output timestamp="1612.904595">8[0K7 71% ██████████████████████████████████████████████████████████████████████████████████████                                   </system_output>
+  <system_output timestamp="1612.910102">8[0K7 73% ████████████████████████████████████████████████████████████████████████████████████████                                 </system_output>
+  <system_output timestamp="1612.919088">8[0K7 74% ██████████████████████████████████████████████████████████████████████████████████████████                               </system_output>
+  <system_output timestamp="1612.92509">8[0K7 75% ███████████████████████████████████████████████████████████████████████████████████████████                              </system_output>
+  <system_output timestamp="1612.933713">8[0K7 76% ████████████████████████████████████████████████████████████████████████████████████████████                             </system_output>
+  <system_output timestamp="1612.945459">8[0K7 77% █████████████████████████████████████████████████████████████████████████████████████████████                            </system_output>
+  <system_output timestamp="1612.954868">8[0K7 78% ███████████████████████████████████████████████████████████████████████████████████████████████                          </system_output>
+  <system_output timestamp="1612.966318">8[0K7 80% ████████████████████████████████████████████████████████████████████████████████████████████████                         </system_output>
+  <system_output timestamp="1612.980873">8[0K7 81% ██████████████████████████████████████████████████████████████████████████████████████████████████                       </system_output>
+  <system_output timestamp="1612.995064">8[0K7 82% ████████████████████████████████████████████████████████████████████████████████████████████████████                     </system_output>
+  <system_output timestamp="1613.010406">8[0K7 83% █████████████████████████████████████████████████████████████████████████████████████████████████████                    </system_output>
+  <system_output timestamp="1613.026259">8[0K7 85% ███████████████████████████████████████████████████████████████████████████████████████████████████████                  </system_output>
+  <system_output timestamp="1613.038926">8[0K7 86% ████████████████████████████████████████████████████████████████████████████████████████████████████████                 </system_output>
+  <system_output timestamp="1613.047413">8[0K7 87% ██████████████████████████████████████████████████████████████████████████████████████████████████████████               </system_output>
+  <system_output timestamp="1613.05418">8[0K7 89% ███████████████████████████████████████████████████████████████████████████████████████████████████████████              </system_output>
+  <system_output timestamp="1613.061402">8[0K7 90% █████████████████████████████████████████████████████████████████████████████████████████████████████████████            </system_output>
+  <system_output timestamp="1613.07218">8[0K7 91% ███████████████████████████████████████████████████████████████████████████████████████████████████████████████          </system_output>
+  <system_output timestamp="1613.088744">8[0K7 93% ████████████████████████████████████████████████████████████████████████████████████████████████████████████████         </system_output>
+  <system_output timestamp="1613.101579">8[0K7 94% ██████████████████████████████████████████████████████████████████████████████████████████████████████████████████       </system_output>
+  <system_output timestamp="1613.107379">8[0K7 95% ███████████████████████████████████████████████████████████████████████████████████████████████████████████████████      </system_output>
+  <system_output timestamp="1613.114558">8[0K7 96% █████████████████████████████████████████████████████████████████████████████████████████████████████████████████████    </system_output>
+  <system_output timestamp="1613.118269">8[0K7 98% ██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████   </system_output>
+  <system_output timestamp="1613.128543">8[0K7 99% ████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████ </system_output>
+  <system_output timestamp="1613.152388">8[0K7100% █████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████</system_output>
+  <system_output timestamp="1613.152543">8[0KExecuting busybox-1.37.0-r12.trigger
+</system_output>
+  <system_output timestamp="1613.160917">OK: 792 MiB in 161 packages
+</system_output>
+  <system_output timestamp="1613.208421">~/bc-1.08.1 # [6n</system_output>
+  <user_input timestamp="1613.208506">[49;15R</user_input>
+  <user_input timestamp="1614.70666">.</user_input>
+  <system_output timestamp="1614.706768">.</system_output>
+  <user_input timestamp="1614.848576">/</user_input>
+  <system_output timestamp="1614.848667">/</system_output>
+  <user_input timestamp="1615.172603">c</user_input>
+  <system_output timestamp="1615.172704">c</system_output>
+  <user_input timestamp="1615.232597">o</user_input>
+  <system_output timestamp="1615.232675">o</system_output>
+  <user_input timestamp="1615.33856">n</user_input>
+  <system_output timestamp="1615.338638">n</system_output>
+  <user_input timestamp="1615.436529">f</user_input>
+  <system_output timestamp="1615.436619">f</system_output>
+  <user_input timestamp="1615.560529">i</user_input>
+  <system_output timestamp="1615.560615">i</system_output>
+  <user_input timestamp="1615.668536">g</user_input>
+  <system_output timestamp="1615.668631">g</system_output>
+  <user_input timestamp="1615.78451">u</user_input>
+  <system_output timestamp="1615.7846">u</system_output>
+  <user_input timestamp="1615.956587">	</user_input>
+  <system_output timestamp="1615.956842">
+~/bc-1.08.1 # ./configur</system_output>
+  <system_output timestamp="1615.956856">e[J</system_output>
+  <user_input timestamp="1625.362534">
+</user_input>
+  <system_output timestamp="1625.362631">
+</system_output>
+  <system_output timestamp="1625.391662">checking for a BSD-compatible install... </system_output>
+  <system_output timestamp="1625.479426">/usr/bin/install -c
+</system_output>
+  <system_output timestamp="1625.479448">checking whether sleep supports fractional seconds... </system_output>
+  <system_output timestamp="1625.480929">yes
+</system_output>
+  <system_output timestamp="1625.480934">checking filesystem timestamp resolution... </system_output>
+  <system_output timestamp="1625.706762">2
+checking whether build environment is sane... </system_output>
+  <system_output timestamp="1625.708117">yes
+</system_output>
+  <system_output timestamp="1625.710327">checking for a race-free mkdir -p... </system_output>
+  <system_output timestamp="1625.713342">/bin/mkdir -p
+</system_output>
+  <system_output timestamp="1625.713412">checking for gawk... </system_output>
+  <system_output timestamp="1625.713474">no
+</system_output>
+  <system_output timestamp="1625.713497">checking for mawk... </system_output>
+  <system_output timestamp="1625.713546">no
+</system_output>
+  <system_output timestamp="1625.713561">checking for nawk... </system_output>
+  <system_output timestamp="1625.713615">no
+</system_output>
+  <system_output timestamp="1625.71363">checking for awk... </system_output>
+  <system_output timestamp="1625.713681">awk
+</system_output>
+  <system_output timestamp="1625.713726">checking whether make sets $(MAKE)... </system_output>
+  <system_output timestamp="1625.715855">no
+</system_output>
+  <system_output timestamp="1625.717038">checking whether make supports nested variables... </system_output>
+  <system_output timestamp="1625.717324">no
+</system_output>
+  <system_output timestamp="1625.718554">checking xargs -n works... </system_output>
+  <system_output timestamp="1625.719777">yes
+</system_output>
+  <system_output timestamp="1625.720744">checking for gcc... </system_output>
+  <system_output timestamp="1625.7208">gcc
+</system_output>
+  <system_output timestamp="1625.734865">checking whether the C compiler works... </system_output>
+  <system_output timestamp="1625.753289">no
+</system_output>
+  <system_output timestamp="1625.753743">configure: error: in '/root/bc-1.08.1':
+</system_output>
+  <system_output timestamp="1625.753768">configure: error: C compiler cannot create executables
+See 'config.log' for more details
+</system_output>
+  <system_output timestamp="1625.765111">~/bc-1.08.1 # [6n</system_output>
+  <user_input timestamp="1625.765163">[49;15R</user_input>
+  <user_input timestamp="1628.916495">v</user_input>
+  <system_output timestamp="1628.916593">v</system_output>
+  <user_input timestamp="1629.014428">i</user_input>
+  <system_output timestamp="1629.014514">i</system_output>
+  <user_input timestamp="1629.316462"> </user_input>
+  <system_output timestamp="1629.316571"> </system_output>
+  <user_input timestamp="1631.498464">c</user_input>
+  <system_output timestamp="1631.498576">c</system_output>
+  <user_input timestamp="1631.522369">o</user_input>
+  <system_output timestamp="1631.522423">o</system_output>
+  <user_input timestamp="1631.652382">n</user_input>
+  <system_output timestamp="1631.652472">n</system_output>
+  <user_input timestamp="1631.794383">f</user_input>
+  <system_output timestamp="1631.794482">f</system_output>
+  <user_input timestamp="1632.104392">	</user_input>
+  <system_output timestamp="1632.104579">
+~/bc-1.08.1 # vi co</system_output>
+  <system_output timestamp="1632.104581">nfig[J</system_output>
+  <user_input timestamp="1632.700448">.</user_input>
+  <system_output timestamp="1632.700563">.</system_output>
+  <user_input timestamp="1632.824379">	</user_input>
+  <system_output timestamp="1632.824574">
+~/bc-1.08.1 # vi config.[J</system_output>
+  <user_input timestamp="1633.186398">	</user_input>
+  <system_output timestamp="1633.186514">
+config.h.in  config.log
+
+~/bc-1.08.1 # vi conf</system_output>
+  <system_output timestamp="1633.186517">ig.[J</system_output>
+  <user_input timestamp="1633.598383">l</user_input>
+  <system_output timestamp="1633.598495">l</system_output>
+  <user_input timestamp="1633.802403">o</user_input>
+  <system_output timestamp="1633.802505">o</system_output>
+  <user_input timestamp="1633.934364">	</user_input>
+  <system_output timestamp="1633.934526">
+~/bc-1.08.1 # vi config.log [J</system_output>
+  <user_input timestamp="1634.398332">
+</user_input>
+  <system_output timestamp="1634.398417">
+</system_output>
+  <system_output timestamp="1634.398987">[?1049h[H[J[1;1HThis file contains any messages produced by compilers while[2;1Hrunning configure, to aid debugging if configure makes a mistake.[4;1HIt was created by bc configure 1.08.1, which was[5;1Hgenerated by GNU Autoconf 2.72.  Invocation command line was[7;3H$ ./configure[9;1H## --------- ##[10;1H## Platform. ##[11;1H## --------- ##[13;1Hhostname = stonkbad[14;1Huname -m = x86_64[15;1Huname -r = 6.12.8-arch1-1[16;1Huname -s = Linux[17;1Huname -v = #1 SMP PREEMPT_DYNAMIC Thu, 02 Jan 2025 22:52:26 +0000[19;1H/usr/bin/uname -p = unknown[20;1H/bin/uname -X     = unknown[22;1H/bin/arch              = x86_64[23;1H/usr/bin/arch -k       = unknown[24;1H/usr/convex/getsysinfo = unknown[25;1H/usr/bin/hostinfo      = unknown[26;1H/bin/machine           = unknown[27;1H/usr/bin/oslevel       = unknown[28;1H/bin/universe          = unknown[30;1HPATH: /usr/local/sbin/[31;1HPATH: /usr/local/bin/[32;1HPATH: /usr/sbin/[33;1HPATH: /usr/bin/[34;1HPATH: /sbin/[35;1HPATH: /bin/[38;1H## ----------- ##</system_output>
+  <system_output timestamp="1634.398995">[39;1H## Core tests. ##[40;1H## ----------- ##[42;1Hconfigure:2395: looking for aux files: ar-lib compile missing install-sh[43;1Hconfigure:2408:  trying ./[44;1Hconfigure:2437:   ./ar-lib found[45;1Hconfigure:2437:   ./compile found[46;1Hconfigure:2437:   ./missing found[47;1Hconfigure:2419:   ./install-sh found[48;1Hconfigure:2568: checking for a BSD-compatible install[1;1H[49;1H[K- config.log 1/302 0%[1;1H</system_output>
+  <user_input timestamp="1636.926386">G</user_input>
+  <system_output timestamp="1636.926514">[1;1Hpsdir='${docdir}'                                          [2;4Hstatedir='${localstatedir}/run'                               [3;1Hsbindir='${exec_prefix}/sbin'[4;1Hsharedstatedir='${prefix}/com'                  [5;1Hsysconfdir='${prefix}/etc'                                  [6;1Htarget_alias=''[7;3H             [8;1H## ----------- ##[9;4Hconfdefs.h. ##[10;4H----------- ##[11;1H               [12;1H/* confdefs.h */[13;1H#define PACKAGE_NAME &quot;bc&quot;[14;1H#define PACKAGE_TARNAME &quot;bc&quot;[15;1H#define PACKAGE_VERSION &quot;1.08.1&quot;[16;1H#define PACKAGE_STRING &quot;bc 1.08.1&quot;[17;1H#define PACKAGE_BUGREPORT &quot;&quot;                                     [18;1H#define PACKAGE_URL &quot;&quot;[19;1H#define PACKAGE &quot;bc&quot;       [20;1H#define VERSION &quot;1.08.1&quot;   [21;1H#define DC_VERSION &quot;1.5.1&quot;[22;1H#define BC_COPYRIGHT &quot;Copyright 1991-1994, 1997, 1998, 2000, 2004, 2006, 2008, 2012-2018, 2024 Free Software Foundation, Inc.&quot;[23;1H#define DC_COPYRIGHT &quot;Copyright 1994, 1997, 1998, 2000, 2001, 2003-2006, 2008, 2010, 2012-2018, 2022, 2024 Free Software Founda</system_output>
+  <system_output timestamp="1636.926537">[24;1H                                [25;1Hconfigure: exit 77              [26;1H~                               [27;1H~                               [28;1H~                               [29;1H~[30;1H~                     [31;1H~                    [32;1H~               [33;1H~              [34;1H~           [35;1H~          [36;1H~[37;1H~[38;1H~                [39;1H~                [40;1H~                [41;1H~[42;1H~                                                                       [43;1H~                         [44;1H~                               [45;1H~                                [46;1H~                                [47;1H~                                   [48;1H~                                                    [25;1H[49;1H[K- config.log 302/302 100%[25;1H</system_output>
+  <user_input timestamp="1637.484394"/>
+  <system_output timestamp="1637.484548">[1;1Ham__xargs_n='xargs -n'[2;1Hbindir='${exec_prefix}/bin'       [3;1Hbuild_alias=''               [4;1Hdatadir='${datarootdir}'      [5;1Hdatarootdir='${prefix}/share'[6;1Hdocdir='${datarootdir}/doc/${PACKAGE_TARNAME}'[7;1Hdvidir='${docdir}'[8;1Hexec_prefix='NONE'[9;1Hhost_alias=''    [10;1Hhtmldir='${docdir}'[11;1Hincludedir='${prefix}/include'[12;1Hinfodir='${datarootdir}/info'[13;1Hinstall_sh='${SHELL} /root/bc-1.08.1/install-sh'[14;1Hlibdir='${exec_prefix}/lib' [15;1Hlibexecdir='${exec_prefix}/libexec'[16;1Hlocaledir='${datarootdir}/locale' [17;1Hlocalstatedir='${prefix}/var'[18;1Hmandir='${datarootdir}/man'[19;1Hmkdir_p='$(MKDIR_P)'[20;1Holdincludedir='/usr/include'[21;1Hpdfdir='${docdir}'        [22;1Hprefix='NONE'                                                                                                                 [23;1Hprogram_transform_name='s,x,x,'                                                                                                [24;1Hpsdir='${docdir}'</system_output>
+  <system_output timestamp="1637.484566">[25;1Hrunstatedir='${localstatedir}/run'[26;1Hsbindir='${exec_prefix}/sbin'[27;1Hsharedstatedir='${prefix}/com'[28;1Hsysconfdir='${prefix}/etc'[29;1Htarget_alias=''[30;1H [31;1H## ----------- ##[32;1H## confdefs.h. ##[33;1H## ----------- ##[34;1H [35;1H/* confdefs.h */[36;1H#define PACKAGE_NAME &quot;bc&quot;[37;1H#define PACKAGE_TARNAME &quot;bc&quot;[38;1H#define PACKAGE_VERSION &quot;1.08.1&quot;[39;1H#define PACKAGE_STRING &quot;bc 1.08.1&quot;[40;1H#define PACKAGE_BUGREPORT &quot;&quot;[41;1H#define PACKAGE_URL &quot;&quot;[42;1H#define PACKAGE &quot;bc&quot;[43;1H#define VERSION &quot;1.08.1&quot;[44;1H#define DC_VERSION &quot;1.5.1&quot;[45;1H#define BC_COPYRIGHT &quot;Copyright 1991-1994, 1997, 1998, 2000, 2004, 2006, 2008, 2012-2018, 2024 Free Software Foundation, Inc.&quot;[46;1H#define DC_COPYRIGHT &quot;Copyright 1994, 1997, 1998, 2000, 2001, 2003-2006, 2008, 2010, 2012-2018, 2022, 2024 Free Software Founda[47;1H [48;1Hconfigure: exit 77[48;1H</system_output>
+  <user_input timestamp="1637.652383"/>
+  <system_output timestamp="1637.652539">[1;1HPATH_SEPARATOR=':'    [2;1HRANLIB=''                  [3;1HREADLINELIB[4;1HSET_MAKE='MAKE=make'    [5;1HSHELL='/bin/sh'              [6;1HSTRIP=''                                      [7;1HVERSION='1.08.1'  [8;1HYACC=''           [9;1HYFLAGS=''    [10;1Hac_ct_AR=''        [11;1Hac_ct_CC='gcc'                [12;1Ham__EXEEXT_FALSE=''          [13;1Ham__EXEEXT_TRUE=''                              [14;1Ham__fastdepCC_FALSE=''     [15;1Ham__fastdepCC_TRUE=''              [16;1Ham__include=''                   [17;1Ham__isrc=''                  [18;1Ham__leading_dot='.'        [19;1Ham__nodep=''        [20;1Ham__quote=''                [21;1Ham__rm_f_notfound=''[22;1Ham__tar='$${TAR-tar} chof - &quot;$$tardir&quot;'[23;1Ham__untar='$${TAR-tar} xf -'   [24;1Ham__xargs_n='xargs -n'[25;1Hbindir='${exec_prefix}/bin'       [26;1Hbuild_alias=''               [27;1Hdatadir='${datarootdir}'      [28;1Hdatarootdir='${prefix}/share'[29;1Hdocdir='${datarootdir}/doc/${PACKAGE_TARNAME}'[30;1Hdvidir='${docdir}'</system_output>
+  <system_output timestamp="1637.652557">[31;1Hexec_prefix='NONE'[32;1Hhost_alias=''    [33;1Hhtmldir='${docdir}'[34;1Hincludedir='${prefix}/include'[35;1Hinfodir='${datarootdir}/info'[36;1Hinstall_sh='${SHELL} /root/bc-1.08.1/install-sh'[37;1Hlibdir='${exec_prefix}/lib' [38;1Hlibexecdir='${exec_prefix}/libexec'[39;1Hlocaledir='${datarootdir}/locale' [40;1Hlocalstatedir='${prefix}/var'[41;1Hmandir='${datarootdir}/man'[42;1Hmkdir_p='$(MKDIR_P)'[43;1Holdincludedir='/usr/include'[44;1Hpdfdir='${docdir}'        [45;1Hprefix='NONE'                                                                                                                 [46;1Hprogram_transform_name='s,x,x,'                                                                                                [47;1Hpsdir='${docdir}'[48;1Hrunstatedir='${localstatedir}/run'[48;1H[49;1H[K- config.log 279/302 92%[48;1H</system_output>
+  <user_input timestamp="1637.784361"/>
+  <system_output timestamp="1637.784514">[1;1HETAGS='etags'     [2;1HEXEEXT[3;1HINSTALL_DATA='${INSTALL} -m 644'[4;1HINSTALL_PROGRAM='${INSTALL}'[5;1HINSTALL_SCRIPT='${INSTALL}'[6;1HINSTALL_STRIP_PROGRAM='$(install_sh) -c -s'[7;1HLDFLAGS=''      [8;1HLEX='' [9;1HLEXLIB[10;1HLEX_OUTPUT_ROOT=''[11;1HLIBOBJS=''    [12;1HLIBS=''            [13;1HLTLIBOBJS=''      [14;1HMAKEINFO='${SHELL} '\''/root/bc-1.08.1/missing'\'' makeinfo'[15;1HMKDIR_P='/bin/mkdir -p'[16;1HOBJEXT=''     [17;1HPACKAGE='bc'[18;1HPACKAGE_BUGREPORT=''[19;1HPACKAGE_NAME='bc'[20;1HPACKAGE_STRING='bc 1.08.1'[21;1HPACKAGE_TARNAME='bc[22;1HPACKAGE_URL=''                         [23;1HPACKAGE_VERSION='1.08.1'    [24;1HPATH_SEPARATOR=':'    [25;1HRANLIB=''                  [26;1HREADLINELIB[27;1HSET_MAKE='MAKE=make'    [28;1HSHELL='/bin/sh'              [29;1HSTRIP=''                                      [30;1HVERSION='1.08.1'  [31;1HYACC=''           [32;1HYFLAGS=''    [33;1Hac_ct_AR=''        [34;1Hac_ct_CC='gcc'                [35;1Ham__EXEEXT_FALSE=''          </system_output>
+  <system_output timestamp="1637.784528">[36;1Ham__EXEEXT_TRUE=''                              [37;1Ham__fastdepCC_FALSE=''     [38;1Ham__fastdepCC_TRUE=''              [39;1Ham__include=''                   [40;1Ham__isrc=''                  [41;1Ham__leading_dot='.'        [42;1Ham__nodep=''        [43;1Ham__quote=''                [44;1Ham__rm_f_notfound=''[45;1Ham__tar='$${TAR-tar} chof - &quot;$$tardir&quot;'[46;1Ham__untar='$${TAR-tar} xf -'   [47;1Ham__xargs_n='xargs -n'[48;1Hbindir='${exec_prefix}/bin'       [48;1H[49;1H[K- config.log 256/302 84%[48;1H</system_output>
+  <user_input timestamp="1637.898314"/>
+  <system_output timestamp="1637.898467">[1;1HAM_BACKSLASH='\'[2;1HAM_DEFAULT_V=''[3;1HAM_DEFAULT_VERBOSITY='1'        [4;1HAM_V=''                     [5;1HAR=''                      [6;1HAUTOCONF='${SHELL} '\''/root/bc-1.08.1/missing'\'' autoconf'[7;1HAUTOHEADER='${SHELL} '\''/root/bc-1.08.1/missing'\'' autoheader'[8;1HAUTOMAKE='${SHELL} '\''/root/bc-1.08.1/missing'\'' automake-1.17'[9;1HAWK='awk[10;1HBC_VERSION=''     [11;1HCC='gcc'  [12;1HCCDEPMODE=''[13;1HCFLAGS=''   [14;1HCPPFLAGS=''                                                 [15;1HCSCOPE='cscope'        [16;1HCTAGS='ctags'[17;1HCYGPATH_W='echo'[18;1HDC_VERSION=''       [19;1HDEFS=''          [20;1HDEPDIR=''                 [21;1HECHO_C=''           [22;1HECHO_N='-n'   [23;1HECHO_T=''               [24;1HETAGS='etags'     [25;1HEXEEXT[26;1HINSTALL_DATA='${INSTALL} -m 644'[27;1HINSTALL_PROGRAM='${INSTALL}'[28;1HINSTALL_SCRIPT='${INSTALL}'[29;1HINSTALL_STRIP_PROGRAM='$(install_sh) -c -s'[30;1HLDFLAGS=''      [31;1HLEX='' [32;1HLEXLIB[33;1HLEX_OUTPUT_ROOT=''[34;1H</system_output>
+  <system_output timestamp="1637.898472">LIBOBJS=''    [35;1HLIBS=''            [36;1HLTLIBOBJS=''      [37;1HMAKEINFO='${SHELL} '\''/root/bc-1.08.1/missing'\'' makeinfo'[38;1HMKDIR_P='/bin/mkdir -p'[39;1HOBJEXT=''     [40;1HPACKAGE='bc'[41;1HPACKAGE_BUGREPORT=''[42;1HPACKAGE_NAME='bc'[43;1HPACKAGE_STRING='bc 1.08.1'[44;1HPACKAGE_TARNAME='bc[45;1HPACKAGE_URL=''                         [46;1HPACKAGE_VERSION='1.08.1'    [47;1HPATH_SEPARATOR=':'    [48;1HRANLIB=''                  [48;1H[49;1H[K- config.log 233/302 77%[48;1H</system_output>
+  <user_input timestamp="1638.014322"/>
+  <system_output timestamp="1638.014449">[1;1Hac_cv_env_host_alias_set=''[2;1Hac_cv_env_host_alias_value=''[3;1Hac_cv_env_target_alias_set=''[4;1Hac_cv_env_target_alias_value=''[5;1Hac_cv_path_install='/usr/bin/install -c'[6;1Hac_cv_path_mkdir='/bin/mkdir'                               [7;1Hac_cv_prog_AWK='awk'                                            [8;1Hac_cv_prog_ac_ct_CC='gcc'                                        [9;1Hac_cv_prog_make_make_set='no'[10;1Ham_cv_filesystem_timestamp_resolution='2'[11;1Ham_cv_make_support_nested_variables='no'[12;1Ham_cv_sleep_fractional_seconds='yes'[13;1Ham_cv_xargs_n_works='yes'[14;1H           [15;1H## ----------------- ##[16;1H## Output variables. ##[17;1H## ----------------- ##[18;1H             [19;1HACLOCAL='${SHELL} '\''/root/bc-1.08.1/missing'\'' aclocal-1.17'[20;1HAMDEPBACKSLASH=''[21;1HAMDEP_FALSE=''[22;1HAMDEP_TRUE=''[23;1HAMTAR='$${TAR-tar}'[24;1HAM_BACKSLASH='\'[25;1HAM_DEFAULT_V=''[26;1HAM_DEFAULT_VERBOSITY='1'        [27;1HAM_V=''                     [28;1HAR=''                      </system_output>
+  <system_output timestamp="1638.014466">[29;1HAUTOCONF='${SHELL} '\''/root/bc-1.08.1/missing'\'' autoconf'[30;1HAUTOHEADER='${SHELL} '\''/root/bc-1.08.1/missing'\'' autoheader'[31;1HAUTOMAKE='${SHELL} '\''/root/bc-1.08.1/missing'\'' automake-1.17'[32;1HAWK='awk[33;1HBC_VERSION=''     [34;1HCC='gcc'  [35;1HCCDEPMODE=''[36;1HCFLAGS=''   [37;1HCPPFLAGS=''                                                 [38;1HCSCOPE='cscope'        [39;1HCTAGS='ctags'[40;1HCYGPATH_W='echo'[41;1HDC_VERSION=''       [42;1HDEFS=''          [43;1HDEPDIR=''                 [44;1HECHO_C=''           [45;1HECHO_N='-n'   [46;1HECHO_T=''               [47;1HETAGS='etags'     [48;1HEXEEXT[48;1H[49;1H[K- config.log 210/302 69%[48;1H</system_output>
+  <user_input timestamp="1638.140348"/>
+  <system_output timestamp="1638.140511">[1;1Hconfigure:3900: error: C compiler cannot create executables[2;1HSee 'config.log' for more details[3;1H                             [4;1H## ---------------- ##         [5;1H## Cache variables. ##                  [6;1H## ---------------- ##       [7;1H                    [8;7Henv_CC_set=''      [9;7Henv_CC_value=''        [10;2Hc_cv_env_CFLAGS_set=''                  [11;2Hc_cv_env_CFLAGS_value=''               [12;2Hc_cv_env_CPPFLAGS_set=''           [13;2Hc_cv_env_CPPFLAGS_value=''[14;1Hac_cv_env_LDFLAGS_set=''[15;1Hac_cv_env_LDFLAGS_value=''[16;1Hac_cv_env_LIBS_set=''  [17;1Hac_cv_env_LIBS_value=''[18;1Hac_cv_env_YACC_set=''[19;1Hac_cv_env_YACC_value=''                                        [20;1Hac_cv_env_YFLAGS_set=''[21;1Hac_cv_env_YFLAGS_value=''[22;1Hac_cv_env_build_alias_set=''[23;1Hac_cv_env_build_alias_value=''[24;1Hac_cv_env_host_alias_set=''[25;1Hac_cv_env_host_alias_value=''[26;1Hac_cv_env_target_alias_set=''[27;1Hac_cv_env_target_alias_value=''[28;1Hac_cv_path_install='/usr/bin/install -c'[29;1Hac_cv_path_mkdir='/bin/mkdir'                               [30;1Hac_cv_prog_AWK='awk'                                            [31;1Hac_cv_prog_ac_ct_CC='gcc'                                        [32;1Hac_cv_prog_make_make_set='no'[33;1Ham_cv_filesystem_timestamp_resolution='2'[34;1Ham_cv_make_support_nested_variables='no'[35;1Ham_cv_sleep_fractional_seconds='yes'[36;1Ham_cv_xargs_n_works='yes'[37;1H           [38;1H## ----------------- ##[39;1H## Output variables. ##[40;1H## ----------------- ##[41;1H             [42;1HACLOCAL='${SHELL} '\''/root/bc-1.08.1/missing'\'' aclocal-1.17'[43;1HAMDEPBACKSLASH=''[44;1HAMDEP_FALSE=''[45;1HAMDEP_TRUE=''[46;1HAMTAR='$${TAR-tar}'[47;1HAM_BACKSLASH='\'[48;1HAM_DEFAULT_V=''[48;1H[49;1H[K- config.log 187/302 61%[48;1H</system_output>
+  <user_input timestamp="1638.240303"/>
+  <system_output timestamp="1638.24042">[1;11H failed program was:                             [2;1H| /* confdefs.h */               [3;1H| #define PACKAGE_NAME &quot;bc&quot;[4;1H| #define PACKAGE_TARNAME &quot;bc&quot;[5;1H| #define PACKAGE_VERSION &quot;1.08.1&quot;[6;1H| #define PACKAGE_STRING &quot;bc 1.08.1&quot;[7;1H| #define PACKAGE_BUGREPORT &quot;&quot;[8;1H| #define PACKAGE_URL &quot;&quot;[9;1H| #define PACKAGE &quot;bc&quot;[10;1H| #define VERSION &quot;1.08.1&quot;[11;1H| #define DC_VERSION &quot;1.5.1&quot;[12;1H| #define BC_COPYRIGHT &quot;Copyright 1991-1994, 1997, 1998, 2000, 2004, 2006, 2008, 2012-2018, 2024 Free Software Foundation, Inc.[13;1H| #define DC_COPYRIGHT &quot;Copyright 1994, 1997, 1998, 2000, 2001, 2003-2006, 2008, 2010, 2012-2018, 2022, 2024 Free Software Foun[14;1H| /* end confdefs.h.  */[15;1H|                         [16;1H| int                [17;1H| main (void)          [18;1H| {                  [19;1H|                      [20;1H|   ;                  [21;1H|   return 0;            [22;1H| }                         [23;1Hconfigure:3898: error: in '/root/bc-1.08.1':[24;1Hconfigure:3900: error: C compiler cannot create executables</system_output>
+  <system_output timestamp="1638.240444">[25;1HSee 'config.log' for more details[26;1H                             [27;1H## ---------------- ##         [28;1H## Cache variables. ##                  [29;1H## ---------------- ##       [30;1H                    [31;7Henv_CC_set=''      [32;7Henv_CC_value=''        [33;2Hc_cv_env_CFLAGS_set=''                  [34;2Hc_cv_env_CFLAGS_value=''               [35;2Hc_cv_env_CPPFLAGS_set=''           [36;2Hc_cv_env_CPPFLAGS_value=''[37;1Hac_cv_env_LDFLAGS_set=''[38;1Hac_cv_env_LDFLAGS_value=''[39;1Hac_cv_env_LIBS_set=''  [40;1Hac_cv_env_LIBS_value=''[41;1Hac_cv_env_YACC_set=''[42;1Hac_cv_env_YACC_value=''                                        [43;1Hac_cv_env_YFLAGS_set=''[44;1Hac_cv_env_YFLAGS_value=''[45;1Hac_cv_env_build_alias_set=''[46;1Hac_cv_env_build_alias_value=''[47;1Hac_cv_env_host_alias_set=''[48;1Hac_cv_env_host_alias_value=''[48;1H[49;1H[K- config.log 164/302 54%[48;1H</system_output>
+  <user_input timestamp="1638.372334"/>
+  <system_output timestamp="1638.372476">[1;11H3795: gcc -V &gt;&amp;5    [2;1Hgcc: error: unrecognized command-line option '-V'[3;1Hgcc: fatal error: no input files[4;1Hcompilation terminated.       [5;1Hconfigure:3806: $? = 1            [6;1Hconfigure:3795: gcc -qversion &gt;&amp;5   [7;1Hgcc: error: unrecognized command-line option '-qversion'; did you mean '--version'?[8;1Hgcc: fatal error: no input files[9;1Hcompilation terminated.[10;1Hconfigure:3806: $? = 1    [11;1Hconfigure:3795: gcc -version &gt;&amp;5[12;1Hgcc: error: unrecognized command-line option '-version'                                                                        [13;1Hgcc: fatal error: no input files                                                                                               [14;1Hcompilation terminated. [15;1Hconfigure:3806: $? = 1[16;1Hconfigure:3826: checking whether the C compiler works[17;1Hconfigure:3848: gcc    conftest.c  &gt;&amp;5[18;1H/usr/lib/gcc/x86_64-alpine-linux-musl/14.2.0/../../../../x86_64-alpine-linux-musl/bin/ld: cannot find Scrt1.o: No such file or[19;1H/usr/lib/gcc/x86_64-alpine-linux-musl/14.2.0/../../../../x86_64-alpine-linux-musl/bin/ld: cannot find crti.o: No such file or d[20;1H/usr/lib/gcc/x86_64-alpine-linux-musl/14.2.0/../../../../x86_64-alpine-linux-musl/bin/ld: cannot find -lssp_nonshared: No such[21;1Hcollect2: error: ld returned 1 exit status[22;1Hconfigure:3852: $? = 1[23;14H3: result: no                  [24;11H failed program was:                             [25;1H| /* confdefs.h */               [26;1H| #define PACKAGE_NAME &quot;bc&quot;[27;1H| #define PACKAGE_TARNAME &quot;bc&quot;[28;1H| #define PACKAGE_VERSION &quot;1.08.1&quot;[29;1H| #define PACKAGE_STRING &quot;bc 1.08.1&quot;[30;1H| #define PACKAGE_BUGREPORT &quot;&quot;[31;1H| #define PACKAGE_URL &quot;&quot;[32;1H| #define PACKAGE &quot;bc&quot;[33;1H| #define VERSION &quot;1.08.1&quot;[34;1H| #define DC_VERSION &quot;1.5.1&quot;[35;1H| #define BC_COPYRIGHT &quot;Copyright 1991-1994, 1997, 1998, 2000, 2004, 2006, 2008, 2012-2018, 2024 Free Software Foundation, Inc.[36;1H| #define DC_COPYRIGHT &quot;Copyright 1994, 1997, 1998, 2000, 2001, 2003-2006, 2008, 2010, 2012-2018, 2022, 2024 Free Software Foun[37;1H| /* end confdefs.h.  */[38;1H|                         [39;1H| int                [40;1H| main (void)          [41;1H| {                  [42;1H|                      [43;1H|   ;                  [44;1H|   return 0;            [45;1H| }                         [46;1Hconfigure:3898: error: in '/root/bc-1.08.1':[47;1Hconfigure:3900: error: C compiler cannot create executables[48;1HSee 'config.log' for more details[48;1H[49;1H[K- config.log 141/302 46%[48;1H</system_output>
+  <user_input timestamp="1638.492322"/>
+  <system_output timestamp="1638.49247">[1;12H201: checking xargs -n works[2;1Hconfigure:3217: result: yes                      [3;1Hconfigure:3394: checking for gcc[4;3Hnfigure:3415: found /usr/bin/gcc[5;12H427: result: gcc[6;13H86: checking for C compiler version[7;1Hconfigure:3795: gcc --version &gt;&amp;5                                                  [8;4H (Alpine 14.2.0) 14.2.0      [9;1HCopyright (C) 2024 Free Software Foundation, Inc.[10;1HThis is free software; see the source for copying conditions.  There is NO[11;1Hwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.[12;1H                                                       [13;1Hconfigure:3806: $? = 0          [14;3Hnfigure:3795: gcc -v &gt;&amp;5[15;1HUsing built-in specs. [16;1HCOLLECT_GCC=gcc                                      [17;1HCOLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-alpine-linux-musl/14.2.0/lto-wrapper[18;1HTarget: x86_64-alpine-linux-musl                                                                                              [19;1HConfigured with: /home/buildozer/aports/main/gcc/src/gcc-14.2.0/configure --prefix=/usr --mandir=/usr/share/man --infodir=/usr/[20;1HThread model: posix                                                                                                           [21;1HSupported LTO compression algorithms: zlib[22;1Hgcc version 14.2.0 (Alpine 14.2.0)[23;13H06: $? = 0    [24;11H3795: gcc -V &gt;&amp;5    [25;1Hgcc: error: unrecognized command-line option '-V'[26;1Hgcc: fatal error: no input files[27;1Hcompilation terminated.       [28;1Hconfigure:3806: $? = 1            [29;1Hconfigure:3795: gcc -qversion &gt;&amp;5   [30;1Hgcc: error: unrecognized command-line option '-qversion'; did you mean '--version'?[31;1Hgcc: fatal error: no input files[32;1Hcompilation terminated.[33;1Hconfigure:3806: $? = 1    [34;1Hconfigure:3795: gcc -version &gt;&amp;5[35;1Hgcc: error: unrecognized command-line option '-version'                                                                        [36;1Hgcc: fatal error: no input files                                                                                               [37;1Hcompilation terminated. [38;1Hconfigure:3806: $? = 1[39;1Hconfigure:3826: checking whether the C compiler works[40;1Hconfigure:3848: gcc    conftest.c  &gt;&amp;5[41;1H/usr/lib/gcc/x86_64-alpine-linux-musl/14.2.0/../../../../x86_64-alpine-linux-musl/bin/ld: cannot find Scrt1.o: No such file or[42;1H/usr/lib/gcc/x86_64-alpine-linux-musl/14.2.0/../../../../x86_64-alpine-linux-musl/bin/ld: cannot find crti.o: No such file or d[43;1H/usr/lib/gcc/x86_64-alpine-linux-musl/14.2.0/../../../../x86_64-alpine-linux-musl/bin/ld: cannot find -lssp_nonshared: No such[44;1Hcollect2: error: ld returned 1 exit status[45;1Hconfigure:3852: $? = 1[46;14H3: result: no                  [47;11H failed program was:                             [48;1H| /* confdefs.h */               [48;1H[49;1H[K- config.log 118/302 39%[48;1H</system_output>
+  <user_input timestamp="1638.620323"/>
+  <system_output timestamp="1638.620458">[1;11H2568: checking for a BSD-compatible install[2;11H2642: result: /usr/bin/install -c[3;11H2653: checking whether sleep supports fractional seconds[4;11H2669: result: yes       [5;11H2672: checking filesystem timestamp resolution[6;11H2807: result: 2                      [7;11H2812: checking whether build environment is sane[8;1Hconfigure:2853: result: yes[9;1Hconfigure:3024: checking for a race-free mkdir -p[10;1Hconfigure:3067: result: /bin/mkdir -p                                     [11;1Hconfigure:3074: checking for gawk                                          [12;1Hconfigure:3110: result: no[13;12H074: checking for mawk[14;12H110: result: no[15;1Hconfigure:3074: checking for nawk[16;1Hconfigure:3110: result: no[17;1Hconfigure:3074: checking for awk                                                [18;1Hconfigure:3095: found /usr/bin/awk[19;1Hconfigure:3107: result: awk                                                                                                    [20;1Hconfigure:3118: checking whether make sets $(MAKE)[21;1Hconfigure:3146: result: no                [22;1Hconfigure:3168: checking whether make supports nested variables[23;12H187: result: no[24;12H201: checking xargs -n works[25;1Hconfigure:3217: result: yes                      [26;1Hconfigure:3394: checking for gcc[27;3Hnfigure:3415: found /usr/bin/gcc[28;12H427: result: gcc[29;13H86: checking for C compiler version[30;1Hconfigure:3795: gcc --version &gt;&amp;5                                                  [31;4H (Alpine 14.2.0) 14.2.0      [32;1HCopyright (C) 2024 Free Software Foundation, Inc.[33;1HThis is free software; see the source for copying conditions.  There is NO[34;1Hwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.[35;1H                                                       [36;1Hconfigure:3806: $? = 0          [37;3Hnfigure:3795: gcc -v &gt;&amp;5[38;1HUsing built-in specs. [39;1HCOLLECT_GCC=gcc                                      [40;1HCOLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-alpine-linux-musl/14.2.0/lto-wrapper[41;1HTarget: x86_64-alpine-linux-musl                                                                                              [42;1HConfigured with: /home/buildozer/aports/main/gcc/src/gcc-14.2.0/configure --prefix=/usr --mandir=/usr/share/man --infodir=/usr/[43;1HThread model: posix                                                                                                           [44;1HSupported LTO compression algorithms: zlib[45;1Hgcc version 14.2.0 (Alpine 14.2.0)[46;13H06: $? = 0    [47;11H3795: gcc -V &gt;&amp;5    [48;1Hgcc: error: unrecognized command-line option '-V'[48;1H[49;1H[K- config.log 95/302 31%[48;1H</system_output>
+  <user_input timestamp="1638.984383"/>
+  <system_output timestamp="1638.984556">[1;11H3201: checking xargs -n works              [2;11H3217: result: yes                [3;11H3394: checking for gcc                                  [4;11H3415: found /usr/bin/gcc[5;11H3427: result: gcc                             [6;11H3786: checking for C compiler version[7;11H3795: gcc --version &gt;&amp;5                         [8;1Hgcc (Alpine 14.2.0) 14.2.0 [9;1HCopyright (C) 2024 Free Software Foundation, Inc.[10;1HThis is free software; see the source for copying conditions.  There is NO[11;1Hwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.[12;1H                          [13;12H806: $? = 0           [14;12H795: gcc -v &gt;&amp;5[15;1HUsing built-in specs.            [16;1HCOLLECT_GCC=gcc           [17;1HCOLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-alpine-linux-musl/14.2.0/lto-wrapper[18;1HTarget: x86_64-alpine-linux-musl  [19;1HConfigured with: /home/buildozer/aports/main/gcc/src/gcc-14.2.0/configure --prefix=/usr --mandir=/usr/share/man --infodir=/usr/[20;1HThread model: posix                               [21;1HSupported LTO compression algorithms: zlib[22;1Hgcc version 14.2.0 (Alpine 14.2.0)                             [23;12H806: $? = 0    [24;12H795: gcc -V &gt;&amp;5             [25;1Hgcc: error: unrecognized command-line option '-V'[26;1Hgcc: fatal error: no input files[27;3Hmpilation terminated.           [28;12H806: $? = 1     [29;13H95: gcc -qversion &gt;&amp;5              [30;1Hgcc: error: unrecognized command-line option '-qversion'; did you mean '--version'?[31;4H: fatal error: no input files[32;1Hcompilation terminated.                          [33;1Hconfigure:3806: $? = 1                                                    [34;1Hconfigure:3795: gcc -version &gt;&amp;5                                           [35;1Hgcc: error: unrecognized command-line option '-version'[36;1Hgcc: fatal error: no input files[37;3Hmpilation terminated.   [38;1Hconfigure:3806: $? = 1[39;1Hconfigure:3826: checking whether the C compiler works[40;1Hconfigure:3848: gcc    conftest.c  &gt;&amp;5                                          [41;1H/usr/lib/gcc/x86_64-alpine-linux-musl/14.2.0/../../../../x86_64-alpine-linux-musl/bin/ld: cannot find Scrt1.o: No such file or[42;1H/usr/lib/gcc/x86_64-alpine-linux-musl/14.2.0/../../../../x86_64-alpine-linux-musl/bin/ld: cannot find crti.o: No such file or d[43;1H/usr/lib/gcc/x86_64-alpine-linux-musl/14.2.0/../../../../x86_64-alpine-linux-musl/bin/ld: cannot find -lssp_nonshared: No such[44;1Hcollect2: error: ld returned 1 exit status[45;1Hconfigure:3852: $? = 1            [46;13H93: result: no[47;11H failed program was:[48;1H| /* confdefs.h */                               [25;1H</system_output>
+  <user_input timestamp="1639.764397">j</user_input>
+  <system_output timestamp="1639.764536">[26;1H[49;1H[K- config.log 96/302 31%[26;1H</system_output>
+  <user_input timestamp="1640.364398">j</user_input>
+  <system_output timestamp="1640.364546">[27;1H[49;1H[K- config.log 97/302 32%[27;1H</system_output>
+  <user_input timestamp="1640.404347">j</user_input>
+  <system_output timestamp="1640.404443">[28;1H[49;1H[K- config.log 98/302 32%[28;1H</system_output>
+  <user_input timestamp="1640.444359">j</user_input>
+  <system_output timestamp="1640.444469">[29;1H[49;1H[K- config.log 99/302 32%[29;1H</system_output>
+  <user_input timestamp="1640.484377">j</user_input>
+  <system_output timestamp="1640.484482">[30;1H[49;1H[K- config.log 100/302 33%[30;1H</system_output>
+  <user_input timestamp="1640.524392">j</user_input>
+  <system_output timestamp="1640.524497">[31;1H[49;1H[K- config.log 101/302 33%[31;1H</system_output>
+  <user_input timestamp="1641.994377">j</user_input>
+  <system_output timestamp="1641.994517">[32;1H[49;1H[K- config.log 102/302 33%[32;1H</system_output>
+  <user_input timestamp="1642.594405">j</user_input>
+  <system_output timestamp="1642.594537">[33;1H[49;1H[K- config.log 103/302 34%[33;1H</system_output>
+  <user_input timestamp="1642.634379">j</user_input>
+  <system_output timestamp="1642.634475">[34;1H[49;1H[K- config.log 104/302 34%[34;1H</system_output>
+  <user_input timestamp="1642.674405">j</user_input>
+  <system_output timestamp="1642.674515">[35;1H[49;1H[K- config.log 105/302 34%[35;1H</system_output>
+  <user_input timestamp="1642.714422">j</user_input>
+  <system_output timestamp="1642.714515">[36;1H[49;1H[K- config.log 106/302 35%[36;1H</system_output>
+  <user_input timestamp="1642.754449">j</user_input>
+  <system_output timestamp="1642.754553">[37;1H[49;1H[K- config.log 107/302 35%[37;1H</system_output>
+  <user_input timestamp="1642.794436">j</user_input>
+  <system_output timestamp="1642.794538">[38;1H[49;1H[K- config.log 108/302 35%[38;1H</system_output>
+  <user_input timestamp="1642.83444">j</user_input>
+  <system_output timestamp="1642.834532">[39;1H[49;1H[K- config.log 109/302 36%[39;1H</system_output>
+  <user_input timestamp="1642.874464">j</user_input>
+  <system_output timestamp="1642.874558">[40;1H[49;1H[K- config.log 110/302 36%[40;1H</system_output>
+  <user_input timestamp="1642.914456">j</user_input>
+  <system_output timestamp="1642.91456">[41;1H[49;1H[K- config.log 111/302 36%[41;1H</system_output>
+  <user_input timestamp="1643.448283">V</user_input>
+  <system_output timestamp="1643.448413">[41;1H[49;1H[K[7m'V' is not implemented[m[41;1H</system_output>
+  <user_input timestamp="1643.88831">j</user_input>
+  <system_output timestamp="1643.888432">[49;1H[K- config.log 111/302 36%[41;1H</system_output>
+  <system_output timestamp="1643.888447">[42;1H[49;1H[K- config.log 112/302 37%[42;1H</system_output>
+  <user_input timestamp="1644.420301">k</user_input>
+  <system_output timestamp="1644.420431">[41;1H[49;1H[K- config.log 111/302 36%[41;1H</system_output>
+  <user_input timestamp="1644.786307">$</user_input>
+  <system_output timestamp="1644.786458">[1;1H:3201: checking xargs -n works         [2;1H:3217: result: yes         [3;1H:3394: checking for gcc         [4;1H:3415: found /usr/bin/gcc         [5;1H:3427: result: gcc         [6;1H:3786: checking for C compiler version         [7;1H:3795: gcc --version &gt;&amp;5         [8;1Hne 14.2.0) 14.2.0         [9;1H (C) 2024 Free Software Foundation, Inc.         [10;1Hree software; see the source for copying conditions.  There is NO         [11;1H not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.         [12;1H                                                                                                                               [13;1H:3806: $? = 0         [14;1H:3795: gcc -v &gt;&amp;5         [15;1Hlt-in specs.         [16;2HC=gcc         [17;1HTO_WRAPPER=/usr/libexec/gcc/x86_64-alpine-linux-musl/14.2.0/lto-wrapper         [18;1H86_64-alpine-linux-musl         [19;1Hd with: /home/buildozer/aports/main/gcc/src/gcc-14.2.0/configure --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/inf[20;1Hdel: posix         [21;1H LTO compression algorithms: zlib         [22;1Hon 14.2.0 (Alpine 14.2.0)         [23;1H:3806: $? = 0         [24;1H:3795: gcc -V &gt;&amp;5         [25;1Hr: unrecognized command-line option '-V'         [26;1Hl error: no input files         [27;1Hon terminated.         [28;1H:3806: $? = 1         [29;1H:3795: gcc -qversion &gt;&amp;5         [30;1Hr: unrecognized command-line option '-qversion'; did you mean '--version'?         [31;1Hl error: no input files         [32;1Hon terminated.         [33;1H:3806: $? = 1         [34;1H:3795: gcc -version &gt;&amp;5         [35;1Hr: unrecognized command-line option '-version'         [36;1Hl error: no input files         [37;1Hon terminated.         [38;1H:3806: $? = 1         [39;1H:3826: checking whether the C compiler works         [40;1H:3848: gcc    conftest.c  &gt;&amp;5         [41;1Hgcc/x86_64-alpine-linux-musl/14.2.0/../../../../x86_64-alpine-linux-musl/bin/ld: cannot find Scrt1.o: No such file or directory[42;1Hgcc/x86_64-alpine-linux-musl/14.2.0/../../../../x86_64-alpine-linux-musl/bin/ld: cannot find crti.o: No such file or directory [43;1Hgcc/x86_64-alpine-linux-musl/14.2.0/../../../../x86_64-alpine-linux-musl/bin/ld: cannot find -lssp_nonshared: No such file or d[44;1H error: ld returned 1 exit status         [45;1H:3852: $? = 1         [46;1H:3893: result: no         [47;1H: failed program was:         [48;1Hdefs.h */         [41;127H</system_output>
+  <user_input timestamp="1645.344334">h</user_input>
+  <system_output timestamp="1645.344461">[41;126H</system_output>
+  <user_input timestamp="1645.524245">h</user_input>
+  <system_output timestamp="1645.524379">[41;125H</system_output>
+  <user_input timestamp="1645.67026">h</user_input>
+  <system_output timestamp="1645.670375">[41;124H</system_output>
+  <user_input timestamp="1645.806261">h</user_input>
+  <system_output timestamp="1645.806376">[41;123H</system_output>
+  <user_input timestamp="1645.934265">h</user_input>
+  <system_output timestamp="1645.934402">[41;122H</system_output>
+  <user_input timestamp="1646.06023">h</user_input>
+  <system_output timestamp="1646.06033">[41;121H</system_output>
+  <user_input timestamp="1646.290318">j</user_input>
+  <system_output timestamp="1646.29044">[42;121H[49;1H[K- config.log 112/302 37%[42;121H</system_output>
+  <user_input timestamp="1646.498261">k</user_input>
+  <system_output timestamp="1646.498386">[41;121H[49;1H[K- config.log 111/302 36%[41;121H</system_output>
+  <user_input timestamp="1646.642232">j</user_input>
+  <system_output timestamp="1646.642354">[42;121H[49;1H[K- config.log 112/302 37%[42;121H</system_output>
+  <user_input timestamp="1646.760246">k</user_input>
+  <system_output timestamp="1646.760367">[41;121H[49;1H[K- config.log 111/302 36%[41;121H</system_output>
+  <user_input timestamp="1646.882253">j</user_input>
+  <system_output timestamp="1646.882371">[42;121H[49;1H[K- config.log 112/302 37%[42;121H</system_output>
+  <user_input timestamp="1647.054298">k</user_input>
+  <system_output timestamp="1647.05444">[41;121H[49;1H[K- config.log 111/302 36%[41;121H</system_output>
+  <user_input timestamp="1647.348271">:</user_input>
+  <system_output timestamp="1647.348365">[49;1H[K:</system_output>
+  <user_input timestamp="1647.626278">q</user_input>
+  <system_output timestamp="1647.626362">q</system_output>
+  <user_input timestamp="1647.798296">
+</user_input>
+  <system_output timestamp="1647.798434">[41;121H[41;121H[49;1H[K- config.log 111/302 36%[41;121H[49;1H[K</system_output>
+  <system_output timestamp="1647.798447">[?1049l</system_output>
+  <system_output timestamp="1647.798628">~/bc-1.08.1 # [6n</system_output>
+  <user_input timestamp="1647.799188">[49;15R</user_input>
+  <user_input timestamp="1653.358258">a</user_input>
+  <system_output timestamp="1653.358371">a</system_output>
+  <user_input timestamp="1653.476199">p</user_input>
+  <system_output timestamp="1653.476287">p</system_output>
+  <user_input timestamp="1653.720212">k</user_input>
+  <system_output timestamp="1653.720303">k</system_output>
+  <user_input timestamp="1653.824154"> </user_input>
+  <system_output timestamp="1653.82424"> </system_output>
+  <user_input timestamp="1653.960203">a</user_input>
+  <system_output timestamp="1653.960295">a</system_output>
+  <user_input timestamp="1654.202304">d</user_input>
+  <system_output timestamp="1654.202408">d</system_output>
+  <user_input timestamp="1654.310192">d</user_input>
+  <system_output timestamp="1654.310284">d</system_output>
+  <user_input timestamp="1654.412169"> </user_input>
+  <system_output timestamp="1654.412254"> </system_output>
+  <user_input timestamp="1655.006258">m</user_input>
+  <system_output timestamp="1655.006354">m</system_output>
+  <user_input timestamp="1655.276205">u</user_input>
+  <system_output timestamp="1655.276293">u</system_output>
+  <user_input timestamp="1655.438147">s</user_input>
+  <system_output timestamp="1655.438237">s</system_output>
+  <user_input timestamp="1655.590188">l</user_input>
+  <system_output timestamp="1655.590276">l</system_output>
+  <user_input timestamp="1656.144172">-</user_input>
+  <system_output timestamp="1656.14426">-</system_output>
+  <user_input timestamp="1656.328235">d</user_input>
+  <system_output timestamp="1656.328325">d</system_output>
+  <user_input timestamp="1656.480176">e</user_input>
+  <system_output timestamp="1656.480261">e</system_output>
+  <user_input timestamp="1656.674176">v</user_input>
+  <system_output timestamp="1656.674259">v</system_output>
+  <user_input timestamp="1657.784188">
+</user_input>
+  <system_output timestamp="1657.784279">
+</system_output>
+  <system_output timestamp="1657.996807">(1/1) Installing musl-dev (1.2.5-r8)
+7  0%                                                                                                                          </system_output>
+  <system_output timestamp="1658.107258">8[0K7  0% █                                                                                                                        </system_output>
+  <system_output timestamp="1658.107429">8[0K7  1% █                                                                                                                        </system_output>
+  <system_output timestamp="1658.108024">8[0K7  1% ██                                                                                                                       </system_output>
+  <system_output timestamp="1658.108376">8[0K7  2% ██                                                                                                                       </system_output>
+  <system_output timestamp="1658.109063">8[0K7  3% ███                                                                                                                      </system_output>
+  <system_output timestamp="1658.109137">8[0K7  3% ████                                                                                                                     </system_output>
+  <system_output timestamp="1658.10962">8[0K7  4% ████                                                                                                                     </system_output>
+  <system_output timestamp="1658.10978">8[0K7  4% █████                                                                                                                    </system_output>
+  <system_output timestamp="1658.110607">8[0K7  5% ██████                                                                                                                   </system_output>
+  <system_output timestamp="1658.111106">8[0K7  5% ███████                                                                                                                  </system_output>
+  <system_output timestamp="1658.111192">8[0K7  6% ███████                                                                                                                  </system_output>
+  <system_output timestamp="1658.111815">8[0K7  6% ████████                                                                                                                 </system_output>
+  <system_output timestamp="1658.112035">8[0K7  7% ████████                                                                                                                 </system_output>
+  <system_output timestamp="1658.112445">8[0K7  7% █████████                                                                                                                </system_output>
+  <system_output timestamp="1658.112864">8[0K7  8% █████████                                                                                                                </system_output>
+  <system_output timestamp="1658.113237">8[0K7  8% ██████████                                                                                                               </system_output>
+  <system_output timestamp="1658.113647">8[0K7  9% ██████████                                                                                                               </system_output>
+  <system_output timestamp="1658.113709">8[0K7  9% ███████████                                                                                                              </system_output>
+  <system_output timestamp="1658.11436">8[0K7  9% ████████████                                                                                                             </system_output>
+  <system_output timestamp="1658.114422">8[0K7 10% ████████████                                                                                                             </system_output>
+  <system_output timestamp="1658.120292">8[0K7 10% █████████████                                                                                                            </system_output>
+  <system_output timestamp="1658.120385">8[0K7 11% █████████████                                                                                                            </system_output>
+  <system_output timestamp="1658.148495">8[0K7 32% ███████████████████████████████████████                                                                                  </system_output>
+  <system_output timestamp="1658.160908">8[0K7 53% █████████████████████████████████████████████████████████████████                                                        </system_output>
+  <system_output timestamp="1658.171523">8[0K7 74% ██████████████████████████████████████████████████████████████████████████████████████████                               </system_output>
+  <system_output timestamp="1658.180125">8[0K7 96% ████████████████████████████████████████████████████████████████████████████████████████████████████████████████████     </system_output>
+  <system_output timestamp="1658.183425">8[0K7 99% ████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████ </system_output>
+  <system_output timestamp="1658.188683">8[0K7100% █████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████</system_output>
+  <system_output timestamp="1658.193052">8[0KOK: 801 MiB in 162 packages
+</system_output>
+  <system_output timestamp="1658.233703">~/bc-1.08.1 # [6n</system_output>
+  <user_input timestamp="1658.233765">[49;15R</user_input>
+  <user_input timestamp="1658.704187">[A</user_input>
+  <system_output timestamp="1658.704295">
+~/bc-1.08.1 # apk add mu</system_output>
+  <system_output timestamp="1658.704308">sl-dev[J</system_output>
+  <user_input timestamp="1658.996221">[A</user_input>
+  <system_output timestamp="1658.996329">
+~/bc-1.08.1 # vi config.</system_output>
+  <system_output timestamp="1658.996337">log </system_output>
+  <system_output timestamp="1658.996339">[J</system_output>
+  <user_input timestamp="1659.352112">[A</user_input>
+  <system_output timestamp="1659.352206">
+~/bc-1.08.1 # ./co</system_output>
+  <system_output timestamp="1659.352228">nfigure[J</system_output>
+  <user_input timestamp="1660.006255">
+</user_input>
+  <system_output timestamp="1660.006348">
+</system_output>
+  <system_output timestamp="1660.035219">checking for a BSD-compatible install... </system_output>
+  <system_output timestamp="1660.124457">/usr/bin/install -c
+checking whether sleep supports fractional seconds... </system_output>
+  <system_output timestamp="1660.125921">yes
+checking filesystem timestamp resolution... </system_output>
+  <system_output timestamp="1660.351575">2
+checking whether build environment is sane... </system_output>
+  <system_output timestamp="1660.352953">yes
+</system_output>
+  <system_output timestamp="1660.35491">checking for a race-free mkdir -p... </system_output>
+  <system_output timestamp="1660.358123">/bin/mkdir -p
+</system_output>
+  <system_output timestamp="1660.358191">checking for gawk... </system_output>
+  <system_output timestamp="1660.358321">no
+</system_output>
+  <system_output timestamp="1660.358334">checking for mawk... </system_output>
+  <system_output timestamp="1660.358403">no
+</system_output>
+  <system_output timestamp="1660.358423">checking for nawk... </system_output>
+  <system_output timestamp="1660.358484">no
+</system_output>
+  <system_output timestamp="1660.358503">checking for awk... </system_output>
+  <system_output timestamp="1660.358569">awk
+</system_output>
+  <system_output timestamp="1660.358617">checking whether make sets $(MAKE)... </system_output>
+  <system_output timestamp="1660.360589">no
+</system_output>
+  <system_output timestamp="1660.361851">checking whether make supports nested variables... </system_output>
+  <system_output timestamp="1660.362143">no
+</system_output>
+  <system_output timestamp="1660.363258">checking xargs -n works... </system_output>
+  <system_output timestamp="1660.364508">yes
+</system_output>
+  <system_output timestamp="1660.365413">checking for gcc... </system_output>
+  <system_output timestamp="1660.365466">gcc
+</system_output>
+  <system_output timestamp="1660.380095">checking whether the C compiler works... </system_output>
+  <system_output timestamp="1660.401707">yes
+</system_output>
+  <system_output timestamp="1660.401711">checking for C compiler default output file name... </system_output>
+  <system_output timestamp="1660.401734">a.out
+</system_output>
+  <system_output timestamp="1660.402267">checking for suffix of executables... </system_output>
+  <system_output timestamp="1660.422868">
+</system_output>
+  <system_output timestamp="1660.423815">checking whether we are cross compiling... </system_output>
+  <system_output timestamp="1660.447002">no
+</system_output>
+  <system_output timestamp="1660.447713">checking for suffix of object files... </system_output>
+  <system_output timestamp="1660.461875">o
+</system_output>
+  <system_output timestamp="1660.461898">checking whether the compiler supports GNU C... </system_output>
+  <system_output timestamp="1660.4756">yes
+</system_output>
+  <system_output timestamp="1660.475622">checking whether gcc accepts -g... </system_output>
+  <system_output timestamp="1660.49002">yes
+</system_output>
+  <system_output timestamp="1660.490106">checking for gcc option to enable C11 features... </system_output>
+  <system_output timestamp="1660.535924">none needed
+</system_output>
+  <system_output timestamp="1660.536135">checking whether gcc understands -c and -o together... </system_output>
+  <system_output timestamp="1660.561826">yes
+</system_output>
+  <system_output timestamp="1660.561855">checking whether make supports the include directive... </system_output>
+  <system_output timestamp="1660.564555">no
+</system_output>
+  <system_output timestamp="1660.564597">checking dependency style of gcc... </system_output>
+  <system_output timestamp="1660.692362">none
+</system_output>
+  <system_output timestamp="1660.692396">checking for stdio.h... </system_output>
+  <system_output timestamp="1660.7043">yes
+</system_output>
+  <system_output timestamp="1660.704351">checking for stdlib.h... </system_output>
+  <system_output timestamp="1660.716425">yes
+</system_output>
+  <system_output timestamp="1660.716499">checking for string.h... </system_output>
+  <system_output timestamp="1660.729935">yes
+</system_output>
+  <system_output timestamp="1660.730068">checking for inttypes.h... </system_output>
+  <system_output timestamp="1660.74486">yes
+</system_output>
+  <system_output timestamp="1660.744928">checking for stdint.h... </system_output>
+  <system_output timestamp="1660.75911">yes
+</system_output>
+  <system_output timestamp="1660.759196">checking for strings.h... </system_output>
+  <system_output timestamp="1660.774281">yes
+</system_output>
+  <system_output timestamp="1660.77433">checking for sys/stat.h... </system_output>
+  <system_output timestamp="1660.78911">yes
+</system_output>
+  <system_output timestamp="1660.789197">checking for sys/types.h... </system_output>
+  <system_output timestamp="1660.803741">yes
+</system_output>
+  <system_output timestamp="1660.803815">checking for unistd.h... </system_output>
+  <system_output timestamp="1660.818878">yes
+</system_output>
+  <system_output timestamp="1660.818951">checking for wchar.h... </system_output>
+  <system_output timestamp="1660.83494">yes
+</system_output>
+  <system_output timestamp="1660.835011">checking for minix/config.h... </system_output>
+  <system_output timestamp="1660.849825">no
+</system_output>
+  <system_output timestamp="1660.849863">checking for stdarg.h... </system_output>
+  <system_output timestamp="1660.864632">yes
+</system_output>
+  <system_output timestamp="1660.864715">checking for stddef.h... </system_output>
+  <system_output timestamp="1660.879979">yes
+</system_output>
+  <system_output timestamp="1660.880058">checking for errno.h... </system_output>
+  <system_output timestamp="1660.894948">yes
+</system_output>
+  <system_output timestamp="1660.895017">checking for limits.h... </system_output>
+  <system_output timestamp="1660.911465">yes
+</system_output>
+  <system_output timestamp="1660.911524">checking for lib.h... </system_output>
+  <system_output timestamp="1660.926431">no
+</system_output>
+  <system_output timestamp="1660.926481">checking whether it is safe to define __EXTENSIONS__... </system_output>
+  <system_output timestamp="1660.946482">yes
+checking whether _XOPEN_SOURCE should be defined... </system_output>
+  <system_output timestamp="1660.962977">no
+</system_output>
+  <system_output timestamp="1660.963244">checking for flex... </system_output>
+  <system_output timestamp="1660.963311">no
+</system_output>
+  <system_output timestamp="1660.963323">checking for lex... </system_output>
+  <system_output timestamp="1660.963373">no
+</system_output>
+  <system_output timestamp="1660.963632">checking for ar... </system_output>
+  <system_output timestamp="1660.963682">ar
+</system_output>
+  <system_output timestamp="1660.963743">checking the archiver (ar) interface... </system_output>
+  <system_output timestamp="1660.976298">ar
+</system_output>
+  <system_output timestamp="1660.976355">checking for bison... </system_output>
+  <system_output timestamp="1660.976419">no
+</system_output>
+  <system_output timestamp="1660.976431">checking for byacc... </system_output>
+  <system_output timestamp="1660.97649">no
+</system_output>
+  <system_output timestamp="1660.976609">checking for ranlib... </system_output>
+  <system_output timestamp="1660.976665">ranlib
+</system_output>
+  <system_output timestamp="1660.976691">checking whether make sets $(MAKE)... </system_output>
+  <system_output timestamp="1660.97741">(cached) </system_output>
+  <system_output timestamp="1660.977442">no
+</system_output>
+  <system_output timestamp="1660.977458">checking for an ANSI C-conforming const... </system_output>
+  <system_output timestamp="1660.993637">yes
+</system_output>
+  <system_output timestamp="1660.993666">checking for size_t... </system_output>
+  <system_output timestamp="1661.027553">yes
+</system_output>
+  <system_output timestamp="1661.027579">checking for ptrdiff_t... </system_output>
+  <system_output timestamp="1661.064421">yes
+checking for __attribute__... </system_output>
+  <system_output timestamp="1661.081524">yes
+</system_output>
+  <system_output timestamp="1661.081555">checking for vprintf... </system_output>
+  <system_output timestamp="1661.108492">yes
+</system_output>
+  <system_output timestamp="1661.10853">checking for isgraph... </system_output>
+  <system_output timestamp="1661.133425">yes
+</system_output>
+  <system_output timestamp="1661.133428">checking for setvbuf... </system_output>
+  <system_output timestamp="1661.158695">yes
+</system_output>
+  <system_output timestamp="1661.158712">checking for fstat... </system_output>
+  <system_output timestamp="1661.181849">yes
+</system_output>
+  <system_output timestamp="1661.181852">checking for strtol... </system_output>
+  <system_output timestamp="1661.206097">yes
+</system_output>
+  <system_output timestamp="1661.206812">Adding GCC specific compile flags.
+</system_output>
+  <system_output timestamp="1661.214442">checking that generated files are newer than configure... done
+</system_output>
+  <system_output timestamp="1661.21448">configure: creating ./config.status
+</system_output>
+  <system_output timestamp="1661.252562">config.status: creating Makefile
+</system_output>
+  <system_output timestamp="1661.263481">config.status: creating bc/Makefile
+</system_output>
+  <system_output timestamp="1661.275343">config.status: creating dc/Makefile
+</system_output>
+  <system_output timestamp="1661.286889">config.status: creating lib/Makefile
+</system_output>
+  <system_output timestamp="1661.297704">config.status: creating doc/Makefile
+</system_output>
+  <system_output timestamp="1661.310218">config.status: creating doc/texi-ver.incl
+</system_output>
+  <system_output timestamp="1661.31611">config.status: creating config.h
+</system_output>
+  <system_output timestamp="1661.323004">config.status: executing depfiles commands
+</system_output>
+  <system_output timestamp="1661.340584">config.status: error: in '/root/bc-1.08.1':
+</system_output>
+  <system_output timestamp="1661.340637">config.status: error: Something went wrong bootstrapping makefile fragments
+    for automatic dependency tracking.  If GNU make was not used, consider
+    re-running the configure script with MAKE=&quot;gmake&quot; (or whatever is
+    necessary).  You can also try re-running configure with the
+    '--disable-dependency-tracking' option to at least be able to build
+    the package (albeit without support for automatic dependency tracking).
+See 'config.log' for more details
+</system_output>
+  <system_output timestamp="1661.353773">~/bc-1.08.1 # [6n</system_output>
+  <user_input timestamp="1661.353825">[49;15R</user_input>
+  <user_input timestamp="1667.840109">a</user_input>
+  <system_output timestamp="1667.840225">a</system_output>
+  <user_input timestamp="1667.928086">p</user_input>
+  <system_output timestamp="1667.928179">p</system_output>
+  <user_input timestamp="1668.164129">k</user_input>
+  <system_output timestamp="1668.164237">k</system_output>
+  <user_input timestamp="1668.264138"> </user_input>
+  <system_output timestamp="1668.264239"> </system_output>
+  <user_input timestamp="1668.464133">a</user_input>
+  <system_output timestamp="1668.464212">a</system_output>
+  <user_input timestamp="1668.672029">d</user_input>
+  <system_output timestamp="1668.672118">d</system_output>
+  <user_input timestamp="1668.794002">d</user_input>
+  <system_output timestamp="1668.794072">d</system_output>
+  <user_input timestamp="1668.857995"> </user_input>
+  <system_output timestamp="1668.858085"> </system_output>
+  <user_input timestamp="1669.043995">m</user_input>
+  <system_output timestamp="1669.044096">m</system_output>
+  <user_input timestamp="1669.14001">a</user_input>
+  <system_output timestamp="1669.140101">a</system_output>
+  <user_input timestamp="1669.264158">k</user_input>
+  <system_output timestamp="1669.264249">k</system_output>
+  <user_input timestamp="1669.369998">e</user_input>
+  <system_output timestamp="1669.370078">e</system_output>
+  <user_input timestamp="1671.302098">
+</user_input>
+  <system_output timestamp="1671.302222">
+</system_output>
+  <system_output timestamp="1671.513073">(1/1) Installing make (4.4.1-r2)
+7  0%                                                                                                                          </system_output>
+  <system_output timestamp="1671.588663">8[0K7 98% ███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████  </system_output>
+  <system_output timestamp="1671.588842">8[0K7100% █████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████</system_output>
+  <system_output timestamp="1671.588961">8[0KExecuting busybox-1.37.0-r12.trigger
+</system_output>
+  <system_output timestamp="1671.597905">OK: 801 MiB in 163 packages
+</system_output>
+  <system_output timestamp="1671.650035">~/bc-1.08.1 # [6n</system_output>
+  <user_input timestamp="1671.65013">[49;15R</user_input>
+  <user_input timestamp="1672.518091">[A</user_input>
+  <system_output timestamp="1672.518225">
+~/bc-1.08.1 # apk a</system_output>
+  <system_output timestamp="1672.518246">dd make[J</system_output>
+  <user_input timestamp="1672.79402">[A</user_input>
+  <system_output timestamp="1672.794147">
+~/bc-1.08.1 # ./config</system_output>
+  <system_output timestamp="1672.794158">ure[J</system_output>
+  <user_input timestamp="1673.800062">
+</user_input>
+  <system_output timestamp="1673.800162">
+</system_output>
+  <system_output timestamp="1673.82931">checking for a BSD-compatible install... </system_output>
+  <system_output timestamp="1673.917706">/usr/bin/install -c
+</system_output>
+  <system_output timestamp="1673.917722">checking whether sleep supports fractional seconds... </system_output>
+  <system_output timestamp="1673.91928">yes
+checking filesystem timestamp resolution... </system_output>
+  <system_output timestamp="1674.144922">2
+checking whether build environment is sane... </system_output>
+  <system_output timestamp="1674.146385">yes
+</system_output>
+  <system_output timestamp="1674.148389">checking for a race-free mkdir -p... </system_output>
+  <system_output timestamp="1674.151659">/bin/mkdir -p
+</system_output>
+  <system_output timestamp="1674.151721">checking for gawk... </system_output>
+  <system_output timestamp="1674.151776">no
+</system_output>
+  <system_output timestamp="1674.151787">checking for mawk... </system_output>
+  <system_output timestamp="1674.151841">no
+</system_output>
+  <system_output timestamp="1674.151856">checking for nawk... </system_output>
+  <system_output timestamp="1674.1519">no
+</system_output>
+  <system_output timestamp="1674.151911">checking for awk... </system_output>
+  <system_output timestamp="1674.151964">awk
+</system_output>
+  <system_output timestamp="1674.151997">checking whether make sets $(MAKE)... </system_output>
+  <system_output timestamp="1674.155361">yes
+</system_output>
+  <system_output timestamp="1674.156793">checking whether make supports nested variables... </system_output>
+  <system_output timestamp="1674.158008">yes
+</system_output>
+  <system_output timestamp="1674.15925">checking xargs -n works... </system_output>
+  <system_output timestamp="1674.160424">yes
+</system_output>
+  <system_output timestamp="1674.161322">checking for gcc... </system_output>
+  <system_output timestamp="1674.16142">gcc
+</system_output>
+  <system_output timestamp="1674.176222">checking whether the C compiler works... </system_output>
+  <system_output timestamp="1674.197814">yes
+checking for C compiler default output file name... </system_output>
+  <system_output timestamp="1674.19783">a.out
+</system_output>
+  <system_output timestamp="1674.198307">checking for suffix of executables... </system_output>
+  <system_output timestamp="1674.218901">
+</system_output>
+  <system_output timestamp="1674.219871">checking whether we are cross compiling... </system_output>
+  <system_output timestamp="1674.242247">no
+</system_output>
+  <system_output timestamp="1674.242792">checking for suffix of object files... </system_output>
+  <system_output timestamp="1674.258154">o
+</system_output>
+  <system_output timestamp="1674.258164">checking whether the compiler supports GNU C... </system_output>
+  <system_output timestamp="1674.27198">yes
+</system_output>
+  <system_output timestamp="1674.272007">checking whether gcc accepts -g... </system_output>
+  <system_output timestamp="1674.286763">yes
+</system_output>
+  <system_output timestamp="1674.286854">checking for gcc option to enable C11 features... </system_output>
+  <system_output timestamp="1674.33276">none needed
+</system_output>
+  <system_output timestamp="1674.332888">checking whether gcc understands -c and -o together... </system_output>
+  <system_output timestamp="1674.360487">yes
+</system_output>
+  <system_output timestamp="1674.360509">checking whether make supports the include directive... </system_output>
+  <system_output timestamp="1674.364401">yes (GNU style)
+</system_output>
+  <system_output timestamp="1674.364427">checking dependency style of gcc... </system_output>
+  <system_output timestamp="1674.38258">gcc3
+</system_output>
+  <system_output timestamp="1674.382664">checking for stdio.h... </system_output>
+  <system_output timestamp="1674.395187">yes
+</system_output>
+  <system_output timestamp="1674.395259">checking for stdlib.h... </system_output>
+  <system_output timestamp="1674.408329">yes
+</system_output>
+  <system_output timestamp="1674.4084">checking for string.h... </system_output>
+  <system_output timestamp="1674.422103">yes
+</system_output>
+  <system_output timestamp="1674.422203">checking for inttypes.h... </system_output>
+  <system_output timestamp="1674.436364">yes
+</system_output>
+  <system_output timestamp="1674.436418">checking for stdint.h... </system_output>
+  <system_output timestamp="1674.450067">yes
+</system_output>
+  <system_output timestamp="1674.450133">checking for strings.h... </system_output>
+  <system_output timestamp="1674.46406">yes
+</system_output>
+  <system_output timestamp="1674.46413">checking for sys/stat.h... </system_output>
+  <system_output timestamp="1674.478443">yes
+</system_output>
+  <system_output timestamp="1674.47851">checking for sys/types.h... </system_output>
+  <system_output timestamp="1674.494344">yes
+</system_output>
+  <system_output timestamp="1674.494402">checking for unistd.h... </system_output>
+  <system_output timestamp="1674.509972">yes
+</system_output>
+  <system_output timestamp="1674.510029">checking for wchar.h... </system_output>
+  <system_output timestamp="1674.526357">yes
+</system_output>
+  <system_output timestamp="1674.526423">checking for minix/config.h... </system_output>
+  <system_output timestamp="1674.54216">no
+</system_output>
+  <system_output timestamp="1674.542211">checking for stdarg.h... </system_output>
+  <system_output timestamp="1674.5578">yes
+</system_output>
+  <system_output timestamp="1674.55786">checking for stddef.h... </system_output>
+  <system_output timestamp="1674.572977">yes
+</system_output>
+  <system_output timestamp="1674.573044">checking for errno.h... </system_output>
+  <system_output timestamp="1674.58779">yes
+</system_output>
+  <system_output timestamp="1674.587855">checking for limits.h... </system_output>
+  <system_output timestamp="1674.603234">yes
+</system_output>
+  <system_output timestamp="1674.603315">checking for lib.h... </system_output>
+  <system_output timestamp="1674.617746">no
+</system_output>
+  <system_output timestamp="1674.617808">checking whether it is safe to define __EXTENSIONS__... </system_output>
+  <system_output timestamp="1674.638236">yes
+</system_output>
+  <system_output timestamp="1674.63824">checking whether _XOPEN_SOURCE should be defined... </system_output>
+  <system_output timestamp="1674.658221">no
+</system_output>
+  <system_output timestamp="1674.658431">checking for flex... </system_output>
+  <system_output timestamp="1674.658478">no
+</system_output>
+  <system_output timestamp="1674.658506">checking for lex... </system_output>
+  <system_output timestamp="1674.658531">no
+</system_output>
+  <system_output timestamp="1674.658774">checking for ar... </system_output>
+  <system_output timestamp="1674.658818">ar
+</system_output>
+  <system_output timestamp="1674.658847">checking the archiver (ar) interface... </system_output>
+  <system_output timestamp="1674.671953">ar
+</system_output>
+  <system_output timestamp="1674.672005">checking for bison... </system_output>
+  <system_output timestamp="1674.672052">no
+</system_output>
+  <system_output timestamp="1674.67207">checking for byacc... </system_output>
+  <system_output timestamp="1674.672112">no
+</system_output>
+  <system_output timestamp="1674.672277">checking for ranlib... </system_output>
+  <system_output timestamp="1674.67235">ranlib
+</system_output>
+  <system_output timestamp="1674.672383">checking whether make sets $(MAKE)... </system_output>
+  <system_output timestamp="1674.673267">(cached) </system_output>
+  <system_output timestamp="1674.673312">yes
+</system_output>
+  <system_output timestamp="1674.673331">checking for an ANSI C-conforming const... </system_output>
+  <system_output timestamp="1674.691223">yes
+</system_output>
+  <system_output timestamp="1674.691263">checking for size_t... </system_output>
+  <system_output timestamp="1674.727824">yes
+</system_output>
+  <system_output timestamp="1674.727847">checking for ptrdiff_t... </system_output>
+  <system_output timestamp="1674.763241">yes
+checking for __attribute__... </system_output>
+  <system_output timestamp="1674.780098">yes
+</system_output>
+  <system_output timestamp="1674.780158">checking for vprintf... </system_output>
+  <system_output timestamp="1674.805953">yes
+</system_output>
+  <system_output timestamp="1674.806002">checking for isgraph... </system_output>
+  <system_output timestamp="1674.831928">yes
+</system_output>
+  <system_output timestamp="1674.831946">checking for setvbuf... </system_output>
+  <system_output timestamp="1674.856311">yes
+</system_output>
+  <system_output timestamp="1674.856339">checking for fstat... </system_output>
+  <system_output timestamp="1674.88077">yes
+</system_output>
+  <system_output timestamp="1674.880806">checking for strtol... </system_output>
+  <system_output timestamp="1674.904692">yes
+</system_output>
+  <system_output timestamp="1674.905481">Adding GCC specific compile flags.
+</system_output>
+  <system_output timestamp="1674.913299">checking that generated files are newer than configure... </system_output>
+  <system_output timestamp="1674.913302">done
+</system_output>
+  <system_output timestamp="1674.913369">configure: creating ./config.status
+</system_output>
+  <system_output timestamp="1674.951757">config.status: creating Makefile
+</system_output>
+  <system_output timestamp="1674.96326">config.status: creating bc/Makefile
+</system_output>
+  <system_output timestamp="1674.975874">config.status: creating dc/Makefile
+</system_output>
+  <system_output timestamp="1674.988193">config.status: creating lib/Makefile
+</system_output>
+  <system_output timestamp="1674.999304">config.status: creating doc/Makefile
+</system_output>
+  <system_output timestamp="1675.012055">config.status: creating doc/texi-ver.incl
+</system_output>
+  <system_output timestamp="1675.018186">config.status: creating config.h
+</system_output>
+  <system_output timestamp="1675.023015">config.status: config.h is unchanged
+</system_output>
+  <system_output timestamp="1675.024163">config.status: executing depfiles commands
+</system_output>
+  <system_output timestamp="1675.07308">~/bc-1.08.1 # [6n</system_output>
+  <user_input timestamp="1675.07315">[49;15R</user_input>
+  <user_input timestamp="1675.954007">m</user_input>
+  <system_output timestamp="1675.954123">m</system_output>
+  <user_input timestamp="1676.131911">a</user_input>
+  <system_output timestamp="1676.131994">a</system_output>
+  <user_input timestamp="1676.273964">k</user_input>
+  <system_output timestamp="1676.274052">k</system_output>
+  <user_input timestamp="1676.403953">e</user_input>
+  <system_output timestamp="1676.40406">e</system_output>
+  <user_input timestamp="1676.503903"> </user_input>
+  <system_output timestamp="1676.504009"> </system_output>
+  <user_input timestamp="1677.454011">-</user_input>
+  <system_output timestamp="1677.454122">-</system_output>
+  <user_input timestamp="1677.817952">j</user_input>
+  <system_output timestamp="1677.818036">j</system_output>
+  <user_input timestamp="1678.315979">
+</user_input>
+  <system_output timestamp="1678.316083">
+</system_output>
+  <system_output timestamp="1678.318339">make  all-recursive
+</system_output>
+  <system_output timestamp="1678.31965">make[1]: Entering directory '/root/bc-1.08.1'
+</system_output>
+  <system_output timestamp="1678.320969">Making all in lib
+</system_output>
+  <system_output timestamp="1678.322269">make[2]: Entering directory '/root/bc-1.08.1/lib'
+gcc -DHAVE_CONFIG_H  -I. -I..  -I. -I.. -I./../h  -g -O2 -Wall -funsigned-char -g -O2 -Wall -funsigned-char -MT getopt.o -MD -MP -MF .deps/getopt.Tpo -c -o getopt.o getopt.c
+</system_output>
+  <system_output timestamp="1678.322445">gcc -DHAVE_CONFIG_H  -I. -I..  -I. -I.. -I./../h  -g -O2 -Wall -funsigned-char -g -O2 -Wall -funsigned-char -MT getopt1.o -MD -MP -MF .deps/getopt1.Tpo -c -o getopt1.o getopt1.c
+</system_output>
+  <system_output timestamp="1678.322637">gcc -DHAVE_CONFIG_H  -I. -I..  -I. -I.. -I./../h  -g -O2 -Wall -funsigned-char -g -O2 -Wall -funsigned-char -MT vfprintf.o -MD -MP -MF .deps/vfprintf.Tpo -c -o vfprintf.o vfprintf.c
+</system_output>
+  <system_output timestamp="1678.322793">gcc -DHAVE_CONFIG_H  -I. -I..  -I. -I.. -I./../h  -g -O2 -Wall -funsigned-char -g -O2 -Wall -funsigned-char -MT number.o -MD -MP -MF .deps/number.Tpo -c -o number.o number.c
+</system_output>
+  <system_output timestamp="1678.332302">mv -f .deps/vfprintf.Tpo .deps/vfprintf.Po
+</system_output>
+  <system_output timestamp="1678.342652">mv -f .deps/getopt1.Tpo .deps/getopt1.Po
+</system_output>
+  <system_output timestamp="1678.440823">mv -f .deps/getopt.Tpo .deps/getopt.Po
+</system_output>
+  <system_output timestamp="1678.849239">mv -f .deps/number.Tpo .deps/number.Po
+</system_output>
+  <system_output timestamp="1678.849811">rm -f libbc.a
+</system_output>
+  <system_output timestamp="1678.850178">ar cr libbc.a getopt.o getopt1.o vfprintf.o number.o 
+</system_output>
+  <system_output timestamp="1678.852234">ranlib libbc.a
+</system_output>
+  <system_output timestamp="1678.856469">make[2]: Leaving directory '/root/bc-1.08.1/lib'
+</system_output>
+  <system_output timestamp="1678.856588">Making all in bc
+</system_output>
+  <system_output timestamp="1678.85813">make[2]: Entering directory '/root/bc-1.08.1/bc'
+gcc -DHAVE_CONFIG_H -I. -I..  -I. -I./../h  -g -O2 -Wall -funsigned-char -g -O2 -Wall -funsigned-char -MT main.o -MD -MP -MF .deps/main.Tpo -c -o main.o main.c
+</system_output>
+  <system_output timestamp="1678.858318">gcc -DHAVE_CONFIG_H -I. -I..  -I. -I./../h  -g -O2 -Wall -funsigned-char -g -O2 -Wall -funsigned-char -MT bc.o -MD -MP -MF .deps/bc.Tpo -c -o bc.o bc.c
+</system_output>
+  <system_output timestamp="1678.858486">gcc -DHAVE_CONFIG_H -I. -I..  -I. -I./../h  -g -O2 -Wall -funsigned-char -g -O2 -Wall -funsigned-char -MT scan.o -MD -MP -MF .deps/scan.Tpo -c -o scan.o scan.c
+</system_output>
+  <system_output timestamp="1678.858689">gcc -DHAVE_CONFIG_H -I. -I..  -I. -I./../h  -g -O2 -Wall -funsigned-char -g -O2 -Wall -funsigned-char -MT execute.o -MD -MP -MF .deps/execute.Tpo -c -o execute.o execute.c
+</system_output>
+  <system_output timestamp="1678.858922">gcc -DHAVE_CONFIG_H -I. -I..  -I. -I./../h  -g -O2 -Wall -funsigned-char -g -O2 -Wall -funsigned-char -MT load.o -MD -MP -MF .deps/load.Tpo -c -o load.o load.c
+</system_output>
+  <system_output timestamp="1678.859114">gcc -DHAVE_CONFIG_H -I. -I..  -I. -I./../h  -g -O2 -Wall -funsigned-char -g -O2 -Wall -funsigned-char -MT storage.o -MD -MP -MF .deps/storage.Tpo -c -o storage.o storage.c
+</system_output>
+  <system_output timestamp="1678.859355">gcc -DHAVE_CONFIG_H -I. -I..  -I. -I./../h  -g -O2 -Wall -funsigned-char -g -O2 -Wall -funsigned-char -MT util.o -MD -MP -MF .deps/util.Tpo -c -o util.o util.c
+</system_output>
+  <system_output timestamp="1678.859591">gcc -DHAVE_CONFIG_H -I. -I..  -I. -I./../h  -g -O2 -Wall -funsigned-char -g -O2 -Wall -funsigned-char -MT global.o -MD -MP -MF .deps/global.Tpo -c -o global.o global.c
+</system_output>
+  <system_output timestamp="1678.859852">gcc -DHAVE_CONFIG_H -I. -I..  -I. -I./../h  -g -O2 -Wall -funsigned-char -g -O2 -Wall -funsigned-char -MT warranty.o -MD -MP -MF .deps/warranty.Tpo -c -o warranty.o warranty.c
+</system_output>
+  <system_output timestamp="1678.875058">mv -f .deps/global.Tpo .deps/global.Po
+</system_output>
+  <system_output timestamp="1678.884796">mv -f .deps/warranty.Tpo .deps/warranty.Po
+</system_output>
+  <system_output timestamp="1678.921216">mv -f .deps/main.Tpo .deps/main.Po
+</system_output>
+  <system_output timestamp="1678.990146">mv -f .deps/load.Tpo .deps/load.Po
+</system_output>
+  <system_output timestamp="1679.006479">mv -f .deps/util.Tpo .deps/util.Po
+</system_output>
+  <system_output timestamp="1679.061804">mv -f .deps/storage.Tpo .deps/storage.Po
+</system_output>
+  <system_output timestamp="1679.078335">mv -f .deps/bc.Tpo .deps/bc.Po
+</system_output>
+  <system_output timestamp="1679.082484">mv -f .deps/execute.Tpo .deps/execute.Po
+</system_output>
+  <system_output timestamp="1679.087628">mv -f .deps/scan.Tpo .deps/scan.Po
+</system_output>
+  <system_output timestamp="1679.088326">gcc -g -O2 -Wall -funsigned-char -g -O2 -Wall -funsigned-char   -o bc main.o bc.o scan.o execute.o load.o storage.o util.o global.o warranty.o ../lib/libbc.a   
+</system_output>
+  <system_output timestamp="1679.102004">make[2]: Leaving directory '/root/bc-1.08.1/bc'
+</system_output>
+  <system_output timestamp="1679.102121">Making all in dc
+</system_output>
+  <system_output timestamp="1679.103601">make[2]: Entering directory '/root/bc-1.08.1/dc'
+gcc -DHAVE_CONFIG_H -I. -I..    -g -O2 -Wall -funsigned-char -g -O2 -Wall -funsigned-char -MT dc.o -MD -MP -MF .deps/dc.Tpo -c -o dc.o dc.c
+</system_output>
+  <system_output timestamp="1679.103781">gcc -DHAVE_CONFIG_H -I. -I..    -g -O2 -Wall -funsigned-char -g -O2 -Wall -funsigned-char -MT input.o -MD -MP -MF .deps/input.Tpo -c -o input.o input.c
+</system_output>
+  <system_output timestamp="1679.104008">gcc -DHAVE_CONFIG_H -I. -I..    -g -O2 -Wall -funsigned-char -g -O2 -Wall -funsigned-char -MT misc.o -MD -MP -MF .deps/misc.Tpo -c -o misc.o misc.c
+</system_output>
+  <system_output timestamp="1679.1042">gcc -DHAVE_CONFIG_H -I. -I..    -g -O2 -Wall -funsigned-char -g -O2 -Wall -funsigned-char -MT eval.o -MD -MP -MF .deps/eval.Tpo -c -o eval.o eval.c
+</system_output>
+  <system_output timestamp="1679.104361">gcc -DHAVE_CONFIG_H -I. -I..    -g -O2 -Wall -funsigned-char -g -O2 -Wall -funsigned-char -MT stack.o -MD -MP -MF .deps/stack.Tpo -c -o stack.o stack.c
+</system_output>
+  <system_output timestamp="1679.104523">gcc -DHAVE_CONFIG_H -I. -I..    -g -O2 -Wall -funsigned-char -g -O2 -Wall -funsigned-char -MT array.o -MD -MP -MF .deps/array.Tpo -c -o array.o array.c
+</system_output>
+  <system_output timestamp="1679.104735">gcc -DHAVE_CONFIG_H -I. -I..    -g -O2 -Wall -funsigned-char -g -O2 -Wall -funsigned-char -MT numeric.o -MD -MP -MF .deps/numeric.Tpo -c -o numeric.o numeric.c
+</system_output>
+  <system_output timestamp="1679.104866">gcc -DHAVE_CONFIG_H -I. -I..    -g -O2 -Wall -funsigned-char -g -O2 -Wall -funsigned-char -MT string.o -MD -MP -MF .deps/string.Tpo -c -o string.o string.c
+</system_output>
+  <system_output timestamp="1679.132922">mv -f .deps/input.Tpo .deps/input.Po
+</system_output>
+  <system_output timestamp="1679.152025">mv -f .deps/misc.Tpo .deps/misc.Po
+</system_output>
+  <system_output timestamp="1679.153271">mv -f .deps/string.Tpo .deps/string.Po
+</system_output>
+  <system_output timestamp="1679.160237">mv -f .deps/dc.Tpo .deps/dc.Po
+</system_output>
+  <system_output timestamp="1679.160934">mv -f .deps/array.Tpo .deps/array.Po
+</system_output>
+  <system_output timestamp="1679.225439">mv -f .deps/stack.Tpo .deps/stack.Po
+</system_output>
+  <system_output timestamp="1679.229426">mv -f .deps/numeric.Tpo .deps/numeric.Po
+</system_output>
+  <system_output timestamp="1679.2464">mv -f .deps/eval.Tpo .deps/eval.Po
+</system_output>
+  <system_output timestamp="1679.247191">gcc -g -O2 -Wall -funsigned-char -g -O2 -Wall -funsigned-char   -o dc dc.o input.o misc.o eval.o stack.o array.o numeric.o string.o ../lib/libbc.a  
+</system_output>
+  <system_output timestamp="1679.260056">make[2]: Leaving directory '/root/bc-1.08.1/dc'
+</system_output>
+  <system_output timestamp="1679.260173">Making all in doc
+</system_output>
+  <system_output timestamp="1679.261315">make[2]: Entering directory '/root/bc-1.08.1/doc'
+restore=: &amp;&amp; backupdir=&quot;.am$$&quot; &amp;&amp; \
+am__cwd=`pwd` &amp;&amp; CDPATH=&quot;${ZSH_VERSION+.}:&quot; &amp;&amp; cd . &amp;&amp; \
+rm -rf $backupdir &amp;&amp; mkdir $backupdir &amp;&amp; \
+if (makeinfo --no-split --version) &gt;/dev/null 2&gt;&amp;1; then \
+  for f in bc.info bc.info-[0-9] bc.info-[0-9][0-9] bc.i[0-9] bc.i[0-9][0-9]; do \
+    if test -f $f; then mv $f $backupdir; restore=mv; else :; fi; \
+  done; \
+else :; fi &amp;&amp; \
+cd &quot;$am__cwd&quot;; \
+if makeinfo --no-split   -I . \
+ -o bc.info bc.texi; \
+then \
+  rc=0; \
+  CDPATH=&quot;${ZSH_VERSION+.}:&quot; &amp;&amp; cd .; \
+else \
+  rc=$?; \
+  CDPATH=&quot;${ZSH_VERSION+.}:&quot; &amp;&amp; cd . &amp;&amp; \
+  $restore $backupdir/* `echo &quot;./bc.info&quot; | sed 's|[^/]*$||'`; \
+fi; \
+rm -rf $backupdir; exit $rc
+</system_output>
+  <system_output timestamp="1679.261515">restore=: &amp;&amp; backupdir=&quot;.am$$&quot; &amp;&amp; \
+am__cwd=`pwd` &amp;&amp; CDPATH=&quot;${ZSH_VERSION+.}:&quot; &amp;&amp; cd . &amp;&amp; \
+rm -rf $backupdir &amp;&amp; mkdir $backupdir &amp;&amp; \
+if (makeinfo --no-split --version) &gt;/dev/null 2&gt;&amp;1; then \
+  for f in dc.info dc.info-[0-9] dc.info-[0-9][0-9] dc.i[0-9] dc.i[0-9][0-9]; do \
+    if test -f $f; then mv $f $backupdir; restore=mv; else :; fi; \
+  done; \
+else :; fi &amp;&amp; \
+cd &quot;$am__cwd&quot;; \
+if makeinfo --no-split   -I . \
+ -o dc.info dc.texi; \
+then \
+  rc=0; \
+  CDPATH=&quot;${ZSH_VERSION+.}:&quot; &amp;&amp; cd .; \
+else \
+  rc=$?; \
+  CDPATH=&quot;${ZSH_VERSION+.}:&quot; &amp;&amp; cd . &amp;&amp; \
+  $restore $backupdir/* `echo &quot;./dc.info&quot; | sed 's|[^/]*$||'`; \
+fi; \
+rm -rf $backupdir; exit $rc
+</system_output>
+  <system_output timestamp="1679.26297">/bin/sh: makeinfo: not found
+</system_output>
+  <system_output timestamp="1679.262986">/bin/sh: makeinfo: not found
+</system_output>
+  <system_output timestamp="1679.264173">make[2]: *** [Makefile:335: dc.info] Error 127
+make[2]: *** Waiting for unfinished jobs....
+</system_output>
+  <system_output timestamp="1679.264197">make[2]: *** [Makefile:335: bc.info] Error 127
+make[2]: Leaving directory '/root/bc-1.08.1/doc'
+</system_output>
+  <system_output timestamp="1679.264416">make[1]: *** [Makefile:372: all-recursive] Error 1
+</system_output>
+  <system_output timestamp="1679.264436">make[1]: Leaving directory '/root/bc-1.08.1'
+</system_output>
+  <system_output timestamp="1679.264589">make: *** [Makefile:313: all] Error 2
+</system_output>
+  <system_output timestamp="1679.264754">~/bc-1.08.1 # [6n</system_output>
+  <user_input timestamp="1679.264981">[49;15R</user_input>
+  <user_input timestamp="1682.637983">a</user_input>
+  <system_output timestamp="1682.638099">a</system_output>
+  <user_input timestamp="1682.721874">p</user_input>
+  <system_output timestamp="1682.721963">p</system_output>
+  <user_input timestamp="1682.949915">k</user_input>
+  <system_output timestamp="1682.950007">k</system_output>
+  <user_input timestamp="1683.051874"> </user_input>
+  <system_output timestamp="1683.051971"> </system_output>
+  <user_input timestamp="1683.185874">a</user_input>
+  <system_output timestamp="1683.185959">a</system_output>
+  <user_input timestamp="1683.445918">d</user_input>
+  <system_output timestamp="1683.446014">d</system_output>
+  <user_input timestamp="1683.555956">d</user_input>
+  <system_output timestamp="1683.556049">d</system_output>
+  <user_input timestamp="1683.613979"> </user_input>
+  <system_output timestamp="1683.614055"> </system_output>
+  <user_input timestamp="1683.837906">t</user_input>
+  <system_output timestamp="1683.838005">t</system_output>
+  <user_input timestamp="1684.011923">e</user_input>
+  <system_output timestamp="1684.012006">e</system_output>
+  <user_input timestamp="1684.283927">x</user_input>
+  <system_output timestamp="1684.284004">x</system_output>
+  <user_input timestamp="1684.487886">i</user_input>
+  <system_output timestamp="1684.487957">i</system_output>
+  <user_input timestamp="1684.617859">n</user_input>
+  <system_output timestamp="1684.617937">n</system_output>
+  <user_input timestamp="1684.811859">f</user_input>
+  <system_output timestamp="1684.811932">f</system_output>
+  <user_input timestamp="1684.901868">o</user_input>
+  <system_output timestamp="1684.901944">o</system_output>
+  <user_input timestamp="1685.41195">
+</user_input>
+  <system_output timestamp="1685.412043">
+</system_output>
+  <system_output timestamp="1685.627222">(1/5) Installing libbz2 (1.0.8-r6)
+7  0%                                                                                                                          </system_output>
+  <system_output timestamp="1685.677864">8[0K(2/5) Installing perl (5.40.1-r0)
+7  0%                                                                                                                          </system_output>
+  <system_output timestamp="1685.763402">8[0K7  5% ██████                                                                                                                   </system_output>
+  <system_output timestamp="1685.769309">8[0K7  9% ███████████                                                                                                              </system_output>
+  <system_output timestamp="1685.771144">8[0K7  9% ████████████                                                                                                             </system_output>
+  <system_output timestamp="1685.771416">8[0K7 10% ████████████                                                                                                             </system_output>
+  <system_output timestamp="1685.774562">8[0K7 10% █████████████                                                                                                            </system_output>
+  <system_output timestamp="1685.775482">8[0K7 11% █████████████                                                                                                            </system_output>
+  <system_output timestamp="1685.777471">8[0K7 11% ██████████████                                                                                                           </system_output>
+  <system_output timestamp="1685.778221">8[0K7 12% ██████████████                                                                                                           </system_output>
+  <system_output timestamp="1685.779322">8[0K7 12% ███████████████                                                                                                          </system_output>
+  <system_output timestamp="1685.781951">8[0K7 13% ████████████████                                                                                                         </system_output>
+  <system_output timestamp="1685.787262">8[0K7 18% ██████████████████████                                                                                                   </system_output>
+  <system_output timestamp="1685.793302">8[0K7 23% ███████████████████████████                                                                                              </system_output>
+  <system_output timestamp="1685.794934">8[0K7 24% █████████████████████████████                                                                                            </system_output>
+  <system_output timestamp="1685.800441">8[0K7 29% ███████████████████████████████████                                                                                      </system_output>
+  <system_output timestamp="1685.801657">8[0K7 29% ████████████████████████████████████                                                                                     </system_output>
+  <system_output timestamp="1685.807937">8[0K7 34% █████████████████████████████████████████                                                                                </system_output>
+  <system_output timestamp="1685.809237">8[0K7 34% ██████████████████████████████████████████                                                                               </system_output>
+  <system_output timestamp="1685.810264">8[0K7 35% ██████████████████████████████████████████                                                                               </system_output>
+  <system_output timestamp="1685.811696">8[0K7 35% ███████████████████████████████████████████                                                                              </system_output>
+  <system_output timestamp="1685.813001">8[0K7 36% ███████████████████████████████████████████                                                                              </system_output>
+  <system_output timestamp="1685.818011">8[0K7 39% ████████████████████████████████████████████████                                                                         </system_output>
+  <system_output timestamp="1685.819702">8[0K7 41% █████████████████████████████████████████████████                                                                        </system_output>
+  <system_output timestamp="1685.822816">8[0K7 42% ███████████████████████████████████████████████████                                                                      </system_output>
+  <system_output timestamp="1685.8235">8[0K7 42% ████████████████████████████████████████████████████                                                                     </system_output>
+  <system_output timestamp="1685.823651">8[0K7 43% ████████████████████████████████████████████████████                                                                     </system_output>
+  <system_output timestamp="1685.826079">8[0K7 44% █████████████████████████████████████████████████████                                                                    </system_output>
+  <system_output timestamp="1685.827037">8[0K7 44% ██████████████████████████████████████████████████████                                                                   </system_output>
+  <system_output timestamp="1685.827954">8[0K7 45% ██████████████████████████████████████████████████████                                                                   </system_output>
+  <system_output timestamp="1685.828742">8[0K7 45% ███████████████████████████████████████████████████████                                                                  </system_output>
+  <system_output timestamp="1685.829837">8[0K7 46% ███████████████████████████████████████████████████████                                                                  </system_output>
+  <system_output timestamp="1685.830324">8[0K7 46% ████████████████████████████████████████████████████████                                                                 </system_output>
+  <system_output timestamp="1685.831936">8[0K7 47% ████████████████████████████████████████████████████████                                                                 </system_output>
+  <system_output timestamp="1685.832268">8[0K7 47% █████████████████████████████████████████████████████████                                                                </system_output>
+  <system_output timestamp="1685.834762">8[0K7 47% ██████████████████████████████████████████████████████████                                                               </system_output>
+  <system_output timestamp="1685.835271">8[0K7 48% ██████████████████████████████████████████████████████████                                                               </system_output>
+  <system_output timestamp="1685.836932">8[0K7 48% ███████████████████████████████████████████████████████████                                                              </system_output>
+  <system_output timestamp="1685.836979">8[0K7 49% ███████████████████████████████████████████████████████████                                                              </system_output>
+  <system_output timestamp="1685.838167">8[0K7 49% ████████████████████████████████████████████████████████████                                                             </system_output>
+  <system_output timestamp="1685.838859">8[0K7 50% ████████████████████████████████████████████████████████████                                                             </system_output>
+  <system_output timestamp="1685.839859">8[0K7 50% █████████████████████████████████████████████████████████████                                                            </system_output>
+  <system_output timestamp="1685.841194">8[0K7 51% █████████████████████████████████████████████████████████████                                                            </system_output>
+  <system_output timestamp="1685.841568">8[0K7 51% ██████████████████████████████████████████████████████████████                                                           </system_output>
+  <system_output timestamp="1685.84318">8[0K7 52% ██████████████████████████████████████████████████████████████                                                           </system_output>
+  <system_output timestamp="1685.843219">8[0K7 52% ███████████████████████████████████████████████████████████████                                                          </system_output>
+  <system_output timestamp="1685.844493">8[0K7 52% ████████████████████████████████████████████████████████████████                                                         </system_output>
+  <system_output timestamp="1685.84485">8[0K7 53% ████████████████████████████████████████████████████████████████                                                         </system_output>
+  <system_output timestamp="1685.846823">8[0K7 54% █████████████████████████████████████████████████████████████████                                                        </system_output>
+  <system_output timestamp="1685.847234">8[0K7 54% ██████████████████████████████████████████████████████████████████                                                       </system_output>
+  <system_output timestamp="1685.847983">8[0K7 55% ██████████████████████████████████████████████████████████████████                                                       </system_output>
+  <system_output timestamp="1685.850854">8[0K7 57% █████████████████████████████████████████████████████████████████████                                                    </system_output>
+  <system_output timestamp="1685.85108">8[0K7 57% ██████████████████████████████████████████████████████████████████████                                                   </system_output>
+  <system_output timestamp="1685.851532">8[0K7 58% ██████████████████████████████████████████████████████████████████████                                                   </system_output>
+  <system_output timestamp="1685.852895">8[0K7 58% ███████████████████████████████████████████████████████████████████████                                                  </system_output>
+  <system_output timestamp="1685.853772">8[0K7 59% ███████████████████████████████████████████████████████████████████████                                                  </system_output>
+  <system_output timestamp="1685.854637">8[0K7 59% ████████████████████████████████████████████████████████████████████████                                                 </system_output>
+  <system_output timestamp="1685.855836">8[0K7 60% ████████████████████████████████████████████████████████████████████████                                                 </system_output>
+  <system_output timestamp="1685.856526">8[0K7 60% █████████████████████████████████████████████████████████████████████████                                                </system_output>
+  <system_output timestamp="1685.858096">8[0K7 61% █████████████████████████████████████████████████████████████████████████                                                </system_output>
+  <system_output timestamp="1685.858765">8[0K7 61% ██████████████████████████████████████████████████████████████████████████                                               </system_output>
+  <system_output timestamp="1685.860965">8[0K7 61% ███████████████████████████████████████████████████████████████████████████                                              </system_output>
+  <system_output timestamp="1685.861042">8[0K7 62% ███████████████████████████████████████████████████████████████████████████                                              </system_output>
+  <system_output timestamp="1685.863343">8[0K7 62% ████████████████████████████████████████████████████████████████████████████                                             </system_output>
+  <system_output timestamp="1685.863752">8[0K7 63% ████████████████████████████████████████████████████████████████████████████                                             </system_output>
+  <system_output timestamp="1685.865915">8[0K7 63% █████████████████████████████████████████████████████████████████████████████                                            </system_output>
+  <system_output timestamp="1685.867296">8[0K7 64% █████████████████████████████████████████████████████████████████████████████                                            </system_output>
+  <system_output timestamp="1685.868962">8[0K7 64% ██████████████████████████████████████████████████████████████████████████████                                           </system_output>
+  <system_output timestamp="1685.870851">8[0K7 65% ██████████████████████████████████████████████████████████████████████████████                                           </system_output>
+  <system_output timestamp="1685.871641">8[0K7 65% ███████████████████████████████████████████████████████████████████████████████                                          </system_output>
+  <system_output timestamp="1685.87386">8[0K7 66% ████████████████████████████████████████████████████████████████████████████████                                         </system_output>
+  <system_output timestamp="1685.875883">8[0K7 67% █████████████████████████████████████████████████████████████████████████████████                                        </system_output>
+  <system_output timestamp="1685.877326">8[0K7 67% ██████████████████████████████████████████████████████████████████████████████████                                       </system_output>
+  <system_output timestamp="1685.87845">8[0K7 68% ██████████████████████████████████████████████████████████████████████████████████                                       </system_output>
+  <system_output timestamp="1685.878643">8[0K7 68% ███████████████████████████████████████████████████████████████████████████████████                                      </system_output>
+  <system_output timestamp="1685.880097">8[0K7 69% ███████████████████████████████████████████████████████████████████████████████████                                      </system_output>
+  <system_output timestamp="1685.880763">8[0K7 69% ████████████████████████████████████████████████████████████████████████████████████                                     </system_output>
+  <system_output timestamp="1685.881217">8[0K7 70% ████████████████████████████████████████████████████████████████████████████████████                                     </system_output>
+  <system_output timestamp="1685.886167">8[0K7 74% █████████████████████████████████████████████████████████████████████████████████████████                                </system_output>
+  <system_output timestamp="1685.887115">8[0K7 74% ██████████████████████████████████████████████████████████████████████████████████████████                               </system_output>
+  <system_output timestamp="1685.887755">8[0K7 75% ██████████████████████████████████████████████████████████████████████████████████████████                               </system_output>
+  <system_output timestamp="1685.887968">8[0K7 75% ███████████████████████████████████████████████████████████████████████████████████████████                              </system_output>
+  <system_output timestamp="1685.889938">8[0K7 76% ███████████████████████████████████████████████████████████████████████████████████████████                              </system_output>
+  <system_output timestamp="1685.891062">8[0K7 76% ████████████████████████████████████████████████████████████████████████████████████████████                             </system_output>
+  <system_output timestamp="1685.891922">8[0K7 77% █████████████████████████████████████████████████████████████████████████████████████████████                            </system_output>
+  <system_output timestamp="1685.894917">8[0K7 79% ████████████████████████████████████████████████████████████████████████████████████████████████                         </system_output>
+  <system_output timestamp="1685.897778">8[0K7 82% ███████████████████████████████████████████████████████████████████████████████████████████████████                      </system_output>
+  <system_output timestamp="1685.898721">8[0K7 82% ████████████████████████████████████████████████████████████████████████████████████████████████████                     </system_output>
+  <system_output timestamp="1685.957275">8[0K(3/5) Installing ncurses-terminfo-base (6.5_p20241006-r3)
+7 82% ████████████████████████████████████████████████████████████████████████████████████████████████████                     </system_output>
+  <system_output timestamp="1685.971956">8[0K7 83% ████████████████████████████████████████████████████████████████████████████████████████████████████                     </system_output>
+  <system_output timestamp="1685.974091">8[0K(4/5) Installing libncursesw (6.5_p20241006-r3)
+7 83% ████████████████████████████████████████████████████████████████████████████████████████████████████                     </system_output>
+  <system_output timestamp="1685.991222">8[0K(5/5) Installing texinfo (7.1.1-r0)
+7 83% █████████████████████████████████████████████████████████████████████████████████████████████████████                    </system_output>
+  <system_output timestamp="1686.035105">8[0K7 84% ██████████████████████████████████████████████████████████████████████████████████████████████████████                   </system_output>
+  <system_output timestamp="1686.036031">8[0K7 85% ██████████████████████████████████████████████████████████████████████████████████████████████████████                   </system_output>
+  <system_output timestamp="1686.036225">8[0K7 85% ███████████████████████████████████████████████████████████████████████████████████████████████████████                  </system_output>
+  <system_output timestamp="1686.037971">8[0K7 86% ████████████████████████████████████████████████████████████████████████████████████████████████████████                 </system_output>
+  <system_output timestamp="1686.038985">8[0K7 86% █████████████████████████████████████████████████████████████████████████████████████████████████████████                </system_output>
+  <system_output timestamp="1686.039484">8[0K7 87% █████████████████████████████████████████████████████████████████████████████████████████████████████████                </system_output>
+  <system_output timestamp="1686.040782">8[0K7 88% ██████████████████████████████████████████████████████████████████████████████████████████████████████████               </system_output>
+  <system_output timestamp="1686.041663">8[0K7 88% ███████████████████████████████████████████████████████████████████████████████████████████████████████████              </system_output>
+  <system_output timestamp="1686.042382">8[0K7 89% ███████████████████████████████████████████████████████████████████████████████████████████████████████████              </system_output>
+  <system_output timestamp="1686.042907">8[0K7 89% ████████████████████████████████████████████████████████████████████████████████████████████████████████████             </system_output>
+  <system_output timestamp="1686.044465">8[0K7 90% █████████████████████████████████████████████████████████████████████████████████████████████████████████████            </system_output>
+  <system_output timestamp="1686.045472">8[0K7 90% ██████████████████████████████████████████████████████████████████████████████████████████████████████████████           </system_output>
+  <system_output timestamp="1686.045521">8[0K7 91% ██████████████████████████████████████████████████████████████████████████████████████████████████████████████           </system_output>
+  <system_output timestamp="1686.051804">8[0K7 91% ███████████████████████████████████████████████████████████████████████████████████████████████████████████████          </system_output>
+  <system_output timestamp="1686.052794">8[0K7 92% ███████████████████████████████████████████████████████████████████████████████████████████████████████████████          </system_output>
+  <system_output timestamp="1686.055189">8[0K7 92% ████████████████████████████████████████████████████████████████████████████████████████████████████████████████         </system_output>
+  <system_output timestamp="1686.056977">8[0K7 93% ████████████████████████████████████████████████████████████████████████████████████████████████████████████████         </system_output>
+  <system_output timestamp="1686.058484">8[0K7 93% █████████████████████████████████████████████████████████████████████████████████████████████████████████████████        </system_output>
+  <system_output timestamp="1686.060829">8[0K7 94% █████████████████████████████████████████████████████████████████████████████████████████████████████████████████        </system_output>
+  <system_output timestamp="1686.06107">8[0K7 94% ██████████████████████████████████████████████████████████████████████████████████████████████████████████████████       </system_output>
+  <system_output timestamp="1686.062038">8[0K7 95% ██████████████████████████████████████████████████████████████████████████████████████████████████████████████████       </system_output>
+  <system_output timestamp="1686.062083">8[0K7 95% ███████████████████████████████████████████████████████████████████████████████████████████████████████████████████      </system_output>
+  <system_output timestamp="1686.063068">8[0K7 95% ████████████████████████████████████████████████████████████████████████████████████████████████████████████████████     </system_output>
+  <system_output timestamp="1686.063193">8[0K7 96% ████████████████████████████████████████████████████████████████████████████████████████████████████████████████████     </system_output>
+  <system_output timestamp="1686.063921">8[0K7 96% █████████████████████████████████████████████████████████████████████████████████████████████████████████████████████    </system_output>
+  <system_output timestamp="1686.064272">8[0K7 97% █████████████████████████████████████████████████████████████████████████████████████████████████████████████████████    </system_output>
+  <system_output timestamp="1686.064923">8[0K7 97% ██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████   </system_output>
+  <system_output timestamp="1686.065605">8[0K7 98% ██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████   </system_output>
+  <system_output timestamp="1686.066033">8[0K7 98% ███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████  </system_output>
+  <system_output timestamp="1686.06674">8[0K7 99% ███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████  </system_output>
+  <system_output timestamp="1686.066913">8[0K7 99% ████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████ </system_output>
+  <system_output timestamp="1686.080664">8[0K7100% █████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████</system_output>
+  <system_output timestamp="1686.081437">8[0KExecuting busybox-1.37.0-r12.trigger
+</system_output>
+  <system_output timestamp="1686.090278">OK: 845 MiB in 168 packages
+</system_output>
+  <system_output timestamp="1686.140521">~/bc-1.08.1 # [6n</system_output>
+  <user_input timestamp="1686.140593">[49;15R</user_input>
+  <user_input timestamp="1686.665979">[A</user_input>
+  <system_output timestamp="1686.666098">
+~/bc-1.08.1 # apk add te</system_output>
+  <system_output timestamp="1686.666108">xinfo</system_output>
+  <system_output timestamp="1686.666117">[J</system_output>
+  <user_input timestamp="1686.947952">[A</user_input>
+  <system_output timestamp="1686.948058">
+~/bc-1.08.1 # make -j[J</system_output>
+  <user_input timestamp="1687.955911">
+</user_input>
+  <system_output timestamp="1687.956023">
+</system_output>
+  <system_output timestamp="1687.95834">make  all-recursive
+</system_output>
+  <system_output timestamp="1687.959524">make[1]: Entering directory '/root/bc-1.08.1'
+</system_output>
+  <system_output timestamp="1687.960678">Making all in lib
+</system_output>
+  <system_output timestamp="1687.962213">make[2]: Entering directory '/root/bc-1.08.1/lib'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/root/bc-1.08.1/lib'
+</system_output>
+  <system_output timestamp="1687.962286">Making all in bc
+</system_output>
+  <system_output timestamp="1687.964731">make[2]: Entering directory '/root/bc-1.08.1/bc'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/root/bc-1.08.1/bc'
+</system_output>
+  <system_output timestamp="1687.964839">Making all in dc
+</system_output>
+  <system_output timestamp="1687.966888">make[2]: Entering directory '/root/bc-1.08.1/dc'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/root/bc-1.08.1/dc'
+</system_output>
+  <system_output timestamp="1687.966969">Making all in doc
+</system_output>
+  <system_output timestamp="1687.968262">make[2]: Entering directory '/root/bc-1.08.1/doc'
+restore=: &amp;&amp; backupdir=&quot;.am$$&quot; &amp;&amp; \
+am__cwd=`pwd` &amp;&amp; CDPATH=&quot;${ZSH_VERSION+.}:&quot; &amp;&amp; cd . &amp;&amp; \
+rm -rf $backupdir &amp;&amp; mkdir $backupdir &amp;&amp; \
+if (makeinfo --no-split --version) &gt;/dev/null 2&gt;&amp;1; then \
+  for f in bc.info bc.info-[0-9] bc.info-[0-9][0-9] bc.i[0-9] bc.i[0-9][0-9]; do \
+    if test -f $f; then mv $f $backupdir; restore=mv; else :; fi; \
+  done; \
+else :; fi &amp;&amp; \
+cd &quot;$am__cwd&quot;; \
+if makeinfo --no-split   -I . \
+ -o bc.info bc.texi; \
+then \
+  rc=0; \
+  CDPATH=&quot;${ZSH_VERSION+.}:&quot; &amp;&amp; cd .; \
+else \
+  rc=$?; \
+  CDPATH=&quot;${ZSH_VERSION+.}:&quot; &amp;&amp; cd . &amp;&amp; \
+  $restore $backupdir/* `echo &quot;./bc.info&quot; | sed 's|[^/]*$||'`; \
+fi; \
+rm -rf $backupdir; exit $rc
+</system_output>
+  <system_output timestamp="1687.968496">restore=: &amp;&amp; backupdir=&quot;.am$$&quot; &amp;&amp; \
+am__cwd=`pwd` &amp;&amp; CDPATH=&quot;${ZSH_VERSION+.}:&quot; &amp;&amp; cd . &amp;&amp; \
+rm -rf $backupdir &amp;&amp; mkdir $backupdir &amp;&amp; \
+if (makeinfo --no-split --version) &gt;/dev/null 2&gt;&amp;1; then \
+  for f in dc.info dc.info-[0-9] dc.info-[0-9][0-9] dc.i[0-9] dc.i[0-9][0-9]; do \
+    if test -f $f; then mv $f $backupdir; restore=mv; else :; fi; \
+  done; \
+else :; fi &amp;&amp; \
+cd &quot;$am__cwd&quot;; \
+if makeinfo --no-split   -I . \
+ -o dc.info dc.texi; \
+then \
+  rc=0; \
+  CDPATH=&quot;${ZSH_VERSION+.}:&quot; &amp;&amp; cd .; \
+else \
+  rc=$?; \
+  CDPATH=&quot;${ZSH_VERSION+.}:&quot; &amp;&amp; cd . &amp;&amp; \
+  $restore $backupdir/* `echo &quot;./dc.info&quot; | sed 's|[^/]*$||'`; \
+fi; \
+rm -rf $backupdir; exit $rc
+</system_output>
+  <system_output timestamp="1688.254021">make[2]: Leaving directory '/root/bc-1.08.1/doc'
+</system_output>
+  <system_output timestamp="1688.255478">make[2]: Entering directory '/root/bc-1.08.1'
+</system_output>
+  <system_output timestamp="1688.256145">make[2]: Leaving directory '/root/bc-1.08.1'
+</system_output>
+  <system_output timestamp="1688.256319">make[1]: Leaving directory '/root/bc-1.08.1'
+</system_output>
+  <system_output timestamp="1688.256536">~/bc-1.08.1 # [6n</system_output>
+  <user_input timestamp="1688.256899">[49;15R</user_input>
+  <user_input timestamp="1689.505887">m</user_input>
+  <system_output timestamp="1689.505983">m</system_output>
+  <user_input timestamp="1689.657832">a</user_input>
+  <system_output timestamp="1689.657904">a</system_output>
+  <user_input timestamp="1689.835843">k</user_input>
+  <system_output timestamp="1689.835917">k</system_output>
+  <user_input timestamp="1689.985809">e</user_input>
+  <system_output timestamp="1689.985883">e</system_output>
+  <user_input timestamp="1690.125844"> </user_input>
+  <system_output timestamp="1690.12593"> </system_output>
+  <user_input timestamp="1690.485876">i</user_input>
+  <system_output timestamp="1690.485969">i</system_output>
+  <user_input timestamp="1690.607776">n</user_input>
+  <system_output timestamp="1690.607855">n</system_output>
+  <user_input timestamp="1690.731779">s</user_input>
+  <system_output timestamp="1690.731854">s</system_output>
+  <user_input timestamp="1690.931872">t</user_input>
+  <system_output timestamp="1690.931967">t</system_output>
+  <user_input timestamp="1691.14386">a</user_input>
+  <system_output timestamp="1691.143959">a</system_output>
+  <user_input timestamp="1691.343806">l</user_input>
+  <system_output timestamp="1691.343888">l</system_output>
+  <user_input timestamp="1691.481802">l</user_input>
+  <system_output timestamp="1691.481877">l</system_output>
+  <user_input timestamp="1693.707864">
+</user_input>
+  <system_output timestamp="1693.707955">
+</system_output>
+  <system_output timestamp="1693.710822">Making install in lib
+</system_output>
+  <system_output timestamp="1693.712582">make[1]: Entering directory '/root/bc-1.08.1/lib'
+</system_output>
+  <system_output timestamp="1693.713797">make[2]: Entering directory '/root/bc-1.08.1/lib'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/root/bc-1.08.1/lib'
+</system_output>
+  <system_output timestamp="1693.713878">make[1]: Leaving directory '/root/bc-1.08.1/lib'
+</system_output>
+  <system_output timestamp="1693.713964">Making install in bc
+</system_output>
+  <system_output timestamp="1693.716229">make[1]: Entering directory '/root/bc-1.08.1/bc'
+</system_output>
+  <system_output timestamp="1693.718589">make[2]: Entering directory '/root/bc-1.08.1/bc'
+</system_output>
+  <system_output timestamp="1693.718992"> /bin/mkdir -p '/usr/local/bin'
+</system_output>
+  <system_output timestamp="1693.720202">  /usr/bin/install -c bc '/usr/local/bin'
+</system_output>
+  <system_output timestamp="1693.72091">make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/root/bc-1.08.1/bc'
+</system_output>
+  <system_output timestamp="1693.720985">make[1]: Leaving directory '/root/bc-1.08.1/bc'
+</system_output>
+  <system_output timestamp="1693.72108">Making install in dc
+</system_output>
+  <system_output timestamp="1693.723121">make[1]: Entering directory '/root/bc-1.08.1/dc'
+</system_output>
+  <system_output timestamp="1693.725036">make[2]: Entering directory '/root/bc-1.08.1/dc'
+</system_output>
+  <system_output timestamp="1693.725365"> /bin/mkdir -p '/usr/local/bin'
+</system_output>
+  <system_output timestamp="1693.726719">  /usr/bin/install -c dc '/usr/local/bin'
+</system_output>
+  <system_output timestamp="1693.72742">make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/root/bc-1.08.1/dc'
+</system_output>
+  <system_output timestamp="1693.727504">make[1]: Leaving directory '/root/bc-1.08.1/dc'
+</system_output>
+  <system_output timestamp="1693.727577">Making install in doc
+</system_output>
+  <system_output timestamp="1693.728611">make[1]: Entering directory '/root/bc-1.08.1/doc'
+</system_output>
+  <system_output timestamp="1693.729578">make[2]: Entering directory '/root/bc-1.08.1/doc'
+make[2]: Nothing to be done for 'install-exec-am'.
+</system_output>
+  <system_output timestamp="1693.730744"> /bin/mkdir -p '/usr/local/share/info'
+</system_output>
+  <system_output timestamp="1693.734615"> /usr/bin/install -c -m 644 ./bc.info ./dc.info '/usr/local/share/info'
+</system_output>
+  <system_output timestamp="1693.736772"> install-info --info-dir='/usr/local/share/info' '/usr/local/share/info/bc.info'
+</system_output>
+  <system_output timestamp="1693.738357"> install-info --info-dir='/usr/local/share/info' '/usr/local/share/info/dc.info'
+</system_output>
+  <system_output timestamp="1693.739842"> /bin/mkdir -p '/usr/local/share/man/man1'
+</system_output>
+  <system_output timestamp="1693.741523"> /usr/bin/install -c -m 644 bc.1 dc.1 '/usr/local/share/man/man1'
+</system_output>
+  <system_output timestamp="1693.742166">make[2]: Leaving directory '/root/bc-1.08.1/doc'
+</system_output>
+  <system_output timestamp="1693.742267">make[1]: Leaving directory '/root/bc-1.08.1/doc'
+</system_output>
+  <system_output timestamp="1693.743396">make[1]: Entering directory '/root/bc-1.08.1'
+</system_output>
+  <system_output timestamp="1693.745143">make[2]: Entering directory '/root/bc-1.08.1'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/root/bc-1.08.1'
+</system_output>
+  <system_output timestamp="1693.745222">make[1]: Leaving directory '/root/bc-1.08.1'
+</system_output>
+  <system_output timestamp="1693.745525">~/bc-1.08.1 # [6n</system_output>
+  <user_input timestamp="1693.745972">[49;15R</user_input>
+  <user_input timestamp="1695.727827">w</user_input>
+  <system_output timestamp="1695.727925">w</system_output>
+  <user_input timestamp="1696.237839"></user_input>
+  <system_output timestamp="1696.237946">[J</system_output>
+  <user_input timestamp="1696.377783"></user_input>
+  <user_input timestamp="1697.349865">b</user_input>
+  <system_output timestamp="1697.349982">b</system_output>
+  <user_input timestamp="1699.667787">c</user_input>
+  <system_output timestamp="1699.667906">c</system_output>
+  <user_input timestamp="1700.231793"> </user_input>
+  <system_output timestamp="1700.231897"> </system_output>
+  <user_input timestamp="1700.457765">-</user_input>
+  <system_output timestamp="1700.457857">-</system_output>
+  <user_input timestamp="1700.971791">-</user_input>
+  <system_output timestamp="1700.971912">-</system_output>
+  <user_input timestamp="1701.403774">v</user_input>
+  <system_output timestamp="1701.403878">v</system_output>
+  <user_input timestamp="1701.545709">e</user_input>
+  <system_output timestamp="1701.545814">e</system_output>
+  <user_input timestamp="1701.667702">r</user_input>
+  <system_output timestamp="1701.667791">r</system_output>
+  <user_input timestamp="1701.829675">s</user_input>
+  <system_output timestamp="1701.829767">s</system_output>
+  <user_input timestamp="1701.943689">i</user_input>
+  <system_output timestamp="1701.943766">i</system_output>
+  <user_input timestamp="1702.077784">o</user_input>
+  <system_output timestamp="1702.07789">o</system_output>
+  <user_input timestamp="1702.179755">n</user_input>
+  <system_output timestamp="1702.179846">n</system_output>
+  <user_input timestamp="1702.311687">
+</user_input>
+  <system_output timestamp="1702.311774">
+</system_output>
+  <system_output timestamp="1702.312315">bc 1.08.1
+Copyright 1991-1994, 1997, 1998, 2000, 2004, 2006, 2008, 2012-2018, 2024 Free Software Foundation, Inc.
+</system_output>
+  <system_output timestamp="1702.3124">~/bc-1.08.1 # [6n</system_output>
+  <user_input timestamp="1702.312694">[49;15R</user_input>
+  <user_input timestamp="1702.859748">w</user_input>
+  <system_output timestamp="1702.859845">w</system_output>
+  <user_input timestamp="1702.963905">h</user_input>
+  <system_output timestamp="1702.963984">h</system_output>
+  <user_input timestamp="1703.077723">i</user_input>
+  <system_output timestamp="1703.077808">i</system_output>
+  <user_input timestamp="1703.247719">c</user_input>
+  <system_output timestamp="1703.247804">c</system_output>
+  <user_input timestamp="1703.315697">h</user_input>
+  <system_output timestamp="1703.315779">h</system_output>
+  <user_input timestamp="1703.417704"> </user_input>
+  <system_output timestamp="1703.417782"> </system_output>
+  <user_input timestamp="1704.007799">b</user_input>
+  <system_output timestamp="1704.007896">b</system_output>
+  <user_input timestamp="1704.303741">c</user_input>
+  <system_output timestamp="1704.303835">c</system_output>
+  <user_input timestamp="1704.475723">
+</user_input>
+  <system_output timestamp="1704.475819">
+</system_output>
+  <system_output timestamp="1704.476385">/usr/local/bin/bc
+</system_output>
+  <system_output timestamp="1704.47648">~/bc-1.08.1 # [6n</system_output>
+  <user_input timestamp="1704.477065">[49;15R</user_input>
+  <user_input timestamp="1704.951743">b</user_input>
+  <system_output timestamp="1704.951836">b</system_output>
+  <user_input timestamp="1705.243697">c</user_input>
+  <system_output timestamp="1705.243803">c</system_output>
+  <user_input timestamp="1705.819788">
+</user_input>
+  <system_output timestamp="1705.819901">
+</system_output>
+  <system_output timestamp="1705.820427">bc 1.08.1
+Copyright 1991-1994, 1997, 1998, 2000, 2004, 2006, 2008, 2012-2018, 2024 Free Software Foundation, Inc.
+This is free software with ABSOLUTELY NO WARRANTY.
+For details type `warranty'. 
+</system_output>
+  <user_input timestamp="1706.897715">2</user_input>
+  <system_output timestamp="1706.897799">2</system_output>
+  <user_input timestamp="1708.087703">+</user_input>
+  <system_output timestamp="1708.087809">+</system_output>
+  <user_input timestamp="1708.551698">2</user_input>
+  <system_output timestamp="1708.551784">2</system_output>
+  <user_input timestamp="1708.889694">
+</user_input>
+  <system_output timestamp="1708.889782">
+</system_output>
+  <system_output timestamp="1708.889812">4
+</system_output>
+  <user_input timestamp="1714.9877">4</user_input>
+  <system_output timestamp="1714.987789">4</system_output>
+  <user_input timestamp="1717.649669"></user_input>
+  <system_output timestamp="1717.649754"> </system_output>
+  <user_input timestamp="1719.679611"/>
+  <system_output timestamp="1719.679882">~/bc-1.08.1 # [6n</system_output>
+  <user_input timestamp="1719.679937">[49;15R</user_input>
+  <user_input timestamp="1723.067639">h</user_input>
+  <system_output timestamp="1723.067742">h</system_output>
+  <user_input timestamp="1723.225584">i</user_input>
+  <system_output timestamp="1723.225704">i</system_output>
+  <user_input timestamp="1723.317437">s</user_input>
+  <system_output timestamp="1723.317511">s</system_output>
+  <user_input timestamp="1723.457471">t</user_input>
+  <system_output timestamp="1723.457554">t</system_output>
+  <user_input timestamp="1723.575437">o</user_input>
+  <system_output timestamp="1723.575514">o</system_output>
+  <user_input timestamp="1723.691504">r</user_input>
+  <system_output timestamp="1723.691587">r</system_output>
+  <user_input timestamp="1723.791478">y</user_input>
+  <system_output timestamp="1723.79156">y</system_output>
+  <user_input timestamp="1723.965432"> </user_input>
+  <system_output timestamp="1723.96552"> </system_output>
+  <user_input timestamp="1724.427501">|</user_input>
+  <system_output timestamp="1724.427597">|</system_output>
+  <user_input timestamp="1724.547449"> </user_input>
+  <system_output timestamp="1724.547527"> </system_output>
+  <user_input timestamp="1725.045501">t</user_input>
+  <system_output timestamp="1725.045595">t</system_output>
+  <user_input timestamp="1725.227471">e</user_input>
+  <system_output timestamp="1725.227576">e</system_output>
+  <user_input timestamp="1725.343453">e</user_input>
+  <system_output timestamp="1725.343553">e</system_output>
+  <user_input timestamp="1725.441446"> </user_input>
+  <system_output timestamp="1725.441547"> </system_output>
+  <user_input timestamp="1727.021559">/</user_input>
+  <system_output timestamp="1727.021656">/</system_output>
+  <user_input timestamp="1727.687493">h</user_input>
+  <system_output timestamp="1727.687588">h</system_output>
+  <user_input timestamp="1727.801405">e</user_input>
+  <system_output timestamp="1727.801476">e</system_output>
+  <user_input timestamp="1727.9054">r</user_input>
+  <system_output timestamp="1727.905464">r</system_output>
+  <user_input timestamp="1728.11942">s</user_input>
+  <system_output timestamp="1728.119483">s</system_output>
+  <user_input timestamp="1728.29149">t</user_input>
+  <system_output timestamp="1728.291576">t</system_output>
+  <user_input timestamp="1728.455469">o</user_input>
+  <system_output timestamp="1728.455542">o</system_output>
+  <user_input timestamp="1728.613432">r</user_input>
+  <system_output timestamp="1728.613513">r</system_output>
+  <user_input timestamp="1729.023485">y</user_input>
+  <system_output timestamp="1729.023567">y</system_output>
+  <user_input timestamp="1731.683479">
+</user_input>
+  <system_output timestamp="1731.683563">
+</system_output>
+  <system_output timestamp="1731.684321">   0 cd
+   1 wget https://ftp.gnu.org/gnu/bc/bc-1.08.1.tar.xz
+   2 tar -xJf bc-1.08.1.tar.xz 
+   3 cd bc-1.08.1/
+   4 ls
+   5 ./configure
+   6 setup-apkrepos 
+   7 ./configure
+   8 apk add gcc
+   9 ./configure
+  10 vi config.log 
+  11 apk add musl-dev
+  12 ./configure
+  13 apk add make
+  14 ./configure
+  15 make -j
+  16 apk add texinfo
+  17 make -j
+  18 make install
+  19 bc --version
+  20 which bc
+  21 bc
+  22 history | tee /herstory
+</system_output>
+  <system_output timestamp="1731.684409">~/bc-1.08.1 # [6n</system_output>
+  <user_input timestamp="1731.685444">[49;15R</user_input>
+</recording>

@@ -1,0 +1,12 @@
+FROM registry.hub.docker.com/library/alpine:latest
+RUN apk add gcc musl-dev make
+WORKDIR "/root"
+RUN wget https://ftp.gnu.org/gnu/m4/m4-latest.tar.gz
+RUN tar -xzf m4-latest.tar.gz
+RUN mv $(tar -tf m4-latest.tar.gz | head -n1) m4-latest
+WORKDIR "/root/m4-latest"
+RUN ./configure
+RUN make -j
+RUN make install
+RUN m4 --version
+RUN which m4

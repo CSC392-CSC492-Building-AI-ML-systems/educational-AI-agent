@@ -1,0 +1,11 @@
+FROM registry.hub.docker.com/library/alpine:latest
+RUN apk add perl gcc musl-dev make
+WORKDIR "/root"
+RUN wget https://ftp.gnu.org/gnu/help2man/help2man-1.49.3.tar.xz
+RUN tar -xJf help2man-1.49.3.tar.xz
+WORKDIR "/root/help2man-1.49.3"
+RUN ./configure
+RUN make -j
+RUN make install
+RUN help2man --version
+RUN which help2man
