@@ -1,17 +1,48 @@
-<!doctype html>
-  <html>
-    <head>
-      <link rel="stylesheet" href="node_modules/@xterm/xterm/css/xterm.css" />
-      <script src="node_modules/@xterm/xterm/lib/xterm.js"></script>
-    </head>
-    <body>
-      <div id="terminal"></div>
-      <script>
-        var term = new Terminal();
-        term.open(document.getElementById('terminal'));
-        term.write('Hello from \x1B[1;3;31mxterm.js\x1B[0m $ ')
-      </script>
-    </body>
-  </html>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>AutoDocs AI</title>
+    <link rel="stylesheet" href="node_modules/@xterm/xterm/css/xterm.css" />
+    <script src="node_modules/@xterm/xterm/lib/xterm.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+  <div class="container">
+    <h1>AutoDocs AI Terminal</h1>
+    <p>A browser-based terminal for testing and interaction.</p>
+    <div id="terminal"></div>
+  </div>
 
-  
+  <script>
+    const term = new Terminal({
+      cursorBlink: true,
+      rows: 30,
+      cols: 80,
+    });
+
+    term.open(document.getElementById('terminal'));
+    term.focus();
+    term.write('Hello from \x1B[1;3;31mxterm.js\x1B[0m\r\n$ ');
+
+    let command = '';
+
+    term.onKey(e => {
+      const char = e.key;
+
+      if (e.domEvent.key === 'Backspace') {
+        if (command.length > 0) {
+          command = command.slice(0, -1);
+          term.write('\b \b');
+        }
+      } else if (e.domEvent.key === 'Enter') {
+        term.write('\r\nYou typed: ' + command + '\r\n$ ');
+        command = '';
+      } else if (e.domEvent.key.length === 1) {
+        command += char;
+        term.write(char);
+      }
+    });
+  </script>
+</body>
+</html>
