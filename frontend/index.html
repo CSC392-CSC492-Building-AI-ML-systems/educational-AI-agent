@@ -14,35 +14,19 @@
     <div id="terminal"></div>
   </div>
 
-  <script>
-    const term = new Terminal({
-      cursorBlink: true,
-      rows: 30,
-      cols: 80,
-    });
-
-    term.open(document.getElementById('terminal'));
-    term.focus();
-    term.write('Hello from \x1B[1;3;31mxterm.js\x1B[0m\r\n$ ');
-
-    let command = '';
-
-    term.onKey(e => {
-      const char = e.key;
-
-      if (e.domEvent.key === 'Backspace') {
-        if (command.length > 0) {
-          command = command.slice(0, -1);
-          term.write('\b \b');
-        }
-      } else if (e.domEvent.key === 'Enter') {
-        term.write('\r\nYou typed: ' + command + '\r\n$ ');
-        command = '';
-      } else if (e.domEvent.key.length === 1) {
-        command += char;
-        term.write(char);
-      }
-    });
-  </script>
+  <script src="frontend.js"></script>
 </body>
 </html>
+
+
+<!-- 
+NOTE: will need to install:
+
+npm install @xterm/xterm  // for terminal UI
+npm install node-pty@latest  // for terminal emulation
+npm install ws  // for WebSocket support
+npm install concurrently  // for running both server and client in development
+npm install live-server // for serving static files in development
+
+and will be able to run everything with: npm start
+ -->
