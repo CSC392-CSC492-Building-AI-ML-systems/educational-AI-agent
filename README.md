@@ -88,7 +88,7 @@ Load the model directly with the earlier provided code snippet, available at: ht
 ## System Architecture 
 ![System architecture](https://i.imgur.com/9iDfrbz.png)
 
-## Winter 2025 Team's Video Walkthrough + Demo
+## Winter 2025 Team's Video Walkthrough and Demo
 The current repository code has been modified and extended from the winter 2025 team's code base. Here's a detailed walkthrough of the winter 2025 team's code base:
 ![Walkthrough & Demo](https://drive.google.com/drive/folders/1rBhexkE-hcf6kk0zd22KykmWv9gQR1ey)
 
