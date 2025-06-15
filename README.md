@@ -87,3 +87,6 @@ Load the model directly with the earlier provided code snippet, available at: ht
 
 ## System Architecture 
 ![System architecture](https://i.imgur.com/9iDfrbz.png)
+
+## Original Team's Code Base (OUTDATED)
+![Initial Code base](https://drive.google.com/drive/folders/1oNZ9KkgEusbrLaNw74xrCJrKaWDrUcPk?usp=sharing)
