@@ -88,5 +88,13 @@ Load the model directly with the earlier provided code snippet, available at: ht
 ## System Architecture 
 ![System architecture](https://i.imgur.com/9iDfrbz.png)
 
-## Original Team's Code Base (OUTDATED)
-![Initial Code base](https://drive.google.com/drive/folders/1oNZ9KkgEusbrLaNw74xrCJrKaWDrUcPk?usp=sharing)
+## Winter 2025 Team's Video Walkthrough + Demo
+The current repository code has been modified and extended from the winter 2025 team's code base. Here's a detailed walkthrough of the winter 2025 team's code base:
+![Walkthrough & Demo](https://drive.google.com/drive/folders/1rBhexkE-hcf6kk0zd22KykmWv9gQR1ey)
+
+For more information on the winter 2025 team's code base please see their white paper here:
+![Winter 2025 White Paper](https://drive.google.com/file/d/1yEArHmh11X5T9MJitwWUVuvdY0RTH86H/view?usp=sharing)
+
+## Fall 2024 Team's Code Base (Original Team)
+Most of the original team's code base is either outdated, or no longer working, hence it has been archived here:
+![Archived Initial Code base](https://drive.google.com/drive/folders/1oNZ9KkgEusbrLaNw74xrCJrKaWDrUcPk?usp=sharing)
