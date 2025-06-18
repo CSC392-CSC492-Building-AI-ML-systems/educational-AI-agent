@@ -1,0 +1,86 @@
+<?xml version="1.0" ?>
+<recording version="2" width="239" height="196" timestamp="1730988014">
+<event depth="-2">
+  <system_output timestamp="0.005867">[?2004hdemo@stephost:~$ </system_output>
+  <user_input timestamp="1.439236"/>
+  <system_output timestamp="1.439986">
+(reverse-i-search)`': </system_output>
+  <user_input timestamp="2.303837">s</user_input>
+  <system_output timestamp="2.304276">s': cm li[7ms[27mt</system_output>
+  <user_input timestamp="2.613286">s</user_input>
+  <system_output timestamp="2.613687">s': [7mss[27mh 172.16.0.17</system_output>
+  <user_input timestamp="3.478005">h</user_input>
+  <system_output timestamp="3.478449">[1@h': [7mssh[27m</system_output>
+  <user_input timestamp="4.321759">
+</user_input>
+  <system_output timestamp="4.322241">
+[8Pdemo@stephost:~$ ssh
+[?2004l
+</system_output>
+  <system_output timestamp="4.7014">
+demo@172.16.0.17's password: </system_output>
+  <user_input timestamp="8.690349">m</user_input>
+  <user_input timestamp="8.852269">u</user_input>
+  <user_input timestamp="9.013662">m</user_input>
+  <user_input timestamp="9.114741">e</user_input>
+  <user_input timestamp="9.299438">s</user_input>
+  <user_input timestamp="9.400539">e</user_input>
+  <user_input timestamp="10.766226"/>
+  <system_output timestamp="10.766742">
+</system_output>
+  <system_output timestamp="10.768878">
+</system_output>
+  <system_output timestamp="10.769305">[?2004hdemo@stephost:~$ </system_output>
+  <user_input timestamp="11.542018">[A</user_input>
+  <system_output timestamp="11.542496">ssh 172.16.0.17</system_output>
+  <user_input timestamp="11.831702">
+</user_input>
+  <system_output timestamp="11.832426">
+[?2004l
+</system_output>
+  <system_output timestamp="12.133316">
+demo@172.16.0.17's password: </system_output>
+  <user_input timestamp="12.732842">f</user_input>
+  <user_input timestamp="12.793873">a</user_input>
+  <user_input timestamp="12.856427">i</user_input>
+  <user_input timestamp="13.019481">
+</user_input>
+  <system_output timestamp="13.019961">
+</system_output>
+  <system_output timestamp="13.216002">Linux faiserver 6.1.0-26-686-pae #1 SMP PREEMPT_DYNAMIC Debian 6.1.112-1 (2024-09-30) i686
+
+
+Plan your installation, and FAI installs your plan.
+
+Last login: Wed Oct 23 20:07:49 2024 from 172.16.0.1
+
+</system_output>
+<annotation>
+</annotation>
+</event>
+<event depth="-2">
+  <system_output timestamp="13.415396">[?2004h]0;demo@faiserver: ~demo@faiserver:~$ </system_output>
+  <user_input timestamp="14.347809"/>
+  <system_output timestamp="14.350083">[?2004l
+
+</system_output>
+  <system_output timestamp="14.350842">logout
+</system_output>
+  <system_output timestamp="14.361051">Connection to 172.16.0.17 closed.
+
+</system_output>
+<annotation>
+</annotation>
+</event>
+<event depth="-2">
+  <system_output timestamp="14.364676">[?2004hdemo@stephost:~$ </system_output>
+  <user_input timestamp="15.645189"/>
+  <system_output timestamp="15.645528">[?2004l
+
+exit
+</system_output>
+<annotation>
+</annotation>
+</event>
+<event depth="-2">
+</recording>

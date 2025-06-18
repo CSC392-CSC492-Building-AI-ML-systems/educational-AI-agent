@@ -1,0 +1,103 @@
+<?xml version="1.0" ?>
+<recording version="2" width="239" height="196" timestamp="1730987252">
+<event depth="0">
+  <system_output timestamp="0.008584">[?2004hdemo@stephost:~$ </system_output>
+  <user_input timestamp="0.603025"/>
+  <system_output timestamp="0.603588">
+(reverse-i-search)`': </system_output>
+  <user_input timestamp="0.937684">s</user_input>
+  <system_output timestamp="0.938181">s': [7ms[27mync</system_output>
+  <user_input timestamp="1.114177">s</user_input>
+  <system_output timestamp="1.1146">s': [7mss[27mh 172.16.0.17</system_output>
+  <user_input timestamp="1.291778">h</user_input>
+  <system_output timestamp="1.292225">[1@h': [7mssh[27m</system_output>
+  <user_input timestamp="2.617004">
+</user_input>
+  <system_output timestamp="2.617465">
+[8Pdemo@stephost:~$ ssh
+[?2004l
+</system_output>
+  <system_output timestamp="5.694771">ssh: connect to host 172.16.0.17 port 22: No route to host
+
+</system_output>
+<annotation>
+The user attempts to SSH into a remote host but the connection fails due to a network issue.
+</annotation>
+</event>
+<event depth="0">
+  <system_output timestamp="5.697578">[?2004hdemo@stephost:~$ </system_output>
+  <user_input timestamp="7.138774">c</user_input>
+  <system_output timestamp="7.139172">c</system_output>
+  <user_input timestamp="7.367648">m</user_input>
+  <system_output timestamp="7.368275">m</system_output>
+  <user_input timestamp="7.491765"> </user_input>
+  <system_output timestamp="7.492239"> </system_output>
+  <user_input timestamp="7.700208">l</user_input>
+  <system_output timestamp="7.700707">l</system_output>
+  <user_input timestamp="7.826627">i</user_input>
+  <system_output timestamp="7.827056">i</system_output>
+  <user_input timestamp="8.079826">s</user_input>
+  <system_output timestamp="8.080258">s</system_output>
+  <user_input timestamp="8.28657">t</user_input>
+  <system_output timestamp="8.286967">t</system_output>
+  <user_input timestamp="8.474631">
+</user_input>
+  <system_output timestamp="8.475097">
+[?2004l
+</system_output>
+  <system_output timestamp="8.48351">implicitserver-tearoff-16: Runable,</system_output>
+  <system_output timestamp="8.523754">
+implicitserver-tearoff-17: Runable,</system_output>
+  <system_output timestamp="8.575367">
+wikiserver-tearoff-3: Runable,</system_output>
+  <system_output timestamp="8.604153"> Running
+qemuwordserver-tearoff-4: Runable,</system_output>
+  <system_output timestamp="8.63601">
+lampserver-tearoff-14: Runable,</system_output>
+  <system_output timestamp="8.667641">
+wikiserver-tearoff-5: Runable,</system_output>
+  <system_output timestamp="8.699481">
+drupalserver-tearoff-13: Runable,</system_output>
+  <system_output timestamp="8.730786">
+nullhost-tearoff-11: Runable,</system_output>
+  <system_output timestamp="8.76265">
+wikiserver-tearoff-2: Runable,</system_output>
+  <system_output timestamp="8.794868">
+faiserver-tearoff-8: Runable,</system_output>
+  <system_output timestamp="8.826481">
+faiserver-tearoff-9: Runable,</system_output>
+  <system_output timestamp="8.858307">
+faiserver-tearoff-1: Runable,</system_output>
+  <system_output timestamp="8.888755">
+faiserver-tearoff-19: Runable,</system_output>
+  <system_output timestamp="8.918944">
+nullhost-tearoff-10: Runable,</system_output>
+  <system_output timestamp="8.952225"> Running
+nullhost-tearoff-7: Runable,</system_output>
+  <system_output timestamp="8.983719">
+faiserver-tearoff-18: Runable,</system_output>
+  <system_output timestamp="9.015378">
+faiserver-tearoff-12: Runable,</system_output>
+  <system_output timestamp="9.047348">
+nullhost-tearoff-6: Runable,</system_output>
+  <system_output timestamp="9.079908"> Running
+nullhost-tearoff-15: Runable,</system_output>
+  <system_output timestamp="9.110634">
+</system_output>
+<annotation>
+The user lists the status of various "tearoff" servers.
+</annotation>
+</event>
+<event depth="0">
+  <system_output timestamp="9.110867">[?2004hdemo@stephost:~$ </system_output>
+  <user_input timestamp="15.55465"/>
+  <system_output timestamp="15.555045">[?2004l
+
+exit
+</system_output>
+<annotation>
+The user exits the current terminal session.
+</annotation>
+</event>
+<event depth="-2">
+</recording>

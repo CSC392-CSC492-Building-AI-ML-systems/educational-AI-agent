@@ -4,6 +4,7 @@ import xml.etree.ElementTree as ET
 import xml.dom.minidom
 import re
 import os
+import argparse
 
 def remove_invalid_xml_chars(s):
     """
@@ -102,14 +103,22 @@ def prettify_xml(elem):
     return reparsed.toprettyxml(indent="  ")
 
 def main():
+    parser = argparse.ArgumentParser(description="Process a .cast file into .xml format.")
+    parser.add_argument("filename", help="Name of the .cast file (e.g., renee_rec2.cast)")
+    args = parser.parse_args()
+
+    current_path = os.path.dirname(os.path.abspath(__file__))
+    current_path = os.path.dirname(os.path.dirname(os.path.dirname(current_path)))
     # Define the input and output directories:
-    input_dir = "educational-AI-agent/data/Model 0/raw"
-    output_dir = "educational-AI-agent/data/Model 0/formatted"
+    input_dir = "data/model_0/raw"
+    input_dir = os.path.join(current_path, input_dir)
+    output_dir = "data/model_0/inputs"
+    output_dir = os.path.join(current_path, output_dir)
 
     # Name of the file to parse (must exist in input_dir).
-    input_file_name = "renee_rec2.cast"
+    input_file_name = args.filename
     # Name for the resulting XML output.
-    output_file_name = "renee_rec2.cast.xml"
+    output_file_name = args.filename + ".xml"
 
     # Construct full paths.
     input_file = os.path.join(input_dir, input_file_name)

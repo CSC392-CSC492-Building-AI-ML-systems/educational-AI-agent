@@ -1,0 +1,6 @@
+0
+User attempts to SSH into a remote host, fails the first password attempt, and then successfully logs in on the second try.
+1
+User logs out of the SSH session to the remote server.
+-1
+User exits the current terminal session.

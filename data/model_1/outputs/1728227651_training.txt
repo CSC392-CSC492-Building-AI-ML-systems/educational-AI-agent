@@ -1,0 +1,4 @@
+0
+User lists the contents of the '/disk1/' directory in long format, including hidden files.
+0
+User exits the current terminal session after clearing the input line.

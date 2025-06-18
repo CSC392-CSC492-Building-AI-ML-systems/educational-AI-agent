@@ -1,0 +1,6 @@
+0
+The user attempts to SSH into a remote host but the connection fails due to a network issue.
+0
+The user lists the status of various "tearoff" servers.
+0
+The user exits the current terminal session.

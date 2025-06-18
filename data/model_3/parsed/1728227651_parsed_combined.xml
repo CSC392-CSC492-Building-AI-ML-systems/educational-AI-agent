@@ -1,0 +1,101 @@
+<?xml version="1.0" ?>
+<recording version="2" width="319" height="92" timestamp="1728227651">
+<event depth="0">
+  <system_output timestamp="0.009109">[?2004hdemo@stephost:~$ </system_output>
+  <user_input timestamp="0.760023">l</user_input>
+  <system_output timestamp="0.760619">l</system_output>
+  <user_input timestamp="0.994143">s</user_input>
+  <system_output timestamp="0.994538">s</system_output>
+  <user_input timestamp="1.15299"> </user_input>
+  <system_output timestamp="1.153428"> </system_output>
+  <user_input timestamp="1.411007">/</user_input>
+  <system_output timestamp="1.411542">/</system_output>
+  <user_input timestamp="1.903574"></user_input>
+  <system_output timestamp="1.904143">[K</system_output>
+  <user_input timestamp="2.162617">-</user_input>
+  <system_output timestamp="2.163111">-</system_output>
+  <user_input timestamp="2.536198">l</user_input>
+  <system_output timestamp="2.536823">l</system_output>
+  <user_input timestamp="2.985471">a</user_input>
+  <system_output timestamp="2.985868">a</system_output>
+  <user_input timestamp="3.22227"> </user_input>
+  <system_output timestamp="3.222728"> </system_output>
+  <user_input timestamp="3.440741">/</user_input>
+  <system_output timestamp="3.441236">/</system_output>
+  <user_input timestamp="3.796854">d</user_input>
+  <system_output timestamp="3.797286">d</system_output>
+  <user_input timestamp="3.955225">i</user_input>
+  <system_output timestamp="3.955753">i</system_output>
+  <user_input timestamp="4.267216">v</user_input>
+  <system_output timestamp="4.267675">v</system_output>
+  <user_input timestamp="4.54326"></user_input>
+  <system_output timestamp="4.543712">[K</system_output>
+  <user_input timestamp="4.739455">s</user_input>
+  <system_output timestamp="4.739931">s</system_output>
+  <user_input timestamp="4.940993">x</user_input>
+  <system_output timestamp="4.941392">x</system_output>
+  <user_input timestamp="5.379294"></user_input>
+  <system_output timestamp="5.379748">[K</system_output>
+  <user_input timestamp="5.61946">k</user_input>
+  <system_output timestamp="5.62009">k</system_output>
+  <user_input timestamp="6.013531">1</user_input>
+  <system_output timestamp="6.013912">1</system_output>
+  <user_input timestamp="6.432167">	</user_input>
+  <system_output timestamp="6.432835"/>
+  <user_input timestamp="7.121232">/</user_input>
+  <system_output timestamp="7.121644">/</system_output>
+  <user_input timestamp="7.416722">	</user_input>
+  <system_output timestamp="7.493226"/>
+  <user_input timestamp="7.830737">	</user_input>
+  <system_output timestamp="7.831733">
+</system_output>
+  <system_output timestamp="7.832078">apache/                     Backscatter-Misc-1.sch      ca3100-2.sym                Documents/                  images/                     lost+found/                 Personal/                   show_obsolete_preseeds.sh   system_backups/             var_cache_apt/              wordpress_restore.sh
+</system_output>
+  <system_output timestamp="7.832635">Backscatter-CA3100E-3.sch   BD135-1.sym                 ca3100-3.sym                faikvm.com/                 isos/                       Media/                      primecoin/                  show_obsolete_preseeds.sh~  unknown_encrypted_android/  wordpress_backup.sh         wordpress_restore.sh~
+Backscatter-CA3100E-4.sch   ca3100-1.sym                cold_storage/               HacDC/                      jussie/                     mirror/                     radioshack_box/             stereoscan.zip              usr_share/                  wordpress_backup.sh~        
+demo@stephost:~$ ls -la /disk1/</system_output>
+<annotation>
+User lists the contents of the '/disk1/' directory in long format, including hidden files.
+</annotation>
+</event>
+<event depth="0">
+  <user_input timestamp="19.231808"></user_input>
+  <system_output timestamp="19.232214">[K</system_output>
+  <user_input timestamp="19.920285"></user_input>
+  <system_output timestamp="19.920802">[K</system_output>
+  <user_input timestamp="19.961261"></user_input>
+  <system_output timestamp="19.961721">[K</system_output>
+  <user_input timestamp="19.981063"></user_input>
+  <system_output timestamp="19.981425">[K</system_output>
+  <user_input timestamp="20.023474"></user_input>
+  <system_output timestamp="20.023899">[K</system_output>
+  <user_input timestamp="20.063569"></user_input>
+  <system_output timestamp="20.064111">[K</system_output>
+  <user_input timestamp="20.104531"></user_input>
+  <system_output timestamp="20.105122">[K</system_output>
+  <user_input timestamp="20.145734"></user_input>
+  <system_output timestamp="20.146183">[K</system_output>
+  <user_input timestamp="20.187113"></user_input>
+  <system_output timestamp="20.187478">[K</system_output>
+  <user_input timestamp="20.228683"></user_input>
+  <system_output timestamp="20.229096">[K</system_output>
+  <user_input timestamp="20.290055"></user_input>
+  <system_output timestamp="20.290436">[K</system_output>
+  <user_input timestamp="20.586159"></user_input>
+  <system_output timestamp="20.586603">[K</system_output>
+  <user_input timestamp="20.790473"></user_input>
+  <system_output timestamp="20.790893">[K</system_output>
+  <user_input timestamp="20.977316"></user_input>
+  <system_output timestamp="20.977703">[K</system_output>
+  <user_input timestamp="21.537513"/>
+  <system_output timestamp="21.538166">[?2004l
+
+</system_output>
+  <system_output timestamp="21.538336">exit
+</system_output>
+<annotation>
+User exits the current terminal session after clearing the input line.
+</annotation>
+</event>
+<event depth="-2">
+</recording>
