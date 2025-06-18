@@ -1,3 +1,0 @@
-{
-    "annotation": "<data-piece><history><entry><input>cp file1.txt file2.txt</input><output></output><annotation>Copy the contents of `file1.txt` to `file2.txt`.</annotation></entry><entry><input>ls</input><output>file1.txt file2.txt</output><annotation>List the directory contents to verify the copy.</annotation></entry><entry><input>mv file2.txt file3.txt</input><output></output><annotation>Rename `file2.txt` to `file3.txt`.</annotation></entry><entry><input>rm file3.txt</input><output></output><annotation>Delete the `file3.txt` file.</annotation></entry></history><current-entry><entry><input>exit</input><output>exit</output><annotation>End the session after completing file operations.</annotation></entry></current-entry></data-piece>"
-}  
