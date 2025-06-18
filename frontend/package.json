@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "start": "concurrently \"node backend.js\" \"live-server . --port=3000 --open=/index.html\""
+  },
+  "dependencies": {
+    "@xterm/xterm": "^5.5.0",
+    "concurrently": "^9.1.2",
+    "live-server": "^1.2.2",
+    "node-pty": "^1.0.0",
+    "ws": "^8.18.2"
+  }
+}

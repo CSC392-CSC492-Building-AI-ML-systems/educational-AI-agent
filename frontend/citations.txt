@@ -1,0 +1,3 @@
+ChatGPT. “The xterm.js terminal is not allowing any input. How can we fix that?
+Also, how can we make the terminal smaller and add a title to the page.”
+ChatGPT, OpenAI, 3 June 2025, https://chat.openai.com/.
