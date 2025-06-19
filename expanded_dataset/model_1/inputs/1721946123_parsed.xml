@@ -1,0 +1,1525 @@
+<?xml version="1.0" ?>
+<recording version="2" width="239" height="196" timestamp="1721946123">
+<event depth="-2">
+  <system_output timestamp="0.006768">[?2004hdemo@stephost:~$ </system_output>
+  <user_input timestamp="0.800234"/>
+  <system_output timestamp="0.80052">
+(reverse-i-search)`': </system_output>
+  <user_input timestamp="1.176362">s</user_input>
+  <system_output timestamp="1.176645">s': [7ms[27mcreen -dr</system_output>
+  <user_input timestamp="1.404309">c</user_input>
+  <system_output timestamp="1.404557">[1@c': [7msc[27m</system_output>
+  <user_input timestamp="2.028476">r</user_input>
+  <system_output timestamp="2.02889">[1@r': [7mscr[27m</system_output>
+  <user_input timestamp="2.487195">
+</user_input>
+  <system_output timestamp="2.487461">
+[8Pdemo@stephost:~$ scr
+[?2004l
+</system_output>
+  <system_output timestamp="2.631579">[r[m[2J[H[?7h[?1;4;6l[?1049h[22;0;0t[4l[?1h=[0m(B[1;196r</system_output>
+  <system_output timestamp="2.650962">[H[2J]0;screen[H[2J[22;2t]2;screen[32m[    0.916645] [39mio scheduler mq-deadline registered
+[32m[    0.919042] [33mshpchp: [39mStandard Hot Plug PCI Controller Driver version: 0.4
+[32m[    0.919836] [33misapnp: [39mScanning for PnP cards...
+[32m[    1.287602] [33misapnp: [39mNo Plug &amp; Play device found
+[32m[    1.287868] [33mSerial: [39m8250/16550 driver, 4 ports, IRQ sharing enabled
+[32m[    1.288426] [33m00:04: [39mttyS0 at I/O 0x3f8 (irq = 4, base_baud = 115200) is a 16550A
+[32m[    1.289256] [39mLinux agpgart interface v0.103
+[32m[    1.290054] [33mi8042: [39mPNP: PS/2 Controller [PNP0303:KBD,PNP0f13:MOU] at 0x60,0x64 irq 1,12
+[32m[    1.291109] [33mserio: [39mi8042 KBD port at 0x60,0x64 irq 1
+[32m[    1.291123] [33mserio: [39mi8042 AUX port at 0x60,0x64 irq 12
+[32m[    1.291534] [33mmousedev: [39mPS/2 mouse device common for all mice
+[32m[    1.291639] [33mrtc_cmos 00:05: [39mRTC can wake from S4
+[32m[    1.292902] [33minput: [39mAT Translated Set 2 keyboard as /devices/platform/i8042/serio0/input/input0
+[32m[    1.293327] [33mrtc_cmos 00:05: [39mregistered as rtc0
+[32m[    1.293507] [33mrtc_cmos 00:05: [39msetting system clock to 2024-07-25T21:08:06 UTC (1721941686)
+[32m[    1.293656] [33mrtc_cmos 00:05: [39malarms up to one day, y3k, 242 bytes nvram, hpet irqs
+[32m[    1.293866] [33mledtrig-cpu: [39mregistered to indicate activity on CPUs
+[32m[    1.294277] [33mNET: [39mRegistered PF_INET6 protocol family
+[32m[    1.300349] [39mSegment Routing with IPv6
+[32m[    1.300380] [39mIn-situ OAM (IOAM) with IPv6
+[32m[    1.300418] [33mmip6: [39mMobile IPv6
+[32m[    1.300433] [33mNET: [39mRegistered PF_PACKET protocol family
+[32m[    1.300577] [33mmpls_gso: [39mMPLS GS</system_output>
+  <system_output timestamp="2.651498">O support
+[32m[    1.301085] [33mIPI shorthand broadcast: [39menabled
+[32m[    1.301401] [39mregistered taskstats version 1
+[32m[    1.301425] [39mLoading compiled-in X.509 certificates
+[32m[    1.379013] [33mLoaded X.509 cert 'Debian Secure Boot CA: [39m6ccece7e4c6c0d1f6149f3dd27dfcc5cbb419ea1'
+[32m[    1.379048] [33mLoaded X.509 cert 'Debian Secure Boot Signer 2022 - linux: [39m14011249c2675ea8e5148542202005810584b25f'
+[32m[    1.379901] [33mzswap: [39mloaded using pool lzo/zbud
+[32m[    1.380358] [39mKey type .fscrypt registered
+[32m[    1.380361] [39mKey type fscrypt-provisioning registered
+[32m[    1.385663] [39mKey type encrypted registered
+[32m[    1.385671] [33mAppArmor: [39mAppArmor sha1 policy hashing enabled
+[32m[    1.385696] [33mima: [39mNo TPM chip found, activating TPM-bypass!
+[32m[    1.385698] [33mima: [39mAllocated hash algorithm: sha256
+[32m[    1.385722] [33mima: [39mNo architecture policies found
+[32m[    1.385753] [33mevm: [39mInitialising EVM extended attributes:
+[32m[    1.385755] [33mevm: [39msecurity.selinux
+[32m[    1.385756] [33mevm: [39msecurity.SMACK64 (disabled)
+[32m[    1.385758] [33mevm: [39msecurity.SMACK64EXEC (disabled)
+[32m[    1.385759] [33mevm: [39msecurity.SMACK64TRANSMUTE (disabled)
+[32m[    1.385760] [33mevm: [39msecurity.SMACK64MMAP (disabled)
+[32m[    1.385761] [33mevm: [39msecurity.apparmor
+[32m[    1.385762] [33mevm: [39msecurity.ima
+[32m[    1.385764] [33mevm: [39msecurity.capability
+[32m[    1.385765] [33mevm: [39mHMAC attrs: 0x1
+[32m[    1.807440] [1m[39mUnstable clock detected, switching default tracing clock to "global"
+               If you want to keep using the local clock, then add:
+                 "trace_clock=local"
+               on the kernel command line
+[0m[32m[    1.807551] [33mclk: [39mDisabling unused clocks
+[32m[    1.809685] [33mFreeing unused kernel image (initmem) memory: [39m920K
+[32m[    1.809737] [33mWrite protecting kernel text and read-only data: [39m12540k
+[32m[    1.809741] [33mNX-protecting the kernel data: [39m7012k
+[32m[    1.810660] [33mx86/mm: [39mChecked W+X mappings: passed, no W+X pages found.
+[32m[    1.810671] [39mRun /init as init process
+[32m[    1.810674] [2</system_output>
+  <system_output timestamp="2.651642">C[39mwith arguments:
+[32m[    1.810676] [4C[39m/init
+[32m[    1.810677] [2C[39mwith environment:
+[32m[    1.810679] [4C[39mHOME=/
+[32m[    1.810680] [4C[39mTERM=linux
+[32m[    1.810681] [4C[39mBOOT_IMAGE=/vmlinuz-6.1.0-22-686-pae
+[32m[    1.909084] [33mpiix4_smbus 0000:00:01.3: [39mSMBus Host Controller at 0x700, revision 0
+[32m[    1.915791] [33mFloppy drive(s): [39mfd0 is 2.88M AMI BIOS
+[32m[    1.917915] [33m8139cp: [39m8139cp: 10/100 PCI Ethernet driver v1.3 (Mar 22, 2004)
+[32m[    1.927044] [33minput: [39mVirtualPS/2 VMware VMMouse as /devices/platform/i8042/serio1/input/input3
+[32m[    1.929030] [33minput: [39mVirtualPS/2 VMware VMMouse as /devices/platform/i8042/serio1/input/input2
+[32m[    1.935723] [39mSCSI subsystem initialized
+[32m[    1.936546] [39mFDC 0 is a S82078B
+[32m[    1.956777] [33mACPI: [39m\_SB_.LNKC: Enabled at IRQ 11
+[32m[    1.962130] [33m8139cp 0000:00:03.0 eth0: [39mRTL-8139C+ at 0x(ptrval), 52:54:00:12:35:13, IRQ 11
+[32m[    1.964106] [39mlibata version 3.00 loaded.
+[32m[    1.966490] [33m8139too: [39m8139too Fast Ethernet driver 0.9.28
+[32m[    1.967911] [33mata_piix 0000:00:01.1: [39mversion 2.13
+[32m[    1.969795] [33mscsi host0: [39mata_piix
+[32m[    1.970091] [33mscsi host1: [39mata_piix
+[32m[    1.970183] [33mata1: [39mPATA max MWDMA2 cmd 0x1f0 ctl 0x3f6 bmdma 0xc100 irq 14
+[32m[    1.970188] [33mata2: [39mPATA max MWDMA2 cmd 0x170 ctl 0x376 bmdma 0xc108 irq 15
+[32m[    1.991319] [33m8139cp 0000:00:03.0 ens3: [39mrenamed from eth0
+[32m[    2.127520] [33mata2: [39mfound unknown device (class 0)
+[32m[    2.128316] [33mata2.00: [39mATAPI: QEMU DVD-ROM, 2.5+, max UDMA/100
+[32m[    2.132262] [33mata1.00: [39mATA-7: QEMU HARDDISK, 2.5+, max UDMA/100
+[32m[    2.132266] [33mata1.00: [39m29073408 sectors, multi 16: LBA48
+[32m[    2.132272] [33mata1.01: [39mATAPI: QEMU DVD-ROM, 2.5+, max UDMA/100
+[32m[    2.134475] [33mscsi 0:0:0:0: [39mDirect-Access[5CATA[6CQEMU HARDDISK[4C2.5+ PQ: 0 ANSI: 5
+[32m[    2.136372] [33mscsi 0:0:1:0: [39mCD-ROM[12CQEMU[5CQEMU DVD-ROM[5C2.5+ PQ: 0 ANSI: 5
+[32m[    2.184821] [33mscsi 1:0:0:0: [39mCD-ROM[12CQEMU[5CQEMU DVD-ROM[5C2.5+ PQ: 0 ANSI: 5
+[32m[    2.251961] [33msr 0:0:1:0: [39m[sr0] scsi3-mmc drive: 4x/4x cd/rw xa/form2 tray
+[32m[    2.251968] [33mcdrom: [39mUniform CD-ROM driver Revision: 3.20
+[32m[    2.316484] [33msd 0:0:0:0: [39m[sda] 29073408 512-byte logical blocks: (14.9 GB/13.9 GiB)
+[32m[    2.316552] [33msd 0:0:0:0: [39m[sda] Write Protect is off
+[32m[    2.316557] [33msd 0:0:0:0: [39m[sda] Mode Sense: 00 3a 00 00
+[32m[    2.316652] [33msd 0:0:0:0: [39m[sda] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+[32m[    2.316776] [33msr 0:0:1:0: [39mAttached scsi CD-ROM sr0
+[32m[    2.316789] [33msd 0:0:0:0: [39m[sda] Preferred minimum I/O size 512 bytes
+[32m[    2.318617] [33m sda: [39msda1 sda2 sda3
+[32m[    2.319046] [33msd 0:0:0:0: [39m[sda] Attached SCSI disk
+[32m[    2.380362] [33msr 1:0:0:0: [39m[sr1] scsi3-mmc drive: 4x/4x cd/rw xa/form2 tray
+[32m[    2.444374] [33msr 1:0:0:0: [39mAttached scsi CD-ROM sr1
+[32m[    3.157462] [33mEXT4-fs (sda2): [39mmounted filesystem with ordered data mode. Quota mode: none.
+[32m[    3.261727] [39mNot activating Mandatory Access Control as /sbin/tomoyo-init does not exist.
+[32m[    3.873617] [33msystemd[1]: [39mInserted module 'autofs4'
+[32m[    3.990370] [33msystemd[1]: [39msystemd 252.26-1~deb12u2 running in system mode (+PAM +AUDIT +SELINUX +APPARMOR +IMA +SMACK +SECCOMP +GCRYPT -GNUTLS +OPENSSL +ACL +BLKID +CURL +ELFUTILS +FIDO2 +IDN2 -IDN +IPTC +KMOD +LIBCRYPTSETUP +LIBFDISK +PCRE2 -PWQUALITY +P11KIT +QRENCODE +TPM2 +BZIP2 +LZ4 +XZ +ZLIB +ZSTD -BPF_FRAMEWORK -XKBCOMMON +UTMP +SYSVINIT default-hierarchy=unified)
+[32m[    3.990380] [33msystemd[1]: [39mDetected virtualization kvm.
+[32m[    3.990387] [33msystemd[1]: [39mDetected architecture x86.
+[32m[    4.024575] [33msystemd[1]: [39mHostname set to &lt;faiserver&gt;.
+[32m[    4.061297] [33msystemd[1]: [39mInitializing machine ID from random generator.
+[32m[    4.061421] [33msystemd[1]: [39mInstalled transient /etc/machine-id file.
+[32m[    4.530604] [33msystemd[1]: [39mQueued start job for default target graphical.target.
+[32m[    4.560575] [33msystemd[1]: [39mCreated slice system-getty.slice - Slice /system/getty.
+[32m[    4.561109] [33msystemd[1]: [39mCreated slice system-modprobe.slice - Slice /system/modprobe.
+[32m[    4.561622] [33msystemd[1]: [39mCreated slice system-systemd\x2dfsck.slice - Slice /system/systemd-fsck.
+[32m[    4.561745] [33msystemd[1]: [39mStarted systemd-ask-password-console.path - Dispatch Password Requests to Console Directory Watch.
+[32m[    4.561834] [33msystemd[1]: [39mStarted systemd-ask-password-wall.path - Forward Password Requests to Wall Directory Watch.
+[32m[    4.562118] [33msystemd[1]: [39mSet up automount proc-sys-fs-binfmt_misc.automount - Arbitrary Executable File Formats File System Automount Point.
+[32m[    4.562163] [33msystemd[1]: [39mExpecting device dev-sda1.device - /dev/sda1...
+[32m[    4.562195] [33msystemd[1]: [39mExpecting device dev-sda3.device - /dev/sda3...
+[32m[    4.562233] [33msystemd[1]: [39mReached target cryptsetup.target - Local Encrypted Volumes.
+[32m[    4.562288] [33msystemd[1]: [39mReached target integritysetup.target - Local Integrity Protected Volumes.
+[32m[    4.562344] [33msystemd[1]: [39mReached target remote-fs.target - Remote File Systems.
+[32m[    4.562383] [33msystemd[1]: [39mReached target slices.target - Slice Units.
+[32m[    4.562426] [33msystemd[1]: [39mReached target swap.target - Swaps.
+[32m[    4.562477] [33msystemd[1]: [39mReached target veritysetup.target - Local Verity Protected Volumes.
+[32m[    4.562721] [33msystemd[1]: [39mListening on systemd-fsckd.socket - fsck to fsckd communication Socket.
+[32m[    4.562854] [33msystemd[1]: [39mListening on systemd-initctl.socket - initctl Compatibility Named Pipe.
+[32m[    4.563481] [33msystemd[1]: [39mListening on systemd-journald-audit.socket - Journal Audit Socket.
+[32m[    4.563693] [33msystemd[1]: [39mListening on systemd-journald-dev-log.socket - Journal Socket (/dev/log).
+[32m[    4.563895] [33msystemd[1]: [39mListening on systemd-journald.socket - Journal Socket.
+[32m[    4.564148] [33msystemd[1]: [39mListening on systemd-udevd-control.socket - udev Control Socket.
+[32m[    4.564315] [33msystemd[1]: [39mListening on systemd-udevd-kernel.socket - udev Kernel Socket.
+[32m[    4.565559] [33msystemd[1]: [39mMounting dev-hugepages.mount - Huge Pages File System...
+[32m[    4.566987] [33msystemd[1]: [39mMounting dev-mqueue.mount - POSIX Message Queue File System...
+[32m[    4.568359] [33msystemd[1]: [39mMounting sys-kernel-debug.mount - Kernel Debug File System...
+[32m[    4.569533] [33msystemd[1]: [39mMounting sys-kernel-tracing.mount - Kernel Trace File System...
+[32m[    4.571035] [33msystemd[1]: [39mStarting kmod-static-n</system_output>
+  <system_output timestamp="2.651767">odes.service - Create List of Static Device Nodes...
+[32m[    4.572402] [33msystemd[1]: [39mStarting modprobe@configfs.service - Load Kernel Module configfs...
+[32m[    4.574009] [33msystemd[1]: [39mStarting modprobe@dm_mod.service - Load Kernel Module dm_mod...
+[32m[    4.575704] [33msystemd[1]: [39mStarting modprobe@efi_pstore.service - Load Kernel Module efi_pstore...
+[32m[    4.577076] [33msystemd[1]: [39mStarting modprobe@fuse.service - Load Kernel Module fuse...
+[32m[    4.578703] [33msystemd[1]: [39mStarting modprobe@loop.service - Load Kernel Module loop...
+[32m[    4.578922] [33msystemd[1]: [39msystemd-fsck-root.service - File System Check on Root Device was skipped because of an unmet condition check (ConditionPathExists=!/run/initramfs/fsck-root).
+[32m[    4.582379] [33msystemd[1]: [39mStarting systemd-journald.service - Journal Service...
+[32m[    4.608731] [33mloop: [39mmodule loaded
+[32m[    4.659733] [33msystemd[1]: [39mStarting systemd-modules-load.service - Load Kernel Modules...
+[32m[    4.661494] [33msystemd[1]: [39mStarting systemd-remount-fs.service - Remount Root and Kernel File Systems...
+[32m[    4.663725] [33msystemd[1]: [39mStarting systemd-udev-trigger.service - Coldplug All udev Devices...
+[32m[    4.666239] [33msystemd[1]: [39mFinished kmod-static-nodes.service - Create List of Static Device Nodes.
+[32m[    4.666921] [33msystemd[1]: [39mmodprobe@configfs.service: Deactivated successfully.
+[32m[    4.667207] [33msystemd[1]: [39mFinished modprobe@configfs.service - Load Kernel Module configfs.
+[32m[    4.667834] [33msystemd[1]: [39mmodprobe@efi_pstore.service: Deactivated successfully.
+[32m[    4.668061] [33msystemd[1]: [39mFinished modprobe@efi_pstore.service - Load Kernel Module efi_pstore.
+[32m[    4.668535] [33msystemd[1]: [39mmodprobe@loop.service: Deactivated successfully.
+[32m[    4.668740] [33msystemd[1]: [39mFinished modprobe@loop.service - Load Kernel Module loop.
+[32m[    4.670692] [33msystemd[1]: [39mMounting sys-kernel-config.mount - Kernel Configuration File System...
+[32m[    4.699040] [33msystemd[1]: [39mFinished systemd-modules-load.service - Load Kernel Modules.
+[32m[    4.700578] [33msystemd[1]: [39mStarting systemd-sysctl.service - App</system_output>
+  <system_output timestamp="2.651835">ly Kernel Variables...
+[32m[    4.703385] [33mfuse: [39minit (API version 7.37)
+[32m[    4.705030] [33msystemd[1]: [39mmodprobe@fuse.service: Deactivated successfully.
+[32m[    4.705282] [33msystemd[1]: [39mFinished modprobe@fuse.service - Load Kernel Module fuse.
+[32m[    4.708590] [33msystemd[1]: [39mMounting sys-fs-fuse-connections.mount - FUSE Control File System...
+[32m[    4.773520] [33msystemd[1]: [39mStarted systemd-journald.service - Journal Service.
+[32m[    4.790899] [33mdevice-mapper: [1m[39mcore: CONFIG_IMA_DISABLE_HTABLE is disabled. Duplicate IMA measurements will not be recorded in the IMA log.
+[0m[32m[    4.790958] [33mdevice-mapper: [39muevent: version 1.0.3
+[32m[    4.791245] [33mdevice-mapper: [39mioctl: 4.47.0-ioctl (2022-07-28) initialised: dm-devel@redhat.com
+[32m[    4.993713] [33mEXT4-fs (sda2): [39mre-mounted. Quota mode: none.
+[32m[    5.125717] [33msystemd-journald[212]: [39mReceived client request to flush runtime journal.
+[32m[    5.607229] [33mrandom: [39mcrng init done
+[32m[    5.853070] [33minput: [39mPC Speaker as /devices/platform/pcspkr/input/input4
+[32m[    5.859120] [33minput: [39mPower Button as /devices/LNXSYSTM:00/LNXPWRBN:00/input/input5
+[32m[    5.867653] [33msd 0:0:0:0: [39mAttached scsi generic sg0 type 0
+[32m[    5.868059] [33msr 0:0:1:0: [39mAttached scsi generic sg1 type 5
+[32m[    5.868232] [33msr 1:0:0:0: [39mAttached scsi generic sg2 type 5
+[32m[    5.870393] [33mparport_pc 00:03: [39mreporte</system_output>
+  <system_output timestamp="2.651907">d by Plug and Play ACPI
+[32m[    5.870776] [33mparport0: [39mPC-style at 0x378, irq 7 [PCSPP,TRISTATE]
+[32m[    5.875349] [33mACPI: [39mbutton: Power Button [PWRF]
+[32m[    6.177986] [33mpowernow_k8: [39mPower state transitions not supported
+[32m[    6.178024] [33mpowernow_k8: [39mPower state transitions not supported
+[32m[    6.178035] [33mpowernow_k8: [39mPower state transitions not supported
+[32m[    6.178070] [33mpowernow_k8: [39mPower state transitions not supported
+[32m[    6.251345] [33mppdev: [39muser-space parallel port driver
+[32m[    6.363990] [33mEXT4-fs (sda1): [39mmounting ext2 file system using the ext4 subsystem
+[32m[    6.370732] [33mEXT4-fs (sda1): [39mmounted filesystem without journal. Quota mode: none.
+[32m[    6.381547] [33mEXT4-fs (sda3): [39mmounted filesystem with ordered data mode. Quota mode: none.
+[32m[    6.986732] [33maudit: [39mtype=1400 audit(1721941692.188:2): apparmor="STATUS" operation="profile_load" profile="unconfined" name="nvidia_modprobe" pid=288 comm="apparmor_parser"
+[32m[    6.989717] [33maudit: [39mtype=1400 audit(1721941692.192:3): apparmor="STATUS" operation="profile_load" profile="unconfined" name="nvidia_modprobe//kmod" pid=288 comm="apparmor_parser"
+[32m[    7.13</system_output>
+  <system_output timestamp="2.651976">5061] [33maudit: [39mtype=1400 audit(1721941692.336:4): apparmor="STATUS" operation="profile_load" profile="unconfined" name="lsb_release" pid=287 comm="apparmor_parser"
+[32m[    7.230218] [33maudit: [39mtype=1400 audit(1721941692.432:5): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/bin/man" pid=290 comm="apparmor_parser"
+[32m[    7.231824] [33maudit: [39mtype=1400 audit(1721941692.436:6): apparmor="STATUS" operation="profile_load" profile="unconfined" name="man_filter" pid=290 comm="apparmor_parser"
+[32m[    7.234087] [33maudit: [39mtype=1400 audit(1721941692.436:7): apparmor="STATUS" operation="profile_load" profile="unconfined" name="man_groff" pid=290 comm="apparmor_parser"
+[32m[    7.395705] [33maudit: [39mtype=1400 audit(1721941692.600:8): apparmor="STATUS" operation="profile_load" profile="unconfined" name="tcpdump" pid=291 comm="apparmor_parser"
+[32m[    7.509082] [33maudit: [39mtype=1400 audit(1721941692.712:9): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/NetworkManager/nm-dhcp-client.action" pid=289 comm="apparmor_parser"
+[32m[    7.510826] [33maudit: [39mtype=1400 audit(1721941692.712:10): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/NetworkManager/nm-dhcp-helper" pid=289 comm="apparmor_parser"
+[32m[    7.512397] [33maudit: [39mtype=1400 audit(1721941692.716:11): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/connman/scripts/dhclient-script" </system_output>
+  <system_output timestamp="2.652347">pid=289 comm="apparmor_parser"
+[32m[    8.084242] [33m8139cp 0000:00:03.0 ens3: [39mlink up, 100Mbps, full-duplex, lpa 0x05E1
+demo@faiserver:~$]0;]0;screen[?2004h </system_output>
+<annotation>
+</annotation>
+</event>
+<event depth="-2">
+  <user_input timestamp="69.243599"/>
+  <user_input timestamp="69.666125">1</user_input>
+  <system_output timestamp="69.668977">]0;]0;screen[?2004l[H[2J]2;screenNeed to get 219 kB/2,943 kB of archives. After unpacking 13.0 MB will be used.
+Writing extended state information...
+Get: 1 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 libstatgrab10 i386 0.92.1-1.1 [120 kB]
+Get: 2 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 statgrab i386 0.92.1-1.1 [99.4 kB]
+Fetched 219 kB in 0s (823 kB/s)
+install_packages: executing  aptitude -R -d -o Aptitude::Log=/dev/null -o Aptitude::CmdLine::Ignore-Trust-Violations=yes -o APT::Get::AllowUnauthenticated=true -o Acquire::AllowInsecureRepositories=true -o DPkg::force-conflicts::=yes -o Dir::State=/usr/fai/mirror/aptcache/var/lib/apt -o Dir::Log=/usr/fai/mirror/aptcache/var/log/apt -o Dir::State::extended_states=/usr/fai/mirror/aptcache/var/lib/apt/lists/extended_states -o Dir::State::status=/usr/fai/mirror/aptcache/statefile -o Dir::Cache=/usr/fai/mirror/aptcache/var/cache/apt -o Dir::State=/usr/fai/mirror/aptcache/var/cache/apt -o Dir::Cache::Archiv</system_output>
+  <system_output timestamp="69.66912">es=/usr/fai/mirror/aptcache/var/cache/apt/archives -o Dir::Etc=/usr/fai/mirror/aptcache/etc/apt/ -o Dir::State::Lists=/usr/fai/mirror/aptcache/var/lib/apt/lists/ -y install git-core
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Reading extended state information...
+Initializing package states...
+Writing extended state information...
+Building tag database...
+Note: selecting "git" instead of the virtual package "git-core"
+The following NEW packages will be installed:
+Th
+dpkg{a} gcc-12-base{a} git git-man{a} libacl1{a} libbrotli1{a} libbz2-1.0{a} libc6{a} libcom-err2{a} libcrypt1{a} libcurl3-gnutls{a} libdb5.3{a} liberror-perl{a} libexpat1{a} libffi8{a} libgcc-s1{a} libgdbm-compat4{a} libgdbm6{a} libgmp10{a} libgnutls30{a} libgssapi-krb5-2{a} libhogweed6{a} libidn2-0{a} libk5crypto3{a} libkeyutils1{a} libkrb5-3{a} libkrb5support0{a} libldap-2.5-0{a} liblzma5{a} libmd0{a} libnettle8{a} libnghttp2-14{a} libp11-kit0{a} libpcre2-8-0{a} libperl5.36{a} libpsl5{a} librtmp1{a</system_output>
+  <system_output timestamp="69.669341">} libsasl2-2{a} libsasl2-modules-db{a} libselinux1{a} libssh2-1{a} libssl3{a} libtasn1-6{a} libunistring2{a} libzstd1{a} perl{a} perl-base{a} perl-modules-5.36{a} tar{a} zlib1g{a}
+The following packages are RECOMMENDED but will NOT be installed:
+Th
+ca-certificates krb5-locales less libldap-common libsasl2-modules netbase openssh-client patch publicsuffix
+0 packages upgraded, 50 newly installed, 0 to remove and 0 not upgraded.
+Need to get 0 B/34.1 MB of archives. After unpacking 154 MB will be used.
+Writing extended state information...
+install_packages: executing  aptitude -R -d -o Aptitude::Log=/dev/null -o Aptitude::CmdLine::Ignore-Trust-Violations=yes -o APT::Get::AllowUnauthenticated=true -o Acquire::AllowInsecureRepositories=true -o DPkg::force-conflicts::=yes -o Dir::State=/usr/fai/mirror/aptcache/var/lib/apt -o Dir::Log=/usr/fai/mirror/aptcache/var/log/apt -o Dir::State::extended_states=/usr/fai/mirror/aptcache/var/lib/apt/lists/extended_states -o Dir::State::status=/usr/fai/mirror/aptcache/statefile -o Dir::Cache=/usr/fai/mirror/aptcache/var/cache/apt -o Dir::State=/usr/fai/mirror/aptcache/var/cache/apt -o Dir::Cache::Archives=/usr/fai/mirror/aptcache/var/cache/apt/archives -o Dir::Etc=/usr/fai/mirror/aptcache/etc/apt/ -o Dir::State::Lists=/usr/fai/mirror/aptcache/var/lib/apt/lists/ -y install git-core
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Reading extended state information...
+Initializing package states...
+Writing extended state information...
+Building tag database...
+Note: selecting "git" instead of the virtual package "git-core"
+The following NEW packages will be installed:
+Th
+dpkg{a} gcc-12-base{a} git git-man{a} libacl1{a} libbrotli1{a} libbz2-1.0{a} libc6{a} libcom-err2{a} libcrypt1{a} libcurl3-gnutls{a} libdb5.3{a} liberror-perl{a} libexpat1{a} libffi8{a} libgcc-s1{a} libgdbm-compat4{a} libgdbm6{a} libgmp10{a} libgnutls30{a} libgssapi-krb5-2{a} libhogweed6{a} libidn2-0{a} libk5crypto3{a} libkeyutils1{a} libkrb5-3{a} libkrb5support0{a} libldap-2.5-0{a} liblzma5{a} libmd0{a} libnettle8{a} libnghttp2-14{a} libp11-kit0{a} libpcre2-8-0{a} libperl5.36{a} libpsl5{a} librtmp1{a} libsasl2-2{a} libsasl2-modules-db{a} libselinux1{a} libssh2-1{a} libssl3{a} libtasn1-6{a} libunistring2{a} libzstd1{a} perl{a} perl-base{a} perl-modules-5.36{a} tar{a} zlib1g{a}
+The following packages are RECOMMENDED but will NOT be installed:
+Th
+ca-certificates krb5-locales less libldap-common libsasl2-modules netbase openssh-client patch publicsuffix
+0 packages upgraded, 50 newly installed, 0 to remove and 0 not upgraded.
+Need to get 0 B/34.1 MB of archives. After unpacking 154 MB will be used.
+Writing extended state information...
+install_packages: executing  aptitude -R -d -o Aptitude::Log=/dev/null -o Aptitude::CmdLine::Ignore-Trust-Violations=yes -o APT::Get::AllowUnauthenticated=true -o Acquire::AllowInsecureRepositories=true -o DPkg::force-conflicts::=yes -o Dir::State=/usr/fai/mirror/aptcache/var/lib/apt -o Dir::Log=/usr/fai/mirror/aptcache/var/log/apt -o Dir::Stat</system_output>
+  <system_output timestamp="69.66963">e::extended_states=/usr/fai/mirror/aptcache/var/lib/apt/lists/extended_states -o Dir::State::status=/usr/fai/mirror/aptcache/statefile -o Dir::Cache=/usr/fai/mirror/aptcache/var/cache/apt -o Dir::State=/usr/fai/mirror/aptcache/var/cache/apt -o Dir::Cache::Archives=/usr/fai/mirror/aptcache/var/cache/apt/archives -o Dir::Etc=/usr/fai/mirror/aptcache/etc/apt/ -o Dir::State::Lists=/usr/fai/mirror/aptcache/var/lib/apt/lists/ -y install xorg
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Reading extended state information...
+Initializing package states...
+Writing extended state information...
+Building tag database...
+The following NEW packages will be installed:
+Th
+adduser{a} bsdextrautils{a} coreutils{a} cpp{a} cpp-12{a} debconf{a} dpkg{a} fontconfig-config{a} fonts-dejavu-core{a} gcc-12-base{a} groff-base{a} keyboard-configuration{a} libacl1{a} libatomic1{a} libattr1{a} libaudit-common{a} libaudit1{a} libblkid1{a} libbrotli1{a} libbsd0{a} libbz2-1.0{a} libc6{a} libcap-ng0{a} libcap2{a} libcrypt1{a} libdb5.3{a} libdbus-1-3{a} libdrm-amdgpu1{a} libdrm-common{a} libdrm-intel1{a} libdrm-nouveau2{a} libdrm-radeon1{a} libdrm2{a} libedit2{a} libegl-mesa0{a} libegl1{a} libelf1{a} libepoxy0{a} libevdev2{a} libexpat1{a} libffi8{a} libfontconfig1{a} libfontenc1{a} libfreetype6{a} libgbm1{a} libgcc-s1{a} libgcrypt20{a} libgdbm6{a} libgl1{a} libgl1-mesa-dri{a} libglapi-mesa{a} libglib2.0-0{a} libglu1-mesa{a} libglvnd0{a} libglx-mesa0{a} libglx0{a} libgmp10{a} libgpg-error0{a} libgudev-1.0-0{a} libice6{a} libicu72{a} libinput-bin{a} libinput10{a} libisl23{a} libkmod2{a} libllvm15{a} liblocale-gettext-perl{a} liblz4-1{a} liblzma5{a} libmd0{a} libmount1{a} libmpc3{a} libmpfr6{a} libmtdev1{a} libopengl0{a} libpam-modules{a} libpam-modules-bin{a} libpam0g{a} libpciaccess0{a} libpcre2-8-0{a} libpipeline1{a} libpixman-1-0{a} libpng16-16{a} libseccomp2{a} libselinux1{a} libsemanage-common{a} libsemanage2{a} libsensors-config{a} libsensors5{a} libsepol2{a} libsm6{a} libsmartcols1{a} libssl3{a} libstdc++6{a} libsystemd0{a} libtinfo6{a} libuchardet0{a} libudev1{a} libunwind8{a} libutempter0{a} libuuid1{a} libwacom-common{a} libwacom9{a} libwayland-client0{a} libwayland-server0{a} libx11-6{a} libx11-data{a} libx11-xcb1{a} libxatracker2{a} libxau6{a} </system_output>
+  <system_output timestamp="69.669834">libxaw7{a} libxcb-damage0{a} libxcb-dri2-0{a} libxcb-dri3-0{a} libxcb-glx0{a} libxcb-present0{a} libxcb-randr0{a} libxcb-shape0{a} libxcb-shm0{a} libxcb-sync1{a} libxcb-xfixes0{a} libxcb1{a} libxcomposite1{a} libxcursor1{a} libxcvt0{a} libxdmcp6{a} libxext6{a} libxfixes3{a} libxfont2{a} libxft2{a} libxi6{a} libxinerama1{a} libxkbfile1{a} libxml2{a} libxmu6{a} libxmuu1{a} libxpm4{a} libxrandr2{a} libxrender1{a} libxshmfence1{a} libxt6{a} libxtst6{a} libxv1{a} libxxf86dga1{a} libxxf86vm1{a} libz3-4{a} libzstd1{a} lsb-base{a} man-db{a} passwd{a} perl-base{a} sysvinit-utils{a} tar{a} udev{a} x11-apps{a} x11-common{a} x11-session-utils{a} x11-utils{a} x11-xkb-utils{a} x11-xserver-utils{a} xauth{a} xbitmaps{a} xfonts-100dpi{a} xfonts-75dpi{a} xfonts-base{a} xfonts-encodings{a} xfonts-scalable{a} xfonts-utils{a} xinit{a} xkb-data{a} xorg xorg-docs-core{a} xserver-common{a} xserver-xorg{a} xserver-xorg-core{a} xserver-xorg-input-all{a} xserver-xorg-input-libinput{a} xserver-xorg-video-all{a} xserver-xorg-video-amdgpu{a} xserver-xorg-video-ati{a} xserver-xorg-video-fbdev{a} xserver-xorg-video-nouveau{a} xserver-xorg-video-radeon{a} xserver-xorg-video-vesa{a} xserver-xorg-video-vmware{a} xterm{a} zlib1g{a}
+The following packages are RECOMMENDED but will NOT be installed:
+Th
+apt-utils dbus debconf-i18n libglib2.0-data libgpg-error-l10n libidn2-0 libpam-elogind libpam-systemd sensible-utils shared-mime-info uuid-runtime xcvt xdg-user-dirs xserver-xorg-input-wacom xserver-xorg-legacy xserver-xorg-video-intel xserver-xorg-video-qxl
+0 packages upgraded, 187 newly installed, 0 to remove and 0 not upgraded.
+Need to get 24.5 MB/127 MB of archives. After unpacking 443 MB will be used.
+Writing extended state information...
+Get: 1 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 libxatracker2 i386 22.3.6-1+deb12u1 [2,030 kB]
+Get: 2 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 libxcb-damage0 i386 1.15-1 [105 kB]
+Get: 3 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 libxcvt0 i386 0.1.2-1 [5,696 B]
+Get: 4 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 libxfont2 i386 1:2.0.6-1 [140 kB]
+Get: 5 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 x11-apps i386 7.7+9 [680 kB]
+Get: 6 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 x11-session-utils i386 7.7+5 [75.9 kB]
+Get: 7 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 xfonts-100dpi all 1:1.0.5 [3,819 kB]
+Get: 8 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 xfonts-75dpi all 1:1.0.5 [3,365 kB]
+Get: 9 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 xfonts-base all 1:1.0.5+nmu1 [5,895 kB]
+Get: 10 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 xfonts-scalable all 1:1.0.3-1.3 [306 kB]
+Get: 11 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 xinit i386 1.4.0-1 [50.2 kB]
+Get: 12 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 xserver-common all 2:21.1.7-3+deb12u7 [2,383 kB]
+Get: 13 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 xserver-xorg-core i386 2:21.1.7-3+deb12u7 [3,784 kB]
+Get: 14 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 xserver-xorg-video-amdgpu i386 23.0.0-1 [144 kB]</system_output>
+  <system_output timestamp="69.669932">
+Get: 15 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 xserver-xorg-video-radeon i386 1:19.1.0-3 [510 kB]
+Get: 16 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 xserver-xorg-video-ati i386 1:19.1.0-3 [363 kB]
+Get: 17 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 xserver-xorg-video-fbdev i386 1:0.5.0-2 [26.0 kB]
+Get: 18 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 xserver-xorg-video-nouveau i386 1:1.0.17-2 [335 kB]
+Get: 19 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 xserver-xorg-video-vesa i386 1:2.5.0-1+b1 [33.4 kB]
+Get: 20 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 xserver-xorg-video-vmware i386 1:13.3.0-3.1+b1 [120 kB]
+Get: 21 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 xserver-xorg-video-all i386 1:7.7+23 [38.7 kB]
+Get: 22 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 xserver-xorg-input-libinput i386 1.2.1-1+b1 [67.5 kB]
+Get: 23 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 xserver-xorg-input-all i386 1:7.7+23 [38.7 kB]
+Get: 24 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 xserver-xorg i386 1:7.7+23 [94.2 kB]
+Get: 25 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 xorg-docs-core all 1:1.7.1-1.2 [84.2 kB]
+Get: 26 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 xorg i386 1:7.7+23 [39.1 kB]
+Fetched 24.5 MB in 16s (1,539 kB/s)
+install_packages: executing  aptitude -R -d -o Aptitude::Log=/dev/null -o Aptitude::CmdLine::Ignore-Trust-Violations=yes -o APT::Get::AllowUnauthenticated=true -o Acquire::AllowInsecureRepositories=true -o DPkg::force-conflicts::=yes -o Dir::State=/usr/fai/mirror/aptcache/var/lib/apt -o Dir::Log=/usr/fai/mirror/aptcache/var/log/apt -o Dir::State::extended_states=/usr/fai/mirror/aptcache/var/lib/apt/lists/extended_states -o Dir::State::status=/usr/fai/mirror/aptcache/statefile -o Dir::Cache=/usr/fai/mirror/aptcache/var/cache/apt -o Dir::State=/usr/fai/mirror/aptcache/var/cache/apt -o Dir::Cache::Archives=/usr/fai/mirror/aptcache/var/cache/apt/archives -o Dir::Etc=/usr/fai/mirror/aptcache/etc/apt/ -o Dir::State::Lists=/usr/fai/mirror/aptcache/var/lib/apt/lists/ -y install xscreensaver
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Reading extended state information...
+Initializing package states...
+Writing extended state information...
+Building tag database...
+The following NEW packages will be installed:
+Th
+adduser{a} adwaita-icon-theme{a} at-spi2-common{a} ca-certificates{a} dbus{a} dbus-bin{a} dbus-daemon{a} dbus-session-bus-common{a} dbus-system-bus-common{a} dbus-user-session{a} dconf-gsettings-backend{a} dconf-service{a} debconf{a} dmsetup{a} dpkg{a} fontconfig{a} fontconfig-config{a} fonts-dejavu-core{a} gcc-12-base{a} gtk-update-icon-cache{a} hicolor-icon-theme{a} init-system-helpers{a} libacl1{a} libapparmor1{a} libargon2-1{a} libatk-bridge2.0-0{a} libatk1.0-0{a} libatspi2.0-0{a} libaudit-common{a} libaudit1{a} libavahi-client3{a} libavahi-common-data{a} libavahi-common3{a} libblkid1{a} libbrotli1{a} libbsd0{a} libbz2-1.0{a} libc6{a} libcairo-gobject2{a} libcairo2{a} libcap-ng0{a} libcap2{a} libclone-perl{a} libcolord2{a} libcom-err2{a} libcrypt1{a} libcryptsetup12{a} libcups2{a} libdatrie1{a} libdb5.3{a} libdbus-1-3{a} libdconf1{a} libdeflate0{a} libdevmapper1.02.1{a} libencode-locale-perl{a} libepoxy0{a} libexpat1{a} libfdisk1{a} libffi8{a} libfile-find-rule-perl{a} libfile-listing-perl{a} libfontconfig1{a} libfreetype6{a} libfribidi0{a} libgcc-s1{a} libgcrypt20{a} libgdbm-compat4{a} libgdbm6{a} libgdk-pixbuf-2.0-0{a} libgdk-pixbuf2.0-common{a} libglib2.0-0{a} libgmp10{a} libgnutls30{a} libgpg-error0{a} libgraphite2-3{a} libgssapi-krb5-2{a} libg</system_output>
+  <system_output timestamp="69.670197">tk-3-0{a} libgtk-3-common{a} libharfbuzz0b{a} libhogweed6{a} libhtml-parser-perl{a} libhtml-tagset-perl{a} libhtml-tree-perl{a} libhttp-cookies-perl{a} libhttp-date-perl{a} libhttp-message-perl{a} libhttp-negotiate-perl{a} libice6{a} libicu72{a} libidn2-0{a} libio-html-perl{a} libio-socket-ssl-perl{a} libip4tc2{a} libjbig0{a} libjpeg62-turbo{a} libjson-c5{a} libk5crypto3{a} libkeyutils1{a} libkmod2{a} libkrb5-3{a} libkrb5support0{a} liblcms2-2{a} liblerc4{a} liblwp-mediatypes-perl{a} liblwp-protocol-https-perl{a} liblz4-1{a} liblzma5{a} libmd0{a} libmount1{a} libncursesw6{a} libnet-http-perl{a} libnet-ssleay-perl{a} libnettle8{a} libnumber-compare-perl{a} libp11-kit0{a} libpam-modules{a} libpam-modules-bin{a} libpam-runtime{a} libpam-systemd{a} libpam0g{a} libpango-1.0-0{a} libpangocairo-1.0-0{a} libpangoft2-1.0-0{a} libpcre2-8-0{a} libperl5.36{a} libpixman-1-0{a} libpng16-16{a} libproc2-0{a} libregexp-ipv6-perl{a} libseccomp2{a} libselinux1{a} libsemanage-common{a} libsemanage2{a} libsepol2{a} libsm6{a} libsmartcols1{a} libssl3{a} libstdc++6{a} libsystemd-shared{a} libsystemd0{a} libtasn1-6{a} libtext-glob-perl{a} libthai-data{a} libthai0{a} libtiff6{a} libtimedate-perl{a} libtinfo6{a} libtry-tiny-perl{a} libudev1{a} libunistring2{a} liburi-perl{a} libuuid1{a} libwayland-client0{a} libwayland-cursor0{a} libwayland-egl1{a} libwebp7{a} libwww-perl{a} libwww-robotrules-perl{a} libx11-6{a} libx11-data{a} libxau6{a} libxcb-render0{a} libxcb-shm0{a} libxcb1{a} libxcomposite1{a} libxcursor1{a} libxdamage1{a} libxdmcp6{a} libxext6{a} libxfixes3{a} libxft2{a} libxi6{a} libxinerama1{a} libxkbcommon0{a} libxml2{a} libxrandr2{a} libxrender1{a} libxt6{a} libxxf86vm1{a} libzstd1{a} lsb-base{a} mount{a} netbase{a} openssl{a} passwd{a} perl{a} perl-base{a} perl-modules-5.36{a} perl-openssl-defaults{a} procps{a} shared-mime-info{a} systemd{a} systemd-sysv{a} sysvinit-utils{a} tar{a} usrmerge{a} x11-common{a} xkb-data{a} xscreensaver xscreensaver-data{a} zlib1g{a}
+The following packages are RECOMMENDED but will NOT be installed:
+Th
+apt-utils at-spi2-core chrony debconf-i18n fonts-urw-base35 krb5-locales libdata-dump-perl libgdk-pixbuf2.0-bin libglib2.0-data libgpg-error-l10n libgpm2 libgtk-3-bin libhtml-form-perl libhtml-format-perl libhttp-daemon-perl libjpeg-turbo-progs libmailtools-perl libnss-systemd librsvg2-common miscfiles ntpsec openntpd psmisc sensible-utils systemd-timesyncd uuid-runtime wamerican wamerican-huge wamerican-insane wamerican-large wamerican-small wbrazilian wbritish wbritish-huge wbritish-insane wbritish-large wbritish-small wbulgarian wcanadian wcanadian-huge wcanadian-insane wcanadian-large wcanadian-small wcatalan wdanish wdutch wesperanto wfaroese wfrench wgalician-minimos wgerman-medical witalian wngerman wnorwegian wogerman wpolish wportuguese wspanish wswedish wswiss wukrainian xdg-user-dirs xfonts-100dpi
+0 packages upgraded, 201 newly installed, 0 to remove and 0 not upgraded.
+Need to get 823 kB/77.5 MB of archives. After unpacking 299 MB will be used.
+Writing extended state information...
+Get: 1 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 xscreensaver-data i386 6.06+dfsg1-3+deb12u1 [379 kB]
+Get: 2 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 xscreensaver i386 6.06+dfsg1-3+deb12u1 [445 kB]
+Fetched 823 kB in 1s (1,020 kB/s)
+Calling reprepro
+Exporting indices...
+/usr/bin/fai-mirror finished.
+Number of packages in the mirror: 2230
+Mirror size and location: 1.5G  /usr/fai/mirror
+Copying the nfsroot to CD image
+Copying the config space to CD image
+Copying the mirror to CD image
+Parallel mksquashfs: Using 4 processors
+Creating 4.0 filesystem on /home/tmp/fai-cd.A904n9/LiveOS/squashfs.img, block size 131072.
+[===========================================================\] 22019/22019 100%
+
+Exportable Sq</system_output>
+  <system_output timestamp="69.670422">uashfs 4.0 filesystem, zstd compressed, data block size 131072[67D
+compressed data, compressed metadata, compressed fragments,[59D
+compressed xattrs, compressed ids[33D
+duplicates are removed
+Filesystem size 1886403.10 Kbytes (1842.19 Mbytes)[42D
+66.93% of uncompressed filesystem size (2818445.72 Kbytes)
+Inode table size 21521 bytes (21.02 Kbytes)[35D
+24.40% of uncompressed inode table size (88218 bytes)
+Directory table size 56 bytes (0.05 Kbytes)[35D
+96.55% of uncompressed directory table size (58 bytes)
+Number of duplicate files found 0
+Number of inodes 3
+Number of files 1
+Number of fragments 0
+Number of symbolic links 0
+Number of device nodes 0
+Number of fifo nodes 0
+Number of socket nodes 0
+Number of directories 2
+Number of hard-links 0
+Number of ids (unique uids + gids) 1
+Number of uids 1[8D
+root (0)
+Number of gids 1[8D
+root (0)
+mkfs.fat 4.2 (2021-01-31)
+Writing FAI CD-ROM image to fai_cd.iso. This may need some time.
+xorriso 1.5.4 : RockRidge filesystem manipulator, libburnia project.
+
+ISO image size and filename: 1.9G[7Cfai_cd.iso
+
+real[4C34m47.030s
+user[4C14m4.979s
+sys[5C2m35.336s
+demo@faiserver:/home/fai$ scp fai_cd.iso demo@172.16.0.1:/disk1/isos/fai_dvd-`date +%Y%m%d`-2.iso
+The authenticity of host '172.16.0.1 (172.16.0.1)' can't be established.
+ED25519 key fingerprint is SHA256:93uUBMNloDj0vGdELz8x12HmojpeGShCAY+2QqmbFws.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added '172.16.0.1' (ED25519) to the list of known hosts.
+demo@172.16.0.1's password:
+fai_cd.iso[195C100% 1894MB  26.7MB/s   01:11
+demo@faiserver:/home/fai$]0;]0;screen[?2004h </system_output>
+  <user_input timestamp="70.398154"/>
+  <user_input timestamp="70.74193">2</user_input>
+  <system_output timestamp="70.744532">]0;]0;screen[?2004l[H[2J]2;screen[32m[    0.916645] [39mio scheduler mq-deadline registered
+[32m[    0.919042] [33mshpchp: [39mStandard Hot Plug PCI Controller Driver version: 0.4
+[32m[    0.919836] [33misapnp: [39mScanning for PnP cards...
+[32m[    1.287602] [33misapnp: [39mNo Plug &amp; Play device found
+[32m[    1.287868] [33mSerial: [39m8250/16550 driver, 4 ports, IRQ sharing enabled
+[32m[    1.288426] [33m00:04: [39mttyS0 at I/O 0x3f8 (irq = 4, base_baud = 115200) is a 16550A
+[32m[    1.289256] [39mLinux agpgart interface v0.103
+[32m[    1.290054] [33mi8042: [39mPNP: PS/2 Controller [PNP0303:KBD,PNP0f13:MOU] at 0x60,0x64 irq 1,12
+[32m[    1.291109] [33mserio: [39mi8042 KBD port at 0x60,0x64 irq 1
+[32m[    1.291123] [33mserio: [39mi8042 AUX port at 0x60,0x64 irq 12
+[32m[    1.291534] [33mmousedev: [39mPS/2 mouse device common for all mice
+[32m[    1.291639] [33mrtc_cmos 00:05: [39mRTC can wake from S4
+[32m[    1.292902] [33minput: [39mAT Translated Set 2 keyboard as /devices/platform/i8042/serio0/input/input0
+[32m[    1.293327] [33mrtc_cmos 00:05: [39mregistered as rtc0
+[32m[    1.293507] [33mrtc_cmos 00:05: [39msetting system clock to 2024-07-25T21:08:06 UTC (1721941686)
+[32m[    1.293656] [33mrtc_cmos 00:05: [39malarms up to one day, y3k, 242 bytes nvram, hpet irqs
+[32m[    1.293866] [33mledtrig-cpu: [39mregistered to indicate activity on CPUs
+[32m[    1.294277] [33mNET: [39mRegistered PF_INET6 protocol family
+[32m[    1.300349] [39mSegment Routing with IPv6
+[32m[    1.300380] [39mIn-situ OAM (IOAM) with IPv6
+[32m[    1.300418] [33mmip6: [39mMobile IPv6
+[32m[    1.300433] [33mNET: [39mRegistered PF_PACKET protocol family
+[32m[    1.300577] [33mmpls_gso: [39mMPLS GSO support
+[32m[    1.301085] [33mIPI shorthand broadcast: [39menabled
+[32m[    1.301401] [39mregistered taskstats version 1
+[32m[    1.301425] [39mLoading compiled-in X.509 certificates
+[32m[    1.379013] [33mLoaded X.509 cert 'Debian Secure Bo</system_output>
+  <system_output timestamp="70.744722">ot CA: [39m6ccece7e4c6c0d1f6149f3dd27dfcc5cbb419ea1'
+[32m[    1.379048] [33mLoaded X.509 cert 'Debian Secure Boot Signer 2022 - linux: [39m14011249c2675ea8e5148542202005810584b25f'
+[32m[    1.379901] [33mzswap: [39mloaded using pool lzo/zbud
+[32m[    1.380358] [39mKey type .fscrypt registered
+[32m[    1.380361] [39mKey type fscrypt-provisioning registered
+[32m[    1.385663] [39mKey type encrypted registered
+[32m[    1.385671] [33mAppArmor: [39mAppArmor sha1 policy hashing enabled
+[32m[    1.385696] [33mima: [39mNo TPM chip found, activating TPM-bypass!
+[32m[    1.385698] [33mima: [39mAllocated hash algorithm: sha256
+[32m[    1.385722] [33mima: [39mNo architecture policies found
+[32m[    1.385753] [33mevm: [39mInitialising EVM extended attributes:
+[32m[    1.385755] [33mevm: [39msecurity.selinux
+[32m[    1.385756] [33mevm: [39msecurity.SMACK64 (disabled)
+[32m[    1.385758] [33mevm: [39msecurity.SMACK64EXEC (disabled)
+[32m[    1.385759] [33mevm: [39msecurity.SMACK64TRANSMUTE (disabled)
+[32m[    1.385760] [33mevm: [39msecurity.SMACK64MMAP (disabled)
+[32m[    1.385761] [33mevm: [39msecurity.apparmor
+[32m[    1.385762] [33mevm: [39msecurity.ima
+[32m[    1.385764] [33mevm: [39msecurity.capability
+[32m[    1.385765] [33mevm: [39mHMAC attrs: 0x1
+[32m[    1.807440] [1m[39mUnstable clock detected, switching default tracing clock to "global"
+               If you want to keep using the local clock, then add:
+                 "trace_clock=local"
+               on the kernel command line
+[0m[32m[    1.807551] [33mclk: [39mDisabling unused clocks
+[32m[    1.809685] [33mFreeing unused kernel image (initmem) memory: [39m920K
+[32m[    1.809737] [33mWrite protecting kernel text and read-o</system_output>
+  <system_output timestamp="70.744848">nly data: [39m12540k
+[32m[    1.809741] [33mNX-protecting the kernel data: [39m7012k
+[32m[    1.810660] [33mx86/mm: [39mChecked W+X mappings: passed, no W+X pages found.
+[32m[    1.810671] [39mRun /init as init process
+[32m[    1.810674] [2C[39mwith arguments:
+[32m[    1.810676] [4C[39m/init
+[32m[    1.810677] [2C[39mwith environment:
+[32m[    1.810679] [4C[39mHOME=/
+[32m[    1.810680] [4C[39mTERM=linux
+[32m[    1.810681] [4C[39mBOOT_IMAGE=/vmlinuz-6.1.0-22-686-pae
+[32m[    1.909084] [33mpiix4_smbus 0000:00:01.3: [39mSMBus Host Controller at 0x700, revision 0
+[32m[    1.915791] [33mFloppy drive(s): [39mfd0 is 2.88M AMI BIOS
+[32m[    1.917915] [33m8139cp: [39m8139cp: 10/100 PCI Ethernet driver v1.3 (Mar 22, 2004)
+[32m[    1.927044] [33minput: [39mVirtualPS/2 VMware VMMouse as /devices/platform/i8042/serio1/input/input3
+[32m[    1.929030] [33minput: [39mVirtualPS/2 VMware VMMouse as /devices/platform/i8042/serio1/input/input2
+[32m[    1.935723] [39mSCSI subsystem initialized
+[32m[    1.936546] [39mFDC 0 is a S82078B
+[32m[    1.956777] [33mACPI: [39m\_SB_.LNKC: Enabled at IRQ 11
+[32m[    1.962130] [33m8139cp 0000:00:03.0 eth0: [39mRTL-8139C+ at 0x(ptrval), 52:54:00:12:35:13, IRQ 11
+[32m[    1.964106] [39mlibata version 3.00 loaded.
+[32m[    1.966490] [33m8139too: [39m8139too Fast Ethernet driver 0.9.28
+[32m[    1.967911] [33mata_piix 0000:00:01.1: [39mversion 2.13
+[32m[    1.969795] [33mscsi host0: [39mata_piix
+[32m[    1.970091] [33mscsi host1: [39mata_piix
+[32m[    1.970183] [33mata1: [39mPATA max MWDMA2 cmd 0x1f0 ctl 0x3f6 bmdma 0xc100 irq 14
+[32m[    1.970188] [33mata2: [39mPATA max MWDMA2 cmd 0x170 ctl 0x376 bmdma 0xc108 irq 15
+[32m[    1.991319] [33m8139cp 0000:00:03.0 ens3: [39mrenamed from eth0
+[32m[    2.127520] [33mata2: [39mfound unknown device (class 0)
+[32m[    2.128316] [33mata2.00: [39mATAPI: QEMU DVD-ROM, 2.5+, max UDMA/100
+[32m[    2.132262] [33mata1.00: [39mATA-7: QEMU HARDDISK, 2.5+, max UDMA/100
+[32m[    2.132266] [33mata1.00: [39m29073408 sectors, multi 16: LBA48
+[32m[    2.132272] [33mata1.01: [39mATAPI: QEMU DVD-ROM, 2.5+, max UDMA/100
+[32m[    2.134475] [33mscsi 0:0:0:0: [39mDirect-Access[5CATA[6CQEMU HARDDISK[4C2.5+ PQ: 0 ANSI: 5
+[32m[    2.136372] [33mscsi 0:0:1:0: [39mCD-ROM[12CQEMU[5CQEMU DVD-ROM[5C2.5+ PQ: 0 ANSI: 5
+[32m[    2.184821] [33mscsi 1:0:0:0: [39mCD-ROM[12CQEMU[5CQEMU DVD-ROM[5C2.5+ PQ: 0 ANSI: 5
+[32m[    2.251961] [33msr 0:0:1:0: [39m[sr0] scsi3-mmc drive: 4x/4x cd/rw xa/form2 tray
+[32m[    2.251968] [33mcdrom: [39mUniform CD-ROM driver Revision: 3.20
+[32m[    2.316484] [33msd 0:0:0:0: [39m[sda] 29073408 512-byte logical blocks: (14.9 GB/13.9 GiB)
+[32m[    2.316552] [33msd 0:</system_output>
+  <system_output timestamp="70.744933">0:0:0: [39m[sda] Write Protect is off
+[32m[    2.316557] [33msd 0:0:0:0: [39m[sda] Mode Sense: 00 3a 00 00
+[32m[    2.316652] [33msd 0:0:0:0: [39m[sda] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+[32m[    2.316776] [33msr 0:0:1:0: [39mAttached scsi CD-ROM sr0
+[32m[    2.316789] [33msd 0:0:0:0: [39m[sda] Preferred minimum I/O size 512 bytes
+[32m[    2.318617] [33m sda: [39msda1 sda2 sda3
+[32m[    2.319046] [33msd 0:0:0:0: [39m[sda] Attached SCSI disk
+[32m[    2.380362] [33msr 1:0:0:0: [39m[sr1] scsi3-mmc drive: 4x/4x cd/rw xa/form2 tray
+[32m[    2.444374] [33msr 1:0:0:0: [39mAttached scsi CD-ROM sr1
+[32m[    3.157462] [33mEXT4-fs (sda2): [39mmounted filesystem with ordered data mode. Quota mode: none.
+[32m[    3.261727] [39mNot activating Mandatory Access Control as /sbin/tomoyo-init does not exist.
+[32m[    3.873617] [33msystemd[1]: [39mInserted module 'autofs4'
+[32m[    3.990370] [33msystemd[1]: [39msystemd 252.26-1~deb12u2 running in system mode (+PAM +AUDIT +SELINUX +APPARMOR +IMA +SMACK +SECCOMP +GCRYPT -GNUTLS +OPENSSL +ACL +BLKID +CURL +ELFUTILS +FIDO2 +IDN2 -IDN +IPTC +KMOD +LIBCRYPTSETUP +LIBFDISK +PCRE2 -PWQUALITY +P11KIT +QRENCODE +TPM2 +BZIP2 +LZ4 +XZ +ZLIB +ZSTD -BPF_FRAMEWORK -XKBCOMMON +UTMP +SYSVINIT default-hierarchy=unified)
+[32m[    3.990380] [33msystemd[1]: [39mDetected virtualization kvm.
+[32m[    3.990387] [33msystemd[1]: [39mDetected architecture x86.
+[32m[    4.024575] [33msystemd[1]: [39mHostname set to</system_output>
+  <system_output timestamp="70.745046"> &lt;faiserver&gt;.
+[32m[    4.061297] [33msystemd[1]: [39mInitializing machine ID from random generator.
+[32m[    4.061421] [33msystemd[1]: [39mInstalled transient /etc/machine-id file.
+[32m[    4.530604] [33msystemd[1]: [39mQueued start job for default target graphical.target.
+[32m[    4.560575] [33msystemd[1]: [39mCreated slice system-getty.slice - Slice /system/getty.
+[32m[    4.561109] [33msystemd[1]: [39mCreated slice system-modprobe.slice - Slice /system/modprobe.
+[32m[    4.561622] [33msystemd[1]: [39mCreated slice system-systemd\x2dfsck.slice - Slice /system/systemd-fsck.
+[32m[    4.561745] [33msystemd[1]: [39mStarted systemd-ask-password-console.path - Dispatch Password Requests to Console Directory Watch.
+[32m[    4.561834] [33msystemd[1]: [39mStarted systemd-ask-password-wall.path - Forward Password Requests to Wall Directory Watch.
+[32m[    4.562118] [33msystemd[1]: [39mSet up automount proc-sys-fs-binfmt_misc.automount - Arbitrary Executable File Formats File System</system_output>
+  <system_output timestamp="70.74558"> Automount Point.
+[32m[    4.562163] [33msystemd[1]: [39mExpecting device dev-sda1.device - /dev/sda1...
+[32m[    4.562195] [33msystemd[1]: [39mExpecting device dev-sda3.device - /dev/sda3...
+[32m[    4.562233] [33msystemd[1]: [39mReached target cryptsetup.target - Local Encrypted Volumes.
+[32m[    4.562288] [33msystemd[1]: [39mReached target integritysetup.target - Local Integrity Protected Volumes.
+[32m[    4.562344] [33msystemd[1]: [39mReached target remote-fs.target - Remote File Systems.
+[32m[    4.562383] [33msystemd[1]: [39mReached target slices.target - Slice Units.
+[32m[    4.562426] [33msystemd[1]: [39mReached target swap.target - Swaps.
+[32m[    4.562477] [33msystemd[1]: [39mReached target veritysetup.target - Local Verity Protected Volumes.
+[32m[    4.562721] [33msystemd[1]: [39mListening on systemd-fsckd.socket - fsck to fsckd communication Socket.
+[32m[    4.562854] [33msystemd[1]: [39mListening on systemd-initctl.socket - initctl Compatibility Named Pipe.
+[32m[    4.563481] [33msystemd[1]: [39mListening on systemd-journald-audit.socket - Journal Audit Socket.
+[32m[    4.563693] [33msystemd[1]: [39mListening on systemd-journald-dev-log.socket - Journal Socket (/dev/log).
+[32m[    4.563895] [33msystemd[1]: [39mListening on systemd-journald.socket - Journal Socket.
+[32m[    4.564148] [33msystemd[1]: [39mListening on systemd-udevd-control.socket - udev Control Socket.
+[32m[    4.564315] [33msystemd[1]: [39mListening on systemd-udevd-kernel.socket - udev Kernel Socket.
+[32m[    4.565559] [33msystemd[1]: [39mMounting dev-hugepages.mount - Huge Pages File System...
+[32m[    4.566987] [33msystemd[1]: [39mMounting dev-mqueue.mount - POSIX Message Queue File System...
+[32m[    4.568359] [33msystemd[1]: [39mMounting sys-kernel-debug.mount - Kernel Debug File System...
+[32m[    4.569533] [33msystemd[1]: [39mMounting sys-kernel-tracing.mount - Kernel Trace File System...
+[32m[    4.571035] [33msystemd[1]: [39mStarting kmod-static-nodes.service - Create List of Static Device Nodes...
+[32m[    4.572402] [33msystemd[1]: [39mStarting modprobe@configfs.service - Load Kernel Module configfs...
+[32m[    4.574009] [33msystemd[1]: [39mStarting modprobe@dm_mod.service - Load Kernel Module dm_mod...
+[32m[    4.575704] [33msystemd[1]: [39mStarting modprobe@efi_pstore.service - Load Kernel Module efi_pstore...
+[32m[    4.577076] [33msystemd[1]: [39mStarting modprobe@fuse.service - Load Kernel Module fuse...
+[32m[    4.578703] [33msystemd[1]: [39mStarting modprobe@loop.service - Load Kernel Module loop...
+[32m[    4.578922] [33msystemd[1]: [39msystemd-fsck-root.service - File System Check on Root Device was skipped because of an unmet condition check (ConditionPathExists=!/run/initramfs/fsck-root).
+[32m[    4.582379] [33msystemd[1]: [39mStarting systemd-journald.service - Journal Service...
+[32m[    4.608731] [33mloop: [39mmodule loaded
+[32m[    4.659733] [33msystemd[1]: [39mStarting systemd-modules-load.service - Load Kernel Modules...
+[32m[    4.661494] [33msystemd[1]: [39mStarting systemd-remount-fs.service - Remount Root and Kernel File Systems...
+[32m[    4.663725] [33msystemd[1]: [39mStarting systemd-udev-trigger.service - Coldplug All udev Devices...
+[32m[    4.666239] [33msystemd[1]: [39mFinished kmod-static-nodes.service - Create List of Static Device Nodes.
+[32m[    4.666921] [33msystemd[1]: [39mmodprobe@configfs.service: Deactivated successfully.
+[32m[    4.667207] [33msystemd[1]: [39mFinished modprobe@configfs.service - Load Kernel Module configfs.
+[32m[    4.667834] [33msystemd[1]: [39mmodprobe@efi_pstore.service: Deactivated successfully.
+[32m[    4.668061] [33msystemd[1]: [39mFinished modprobe@efi_pstore.service - Load Kernel</system_output>
+  <system_output timestamp="70.745769"> Module efi_pstore.
+[32m[    4.668535] [33msystemd[1]: [39mmodprobe@loop.service: Deactivated successfully.
+[32m[    4.668740] [33msystemd[1]: [39mFinished modprobe@loop.service - Load Kernel Module loop.
+[32m[    4.670692] [33msystemd[1]: [39mMounting sys-kernel-config.mount - Kernel Configuration File System...
+[32m[    4.699040] [33msystemd[1]: [39mFinished systemd-modules-load.service - Load Kernel Modules.
+[32m[    4.700578] [33msystemd[1]: [39mStarting systemd-sysctl.service - Apply Kernel Variables...
+[32m[    4.703385] [33mfuse: [39minit (API version 7.37)
+[32m[    4.705030] [33msystemd[1]: [39mmodprobe@fuse.service: Deactivated successfully.
+[32m[    4.705282] [33msystemd[1]: [39mFinished modprobe@fuse.service - Load Kernel Module fuse.
+[32m[    4.708590] [33msystemd[1]: [39mMounting sys-fs-fuse-connections.mount - FUSE Control File System...
+[32m[    4.773520] [33msystemd[1]: [39mStarted systemd-journald.service - Journal Service.
+[32m[    4.790899] [33mdevice-mapper: [1m[39mcore: CONFIG_IMA_DISABLE_HTABLE is disabled. Duplicate IMA measurements will not be recorded in the IMA log.
+[0m[32m[    4.790958] [33mdevice-mapper: [39muevent: version 1.0.3
+[32m[    4.791245] [33mdevice-mapper: [39mioctl: 4.47.0-ioctl (2022-07-28) initialised: dm-devel@redhat.com
+[32m[    4.993713] [33mEXT4-fs (sda2): [39mre-mounted. Quota mode: none.
+[32m[    5.125717] [33msystemd-journald[212]: [39mReceived client request to flush runtime journal.
+[32m[    5.607229] [33mrandom: [39mcrng init done
+[32m[    5.853070] [33minput: [39mPC Speaker as /devices/platform/pcspkr/input/input4
+[32m[    5.859120] [33minput: [39mPower Button as /devices/LNXSYSTM:00/LNXPWRBN:00/input/input5
+[32m[    5.867653] [33msd 0:0:0:0: [39mAttached scsi generic sg0 type 0
+[32m[    5.868059] [33msr 0:0:1:0: [39mAttached scsi generic sg1 type 5
+[32m[    5.868232] [33msr 1:0:0:0: [39mAttached scsi generic sg2 type 5
+[32m[    5.870393] [33mparport_pc 00:03: [39mreported by Plug and Play ACPI
+[32m[    5.870776] [33mparport0: [39mPC-style at 0x378, irq 7 [PCSPP,TRISTATE]
+[32m[    5.875349] [33mACPI: [39mbutton: Power Button [PWRF]
+[32m[    6.177986] [33mpowernow_k8: [39mPower state transitions not supported
+[32m[    6.178024] [33mpowernow_k8: [39mPower state transitions not supported
+[32m[    6.178035] [33mpowernow_k8: [39mPower state transitions not supported
+[32m[    6.178070] [33mpowernow_k8: [39mPower state transitions not supported
+[32m[    6.251345] [33mppdev: [39muser-space parallel port driver
+[32m[    6.363990] [33mEXT4-fs (sda1): [39mmounting ext2 file system using the ext4 subsystem
+[32m[    6.370732] [33mEXT4-fs (sda1): [39mmounted filesystem without journal. Quota mode: none.
+[32m[    6.381547] [33mEXT4-fs (sda3): [39mmounted filesystem with ordered data mode. Quota mode: none.
+[32m[    6.986732] [33maudit: [39mtype=1400 audit(1721941692.188:2): apparmor="STATUS" operation="profile_load" profile="unconfined" name="nvidia_modprobe" pid=288 comm="apparmor_parser"
+[32m[    6.989717] [33maudit: [39mtype=1400 audit(1721941692.192:3): apparmor="STATUS" operation="profile_load" profile="unconfined" name="nvidia_modprobe//kmod" pid=288 comm="apparmor_parser"
+[32m[    7.135061] [33maudit: [39mtype=1400 audit(1721941692.336:4): apparmor="STATUS" operation="profile_load" profile="unconfined" name="lsb_release" pid=287 comm="apparmor_parser"
+[32m[    7.230218] [33maudit: [39mtype=1400 audit(1721941692.432:5): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/bin/man" pid=290 comm="apparmor_parser"
+[32m[    7.231824] [33maudit: [39mtype=1400 audit(1721941692.436:6): apparmor="STATUS" operation="profile_load" profile="unconfined" name="man_filter" pid=290 comm="apparmor_parser"
+[32m[    7.234087] [33maudit: [39mtype=1400 audit(1721941692.436:7): apparmor="STATUS" operation="profile_load" profile="unconfined" name="man_groff" pid=290 comm="apparmor_parser"
+[32m[    7.395705] [33maudit: [39</system_output>
+  <system_output timestamp="70.745865">mtype=1400 audit(1721941692.600:8): apparmor="STATUS" operation="profile_load" profile="unconfined" name="tcpdump" pid=291 comm="apparmor_parser"
+[32m[    7.509082] [33maudit: [39mtype=1400 audit(1721941692.712:9): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/NetworkManager/nm-dhcp-client.action" pid=289 comm="apparmor_parser"
+[32m[    7.510826] [33maudit: [39mtype=1400 audit(1721941692.712:10): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/NetworkManager/nm-dhcp-helper" pid=289 comm="apparmor_parser"
+[32m[    7.512397] [33maudit: [39mtype=1400 audit(1721941692.716:11): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/connman/scripts/dhclient-script" pid=289 comm="apparmor_parser"
+[32m[    8.084242] [33m8139cp 0000:00:03.0 ens3: [39mlink up, 100Mbps, full-duplex, lpa 0x05E1
+demo@faiserver:~$]0;]0;screen[?2004h </system_output>
+  <user_input timestamp="76.973653"/>
+  <user_input timestamp="77.752926">1</user_input>
+  <system_output timestamp="77.755669">]0;]0;screen[?2004l[H[2J]2;screenNeed to get 219 kB/2,943 kB of archives. After unpacking 13.0 MB will be used.
+Writing extended state information...
+Get: 1 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 libstatgrab10 i386 0.92.1-1.1 [120 kB]
+Get: 2 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 statgrab i386 0.92.1-1.1 [99.4 kB]
+Fetched 219 kB in 0s (823 kB/s)
+install_packages: executing  aptitude -R -d -o Aptitude::Log=/dev/null -o Aptitude::CmdLine::Ignore-Trust-Violations=yes -o APT::Get::AllowUnauthenticated=true -o Acquire::AllowInsecureRepositories=true -o DPkg::force-conflicts::=yes -o Dir::State=/usr/fai/mirror/aptcache/var/lib/apt -o Dir::Log=/usr/fai/mirror/aptcache/var/log/apt -o Dir::State::extended_states=/usr/fai/mirror/aptcache/var/lib/apt/lists/extended_states -o Dir::State::status=/usr/fai/mirror/aptcache/statefile -o Dir::Cache=/usr/fai/mirror/aptcache/var/cache/apt -o Dir::State=/usr/fai/mirror/aptcache/var/cache/apt -o Dir::Cache::Archiv</system_output>
+  <system_output timestamp="77.75588">es=/usr/fai/mirror/aptcache/var/cache/apt/archives -o Dir::Etc=/usr/fai/mirror/aptcache/etc/apt/ -o Dir::State::Lists=/usr/fai/mirror/aptcache/var/lib/apt/lists/ -y install git-core
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Reading extended state information...
+Initializing package states...
+Writing extended state information...
+Building tag database...
+Note: selecting "git" instead of the virtual package "git-core"
+The following NEW packages will be installed:
+Th
+dpkg{a} gcc-12-base{a} git git-man{a} libacl1{a} libbrotli1{a} libbz2-1.0{a} libc6{a} libcom-err2{a} libcrypt1{a} libcurl3-gnutls{a} libdb5.3{a} liberror-perl{a} libexpat1{a} libffi8{a} libgcc-s1{a} libgdbm-compat4{a} libgdbm6{a} libgmp10{a} libgnutls30{a} libgssapi-krb5-2{a} libhogweed6{a} libidn2-0{a} libk5crypto3{a} libkeyutils1{a} libkrb5-3{a} libkrb5support0{a} libldap-2.5-0{a} liblzma5{a} libmd0{a} libnettle8{a} libnghttp2-14{a} libp11-kit0{a} libpcre2-8-0{a} libperl5.36{a} libpsl5{a} librtmp1{a} libsasl2-2{a} libsasl2-modules-db{a} libselinux1{a} libssh2-1{a} libssl3{a} libtasn1-6{a} libunistring2{a} libzstd1{a} perl{a} perl-base{a} perl-modules-5.36{a} tar{a} zlib1g{a}
+The following packages are RECOMMENDED but will NOT be installed:
+Th
+ca-certificates krb5-locales less libldap-common libsasl2-modules netbase openssh-client patch publicsuffix
+0 packages upgraded, 50 newly installed, 0 to remove and 0 not upgraded.
+Need to get 0 B/34.1 MB of archives. After unpacking 154 MB will be used.
+Writing extended state information...
+install_packages: executing  aptitude -R -d -o Aptitude::Log=/dev/null -o Aptitude::CmdLine::Ignore-Trust-Violations=yes -o APT::Get::AllowUnauthenticated=true -o Acquire::AllowInsecureRepositories=true -o DPkg::force-conflicts::=yes -o Dir::State=/usr/fai/mirror/aptcache/var/lib/apt -o Dir::Log=/usr/fai/mirror/aptcache/var/log/apt -o Dir::State::extended_states=/usr/fai/mirror/aptcache/var/lib/apt/lists/extended_states -o Dir::State::status=/usr/fai/mirror/aptcache/statef</system_output>
+  <system_output timestamp="77.755974">ile -o Dir::Cache=/usr/fai/mirror/aptcache/var/cache/apt -o Dir::State=/usr/fai/mirror/aptcache/var/cache/apt -o Dir::Cache::Archives=/usr/fai/mirror/aptcache/var/cache/apt/archives -o Dir::Etc=/usr/fai/mirror/aptcache/etc/apt/ -o Dir::State::Lists=/usr/fai/mirror/aptcache/var/lib/apt/lists/ -y install git-core
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Reading extended state information...
+Initializing package states...
+Writing extended state information...
+Building tag database...
+Note: selecting "git" instead of the virtual package "git-core"
+The following NEW packages will be installed:
+Th
+dpkg{a} gcc-12-base{a} git git-man{a} libacl1{a} libbrotli1{a} libbz2-1.0{a} libc6{a} libcom-err2{a} libcrypt1{a} libcurl3-gnutls{a} libdb5.3{a} liberror-perl{a} libexpat1{a} libffi8{a} libgcc-s1{a} libgdbm-compat4{a} libgdbm6{a} libgmp10{a} libgnutls30{a} libgssapi-krb5-2{a} libhogweed6{a} libidn2-0{a} libk5crypto3{a} libkeyutils1{a} libkrb5-3{a} libkrb5support0{a} libldap-2.5-0{a} liblzma5{a} libmd0{a} libnettle8{a} libnghttp2-14{a} libp11-kit0{a} libpcre2-8-0{a} libperl5.36{a} libpsl5{a} librtmp1{a} libsasl2-2{a} libsasl2-modules-db{a} libselinux1{a} libssh2-1{a} libssl3{a} libtasn1-6{a} libunistring2{a} libzstd1{a} perl{a} perl-base{a} perl-modules-5.36{a} tar{a} zlib1g{a}
+The following packages are RECOMMENDED but will NOT be installed:
+Th
+ca-certificates krb5-locales less libldap-common libsasl2-modules netbase openssh-client patch publicsuffix
+0 packages upgraded, 50 newly installed, 0 to remove and 0 not upgraded.
+Need to get 0 B/34.1 MB of archives. After unpacking 154 MB will be used.
+Writing extended state information...
+install_packages: executing  aptitude -R -d -o Aptitude::Log=/dev/null -o Aptitude::CmdLine::Ignore-Trust-Violations=yes -o APT::Get::AllowUnauthenticated=true -o Acquire::AllowInsecureRepositories=true -o DPkg::force-conflicts::=yes -o Dir::State=/usr/fai/mirror/aptcache/var/lib/apt -o Dir::Log=/usr/fai/mirror/aptcache/var/log/apt -o Dir::State::extended_states=/usr/fai/mirror/aptcache/var/lib/apt/lists/extended_states -o Dir::State::status=/usr/fai/mirror/aptcache/statefile -o Dir::Cache=/usr/fai/mirror/aptcache/var/cache/apt -o Dir::State=/usr/fai/mirror/aptcache/var/cache/apt -o Dir::Cache::</system_output>
+  <system_output timestamp="77.756249">Archives=/usr/fai/mirror/aptcache/var/cache/apt/archives -o Dir::Etc=/usr/fai/mirror/aptcache/etc/apt/ -o Dir::State::Lists=/usr/fai/mirror/aptcache/var/lib/apt/lists/ -y install xorg
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Reading extended state information...
+Initializing package states...
+Writing extended state information...
+Building tag database...
+The following NEW packages will be installed:
+Th
+adduser{a} bsdextrautils{a} coreutils{a} cpp{a} cpp-12{a} debconf{a} dpkg{a} fontconfig-config{a} fonts-dejavu-core{a} gcc-12-base{a} groff-base{a} keyboard-configuration{a} libacl1{a} libatomic1{a} libattr1{a} libaudit-common{a} libaudit1{a} libblkid1{a} libbrotli1{a} libbsd0{a} libbz2-1.0{a} libc6{a} libcap-ng0{a} libcap2{a} libcrypt1{a} libdb5.3{a} libdbus-1-3{a} libdrm-amdgpu1{a} libdrm-common{a} libdrm-intel1{a} libdrm-nouveau2{a} libdrm-radeon1{a} libdrm2{a} libedit2{a} libegl-mesa0{a} libegl1{a} libelf1{a} libepoxy0{a} libevdev2{a} libexpat1{a} libffi8{a} libfontconfig1{a} libfontenc1{a} libfreetype6{a} libgbm1{a} libgcc-s1{a} libgcrypt20{a} libgdbm6{a} libgl1{a} libgl1-mesa-dri{a} libglapi-mesa{a} libglib2.0-0{a} libglu1-mesa{a} libglvnd0{a} libglx-mesa0{a} libglx0{a} libgmp10{a} libgpg-error0{a} libgudev-</system_output>
+  <system_output timestamp="77.756337">1.0-0{a} libice6{a} libicu72{a} libinput-bin{a} libinput10{a} libisl23{a} libkmod2{a} libllvm15{a} liblocale-gettext-perl{a} liblz4-1{a} liblzma5{a} libmd0{a} libmount1{a} libmpc3{a} libmpfr6{a} libmtdev1{a} libopengl0{a} libpam-modules{a} libpam-modules-bin{a} libpam0g{a} libpciaccess0{a} libpcre2-8-0{a} libpipeline1{a} libpixman-1-0{a} libpng16-16{a} libseccomp2{a} libselinux1{a} libsemanage-common{a} libsemanage2{a} libsensors-config{a} libsensors5{a} libsepol2{a} libsm6{a} libsmartcols1{a} libssl3{a} libstdc++6{a} libsystemd0{a} libtinfo6{a} libuchardet0{a} libudev1{a} libunwind8{a} libutempter0{a} libuuid1{a} libwacom-common{a} libwacom9{a} libwayland-client0{a} libwayland-server0{a} libx11-6{a} libx11-data{a} libx11-xcb1{a} libxatracker2{a} libxau6{a} libxaw7{a} libxcb-damage0{a} libxcb-dri2-0{a} libxcb-dri3-0{a} libxcb-glx0{a} libxcb-present0{a} libxcb-randr0{a} libxcb-shape0{a} libxcb-shm0{a} libxcb-sync1{a} libxcb-xfixes0{a} libxcb1{a} libxcomposite1{a} libxcursor1{a} libxcvt0{a} libxdmcp6{a} libxext6{a} libxfixes3{a} libxfont2{a} libxft2{a} libxi6{a} libxinerama1{a} libxkbfile1{a} libxml2{a} libxmu6{a} libxmuu1{a} libxpm4{a} libxrandr2{a} libxrender1{a} libxshmfence1{a} libxt6{a} libxtst6{a} libxv1{a} libxxf86dga1{a} libxxf86vm1{a} libz3-4{a} libzstd1{a} lsb-base{a} man-db{a} passwd{a} perl-base{a} sysvinit-utils{a} tar{a} udev{a} x11-apps{a} x11-common{a} x11-session-utils{a} x11-utils{a} x11-xkb-utils{a} x11-xserver-utils{a} xauth{a} xbitmaps{a} xfonts-100dpi{a} xfonts-75dpi{a} xfonts-base{a} xfonts</system_output>
+  <system_output timestamp="77.756539">-encodings{a} xfonts-scalable{a} xfonts-utils{a} xinit{a} xkb-data{a} xorg xorg-docs-core{a} xserver-common{a} xserver-xorg{a} xserver-xorg-core{a} xserver-xorg-input-all{a} xserver-xorg-input-libinput{a} xserver-xorg-video-all{a} xserver-xorg-video-amdgpu{a} xserver-xorg-video-ati{a} xserver-xorg-video-fbdev{a} xserver-xorg-video-nouveau{a} xserver-xorg-video-radeon{a} xserver-xorg-video-vesa{a} xserver-xorg-video-vmware{a} xterm{a} zlib1g{a}
+The following packages are RECOMMENDED but will NOT be installed:
+Th
+apt-utils dbus debconf-i18n libglib2.0-data libgpg-error-l10n libidn2-0 libpam-elogind libpam-systemd sensible-utils shared-mime-info uuid-runtime xcvt xdg-user-dirs xserver-xorg-input-wacom xserver-xorg-legacy xserver-xorg-video-intel xserver-xorg-video-qxl
+0 packages upgraded, 187 newly installed, 0 to remove and 0 not upgraded.
+Need to get 24.5 MB/127 MB of archives. After unpacking 443 MB will be used.
+Writing extended state information...
+Get: 1 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 libxatracker2 i386 22.3.6-1+deb12u1 [2,030 kB]
+Get: 2 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 libxcb-damage0 i386 1.15-1 [105 kB]
+Get: 3 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 libxcvt0 i386 0.1.2-1 [5,696 B]
+Get: 4 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 libxfont2 i386 1:2.0.6-1 [140 kB]
+Get: 5 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 x11-apps i386 7.7+9 [680 kB]
+Get: 6 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 x11-session-utils i386 7.7+5 [75.9 kB]
+Get: 7 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 xfonts-100dpi all 1:1.0.5 [3,819 kB]
+Get: 8 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 xfonts-75dpi all 1:1.0.5 [3,365 kB]
+Get: 9 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 xfonts-base all 1:1.0.5+nmu1 [5,895 kB]
+Get: 10 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 xfonts-scalable all 1:1.0.3-1.3 [306 kB]
+Get: 11 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 xinit i386 1.4.0-1 [50.2 kB]
+Get: 12 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 xserver-common all 2:21.1.7-3+deb12u7 [2,383</system_output>
+  <system_output timestamp="77.756693"> kB]
+Get: 13 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 xserver-xorg-core i386 2:21.1.7-3+deb12u7 [3,784 kB]
+Get: 14 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 xserver-xorg-video-amdgpu i386 23.0.0-1 [144 kB]
+Get: 15 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 xserver-xorg-video-radeon i386 1:19.1.0-3 [510 kB]
+Get: 16 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 xserver-xorg-video-ati i386 1:19.1.0-3 [363 kB]
+Get: 17 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 xserver-xorg-video-fbdev i386 1:0.5.0-2 [26.0 kB]
+Get: 18 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 xserver-xorg-video-nouveau i386 1:1.0.17-2 [335 kB]
+Get: 19 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 xserver-xorg-video-vesa i386 1:2.5.0-1+b1 [33.4 kB]
+Get: 20 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 xserver-xorg-video-vmware i386 1:13.3.0-3.1+b1 [120 kB]
+Get: 21</system_output>
+  <system_output timestamp="77.756769"> http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 xserver-xorg-video-all i386 1:7.7+23 [38.7 kB]
+Get: 22 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 xserver-xorg-input-libinput i386 1.2.1-1+b1 [67.5 kB]
+Get: 23 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 xserver-xorg-input-all i386 1:7.7+23 [38.7 kB]
+Get: 24 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 xserver-xorg i386 1:7.7+23 [94.2 kB]
+Get: 25 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 xorg-docs-core all 1:1.7.1-1.2 [84.2 kB]
+Get: 26 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 xorg i386 1:7.7+23 [39.1 kB]
+Fetched 24.5 MB in 16s (1,539 kB/s)
+install_packages: executing  aptitude -R -d -o Aptitude::Log=/dev/null -o Aptitude::CmdLine::Ignore-Trust-Violations=yes -o APT::Get::AllowUnauthenticated=true -o Acquire::AllowInsecureRepositories=true -o DPkg::force-conflicts::=yes -o Dir::State=/usr/fai/mirror/aptcache/var/lib/apt -o Dir::Log=/usr/fai/mirror/aptcache/var/log/apt -o Dir::State::extended_states=/usr/fai/mirror/aptcache/var/lib/apt/lists/extended_states -o Dir::State::status=/usr/fai/mirror/aptcache/statefile -o Dir::Cache=/usr/fai/mirror/aptcache/var/cache/apt -o Dir::Sta</system_output>
+  <system_output timestamp="77.756833">te=/usr/fai/mirror/aptcache/var/cache/apt -o Dir::Cache::Archives=/usr/fai/mirror/aptcache/var/cache/apt/archives -o Dir::Etc=/usr/fai/mirror/aptcache/etc/apt/ -o Dir::State::Lists=/usr/fai/mirror/aptcache/var/lib/apt/lists/ -y install xscreensaver
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Reading extended state information...
+Initializing package states...
+Writing extended state information...
+Building tag database...
+The following NEW packages will be installed:
+Th
+adduser{a} adwaita-icon-theme{a} at-spi2-common{a} ca-certificates{a} dbus{a} dbus-bin{a} dbus-daemon{a} dbus-session-bus-common{a} dbus-system-bus-common{a} dbus-user-session{a} dconf-gsettings-backend{a} dconf-service{a} debconf{a} dmsetup{a} dpkg{a} fontconfig{a} fontconfig-config{a} fonts-dejavu-core{a} gcc-12-base{a} gtk-update-icon-cache{a} hicolor-icon-theme{a} init-system-helpers{a} libacl1{a} libapparmor1{a} libargon2-1{a} libatk-bridge2.0-0{a} libatk1.0-0{a} libatspi2.0-0{a} libaudit-commo</system_output>
+  <system_output timestamp="77.756893">n{a} libaudit1{a} libavahi-client3{a} libavahi-common-data{a} libavahi-common3{a} libblkid1{a} libbrotli1{a} libbsd0{a} libbz2-1.0{a} libc6{a} libcairo-gobject2{a} libcairo2{a} libcap-ng0{a} libcap2{a} libclone-perl{a} libcolord2{a} libcom-err2{a} libcrypt1{a} libcryptsetup12{a} libcups2{a} libdatrie1{a} libdb5.3{a} libdbus-1-3{a} libdconf1{a} libdeflate0{a} libdevmapper1.02.1{a} libencode-locale-perl{a} libepoxy0{a} libexpat1{a} libfdisk1{a} libffi8{a} libfile-find-rule-perl{a} libfile-listing-perl{a} libfontconfig1{a} libfreetype6{a} libfribidi0{a} libgcc-s1{a} libgcrypt20{a} libgdbm-compat4{a} libgdbm6{a} libgdk-pixbuf-2.0-0{a} libgdk-pixbuf2.0-common{a} libglib2.0-0{a} libgmp10{a} libgnutls30{a} libgpg-error0{a} libgraphite2-3{a} libgssapi-krb5-2{a} libgtk-3-0{a} libgtk-3-common{a} libharfbuzz0b{a} libhogweed6{a} libhtml-parser-perl{a} libhtml-tagset-perl{a} libhtml-tree-perl{a} libhttp-cookies-perl{a} libhttp-date-perl{a} libhttp-message-perl{a} libhttp-negotiate-perl{a} libice6{a} libicu72{a} libidn2-0{</system_output>
+  <system_output timestamp="77.757142">a} libio-html-perl{a} libio-socket-ssl-perl{a} libip4tc2{a} libjbig0{a} libjpeg62-turbo{a} libjson-c5{a} libk5crypto3{a} libkeyutils1{a} libkmod2{a} libkrb5-3{a} libkrb5support0{a} liblcms2-2{a} liblerc4{a} liblwp-mediatypes-perl{a} liblwp-protocol-https-perl{a} liblz4-1{a} liblzma5{a} libmd0{a} libmount1{a} libncursesw6{a} libnet-http-perl{a} libnet-ssleay-perl{a} libnettle8{a} libnumber-compare-perl{a} libp11-kit0{a} libpam-modules{a} libpam-modules-bin{a} libpam-runtime{a} libpam-systemd{a} libpam0g{a} libpango-1.0-0{a} libpangocairo-1.0-0{a} libpangoft2-1.0-0{a} libpcre2-8-0{a} libperl5.36{a} libpixman-1-0{a} libpng16-16{a} libproc2-0{a} libregexp-ipv6-perl{a} libseccomp2{a} libselinux1{a} libsemanage-common{a} libsemanage2{a} libsepol2{a} libsm6{a} libsmartcols1{a} libssl3{a} libstdc++6{a} libsystemd-shared{a} libsystemd0{a} libtasn1-6{a} libtext-glob-perl{a} libthai-data{a} libthai0{a} libtiff6{a} libtimedate-perl{a} libtinfo6{a} libtry-tiny-perl{a} libudev1{a} libunistring2{a} liburi-perl{a} libuuid1{a} libwayland-client0{a} libwayland-cursor0{a} libwayland-egl1{a} libwebp7{a} libwww-perl{a} libwww-robotrules-perl{a} libx11-6{a} libx11-data{a} libxau6{a} libxcb-render0{a} libxcb-shm0{a} libxcb1{a} libxcomposite1{a} libxcursor1{a} libxdamage1{a} libxdmcp6{a} libxext6{a} libxfixes3{a} libxft2{a} libxi6{a} libxinerama1{a} libxkbcommon0{a} libxml2{a} libxrandr2{a} libxrender1{a} libxt6{a} libxxf86vm1{a} libzstd1{a} lsb-base{a} mount{a} netbase{a} openssl{a} passwd{a} perl{a} perl-base{a} perl-modules-5.36{a} perl-openssl-defaults{a} procps{a} shared-mime-info{a} systemd{a} systemd-sysv{a} sysvinit-utils{a} tar{a} usrmerge{a} x11-common{a} xkb-data{a} xscreensaver xscreensaver-data{a} zlib1g{a}
+The following packages are RECOMMENDED but will NOT be installed:
+Th
+apt-utils at-spi2-core chrony debconf-i18n fonts-urw-base35 krb5-locales libdata-dump-perl libgdk-pixbuf2.0-bin libglib2.0-data libgpg-error-l10n libgpm2 libgtk-3-bin libhtml-form-perl libhtml-format-perl libhttp-daemon-perl libjpeg-turbo-progs libmail</system_output>
+  <system_output timestamp="77.757232">tools-perl libnss-systemd librsvg2-common miscfiles ntpsec openntpd psmisc sensible-utils systemd-timesyncd uuid-runtime wamerican wamerican-huge wamerican-insane wamerican-large wamerican-small wbrazilian wbritish wbritish-huge wbritish-insane wbritish-large wbritish-small wbulgarian wcanadian wcanadian-huge wcanadian-insane wcanadian-large wcanadian-small wcatalan wdanish wdutch wesperanto wfaroese wfrench wgalician-minimos wgerman-medical witalian wngerman wnorwegian wogerman wpolish wportuguese wspanish wswedish wswiss wukrainian xdg-user-dirs xfonts-100dpi
+0 packages upgraded, 201 newly installed, 0 to remove and 0 not upgraded.
+Need to get 823 kB/77.5 MB of archives. After unpacking 299 MB will be used.
+Writing extended state information...
+Get: 1 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 xscreensaver-data i386 6.06+dfsg1-3+deb12u1 [379 kB]
+Get: 2 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 xscreensaver i386 6.06+dfsg1-3+deb12u1 [445 kB]
+Fetched 823 kB in 1s (1,020 kB/s)
+Calling reprepro
+Exporting indices...
+/usr/bin/fai-mirror finished.
+Number of packages in the mirror: 2230
+Mirror size and location: 1.5G  /usr/fai/mirror
+Copying the nfsroot to CD image
+Copying the config space to CD image
+Copying the mirror to CD image
+Parallel mksquashfs: Using 4 processors
+Creating 4.0 filesystem on /home/tmp/fai-cd.A904n9/LiveOS/squashfs.img, block size 131072.
+[===========================================================\] 22019/22019 100%
+
+Exportable Squashfs 4.0 filesystem, zstd compressed, data block size 131072[67D
+compressed data, compressed metadata, compressed fragments,[59D
+compressed xattrs, compressed ids[33D
+duplicates are removed
+Filesystem size 1886403.10 Kbytes (1842.19 Mbytes)[42D
+66.93% of uncompressed filesystem size (2818445.72 Kbytes)
+Inode table size 21521 bytes (21.02 Kbytes)[35D
+24.40% of uncompressed inode table size (88218 bytes)
+Directory table size 56 bytes (0.05 Kbytes)[35D
+96.55% of uncompressed directory table size (58</system_output>
+  <system_output timestamp="77.757296"> bytes)
+Number of duplicate files found 0
+Number of inodes 3
+Number of files 1
+Number of fragments 0
+Number of symbolic links 0
+Number of device nodes 0
+Number of fifo nodes 0
+Number of socket nodes 0
+Number of directories 2
+Number of hard-links 0
+Number of ids (unique uids + gids) 1
+Number of uids 1[8D
+root (0)
+Number of gids 1[8D
+root (0)
+mkfs.fat 4.2 (2021-01-31)
+Writing FAI CD-ROM image to fai_cd.iso. This may need some time.
+xorriso 1.5.4 : RockRidge filesystem manipulator, libburnia project.
+
+ISO image size and filename: 1.9G[7Cfai_cd.iso
+
+real[4C34m47.030s
+user[4C14m4.979s
+sys[5C2m35.336s
+demo@faiserver:/home/fai$ scp fai_cd.iso demo@172.16.0.1:/disk1/isos/fai_dvd-`date +%Y%m%d`-2.iso
+The authenticity of host '172.16.0.1 (1</system_output>
+  <system_output timestamp="77.757684">72.16.0.1)' can't be established.
+ED25519 key fingerprint is SHA256:93uUBMNloDj0vGdELz8x12HmojpeGShCAY+2QqmbFws.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added '172.16.0.1' (ED25519) to the list of known hosts.
+demo@172.16.0.1's password:
+fai_cd.iso[195C100% 1894MB  26.7MB/s   01:11
+demo@faiserver:/home/fai$]0;]0;screen[?2004h </system_output>
+  <user_input timestamp="79.985264"/>
+  <user_input timestamp="80.361124">0</user_input>
+  <system_output timestamp="80.361911">]0;[?2004l[H[2J]2;screen[7mFile Edit Options Buffers Tools Help                                                                                                                                                                                                           
+[27mPACKAGES aptitude
+isc-dhcp-client tcpdump deborphan
+emacs-nox
+screen
+busybox
+console-common
+cron
+debconf-utils
+file
+less
+lynx
+links
+linuxlogo
+locales
+nscd
+ntpsec-ntpdate
+openssh-client
+openssh-server
+rsync
+strace
+time
+
+# for ssh X11 forwarding
+xauth
+[170B[7m-UU-:----F1  [1mFAIBASE     [27m[0m[7m   All L17   Git:master  (Fundamental) -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[27m(reverse-i-search)`scp': [7mscp[C[27mfai_cd.iso demo@172.16.0.1:/disk1/isos/fai_dvd-`date +%Y%m%d`.iso[?2004h[69D</system_output>
+<annotation>
+</annotation>
+</event>
+<event depth="-2">
+  <user_input timestamp="82.528428">OB</user_input>
+  <system_output timestamp="82.530017">
+[1@demo@faiserver:/home/fai$ scpdpkg -l | less[K</system_output>
+  <user_input timestamp="83.577273">OB</user_input>
+  <system_output timestamp="83.589478">sudo apt install dmidecode</system_output>
+  <user_input timestamp="83.817927">OB</user_input>
+  <system_output timestamp="83.824641">[12Pdpkg -l | less</system_output>
+  <user_input timestamp="84.003943">OB</user_input>
+  <system_output timestamp="84.024863">grep -R ntpsec config/</system_output>
+  <user_input timestamp="84.203">OB</user_input>
+  <system_output timestamp="84.223309">[3P config/</system_output>
+  <user_input timestamp="84.402056">OB</user_input>
+  <system_output timestamp="84.421401">sudo emacs config/package_config/FAIBASE </system_output>
+  <user_input timestamp="84.584269">OB</user_input>
+  <system_output timestamp="84.598059">
+demo@faiserver:/home/fai$ [K</system_output>
+  <user_input timestamp="84.766465">OB</user_input>
+  <system_output timestamp="84.874137">[?5h[?5l</system_output>
+  <user_input timestamp="85.396749">OB</user_input>
+  <system_output timestamp="85.502785">[?5h[?5l</system_output>
+  <user_input timestamp="1870.453194"/>
+  <user_input timestamp="1870.805828">1</user_input>
+  <system_output timestamp="1870.808649">]0;screen[?2004l[H[2J]2;screenNeed to get 219 kB/2,943 kB of archives. After unpacking 13.0 MB will be used.
+Writing extended state information...
+Get: 1 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 libstatgrab10 i386 0.92.1-1.1 [120 kB]
+Get: 2 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 statgrab i386 0.92.1-1.1 [99.4 kB]
+Fetched 219 kB in 0s (823 kB/s)
+install_packages: executing  aptitude -R -d -o Aptitude::Log=/dev/null -o Aptitude::CmdLine::Ignore-Trust-Violations=yes -o APT::Get::AllowUnauthenticated=true -o Acquire::AllowInsecureRepositories=true -o DPkg::force-conflicts::=yes -o Dir::State=/usr/fai/mirror/aptcache/var/lib/apt -o Dir::Log=/usr/fai/mirror/aptcache/var/log/apt -o Dir::State::extended_states=/usr/fai/mirror/aptcache/var/lib/apt/lists/extended_states -o Dir::State::status=/usr/fai/mirror/aptcache/statefile -o Dir::Cache=/usr/fai/mirror/aptcache/var/cache/apt -o Dir::State=/usr/fai/mirror/aptcache/var/cache/apt -o Dir::Cache::Archives=/u</system_output>
+  <system_output timestamp="1870.80873">sr/fai/mirror/aptcache/var/cache/apt/archives -o Dir::Etc=/usr/fai/mirror/aptcache/etc/apt/ -o Dir::State::Lists=/usr/fai/mirror/aptcache/var/lib/apt/lists/ -y install git-core
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Reading extended state information...
+Initializing package states...
+Writing extended state information...
+Building tag database...
+Note: selecting "git" instead of the virtual package "git-core"
+The following NEW packages will be installed:
+Th
+dpkg{a} gcc-12-base{a} git git-man{a} libacl1{a} libbrotli1{a} libbz2-1.0{a} libc6{a} libcom-err2{a} libcrypt1{a} libcurl3-gnutls{a} libdb5.3{a} liberror-perl{a} libexpat1{a} libffi8{a} libgcc-s1{a} libgdbm-compat4{a} libgdbm6{a} libgmp10{a} libgnutls30{a} libgssapi-krb5-2{a} libhogweed6{a} libidn2-0{a} libk5crypto3{a} libkeyutils1{a} libkrb5-3{a} libkrb5support0{a} libldap-2.5-0{a} liblzma5{a} libmd0{a} libnettle8{a} libnghttp2-14{a} libp11-kit0{a} libpcre2-8-0{a} libperl5.36{a} libpsl5{a} librtmp1{a} libsasl2-2{a} libsasl2-modules-db{a} libselinux1{a} libssh2-1{a} libssl3{a} libtasn1-6{a} libunistring2{a} libzstd1{a} perl{a} perl-base{a} perl-modules-5.36{a} tar{a} zlib1g{a}
+The following packages are RECOMMENDED but will NOT be installed:
+Th
+ca-certific</system_output>
+  <system_output timestamp="1870.808814">ates krb5-locales less libldap-common libsasl2-modules netbase openssh-client patch publicsuffix
+0 packages upgraded, 50 newly installed, 0 to remove and 0 not upgraded.
+Need to get 0 B/34.1 MB of archives. After unpacking 154 MB will be used.
+Writing extended state information...
+install_packages: executing  aptitude -R -d -o Aptitude::Log=/dev/null -o Aptitude::CmdLine::Ignore-Trust-Violations=yes -o APT::Get::AllowUnauthenticated=true -o Acquire::AllowInsecureRepositories=true -o DPkg::force-conflicts::=yes -o Dir::State=/usr/fai/mirror/aptcache/var/lib/apt -o Dir::Log=/usr/fai/mirror/aptcache/var/log/apt -o Dir::State::extended_states=/usr/fai/mirror/aptcache/var/lib/apt/lists/extended_states -o Dir::State::status=/usr/fai/mirror/aptcache/statefile -</system_output>
+  <system_output timestamp="1870.808895">o Dir::Cache=/usr/fai/mirror/aptcache/var/cache/apt -o Dir::State=/usr/fai/mirror/aptcache/var/cache/apt -o Dir::Cache::Archives=/usr/fai/mirror/aptcache/var/cache/apt/archives -o Dir::Etc=/usr/fai/mirror/aptcache/etc/apt/ -o Dir::State::Lists=/usr/fai/mirror/aptcache/var/lib/apt/lists/ -y install git-core
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Reading extended state information...
+Initializing package states...
+Writing extended state information...
+Building tag database...
+Note: selecting "git" instead of the virtual package "git-core"
+The following NEW packages will be installed:
+Th
+dpkg{a} gcc-12-base{a} git git-man{a} libacl1{a} libbrotli1{a} libbz2-1.0{a} libc6{a} libcom-err2{a} libcrypt1{a} libcurl3-gnutls{a} libdb5.3{a} liberror-perl{a} libexpat1{a} libffi8{a} libgcc-s1{a} libgdbm-compat4{a} libgdbm6{a} libgmp10{a} libgnutls30{a} libgssapi-krb5-2{a} libhogweed6{a} libidn2-0{a} libk5crypto3{a} libkeyutils1{a} libkrb5-3{a} libkrb5support0{a} libldap-2.5-0{a} liblzma5{a} libmd0{a} libnettle8{a} libnghttp2-14{a} libp11-kit0{a} libpcre2-8-0{a} libperl5.36{a} libpsl5{a} librtmp1{a} libsasl2-2{a} libsasl2-modules-db{a} libselinux1{a} libssh2-1{a} libssl3{a} libtasn1-6{a} libunistring2{a} libzstd1{a} perl{a} p</system_output>
+  <system_output timestamp="1870.809108">erl-base{a} perl-modules-5.36{a} tar{a} zlib1g{a}
+The following packages are RECOMMENDED but will NOT be installed:
+Th
+ca-certificates krb5-locales less libldap-common libsasl2-modules netbase openssh-client patch publicsuffix
+0 packages upgraded, 50 newly installed, 0 to remove and 0 not upgraded.
+Need to get 0 B/34.1 MB of archives. After unpacking 154 MB will be used.
+Writing extended state information...
+install_packages: executing  aptitude -R -d -o Aptitude::Log=/dev/null -o Aptitude::CmdLine::Ignore-Trust-Violations=yes -o APT::Get::AllowUnauthenticated=true -o Acquire::AllowInsecureRepositories=true -o DPkg::force-conflicts::=yes -o Dir::State=/usr/fai/mirror/aptcache/var/lib/apt -o Dir::Log=/usr/fai/mirror/aptcache/var/log/apt -o Dir::State::extended_states=/usr/fai/mirror/aptcache/var/lib/apt/lists/extended_states -o Dir::State::status=/usr/fai/mirror/aptcache/statefile -o Dir::Cache=/usr/fai/mirror/aptcache/var/cache/apt -o Dir::State=/usr/fai/mirror/aptcache/var/cache/apt -o Dir::Cache::Archives=/usr/fai/mirror/aptcache/var/cache/apt/archives -o Dir::Etc=/usr/fai/mirror/aptcache/etc/apt/ -o Dir::State::Lists=/usr/fai/mirror/aptcache/var/lib/apt/lists/ -y install xorg
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Reading extended state information...
+Initializing package states...
+Writing extended state information...
+Building tag database...
+The following NEW packages will be installed:
+Th
+adduser{a} bsdextrautils{a} coreutils{a} cpp{a} cpp-12{a} debconf{a} dpkg{a} fontconfig-config{a} fonts-dejavu-core{a} gcc-12-base{a} groff-base{a} keyboard-configuration{a} libacl1{a} libatomic1{a} libattr1{a} libaudit-common{a} libaudit1{a} libblkid1{a} libbrotli1{a} libbsd0{a} libbz2-1.0{a} libc6{a} libcap-ng0{a} </system_output>
+  <system_output timestamp="1870.809479">libcap2{a} libcrypt1{a} libdb5.3{a} libdbus-1-3{a} libdrm-amdgpu1{a} libdrm-common{a} libdrm-intel1{a} libdrm-nouveau2{a} libdrm-radeon1{a} libdrm2{a} libedit2{a} libegl-mesa0{a} libegl1{a} libelf1{a} libepoxy0{a} libevdev2{a} libexpat1{a} libffi8{a} libfontconfig1{a} libfontenc1{a} libfreetype6{a} libgbm1{a} libgcc-s1{a} libgcrypt20{a} libgdbm6{a} libgl1{a} libgl1-mesa-dri{a} libglapi-mesa{a} libglib2.0-0{a} libglu1-mesa{a} libglvnd0{a} libglx-mesa0{a} libglx0{a} libgmp10{a} libgpg-error0{a} libgudev-1.0-0{a} libice6{a} libicu72{a} libinput-bin{a} libinput10{a} libisl23{a} libkmod2{a} libllvm15{a} liblocale-gettext-perl{a} liblz4-1{a} liblzma5{a} libmd0{a} libmount1{a} libmpc3{a} libmpfr6{a} libmtdev1{a} libopengl0{a} libpam-modules{a} libpam-modules-bin{a} libpam0g{a} libpciaccess0{a} libpcre2-8-0{a} libpipeline1{a} libpixman-1-0{a} libpng16-16{a} libseccomp2{a} libselinux1{a} libsemanage-common{a} libsemanage2{a} libsensors-config{a} libsensors5{a} libsepol2{a} libsm6{a} libsmartcols1{a} libssl3{a} libstdc++6{a} libsystemd0{a} libtinfo6{a} libuchardet0{a} libudev1{a} libunwind8{a} libutempter0{a} libuuid1{a} libwacom-common{a} libwacom9{a} libwayland-client0{a} libwayland-server0{a} libx11-6{a} libx11-data{a} libx11-xcb1{a} libxatracker2{a} libxau6{a} libxaw7{a} libxcb-damage0{a} libxcb-dri2-0{a} libxcb-dri3-0{a} libxcb-glx0{a} libxcb-present0{a} libxcb-randr0{a} libxcb-shape0{a} libxcb-shm0{a} libxcb-sync1{a} libxcb-xfixes0{a} libxcb1{a} libxcomposite1{a} libxcursor1{a} libxcvt0{a} libxdmcp6{a} libxext6{a} libxfixes3{a} libxfont2{a} libxft2{a} libxi6{a} libxinerama1{a} libxkbfile1{a} libxml2{a} libxmu6{a} libxmuu1{a} libxpm4{a} libxrandr2{a} libxrender1{a} libxshmfence1{a} libxt6{a} libxtst6{a} libxv1{a} libxxf86dga1{a} libxxf86vm1{a} libz3-4{a} libzstd1{a} lsb-base{a} man-db{a} passwd{a} perl-base{a} sysvinit-utils{a} tar{a} udev{a} x11-apps{a} x11-common{a} x11-session-utils{a} x11-utils{a} x11-xkb-utils{a} x11-xserver-utils{a} xauth{a} xbitmaps{a} xfonts-100dpi{a} xfonts-75dpi{a} xfonts-base{a} xfonts-encodings{a} xfonts-scalable{a} xfonts-utils{a} xinit{a} xkb-data{a} xorg xorg-docs-core{a} xserver-common{a} xserver-xorg{a} xserver-xorg-core{a} xserver-xorg-input-all{a} xserver-xorg-input-libinput{a} xserver-xorg-video-all{a} xserver-xorg-video-amdgpu{a} xserver-xorg-video-ati{a} xserver-xorg-video-fbdev{a} xserver-xorg-video-nouveau{a} xserver-xorg-video-radeon{a} xserver-xorg-video-vesa{a} xserver-xorg-video-vmware{a} xterm{a} zlib1g{a}
+The following packages are RECOMMENDED but will NOT be installed:
+Th
+apt-utils dbus debconf-i18n libglib2.0-data libgpg-error-l10n libidn2-0 libpam-elogind libpam-systemd sensible-utils shared-mime-info uuid-runtime xcvt xdg-user-dirs xserver-xorg-input-wacom xserver-xorg-legacy xserver-xorg-video-intel xserver-xorg-video-qxl
+0 packages upgraded, 187 newly installed, 0 to remove and 0 not upgraded.
+Need to get 24.5 MB/127 MB of archives. After unpacking 443 MB will be used.
+Writing extended state information...
+Get: 1 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 libxatracker2 i386 22.3.6-1+deb12u1 [2,030 kB]
+Get: 2 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 libxcb-damage0 i386 1.15-1 [105 kB]
+Get: 3 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 libxcvt0 i386 0.1.2-1 [5,696 B]
+Get: 4 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 libxfont2 i386 1:2.0.6-1 [140 kB]
+Get: 5 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 x11-apps i386 7.7+9 [680 kB]
+Get: 6 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 x11-session-utils i386 7.7+5 [75.9 kB]
+Get: 7 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 xfonts-100dpi all 1:1.0.5 [3,819 kB]
+Get: 8 http://127.0.0.1:3142/ftp.de.debian.org/debian b</system_output>
+  <system_output timestamp="1870.809836">ookworm/main i386 xfonts-75dpi all 1:1.0.5 [3,365 kB]
+Get: 9 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 xfonts-base all 1:1.0.5+nmu1 [5,895 kB]
+Get: 10 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 xfonts-scalable all 1:1.0.3-1.3 [306 kB]
+Get: 11 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 xinit i386 1.4.0-1 [50.2 kB]
+Get: 12 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 xserver-common all 2:21.1.7-3+deb12u7 [2,383 kB]
+Get: 13 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 xserver-xorg-core i386 2:21.1.7-3+deb12u7 [3,784 kB]
+Get: 14 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 xserver-xorg-video-amdgpu i386 23.0.0-1 [144 kB]
+Get: 15 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 xserver-xorg-video-radeon i386 1:19.1.0-3 [510 kB]
+Get: 16 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 xserver-xorg-video-ati i386 1:19.1.0-3 [363 kB]
+Get: 17 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 xserver-xorg-video-fbdev i386 1:0.5.0-2 [26.0 kB]
+Get: 18 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 xserver-xorg-video-nouveau i386 1:1.0.17-2 [335 kB]
+Get: 19 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 xserver-xorg-video-vesa i386 1:2.5.0-1+b1 [33.4 kB]
+Get: 20 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 xserver-xorg-video-vmware i386 1:13.3.0-3.1+b1 [120 kB]
+Get: 21 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 xserver-xorg-video-all i386 1:7.7+23 [38.7 kB]
+Get: 22 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 xserver-xorg-input-libinput i386 1.2.1-1+b1 [67.5 kB]
+Get: 23 http://12</system_output>
+  <system_output timestamp="1870.810042">7.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 xserver-xorg-input-all i386 1:7.7+23 [38.7 kB]
+Get: 24 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 xserver-xorg i386 1:7.7+23 [94.2 kB]
+Get: 25 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 xorg-docs-core all 1:1.7.1-1.2 [84.2 kB]
+Get: 26 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 xorg i386 1:7.7+23 [39.1 kB]
+Fetched 24.5 MB in 16s (1,539 kB/s)
+install_packages: executing  aptitude -R -d -o Aptitude::Log=/dev/null -o Aptitude::CmdLine::Ignore-Trust-Violations=yes -o APT::Get::AllowUnauthenticated=true -o Acquire::AllowInsecureRepositories=true -o DPkg::force-conflicts::=yes -o Dir::State=/usr/fai/mirror/aptcache/var/lib/apt -o Dir::Log=/usr/fai/mirror/aptcache/var/log/apt -o Dir::State::extended_states=/usr/fai/mirror/aptcache/var/lib/apt/lists/extended_states -o Dir::State::status=/usr/fai/mirror/aptcache/statefile -o Dir::Cache=/usr/fai/mirror/aptcache/var/cache/apt -o Dir::State=/usr/fai/mirror/aptcache/var/cache/apt -o Dir::Cache::Archives=/usr/fai/mirror/aptcache/var/cache/apt/archives -o Dir::Etc=/usr/fai/mirror/aptcache/etc/apt/ -o Dir::State::Lists=/usr/fai/mirror/aptcache/var/lib/apt/lists/ -y install xscreensaver
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Reading extended state information...
+Initializing package states...
+Writing extended state information...
+Building tag database...
+The following NEW packages will be installed:
+Th
+adduser{a} adwaita-icon-theme{a} at-spi2-common{a} ca-certificates{a} dbus{a} dbus-bin{a} dbus-daemon{a} dbus-session-bus-common{a} dbus-system-bus-common{a} dbus-user-session{a} dconf-gsettings-backend{a} dconf-service{a} debconf{a} dmsetup{a} dpkg{a} fontconfig{a} fontconfig-config{a} fonts-dejavu-core{a} gcc-12-base{a} gtk-update-icon-cache{a} hicolor-icon-theme{a} init-system-helpers{a} libacl1{a} libapparmor1{a} libargon2-1{a} libatk-bridge2.0-0{a} libatk1.0-0{a} libatspi2.0-0{a} libaudit-common{a} libaudit1{a} libavahi-client3{a} libavahi-common-data{a} libavahi-common3{a} libblkid1{a} libbrotli1{a} libbsd0{a} libbz2-1.0{a} libc6{a} libcairo-gobject2{a} libcairo2{a} libcap-ng0{a} libcap2{a} libclone-perl{a} libcolord2{a} libcom-err2{a} libcrypt1{a} libcryptsetup12{a} libcups2{a} libdatrie1{a} libdb5.3{a} libdbus-1-3{a} libdconf1{a} libdeflate0{a} libdevmapper1.02.1{a} libencode-locale-perl{a} libepoxy0{a} libexpat1{a} libfdisk1{a} libffi8{a} libfile-find-rule-perl{a} libfile-listing-perl{a} libfontconfig1{a} libfreetype6{a} libfribidi0{a} libgcc-s1{a} libgcrypt20{a} libgdbm-compat4{a} libgdbm6{a} libgdk-pixbuf-2.0-0{a} libgdk-pixbuf2.0-common{a} libglib2.0-0{a} libgmp10{a} libgnutls30{a} libgpg-error0{a} libgraphite2-3{a} libgssapi-krb5-2{a} libgtk-3-0{a} libgtk-3-common{a} libharfbuzz0b{a} libhogweed6{a} libhtml-parser-perl{a} libhtml-tagset-perl{a} libhtml-tree-perl{a} libhttp-cookies-perl{a} libhttp-date-perl{a} libhttp-message-perl{a} libhttp-negotiate-perl{a} libice6{a} libicu72{a} libidn2-0{a} libio-html-perl{a} libio-socket-ssl-perl{a} libip4tc2{a} libjbig0{a} libjpeg62-turbo{a} libjson-c5{a} libk5crypto3{a} libkeyutils1{a} libkmod2{a} libkrb5-3{a} libkrb5support0{a} liblcms2-2{a} liblerc4{a} liblwp-mediatypes-perl{a} liblwp-protocol-https-perl{a} liblz4-1{a} liblzma5{a} libmd0{a} libmount1{a} libncursesw6{a} libnet-http-perl{a} libnet-ssleay-perl{a} libnettle8{a} libnumber-compare-perl{a} libp11-kit0{a} libpam-modules{a} libpam-modules-bin{a} libpam-runtime{a} libpam-systemd{a} libpam0g{a} libpango-1.0-0{a} libpangocairo-1.0-0{a} libpangoft2-1.0-0{a} libpcre2-8-0{a} libperl5.36{a} libpixman-1-0{a} libpng16-16{a} libproc2-0{a} libregexp-ipv6-perl{a} libseccomp2{a} libselinux1{a} libsemanage-common{a} libsemanage2{a} libsepol2{a} libsm6{a} libsmartcols1{a} libssl3{a} libstdc++6{a} libsystemd-shared{a} libsystemd0{a} libtasn1-6{a} libtext-glob-perl{a} libthai-data{a} libthai0{a} libtiff6{a} libtimedate-perl{a} libtinfo6{a} libtry-tiny-perl{a} libudev1{a} libunistring2{a} liburi-perl{a} libuuid1{a} li</system_output>
+  <system_output timestamp="1870.810215">bwayland-client0{a} libwayland-cursor0{a} libwayland-egl1{a} libwebp7{a} libwww-perl{a} libwww-robotrules-perl{a} libx11-6{a} libx11-data{a} libxau6{a} libxcb-render0{a} libxcb-shm0{a} libxcb1{a} libxcomposite1{a} libxcursor1{a} libxdamage1{a} libxdmcp6{a} libxext6{a} libxfixes3{a} libxft2{a} libxi6{a} libxinerama1{a} libxkbcommon0{a} libxml2{a} libxrandr2{a} libxrender1{a} libxt6{a} libxxf86vm1{a} libzstd1{a} lsb-base{a} mount{a} netbase{a} openssl{a} passwd{a} perl{a} perl-base{a} perl-modules-5.36{a} perl-openssl-defaults{a} procps{a} shared-mime-info{a} systemd{a} systemd-sysv{a} sysvinit-utils{a} tar{a} usrmerge{a} x11-common{a} xkb-data{a} xscreensaver xscreensaver-data{a} zlib1g{a}
+The following packages are RECOMMENDED but will NOT be installed:
+Th
+apt-utils at-spi2-core chrony debconf-i18n fonts-urw-base35 krb5-locales libdata-dump-perl libgdk-pixbuf2.0-bin libglib2.0-data libgpg-error-l10n libgpm2 libgtk-3-bin libhtml-form-perl libhtml-format-perl libhttp-daemon-perl libjpeg-turbo-progs libmailtools-perl libnss-systemd librsvg2-common miscfiles ntpsec openntpd psmisc sensible-utils systemd-timesyncd uuid-runtime wamerican wamerican-huge wamerican-insane wamerican-large wamerican-small wbrazilian wbritish wbritish-huge wbritish-insane wbritish-large wbritish-small wbulgarian wcanadian wcanadian-huge wcanadian-insane wcanadian-large wcanadian-small wcatalan wdanish wdutch wesperanto wfaroese wfrench wgalician-minimos wgerman-medical witalian wngerman wnorwegian wogerman wpolish wportuguese wspanish wswedish wswiss wukrainian xdg-user-dirs xfonts-100dpi
+0 packages upgraded, 201 newly installed, 0 to remove and 0 not upgraded.
+Need to get 823 kB/77.5 MB of archives. After unpacking 299 MB will be used.
+Writing extended state information...
+Get: 1 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 xscreensaver-data i386 6.06+dfsg1-3+deb12u1 [379 kB]
+Get: 2 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 xscreensaver i386 6.06+dfsg1-3+deb12u1 [445 kB]
+Fetched 823 kB in 1s (1,020 kB/s)
+Calling reprepro
+Exporting indices...
+/usr/bin/fai-mirror finished.
+Number of packages in the mirror: 2230
+Mirror size and location: 1.5G  /usr/fai/mirror
+Copying the nfsroot to CD image
+Copying the config space to CD image
+Copying the mirror to CD image
+Parallel mksquashfs: Using 4 processors
+Creating 4.0 filesystem on /home/tmp/fai-cd.A904n9/LiveOS/squashfs.img, block size 131072.
+[===========================================================\] 22019/22019 100%
+
+Exportable Squashfs 4.0 filesystem, zstd compressed, data block size 131072[67D
+compressed data, compressed metadata, compressed fragments,[59D
+compressed xattrs, compressed ids[33D
+duplicates are removed
+Filesystem size 1886403.10 Kbytes (1842.19 Mbytes)[42D
+66.93% of uncompressed filesystem size (2818445.72 Kbytes)
+Inode table size 21521 bytes (21.02 Kbytes)[35D
+24.40% of uncompressed inode table size (88218 bytes)
+Directory table size 56 bytes (0.05 Kbytes)[35D
+96.55% of uncompressed directory table size (58 bytes)
+Number of duplicate files found 0
+Number of inodes 3
+Number of files 1
+Number of fragments 0
+Number of symbolic links 0
+Number of device nodes 0
+Number of fifo nodes 0
+Number of socket nodes 0
+Number of directories 2
+Number of hard-links 0
+Number of ids (unique uids + gids) 1
+Number of uids 1[8D
+root (0)
+Number of gids 1[8D
+root (0)
+mkfs.fat 4.2 (2021-01-31)
+Writing FAI CD-ROM image to fai_cd.iso. This may need some time.
+xorriso 1.5.4 : RockRidge filesystem manipulator, libburnia project.
+
+ISO image size and filename: 1.9G[7Cfai_cd.iso
+
+real[4C34m47.030s
+user[4C14m4.979s
+sys[5C2m35.336s
+demo@faiserver:/home/fai$ scp fai_cd.iso demo@172.16.0.1:/disk1/isos/fai_dvd-`date +%Y%m%d`-2.iso
+The authenticity of host '172.16.0.1 (172.16.0.1)' can't be established.
+ED25519 key fingerprint is SHA256:93uUBMNloDj0vGdELz8x12HmojpeGShCAY+2QqmbFws.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added </system_output>
+  <system_output timestamp="1870.810288">'172.16.0.1' (ED25519) to the list of known hosts.
+demo@172.16.0.1's password:
+fai_cd.iso[195C100% 1894MB  26.7MB/s   01:11
+demo@faiserver:/home/fai$]0;]0;screen[?2004h </system_output>
+  <user_input timestamp="1871.348383"/>
+  <user_input timestamp="1871.781498">2</user_input>
+  <system_output timestamp="1871.784232">]0;]0;screen[?2004l[H[2J]2;screen[32m[    0.916645] [39mio scheduler mq-deadline registered
+[32m[    0.919042] [33mshpchp: [39mStandard Hot Plug PCI Controller Driver version: 0.4
+[32m[    0.919836] [33misapnp: [39mScanning for PnP cards...
+[32m[    1.287602] [33misapnp: [39mNo Plug &amp; Play device found
+[32m[    1.287868] [33mSerial: [39m8250/16550 driver, 4 ports, IRQ sharing enabled
+[32m[    1.288426] [33m00:04: [39mttyS0 at I/O 0x3f8 (irq = 4, base_baud = 115200) is a 16550A
+[32m[    1.289256] [39mLinux agpgart interface v0.103
+[32m[    1.290054] [33mi8042: [39mPNP: PS/2 Controller [PNP0303:KBD,PNP0f13:MOU] at 0x60,0x64 irq 1,12
+[32m[    1.291109] [33mserio: [39mi8042 KBD port at 0x60,0x64 irq 1
+[32m[    1.291123] [33mserio: [39mi8042 AUX port at 0x60,0x64 irq 12
+[32m[    1.291534] [33mmousedev: [39mPS/2 mouse device common for all mice
+[32m[    1.291639] [33mrtc_cmos 00:05: [39mRTC can wake from S4
+[32m[    1.292902] [33minput: [39mAT Translated Set 2 keyboard as /devices/platform/i8042/serio0/input/input0
+[32m[    1.293327] [33mrtc_cmos 00:05: [39mregistered as rtc0
+[32m[    1.293507] [33mrtc_cmos 00:05: [39msetting system clock to 2024-07-25T21:08:06 UTC (1721941686)
+[32m[    1.293656] [</system_output>
+  <system_output timestamp="1871.784326">33mrtc_cmos 00:05: [39malarms up to one day, y3k, 242 bytes nvram, hpet irqs
+[32m[    1.293866] [33mledtrig-cpu: [39mregistered to indicate activity on CPUs
+[32m[    1.294277] [33mNET: [39mRegistered PF_INET6 protocol family
+[32m[    1.300349] [39mSegment Routing with IPv6
+[32m[    1.300380] [39mIn-situ OAM (IOAM) with IPv6
+[32m[    1.300418] [33mmip6: [39mMobile IPv6
+[32m[    1.300433] [33mNET: [39mRegistered PF_PACKET protocol family
+[32m[    1.300577] [33mmpls_gso: [39mMPLS GSO support
+[32m[    1.301085] [33mIPI shorthand broadcast: [39menabled
+[32m[    1.301401] [39mregistered taskstats version 1
+[32m[    1.301425] [39mLoading compiled-in X.509 certificates
+[32m[    1.379013] [33mLoaded X.509 cert 'Debian Secure Boot CA: [39m6ccece7e4c6c0d1f6149f3dd27dfcc5cbb419ea1'
+[32m[    1.379048] [33mLoaded X.509 cert 'Debian Secure Boot Signer 2022 - linux: [39m14011249c2675ea8e5148542202005810584b25f'
+[32m[    1.379901] [33mzswap: [39mloaded using pool lzo/zbud
+[32m[    1.380358] [39mKey type .fscrypt registered
+[32m[    1.380361] [39mKey type fscrypt-provisioning registered
+[32m[    1.385663] [39mKey type encrypted registered
+[32m[    1.385671] [33mAppArmor: [39mAppArmor sha1 policy hashing enabled
+[32m[    1.385696] [33mima: [39mNo TPM chip found, activating TPM-bypass!
+[32m[    1.385698] [33mima: [39mAllocated hash algorithm: sha256
+[32m[    1.385722] [33mima: [39mNo architecture policies found
+[32m[    1.385753] [33mevm: [39mInitialisin</system_output>
+  <system_output timestamp="1871.784481">g EVM extended attributes:
+[32m[    1.385755] [33mevm: [39msecurity.selinux
+[32m[    1.385756] [33mevm: [39msecurity.SMACK64 (disabled)
+[32m[    1.385758] [33mevm: [39msecurity.SMACK64EXEC (disabled)
+[32m[    1.385759] [33mevm: [39msecurity.SMACK64TRANSMUTE (disabled)
+[32m[    1.385760] [33mevm: [39msecurity.SMACK64MMAP (disabled)
+[32m[    1.385761] [33mevm: [39msecurity.apparmor
+[32m[    1.385762] [33mevm: [39msecurity.ima
+[32m[    1.385764] [33mevm: [39msecurity.capability
+[32m[    1.385765] [33mevm: [39mHMAC attrs: 0x1
+[32m[    1.807440] [1m[39mUnstable clock detected, switching default tracing clock to "global"
+               If you want to keep using the local clock, then add:
+                 "trace_clock=local"
+               on the kernel command line
+[0m[32m[    1.807551] [33mclk: [39mDisabling unused clocks
+[32m[    1.809685] [33mFreeing unused kernel image (initmem) memory: [39m920K
+[32m[    1.809737] [33mWrite protecting kernel text and read-only data: [39m12540k
+[32m[    1.809741] [33mNX-protecting the kernel data: [39m7012k
+[32m[    1.810660] [33mx86/mm: [39mChecked W+X mappings: passed, no W+X pages found.
+[32m[    1.810671] [39mRun /init as init process
+[32m[    1.810674] [2C[39mwith arguments:
+[32m[    1.810676] [4C[39m/init
+[32m[    1.810677] [2C[39mwith environment:
+[32m[    1.810679] [4C[39mHOME=/
+[32m[    1.810680] [4C[39mTERM=linux
+[32m[    1.810681] [4C[39mBOOT_IMAGE=/vmlinuz-6.1.0-22-686-pae
+[32m</system_output>
+  <system_output timestamp="1871.78472">[    1.909084] [33mpiix4_smbus 0000:00:01.3: [39mSMBus Host Controller at 0x700, revision 0
+[32m[    1.915791] [33mFloppy drive(s): [39mfd0 is 2.88M AMI BIOS
+[32m[    1.917915] [33m8139cp: [39m8139cp: 10/100 PCI Ethernet driver v1.3 (Mar 22, 2004)
+[32m[    1.927044] [33minput: [39mVirtualPS/2 VMware VMMouse as /devices/platform/i8042/serio1/input/input3
+[32m[    1.929030] [33minput: [39mVirtualPS/2 VMware VMMouse as /devices/platform/i8042/serio1/input/input2
+[32m[    1.935723] [39mSCSI subsystem initialized
+[32m[    1.936546] [39mFDC 0 is a S82078B
+[32m[    1.956777] [33mACPI: [39m\_SB_.LNKC: Enabled at IRQ 11
+[32m[    1.962130] [33m8139cp 0000:00:03.0 eth0: [39mRTL-8139C+ at 0x(ptrval), 52:54:00:12:35:13, IRQ 11
+[32m[    1.964106] [39mlibata version 3.00 loaded.
+[32m[    1.966490] [33m8139too: [39m8139too Fast Ethernet driver 0.9.28
+[32m[    1.967911] [33mata_piix 0000:00:01.1: [39mversion 2.13
+[32m[    1.969795] [33mscsi host0: [39mata_piix
+[32m[    1.970091] [33mscsi host1: [39mata_piix
+[32m[    1.970183] [33mata1: [39mPATA max MWDMA2 cmd 0x1f0 ctl 0x3f6 bmdma 0xc100 irq 14
+[32m[    1.970188] [33mata2: [39mPATA max MWDMA2 cmd 0x170 ctl 0x376 bmdma 0xc108 irq 15
+[32m[    1.991319] [33m8139cp 0000:00:03.0 ens3: [39mrenamed from eth0
+[32m[    2.127520] [33mata2: [39mfound unknown device (class 0)
+[32m[    2.128316] [33mata2.00: [39mATAPI: QEMU DVD-ROM, 2.5+, max UDMA/100
+[32m[    2.132262] [33mata1.00: [39mATA-7: QEMU HARDDISK, 2.5+, max UDMA/100
+[32m[    2.132266] [33mata1.00: [39m29073408 sectors, multi 16: LBA48
+[32m[    2.132272] [33mata1.01: [39mATAPI: QEMU DVD-ROM, 2.5+, max UDMA/100
+[32m[    2.134475] [33mscsi 0:0:0:0: [39mDirect-Access[5CATA[6CQEMU HARDDISK[4C2.5+ PQ: 0 ANSI: 5
+[32m[    2.136372] [33mscsi 0:0:1:0: [39mCD-ROM[12CQEMU[5CQEMU DVD-ROM[5C2.5+ PQ: 0 ANSI: 5
+[32m[    2.184821] [33mscsi 1:0:0:0: [39mCD-ROM[12CQEMU[5CQEMU DVD-ROM[5C2.5+ PQ: 0 ANSI: 5
+[32m[    2.251961] [33msr 0:0:1:0: [39m[sr0] scsi3-mmc drive: 4x/4x cd/rw xa/form2 tray
+[32m[    2.251968] [33mcdrom: [39mUniform CD-ROM driver Revision: 3.20
+[32m[    2.316484] [33msd 0:0:0:0: [39m[sda] 29073408 512-byte logical blocks: (14.9 GB/13.9 GiB)
+[32m[    2.316552] [33msd 0:0:0:0: [39m[sda] Write Protect is off
+[32m[    2.316557] [33msd 0:0:0:0: [39m[sda] Mode Sense: 00 3a 00 00
+[32m[    2.316652] [33msd 0:0:0:0: [39m[sda] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+[32m[    2.316776] [33msr 0:0:1:0: [39mAttached scsi CD-ROM sr0
+[32m[    2.316789] [33msd 0:0:0:0: [39m[sda] Preferred minimum I/O size 512 bytes
+[32m[    2.318617] [33m sda: [39msda1 sda2 sda3
+[32m[    2.319046] [33msd 0:0:0:0: [39m[sda] Attached SCSI disk
+[32m[    2.380362] [33msr 1:0:0:0: [39m[sr1] scsi3-mmc drive: 4x/4x cd/rw xa/form2 tray
+[32m[    2.444374] [33msr 1:0:0:0: [39mAttached scsi CD-ROM sr1
+[32m[    3.157462] [33mEXT4-fs (sda2): [39mmounted filesystem with ordered data mode. Quota mode: none.
+[32m[    3.261727] [39mNot activating Mandatory Access Control as /sbin/tomoyo-init does not exist.
+[32m[    3.873617] [33msystemd[1]: [39mInserted module 'autofs4'
+[32m[    3.990370] [33msystemd[1]: [39msystemd 252.26-1~deb12u2 running in </system_output>
+  <system_output timestamp="1871.785187">system mode (+PAM +AUDIT +SELINUX +APPARMOR +IMA +SMACK +SECCOMP +GCRYPT -GNUTLS +OPENSSL +ACL +BLKID +CURL +ELFUTILS +FIDO2 +IDN2 -IDN +IPTC +KMOD +LIBCRYPTSETUP +LIBFDISK +PCRE2 -PWQUALITY +P11KIT +QRENCODE +TPM2 +BZIP2 +LZ4 +XZ +ZLIB +ZSTD -BPF_FRAMEWORK -XKBCOMMON +UTMP +SYSVINIT default-hierarchy=unified)
+[32m[    3.990380] [33msystemd[1]: [39mDetected virtualization kvm.
+[32m[    3.990387] [33msystemd[1]: [39mDetected architecture x86.
+[32m[    4.024575] [33msystemd[1]: [39mHostname set to &lt;faiserver&gt;.
+[32m[    4.061297] [33msystemd[1]: [39mInitializing machine ID from random generator.
+[32m[    4.061421] [33msystemd[1]: [39mInstalled transient /etc/machine-id file.
+[32m[    4.530604] [33msystemd[1]: [39mQueued start job for default target graphical.target.
+[32m[    4.560575] [33msystemd[1]: [39mCreated slice system-getty.slice - Slice /system/getty.
+[32m[    4.561109] [33msystemd[1]: [39mCreated slice system-modprobe.slice - Slice /system/modprobe.
+[32m[    4.561622] [33msystemd[1]: [39mCreated slice system-systemd\x2dfsck.slice - Slice /system/systemd-fsck.
+[32m[    4.561745] [33msystemd[1]: [39mStarted systemd-ask-password-console.path - Dispatch Password Requests to Console Directory Watch.
+[32m[    4.561834] [33msystemd[1]: [39mStarted systemd-ask-password-wall.path - Forward Password Requests to Wall Directory Watch.
+[32m[    4.562118] [33msystemd[1]: [39mSet up automount proc-sys-fs-binfmt_misc.automount - Arbitrary Executable File Formats File System Automount Point.
+[32m[    4.562163] [33msystemd[1]: [39mExpecting device dev-sda1.device - /dev/sda1...
+[32m[    4.562195] [33msystemd[1]: [39mExpecting device dev-sda3.device - /dev/sda3...
+[32m[    4.562233] [33msystemd[1]: [39mReached target cryptsetup.target - Local Encrypted Volumes.
+[32m[    4.562288] [33msystemd[1]: [39mReached target integritysetup.target - Local Integrity Protected Volumes.
+[32m[    4.562344] [33msystemd[1]: [39mReached target remote-fs.target - Remote File Systems.
+[32m[    4.562383] [33msystemd[1]: [39mReached target slices.target - Slice Units.
+[32m[    4.562426] [33msystemd[1]: [39mReached target swap.target - Swaps.
+[32m[    4.562477] [33msystemd[1]: [39mReached target veritysetup.target - Local Verity Protected Volumes.
+[32m[    4.562721] [33msystemd[1]: [39mListening on systemd-fsckd.socket - fsck to fsckd communication Socket.
+[32m[    4.562854] [33msystemd[1]: [39mListening on systemd-initctl.socket - initctl Compatibility Named Pipe.</system_output>
+  <system_output timestamp="1871.7856">
+[32m[    4.563481] [33msystemd[1]: [39mListening on systemd-journald-audit.socket - Journal Audit Socket.
+[32m[    4.563693] [33msystemd[1]: [39mListening on systemd-journald-dev-log.socket - Journal Socket (/dev/log).
+[32m[    4.563895] [33msystemd[1]: [39mListening on systemd-journald.socket - Journal Socket.
+[32m[    4.564148] [33msystemd[1]: [39mListening on systemd-udevd-control.socket - udev Control Socket.
+[32m[    4.564315] [33msystemd[1]: [39mListening on systemd-udevd-kernel.socket - udev Kernel Socket.
+[32m[    4.565559] [33msystemd[1]: [39mMounting dev-hugepages.mount - Huge Pages File System...
+[32m[    4.566987] [33msystemd[1]: [39mMounting dev-mqueue.mount - POSIX Message Queue File System...
+[32m[    4.568359] [33msystemd[1]: [39mMounting sys-kernel-debug.mount - Kernel Debug File System...
+[32m[    4.569533] [33msystemd[1]: [39mMounting sys-kernel-tracing.mount - Kernel Trace File System...
+[32m[    4.571035] [33msystemd[1]: [39mStarting kmod-static-nodes.service - Create List of Static Device Nodes...
+[32m[    4.572402] [33msystemd[1]: [39mStarting modprobe@configfs.service - Load Kernel Module configfs...
+[32m[    4.574009] [33msystemd[1]: [39mStarting modprobe@dm_mod.service - Load Kernel Module dm_mod...
+[32m[    4.575704] [33msystemd[1]: [39mStarting modprobe@efi_pstore.service - Load Kernel Module efi_pstore...
+[32m[    4.577076] [33msystemd[1]: [39mStarting modprobe@fuse.service - Load Kernel Module fuse...
+[32m[    4.578703] [33msystemd[1]: [39mStarting modprobe@loop.service - Load Kernel Module loop...
+[32m[    4.578922] [33msystemd[1]: [39msystemd-fsck-root.service - File System Check on Root Device was skipped because of an unmet condition check (ConditionPathExists=!/run/initramfs/fsck-root).
+[32m[    4.582379] [33msystemd[1]: [39mStarting systemd-journald.service - Journal Service...
+[32m[    4.608731] [33mloop: [39mmodule loaded
+[32m[    4.659733] [33msystemd[1]: [39mStarting systemd-modules-load.service - Load Kernel Modules...
+[32m[    4.661494] [33msystemd[1]: [39mStarting systemd-remount-fs.service - Remount Root and Kernel File Systems...
+[32m[    4.663725] [33msystemd[1]: [39mStarting systemd-udev-trigger.service - Coldplug All udev Devices...
+[32m[    4.666239] [33msystemd[1]: [39mFinished kmod-static-nodes.service - Create List of Static Device Nodes.
+[32m[    4.666921] [33msystemd[1]: [39mmodprobe@configfs.service: Deactivated successfully.
+[32m[    4.667207] [33msystemd[1]: [39mFinished modprobe@configfs.service - Load Kernel Module configfs.
+[32m[    4.667834] [33msystemd[1]: [39mmodprobe@efi_pstore.service: Deactivated successfully.
+[32m[    4.668061] [33msystemd[1]: [39mFinished modprobe@efi_pstore.service - Load Kernel Module efi_pstore.
+[32m[    4.668535] [33msystemd[1]: [39mmodprobe@loop.service: Deactivated successfully.
+[32m[    4.668740] [33msystemd[1]: [39mFinished modprobe@loop.service - Load Kernel Module loop.
+[32m[    4.670692] [33msystemd[1]: [39mMounting sys-kernel-config.mount - Kernel Configuration File System...
+[32m[    4.699040] [33msystemd[1]: [39mFinished systemd-modules-load.service - Load Kernel Modules.
+[32m[    4.700578] [33msystemd[1]: [39mStarting systemd-sysctl.service - Apply Kernel Variables...
+[32m[    4.703385] [33mfuse: [39minit (API version 7.37)
+[32m[    4.705030] [33msystemd[1]: [39mmodprobe@fuse.service: Deactivated successfully.
+[32m[    4.705282] [33msystemd[1]: [39mFinished modprobe@fuse.service - Load Kernel Module fuse.
+[32m[    4.708590] [33msystemd[1]: [39mMounting sys-fs-fuse-connections.mount - FUSE Control File System...
+[32m[    4.773520] [33msystemd[1]: [39mStarted systemd-journald.service - Journal Service.
+[32m[    4.790899] [33mdevice-mapper: [1m[39mcore: CONFIG_IMA_DISABLE_HTABLE is disabled. Duplicate IMA measurements will not be recorded in the IMA log.
+[0m[32m[    4.790958] [33mdevice-mapper: [39muevent: version 1.0.3
+[32m[    4.791245] [33mdevice-mapper: [39mioctl: </system_output>
+  <system_output timestamp="1871.785852">4.47.0-ioctl (2022-07-28) initialised: dm-devel@redhat.com
+[32m[    4.993713] [33mEXT4-fs (sda2): [39mre-mounted. Quota mode: none.
+[32m[    5.125717] [33msystemd-journald[212]: [39mReceived client request to flush runtime journal.
+[32m[    5.607229] [33mrandom: [39mcrng init done
+[32m[    5.853070] [33minput: [39mPC Speaker as /devices/platform/pcspkr/input/input4
+[32m[    5.859120] [33minput: [39mPower Button as /devices/LNXSYSTM:00/LNXPWRBN:00/input/input5
+[32m[    5.867653] [33msd 0:0:0:0: [39mAttached scsi generic sg0 type 0
+[32m[    5.868059] [33msr 0:0:1:0: [39mAttached scsi generic sg1 type 5
+[32m[    5.868232] [33msr 1:0:0:0: [39mAttached scsi generic sg2 type 5
+[32m[    5.870393] [33mparport_pc 00:03: [39mreported by Plug and Play ACPI
+[32m[    5.870776] [33mparport0: [39mPC-style at 0x378, irq 7 [PCSPP,TRISTATE]
+[32m[    5.875349] [33mACPI: [39mbutton: Power Button [PWRF]
+[32m[    6.177986] [33mpowernow_k8: [39mPower state transitions not supported
+[32m[    6.178024] [33mpowernow_k8: [39mPower state transitions not supported
+[32m[    6.178035] [33mpowernow_k8: [39mPower state transitions not supported
+[32m[    6.178070] [33mpowernow_k8: [39mPower state transitions not supported
+[32m[    6.251345] [33mppdev: [39muser-space parallel port driver
+[32m[    6.363990] [33mEXT4-fs (sda1): [39mmounting ext2 file system using the ext4 subsystem
+[32m[    6.370732] [33mEXT4-fs (sda1): [39mmounted filesystem without journal. Quota mode: none.
+[32m[    6.381547] [33mEXT4-fs (sda3): [39mmounted filesystem with ordered data mode. Quota mode: none.
+[32m[    6.986732] [33maudit: [39mtype=1400 audit(1721941692.188:2): apparmor="STATUS" operation="profile_load" profile="unconfined" name="nvidia_modprobe" pid=288 comm="apparmor_parser"
+[32m[    6.989717] [33maudit: [39mtype=1400 audit(1721941692.192:3): apparmor="STATUS" operation="profile_load" profile="unconfined" name="nvidia_modprobe//kmod" pid=288 comm="apparmor_parser"
+[32m[    7.135061] [33maudit: [39mtype=1400 audit(1721941692.336:4): apparmor="STATUS" operation="profile_load" profile="unconfined" name="lsb_release" pid=287 comm="apparmor_parser"
+[32m[    7.230218] [33maudit: [39mtype=1400 audit(1721941692.432:5): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/bin/man" pid=290 comm="apparmor_parser"
+[32m[    7.231824] [33maudit: [39mtype=1400 audit(1721941692.436:6): apparmor="STATUS" operation="profile_load" profile="unconfined" name="man_filter" pid=290 comm="apparmor_parser"
+[32m[    7.234087] [33maudit: [39mtype=1400 audit(1721941692.436:7): apparmor="STATUS" operation="profile_load" profile="unconfined" name="man_groff" pid=290 comm="apparmor_parser"
+[32m[    7.395705] [33maudit: [39mtype=1400 audit(1721941692.600:8): apparmor="STATUS" operation="profile_load" profile="unconfined" name="tcpdump" pid=291 comm="apparmor_parser"
+[32m[    7.509082] [33maudit: [39mtype=1400 audit(1721941692.712:9): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/NetworkManager/nm-dhcp-client.action" pid=289 comm="apparmor_parser"
+[32m[    7.510826] [33maudit: [39mtype=1400 audit(1721941692.712:10): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/NetworkManager/nm-dhcp-helper" pid=289 comm="apparmor_parser"
+[32m[    7.512397] [33maudit: [39mtype=1400 audit(1721941692.716:11): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/connman/scripts/dhclient-script" pid=289 comm="apparmor_parser"
+[32m[    8.084242] [33m8139cp 0000:00:03.0 ens3: [39mlink up, 100Mbps, full-duplex, lpa 0x05E1
+demo@faiserver:~$]0;]0;screen[?2004h </system_output>
+  <user_input timestamp="1873.003275"/>
+  <user_input timestamp="1873.795558">0</user_input>
+  <system_output timestamp="1873.796373">]0;[?2004l[H[2J]2;screen[7mFile Edit Options Buffers Tools Help                                                                                                                                                                                                           
+[27mPACKAGES aptitude
+isc-dhcp-client tcpdump deborphan
+emacs-nox
+screen
+busybox
+console-common
+cron
+debconf-utils
+file
+less
+lynx
+links
+linuxlogo
+locales
+nscd
+ntpsec-ntpdate
+openssh-client
+openssh-server
+rsync
+strace
+time
+
+# for ssh X11 forwarding
+xauth
+[170B[7m-UU-:----F1  [1mFAIBASE     [27m[0m[7m   All L17   Git:master  (Fundamental) ----------------------------------------------------------------------------------------------------------------------------</system_output>
+  <system_output timestamp="1873.796448">---------------------------------------------------
+[27mdemo@faiserver:/home/fai$[?2004h </system_output>
+<annotation>
+</annotation>
+</event>
+<event depth="-2">
+  <user_input timestamp="1877.039296">g</user_input>
+  <system_output timestamp="1877.040508">g</system_output>
+  <user_input timestamp="1877.178257">i</user_input>
+  <system_output timestamp="1877.194446">i</system_output>
+  <user_input timestamp="1877.479125">t</user_input>
+  <system_output timestamp="1877.498591">t</system_output>
+  <user_input timestamp="1877.598598"> </user_input>
+  <system_output timestamp="1877.61521"> </system_output>
+  <user_input timestamp="1878.035658"></user_input>
+  <system_output timestamp="1878.037558">[K</system_output>
+  <user_input timestamp="1878.233695"></user_input>
+  <system_output timestamp="1878.250464">[K</system_output>
+  <user_input timestamp="1878.41114"></user_input>
+  <system_output timestamp="1878.423969">[K</system_output>
+  <user_input timestamp="1878.590515"></user_input>
+  <system_output timestamp="1878.597945">[K</system_output>
+  <user_input timestamp="1878.731306"></user_input>
+  <system_output timestamp="1878.832765">[?5h[?5l</system_output>
+  <user_input timestamp="1878.990198">c</user_input>
+  <system_output timestamp="1879.000366">c</system_output>
+  <user_input timestamp="1879.173627">o</user_input>
+  <system_output timestamp="1879.19191">o</system_output>
+  <user_input timestamp="1879.436571"></user_input>
+  <system_output timestamp="1879.438471">[K</system_output>
+  <user_input timestamp="1879.694767">d</user_input>
+  <system_output timestamp="1879.702781">d</system_output>
+  <user_input timestamp="1879.831634"> </user_input>
+  <system_output timestamp="1879.836858"> </system_output>
+  <user_input timestamp="1880.07032">c</user_input>
+  <system_output timestamp="1880.08335">c</system_output>
+  <user_input timestamp="1880.229152">o</user_input>
+  <system_output timestamp="1880.239434">o</system_output>
+  <user_input timestamp="1880.485552">	</user_input>
+  <system_output timestamp="1880.492259">nfig/</system_output>
+  <user_input timestamp="1880.900433">
+</user_input>
+  <system_output timestamp="1880.909124">
+[?2004l</system_output>
+  <system_output timestamp="1880.909578">[?2004hdemo@faiserver:/home/fai/config$ </system_output>
+  <user_input timestamp="1881.858964">g</user_input>
+  <system_output timestamp="1881.87053">g</system_output>
+  <user_input timestamp="1881.998535">i</user_input>
+  <system_output timestamp="1882.00679">i</system_output>
+  <user_input timestamp="1882.282042">t</user_input>
+  <system_output timestamp="1882.29674">t</system_output>
+  <user_input timestamp="1882.441759"> </user_input>
+  <system_output timestamp="1882.451216"> </system_output>
+  <user_input timestamp="1882.621831">s</user_input>
+  <system_output timestamp="1882.6261">s</system_output>
+  <user_input timestamp="1882.842863">t</user_input>
+  <system_output timestamp="1882.854521">t</system_output>
+  <user_input timestamp="1882.963276">a</user_input>
+  <system_output timestamp="1882.969508">a</system_output>
+  <user_input timestamp="1883.120132">t</user_input>
+  <system_output timestamp="1883.124642">t</system_output>
+  <user_input timestamp="1883.221993">u</user_input>
+  <system_output timestamp="1883.23865">u</system_output>
+  <user_input timestamp="1883.424279">s</user_input>
+  <system_output timestamp="1883.430283">s</system_output>
+  <user_input timestamp="1883.66331">
+</user_input>
+  <system_output timestamp="1883.680298">
+[?2004l</system_output>
+  <system_output timestamp="1883.68265">fatal: detected dubious ownership in repository at '/home/fai/config'
+To add an exception for this directory, call:
+
+[8Cgit config --global --add safe.directory /home/fai/config
+</system_output>
+  <system_output timestamp="1883.683084">[?2004hdemo@faiserver:/home/fai/config$ </system_output>
+<annotation>
+</annotation>
+</event>
+<event depth="-2">
+  <user_input timestamp="1900.531341">l</user_input>
+  <system_output timestamp="1900.532713">l</system_output>
+  <user_input timestamp="1900.830729">s</user_input>
+  <system_output timestamp="1900.844434">s</system_output>
+  <user_input timestamp="1901.953126"> </user_input>
+  <system_output timestamp="1901.971859"> </system_output>
+  <user_input timestamp="1902.072081">-</user_input>
+  <system_output timestamp="1902.088271">-</system_output>
+  <user_input timestamp="1902.4116">l</user_input>
+  <system_output timestamp="1902.416283">l</system_output>
+  <user_input timestamp="1902.471309">a</user_input>
+  <system_output timestamp="1902.474471">a</system_output>
+  <user_input timestamp="1902.752865">
+</user_input>
+  <system_output timestamp="1902.769736">
+[?2004l</system_output>
+  <system_output timestamp="1902.836574">total 44
+dr-xr-xr-x 10 root root 4096 Apr 13  2017 [1m[34m.[0m
+drwxr-xr-x  4 root root 4096 Jul 25 13:10 [1m[34m..[0m
+dr-xr-xr-x  2 root root 4096 Jul 24 14:36 [1m[34mclass[0m
+</system_output>
+  <system_output timestamp="1902.836999">dr-xr-xr-x  2 root root 4096 Oct 20  2012 [1m[34mdebconf[0m
+dr-xr-xr-x  2 root root 4096 May 26 14:08 [1m[34mdisk_config[0m
+dr-xr-xr-x  7 root root 4096 Mar  3  2014 [1m[34mfiles[0m
+dr-xr-xr-x  8 root root 4096 Jul 25 17:55 [1m[34m.git[0m
+-rw-r--r--  1 root root   14 Mar  3  2014 .gitignore
+dr-xr-xr-x  2 root root 4096 Jul 23 11:40 [1m[34mhooks[0m
+dr-xr-xr-x  2 root root 4096 Jul 25 17:55 [1m[34mpackage_config[0m
+dr-xr-xr-x 32 root root 4096 Apr 26  2017 [1m[34mscripts[0m
+</system_output>
+  <system_output timestamp="1902.83761">[?2004hdemo@faiserver:/home/fai/config$ </system_output>
+<annotation>
+</annotation>
+</event>
+<event depth="-2">
+  <user_input timestamp="1910.091112">c</user_input>
+  <system_output timestamp="1910.092336">c</system_output>
+  <user_input timestamp="1912.066053"></user_input>
+  <system_output timestamp="1912.067538">[K</system_output>
+  <user_input timestamp="1914.125689">s</user_input>
+  <system_output timestamp="1914.144226">s</system_output>
+  <user_input timestamp="1914.24916">u</user_input>
+  <system_output timestamp="1914.270087">u</system_output>
+  <user_input timestamp="1914.453348">d</user_input>
+  <system_output timestamp="1914.456429">d</system_output>
+  <user_input timestamp="1914.53565">o</user_input>
+  <system_output timestamp="1914.541446">o</system_output>
+  <user_input timestamp="1914.660783"> </user_input>
+  <system_output timestamp="1914.665082"> </system_output>
+  <user_input timestamp="2190.939817">r</user_input>
+  <system_output timestamp="2190.941268">r</system_output>
+  <user_input timestamp="2191.210999">s</user_input>
+  <system_output timestamp="2191.220646">s</system_output>
+  <user_input timestamp="2191.461551">a</user_input>
+  <system_output timestamp="2191.47657">a</system_output>
+  <user_input timestamp="2191.694847">	</user_input>
+  <system_output timestamp="2191.91819">[?5h[?5l</system_output>
+  <user_input timestamp="2192.026483">	</user_input>
+  <system_output timestamp="2192.141976">[?5h[?5l</system_output>
+  <user_input timestamp="2192.707783"></user_input>
+  <system_output timestamp="2192.716107">[K</system_output>
+  <user_input timestamp="2192.93947"></user_input>
+  <system_output timestamp="2192.956369">[K</system_output>
+  <user_input timestamp="2193.113271"></user_input>
+  <system_output timestamp="2193.115643">[K</system_output>
+  <user_input timestamp="2211.363603">s</user_input>
+  <system_output timestamp="2211.365111">s</system_output>
+  <user_input timestamp="2211.601138">s</user_input>
+  <system_output timestamp="2211.6165">s</system_output>
+  <user_input timestamp="2211.800409">h</user_input>
+  <system_output timestamp="2211.808752">h</system_output>
+  <user_input timestamp="2212.137819">-</user_input>
+  <system_output timestamp="2212.147982">-</system_output>
+  <user_input timestamp="2212.555817">k</user_input>
+  <system_output timestamp="2212.572677">k</system_output>
+  <user_input timestamp="2212.811587">e</user_input>
+  <system_output timestamp="2212.824469">e</system_output>
+  <user_input timestamp="2213.144112">y</user_input>
+  <system_output timestamp="2213.1622">y</system_output>
+  <user_input timestamp="2213.499747">g</user_input>
+  <system_output timestamp="2213.501466">g</system_output>
+  <user_input timestamp="2213.640574">e</user_input>
+  <system_output timestamp="2213.649946">e</system_output>
+  <user_input timestamp="2213.955745">n</user_input>
+  <system_output timestamp="2213.967347">n</system_output>
+  <user_input timestamp="2215.342746"> </user_input>
+  <system_output timestamp="2215.355549"> </system_output>
+  <user_input timestamp="2227.260095">[200~ -o -a 100 -t ed25519[201~</user_input>
+  <system_output timestamp="2227.261501">[7m -o -a 100 -t ed25519[27m</system_output>
+  <user_input timestamp="2228.044398">OD</user_input>
+  <system_output timestamp="2228.045803"> -o -a 100 -t ed25519</system_output>
+  <user_input timestamp="2228.701593">OD</user_input>
+  <system_output timestamp="2228.711269"/>
+  <user_input timestamp="2228.764549">OD</user_input>
+  <system_output timestamp="2228.773409"/>
+  <user_input timestamp="2228.785946">OD</user_input>
+  <system_output timestamp="2228.794247"/>
+  <user_input timestamp="2228.829433">OD</user_input>
+  <system_output timestamp="2228.835462"/>
+  <user_input timestamp="2228.873355">OD</user_input>
+  <system_output timestamp="2228.876943"/>
+  <user_input timestamp="2228.9148">OD</user_input>
+  <system_output timestamp="2228.918919"/>
+  <user_input timestamp="2228.958615">OD</user_input>
+  <system_output timestamp="2228.960428"/>
+  <user_input timestamp="2228.97842">OD</user_input>
+  <system_output timestamp="2228.981142"/>
+  <user_input timestamp="2229.276583">OD</user_input>
+  <system_output timestamp="2229.290268"/>
+  <user_input timestamp="2229.697646"></user_input>
+  <system_output timestamp="2229.707667">[P</system_output>
+  <user_input timestamp="2229.949505"></user_input>
+  <system_output timestamp="2229.956946">[P</system_output>
+  <user_input timestamp="2230.143158"></user_input>
+  <system_output timestamp="2230.164117">[P</system_output>
+  <user_input timestamp="2230.352926"></user_input>
+  <system_output timestamp="2230.370969">[P</system_output>
+  <user_input timestamp="2230.544061"></user_input>
+  <system_output timestamp="2230.558405">[P</system_output>
+  <user_input timestamp="2230.754174"></user_input>
+  <system_output timestamp="2230.762877">[P</system_output>
+  <user_input timestamp="2230.947433"></user_input>
+  <system_output timestamp="2230.969635">[P</system_output>
+  <user_input timestamp="2231.539982"></user_input>
+  <system_output timestamp="2231.54826">[P</system_output>
+  <user_input timestamp="2231.792561"></user_input>
+  <system_output timestamp="2231.796934">[P</system_output>
+  <user_input timestamp="2231.984966"></user_input>
+  <system_output timestamp="2232.001725">[P</system_output>
+  <user_input timestamp="2232.19668"></user_input>
+  <system_output timestamp="2232.20908">[P</system_output>
+  <user_input timestamp="2233.255061">
+</user_input>
+  <system_output timestamp="2233.260525">
+[?2004l</system_output>
+  <system_output timestamp="2233.267631">sudo: unable to resolve host faiserver: Name or service not known
+</system_output>
+  <system_output timestamp="2233.269572">[sudo] password for demo: </system_output>
+  <user_input timestamp="2235.067227">f</user_input>
+  <user_input timestamp="2235.126962">a</user_input>
+  <user_input timestamp="2235.185411">i</user_input>
+  <user_input timestamp="2235.380387">
+</user_input>
+  <system_output timestamp="2235.40066">
+</system_output>
+  <system_output timestamp="2235.582092">Generating public/private ed25519 key pair.
+</system_output>
+  <system_output timestamp="2235.589939">Enter file in which to save the key (/root/.ssh/id_ed25519): </system_output>
+  <user_input timestamp="2237.429325">
+</user_input>
+  <system_output timestamp="2237.430951">
+</system_output>
+  <system_output timestamp="2237.4923">Enter passphrase (empty for no passphrase): </system_output>
+  <user_input timestamp="2239.478958">
+</user_input>
+  <system_output timestamp="2239.480703">
+Enter same passphrase again: </system_output>
+  <user_input timestamp="2239.99067">
+</user_input>
+  <system_output timestamp="2240.012942">
+</system_output>
+  <system_output timestamp="2240.035351">Your identification has been saved in /root/.ssh/id_ed25519
+</system_output>
+  <system_output timestamp="2240.035852">Your public key has been saved in /root/.ssh/id_ed25519.pub
+The key fingerprint is:
+SHA256:2oJ7HIScjkYNlroAhtswH32u1rSUCKNSwmLrZZIEPzs root@faiserver
+The key's randomart image is:
++--[ED25519 256]--+
+|=  o             |
+|B*O . .          |
+|*%=B * .         |
+|*++=* *          |
+|+oEo * .S        |
+|..o.+.+o         |
+| . ...o..        |
+|     .o.         |
+|    ..           |
++----[SHA256]-----+
+</system_output>
+  <system_output timestamp="2240.038365">[?2004hdemo@faiserver:/home/fai/config$ </system_output>
+<annotation>
+</annotation>
+</event>
+<event depth="-2">
+  <user_input timestamp="2264.505635">s</user_input>
+  <system_output timestamp="2264.5069">s</system_output>
+  <user_input timestamp="2264.656882">u</user_input>
+  <system_output timestamp="2264.662258">u</system_output>
+  <user_input timestamp="2264.787182">d</user_input>
+  <system_output timestamp="2264.80059">d</system_output>
+  <user_input timestamp="2264.872978">o</user_input>
+  <system_output timestamp="2264.878877">o</system_output>
+  <user_input timestamp="2264.957508"> </user_input>
+  <system_output timestamp="2264.977231"> </system_output>
+  <user_input timestamp="2265.107135">c</user_input>
+  <system_output timestamp="2265.114353">c</system_output>
+  <user_input timestamp="2265.23383">a</user_input>
+  <system_output timestamp="2265.251099">a</system_output>
+  <user_input timestamp="2265.487297">t</user_input>
+  <system_output timestamp="2265.507938">t</system_output>
+  <user_input timestamp="2265.680612"> </user_input>
+  <system_output timestamp="2265.684633"> </system_output>
+  <user_input timestamp="2266.23431">[200~/root/.ssh/id_ed25519.pub[201~</user_input>
+  <system_output timestamp="2266.254292">[7m/root/.ssh/id_ed25519.pub[27m</system_output>
+  <user_input timestamp="2266.635948">
+</user_input>
+  <system_output timestamp="2266.644615">/root/.ssh/id_ed25519.pub
+[?2004l</system_output>
+  <system_output timestamp="2266.649585">sudo: unable to resolve host faiserver: Name or service not known
+</system_output>
+  <system_output timestamp="2266.654011">ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIM0w6go6EkUZXUY9e1xabbVDHooXZEhcLPNFAjPEd1BZ root@faiserver
+</system_output>
+  <system_output timestamp="2266.655482">[?2004hdemo@faiserver:/home/fai/config$ </system_output>
+<annotation>
+</annotation>
+</event>
+</recording>

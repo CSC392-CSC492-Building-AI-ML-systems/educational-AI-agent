@@ -1,0 +1,1030 @@
+<?xml version="1.0" ?>
+<recording version="2" width="319" height="92" timestamp="1728236638">
+<event depth="-2">
+  <system_output timestamp="0.007194">[?2004h</system_output>
+  <system_output timestamp="0.008198">demo@stephost:~$ </system_output>
+  <user_input timestamp="3.27642">s</user_input>
+  <system_output timestamp="3.276863">s</system_output>
+  <user_input timestamp="3.53099">s</user_input>
+  <system_output timestamp="3.5314">s</system_output>
+  <user_input timestamp="3.783855">h</user_input>
+  <system_output timestamp="3.784243">h</system_output>
+  <user_input timestamp="4.040324"> </user_input>
+  <system_output timestamp="4.040832"> </system_output>
+  <user_input timestamp="4.969062">1</user_input>
+  <system_output timestamp="4.969681">1</system_output>
+  <user_input timestamp="5.243021">0</user_input>
+  <system_output timestamp="5.243405">0</system_output>
+  <user_input timestamp="5.496535">.</user_input>
+  <system_output timestamp="5.496902">.</system_output>
+  <user_input timestamp="5.708452">0</user_input>
+  <system_output timestamp="5.708981">0</system_output>
+  <user_input timestamp="5.938425">.</user_input>
+  <system_output timestamp="5.938811">.</system_output>
+  <user_input timestamp="6.511135"></user_input>
+  <system_output timestamp="6.511535">[K</system_output>
+  <user_input timestamp="6.720422"></user_input>
+  <system_output timestamp="6.720946">[K</system_output>
+  <user_input timestamp="6.887976"></user_input>
+  <system_output timestamp="6.888485">[K</system_output>
+  <user_input timestamp="7.060399"></user_input>
+  <system_output timestamp="7.060959">[K</system_output>
+  <user_input timestamp="7.442536">7</user_input>
+  <system_output timestamp="7.442997">7</system_output>
+  <user_input timestamp="7.6758">2</user_input>
+  <system_output timestamp="7.676185">2</system_output>
+  <user_input timestamp="7.991357">.</user_input>
+  <system_output timestamp="7.991757">.</system_output>
+  <user_input timestamp="8.263511">1</user_input>
+  <system_output timestamp="8.26398">1</system_output>
+  <user_input timestamp="8.60073">6</user_input>
+  <system_output timestamp="8.601259">6</system_output>
+  <user_input timestamp="9.044584">.</user_input>
+  <system_output timestamp="9.045007">.</system_output>
+  <user_input timestamp="9.342953">0</user_input>
+  <system_output timestamp="9.343368">0</system_output>
+  <user_input timestamp="9.618447">.</user_input>
+  <system_output timestamp="9.618825">.</system_output>
+  <user_input timestamp="10.336834">1</user_input>
+  <system_output timestamp="10.337591">1</system_output>
+  <user_input timestamp="10.926995">7</user_input>
+  <system_output timestamp="10.92736">7</system_output>
+  <user_input timestamp="11.413112">
+</user_input>
+  <system_output timestamp="11.413543">
+[?2004l
+</system_output>
+  <system_output timestamp="11.754014">
+demo@172.16.0.17's password: </system_output>
+  <user_input timestamp="13.002874">f</user_input>
+  <user_input timestamp="13.085046">a</user_input>
+  <user_input timestamp="13.147985">i</user_input>
+  <user_input timestamp="13.35704">
+</user_input>
+  <system_output timestamp="13.357503">
+</system_output>
+  <system_output timestamp="13.490667">Linux faiserver 6.1.0-22-686-pae #1 SMP PREEMPT_DYNAMIC Debian 6.1.94-1 (2024-06-21) i686
+
+
+Plan your installation, and FAI installs your plan.
+
+Last login: Sun Oct  6 16:51:26 2024 from 172.16.0.1
+
+</system_output>
+  <system_output timestamp="13.640211">[?2004h]0;demo@faiserver: ~demo@faiserver:~$ </system_output>
+<annotation>
+</annotation>
+</event>
+<event depth="-2">
+  <user_input timestamp="21.987222">c</user_input>
+  <system_output timestamp="21.989407">c</system_output>
+  <user_input timestamp="22.208425">d</user_input>
+  <system_output timestamp="22.213483">d</system_output>
+  <user_input timestamp="22.309141"> </user_input>
+  <system_output timestamp="22.31413"> </system_output>
+  <user_input timestamp="22.568401">/</user_input>
+  <system_output timestamp="22.585127">/</system_output>
+  <user_input timestamp="22.915005">h</user_input>
+  <system_output timestamp="22.936477">h</system_output>
+  <user_input timestamp="22.996323">o</user_input>
+  <system_output timestamp="22.998952">o</system_output>
+  <user_input timestamp="23.419145">m</user_input>
+  <system_output timestamp="23.428202">m</system_output>
+  <user_input timestamp="23.60239">e</user_input>
+  <system_output timestamp="23.614747">e</system_output>
+  <user_input timestamp="23.907324">/</user_input>
+  <system_output timestamp="23.927054">/</system_output>
+  <user_input timestamp="24.251554">f</user_input>
+  <system_output timestamp="24.257096">f</system_output>
+  <user_input timestamp="24.352107">a</user_input>
+  <system_output timestamp="24.360621">a</system_output>
+  <user_input timestamp="24.412845">i</user_input>
+  <system_output timestamp="24.422944">i</system_output>
+  <user_input timestamp="24.837692">/</user_input>
+  <system_output timestamp="24.858998">/</system_output>
+  <user_input timestamp="25.307004">oc</user_input>
+  <system_output timestamp="25.326712">oc</system_output>
+  <user_input timestamp="25.667917"></user_input>
+  <system_output timestamp="25.675038">[K</system_output>
+  <user_input timestamp="25.89172"></user_input>
+  <system_output timestamp="25.902169">[K</system_output>
+  <user_input timestamp="26.075435">c</user_input>
+  <system_output timestamp="26.087197">c</system_output>
+  <user_input timestamp="26.176428">o</user_input>
+  <system_output timestamp="26.189346">o</system_output>
+  <user_input timestamp="26.439727">	</user_input>
+  <system_output timestamp="26.469054">nfig/</system_output>
+  <user_input timestamp="26.926652">
+</user_input>
+  <system_output timestamp="26.934323">
+[?2004l
+</system_output>
+  <system_output timestamp="26.935093">[?2004h]0;demo@faiserver: /home/fai/configdemo@faiserver:/home/fai/config$ </system_output>
+<annotation>
+</annotation>
+</event>
+<event depth="-2">
+  <user_input timestamp="37.178971">g</user_input>
+  <system_output timestamp="37.180967">g</system_output>
+  <user_input timestamp="37.313591">i</user_input>
+  <system_output timestamp="37.327151">i</system_output>
+  <user_input timestamp="37.547299">t</user_input>
+  <system_output timestamp="37.55475">t</system_output>
+  <user_input timestamp="37.60511"> </user_input>
+  <system_output timestamp="37.618071"> </system_output>
+  <user_input timestamp="37.837286">d</user_input>
+  <system_output timestamp="37.845263">d</system_output>
+  <user_input timestamp="37.9355">i</user_input>
+  <system_output timestamp="37.948668">i</system_output>
+  <user_input timestamp="38.127813">f</user_input>
+  <system_output timestamp="38.134464">f</system_output>
+  <user_input timestamp="38.302655">f</user_input>
+  <system_output timestamp="38.319416">f</system_output>
+  <user_input timestamp="39.229814">
+</user_input>
+  <system_output timestamp="39.247627">
+[?2004l
+</system_output>
+  <system_output timestamp="39.48792">warning: Not a git repository. Use --no-index to compare two paths outside a working tree
+usage: git diff --no-index [&lt;options&gt;] &lt;path&gt; &lt;path&gt;
+
+Diff output format options
+    -p</system_output>
+  <system_output timestamp="39.488909">, --patch           generate patch
+    -s, --no-patch        suppress diff output
+    -u                    generate patch
+    -U, --unified[=&lt;n&gt;]   generate diffs with &lt;n&gt; lines context
+    -W, --function-context
+                          generate diffs with &lt;n&gt; lines context
+    --raw                 generate the diff in raw format
+    --patch-with-raw      synonym for '-p --raw'
+    --patch-with-stat     synonym for '-p --stat'
+    --numstat             machine friendly --stat
+    --shortstat           output only the last line of --stat
+    -X, --dirstat[=&lt;param1,param2&gt;...]
+                          output the distribution of relative amount of changes for each sub-directory
+    --cumulative          synonym for --dirstat=cumulative
+    --dirstat-by-file</system_output>
+  <system_output timestamp="39.489911">[=&lt;param1,param2&gt;...]
+                          synonym for --dirstat=files,param1,param2...
+    --check               warn if changes introduce conflict markers or whitespace errors
+    --summary             condensed summary such as creations, renames and mode changes
+    --name-only           show only names of changed files
+    --name-status         show only names and status of changed files
+    </system_output>
+  <system_output timestamp="39.491458">--stat[=&lt;width&gt;[,&lt;name-width&gt;[,&lt;count&gt;]]]
+                          generate diffstat
+    --stat-width &lt;width&gt;  generate diffstat with a given width
+    --stat-name-width &lt;width&gt;
+                          generate diffstat with a given name width
+    --stat-graph-width &lt;width&gt;
+                          generate diffstat with a given graph width
+    --stat-count &lt;count&gt;  generate diffstat with limited lines
+    --compact-summary     generate compact summary in diffstat
+    --binary              output a binary diff that can be applied
+    --full-index          show full pre- and post-image object names on the "index" lines
+    --color[=&lt;when&gt;]      show colored diff
+    --ws-error-highlight &lt;kind&gt;
+                          highlight whitespace errors in the 'context', 'old' or 'new' lines in the diff
+</system_output>
+  <system_output timestamp="39.492224">    -z                    do not munge pathnames and use NULs as output field terminators in --raw or --numstat
+    --abbrev[=&lt;n&gt;]        use &lt;n&gt; digits to display object names
+    --src-prefix &lt;prefix&gt;
+                          show the given source prefix instead of "a/"
+    --dst-prefix &lt;prefix&gt;
+                          show the given destination prefix instead of "b/"
+    --line-prefix &lt;prefix&gt;
+                          prepend an additional prefix to every line of output
+    --no-prefix           do not show any source or destination prefix
+    --inter-hunk-context &lt;n&gt;
+                          show context between diff hunks up to the specified number of lines
+    --output-indicator-new &lt;char&gt;
+                          specify the character to indicate a new line instead of '+'
+    --output-indicator-old &lt;char&gt;
+                          specify the character to indicate an old line instead of '-'
+    --output-indicator-context &lt;char&gt;
+                          specify the character to indicate a context instead of ' '
+
+Diff rename options
+    -B, --break-rewrites[=&lt;n&gt;[/&lt;m&gt;]]
+                          break complete rewrite changes into pairs of delete and create
+    -M, --find-renames[=&lt;n&gt;]
+                          detect renames
+    -D, --irreversible-delete
+                          omit the preimage for deletes
+    -C, --find-copies[=&lt;n&gt;]
+                          detect copies
+    --find-copies-harder  use unmodified files as source to find copies
+    --no-renames          disable rename detection
+    --rename-empty        use empty blobs as rename source
+    --follow              continue listing the history of a file beyond renames
+    -l &lt;n&gt;                prevent rename/copy detection if the number of rename/copy targets exceeds given limit
+
+Diff algorithm options
+    --minimal             produce the smallest possible diff
+    -w, --ignore-all-space
+                          ignore whitespace when comparing lines
+    -b, --ignore-space-change
+                          ignore changes in amount of whitespace
+    --ignore-space-at-eol
+                          ignore changes in whitespace at EOL
+    --ignore-cr-at-eol    ignore carrier-return at the end of line
+    --ignore-blank-lines  ignore changes whose lines are all blank
+    -I, --ignore-matching-lines &lt;regex&gt;
+                          ignore changes whose all lines match &lt;regex&gt;
+    --indent-heuristic    heuristic to shift diff hunk boundaries for easy reading
+    --patience            generate diff using the "patience diff" algorithm
+    --histogram           generate diff using the "histogram diff" algorithm
+    --diff-algorithm &lt;algorithm&gt;
+                          choose a diff algorithm
+    --anchored &lt;text&gt;     generate diff using the "anchored diff" algorithm
+    --word-diff[=&lt;mode&gt;]  show word diff, using &lt;mode&gt; to delimit changed words
+    --word-diff-regex &lt;regex&gt;
+                          use &lt;regex&gt; to decide what a word is
+    --color-words[=&lt;regex&gt;]
+                          equivalent to --word-diff=color --word-diff-regex=&lt;regex&gt;
+    --color-moved[=&lt;mode&gt;]
+                          moved lines of code are colored differently
+    --color-moved-ws &lt;mode&gt;
+                          how white spaces are ignored in --color-moved
+
+Other diff options
+    --relative[=&lt;prefix&gt;]
+                          when run from subdir, exclude changes outside and show relative paths
+    -a, --text            treat all files as text
+    -R                    swap two inputs, reverse the diff
+    --exit-code           exit with 1 if there were differences, 0 otherwise
+    --quiet               disable all output of the program
+    --ext-diff            allow an external diff helper to be executed
+    --textconv            run external text conversion filters when comparing binary files
+    --ignore-submodules[=&lt;when&gt;]
+                          ignore changes to submodules in the diff generation
+    --submodule[=&lt;format&gt;]
+                          specify how differences in submodules a</system_output>
+  <system_output timestamp="39.492648">re shown
+    --ita-invisible-in-index
+                          hide 'git add -N' entries from the index
+    --ita-visible-in-index
+                          treat 'git add -N' entries as real in the index
+    -S &lt;string&gt;           look for differences that change the number of occurrences of the specified string
+    -G &lt;regex&gt;            look for differences that change the number of occurrences of the specified regex
+    --pickaxe-all         show all changes in the changeset with -S or -G
+    --pickaxe-regex       treat &lt;string&gt; in -S as extended POSIX regular expression
+    -O &lt;file&gt;             control the order in which files appear in the output
+    --rotate-to &lt;path&gt;    show the change in the specified path first
+    --skip-to &lt;path&gt;      skip the output to the specified path
+    --find-object &lt;object-id&gt;
+                          look for differences that change the number of occurrences of the specified object
+    --diff-filter [(A|C|D|M|R|T|U|X|B)...[*]]
+                          select files by diff type
+    --output &lt;file&gt;       output to a specific file
+
+</system_output>
+  <system_output timestamp="39.493239">[?2004h]0;demo@faiserver: /home/fai/configdemo@faiserver:/home/fai/config$ </system_output>
+  <user_input timestamp="41.941309">l</user_input>
+  <system_output timestamp="41.943342">l</system_output>
+  <user_input timestamp="42.255634">s</user_input>
+  <system_output timestamp="42.272612">s</system_output>
+  <user_input timestamp="42.394743">
+</user_input>
+  <system_output timestamp="42.407038">
+[?2004l
+</system_output>
+  <system_output timestamp="42.46479">[0m[01;34mclass[0m  [01;34mdebconf[0m  [01;34mdisk_config[0m  [01;34mfiles[0m  [01;34mhooks[0m  [01;34mpackage_config[0m  [01;34mscripts[0m
+</system_output>
+  <system_output timestamp="42.465592">[?2004h]0;demo@faiserver: /home/fai/configdemo@faiserver:/home/fai/config$ </system_output>
+  <user_input timestamp="44.147483">g</user_input>
+  <system_output timestamp="44.159741">g</system_output>
+  <user_input timestamp="44.284513">i</user_input>
+  <system_output timestamp="44.296522">i</system_output>
+  <user_input timestamp="44.598422">t</user_input>
+  <system_output timestamp="44.604263">t</system_output>
+  <user_input timestamp="44.718273"> </user_input>
+  <system_output timestamp="44.7216"> </system_output>
+  <user_input timestamp="45.077243">s</user_input>
+  <system_output timestamp="45.085748">s</system_output>
+  <user_input timestamp="45.352775">t</user_input>
+  <system_output timestamp="45.355587">t</system_output>
+  <user_input timestamp="45.50998">a</user_input>
+  <system_output timestamp="45.528086">a</system_output>
+  <user_input timestamp="45.630309">t</user_input>
+  <system_output timestamp="45.646049">t</system_output>
+  <user_input timestamp="45.746839">u</user_input>
+  <system_output timestamp="45.762415">u</system_output>
+  <user_input timestamp="45.958953">s</user_input>
+  <system_output timestamp="45.97016">s</system_output>
+  <user_input timestamp="46.215934">
+</user_input>
+  <system_output timestamp="46.220528">
+[?2004l
+</system_output>
+  <system_output timestamp="46.225123">fatal: detected dubious ownership in repository at '/home/fai/config'
+To add an exception for this directory, call:
+
+	git config --global --add safe.directory /home/fai/config
+</system_output>
+  <system_output timestamp="46.226694">[?2004h]0;demo@faiserver: /home/fai/configdemo@faiserver:/home/fai/config$ </system_output>
+  <user_input timestamp="50.572229">s</user_input>
+  <system_output timestamp="50.574257">s</system_output>
+  <user_input timestamp="50.697758">u</user_input>
+  <system_output timestamp="50.699817">u</system_output>
+  <user_input timestamp="50.910068">d</user_input>
+  <system_output timestamp="50.926825">d</system_output>
+  <user_input timestamp="51.01557">o</user_input>
+  <system_output timestamp="51.031215">o</system_output>
+  <user_input timestamp="51.225973"> </user_input>
+  <system_output timestamp="51.241157"> </system_output>
+  <user_input timestamp="51.497835">g</user_input>
+  <system_output timestamp="51.513161">g</system_output>
+  <user_input timestamp="51.64433">i</user_input>
+  <system_output timestamp="51.662037">i</system_output>
+  <user_input timestamp="51.939807">t</user_input>
+  <system_output timestamp="51.954996">t</system_output>
+  <user_input timestamp="52.10912"> </user_input>
+  <system_output timestamp="52.121774"> </system_output>
+  <user_input timestamp="52.337561">d</user_input>
+  <system_output timestamp="52.353651">d</system_output>
+  <user_input timestamp="52.443344">i</user_input>
+  <system_output timestamp="52.457799">i</system_output>
+  <user_input timestamp="52.671352">f</user_input>
+  <system_output timestamp="52.686492">f</system_output>
+  <user_input timestamp="52.85848">f</user_input>
+  <system_output timestamp="52.876395">f</system_output>
+  <user_input timestamp="53.616905">
+</user_input>
+  <system_output timestamp="53.630556">
+[?2004l
+</system_output>
+  <system_output timestamp="53.803245">sudo: unable to resolve host faiserver: Name or service not known
+</system_output>
+  <system_output timestamp="53.810484">[sudo] password for demo: </system_output>
+  <user_input timestamp="55.615086">f</user_input>
+  <user_input timestamp="55.718576">a</user_input>
+  <user_input timestamp="55.759603">i</user_input>
+  <user_input timestamp="55.883672">
+</user_input>
+  <system_output timestamp="55.887705">
+</system_output>
+  <system_output timestamp="56.11385">[?1h=
+</system_output>
+  <system_output timestamp="56.287763">[1mdiff --git a/files/etc/fai/grub.cfg/SERVERFAI b/files/etc/fai/grub.cfg/SERVERFAI[m[m
+[1mindex b31de43..b27d7d9 100644[m[m
+[1m--- a/files/etc/fai/grub.cfg/SERVERFAI[m[m
+[1m+++ b/files/etc/fai/grub.cfg/SERVERFAI[m[m
+[36m@@ -6,11 +6,20 @@[m [mset timeout=20[m[m
+ insmod part_msdos[m[m
+ insmod part_gpt[m[m
+ [m[m
+[32m+[m[32m# set our colour set.[m[m
+ set color_normal=white/black[m[m
+ set color_highlight=red/black[m[m
+ set menu_color_normal=white/black[m[m
+ set menu_color_highlight=black/yellow[m[m
+ [m[m
+[32m+[m[32m# load video for EFI systems. required for the install to be visible.[m[m
+[32m+[m[32mfunction load_efi_video {[m[m
+[32m+[m[32m  if [ "$grub_platform" = "efi" ]; then[m[m
+[32m+[m[32m    insmod efi_gop[m[m
+[32m+[m[32m    insmod efi_uga[m[m
+[32m+[m[32m  fi[m[m
+[32m+[m[32m}[m[m
+[32m+[m[m
+ menuentry "+------------------------------------------------------+" {[m[m
+ set timeout=20[m[m
+ }[m[m
+[36m@@ -50,144 +59,168 @@[m [mmen</system_output>
+  <system_output timestamp="56.289675">uentry "Boot OS from first partition on first disk" {[m[m
+ [m[m
+ menuentry "nekohost -- Rescue system -- safe as kittens, no install performed." {[m[m
+     search --set=root --file /FAI-CD[m[m
+[32m+[m[32m    load_efi_video[m[m
+     linux /boot/vmlinuz FAI_FLAGS="verbose,createvt" FAI_ACTION=sysinfo FAI_CONFIG_SRC=file:///var/lib/fai/config/ rd.live.image root=live:CDLABEL=FAI_CD ip=dhcp hostname=nekohost[m[m
+     initrd /boot/initrd.img[m[m
+ }[m[m
+ [m[m
+ menuentry "faiserver -- Server for creating this CD." {[m[m
+     search --set=root --file /FAI-CD[m[m
+[32m+[m[32m    load_efi_video[m[m
+     linux /boot/vmlinuz FAI_FLAGS="verbose,createvt" FAI_ACTION=install FAI_CONFIG_SRC=file:///var/lib/fai/config/ rd.live.image root=live:CDLABEL=FAI_CD ip=dhcp hostname=faiserver[m[m
+     initrd /boot/initrd.img[m[m
+ }[m[m
+ [m[m
+ menuentry "qemuhost -- QEMU server, designed for running the images on this CD in VMs." {[m[m
+     search --set=root --file /FAI-CD[m[m
+[32m+[m[32m    load_efi_video[m[m
+     linux /boot/vmlinuz FAI_FLAGS="verbose,createvt" FAI_ACTION=install FAI_CONFIG_SRC=file:///var/lib/fai/config/ rd.live.image root=live:CDLABEL=FAI_CD ip=dhcp hostname=qemuhost[m[m
+     initrd /boot/initrd.img[m[m
+ }[m[m
+ [m[m
+ menuentry "wikiserver -- Trac/Apache wiki server." {[m[m
+     search --set=root --file /FAI-CD[m[m
+[32m+[m[32m    load_efi_video[m[m
+     linux /boot/vmlinuz FAI_FLAGS="verbose,createvt" FAI_ACTION=install FAI_CONFIG_SRC=file:///var/lib/fai/config/ rd.live.image root=live:CDLABEL=FAI_CD ip=dhcp hostname=wikiserver[m[m
+     initrd /boot/initrd.img[m[m
+ }[m[m
+ [m[m
+ menuentry "postserver -- mail server." {[m[m
+     search --set=root --file /FAI-CD[m[m
+[32m+[m[32m    load_efi_video[m[m
+     linux /boot/vmlinuz FAI_FLAGS="verbose,createvt" FAI_ACTION=install FAI_CONFIG_SRC=file:///var/lib/fai/config/ rd.live.image root=live:CDLABEL=FAI_CD ip=dhcp hostname=postserver[m[m
+     initrd /boot/initrd.img[m[m
+ }[m[m
+ [m[m
+ menuentry "giftserver -- GIFT image processor system." {[m[m
+     search --set=root --file /FAI-CD[m[m
+[32m+[m[32m    load_efi_video[m[m
+     linux /boot/vmlinuz FAI_FLAGS="verbose,createvt" FAI_ACTION=install FAI_CONFIG_SRC=file:///var/lib/fai/config/ rd.live.image root=live:CDLABEL=FAI_CD ip=dhcp hostname=giftserver[m[m
+     initrd /boot/initrd.img[m[m
+ }[m[m
+ [m[m
+ menuentry "lampserver -- A LAMP (Linux, Apache, MySQL, PHP) stack." {[m[m
+     search --set=root --file /FAI-CD[m[m
+[32m+[m[32m    load_efi_video[m[m
+     linux /boot/vmlinuz FAI_FLAGS="verbose,createvt" FAI_ACTION=install FAI_CONFIG_SRC=file:///var/lib/fai/config/ rd.live.image root=live:CDLABEL=FAI_CD ip=dhcp hostname=lampserver[m[m
+     initrd /boot/initrd.img[m[m
+ }[m[m
+ [m[m
+ menuentry "kalliserver -- Kallithea, a git hosting service. For software distribution." {[m[m
+     search --set=root --file /FAI-CD[m[m
+[32m+[m[32m    load_efi_video[m[m
+     linux /boot/vmlinuz FAI_FLAGS="verbose,createvt" FAI_ACTION=install FAI_CONFIG_SRC=file:///var/lib/fai/config/ rd.live.image root=live:CDLABEL=FAI_CD ip=dhcp hostname=kalliserver[m[m
+     initrd /boot/initrd.img[m[m
+ }[m[m
+ [m[m
+ menuentry "implicitserver -- A server for running the ImplicitCAD.org website." {[m[m
+     search --set=root --file /FAI-CD[m[m
+[32m+[m[32m    load_efi_video[m[m
+     linux /boot/vmlinuz FAI_FLAGS="verbose,createvt" FAI_ACTION=install FAI_CONFIG_SRC=file:///var/lib/fai/config/ rd.live.image root=live:CDLABEL=FAI_CD ip=dhcp hostname=implicitserver[m[m
+     initrd /boot/initrd.img[m[m
+ }[m[m
+ [m[m
+ menuentry "diskhost -- ISCSI disk server." {[m[m
+:[K</system_output>
+  <user_input timestamp="58.404535"> </user_input>
+  <system_output timestamp="58.406813">
+[K</system_output>
+  <system_output timestamp="58.408352">     search --set=root --file /FAI-CD[m[m
+[32m+[m[32m    load_efi_video[m[m
+     linux /boot/vmlinuz FAI_FLAGS="verbose,createvt" FAI_ACTION=install FAI_CONFIG_SRC=file:///var/lib/fai/config/ rd.live.image root=live:CDLABEL=FAI_CD ip=dhcp hostname=diskhost[m[m
+     initrd /boot/initrd.img[m[m
+ }[m[m
+ [m[m
+ menuentry "pronterhost -- 3D printer control host." {[m[m
+     search --set=root --file /FAI-CD[m[m
+[32m+[m[32m    load_efi_video[m[m
+     linux /boot/vmlinuz FAI_FLAGS="verbose,createvt" FAI_ACTION=install FAI_CONFIG_SRC=file:///var/lib/fai/config/ rd.live.image root=live:CDLABEL=FAI_CD ip=dhcp hostname=pronterhost[m[m
+     initrd /boot/initrd.img[m[m
+ }[m[m
+ [m[m
+ menuentry "boxhost -- OpenBox environment." {[m[m
+     search --set=root --file /FAI-CD[m[m
+[32m+[m[32m    load_efi_video[m[m
+     linux /boot/vmlinuz FAI_FLAGS="verbose,createvt" FAI_ACTION=install FAI_CONFIG_SRC=file:///var/lib/fai/config/ rd.live.image root=live:CDLABEL=FAI_CD ip=dhcp hostname=boxhost</system_output>
+  <system_output timestamp="58.409033">[m[m
+     initrd /boot/initrd.img[m[m
+ }[m[m
+ [m[m
+ menuentry "boxtop -- OpenBox environment with development tools, for a laptop." {[m[m
+     search --set=root --file /FAI-CD[m[m
+[32m+[m[32m    load_efi_video[m[m
+     linux /boot/vmlinuz FAI_FLAGS="verbose,createvt" FAI_ACTION=install FAI_CONFIG_SRC=file:///var/lib/fai/config/ rd.live.image root=live:CDLABEL=FAI_CD ip=dhcp hostname=boxtop[m[m
+     initrd /boot/initrd.img[m[m
+ }[m[m
+ [m[m
+ menuentry "nullhost -- nothing extra. Just Debian." {[m[m
+     search --set=root --file /FAI-CD[m[m
+[32m+[m[32m    load_efi_video[m[m
+     linux /boot/vmlinuz FAI_FLAGS="verbose,createvt" FAI_ACTION=install FAI_CONFIG_SRC=file:///var/lib/fai/config/ rd.live.image root=live:CDLABEL=FAI_CD ip=dhcp hostname=nullhost[m[m
+     initrd /boot/initrd.img[m[m
+ }[m[m
+ [m[m
+ menuentry "implicitserver -- The ImplicitCAD Website." {[m[m
+     search --set=root --file /FAI-CD[m[m
+[32m+[m[32m    load_efi_video[m[m
+     linux /boot/vmlinuz </system_output>
+  <system_output timestamp="58.410122">FAI_FLAGS="verbose,createvt" FAI_ACTION=install FAI_CONFIG_SRC=file:///var/lib/fai/config/ rd.live.image root=live:CDLABEL=FAI_CD ip=dhcp hostname=implicitserver[m[m
+     initrd /boot/initrd.img[m[m
+ }[m[m
+ [m[m
+ menuentry "awikiserver -- MediaWiki/Apache wiki server." {[m[m
+     search --set=root --file /FAI-CD[m[m
+[32m+[m[32m    load_efi_video[m[m
+     linux /boot/vmlinuz FAI_FLAGS="verbose,createvt" FAI_ACTION=install FAI_CONFIG_SRC=file:///var/lib/fai/config/ rd.live.image root=live:CDLABEL=FAI_CD ip=dhcp hostname=awikiserver[m[m
+     initrd /boot/initrd.img[m[m
+ }[m[m
+ [m[m
+ menuentry "wordserver -- A LAMP (Linux, Apache, MySQL, PHP) stack, designed to host wordpress." {[m[m
+     search --set=root --file /FAI-CD[m[m
+[32m+[m[32m    load_efi_video[m[m
+     linux /boot/vmlinuz FAI_FLAGS="verbose,createvt" FAI_ACTION=install FAI_CONFIG_SRC=file:///var/lib/fai/config/ rd.live.image root=live:CDLABEL=FAI_CD ip=dhcp hostname=wordserver[m[m
+     initrd /boot/initrd.img[m[m
+ }[m[m
+ [m[m
+ menuentry "drupalserver -- A LAMP stack for Drupal." {[m[m
+     search --set=root --file /FAI-CD[m[m
+[32m+[m[32m    load_efi_video[m[m
+     linux /boot/vmlinuz FAI_FLAGS="verbose,createvt" FAI_ACTION=install FAI_CONFIG_SRC=file:///var/lib/fai/config/ rd.live.image root=live:CDLABEL=FAI_CD ip=dhcp hostname=drupalserver[m[m
+     initrd /boot/initrd.img[m[m
+ }[m[m
+ [m[m
+ menuentry "oemrserver -- OpenEMR Electronic Medical Records server." {[m[m
+     search --set=root --file /FAI-CD[m[m
+[32m+[m[32m    load_efi_video[m[m
+     linux /boot/vmlinuz FAI_FLAGS="verbose,createvt" FAI_ACTION=install FAI_CONFIG_SRC=file:///var/lib/fai/config/ rd.live.image root=live:CDLABEL=FAI_CD ip=dhcp hostname=oemrserver[m[m
+     initrd /boot/initrd.img[m[m
+ }[m[m
+ [m[m
+ menuentry "zonehost -- ZoneMinder security monitoring host." {[m[m
+     search --set=root --file /FAI-CD[m[m
+[32m+[m[32m    load_efi_video[m[m
+     linux /boot/vmlinuz FAI_FLAGS="verbose,createvt" FAI_ACTION=install FAI_CONFIG_SRC=file:///var/lib/fai/config/ rd.live.image root=live:CDLABEL=FAI_CD ip=dhcp hostname=zonehost[m[m
+     initrd /boot/initrd.img[m[m
+ }[m[m
+ [m[m
+ menuentry "stephost -- Basic afterstep environment." {[m[m
+     search --set=root --file /FAI-CD[m[m
+[32m+[m[32m    load_efi_video[m[m
+     linux /boot/vmlinuz FAI_FLAGS="verbose,createvt" FAI_ACTION=install FAI_CONFIG_SRC=file:///var/lib/fai/config/ rd.live.image root=live:CDLABEL=FAI_CD ip=dhcp hostname=stephost[m[m
+     initrd /boot/initrd.img[m[m
+ }[m[m
+ [m[m
+ menuentry "steptop -- afterstep environment with development tools, for a laptop." {[m[m
+     search --set=root --file /FAI-CD[m[m
+[32m+[m[32m    load_efi_video[m[m
+     linux /boot/vmlinuz FAI_FLAGS="verbose,createvt" FAI_ACTION=install</system_output>
+  <system_output timestamp="58.410676"> FAI_CONFIG_SRC=file:///var/lib/fai/config/ rd.live.image root=live:CDLABEL=FAI_CD ip=dhcp hostname=steptop[m[m
+     initrd /boot/initrd.img[m[m
+ }[m[m
+ [m[m
+ menuentry "betahost -- guaranteed broken, everything at once." {[m[m
+:[K</system_output>
+  <user_input timestamp="59.531192"> </user_input>
+  <system_output timestamp="59.53378">
+[K</system_output>
+  <system_output timestamp="59.534207">     search --set=root --file /FAI-CD[m[m
+[32m+[m[32m    load_efi_video[m[m
+     linux /boot/vmlinuz FAI_FLAGS="verbose,createvt" FAI_ACTION=install FAI_CONFIG_SRC=file:///var/lib/fai/config/ rd.live.image root=live:CDLABEL=FAI_CD ip=dhcp hostname=betahost[m[m
+     initrd /boot/initrd.img[m[m
+ }[m[m
+ [m[m
+ menuentry "Client standalone installation - select installation type from menu " {[m[m
+     search --set=root --file /FAI-CD[m[m
+[32m+[m[32m    load_efi_video[m[m
+     linux   /boot/vmlinuz FAI_FLAGS="menu,verbose,createvt" FAI_ACTION=install FAI_CONFIG_SRC=file:///var/lib/fai/config rd.live.image root=live:CDLABEL=FAI_CD rd.neednet ip=dhcp quiet[m[m
+     initrd  /boot/initrd.img[m[m
+ }[m[m
+[7m(END)[27m[K</system_output>
+  <user_input timestamp="60.381921"> </user_input>
+  <system_output timestamp="60.386487">
+[K
+[K[7m(END)[27m[K</system_output>
+  <user_input timestamp="61.478406">[5~</user_input>
+  <system_output timestamp="61.500194">
+[K [KESCESC[K[[[K55[K~~
+[K</system_output>
+  <system_output timestamp="61.501049">[HM }[m[m
+[HM     initrd /boot/initrd.img[m[m
+[HM     linux /boot/vmlinuz FAI_FLAGS="verbose,createvt" FAI_ACTION=install FAI_CONFIG_SRC=file:///var/lib/fai/config/ rd.live.image root=live:CDLABEL=FAI_CD ip=dhcp hostname=pronterhost[m[m
+[HM[32m+[m[32m    load_efi_video[m[m
+[HM     search --set=root --file /FAI-CD[m[m
+[HM menuentry "pronterhost -- 3D printer control host." {[m[m
+[HM [m[m
+[HM }[m[m
+[HM     initrd /boot/initrd.img[m[m
+[HM     linux /boot/vmlinuz FAI_FLAGS="verbose,createvt" FAI_ACTION=install FAI_CONFIG_SRC=file:///var/lib/fai/config/ rd.live.image root=live:CDLABEL=FAI_CD ip=dhcp hostname=diskhost[m[m
+[HM[32m+[m[32m    load_efi_video[m[m
+[HM     search --set=root --file /FAI-CD[m[m
+[HM menuentry "diskhost -- ISCSI disk server." {[m[m
+[HM [m[m
+[HM }[m[m
+[HM     initrd /boot/initrd.img[m[m
+[HM     linux /boot/vmlinuz FAI_FLAGS="verbose,createvt" FAI_ACTION=install FAI_CONFIG_SRC=file:///var/lib/fai/config/ rd.live.image root</system_output>
+  <system_output timestamp="61.502385">=live:CDLABEL=FAI_CD ip=dhcp hostname=implicitserver[m[m
+[HM[32m+[m[32m    load_efi_video[m[m
+[HM     search --set=root --file /FAI-CD[m[m
+[HM menuentry "implicitserver -- A server for running the ImplicitCAD.org website." {[m[m
+[HM [m[m
+[HM }[m[m
+[HM     initrd /boot/initrd.img[m[m
+[HM     linux /boot/vmlinuz FAI_FLAGS="verbose,createvt" FAI_ACTION=install FAI_CONFIG_SRC=file:///var/lib/fai/config/ rd.live.image root=live:CDLABEL=FAI_CD ip=dhcp hostname=kalliserver[m[m
+[HM[32m+[m[32m    load_efi_video[m[m
+[HM     search --set=root --file /FAI-CD[m[m
+[HM menuentry "kalliserver -- Kallithea, a git hosting service. For software distribution." {[m[m
+[HM [m[m
+[HM }[m[m
+[HM     initrd /boot/initrd.img[m[m
+[HM     linux /boot/vmlinuz FAI_FLAGS="verbose,createvt" FAI_ACTION=install FAI_CONFIG_SRC=file:///var/lib/fai/config/ rd.live.image root=live:CDLABEL=FAI_CD ip=dhcp hostname=lampserver[m[m
+[HM[32m+[m[32m    load_efi_video[m[m
+[HM     searc</system_output>
+  <system_output timestamp="61.502823">h --set=root --file /FAI-CD[m[m
+[HM menuentry "lampserver -- A LAMP (Linux, Apache, MySQL, PHP) stack." {[m[m
+[HM [m[m
+[HM }[m[m
+[HM     initrd /boot/initrd.img[m[m
+[HM     linux /boot/vmlinuz FAI_FLAGS="verbose,createvt" FAI_ACTION=install FAI_CONFIG_SRC=file:///var/lib/fai/config/ rd.live.image root=live:CDLABEL=FAI_CD ip=dhcp hostname=giftserver[m[m
+[HM[32m+[m[32m    load_efi_video[m[m
+[HM     search --set=root --file /FAI-CD[m[m
+[HM menuentry "giftserver -- GIFT image processor system." {[m[m
+[HM [m[m
+[HM }[m[m
+[HM     initrd /boot/initrd.img[m[m
+[HM     linux /boot/vmlinuz FAI_FLAGS="verbose,createvt" FAI_ACTION=install FAI_CONFIG_SRC=file:///var/lib/fai/config/ rd.live.image root=live:CDLABEL=FAI_CD ip=dhcp hostname=postserver[m[m
+[HM[32m+[m[32m    load_efi_video[m[m
+[HM     search --set=root --file /FAI-CD[m[m
+[HM menuentry "postserver -- mail server." {[m[m
+[HM [m[m
+[HM }[m[m
+[HM     initrd /boot/initrd.img[m[m
+[HM     </system_output>
+  <system_output timestamp="61.503311">linux /boot/vmlinuz FAI_FLAGS="verbose,createvt" FAI_ACTION=install FAI_CONFIG_SRC=file:///var/lib/fai/config/ rd.live.image root=live:CDLABEL=FAI_CD ip=dhcp hostname=wikiserver[m[m
+[HM[32m+[m[32m    load_efi_video[m[m
+[HM     search --set=root --file /FAI-CD[m[m
+[HM menuentry "wikiserver -- Trac/Apache wiki server." {[m[m
+[HM [m[m
+[HM }[m[m
+[HM     initrd /boot/initrd.img[m[m
+[HM     linux /boot/vmlinuz FAI_FLAGS="verbose,createvt" FAI_ACTION=install FAI_CONFIG_SRC=file:///var/lib/fai/config/ rd.live.image root=live:CDLABEL=FAI_CD ip=dhcp hostname=qemuhost[m[m
+[HM[32m+[m[32m    load_efi_video[m[m
+[HM     search --set=root --file /FAI-CD[m[m
+[HM menuentry "qemuhost -- QEMU server, designed for running the images on this CD in VMs." {[m[m
+[HM [m[m
+[HM }[m[m
+[HM     initrd /boot/initrd.img[m[m
+[HM     linux /boot/vmlinuz FAI_FLAGS="verbose,createvt" FAI_ACTION=install FAI_CONFIG_SRC=file:///var/lib/fai/config/ rd.live.image root=live:CDLABEL=FAI_CD </system_output>
+  <system_output timestamp="61.50469">ip=dhcp hostname=faiserver[m[m
+[HM[32m+[m[32m    load_efi_video[m[m
+[HM     search --set=root --file /FAI-CD[m[m
+[HM menuentry "faiserver -- Server for creating this CD." {[m[m
+[HM [m[m
+[HM }[m[m
+[HM     initrd /boot/initrd.img[m[m
+[HM     linux /boot/vmlinuz FAI_FLAGS="verbose,createvt" FAI_ACTION=sysinfo FAI_CONFIG_SRC=file:///var/lib/fai/config/ rd.live.image root=live:CDLABEL=FAI_CD ip=dhcp hostname=nekohost[m[m
+[HM[32m+[m[32m    load_efi_video[m[m
+[HM     search --set=root --file /FAI-CD[m[m
+[HM menuentry "nekohost -- Rescue system -- safe as kittens, no install performed." {[m[m
+[HM [m[m
+[HM[36m@@ -50,144 +59,168 @@[m [mmenuentry "Boot OS from first partition on first disk" {[m[m
+[HM }[m[m
+[HM set timeout=20[m[m
+[HM menuentry "+------------------------------------------------------+" {[m[m
+[HM[32m+[m[m
+[HM[32m+[m[32m}[m[m
+[HM[32m+[m[32m  fi[m[m
+[HM[32m+[m[32m    insmod efi_uga[m[m
+[HM[32m+[m[32m    insmod efi_gop[m[m
+[HM[32m+[m[32m  if [ "$grub_platform" = "efi" ]; then[m[m
+[HM[32m+[m[32mfunction load_efi_video {[m[m
+[HM[32m+[m[32m# load video for EFI systems. required for the install to be visible.[m[m
+[HM [m[m
+[HM set menu_color_highlight=black/yellow[m[m
+[92;1H
+[K:[K</system_output>
+  <user_input timestamp="61.622968">[5~</user_input>
+  <system_output timestamp="61.639697">
+[K [KESCESC[K[[[K55[K~~
+[K</system_output>
+  <system_output timestamp="61.640258">[HM set menu_color_normal=white/black[m[m
+[HM set color_highlight=red/black[m[m
+[HM set color_normal=white/black[m[m
+[HM[32m+[m[32m# set our colour set.[m[m
+[HM [m[m
+[HM insmod part_gpt[m[m
+[HM insmod part_msdos[m[m
+[HM[36m@@ -6,11 +6,20 @@[m [mset timeout=20[m[m
+[HM[1m+++ b/files/etc/fai/grub.cfg/SERVERFAI[m[m
+[HM[1m--- a/files/etc/fai/grub.cfg/SERVERFAI[m[m
+[HM[1mindex b31de43..b27d7d9 100644[m[m
+[HM[1mdiff --git a/files/etc/fai/grub.cfg/SERVERFAI b/files/etc/fai/grub.cfg/SERVERFAI[m[m
+[92;1H
+[K:[K</system_output>
+  <user_input timestamp="61.832046">[5~</user_input>
+  <system_output timestamp="61.839067">
+[K [KESCESC[K[[[K55[K~~
+[K
+[K:[K</system_output>
+  <user_input timestamp="62.077625">[5~</user_input>
+  <system_output timestamp="62.080804">
+[K [KESCESC[K[[[K55[K~~
+[K
+[K:[K</system_output>
+  <user_input timestamp="62.45089">q</user_input>
+  <system_output timestamp="62.513208">
+[K[?1l&gt;</system_output>
+  <system_output timestamp="62.517843">[?2004h]0;demo@faiserver: /home/fai/configdemo@faiserver:/home/fai/config$ </system_output>
+<annotation>
+</annotation>
+</event>
+<event depth="-2">
+  <user_input timestamp="63.400662">g</user_input>
+  <system_output timestamp="63.413182">g</system_output>
+  <user_input timestamp="63.462678">i</user_input>
+  <system_output timestamp="63.473122">i</system_output>
+  <user_input timestamp="63.874624">t</user_input>
+  <system_output timestamp="63.891086">t</system_output>
+  <user_input timestamp="64.160265"></user_input>
+  <system_output timestamp="64.168872">[K</system_output>
+  <user_input timestamp="64.346859"></user_input>
+  <system_output timestamp="64.3499">[K</system_output>
+  <user_input timestamp="64.533755"></user_input>
+  <system_output timestamp="64.548655">[K</system_output>
+  <user_input timestamp="64.719267">s</user_input>
+  <system_output timestamp="64.726355">s</system_output>
+  <user_input timestamp="64.863036">u</user_input>
+  <system_output timestamp="64.865434">u</system_output>
+  <user_input timestamp="65.009828">d</user_input>
+  <system_output timestamp="65.024009">d</system_output>
+  <user_input timestamp="65.093881">o</user_input>
+  <system_output timestamp="65.103147">o</system_output>
+  <user_input timestamp="65.217814"> </user_input>
+  <system_output timestamp="65.21932"> </system_output>
+  <user_input timestamp="65.55223">g</user_input>
+  <system_output timestamp="65.556366">g</system_output>
+  <user_input timestamp="65.676702">i</user_input>
+  <system_output timestamp="65.695473">i</system_output>
+  <user_input timestamp="65.989841">t</user_input>
+  <system_output timestamp="65.997029">t</system_output>
+  <user_input timestamp="66.114783"> </user_input>
+  <system_output timestamp="66.11638"> </system_output>
+  <user_input timestamp="66.367184">a</user_input>
+  <system_output timestamp="66.372781">a</system_output>
+  <user_input timestamp="66.514506">d</user_input>
+  <system_output timestamp="66.531233">d</system_output>
+  <user_input timestamp="66.679518">d</user_input>
+  <system_output timestamp="66.687786">d</system_output>
+  <user_input timestamp="66.803264"> </user_input>
+  <system_output timestamp="66.806634"> </system_output>
+  <user_input timestamp="67.15704">f</user_input>
+  <system_output timestamp="67.169901">f</system_output>
+  <user_input timestamp="67.299886">i</user_input>
+  <system_output timestamp="67.309796">i</system_output>
+  <user_input timestamp="67.635279">	</user_input>
+  <system_output timestamp="67.823155">les/</system_output>
+  <user_input timestamp="68.486163">e</user_input>
+  <system_output timestamp="68.501868">e</system_output>
+  <user_input timestamp="68.732748">t</user_input>
+  <system_output timestamp="68.738062">t</system_output>
+  <user_input timestamp="68.95918">	</user_input>
+  <system_output timestamp="69.003908">c/</system_output>
+  <user_input timestamp="69.726266">f</user_input>
+  <system_output timestamp="69.731674">f</system_output>
+  <user_input timestamp="70.040549">a</user_input>
+  <system_output timestamp="70.051801">a</system_output>
+  <user_input timestamp="70.394915">	</user_input>
+  <system_output timestamp="70.426589">i/</system_output>
+  <user_input timestamp="71.037548">g</user_input>
+  <system_output timestamp="71.046764">g</system_output>
+  <user_input timestamp="71.637194">r</user_input>
+  <system_output timestamp="71.643374">r</system_output>
+  <user_input timestamp="71.886838">	</user_input>
+  <system_output timestamp="71.91744">ub.cfg/</system_output>
+  <user_input timestamp="72.75882">S</user_input>
+  <system_output timestamp="72.77324">S</system_output>
+  <user_input timestamp="72.926559">E</user_input>
+  <system_output timestamp="72.931713">E</system_output>
+  <user_input timestamp="73.259703">	</user_input>
+  <system_output timestamp="73.294675">RVERFAI</system_output>
+  <user_input timestamp="74.687602">
+</user_input>
+  <system_output timestamp="74.69844">
+[?2004l
+</system_output>
+  <system_output timestamp="74.71015">sudo: unable to resolve host faiserver: Name or service not known
+</system_output>
+  <system_output timestamp="74.816969">[?2004h]0;demo@faiserver: /home/fai/configdemo@faiserver:/home/fai/config$ </system_output>
+  <user_input timestamp="75.807825">g</user_input>
+  <system_output timestamp="75.811978">g</system_output>
+  <user_input timestamp="76.075135">u</user_input>
+  <system_output timestamp="76.087862">u</system_output>
+  <user_input timestamp="76.587425"></user_input>
+  <system_output timestamp="76.59296">[K</system_output>
+  <user_input timestamp="76.772683"></user_input>
+  <system_output timestamp="76.793629">[K</system_output>
+  <user_input timestamp="76.97924">s</user_input>
+  <system_output timestamp="76.992396">s</system_output>
+  <user_input timestamp="77.081116">u</user_input>
+  <system_output timestamp="77.092681">u</system_output>
+  <user_input timestamp="77.270107">d</user_input>
+  <system_output timestamp="77.290834">d</system_output>
+  <user_input timestamp="77.37435">o</user_input>
+  <system_output timestamp="77.391245">o</system_output>
+  <user_input timestamp="77.46009"> </user_input>
+  <system_output timestamp="77.47304"> </system_output>
+  <user_input timestamp="77.688704">g</user_input>
+  <system_output timestamp="77.708252">g</system_output>
+  <user_input timestamp="77.812759">i</user_input>
+  <system_output timestamp="77.829368">i</system_output>
+  <user_input timestamp="78.102383">t</user_input>
+  <system_output timestamp="78.111121">t</system_output>
+  <user_input timestamp="78.227675"> </user_input>
+  <system_output timestamp="78.231081"> </system_output>
+  <user_input timestamp="78.456741">c</user_input>
+  <system_output timestamp="78.470274">c</system_output>
+  <user_input timestamp="78.540413">o</user_input>
+  <system_output timestamp="78.548625">o</system_output>
+  <user_input timestamp="78.748867">m</user_input>
+  <system_output timestamp="78.762718">m</system_output>
+  <user_input timestamp="78.935861">m</user_input>
+  <system_output timestamp="78.941982">m</system_output>
+  <user_input timestamp="79.018823">i</user_input>
+  <system_output timestamp="79.021313">i</system_output>
+  <user_input timestamp="79.249191">t</user_input>
+  <system_output timestamp="79.258383">t</system_output>
+  <user_input timestamp="79.372863"> </user_input>
+  <system_output timestamp="79.377325"> </system_output>
+  <user_input timestamp="79.620845">-</user_input>
+  <system_output timestamp="79.637741">-</system_output>
+  <user_input timestamp="79.908747">m</user_input>
+  <system_output timestamp="79.91931">m</system_output>
+  <user_input timestamp="80.074614"> </user_input>
+  <system_output timestamp="80.07825"> </system_output>
+  <user_input timestamp="80.363829">'</user_input>
+  <system_output timestamp="80.378432">'</system_output>
+  <user_input timestamp="87.382794">a</user_input>
+  <system_output timestamp="87.384519">a</system_output>
+  <user_input timestamp="87.626324">t</user_input>
+  <system_output timestamp="87.63956">t</system_output>
+  <user_input timestamp="87.846821">t</user_input>
+  <system_output timestamp="87.849235">t</system_output>
+  <user_input timestamp="87.926704">e</user_input>
+  <system_output timestamp="87.933906">e</system_output>
+  <user_input timestamp="88.170456">m</user_input>
+  <system_output timestamp="88.186629">m</system_output>
+  <user_input timestamp="88.354256">p</user_input>
+  <system_output timestamp="88.377288">p</system_output>
+  <user_input timestamp="88.660157">t</user_input>
+  <system_output timestamp="88.6735">t</system_output>
+  <user_input timestamp="88.920897"> </user_input>
+  <system_output timestamp="88.92647"> </system_output>
+  <user_input timestamp="89.164388">t</user_input>
+  <system_output timestamp="89.182666">t</system_output>
+  <user_input timestamp="89.286019">o</user_input>
+  <system_output timestamp="89.287905">o</system_output>
+  <user_input timestamp="89.428948"> </user_input>
+  <system_output timestamp="89.436185"> </system_output>
+  <user_input timestamp="89.61175">m</user_input>
+  <system_output timestamp="89.628139">m</system_output>
+  <user_input timestamp="89.734505">a</user_input>
+  <system_output timestamp="89.754819">a</system_output>
+  <user_input timestamp="89.959158">k</user_input>
+  <system_output timestamp="89.967602">k</system_output>
+  <user_input timestamp="90.142709">e</user_input>
+  <system_output timestamp="90.154702">e</system_output>
+  <user_input timestamp="90.264795"> </user_input>
+  <system_output timestamp="90.284237"> </system_output>
+  <user_input timestamp="91.485436">b</user_input>
+  <system_output timestamp="91.491437">b</system_output>
+  <user_input timestamp="91.545329">o</user_input>
+  <system_output timestamp="91.553847">o</system_output>
+  <user_input timestamp="91.749294">o</user_input>
+  <system_output timestamp="91.762996">o</system_output>
+  <user_input timestamp="92.605282">t</user_input>
+  <system_output timestamp="92.608387">t</system_output>
+  <user_input timestamp="93.174683"></user_input>
+  <system_output timestamp="93.198597">[K</system_output>
+  <user_input timestamp="93.396733"></user_input>
+  <system_output timestamp="93.409205">[K</system_output>
+  <user_input timestamp="93.603679"></user_input>
+  <system_output timestamp="93.621657">[K</system_output>
+  <user_input timestamp="93.80633"></user_input>
+  <system_output timestamp="93.811619">[K</system_output>
+  <user_input timestamp="95.169539">l</user_input>
+  <system_output timestamp="95.177483">l</system_output>
+  <user_input timestamp="95.354235">i</user_input>
+  <system_output timestamp="95.364057">i</system_output>
+  <user_input timestamp="95.55889">n</user_input>
+  <system_output timestamp="95.572914">n</system_output>
+  <user_input timestamp="95.639497">u</user_input>
+  <system_output timestamp="95.657148">u</system_output>
+  <user_input timestamp="95.940935">x</user_input>
+  <system_output timestamp="95.953276">x</system_output>
+  <user_input timestamp="96.16719"> </user_input>
+  <system_output timestamp="96.181891"> </system_output>
+  <user_input timestamp="96.390989">s</user_input>
+  <system_output timestamp="96.395714">s</system_output>
+  <user_input timestamp="96.637499">h</user_input>
+  <system_output timestamp="96.64752">h</system_output>
+  <user_input timestamp="96.760955">o</user_input>
+  <system_output timestamp="96.772217">o</system_output>
+  <user_input timestamp="96.985568">w</user_input>
+  <system_output timestamp="97.006089">w</system_output>
+  <user_input timestamp="97.127531"> </user_input>
+  <system_output timestamp="97.131099"> </system_output>
+  <user_input timestamp="97.550786">v</user_input>
+  <system_output timestamp="97.572704">v</system_output>
+  <user_input timestamp="97.591826">i</user_input>
+  <system_output timestamp="97.613946">i</system_output>
+  <user_input timestamp="97.838929">d</user_input>
+  <system_output timestamp="97.845838">d</system_output>
+  <user_input timestamp="97.959477">e</user_input>
+  <system_output timestamp="97.97303">e</system_output>
+  <user_input timestamp="98.281346">o</user_input>
+  <system_output timestamp="98.288445">o</system_output>
+  <user_input timestamp="98.485251"> </user_input>
+  <system_output timestamp="98.497234"> </system_output>
+  <user_input timestamp="98.806189">a</user_input>
+  <system_output timestamp="98.813805">a</system_output>
+  <user_input timestamp="98.909733">f</user_input>
+  <system_output timestamp="98.917195">f</system_output>
+  <user_input timestamp="99.399884">t</user_input>
+  <system_output timestamp="99.405022">t</system_output>
+  <user_input timestamp="99.543579">e</user_input>
+  <system_output timestamp="99.553516">e</system_output>
+  <user_input timestamp="99.765049">r</user_input>
+  <system_output timestamp="99.783116">r</system_output>
+  <user_input timestamp="100.091549"> </user_input>
+  <system_output timestamp="100.096433"> </system_output>
+  <user_input timestamp="103.245279"></user_input>
+  <system_output timestamp="103.247279">[K</system_output>
+  <user_input timestamp="103.484023"></user_input>
+  <system_output timestamp="103.50356">[K</system_output>
+  <user_input timestamp="103.642096"></user_input>
+  <system_output timestamp="103.66117">[K</system_output>
+  <user_input timestamp="103.820347"></user_input>
+  <system_output timestamp="103.840122">[K</system_output>
+  <user_input timestamp="103.997598"></user_input>
+  <system_output timestamp="104.000924">[K</system_output>
+  <user_input timestamp="104.197566"></user_input>
+  <system_output timestamp="104.200206">[K</system_output>
+  <user_input timestamp="104.850433">w</user_input>
+  <system_output timestamp="104.857042">w</system_output>
+  <user_input timestamp="105.009001">h</user_input>
+  <system_output timestamp="105.016386">h</system_output>
+  <user_input timestamp="105.127819">e</user_input>
+  <system_output timestamp="105.135134">e</system_output>
+  <user_input timestamp="105.368653">n</user_input>
+  <system_output timestamp="105.37265">n</system_output>
+  <user_input timestamp="105.586978"> </user_input>
+  <system_output timestamp="105.589731"> </system_output>
+  <user_input timestamp="105.763928">b</user_input>
+  <system_output timestamp="105.766561">b</system_output>
+  <user_input timestamp="105.844364">o</user_input>
+  <system_output timestamp="105.866079">o</system_output>
+  <user_input timestamp="106.00511">o</user_input>
+  <system_output timestamp="106.023513">o</system_output>
+  <user_input timestamp="106.1252">t</user_input>
+  <system_output timestamp="106.142699">t</system_output>
+  <user_input timestamp="106.245145">e</user_input>
+  <system_output timestamp="106.259645">e</system_output>
+  <user_input timestamp="106.464231">d</user_input>
+  <system_output timestamp="106.478313">d</system_output>
+  <user_input timestamp="106.640422"> </user_input>
+  <system_output timestamp="106.657416"> </system_output>
+  <user_input timestamp="106.837329">f</user_input>
+  <system_output timestamp="106.85172">f</system_output>
+  <user_input timestamp="107.131536">r</user_input>
+  <system_output timestamp="107.146066">r</system_output>
+  <user_input timestamp="107.251537">o</user_input>
+  <system_output timestamp="107.261581">o</system_output>
+  <user_input timestamp="107.410818">m</user_input>
+  <system_output timestamp="107.419231">m</system_output>
+  <user_input timestamp="107.573205"> </user_input>
+  <system_output timestamp="107.579952"> </system_output>
+  <user_input timestamp="108.047076">E</user_input>
+  <system_output timestamp="108.05832">E</system_output>
+  <user_input timestamp="108.383499">F</user_input>
+  <system_output timestamp="108.393205">F</system_output>
+  <user_input timestamp="108.540804">I</user_input>
+  <system_output timestamp="108.55239">I</system_output>
+  <user_input timestamp="108.902538">.</user_input>
+  <system_output timestamp="108.911912">.</system_output>
+  <user_input timestamp="109.282076">'</user_input>
+  <system_output timestamp="109.293084">'</system_output>
+  <user_input timestamp="111.107391">
+</user_input>
+  <system_output timestamp="111.116216">
+[?2004l
+</system_output>
+  <system_output timestamp="111.128166">sudo: unable to resolve host faiserver: Name or service not known
+</system_output>
+  <system_output timestamp="111.808225">[master 86227f7] attempt to make linux show video when booted from EFI.
+</system_output>
+  <system_output timestamp="111.809551"> 1 file changed, 33 insertions(+)
+</system_output>
+  <system_output timestamp="111.8131">[?2004h]0;demo@faiserver: /home/fai/configdemo@faiserver:/home/fai/config$ </system_output>
+<annotation>
+</annotation>
+</event>
+<event depth="-2">
+  <user_input timestamp="119.895292"/>
+  <system_output timestamp="119.896711">[?2004l
+
+</system_output>
+  <system_output timestamp="119.89708">logout
+</system_output>
+  <system_output timestamp="119.90277">Connection to 172.16.0.17 closed.
+
+</system_output>
+  <system_output timestamp="119.906135">[?2004hdemo@stephost:~$ </system_output>
+<annotation>
+</annotation>
+</event>
+<event depth="-2">
+  <user_input timestamp="120.953681"/>
+  <system_output timestamp="120.954127">[?2004l
+
+exit
+</system_output>
+<annotation>
+</annotation>
+</event>
+</recording>

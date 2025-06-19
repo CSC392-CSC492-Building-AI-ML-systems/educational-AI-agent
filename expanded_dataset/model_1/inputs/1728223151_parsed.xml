@@ -1,0 +1,353 @@
+<?xml version="1.0" ?>
+<recording version="2" width="319" height="92" timestamp="1728223152">
+<event depth="-2">
+  <system_output timestamp="0.005501">[?2004hdemo@stephost:~$ </system_output>
+  <user_input timestamp="4.64497">c</user_input>
+  <system_output timestamp="4.645677">c</system_output>
+  <user_input timestamp="4.920074">m</user_input>
+  <system_output timestamp="4.92035">m</system_output>
+  <user_input timestamp="5.039406"> </user_input>
+  <system_output timestamp="5.039703"> </system_output>
+  <user_input timestamp="5.262095">l</user_input>
+  <system_output timestamp="5.262408">l</system_output>
+  <user_input timestamp="5.40389">i</user_input>
+  <system_output timestamp="5.404173">i</system_output>
+  <user_input timestamp="5.678762">s</user_input>
+  <system_output timestamp="5.679241">s</system_output>
+  <user_input timestamp="5.916065">t</user_input>
+  <system_output timestamp="5.916319">t</system_output>
+  <user_input timestamp="6.109257"> </user_input>
+  <system_output timestamp="6.109525"> </system_output>
+  <user_input timestamp="6.543515">|</user_input>
+  <system_output timestamp="6.543759">|</system_output>
+  <user_input timestamp="6.704398"> </user_input>
+  <system_output timestamp="6.704759"> </system_output>
+  <user_input timestamp="6.885718">g</user_input>
+  <system_output timestamp="6.886061">g</system_output>
+  <user_input timestamp="7.126261">r</user_input>
+  <system_output timestamp="7.126656">r</system_output>
+  <user_input timestamp="7.261362">e</user_input>
+  <system_output timestamp="7.261772">e</system_output>
+  <user_input timestamp="7.639342">p</user_input>
+  <system_output timestamp="7.639757">p</system_output>
+  <user_input timestamp="7.796568"> </user_input>
+  <system_output timestamp="7.797119"> </system_output>
+  <user_input timestamp="8.212734">f</user_input>
+  <system_output timestamp="8.213119">f</system_output>
+  <user_input timestamp="8.294183">a</user_input>
+  <system_output timestamp="8.294646">a</system_output>
+  <user_input timestamp="8.374134">i</user_input>
+  <system_output timestamp="8.374562">i</system_output>
+  <user_input timestamp="8.755145">s</user_input>
+  <system_output timestamp="8.755569">s</system_output>
+  <user_input timestamp="8.832538">e</user_input>
+  <system_output timestamp="8.833025">e</system_output>
+  <user_input timestamp="9.04645">r</user_input>
+  <system_output timestamp="9.046897">r</system_output>
+  <user_input timestamp="9.362477">v</user_input>
+  <system_output timestamp="9.362902">v</system_output>
+  <user_input timestamp="9.45957">e</user_input>
+  <system_output timestamp="9.460203">e</system_output>
+  <user_input timestamp="9.658551">r</user_input>
+  <system_output timestamp="9.659022">r</system_output>
+  <user_input timestamp="9.895172">
+</user_input>
+  <system_output timestamp="9.895613">
+[?2004l
+</system_output>
+  <system_output timestamp="10.2947">faiserver-tearoff-8: Runable,
+</system_output>
+  <system_output timestamp="10.329683">faiserver-tearoff-9: Runable,
+</system_output>
+  <system_output timestamp="10.364993">faiserver-tearoff-1: Runable,
+</system_output>
+  <system_output timestamp="10.400179">faiserver-tearoff-19: Runable,
+</system_output>
+  <system_output timestamp="10.509458">faiserver-tearoff-18: Runable,
+</system_output>
+  <system_output timestamp="10.544356">faiserver-tearoff-12: Runable, Running
+</system_output>
+  <system_output timestamp="10.616657">[?2004hdemo@stephost:~$ </system_output>
+  <user_input timestamp="11.143092">c</user_input>
+  <system_output timestamp="11.143492">c</system_output>
+  <user_input timestamp="11.400118">m</user_input>
+  <system_output timestamp="11.400559">m</system_output>
+  <user_input timestamp="11.478917"> </user_input>
+  <system_output timestamp="11.479365"> </system_output>
+  <user_input timestamp="11.714704">g</user_input>
+  <system_output timestamp="11.715141">g</system_output>
+  <user_input timestamp="11.851914">e</user_input>
+  <system_output timestamp="11.852252">e</system_output>
+  <user_input timestamp="12.053816">t</user_input>
+  <system_output timestamp="12.054378">t</system_output>
+  <user_input timestamp="12.212224">i</user_input>
+  <system_output timestamp="12.212693">i</system_output>
+  <user_input timestamp="12.452851">p</user_input>
+  <system_output timestamp="12.453262">p</system_output>
+  <user_input timestamp="12.631959"> </user_input>
+  <system_output timestamp="12.632408"> </system_output>
+  <user_input timestamp="13.067437">|</user_input>
+  <system_output timestamp="13.068011">|</system_output>
+  <user_input timestamp="13.228139"> </user_input>
+  <system_output timestamp="13.228625"> </system_output>
+  <user_input timestamp="13.407145">g</user_input>
+  <system_output timestamp="13.407533">g</system_output>
+  <user_input timestamp="13.666333">r</user_input>
+  <system_output timestamp="13.666747">r</system_output>
+  <user_input timestamp="13.74723">e</user_input>
+  <system_output timestamp="13.747746">e</system_output>
+  <user_input timestamp="13.963928">p</user_input>
+  <system_output timestamp="13.96438">p</system_output>
+  <user_input timestamp="14.064268"> </user_input>
+  <system_output timestamp="14.064734"> </system_output>
+  <user_input timestamp="14.283089">f</user_input>
+  <system_output timestamp="14.283466">f</system_output>
+  <user_input timestamp="14.383095">a</user_input>
+  <system_output timestamp="14.383511">a</system_output>
+  <user_input timestamp="14.481315">i</user_input>
+  <system_output timestamp="14.481698">i</system_output>
+  <user_input timestamp="14.759264">s</user_input>
+  <system_output timestamp="14.759675">s</system_output>
+  <user_input timestamp="14.89939">e</user_input>
+  <system_output timestamp="14.899984">e</system_output>
+  <user_input timestamp="15.078053">r</user_input>
+  <system_output timestamp="15.078556">r</system_output>
+  <user_input timestamp="15.415553">v</user_input>
+  <system_output timestamp="15.415991">v</system_output>
+  <user_input timestamp="15.516539">e</user_input>
+  <system_output timestamp="15.516934">e</system_output>
+  <user_input timestamp="15.712688">r</user_input>
+  <system_output timestamp="15.713164">r</system_output>
+  <user_input timestamp="15.927422">
+</user_input>
+  <system_output timestamp="15.928169">
+[?2004l
+</system_output>
+  <system_output timestamp="15.997189">faiserver-tearoff-8                
+</system_output>
+  <system_output timestamp="16.002981">faiserver-tearoff-9                172.16.0.13
+</system_output>
+  <system_output timestamp="16.008731">faiserver-tearoff-1                172.16.0.16
+</system_output>
+  <system_output timestamp="16.0145">faiserver-tearoff-19               172.16.0.14
+</system_output>
+  <system_output timestamp="16.031584">faiserver-tearoff-18               
+</system_output>
+  <system_output timestamp="16.037613">faiserver-tearoff-12               172.16.0.17
+</system_output>
+  <system_output timestamp="16.049583">[?2004hdemo@stephost:~$ </system_output>
+<annotation>
+</annotation>
+</event>
+<event depth="-2">
+  <user_input timestamp="3273.681623">c</user_input>
+  <system_output timestamp="3273.682201">c</system_output>
+  <user_input timestamp="3273.973535">m</user_input>
+  <system_output timestamp="3273.973959">m</system_output>
+  <user_input timestamp="3275.478862">
+</user_input>
+  <system_output timestamp="3275.479322">
+[?2004l
+</system_output>
+  <system_output timestamp="3275.483947">Usage: /usr/bin/cm &lt;start|kill [vm]&gt; ||
+          &lt;list|services|forwards|ports|getip|notes [vm]&gt; ||
+          &lt;setservice|rmservice &lt;vm&gt; &lt;domain&gt; &lt;service&gt;&gt; ||
+          &lt;setforward|rmforward &lt;IP&gt; &lt;domain&gt; &lt;service&gt;&gt; ||
+          &lt;setnote &lt;vm&gt; &lt;new note&gt;&gt; ||
+          &lt;reconfig&gt;
+</system_output>
+  <system_output timestamp="3275.484604">[?2004hdemo@stephost:~$ </system_output>
+  <user_input timestamp="3276.180473">c</user_input>
+  <system_output timestamp="3276.180903">c</system_output>
+  <user_input timestamp="3276.400904">m</user_input>
+  <system_output timestamp="3276.40129">m</system_output>
+  <user_input timestamp="3276.581327"> </user_input>
+  <system_output timestamp="3276.581725"> </system_output>
+  <user_input timestamp="3276.920167">s</user_input>
+  <system_output timestamp="3276.920555">s</system_output>
+  <user_input timestamp="3277.039059">e</user_input>
+  <system_output timestamp="3277.039502">e</system_output>
+  <user_input timestamp="3277.275705">t</user_input>
+  <system_output timestamp="3277.27619">t</system_output>
+  <user_input timestamp="3277.652485">n</user_input>
+  <system_output timestamp="3277.653022">n</system_output>
+  <user_input timestamp="3277.793089">o</user_input>
+  <system_output timestamp="3277.793514">o</system_output>
+  <user_input timestamp="3278.011097">t</user_input>
+  <system_output timestamp="3278.011496">t</system_output>
+  <user_input timestamp="3278.19074">e</user_input>
+  <system_output timestamp="3278.191118">e</system_output>
+  <user_input timestamp="3278.487872"> </user_input>
+  <system_output timestamp="3278.488283"> </system_output>
+  <user_input timestamp="3279.007226">f</user_input>
+  <system_output timestamp="3279.007752">f</system_output>
+  <user_input timestamp="3279.146046">a</user_input>
+  <system_output timestamp="3279.146651">a</system_output>
+  <user_input timestamp="3279.243777">i</user_input>
+  <system_output timestamp="3279.244244">i</system_output>
+  <user_input timestamp="3279.579162">s</user_input>
+  <system_output timestamp="3279.579593">s</system_output>
+  <user_input timestamp="3279.696839">e</user_input>
+  <system_output timestamp="3279.697559">e</system_output>
+  <user_input timestamp="3279.89203">r</user_input>
+  <system_output timestamp="3279.892507">r</system_output>
+  <user_input timestamp="3280.291673">v</user_input>
+  <system_output timestamp="3280.292149">v</system_output>
+  <user_input timestamp="3280.467573">e</user_input>
+  <system_output timestamp="3280.468171">e</system_output>
+  <user_input timestamp="3280.625887">r</user_input>
+  <system_output timestamp="3280.626316">r</system_output>
+  <user_input timestamp="3280.982925">-</user_input>
+  <system_output timestamp="3280.983632">-</system_output>
+  <user_input timestamp="3281.380371">t</user_input>
+  <system_output timestamp="3281.380828">t</system_output>
+  <user_input timestamp="3281.520561">e</user_input>
+  <system_output timestamp="3281.521061">e</system_output>
+  <user_input timestamp="3281.639715">a</user_input>
+  <system_output timestamp="3281.640386">a</system_output>
+  <user_input timestamp="3281.760337">r</user_input>
+  <system_output timestamp="3281.760768">r</system_output>
+  <user_input timestamp="3281.978855">o</user_input>
+  <system_output timestamp="3281.979353">o</system_output>
+  <user_input timestamp="3282.197436">f</user_input>
+  <system_output timestamp="3282.197906">f</system_output>
+  <user_input timestamp="3282.378905">f</user_input>
+  <system_output timestamp="3282.379278">f</system_output>
+  <user_input timestamp="3282.762623">-</user_input>
+  <system_output timestamp="3282.76333">-</system_output>
+  <user_input timestamp="3282.92108">1</user_input>
+  <system_output timestamp="3282.921516">1</system_output>
+  <user_input timestamp="3283.156734">2</user_input>
+  <system_output timestamp="3283.157136">2</system_output>
+  <user_input timestamp="3283.475757"> </user_input>
+  <system_output timestamp="3283.476223"> </system_output>
+  <user_input timestamp="3286.601943">"</user_input>
+  <system_output timestamp="3286.602216">"</system_output>
+  <user_input timestamp="3287.095492">m</user_input>
+  <system_output timestamp="3287.095777">m</system_output>
+  <user_input timestamp="3287.195587">a</user_input>
+  <system_output timestamp="3287.195916">a</system_output>
+  <user_input timestamp="3287.451188">s</user_input>
+  <system_output timestamp="3287.451523">s</system_output>
+  <user_input timestamp="3287.690044">t</user_input>
+  <system_output timestamp="3287.690321">t</system_output>
+  <user_input timestamp="3287.828165">e</user_input>
+  <system_output timestamp="3287.828437">e</system_output>
+  <user_input timestamp="3288.027271">r</user_input>
+  <system_output timestamp="3288.02758">r</system_output>
+  <user_input timestamp="3288.167286"> </user_input>
+  <system_output timestamp="3288.167677"> </system_output>
+  <user_input timestamp="3288.639945">F</user_input>
+  <system_output timestamp="3288.640413">F</system_output>
+  <user_input timestamp="3288.738361">A</user_input>
+  <system_output timestamp="3288.739016">A</system_output>
+  <user_input timestamp="3288.876621">I</user_input>
+  <system_output timestamp="3288.877036">I</system_output>
+  <user_input timestamp="3289.429569"></user_input>
+  <system_output timestamp="3289.430266">[K</system_output>
+  <user_input timestamp="3289.648376"></user_input>
+  <system_output timestamp="3289.648776">[K</system_output>
+  <user_input timestamp="3289.828775"></user_input>
+  <system_output timestamp="3289.829186">[K</system_output>
+  <user_input timestamp="3290.023373"></user_input>
+  <system_output timestamp="3290.023874">[K</system_output>
+  <user_input timestamp="3290.22172"></user_input>
+  <system_output timestamp="3290.222099">[K</system_output>
+  <user_input timestamp="3290.400401"></user_input>
+  <system_output timestamp="3290.400834">[K</system_output>
+  <user_input timestamp="3290.556719"></user_input>
+  <system_output timestamp="3290.557379">[K</system_output>
+  <user_input timestamp="3290.77058"></user_input>
+  <system_output timestamp="3290.771225">[K</system_output>
+  <user_input timestamp="3290.946195"></user_input>
+  <system_output timestamp="3290.946883">[K</system_output>
+  <user_input timestamp="3291.124169"></user_input>
+  <system_output timestamp="3291.124595">[K</system_output>
+  <user_input timestamp="3295.186193">P</user_input>
+  <system_output timestamp="3295.186581">P</system_output>
+  <user_input timestamp="3295.537977">r</user_input>
+  <system_output timestamp="3295.538485">r</system_output>
+  <user_input timestamp="3295.731269">i</user_input>
+  <system_output timestamp="3295.731905">i</system_output>
+  <user_input timestamp="3295.907188">m</user_input>
+  <system_output timestamp="3295.907948">m</system_output>
+  <user_input timestamp="3296.062473">a</user_input>
+  <system_output timestamp="3296.062925">a</system_output>
+  <user_input timestamp="3296.261111">r</user_input>
+  <system_output timestamp="3296.261537">r</system_output>
+  <user_input timestamp="3296.672568">y</user_input>
+  <system_output timestamp="3296.673024">y</system_output>
+  <user_input timestamp="3296.926415"> </user_input>
+  <system_output timestamp="3296.926994"> </system_output>
+  <user_input timestamp="3297.428347">F</user_input>
+  <system_output timestamp="3297.428787">F</system_output>
+  <user_input timestamp="3297.544742">A</user_input>
+  <system_output timestamp="3297.54519">A</system_output>
+  <user_input timestamp="3297.685761">I</user_input>
+  <system_output timestamp="3297.686343">I</system_output>
+  <user_input timestamp="3298.113057"> </user_input>
+  <system_output timestamp="3298.11341"> </system_output>
+  <user_input timestamp="3298.328241">s</user_input>
+  <system_output timestamp="3298.328682">s</system_output>
+  <user_input timestamp="3298.466715">e</user_input>
+  <system_output timestamp="3298.467335">e</system_output>
+  <user_input timestamp="3298.703066">r</user_input>
+  <system_output timestamp="3298.703524">r</system_output>
+  <user_input timestamp="3299.069053">v</user_input>
+  <system_output timestamp="3299.069767">v</system_output>
+  <user_input timestamp="3299.186803">e</user_input>
+  <system_output timestamp="3299.187426">e</system_output>
+  <user_input timestamp="3299.400523">r</user_input>
+  <system_output timestamp="3299.400908">r</system_output>
+  <user_input timestamp="3299.576553">.</user_input>
+  <system_output timestamp="3299.576968">.</system_output>
+  <user_input timestamp="3300.061108">"</user_input>
+  <system_output timestamp="3300.06149">"</system_output>
+  <user_input timestamp="3301.334847">
+</user_input>
+  <system_output timestamp="3301.335492">
+[?2004l
+</system_output>
+  <system_output timestamp="3301.34457">/usr/bin/cm: 111: cannot create /var/local/createvm/VMs/faiserver-tearoff-12/note.txt: Permission denied
+</system_output>
+  <system_output timestamp="3301.345232">[?2004hdemo@stephost:~$ </system_output>
+  <user_input timestamp="3302.485345">[A</user_input>
+  <system_output timestamp="3302.485867">cm setnote faiserver-tearoff-12 "Primary FAI server."</system_output>
+  <user_input timestamp="3303.08907"/>
+  <system_output timestamp="3303.089435">
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C</system_output>
+  <user_input timestamp="3303.518742">s</user_input>
+  <system_output timestamp="3303.519219">[1@s</system_output>
+  <user_input timestamp="3303.618114">u</user_input>
+  <system_output timestamp="3303.618558">[1@u</system_output>
+  <user_input timestamp="3303.775316">d</user_input>
+  <system_output timestamp="3303.775825">[1@d</system_output>
+  <user_input timestamp="3303.871304">o</user_input>
+  <system_output timestamp="3303.871987">[1@o</system_output>
+  <user_input timestamp="3303.948989"> </user_input>
+  <system_output timestamp="3303.949425">[1@ </system_output>
+  <user_input timestamp="3304.146148">
+</user_input>
+  <system_output timestamp="3304.146673">
+[?2004l
+</system_output>
+  <system_output timestamp="3304.171737">[sudo] password for demo: </system_output>
+  <user_input timestamp="3308.687105"/>
+  <system_output timestamp="3308.687762">
+</system_output>
+  <system_output timestamp="3308.692814">sudo: a password is required
+</system_output>
+  <system_output timestamp="3308.696279">[?2004hdemo@stephost:~$ </system_output>
+<annotation>
+</annotation>
+</event>
+<event depth="-2">
+  <user_input timestamp="3312.315169"/>
+  <system_output timestamp="3312.315853">[?2004l
+
+exit
+</system_output>
+<annotation>
+</annotation>
+</event>
+</recording>
