@@ -25,6 +25,7 @@ const term = new Terminal({
   cols: 80,
 });
 
+// open xterm terminal and display intro message
 term.open(document.getElementById('terminal'));
 term.focus();
 term.write('Hello from \x1B[1;3;31mxterm.js\x1B[0m\r\n$ ');
@@ -42,20 +43,6 @@ term.onKey(e => {
   
   // send the character to the server via WebSocket
   socket.send(char);
-
-
-        // if (e.domEvent.key === 'Backspace') {
-      //   if (command.length > 0) {
-      //     command = command.slice(0, -1);
-      //     term.write('\b \b');
-      //   }
-      // } else if (e.domEvent.key === 'Enter') {
-      //   term.write('\r\nYou typed: ' + command + '\r\n$ ');
-      //   command = '';
-      // } else if (e.domEvent.key.length === 1) {
-      //   command += char;
-      //   term.write(char);
-      // }
 });
 
 
