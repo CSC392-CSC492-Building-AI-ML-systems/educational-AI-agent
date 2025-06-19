@@ -7,7 +7,7 @@ const wss = new WebSocket.Server({ port: 8080 });
 
 console.log('WebSocket server started on port 8080');
 
-// since we will be running a shell, check the OS platform and determine the shell to use
+// since local shell is run, check the OS platform and determine which shell to use
 var shell = os.platform() === 'win32' ? 'powershell.exe' : 'bash';
 
 // handle pty process creation
