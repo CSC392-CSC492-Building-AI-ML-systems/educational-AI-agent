@@ -3,4 +3,13 @@ __pycache__/
 *.vscode/
 node_modules/
 package-lock.json
+.package-lock.json
 .idea/
+.bin/
+# Logs
+logs/
+npm-debug.log*
+.env
+# Build directories
+dist/
+build/
