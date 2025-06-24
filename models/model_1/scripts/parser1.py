@@ -1,7 +1,7 @@
 import sys
 import os
 
-# I run it with: python models/model_1/scripts/parser1.py data/model_0/inputs data/model_0/outputs data/model_1/parsed
+# I run it with: python models/model_1/scripts/parser1.py data/model_0/inputs data/model_0/outputs data/model_1/inputs
 if len(sys.argv) != 4:
     print("Usage: python parser1.py <xml_input_folder> <txt_input_folder> <output_folder>")
     sys.exit(1)

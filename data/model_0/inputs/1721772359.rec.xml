@@ -1,0 +1,197 @@
+<?xml version="1.0" ?>
+<recording version="2" width="239" height="196" timestamp="1721772359">
+  <system_output timestamp="0.006176">[?2004hdemo@stephost:~$ </system_output>
+  <user_input timestamp="0.552975"/>
+  <system_output timestamp="0.553405">
+(reverse-i-search)`': </system_output>
+  <user_input timestamp="0.829643">s</user_input>
+  <system_output timestamp="0.829885">s': asciinema rec `date +%s`.rec --[7ms[27mtdin</system_output>
+  <user_input timestamp="1.084198">c</user_input>
+  <system_output timestamp="1.084488">
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cc': a[7msc[27miinema rec `date +%s`.rec --stdin
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C</system_output>
+  <user_input timestamp="1.751625">r</user_input>
+  <system_output timestamp="1.751871">[25Pr': [7mscr[27meen -dr</system_output>
+  <user_input timestamp="2.539081">
+</user_input>
+  <system_output timestamp="2.53936">
+[8Pdemo@stephost:~$ scr
+[?2004l
+</system_output>
+  <system_output timestamp="2.563986">[r[m[2J[H[?7h[?1;4;6l[?1049h[22;0;0t[4l[?1h=[0m(B[1;196r</system_output>
+  <system_output timestamp="2.581505">[H[2J]0;screen[H[2J[22;2t]2;screenInitializing package states...
+Writing extended state information...
+Building tag database...
+The following NEW packages will be installed:
+Th
+gcc-12-base{a} libc6{a} libgcc-s1{a} libstatgrab10{a} statgrab
+The following packages are RECOMMENDED but will NOT be installed:
+Th
+libidn2-0
+0 packages upgraded, 5 newly installed, 0 to remove and 0 not upgraded.
+Need to get 219 kB/2,943 kB of archives. After unpacking 13.0 MB will be used.
+Writing extended state information...
+Get: 1 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 libstatgrab10 i386 0.92.1-1.1 [120 kB]
+Get: 2 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 statgrab i386 0.92.1-1.1 [99.4 kB]
+Fetched 219 kB in 0s (1,045 kB/s)
+install_packages: executing  aptitude -R -d -o Aptitude::Log=/dev/null -o Aptitude::CmdLine::Ignore-Trust-Violations=yes -o APT::Get::AllowUnauthenticated=true -o Acquire::AllowInsecureRepositories=true -o DPkg::force-conflicts::=yes -o Dir::State=/usr/fai/mirror/aptcache/var/lib/apt -o Dir::Log=/usr/fai/mirror/aptcache/var/log/apt -o Dir::State::extended_states=/usr/fai/mirror/aptcache/var/lib/apt/lists/extended_states -o Dir::State::status=/usr/fai/mirror/aptcache/statefile -o Dir::Cache=/usr/fai/mirror/aptcache/var/cache/apt -o Dir::State=/usr/fai/mirror/aptcache/var/cache/apt -o Dir::Cache::Archives=/usr/fai/mirror/aptcache/var/cache/apt/archives -o Dir::Etc=/usr/fai/mirror/aptcache/etc/apt/ -o Dir::State::Lists=/usr/fai/mirror/aptcache/var</system_output>
+  <system_output timestamp="2.581746">/lib/apt/lists/ -y install git-core
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Reading extended state information...
+Initializing package states...
+Writing extended state information...
+Building tag database...
+Note: selecting &quot;git&quot; instead of the virtual package &quot;git-core&quot;
+The following NEW packages will be installed:
+Th
+dpkg{a} gcc-12-base{a} git git-man{a} libacl1{a} libbrotli1{a} libbz2-1.0{a} libc6{a} libcom-err2{a} libcrypt1{a} libcurl3-gnutls{a} libdb5.3{a} liberror-perl{a} libexpat1{a} libffi8{a} libgcc-s1{a} libgdbm-compat4{a} libgdbm6{a} libgmp10{a} libgnutls30{a} libgssapi-krb5-2{a} libhogweed6{a} libidn2-0{a} libk5crypto3{a} libkeyutils1{a} libkrb5-3{a} libkrb5support0{a} libldap-2.5-0{a} liblzma5{a} libmd0{a} libnettle8{a} libnghttp2-14{a} libp11-kit0{a} libpcre2-8-0{a} libperl5.36{a} libpsl5{a} librtmp1{a} libsasl2-2{a} libsasl2-modules-db{a} libselinux1{a} libssh2-1{a} libssl3{a} libtasn1-6{a} libunistring2{a} libzstd1{a} perl{a} perl-base{a} perl-modules-5.36{a} tar{a} zlib1g{a}
+The following packages are RECOMMENDED but will NOT be installed:
+Th
+ca-certificates krb5-locales less libldap-common libsasl2-modules netbase openssh-client patch publicsuffix
+0 packages upgraded, 50 newly installed, 0 to remove and 0 not upgraded.
+Need to get 0 B/34.1 MB of archives. After unpacking 154 MB will be used.
+Writing extended state information...
+install_packages: executing  aptitude -R -d -o Aptitude::Log=/dev/null -o Aptitude::CmdLine::Ignore-Trust-Violations=yes -o APT::Get::AllowUnauthenticated=true -o Acquire::AllowInsecureRepositories=true -o DPkg::force-conflicts::=yes -o Dir::State=/usr/fai/mirror/aptcache/var/lib/apt -o Dir::Log=/usr/fai/mirror/aptcache/var/log/apt -o Dir::State::extended_states=/u</system_output>
+  <system_output timestamp="2.58196">sr/fai/mirror/aptcache/var/lib/apt/lists/extended_states -o Dir::State::status=/usr/fai/mirror/aptcache/statefile -o Dir::Cache=/usr/fai/mirror/aptcache/var/cache/apt -o Dir::State=/usr/fai/mirror/aptcache/var/cache/apt -o Dir::Cache::Archives=/usr/fai/mirror/aptcache/var/cache/apt/archives -o Dir::Etc=/usr/fai/mirror/aptcache/etc/apt/ -o Dir::State::Lists=/usr/fai/mirror/aptcache/var/lib/apt/lists/ -y install git-core
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Reading extended state information...
+Initializing package states...
+Writing extended state information...
+Building tag database...
+Note: selecting &quot;git&quot; instead of the virtual package &quot;git-core&quot;
+The following NEW packages will be installed:
+Th
+dpkg{a} gcc-12-base{a} git git-man{a} libacl1{a} libbrotli1{a} libbz2-1.0{a} libc6{a} libcom-err2{a} libcrypt1{a} libcurl3-gnutls{a} libdb5.3{a} liberror-perl{a} libexpat1{a} libffi8{a} libgcc-s1{a} libgdbm-compat4{a} libgdbm6{a} libgmp10{a} libgnutls30{a} libgssapi-krb5-2{a} libhogweed6{a} libidn2-0{a} libk5crypto3{a} libkeyutils1{a} libkrb5-3{a} libkrb5support0{a} libldap-2.5-0{a} liblzma5{a} libmd0{a} libnettle8{a} libnghttp2-14{a} libp11-kit0{a} libpcre2-8-0{a} libperl5.36{a} libpsl5{a} librtmp1{a} libsasl2-2{a} libsasl2-modules-db{a} libselinux1{a} libssh2-1{a} libssl3{a} libtasn1-6{a} libunistring2{a} libzstd1{a} perl{a} perl-base{a} perl-modules-5.36{a} tar{a} zlib1g{a}
+The following packages are RECOMMENDED but will NOT be installed:
+Th
+ca-certificates krb5-locales less libldap-common libsasl2-modules netbase openssh-client patch publicsuffix
+0 packages upgraded, 50 newly installed, 0 to remove and 0 not upgraded.
+Need to get 0 B/34.1 MB of archives. After unpacking 154 MB will be used.
+Writing extended state information...
+install_packages: executing  aptitude -R -d -o Aptitude::Log=/dev/null -o Aptitude::CmdLine::Ignore-Trust-Violations=yes -o APT::Get::AllowUnauthenticated=true -o Acquire::AllowInsecureRepositories=true -o DPkg::force-conflicts::=yes -o Dir::State=/usr/fai/mirror/aptcache/var/lib/apt -o Dir::Log=/usr/fai/mirror/aptcache/var/log/apt -o Dir::State::extended_states=/usr/fai/mirror/aptcache/var/lib/apt/lists/extended_states -o Dir::State::status=/usr/fai/mirror/aptcache/statefile -o Dir::Cache=/usr/fai/mirror/aptcache/var/cache/apt -o Dir::State=/usr/fai/mirror/aptcache/var/cache/apt -o Dir::Cache::Archives=/usr/fai/mirror/aptcache/var/cache/apt/archives -o Dir::Etc=/usr/fai/mirror/aptcache/etc/apt/ -o Dir::State::Lists=/usr/fai/mirror/aptcache/var/lib/apt/lists/ -y install xorg
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Reading extended state information...
+Initializing package states...
+Writing extended state information...
+Building tag database...
+The following NEW packages will be installed:
+Th
+adduser{a} bsdextrautils{a} coreutils{a} cpp{a} cpp-12{a} debconf{a} dpkg{a} fontconfig-config{a} fonts-dejavu-core{a} gcc-12-base{a} groff-base{a} keyboard-configuration{a} libacl1{a} libatomic1{a} libattr1{a} libaudit-common{a} libaudit1{a} libblkid1{a} libbrotli1{a} libbsd0{a} libbz2-1.0{a} libc6{a} libcap-ng0{a} libcap2{a} libcrypt1{a} libdb5.3{a} libdbus-1-3{a} libdrm-amdgpu1{a} libdrm-common{a} libdrm-intel1{a} libdrm-nouveau2{a} libdrm-radeon1{a} libdrm2{a} libedit2{a} libegl-mesa0{a} libegl1{a} libelf1{a} libepoxy0{a} libevdev2{a} libexpat1{a} libffi8{a} libfontconfig1{a} libfontenc1{a} libfreetype6{a} libgbm1{a} libgcc-s1{a} libgcrypt20{a} libgdbm6{a} libgl1{a} libgl1-mesa-dri{a} libglapi-mesa{a} libglib2.0-0{a} libglu1-mesa{a} libglvnd0{a} libglx-mesa0{a} libglx0{a} libgmp10{a} libgpg-error0{a} libgudev-1.0-0{a} libice6{a} libicu72{a} libinput-bin{a} libinput10{a} libisl23{a} libkmod2{a} libllvm15{a} liblocale-gettext-perl{a} liblz4-1{a} liblzma5{a} libmd0{a} libmount1{a} libmpc3{a} libmpfr6{a} libmtdev1{a} libopengl0{a} libpam-modules{a} libpam-modules-bin{a} libpam0g{a} libpciaccess0{a} libpcre2-8-0{a} libpipeline1{a} libpixman-1-0{a} libpng16-16{a} libseccomp2{a} libselinux1{a} libsemanage-common{a} libsemanage2{a} libsensors-config{a} libsensors5{a} libsepol2{a} libsm6{a} libsmartcols1{a} libssl3{a} libstdc++6{a} libsystemd0{a} libtinfo6{a} libuchardet0{a} libudev1{a} libunwind8{a} libutempter0{a} libuuid1{a} libwacom-common{a} libwacom9{a} libwayland-client0{a} libwayland-server0{a} libx11-6{a} libx11-data{a} libx11-xcb1{a} libxatracker2{a} libxau6{a} libxaw7{a} libxcb-damage0{a} libxcb-dri2-0{a} libxcb-dri3-0{a} libxcb-glx0{a} libxcb-present0{a} libxcb-randr0{a} libxcb-shape0{a} libxcb-shm0{a} </system_output>
+  <system_output timestamp="2.582068">libxcb-sync1{a} libxcb-xfixes0{a} libxcb1{a} libxcomposite1{a} libxcursor1{a} libxcvt0{a} libxdmcp6{a} libxext6{a} libxfixes3{a} libxfont2{a} libxft2{a} libxi6{a} libxinerama1{a} libxkbfile1{a} libxml2{a} libxmu6{a} libxmuu1{a} libxpm4{a} libxrandr2{a} libxrender1{a} libxshmfence1{a} libxt6{a} libxtst6{a} libxv1{a} libxxf86dga1{a} libxxf86vm1{a} libz3-4{a} libzstd1{a} lsb-base{a} man-db{a} passwd{a} perl-base{a} sysvinit-utils{a} tar{a} udev{a} x11-apps{a} x11-common{a} x11-session-utils{a} x11-utils{a} x11-xkb-utils{a} x11-xserver-utils{a} xauth{a} xbitmaps{a} xfonts-100dpi{a} xfonts-75dpi{a} xfonts-base{a} xfonts-encodings{a} xfonts-scalable{a} xfonts-utils{a} xinit{a} xkb-data{a} xorg xorg-docs-core{a} xserver-common{a} xserver-xorg{a} xserver-xorg-core{a} xserver-xorg-input-all{a} xserver-xorg-input-libinput{a} xserver-xorg-video-all{a} xserver-xorg-video-amdgpu{a} xserver-xorg-video-ati{a} xserver-xorg-video-fbdev{a} xserver-xorg-video-nouveau{a} xserver-xorg-video-radeon{a} xserver-xorg-video-vesa{a} xserver-xorg-video-vmware{a} xterm{a} zlib1g{a}
+The following packages are RECOMMENDED but will NOT be installed:
+Th
+apt-utils dbus debconf-i18n libglib2.0-data libgpg-error-l10n libidn2-0 libpam-elogind libpam-systemd sensible-utils shared-mime-info uuid-runtime xcvt xdg-user-dirs xserver-xorg-input-wacom xserver-xorg-legacy xserver-xorg-video-intel xserver-xorg-video-qxl
+0 packages upgraded, 187 newly installed, 0 to remove and 0 not upgraded.
+Need to get 24.5 MB/127 MB of archives. After unpacking 443 MB will be used.
+Writing extended state information...
+Get: 1 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 libxatracker2 i386 22.3.6-1+deb12u1 [2,030 kB]
+Get: 2 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 libxcb-damage0 i386 1.15-1 [105 kB]
+Get: 3 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 libxcvt0 i386 0.1.2-1 [5,696 B]
+Get: 4 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 libxfont2 i386 1:2.0.6-1 [140 kB]
+Get: 5 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 x11-apps i386 7.7+9 [680 kB]
+Get: 6 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 x11-session-utils i386 7.7+5 [75.9 kB]
+Get: 7 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 xfonts-100dpi all 1:1.0.5 [3,819 kB]
+Get: 8 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 xfonts-75dpi all 1:1.0.5 [3,365 kB]
+Get: 9 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 xfonts-base all 1:1.0.5+nmu1 [5,895 kB]
+Get: 10 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 xfonts-scalable all 1:1.0.3-1.3 [306 kB]
+Get: 11 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 xinit i386 1.4.0-1 [50.2 kB]
+Get: 12 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 xserver-common all 2:21.1.7-3+deb12u7 [2,383 kB]
+Get: 13 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 xserver-xorg-core i386 2:21.1.7-3+deb12u7 [3,784 kB]
+Get: 14 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 xserver-xorg-video-amdgpu i386 23.0.0-1 [144 kB]
+Get: 15 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 xserver-xorg-video-radeon i386 1:19.1.0-3 [510 kB]
+Get: 16 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 xserver-xorg-video-ati i386 1:19.1.0-3 [363 kB]
+Get: 17 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 xserver-xorg-video-fbdev i386 1:0.5.0-2 [26.0 kB]
+Get: 18 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 xserver-xorg-video-nouveau i386 1:1.0.17-2 [335 kB]
+Get: 19 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 xserver-xorg-video-vesa i386 1:2.5.0-1+b1 [33.4 kB]
+Get: 20 http://127.0.0.1:314</system_output>
+  <system_output timestamp="2.582204">2/ftp.de.debian.org/debian bookworm/main i386 xserver-xorg-video-vmware i386 1:13.3.0-3.1+b1 [120 kB]
+Get: 21 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 xserver-xorg-video-all i386 1:7.7+23 [38.7 kB]
+Get: 22 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 xserver-xorg-input-libinput i386 1.2.1-1+b1 [67.5 kB]
+Get: 23 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 xserver-xorg-input-all i386 1:7.7+23 [38.7 kB]
+Get: 24 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 xserver-xorg i386 1:7.7+23 [94.2 kB]
+Get: 25 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 xorg-docs-core all 1:1.7.1-1.2 [84.2 kB]
+Get: 26 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 xorg i386 1:7.7+23 [39.1 kB]
+Fetched 24.5 MB in 12s (1,986 kB/s)
+install_packages: executing  aptitude -R -d -o Aptitude::Log=/dev/null -o Aptitude::CmdLine::Ignore-Trust-Violations=yes -o APT::Get::AllowUnauthenticated=true -o Acquire::AllowInsecureRepositories=true -o DPkg::force-conflicts::=yes -o Dir::State=/usr/fai/mirror/aptcache/var/lib/apt -o Dir::Log=/usr/fai/mirror/aptcache/var/log/apt -o Dir::State::extended_states=/usr/fai/mirror/aptcache/var/lib/apt/lists/extended_states -o Dir::Sta</system_output>
+  <system_output timestamp="2.582354">te::status=/usr/fai/mirror/aptcache/statefile -o Dir::Cache=/usr/fai/mirror/aptcache/var/cache/apt -o Dir::State=/usr/fai/mirror/aptcache/var/cache/apt -o Dir::Cache::Archives=/usr/fai/mirror/aptcache/var/cache/apt/archives -o Dir::Etc=/usr/fai/mirror/aptcache/etc/apt/ -o Dir::State::Lists=/usr/fai/mirror/aptcache/var/lib/apt/lists/ -y install xscreensaver
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Reading extended state information...
+Initializing package states...
+Writing extended state information...
+Building tag database...
+The following NEW packages will be installed:
+Th
+adduser{a} adwaita-icon-theme{a} at-spi2-common{a} ca-certificates{a} dbus{a} dbus-bin{a} dbus-daemon{a} dbus-session-bus-common{a} dbus-system-bus-common{a} dbus-user-session{a} dconf-gsettings-backend{a} dconf-service{a} debconf{a} dmsetup{a} dpkg{a} fontconfig{a} fontconfig-config{a} fonts-dejavu-core{a} gcc-12-base{a} gtk-update-icon-cache{a} hicolor-icon-theme{a} init-system-helpers{a} libacl1{a} libapparmor1{a} libargon2-1{a} libatk-bridge2.0-0{a} libatk1.0-0{a} libatspi2.0-0{a} libaudit-common{a} libaudit1{a} libavahi-client3{a} libavahi-common-data{a} libavahi-common3{a} libblkid1{a} libbrotli1{a} libbsd0{a} libbz2-1.0{a} libc6{a} libcairo-gobject2{a} libcairo2{a} libcap-ng0{a} libcap2{a} libclone-perl{a} libcolord2{a} libcom-err2{a} libcrypt1{a} libcryptsetup12{a} libcups2{a} libdatrie1{a} libdb5.3{a} libdbus-1-3{a} libdconf1{a} libdeflate0{a} libdevmapper1.02.1{a} libencode-locale-perl{a} libepoxy0{a} libexpat1{a} libfdisk1{a} libffi8{a} libfile-find-rule-perl{a} libfile-listing-perl{a} libfontconfig1{a} libfreetype6{a} libfribidi0{a} libgcc-s1{a} libgcrypt20{a} libgdbm-compat4{a} libgdbm6{a} libgdk-pixbuf-2.0-0{a} libgdk-pixbuf2.0-common{a} libglib2.0-0{a} libgmp10{a} libgnutls30{a} libgpg-error0{a} libgraphite2-3{a} libgssapi-krb5-2{a} libgtk-3-0{a} libgtk-3-common{a} libharfbuzz0b{a} libhogweed6{a} libhtml-parser-perl{a} libhtml-tagset-perl{a} libhtml-tree-perl{a} libhttp-cookies-perl{a} libhttp-date-perl{a} libhttp-message-perl{a} libhttp-negotiate-perl{a} libice6{a} libicu72{a} libidn2-0{a} libio-html-perl{a} libio-socket-ssl-perl{a} libip4tc2{a} libjbig0{a} libjpeg62-turbo{a} libjson-c5{a} libk5crypto3{a} libkeyutils1{a} libkmod2{a} libkrb5-3{a} libkrb5support0{a} liblcms2-2{a} liblerc4{a} liblwp-mediatypes-perl{a} liblwp-protocol-https-perl{a} liblz4-1{a} liblzma5{a} libmd0{a} libmount1{a} libncursesw6{a} libnet-http-perl{a} libnet-ssleay-perl{a} libnettle8{a} libnumber-compare-perl{a} libp11-kit0{a} libpam-modules{a} libpam-modules-bin{a} libpam-runtime{a} libpam-systemd{a} libpam0g{a} libpango-1.0-0{a} libpangocairo-1.0-0{a} libpangoft2-1.0-0{a} libpcre2-8-0{a} libperl5.36{a} libpixman-1-0{a} libpng16-16{a} libproc2-0{a} libregexp-ipv6-perl{a} libseccomp2{a} libselinux1{a} libsemanage-common{a} libsemanage2{a} libsepol2{a} libsm6{a} libsmartcols1{a} libssl3{a} libstdc++6{a} libsystemd-shared{a} libsystemd0{a} libtasn1-6{a} libtext-glob-perl{a} libthai-data{a} libthai0{a} libtiff6{a} libtimedate-perl{a} libtinfo6{a} libtry-tiny-perl{a} libudev1{a} libunistring2{a} liburi-perl{a} libuuid1{a} libwayland-client0{a} libwayland-cursor0{a} libwayland-egl1{a} libwebp7{a} libwww-perl{a} libwww-robotrules-perl{a} libx11-6{a} libx11-data{a} l</system_output>
+  <system_output timestamp="2.582434">ibxau6{a} libxcb-render0{a} libxcb-shm0{a} libxcb1{a} libxcomposite1{a} libxcursor1{a} libxdamage1{a} libxdmcp6{a} libxext6{a} libxfixes3{a} libxft2{a} libxi6{a} libxinerama1{a} libxkbcommon0{a} libxml2{a} libxrandr2{a} libxrender1{a} libxt6{a} libxxf86vm1{a} libzstd1{a} lsb-base{a} mount{a} netbase{a} openssl{a} passwd{a} perl{a} perl-base{a} perl-modules-5.36{a} perl-openssl-defaults{a} procps{a} shared-mime-info{a} systemd{a} systemd-sysv{a} sysvinit-utils{a} tar{a} usrmerge{a} x11-common{a} xkb-data{a} xscreensaver xscreensaver-data{a} zlib1g{a}
+The following packages are RECOMMENDED but will NOT be installed:
+Th
+apt-utils at-spi2-core chrony debconf-i18n fonts-urw-base35 krb5-locales libdata-dump-perl libgdk-pixbuf2.0-bin libglib2.0-data libgpg-error-l10n libgpm2 libgtk-3-bin libhtml-form-perl libhtml-format-perl libhttp-daemon-perl libjpeg-turbo-progs libmailtools-perl libnss-systemd librsvg2-common miscfiles ntpsec openntpd psmisc sensible-utils systemd-timesyncd uuid-runtime wamerican wamerican-huge wamerican-insane wamerican-large wamerican-small wbrazilian wbritish wbritish-huge wbritish-insane wbritish-large wbritish-small wbulgarian wcanadian wcanadian-huge wcanadian-insane wcanadian-large wcanadian-small wcatalan wdanish wdutch wesperanto wfaroese wfrench wgalician-minimos wgerman-medical witalian wngerman wnorwegian wogerman wpolish wportuguese wspanish wswedish wswiss wukrainian xdg-user-dirs xfonts-100dpi
+0 packages upgraded, 201 newly installed, 0 to remove and 0 not upgraded.
+Need to get 823 kB/77.5 MB of archives. After unpacking 299 MB will be used.
+Writing extended state information...
+Get: 1 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 xscreensaver-data i386 6.06+dfsg1-3+deb12u1 [379 kB]
+Get: 2 http://127.0.0.1:31</system_output>
+  <system_output timestamp="2.582528">42/ftp.de.debian.org/debian bookworm/main i386 xscreensaver i386 6.06+dfsg1-3+deb12u1 [445 kB]
+Fetched 823 kB in 0s (2,754 kB/s)
+Calling reprepro
+Exporting indices...
+/usr/bin/fai-mirror finished.
+Number of packages in the mirror: 2233
+Mirror size and location: 1.5G  /usr/fai/mirror
+Copying the nfsroot to CD image
+Copying the config space to CD image
+Copying the mirror to CD image
+Parallel mksquashfs: Using 4 processors
+Creating 4.0 filesystem on /home/tmp/fai-cd.myjmE0/LiveOS/squashfs.img, block size 131072.
+[===========================================================\] 22034/22034 100%
+
+Exportable Squashfs 4.0 filesystem, zstd compressed, data block size 131072[67D
+compressed data, compressed metadata, compressed fragments,[59D
+compressed xattrs, compressed ids[33D
+duplicates are removed
+Filesystem size 1887842.53 Kbytes (1843.60 Mbytes)[42D
+66.94% of uncompressed filesystem size (2820398.90 Kbytes)
+Inode table size 21561 bytes (21.06 Kbytes)[35D
+24.42% of uncompressed inode table size (88278 bytes)
+Directory table size 56 bytes (0.05 Kbytes)[35D
+96.55% of uncompressed directory table size (58 bytes)
+Number of duplicate files found 0
+Number of inodes 3
+Number of files 1
+Number of fragments 0
+Number of symbolic links 0
+Number of device nodes 0
+Number of fifo nodes 0
+Number of socket nodes 0
+Number of directories 2
+Number of hard-links 0
+Number of ids (unique uids + gids) 1
+Number of uids 1[8D
+root (0)
+Number of gids 1[8D
+root (0)
+mkfs.fat 4.2 (2021-01-31)
+Writing FAI CD-R</system_output>
+  <system_output timestamp="2.582602">OM image to fai_cd.iso. This may need some time.
+xorriso 1.5.4 : RockRidge filesystem manipulator, libburnia project.
+
+ISO image size and filename: 1.9G[7Cfai_cd.iso
+
+real[4C32m26.849s
+user[4C14m17.323s
+sys[5C2m38.379s
+demo@faiserver:/home/fai$]0;]0;screen[?2004h </system_output>
+  <system_output timestamp="42003.85206">[?2004l[?1l&gt;]0;]2;screen[23;2t[196;1H
+[?1049l[23;0;0t</system_output>
+  <system_output timestamp="42003.870979">[remote detached from 120968.pts-29.stephost]
+</system_output>
+  <system_output timestamp="42003.871904">[?2004hdemo@stephost:~$ </system_output>
+</recording>

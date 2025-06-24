@@ -1,0 +1,6 @@
+0
+User explores cm commands and identify existing server instances.
+0
+User attempts to ssh to the IP address 172.16.0.17, which results in a "No route to host" error.
+0
+User exits the session
