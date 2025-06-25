@@ -5,22 +5,22 @@ const pty = require('node-pty');
 // create backend websocket server
 const wss = new WebSocket.Server({ port: 8080 });
 
-console.log('WebSocket server started on port 8080');
-
 // since local shell is run, check the OS platform and determine which shell to use
 var shell = os.platform() === 'win32' ? 'powershell.exe' : 'bash';
 
-// handle pty process creation
-var ptyprocess = pty.spawn(shell, [], {
-	name: 'xterm-color',
-	cols: 80,
-	rows: 30,
-	// cwd: process.env.HOME,
-	env: process.env,
-});
+console.log('WebSocket server started on port 8080');
 
 wss.on('connection', ws => {
 	console.log('New client connected');
+
+	// handle pty process creation
+	var ptyprocess = pty.spawn(shell, [], {
+		name: 'xterm-color',
+		cols: 80,
+		rows: 30,
+		// cwd: process.env.HOME,
+		env: process.env,
+	});
 
 	// handle incoming messages from the client
 	ws.on('message', message => {
@@ -38,6 +38,7 @@ wss.on('connection', ws => {
 	});
 
 	ws.on('close', () => {
+		ptyprocess.kill();
 		console.log('Client disconnected');
 	});
 });

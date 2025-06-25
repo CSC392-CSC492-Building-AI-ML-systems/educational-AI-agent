@@ -28,7 +28,12 @@ const term = new Terminal({
 // open xterm terminal and display intro message
 term.open(document.getElementById('terminal'));
 term.focus();
-term.write('Hello from \x1B[1;3;31mxterm.js\x1B[0m\r\n$ ');
+term.write(
+  '\x1B[1;34mWelcome to AutoDocs AI Terminal!\x1B[0m\r\n' +  // blue bold
+  'You are now connected to a live shell environment.\r\n' +
+  'All your actions will be automatically tracked and summarized.\r\n' +
+  '────────────────────────────────────────────────────────────────────────────────\r\n'
+);
 
 let command = '';
 
