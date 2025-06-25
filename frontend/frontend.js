@@ -25,6 +25,14 @@ const term = new Terminal({
   cols: 80,
 });
 
+// create annotation box for displaying event annotations
+const annotationBox = document.getElementById('annotationBox');
+
+// helper function to update the annotation box after each event
+function updateAnnotation(text) {
+  annotationBox.value = text;
+}
+
 // open xterm terminal and display intro message
 term.open(document.getElementById('terminal'));
 term.focus();
@@ -48,6 +56,19 @@ term.onKey(e => {
   
   // send the character to the server via WebSocket
   socket.send(char);
+
+  // Below is just to test whether the annotation box updates correctly
+  // Build up command as user types
+  if (e.domEvent.key === 'Enter') {
+    updateAnnotation(`the last event was: ${command}`);
+    command = ''; // Reset for next input
+  } else if (e.domEvent.key === 'Backspace') {
+    // Remove last character (basic handling, won't match terminal exactly)
+    command = command.slice(0, -1);
+  } else if (e.domEvent.key.length === 1) {
+    // Add normal printable characters only
+    command += char;
+  }
 });
 
 

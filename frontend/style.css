@@ -27,7 +27,28 @@ p {
 
 #terminal {
   width: 800px;
-  height: 400px;
-  border: 1px solid #ccc;
+  height: 510px;
+  resize: both;
+  border: 5px solid #000000;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.annotation-label {
+  font-weight: 600;
+  margin-bottom: 4px;
+  font-size: 20px;
+  color: #333;
+}
+
+.annotation-box {
+  width: 600px;
+  height: 100px;
+  resize: both;
+  padding: 12px;
+  font-size: 16px;
+  background: #f4f4f4;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 40px;
+  color: #333;
 }
