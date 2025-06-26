@@ -10,6 +10,8 @@ package-lock.json
 logs/
 npm-debug.log*
 .env
+.venv
+.env.local
 # Build directories
 dist/
 build/
