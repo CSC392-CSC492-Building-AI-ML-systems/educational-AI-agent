@@ -1,0 +1,6 @@
+0
+User attempts to SSH into 172.16.0.17 but fails due to network issues
+0
+User lists available tearoff sessions and gets the IP addresses of these sessions
+0
+User exits the local terminal sessions

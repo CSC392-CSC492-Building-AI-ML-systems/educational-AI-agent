@@ -1,0 +1,26 @@
+0
+User reattaches to a detached screen session
+-1
+User installs essential packages, builds a bootable FAI CD image, and transfers it via SCP
+-1
+User boots the virtual machine and waits for the system to fully start up
+2
+User installs necessary system packages again, builds a bootable ISO, and transfers it to a remote server
+0
+User reviews installed packages in Emacs and recalls a previous scp command to transfer a generated ISO to a remote server
+0
+User recalls several previous commands via reverse search
+0
+User attempts to install packages, build boostable ISO, and transfers it via SCP again
+-1
+User boots the virtual machine and waits for the system to fully start up
+1
+User reviews installed packages in Emacs and recalls a previous scp command to transfer a generated ISO to a remote server
+0
+User navigates into the /home/fai/config directory and attempts to check the git status
+-1
+User lists all files in the /home/fai/config directory
+1
+User generates a new ssh key and enters password for authentication
+0
+User displays the generated public key

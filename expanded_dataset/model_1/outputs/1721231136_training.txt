@@ -1,0 +1,4 @@
+0
+User reattaches to a detached screen session
+0
+User is disconnected from the remote session due to a timeout.

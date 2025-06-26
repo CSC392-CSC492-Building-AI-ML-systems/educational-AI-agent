@@ -1,0 +1,26 @@
+0
+User lists available tearoff sessions
+0
+User logs into remote host 172.16.0.17 via SSH
+-1
+User navigates to /home/fai/config directory
+-1
+User checks the git log
+0
+User exits the git log viewer
+0
+User checks the changes across the last ten commits on the master branch
+0
+User checks the difference between the scripts/GRUBEFI/10-setup branch across multiple commits ago on the master branch
+0
+User checks the difference between the package_config/GRUBEFI branch across multiple commits ago on the master branch
+0
+User searches for available grub-efi packages from the package cache
+0
+User checks the difference between the disk_config/HWPHYS branch across multiple commits ago on the master branch
+1
+User logs out the SSH session
+0
+User attempts to display the contents in /run/mdadm/map but the permission is denied
+1
+User exits the local terminal session

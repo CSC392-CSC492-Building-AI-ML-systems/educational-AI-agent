@@ -1,0 +1,10 @@
+0
+User lists all VMs with names and checks their IP addresses containing 'faiserver'
+0
+User checks cm command usage
+0
+User attempts to add a note to 'faiserver-tearoff-12' with description 'Primary FAI server.' but fails due to lack of write permission in `/var/local/createvm/VMs/...`
+-1
+User re-executes the failed command via 'sudo' but fails to enter password for authentication
+1
+User exits the terminal session

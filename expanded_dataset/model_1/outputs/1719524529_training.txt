@@ -1,0 +1,14 @@
+0
+User reattaches to a detached screen session
+0
+User commits the changes with commit message 'libgnutls30-dev is not in debian 9.'
+-1
+User runs git diff to inspect differences compared to the last commit
+1
+User exits git diff viewer
+0
+User stages changes to package_config/SERVERNTOP
+-1
+User commits with the message 'ntop has become ntopng.'
+1
+User attempts to stage changes to package_config/SERVERNAGIOS

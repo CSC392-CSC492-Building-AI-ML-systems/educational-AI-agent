@@ -394,6 +394,10 @@ demo@172.16.0.1's password:
 fai_cd.iso[195C100% 1894MB  26.7MB/s   01:11
 demo@faiserver:/home/fai$]0;]0;screen[?2004h </system_output>
   <user_input timestamp="70.398154"/>
+<annotation>
+</annotation>
+</event>
+<event depth="-2">
   <user_input timestamp="70.74193">2</user_input>
   <system_output timestamp="70.744532">]0;]0;screen[?2004l[H[2J]2;screen[32m[    0.916645] [39mio scheduler mq-deadline registered
 [32m[    0.919042] [33mshpchp: [39mStandard Hot Plug PCI Controller Driver version: 0.4
@@ -598,6 +602,10 @@ demo@faiserver:/home/fai$]0;]0;screen[?2004h </system_output>
 [32m[    8.084242] [33m8139cp 0000:00:03.0 ens3: [39mlink up, 100Mbps, full-duplex, lpa 0x05E1
 demo@faiserver:~$]0;]0;screen[?2004h </system_output>
   <user_input timestamp="76.973653"/>
+<annotation>
+</annotation>
+</event>
+<event depth="-2">
   <user_input timestamp="77.752926">1</user_input>
   <system_output timestamp="77.755669">]0;]0;screen[?2004l[H[2J]2;screenNeed to get 219 kB/2,943 kB of archives. After unpacking 13.0 MB will be used.
 Writing extended state information...
@@ -773,6 +781,10 @@ demo@172.16.0.1's password:
 fai_cd.iso[195C100% 1894MB  26.7MB/s   01:11
 demo@faiserver:/home/fai$]0;]0;screen[?2004h </system_output>
   <user_input timestamp="79.985264"/>
+<annotation>
+</annotation>
+</event>
+<event depth="-2">
   <user_input timestamp="80.361124">0</user_input>
   <system_output timestamp="80.361911">]0;[?2004l[H[2J]2;screen[7mFile Edit Options Buffers Tools Help                                                                                                                                                                                                           
 [27mPACKAGES aptitude
@@ -826,6 +838,10 @@ demo@faiserver:/home/fai$ [K</system_output>
   <user_input timestamp="85.396749">OB</user_input>
   <system_output timestamp="85.502785">[?5h[?5l</system_output>
   <user_input timestamp="1870.453194"/>
+<annotation>
+</annotation>
+</event>
+<event depth="-2">
   <user_input timestamp="1870.805828">1</user_input>
   <system_output timestamp="1870.808649">]0;screen[?2004l[H[2J]2;screenNeed to get 219 kB/2,943 kB of archives. After unpacking 13.0 MB will be used.
 Writing extended state information...
@@ -997,6 +1013,10 @@ demo@172.16.0.1's password:
 fai_cd.iso[195C100% 1894MB  26.7MB/s   01:11
 demo@faiserver:/home/fai$]0;]0;screen[?2004h </system_output>
   <user_input timestamp="1871.348383"/>
+<annotation>
+</annotation>
+</event>
+<event depth="-2">
   <user_input timestamp="1871.781498">2</user_input>
   <system_output timestamp="1871.784232">]0;]0;screen[?2004l[H[2J]2;screen[32m[    0.916645] [39mio scheduler mq-deadline registered
 [32m[    0.919042] [33mshpchp: [39mStandard Hot Plug PCI Controller Driver version: 0.4
@@ -1200,6 +1220,10 @@ demo@faiserver:/home/fai$]0;]0;screen[?2004h </system_output>
 [32m[    8.084242] [33m8139cp 0000:00:03.0 ens3: [39mlink up, 100Mbps, full-duplex, lpa 0x05E1
 demo@faiserver:~$]0;]0;screen[?2004h </system_output>
   <user_input timestamp="1873.003275"/>
+<annotation>
+</annotation>
+</event>
+<event depth="-2">
   <user_input timestamp="1873.795558">0</user_input>
   <system_output timestamp="1873.796373">]0;[?2004l[H[2J]2;screen[7mFile Edit Options Buffers Tools Help                                                                                                                                                                                                           
 [27mPACKAGES aptitude

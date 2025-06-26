@@ -83,6 +83,10 @@ ii  libkrb5-3:i386[19C1.15-1+deb9u1[21Ci386[9CMIT Kerberos runtime libraries
 ii  libkrb5support0:i386[13C1.15-1+deb9u1[21Ci386[9CMIT Kerberos runtime libraries - Support library
 :</system_output>
   <user_input timestamp="8.117454"/>
+<annotation>
+</annotation>
+</event>
+<event depth="-2">
   <user_input timestamp="8.45968">0</user_input>
   <system_output timestamp="8.460239">[7mThis IS window 0 (bash).[27m  </system_output>
   <user_input timestamp="9.371535"/>
@@ -527,6 +531,10 @@ ii  libkmod2:i386[20C23-2[30Ci386[9Clibkmod shared library
 ii  libkrb5-3:i386[19C1.15-1+deb9u1[21Ci386[9CMIT Kerberos runtime libraries
 ii  libkrb5support0:i386[13C1.15-1+deb9u1[21Ci386[9CMIT Kerberos runtime libraries - Support library
 :</system_output>
+<annotation>
+</annotation>
+</event>
+<event depth="-2">
   <user_input timestamp="39.014894">q</user_input>
   <system_output timestamp="39.017612">[K</system_output>
   <system_output timestamp="39.018432">demo@faiserver:~$ </system_output>
@@ -1772,6 +1780,10 @@ ii  libpng16-16:i386[17C1.6.28-1+deb9u1[19Ci386[9CPNG library - runtime (version
 ii  libpopt0:i386[20C1.16-10+b2[24Ci386[9Clib for parsing cmdline parameters
 :]0;]0;screen</system_output>
   <user_input timestamp="78.282262"/>
+<annotation>
+</annotation>
+</event>
+<event depth="-2">
   <user_input timestamp="78.698613">0</user_input>
   <system_output timestamp="78.702289">]0;[H[2J]2;screenii  libldap-2.4-2:i386[15C2.4.44+dfsg-5+deb9u4[14Ci386[9COpenLDAP libraries
 ii  libldap-common[19C2.4.44+dfsg-5+deb9u4[14Call[10COpenLDAP common files for libraries
@@ -1835,6 +1847,10 @@ ii  libpango-1.0-0:i386[14C1.40.5-1[26Ci386[9CLayout and rendering of internatio
 ii  libpangocairo-1.0-0:i386[9C1.40.5-1[26Ci386[9CLayout and rendering of internationalized text
 ii  libpangoft2-1.0-0:i386[11C1.40.5-1[26Ci386[9CLayout and rendering of internationalized text
 :</system_output>
+<annotation>
+</annotation>
+</event>
+<event depth="-2">
   <user_input timestamp="99.621215">q</user_input>
   <system_output timestamp="99.623945">[K</system_output>
   <system_output timestamp="99.624764">demo@faiserver:~$ </system_output>

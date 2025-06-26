@@ -281,6 +281,10 @@ Other diff options
 
 </system_output>
   <system_output timestamp="39.493239">[?2004h]0;demo@faiserver: /home/fai/configdemo@faiserver:/home/fai/config$ </system_output>
+<annotation>
+</annotation>
+</event>
+<event depth="-2">
   <user_input timestamp="41.941309">l</user_input>
   <system_output timestamp="41.943342">l</system_output>
   <user_input timestamp="42.255634">s</user_input>
@@ -293,6 +297,10 @@ Other diff options
   <system_output timestamp="42.46479">[0m[01;34mclass[0m  [01;34mdebconf[0m  [01;34mdisk_config[0m  [01;34mfiles[0m  [01;34mhooks[0m  [01;34mpackage_config[0m  [01;34mscripts[0m
 </system_output>
   <system_output timestamp="42.465592">[?2004h]0;demo@faiserver: /home/fai/configdemo@faiserver:/home/fai/config$ </system_output>
+<annotation>
+</annotation>
+</event>
+<event depth="-2">
   <user_input timestamp="44.147483">g</user_input>
   <system_output timestamp="44.159741">g</system_output>
   <user_input timestamp="44.284513">i</user_input>
@@ -324,6 +332,10 @@ To add an exception for this directory, call:
 	git config --global --add safe.directory /home/fai/config
 </system_output>
   <system_output timestamp="46.226694">[?2004h]0;demo@faiserver: /home/fai/configdemo@faiserver:/home/fai/config$ </system_output>
+<annotation>
+</annotation>
+</event>
+<event depth="-2">
   <user_input timestamp="50.572229">s</user_input>
   <system_output timestamp="50.574257">s</system_output>
   <user_input timestamp="50.697758">u</user_input>
@@ -707,6 +719,10 @@ To add an exception for this directory, call:
 [K [KESCESC[K[[[K55[K~~
 [K
 [K:[K</system_output>
+<annotation>
+</annotation>
+</event>
+<event depth="-2">
   <user_input timestamp="62.45089">q</user_input>
   <system_output timestamp="62.513208">
 [K[?1l&gt;</system_output>
@@ -791,6 +807,10 @@ To add an exception for this directory, call:
   <system_output timestamp="74.71015">sudo: unable to resolve host faiserver: Name or service not known
 </system_output>
   <system_output timestamp="74.816969">[?2004h]0;demo@faiserver: /home/fai/configdemo@faiserver:/home/fai/config$ </system_output>
+<annotation>
+</annotation>
+</event>
+<event depth="-2">
   <user_input timestamp="75.807825">g</user_input>
   <system_output timestamp="75.811978">g</system_output>
   <user_input timestamp="76.075135">u</user_input>

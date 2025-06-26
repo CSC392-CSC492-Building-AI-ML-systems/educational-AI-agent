@@ -82,14 +82,14 @@ debhelper
 +# FIXME: libgnutls30-dev does not exist in Debian 9
 +#PACKAGES aptitude
 +#libgnutls30-dev
-<annotation>
-</annotation>
-</event>
-<event depth="-2">
 [39mdemo@faiserver:/home/fai/config$ sudo git add package_config/SERVERQEMUDEV
 sudo: unable to resolve host faiserver
 [sudo] password for demo:
 demo@faiserver:/home/fai/config$ git commit -m </system_output>
+<annotation>
+</annotation>
+</event>
+<event depth="-2">
   <user_input timestamp="9.070577">'</user_input>
   <system_output timestamp="9.072963">'</system_output>
   <user_input timestamp="10.720271">l</user_input>
@@ -209,6 +209,10 @@ demo@faiserver:/home/fai/config$ </system_output>
   <system_output timestamp="29.181531"> 1 file changed, 5 insertions(+), 1 deletion(-)
 </system_output>
   <system_output timestamp="29.183796">demo@faiserver:/home/fai/config$ </system_output>
+<annotation>
+</annotation>
+</event>
+<event depth="-2">
   <user_input timestamp="30.693452">OA</user_input>
   <system_output timestamp="30.715911">sudo git commit -m 'libgnutls30-dev is not in debian 9.'</system_output>
   <user_input timestamp="30.890955">OA</user_input>
@@ -216,17 +220,9 @@ demo@faiserver:/home/fai/config$ </system_output>
 demo@faiserver:/home/fai/config$ [5Pgit commit -m 'libgnutls30-dev is not in debian 9.'</system_output>
   <user_input timestamp="31.622037">OA</user_input>
   <system_output timestamp="31.62872">
-<annotation>
-</annotation>
-</event>
-<event depth="-2">
 demo@faiserver:/home/fai/config$ [10Psudo git add package_config/SERVERQEMUDEV</system_output>
   <user_input timestamp="32.491987">OA</user_input>
   <system_output timestamp="32.501812">
-<annotation>
-</annotation>
-</event>
-<event depth="-2">
 demo@faiserver:/home/fai/config$ git diff[K</system_output>
   <user_input timestamp="33.145545">
 </user_input>
@@ -761,6 +757,10 @@ demo@faiserver:/home/fai/config$ git diff[K</system_output>
   <user_input timestamp="38.184004"> </user_input>
   <system_output timestamp="38.290491">
 [K[?5h[?5l[K[7m(END)[27m[K</system_output>
+<annotation>
+</annotation>
+</event>
+<event depth="-2">
   <user_input timestamp="1325.822228">q</user_input>
   <system_output timestamp="1325.824706">
 [K</system_output>
@@ -837,6 +837,10 @@ demo@faiserver:/home/fai/config$ git diff[K</system_output>
   <system_output timestamp="1336.437424">
 </system_output>
   <system_output timestamp="1336.448473">demo@faiserver:/home/fai/config$ </system_output>
+<annotation>
+</annotation>
+</event>
+<event depth="-2">
   <user_input timestamp="1337.664634">OA</user_input>
   <system_output timestamp="1337.666923">sudo git add package_config/SERVERNTOP </system_output>
   <user_input timestamp="1337.807897">u</user_input>
@@ -845,10 +849,6 @@ demo@faiserver:/home/fai/config$ git diff[K</system_output>
   <system_output timestamp="1338.669195">[K</system_output>
   <user_input timestamp="1339.468733">OA</user_input>
   <system_output timestamp="1339.480764">
-<annotation>
-</annotation>
-</event>
-<event depth="-2">
 demo@faiserver:/home/fai/config$ git diff[K</system_output>
   <user_input timestamp="1339.995354">OA</user_input>
   <system_output timestamp="1340.014998">sudo git commit -m 'libgnutls30-dev is not in debian 9.'</system_output>

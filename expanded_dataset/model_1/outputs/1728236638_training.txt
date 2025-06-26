@@ -1,0 +1,22 @@
+0
+User logs into remote host 172.16.0.17 via SSH
+-1
+User navigates to /home/fai/config/ directory
+0
+User attempts to run 'git diff' but receives and error because the directory was not a git repository
+0
+User lists all contents under the directory
+0
+User checks the git status and gets a warning
+0
+User checks the git diff using 'sudo'
+0
+User exits the git diff viewer
+0
+User stages the changes in files/etc/fai/grub.cfg/SERVERFAI using 'sudo'
+0
+User commits the changes with message 'attempt to make linux show video when booted from EFI.'
+1
+User exits the SSH session
+0
+User exits the local terminal session

@@ -157,6 +157,10 @@
           &lt;reconfig&gt;
 </system_output>
   <system_output timestamp="3275.484604">[?2004hdemo@stephost:~$ </system_output>
+<annotation>
+</annotation>
+</event>
+<event depth="-2">
   <user_input timestamp="3276.180473">c</user_input>
   <system_output timestamp="3276.180903">c</system_output>
   <user_input timestamp="3276.400904">m</user_input>
@@ -311,6 +315,10 @@
   <system_output timestamp="3301.34457">/usr/bin/cm: 111: cannot create /var/local/createvm/VMs/faiserver-tearoff-12/note.txt: Permission denied
 </system_output>
   <system_output timestamp="3301.345232">[?2004hdemo@stephost:~$ </system_output>
+<annotation>
+</annotation>
+</event>
+<event depth="-2">
   <user_input timestamp="3302.485345">[A</user_input>
   <system_output timestamp="3302.485867">cm setnote faiserver-tearoff-12 "Primary FAI server."</system_output>
   <user_input timestamp="3303.08907"/>

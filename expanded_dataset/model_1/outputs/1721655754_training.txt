@@ -1,0 +1,20 @@
+0
+User reattaches to a detached screen session
+0
+User retrieves previous command via reverse search
+-1
+User uses scp to copy fai_cd.iso to remote host and enters password for authentication
+1
+User enters a screen session displaying system resource usage
+0
+User attempts to reattach to screen session faiserver-tearoff-9 but fails
+0
+User recalls and edits previous command using reverse search to delete a logical volume
+0
+User creates the virtual machine with image fai_dvd-20240722.iso
+0
+User checks available screen sessions and navigates into interactive session of 3Kingdoms
+-1
+User navigates to VM config directory
+1
+User exits the virtual machine screen session due to times out

@@ -103,7 +103,7 @@ def prettify_xml(elem):
 
 def main():
     # Define the input and output directories:
-    input_dir = "expanded_dataset/model_0/raw"
+    input_dir = "expanded_dataset/raw"
     output_dir = "expanded_dataset/model_0/inputs"
 
     # Process every file in the input directory

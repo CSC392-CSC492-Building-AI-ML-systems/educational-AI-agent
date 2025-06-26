@@ -197,6 +197,10 @@ demo@faiserver:/home/fai$[?2004h </system_output>
   <user_input timestamp="3.596496"/>
   <system_output timestamp="3.599207">
 (reverse-i-search)`': [K</system_output>
+<annotation>
+</annotation>
+</event>
+<event depth="-2">
   <user_input timestamp="3.929681">s</user_input>
   <system_output timestamp="3.939207">s': sudo bash -c 'time ./make-fai-cd.[7ms[27mh 2&gt;&amp;1 | tee make-fai-cd.out'</system_output>
   <user_input timestamp="4.161898">c</user_input>
@@ -622,6 +626,10 @@ stephost:/disk1/isos#]0;]0;screen[?2004h </system_output>
   <system_output timestamp="336.704556">There is no screen to be resumed matching faiserver-tearoff-9.
 </system_output>
   <system_output timestamp="336.705851">[?2004hstephost:/disk1/isos# </system_output>
+<annotation>
+</annotation>
+</event>
+<event depth="-2">
   <user_input timestamp="338.524844"/>
   <system_output timestamp="338.525596">
 (reverse-i-search)`': </system_output>

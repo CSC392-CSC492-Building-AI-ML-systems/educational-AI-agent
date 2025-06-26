@@ -155,10 +155,6 @@ Exporting indices...
 /usr/bin/fai-mirror finished.
 Number of packages in the mirror: 2235
 Mirror size and location: 1.5G  /usr/fai/mirror
-<annotation>
-</annotation>
-</event>
-<event depth="-2">
 Copying the nfsroot to CD image
 Copying the config space to CD image
 Copying the mirror to CD image
@@ -172,10 +168,6 @@ fai-cd failed with exit code 1. exiting...
 real[4C18m8.850s
 user[4C13m4.420s
 sys[5C2m8.123s
-<annotation>
-</annotation>
-</event>
-<event depth="-2">
 demo@faiserver:/home/fai$ df
 Filesystem[5C1K-blocks[4CUsed Available Use% Mounted on
 udev[13C1017128[7C0   1017128   0% /dev
