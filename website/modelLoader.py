@@ -49,3 +49,8 @@ if __name__ == "__main__":
 	response = generate_response(prompt)
 	print(f"Prompt: {prompt}")
 	print(f"Response: {response}")
+
+
+
+# would need to include "adapter_model.safetensors" file in model-0
+
