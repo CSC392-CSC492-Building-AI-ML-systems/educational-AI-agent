@@ -1,0 +1,6 @@
+transformers
+peft
+accelerate
+unsloth
+bitsandbytes
+websockets
