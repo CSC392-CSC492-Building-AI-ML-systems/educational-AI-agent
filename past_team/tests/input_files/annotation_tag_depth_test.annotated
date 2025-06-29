@@ -1,6 +1,0 @@
-{"version":2,"width":120,"height":30,"timestamp":1729360543,"env":{"SHELL":"/bin/bash","TERM":"xterm-256color"},"librecode_annotations":{"note":"librecode annotations","version":1,"layers":[{"annotations":[{"group":"1900944895-3333586594-2496748768-1963573214","beginning":0,"end":15200,"text":"Goal: ssh into bandit12@bandit.labs.overthewire.org on port 2220"}],"title":"Goals"},{"annotations":[{"group":"2038223441-1018625367-623881732-135683031","beginning":0,"end":15200,"text":"Subgoal: Type in the ssh password for user bandit12 correctly"}],"title":"Subgoals"},{"annotations":[{"group":"3523992944-3553570160-3145629829-1761964761","beginning":0,"end":15200,"text":"successResult"}],"title":"Success"},{"annotations":[{"group":"1940455486-1190279751-2456737007-2539910672","beginning":0,"end":15200,"text":"Tools: The ssh tool from OpenSSH"}],"title":"Tools"}]}}
-[1.111466, "o", "\u001b[?2004h\u001b]0;renee_k@Renee: ~\u0007\u001b[01;32mrenee_k@Renee\u001b[00m:\u001b[01;34m~\u001b[00m$ "]
-[2.364169, "i", "\u001b[200~ssh bandit12@bandit.labs.o"]
-[2.364562, "i", "verthewire.org -"]
-[2.36486, "i", "p 2220\u001b[201~"]
-[2.365164, "o", "\u001b[7mssh bandit12@bandit.labs.overthewire.org -p 2220\u001b[27m"]

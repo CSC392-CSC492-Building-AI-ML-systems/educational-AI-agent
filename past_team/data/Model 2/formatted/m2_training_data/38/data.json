@@ -1,3 +1,0 @@
-{
-    "annotation": "<data-piece><history><entry><input>sudo apt install curl</input><output>Setting up curl...</output><annotation>Install the `curl` tool.</annotation></entry><entry><input>curl --version</input><output>curl 7.68.0</output><annotation>Verify the installation of `curl` by checking its version.</annotation></entry></history><current-entry><entry><input>exit</input><output>exit</output><annotation>End the session and close the terminal.</annotation></entry></current-entry></data-piece>"
-}  
