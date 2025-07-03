@@ -1,0 +1,24 @@
+0
+User logs into 172.16.0.17 via SSH
+-1
+User navigates to /home/fai/config/ and lists directory contents
+0
+User navigates to package_config/ and searches for the keyword grub in all files in this folder
+0
+User opens and edits DEFAULT, GRUB, and ../class/50-host-classes in Emacs
+0
+User checks git diff
+0
+User stages and commits changes DEFAULT, GRUB, and ../class/50-host-classes with message "move installing grub-pc into the GRUB package class, and comment out the ia32 grub package."
+0
+User checks the git status
+0
+User stages and commits changes in GRUBEFI/10-setup with message "specify to use the X86_64 EFI grub image."
+0
+User moves two levels up from the current directory and runs make-fai-cd.sh to build the FAI CD
+1
+User logs out 172.16.0.17
+0
+User copies fai_cd.iso from 172.16.0.17 to local /disk1/isos/fai_dvd-$(date).iso
+0
+User exits local session

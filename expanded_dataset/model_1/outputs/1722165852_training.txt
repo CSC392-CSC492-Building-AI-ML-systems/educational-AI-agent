@@ -1,0 +1,92 @@
+0
+User reattaches to a detached screen session
+0
+User opens the configuration file package_config/FAIBASE with Emacs
+-1
+User makes changes to FAIBASE and saves the changes
+1
+User reviews file changes via "git diff"
+-1
+User exits "git diff" viewer
+1
+User stages the changes in FAIBASE
+-1
+User commits the changes with message "python 2.7 no longer exists in debian 12."
+1
+User reviews configuration changes using "git diff"
+0
+User attempts to stages and commits changes in package_config/SERVERQEMU with message "the qemu system emulator is no longer in the qemu package, and we do not use it anyways." but fails
+0
+User stages changes in package_config/SERVER
+0
+User attempts to remove package_config/LINUXPMIDEV but fails due to local modifications
+-1
+User forcibly removes package_config/LINUXPMIDEV
+1
+User commits changes with message "remove LINUXPMIDEV class; lsof was last package in it, and it is not in debian 12?"
+0
+User reviews configuration changes using "git diff"
+0
+User stages changes in package_config/JUSER
+0
+User searches for gnuplot-related packages
+0
+User opens package_config/JUSER with Emacs and makes changes to add gnuplot-nox for installation
+0
+User stages package_config/JUSER
+-1
+User commits changes with message "remove packages that are not in debian 12."
+1
+User reviews configuration changes using "git diff"
+0
+User stages changes in package_config/JADMIN
+-1
+User commits changes with message "remove clamav, update cruft to cruft-ng, install iotop only on physical machines, install telnet, and remove lsof."
+1
+User reviews configuration changes using "git diff"
+0
+User stages package_config/HWPHYS
+0
+User edits package_config/HWPHYS using Emacs
+0
+User stages package_config/HWPHYS
+-1
+User commits changes with message "add more packages that we want on physical hosts."
+1
+User reviews configuration changes using "git diff"
+0
+User stages package_config/HOSTOFFICE
+-1
+User commits with message "remove midori since it is not in debian 12."
+1
+User reviews configuration changes using "git diff"
+0
+User stages package_config/FAIBASE
+-1
+User commits with message "move packages for physical hosts out of FAIBASE."
+1
+User reviews configuration changes using "git diff"
+0
+User stages package_config/EADMIN
+-1
+User commits with message "update name of cruft, remove lsof (ss -tunlp is better), and install iotop only on physical machines."
+1
+User reviews configuration changes using "git diff"
+0
+User displays content in hooks/updatebase.DEFAULT
+-1
+User stages hooks/updatebase.DEFAULT
+0
+User removes hooks/updatebase.DEFAULT.source
+0
+User commits changes with message "rename updatebase.DEFAULT.source to updatebase.DEFAULT"
+1
+User reviews configuration changes using "git diff"
+0
+User stages 
+-1
+User commits changes with message "
+1
+User changes directory up one level
+0
+User creates FAI nfsroot with debootstrap

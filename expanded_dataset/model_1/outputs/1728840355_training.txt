@@ -1,0 +1,34 @@
+0
+User logs into 172.16.0.17 via SSH
+-1
+User navigates to /home/fai/config/files/etc/ssh/ssh_config and lists directory contents
+-1
+User removes FAIBASE
+1
+User navigates to /home/fai/config/scripts
+-1
+User searches for ssh_config in all files under the current directory
+0
+User edits FAIBASE/10-misc in Emacs
+0
+User lists directory contents in FAIBASE/10-misc
+0
+User checks git status
+0
+User stages and commits changes in FAIBASE/10-misc with message "stop enabling SSH x11 forwarding by default."
+1
+User navigates to /home/fai and runs make-fai-cd.sh to build FAI CD, but interrupts the process
+0
+User navigates to /home/fai/config/package_config and lists directory contents
+0
+User edits PRINTERDEV in Emacs
+0
+User stages and commits changes in PRINTERDEV with message "start add a class for 3d printing workflows."
+0
+User navigates to /home/fai and runs make-fai-cd.sh to build FAI CD
+1
+User logs out from 172.16.0.17
+0
+User copies the fai_cd.iso image from the remote server
+0
+User exits local session

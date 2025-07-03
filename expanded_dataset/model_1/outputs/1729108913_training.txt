@@ -1,0 +1,44 @@
+0
+User ssh to 172.16.0.17
+-1
+User navigates to /home/fai/config/scripts/GRUBEFI/ and lists directory contents
+-1
+User displays contents in 10-setup
+0
+User edits 10-setup in Emacs
+1
+User changes directory up one level and lists directory contents
+0
+User searches for "arno" in all files
+0
+User navigates to FAIBASE/ and displays contents in 30-interface
+0
+User navigates back to package_config/ and searches for "arno" in all files
+0
+User moves SERVERWIFIDOG into ../package_config.old
+0
+User stages and commits changes with message "do not install wifidog packages anymore."
+0
+User edits SERVERQEMU and SWFIREWALL in Emacs
+0
+User navigates back to scripts/ and creates SWFIREWALL directory
+0
+User navigates to SWFIREWALL/ and copies ../FAIBASE/30-interface into SWFIREWALL/
+0
+User edits 30-interface in Emacs
+0
+User checks git status
+0
+User stages and commits the changes with message "break having a software firewall into a separate class, and automatically let in ping, and ssh on the primary network interface."
+0
+User checks git diff
+0
+User stages and commits changes in 10-setup with message "boot off of grub by default."
+0
+User navigates back to /home/fai/ and runs make-fai-cd.sh to build FAI cd
+1
+User logs out from 172.16.0.17
+0
+User transfers the fai_cd.iso image via SCP from the FAI server for deployment
+0
+User lists all direc1 contents

@@ -1,0 +1,50 @@
+0
+User logs into 172.16.0.17 via SSH
+-1
+User navigates to /home/fai/config/scripts/FAIBASE and lists directory contents
+0
+User displays contents in 20-copy-mirror
+-1
+User removes 20-copy-mirror
+0
+User commits changes with message "stop copying the mirror to the target; we have good internet, and local mirrors."
+1
+User navigates to /home/fai/config/files/etc/apt/sources.list and lists directory contents
+-1
+User displays contents in DEFAULT
+0
+User removes DEFAULT
+1
+User displays contents in QEMUCLIENT
+-1
+User moves QEMUCLIENT to DEFAULT
+1
+User edits DEFAULT in Emacs
+0
+User copies DEFAULT to /etc/apt/sources.list
+-1
+User refreshes package lists on the system
+1
+User moves DEFAULT to QEMUCLIENT, then copies QEMUCLIENT back to DEFAULT
+0
+User edits DEFAULT in Emacs
+0
+User copies DEFAULT to /etc/apt/sources.list, then refreshes package indexes
+0
+User checks git diff
+0
+User stages and commits changes with message "update the security URLs for debian, and use a debian mirror in germany by default."
+0
+User navigates to /home/fai and runs make-fai-cd.shto build FAI CD
+1
+User logs out from 172.16.0.17
+0
+User copies fai_cd.iso from the FAI server to local /disk1/isos/
+-1
+User lists all contents under /disk1/isos/ that starts with fai_dvd
+0
+User removes old FAI ISO images
+0
+User re-copies the latest FAI ISO from the server
+1
+User exits local session

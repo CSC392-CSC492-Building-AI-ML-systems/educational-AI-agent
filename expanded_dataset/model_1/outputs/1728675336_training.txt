@@ -1,0 +1,94 @@
+0
+User logs into 172.16.0.17 via SSH
+-1
+User navigates to /home/fai/config/disk_config and lists directory contents
+0
+User edits HWPHYS in Emacs
+-1
+User checks the git diff for HWPHYS
+0
+User opens HWPHYS in Emacs again to make further changes
+0
+User checks the git diff again
+0
+User commits changes with message "remove single dash, was being interpreted as a filesystem option."
+1
+User moves up two levels in the directory structure
+-1
+User executes the FAI CD build script
+0
+User edits config/disk_config/HWPHYS in Emacs
+1
+User navigates to config/
+-1
+User commits changes with message "an option is required. used rw."
+1
+User moves up one level in the directory structure
+-1
+User runs make-fai-cd.sh script to build a FAI CD
+1
+User navigates to config/package_config/ and lists directory contents
+0
+User displays contents in DEMO
+-1
+User lists parent directory contents
+0
+User lists files in the class folder in the parent directory
+0
+User lists contents in ../class/50-host-classes
+0
+User edist DEMO in Emacs for automated installs in FAI
+1
+User moves up one level in the directory structure and lists directory contents
+-1
+User navigates to scripts/ and lists directory contents
+0
+User navigates to GRUB/ and lists directory contents
+1
+User moves up one level in the directory structure
+-1
+User tries to copy GRUB/ to GRUBEFI but gets "Permission denied"
+0
+User creates a new directory called GRUBEFI
+0
+User copies GRUB/10-setup into GRUBEFI/
+1
+User navigates to GRUBEFI/
+-1
+User edits 10-setup in Emacs
+0
+User navigates to ../../package_config/ and lists directory contents
+0
+User edits GRUBEFI in Emacs
+1
+User lists directory contents
+0
+User removes GRUBEFI~
+0
+User navigates to the parent config directory and lists directory contents
+-1
+User navigates to disk_config/ and lists directory contents
+0
+User displays contents in HWPHYS
+0
+User edits HWPHYS in Emacs
+1
+User navigates to ../scripts/GRUBEFI/
+-1
+User edits 10-setup in Emacs
+0
+User checks git diff
+0
+User stages and commits disk_config/HWPHYS with message "make the fstab entry for raid arrays use UUIDs."
+0
+User stages and commits 10-setup with message "attempt to configure EFI booting. not yet perfect."
+1
+User moves up three levels in the directory structure
+0
+User executes make-fai-cd.sh to build the FAI CD
+1
+User logs out from 172.16.0.17
+0
+User copies fai_cd.iso from 172.16.0.17 to /disk1/isos/fai_dvd-YYYYMMDD.iso
+0
+User exits local session
