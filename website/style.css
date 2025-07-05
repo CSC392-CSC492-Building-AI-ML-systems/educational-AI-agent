@@ -28,7 +28,6 @@ p {
 #terminal {
   width: 800px;
   height: 510px;
-  resize: both;
   border: 5px solid #000000;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
