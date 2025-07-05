@@ -1,0 +1,38 @@
+0
+User sshes into 172.16.0.17
+0
+User renames HWPHYS to GRUBEFI using git mv
+0
+User creates a copy of GRUBEFI as GRUB using cp
+0
+User updates disklabel:gpt to disklabel:gpt-bios in disk_config disk1 enabling grub to boot on BIOS-based systems.
+0
+User navigates back up directories to /home/fai
+1
+User runs make-fai-cd.sh combining both stderr and stdout into a single stream being piped to tee make-fai-cd.out to log the outputs.
+0
+FAI finished it's basic components and now begins to install additional packages for a functional FAI installation.
+0
+FAI successfully installs the large set of additional packages. It now begins to the creation of the FAI-CD/ISO image creation.
+-1
+Combines all elements into a final fai_cd.iso file. 
+0
+User exits ssh session and uses scp to download the newly created fai_cd.iso to /disk1/isos/fai_dvd-date`+%Y%m%d`.iso
+0
+User sshes into 172.16.0.17
+1
+User attempts to succesfully commit a FAI disk configuration change to github
+0
+User checks git status before adding disk_config/GRUB to the staging area
+0
+User commits the changes with the message "break disk configuration into two, so that we automatically create a grub bios partition when booting with BIOS.". git returns a warning of trailing whitespace and was unsuccessful.
+0
+User enters disk_config/GRUB to check warning using emacs but does no changes and exits
+0
+User checks git diff to see no changes before running git status
+0
+User enters disk_config/GRUB again using emacs and removes a whitespace on line 3 and exits
+0
+User uses git add to add disk_config/GRUB again. The user commits succesfully this time with the message: "break disk configuration into two, so that we automatically create a grub bios partition when booting with BIOS."
+-1
+User session ends

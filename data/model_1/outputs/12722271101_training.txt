@@ -1,0 +1,32 @@
+0
+User activates reverse-i-search to retrieve and execute the screen -dr command, reattaching a screen session it to the current terminal
+0
+User executes the debsums command to verifying that the files installed by the acpid package haven't been altered.
+0
+User uses debsums with grep -v OK to identify files that have failed checksum verification. In this case, /usr/sbin/fai-cd is FAILED.
+0
+User identifies that /usr/sbin/fai-cd belongs to package fai-server to via dpkg
+1
+User begins to customize and enhance the fai-cd script to make GRUB module configuration more flexible and easier to manage via command-line options.
+0
+User creates a copy of /usr/sbin/fai-cd as /usr/sbin/fai-cd.modified.
+0
+User reinstalles fai-server package which also restores the fai-cd to it's original form.
+0
+User uses diff to check the difference between their modified fai-cd to the original.
+0
+User uses diff -u to gain more information.
+0
+User begins editing /usr/sbin/fai-cd by opening it up using emacs.
+0
+User finish editing file and exists back into the terminal.
+0
+User creates a copy of /usr/sbin/fai-cd as /usr/sbin/fai-cd.modified.
+0
+User reinstalles fai-server package which also restores the fai-cd to it's original form.
+0
+User uses diff to check the difference in their edited version including a change to the GRUB module list adding $grub_extra_modules and adding a -g option for getopts setting $grub_extra_modules.
+0
+User enters emacs to modify the edited version to modify the -g to -G for assigning grub modules.
+-1
+User ends session

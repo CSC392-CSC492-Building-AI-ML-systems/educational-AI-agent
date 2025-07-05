@@ -1,0 +1,28 @@
+0
+User sshes into 172.16.0.17
+0
+User navigates to /home/fai/config/package_config$ to check it's contents via ls
+0
+User creates a new directory called ../package_config.old
+0
+User uses git mv to move HOSTSTEP HOSTXFCE OPENWRTDEV into the newly created directory
+0
+User checks git status and commits the changes with the message 'switch back to aptitude so recommends are not pulled in, and move some package classes out of scope, for now.'.
+0
+User navigates back up directories to /home/fai
+1
+User runs make-fai-cd.sh combining both stderr and stdout into a single stream being piped to tee make-fai-cd.out to log the outputs.
+0
+make-fai-cd.sh first unmount some directories before running debootstrap.
+0
+System initiates a upgrade process with the new nfsroot to update package information.
+0
+FAI finished it's basic components and now begins to install additional packages for a functional FAI installation.
+0
+FAI successfully installs the large set of additional packages. It now beings to the creation of the FAI-CD/ISO image creation.
+-1
+Combines all elements into a final fai_cd.iso file. 
+0
+User exits ssh session and uses scp to download the newly created fai_cd.iso
+0
+User exits terminal session
