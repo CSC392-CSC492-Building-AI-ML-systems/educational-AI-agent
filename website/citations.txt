@@ -1,3 +1,44 @@
-ChatGPT. “The xterm.js terminal is not allowing any input. How can we fix that?
-Also, how can we make the terminal smaller and add a title to the page.”
-ChatGPT, OpenAI, 3 June 2025, https://chat.openai.com/.
+===============================================================================
+Source:
+ChatGPT. "The xterm.js terminal is not allowing any input. How can we fix that?
+Also, how can we make the terminal smaller and add a title to the page."
+ChatGPT, OpenAI, 3 June 2025, https://chat.openai.com/
+
+Affected Files:
+- frontend.js
+- backend.js
+- style.css
+
+Usage Description:
+- Fixed issue where xterm.js terminal was not receiving input
+  by properly attaching the terminal to `term.onKey(...)`.
+- Added title to the HTML page using `document.title = "AutoDocs AI Terminal"`.
+- Adjusted terminal size with new width/height CSS rules (`#terminal` class).
+===============================================================================
+Source:
+ChatGPT. "Can you show an implementation of how each individual key pressed
+can be sent from the frontend to the backend such that it can be processed as
+individual input and output events. We are using asciinemaUtils.js which
+includes createHeader, convertInput/OutputString, and also a global variable
+that stores full session and current context Asciinema data."
+ChatGPT, OpenAI, 5 July 2025, https://chat.openai.com/
+
+Affected Files:
+- frontend.js
+- backend.js
+- asciinemaUtils.js
+
+Usage Description:
+- Implemented logic in frontend.js to capture each key press using
+  term.onKey, then send each character as a JSON message over WebSocket
+  to the backend.
+- Updated backend.js to parse incoming input messages, compute the
+  timestamp using a high-resolution timer, and convert them into Asciinema-
+  compatible input events using convertInputEvent.
+- Captured terminal output from ptyprocess.on('data') and formatted it as
+  output events using convertOutputEvent.
+- Stored both input and output events in global variables:
+  fullSessionAsciinema for the complete session log, and
+  contextAsciinema for a sliding window of recent events.
+- Ensured all events match the Asciinema format for compatibility with models.
+===============================================================================

@@ -46,3 +46,9 @@ function convertInputEvent(timestamp, inputString) {
 function convertOutputEvent(timestamp, outputString) {
   return [timestamp, "o", outputString];
 }
+
+module.exports = {
+  createAsciinemaHeader,
+  convertInputEvent,
+  convertOutputEvent
+};

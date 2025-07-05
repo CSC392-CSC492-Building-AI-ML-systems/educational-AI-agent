@@ -46,16 +46,17 @@ term.write(
 let command = '';
 
 term.onKey(e => {
-  const char = e.key;
-  
-  // if the WebSocket is not open, do not send data
-  if (socket.readyState !== WebSocket.OPEN) {
-    console.error("WebSocket is not open. Cannot send data.");
-    return;
-  }
-  
-  // send the character to the server via WebSocket
-  socket.send(char);
+  const char = e.key;               // what the user just typed
+  const now  = performance.now();   // ms since page-load, high-resolution
+
+  /* tell the back-end exactly what happened */
+  socket.send(
+    JSON.stringify({                // keep it tiny but explicit
+      type : 'i',                   // “input” event
+      data : char,                  // the raw character (↵, ⌫ etc. stay intact)
+      t    : now / 1000             // seconds with micro-second-ish precision
+    })
+  );
 
   // Below is just to test whether the annotation box updates correctly
   // Build up command as user types
