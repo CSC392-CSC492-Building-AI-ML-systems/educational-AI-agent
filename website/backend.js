@@ -1,6 +1,22 @@
 const WebSocket = require('ws');
 const os = require('os');
 const pty = require('node-pty');
+const { createAsciinemaHeader, createInputEvent, createOutputEvent } = require('./asciinemaUtils');
+
+// Variable to hold the entire session's asciinema data
+const startTime = Math.floor(Date.now() / 1000); // UNIX timestamp in seconds (float)
+const fullSessionAsciinema = {
+  header: createAsciinemaHeader(2, Terminal.cols, Terminal.rows, startTime, '/bin/bash', 'xterm'),
+  events: []
+};
+
+// Variable to hold the latest context asciinema data
+// Older events will automatically be removed to keep the context relevant
+// and newer events will be added as the user interacts with the terminal
+const contextAsciinema = {
+  header: fullSessionAsciinema.header,
+  events: []
+};
 
 // create backend websocket server
 const wss = new WebSocket.Server({ port: 8080 });

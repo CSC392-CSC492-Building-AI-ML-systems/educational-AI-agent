@@ -29,20 +29,20 @@ function createAsciinemaHeader(version, width, height, timestamp, SHELL, TERM) {
 
 /**
  * Converts a user input event to an asciinema-formatted line.
- * @param {string} inputString - The character or string input from the user.
  * @param {number} timestamp - The time the input occurred in seconds after start.
+ * @param {string} inputString - The character or string input from the user.
  * @returns {Array} An asciinema-formatted event array: [timestamp, "i", input]
  */
-function convertInputEvent(inputString, timestamp) {
+function convertInputEvent(timestamp, inputString) {
   return [timestamp, "i", inputString];
 }
 
 /**
  * Converts a user output event to an asciinema-formatted line.
- * @param {string} outputString - The character or string output from the terminal.
  * @param {number} timestamp - The time the output occurred in seconds after start.
+ * @param {string} outputString - The character or string output from the terminal.
  * @returns {Array} An asciinema-formatted event array: [timestamp, "o", output]
  */
-function convertOutputEvent(outputString, timestamp) {
+function convertOutputEvent(timestamp, outputString) {
   return [timestamp, "o", outputString];
 }
