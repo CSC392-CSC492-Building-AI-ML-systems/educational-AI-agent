@@ -531,10 +531,6 @@ ii  libkmod2:i386[20C23-2[30Ci386[9Clibkmod shared library
 ii  libkrb5-3:i386[19C1.15-1+deb9u1[21Ci386[9CMIT Kerberos runtime libraries
 ii  libkrb5support0:i386[13C1.15-1+deb9u1[21Ci386[9CMIT Kerberos runtime libraries - Support library
 :</system_output>
-<annotation>
-</annotation>
-</event>
-<event depth="-2">
   <user_input timestamp="39.014894">q</user_input>
   <system_output timestamp="39.017612">[K</system_output>
   <system_output timestamp="39.018432">demo@faiserver:~$ </system_output>

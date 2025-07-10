@@ -1,14 +1,14 @@
 0
-User reattaches to a detached screen session
+User reattaches to a detached screen session to synchronize package configurations with system state
 0
 User commits the changes with commit message 'libgnutls30-dev is not in debian 9.'
 -1
-User runs git diff to inspect differences compared to the last commit
+User runs git diff to inspect differences compared to the last commit to verify the changes made to package configurations
 1
-User exits git diff viewer
+User exits git diff viewer after completing verification of the committed differences
 0
-User stages changes to package_config/SERVERNTOP
+User stages changes to package_config/SERVERNTOP to record the migration from ntop to ntopng in the configuration repository
 -1
-User commits with the message 'ntop has become ntopng.'
+User commits with the message 'ntop has become ntopng.', ensuring historical traceability
 1
-User attempts to stage changes to package_config/SERVERNAGIOS
+User attempts to stage changes to package_config/SERVERNAGIOS, but the process is left incomplete in the recording

@@ -138,10 +138,6 @@ Last login: Tue Oct 15 18:49:51 2024 from 172.16.0.1
   <system_output timestamp="150.326286">[0m[01;32m10-misc[0m  [01;32m20-copy-mirror[0m  [01;32m30-interface[0m  [01;32m40-misc.sh[0m  [01;32m50-use_tmpfs_on_tmp[0m
 </system_output>
   <system_output timestamp="150.326865">[?2004h]0;demo@faiserver: /home/fai/config/scripts/FAIBASEdemo@faiserver:/home/fai/config/scripts/FAIBASE$ </system_output>
-<annotation>
-</annotation>
-</event>
-<event depth="-2">
   <user_input timestamp="151.180224">c</user_input>
   <system_output timestamp="151.201967">c</system_output>
   <user_input timestamp="151.29854">a</user_input>
@@ -200,10 +196,6 @@ else
     }
 fi</system_output>
   <system_output timestamp="155.335318">[?2004h]0;demo@faiserver: /home/fai/config/scripts/FAIBASEdemo@faiserver:/home/fai/config/scripts/FAIBASE$ </system_output>
-<annotation>
-</annotation>
-</event>
-<event depth="-2">
   <user_input timestamp="230.787848">g</user_input>
   <system_output timestamp="230.789943">g</system_output>
   <user_input timestamp="230.910658">i</user_input>
@@ -268,10 +260,6 @@ To add an exception for this directory, call:
 </system_output>
   <system_output timestamp="240.605958">[?2004h</system_output>
   <system_output timestamp="240.606383">]0;demo@faiserver: /home/fai/config/scripts/FAIBASEdemo@faiserver:/home/fai/config/scripts/FAIBASE$ </system_output>
-<annotation>
-</annotation>
-</event>
-<event depth="-2">
   <user_input timestamp="241.133161">s</user_input>
   <system_output timestamp="241.145135">s</system_output>
   <user_input timestamp="241.280573">u</user_input>
@@ -606,10 +594,6 @@ To add an exception for this directory, call:
   <system_output timestamp="351.751225">DEFAULT  QEMUCLIENT
 </system_output>
   <system_output timestamp="351.752017">[?2004h]0;demo@faiserver: /home/fai/config/files/etc/apt/sources.listdemo@faiserver:/home/fai/config/files/etc/apt/sources.list$ </system_output>
-<annotation>
-</annotation>
-</event>
-<event depth="-2">
   <user_input timestamp="353.029418">c</user_input>
   <system_output timestamp="353.036132">c</system_output>
   <user_input timestamp="353.172291">a</user_input>
@@ -645,10 +629,6 @@ deb-src http://http.us.debian.org/debian stable main
 
 deb http://security.debian.org/ stable/updates main</system_output>
   <system_output timestamp="355.045069">[?2004h]0;demo@faiserver: /home/fai/config/files/etc/apt/sources.listdemo@faiserver:/home/fai/config/files/etc/apt/sources.list$ </system_output>
-<annotation>
-</annotation>
-</event>
-<event depth="-2">
   <user_input timestamp="358.108142">g</user_input>
   <system_output timestamp="358.110465">g</system_output>
   <user_input timestamp="358.267362">i</user_input>
@@ -789,10 +769,6 @@ To add an exception for this directory, call:
   <system_output timestamp="387.339096">QEMUCLIENT
 </system_output>
   <system_output timestamp="387.339944">[?2004h]0;demo@faiserver: /home/fai/config/files/etc/apt/sources.listdemo@faiserver:/home/fai/config/files/etc/apt/sources.list$ </system_output>
-<annotation>
-</annotation>
-</event>
-<event depth="-2">
   <user_input timestamp="387.730851">c</user_input>
   <system_output timestamp="387.73912">c</system_output>
   <user_input timestamp="387.848327">a</user_input>
@@ -900,10 +876,6 @@ To add an exception for this directory, call:
   <system_output timestamp="436.582555">sudo: unable to resolve host faiserver: Name or service not known
 </system_output>
   <system_output timestamp="436.602779">[?2004h]0;demo@faiserver: /home/fai/config/files/etc/apt/sources.listdemo@faiserver:/home/fai/config/files/etc/apt/sources.list$ </system_output>
-<annotation>
-</annotation>
-</event>
-<event depth="-2">
   <user_input timestamp="624.69699">g</user_input>
   <system_output timestamp="624.699113">g</system_output>
   <user_input timestamp="624.866268">i</user_input>
@@ -2980,10 +2952,6 @@ Reading state information... Done
   <system_output timestamp="1671.051882">
 [K[?1l&gt;</system_output>
   <system_output timestamp="1671.056074">[?2004h]0;demo@faiserver: /home/fai/config/files/etc/apt/sources.listdemo@faiserver:/home/fai/config/files/etc/apt/sources.list$ </system_output>
-<annotation>
-</annotation>
-</event>
-<event depth="-2">
   <user_input timestamp="1674.71825">s</user_input>
   <system_output timestamp="1674.720421">s</system_output>
   <user_input timestamp="1674.860371">u</user_input>

@@ -146,10 +146,6 @@ Last login: Wed Oct 16 21:01:37 2024 from 172.16.0.1
 [?2004l
 </system_output>
   <system_output timestamp="647.669686">[?2004h]0;demo@faiserver: /home/fai/configdemo@faiserver:/home/fai/config$ </system_output>
-<annotation>
-</annotation>
-</event>
-<event depth="-2">
   <user_input timestamp="648.341027">g</user_input>
   <system_output timestamp="648.345931">g</system_output>
   <user_input timestamp="648.466085">i</user_input>
@@ -444,18 +440,10 @@ Date:   Mon Jul 29 00:00:29 2024 +0100[m
 Author: Julia Longtin &lt;julia.longtin@gmail.com&gt;[m
 Date:   Sun Jul 28 23:51:54 2024 +0100[m
 :[K</system_output>
-<annotation>
-</annotation>
-</event>
-<event depth="-2">
   <user_input timestamp="681.690686">q</user_input>
   <system_output timestamp="681.748388">
 [K[?1l&gt;</system_output>
   <system_output timestamp="681.752392">[?2004h]0;demo@faiserver: /home/fai/configdemo@faiserver:/home/fai/config$ </system_output>
-<annotation>
-</annotation>
-</event>
-<event depth="-2">
   <user_input timestamp="682.536515">g</user_input>
   <system_output timestamp="682.550827">g</system_output>
   <user_input timestamp="682.675673">i</user_input>
@@ -2125,10 +2113,6 @@ Other diff options
   <system_output timestamp="843.763413">
 [K[?1l&gt;</system_output>
   <system_output timestamp="843.767486">[?2004h]0;demo@faiserver: /home/fai/configdemo@faiserver:/home/fai/config$ </system_output>
-<annotation>
-</annotation>
-</event>
-<event depth="-2">
   <user_input timestamp="845.209027">[A</user_input>
   <system_output timestamp="845.211192">sudo git diff master~10</system_output>
   <user_input timestamp="848.244182"> </user_input>
@@ -2370,10 +2354,6 @@ Other diff options
   <system_output timestamp="869.919752">
 [K[?1l&gt;</system_output>
   <system_output timestamp="869.923745">[?2004h]0;demo@faiserver: /home/fai/configdemo@faiserver:/home/fai/config$ </system_output>
-<annotation>
-</annotation>
-</event>
-<event depth="-2">
   <user_input timestamp="879.916661">[A</user_input>
   <system_output timestamp="879.918818">sudo git diff master~30 scripts/GRUBEFI/10-setup</system_output>
   <user_input timestamp="882.164018">[D</user_input>
@@ -2701,10 +2681,6 @@ Other diff options
   <system_output timestamp="917.665512">
 [K[?1l&gt;</system_output>
   <system_output timestamp="917.669782">[?2004h]0;demo@faiserver: /home/fai/configdemo@faiserver:/home/fai/config$ </system_output>
-<annotation>
-</annotation>
-</event>
-<event depth="-2">
   <user_input timestamp="938.190858">s</user_input>
   <system_output timestamp="938.192952">s</system_output>
   <user_input timestamp="938.333144">u</user_input>
@@ -2826,10 +2802,6 @@ grub-efi-ia32-bin - GRand Unified Bootloader, version 2 (EFI-IA32 modules)
 grub-efi-ia32-signed-template - GRand Unified Bootloader, version 2 (EFI-IA32 signing template)
 </system_output>
   <system_output timestamp="950.574185">[?2004h]0;demo@faiserver: /home/fai/configdemo@faiserver:/home/fai/config$ </system_output>
-<annotation>
-</annotation>
-</event>
-<event depth="-2">
   <user_input timestamp="2152.677785">[A</user_input>
   <system_output timestamp="2152.679802">sudo apt-cache search grub-efi</system_output>
   <user_input timestamp="2153.722692">[A</user_input>

@@ -92,10 +92,6 @@ Last login: Sat Oct 12 21:02:25 2024 from 172.16.0.1
   <system_output timestamp="21.80106">[0m[01;34mclass[0m  [01;34mdebconf[0m  [01;34mdisk_config[0m  [01;34mfiles[0m  [01;34mhooks[0m  [01;34mpackage_config[0m  [01;34mscripts[0m
 </system_output>
   <system_output timestamp="21.802473">[?2004h]0;demo@faiserver: /home/fai/configdemo@faiserver:/home/fai/config$ </system_output>
-<annotation>
-</annotation>
-</event>
-<event depth="-2">
   <user_input timestamp="23.791253">c</user_input>
   <system_output timestamp="23.793372">c</system_output>
   <user_input timestamp="23.990253">d</user_input>
@@ -1588,10 +1584,6 @@ Other diff options
   <system_output timestamp="1302.629815">
 [K[?1l&gt;</system_output>
   <system_output timestamp="1302.633312">[?2004h]0;demo@faiserver: /home/fai/config/package_configdemo@faiserver:/home/fai/config/package_config$ </system_output>
-<annotation>
-</annotation>
-</event>
-<event depth="-2">
   <user_input timestamp="1303.957324">s</user_input>
   <system_output timestamp="1303.967551">s</system_output>
   <user_input timestamp="1304.056451">u</user_input>

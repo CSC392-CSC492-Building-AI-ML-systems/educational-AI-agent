@@ -1,50 +1,34 @@
 0
 User logs into 172.16.0.17 via SSH
 -1
-User navigates to /home/fai/config/scripts/FAIBASE and lists directory contents
+User navigates to /home/fai/config/scripts/FAIBASE, checks contents in 20-copy-mirror, removes the file to stop copying the mirror to the target system since reliable internet and local mirrors are now available
 0
-User displays contents in 20-copy-mirror
+User navigates to /home/fai/config/files/etc/apt/sources.list, reviews the current source URLs in DEFAULT,  removes it to prepare for replacement
+0
+User moves QEMUCLIENT to DEFAULT to temporarily replace the sources for testing, then edits DEFAULT in Emacs to adjust security and mirror URLs
 -1
-User removes 20-copy-mirror
+User copies DEFAULT to /etc/apt/sources.list to apply it
 0
-User commits changes with message "stop copying the mirror to the target; we have good internet, and local mirrors."
+User refreshes package lists on the system to test the new configuration
+0
+User moves DEFAULT back to QEMUCLIENT to preserve the tested state, then copies it again to DEFAULT to continue testing with minor edits
+0
+User edits DEFAULT in Emacs to modify the debian security URLs and change the default mirror to a debian mirror located in Germany
+0
+User copies DEFAULT back to /etc/apt/sources.list, then refreshes the package indexes to confirm the configuration is stable and usable for both QEMU and physical hosts
 1
-User navigates to /home/fai/config/files/etc/apt/sources.list and lists directory contents
--1
-User displays contents in DEFAULT
+User stages and commits all changes
 0
-User removes DEFAULT
-1
-User displays contents in QEMUCLIENT
--1
-User moves QEMUCLIENT to DEFAULT
-1
-User edits DEFAULT in Emacs
-0
-User copies DEFAULT to /etc/apt/sources.list
--1
-User refreshes package lists on the system
-1
-User moves DEFAULT to QEMUCLIENT, then copies QEMUCLIENT back to DEFAULT
-0
-User edits DEFAULT in Emacs
-0
-User copies DEFAULT to /etc/apt/sources.list, then refreshes package indexes
-0
-User checks git diff
-0
-User stages and commits changes with message "update the security URLs for debian, and use a debian mirror in germany by default."
-0
-User navigates to /home/fai and runs make-fai-cd.shto build FAI CD
+User navigates to /home/fai and runs make-fai-cd.iso to build FAI CD
 1
 User logs out from 172.16.0.17
 0
-User copies fai_cd.iso from the FAI server to local /disk1/isos/
+User copies fai_cd.iso from the FAI server to local /disk1/isos/, but the ISO is an outdated version
 -1
-User lists all contents under /disk1/isos/ that starts with fai_dvd
+User lists all contents under /disk1/isos/ that starts with fai_dvd to locate old ISO images that need removal
 0
-User removes old FAI ISO images
+User removes outdated FAI ISO images
 0
-User re-copies the latest FAI ISO from the server
+User re-copies the latest FAI ISO from the server to finish setup
 1
 User exits local session

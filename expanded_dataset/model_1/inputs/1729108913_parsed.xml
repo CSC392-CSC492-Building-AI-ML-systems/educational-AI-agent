@@ -181,10 +181,6 @@ Last login: Tue Oct 15 19:24:58 2024 from 172.16.0.1
   <system_output timestamp="158.437559">[0m[01;32m10-setup[0m  [01;32m10-setup~[0m
 </system_output>
   <system_output timestamp="158.438449">[?2004h]0;demo@faiserver: /home/fai/config/scripts/GRUBEFIdemo@faiserver:/home/fai/config/scripts/GRUBEFI$ </system_output>
-<annotation>
-</annotation>
-</event>
-<event depth="-2">
   <user_input timestamp="159.58241">c</user_input>
   <system_output timestamp="159.584431">c</system_output>
   <user_input timestamp="159.722959">a</user_input>
@@ -220,10 +216,6 @@ exit $error
 
 </system_output>
   <system_output timestamp="161.03069">[?2004h]0;demo@faiserver: /home/fai/config/scripts/GRUBEFIdemo@faiserver:/home/fai/config/scripts/GRUBEFI$ </system_output>
-<annotation>
-</annotation>
-</event>
-<event depth="-2">
   <user_input timestamp="162.150203">e</user_input>
   <system_output timestamp="162.160712">e</system_output>
   <user_input timestamp="162.267843">m</user_input>
@@ -982,10 +974,6 @@ $[33mROOTCMD[39;49m update-grub2[K
   <system_output timestamp="1104.296751">[0m[01;34mDEMO[0m  [01;34mFAIBASE[0m  [01;34mGRUB[0m  [01;34mGRUBEFI[0m  [01;34mISCSICLIENT[0m  [01;34mJADMIN[0m  [01;34mLAST[0m  [01;34mQEMUCLIENT[0m  [01;34mSERVERDHCP[0m  [01;34mSERVERDHCPBOOT[0m  [01;34mSERVERDNS[0m  [01;34mSERVERDNSMASTER[0m  [01;34mSERVERDRUPAL[0m  [01;34mSERVERFAI[0m  [01;34mSERVERGIFT[0m  [01;34mSERVERIMPLICIT[0m  [01;34mSERVERMAIL[0m  [01;34mSERVERMAILPARANOID[0m  [01;34mSERVERMAILSHL[0m  [01;34mSERVERMRTG[0m  [01;34mSERVERNAGIOS[0m  [01;34mSERVERSNMP[0m  [01;34mSERVERWIFIDOG[0m  [01;34mSERVERWIKI[0m  [01;34mSERVERWIKIMEDIA[0m  [01;34mSERVERWORDPRESS[0m  [01;34mSERVERWWW[0m  [01;34mSERVERWWWMRTG[0m  [01;34mSERVERWWWOEMR[0m  [01;34mSERVERWWWSSLONLY[0m  [01;34mSERVERZONEMINDER[0m
 </system_output>
   <system_output timestamp="1104.297608">[?2004h]0;demo@faiserver: /home/fai/config/scriptsdemo@faiserver:/home/fai/config/scripts$ </system_output>
-<annotation>
-</annotation>
-</event>
-<event depth="-2">
   <user_input timestamp="1104.78732">g</user_input>
   <system_output timestamp="1104.808569">g</system_output>
   <user_input timestamp="1105.15143">r</user_input>
@@ -1030,10 +1018,6 @@ $[33mROOTCMD[39;49m update-grub2[K
   <system_output timestamp="1109.739867">SERVERDHCPBOOT/10-add_arno_rpc_helper.sh:fcopy -Bv /usr/share/arno-iptables-firewall/plugins/90rpc.plugin
 </system_output>
   <system_output timestamp="1109.895475">[?2004h]0;demo@faiserver: /home/fai/config/scriptsdemo@faiserver:/home/fai/config/scripts$ </system_output>
-<annotation>
-</annotation>
-</event>
-<event depth="-2">
   <user_input timestamp="1122.591389">c</user_input>
   <system_output timestamp="1122.593629">c</system_output>
   <user_input timestamp="1122.909251">d</user_input>
@@ -1132,10 +1116,6 @@ fi
 exit $error
 </system_output>
   <system_output timestamp="1132.463259">[?2004h]0;demo@faiserver: /home/fai/config/scripts/FAIBASEdemo@faiserver:/home/fai/config/scripts/FAIBASE$ </system_output>
-<annotation>
-</annotation>
-</event>
-<event depth="-2">
   <user_input timestamp="1263.06921">c</user_input>
   <system_output timestamp="1263.071355">c</system_output>
   <user_input timestamp="1263.314216">d</user_input>
@@ -3200,10 +3180,6 @@ qemu-kvm[K
   <system_output timestamp="1574.58093">sudo: unable to resolve host faiserver: Name or service not known
 </system_output>
   <system_output timestamp="1574.686787">[?2004h]0;demo@faiserver: /home/fai/config/scriptsdemo@faiserver:/home/fai/config/scripts$ </system_output>
-<annotation>
-</annotation>
-</event>
-<event depth="-2">
   <user_input timestamp="2885.545009">c</user_input>
   <system_output timestamp="2885.547051">c</system_output>
   <user_input timestamp="2885.799883">d</user_input>
@@ -3294,10 +3270,6 @@ qemu-kvm[K
   <system_output timestamp="2902.105809">
 </system_output>
   <system_output timestamp="2902.118139">[?2004h]0;demo@faiserver: /home/fai/config/scripts/SWFIREWALLdemo@faiserver:/home/fai/config/scripts/SWFIREWALL$ </system_output>
-<annotation>
-</annotation>
-</event>
-<event depth="-2">
   <user_input timestamp="2906.129048">s</user_input>
   <system_output timestamp="2906.130946">s</system_output>
   <user_input timestamp="2906.248413">u</user_input>
@@ -5194,10 +5166,6 @@ Untracked files:
 no changes added to commit (use "git add" and/or "git commit -a")
 </system_output>
   <system_output timestamp="3741.747194">[?2004h]0;demo@faiserver: /home/fai/config/scripts/SWFIREWALLdemo@faiserver:/home/fai/config/scripts/SWFIREWALL$ </system_output>
-<annotation>
-</annotation>
-</event>
-<event depth="-2">
   <user_input timestamp="3748.439976">s</user_input>
   <system_output timestamp="3748.442332">s</system_output>
   <user_input timestamp="3748.58124">u</user_input>
@@ -5651,10 +5619,6 @@ no changes added to commit (use "git add" and/or "git commit -a")
  create mode 100644 package_config/SWFIREWALL
 </system_output>
   <system_output timestamp="3818.510588">[?2004h]0;demo@faiserver: /home/fai/config/scripts/SWFIREWALLdemo@faiserver:/home/fai/config/scripts/SWFIREWALL$ </system_output>
-<annotation>
-</annotation>
-</event>
-<event depth="-2">
   <user_input timestamp="3821.159461">s</user_input>
   <system_output timestamp="3821.161937">s</system_output>
   <user_input timestamp="3821.78869">u</user_input>
@@ -5708,10 +5672,6 @@ no changes added to commit (use "git add" and/or "git commit -a")
   <system_output timestamp="3824.248724">
 [K[?1l&gt;</system_output>
   <system_output timestamp="3824.252886">[?2004h]0;demo@faiserver: /home/fai/config/scripts/SWFIREWALLdemo@faiserver:/home/fai/config/scripts/SWFIREWALL$ </system_output>
-<annotation>
-</annotation>
-</event>
-<event depth="-2">
   <user_input timestamp="3825.473725">s</user_input>
   <system_output timestamp="3825.481493">s</system_output>
   <user_input timestamp="3825.594173">u</user_input>
