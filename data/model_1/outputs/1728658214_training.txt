@@ -1,0 +1,42 @@
+0
+User sshes into 172.16.0.17
+0
+User navigates to /home/fai/config/disk_config and lists the contents in the folder
+1
+User edits HWPHYS using emacs. The primary parition was modified from generic placeholder to explicity defined as an EFI parition becoming primary /boot/efi 64-128 vfat. 
+-1
+User finishes edits by adding disklabel:gpt and fstabkey:uuid to the disk_config disk1 and updated the primary naming scheme to be descriptive like p=efi, p=boot and p=raid
+0
+User executes git diff to display the changes in HWPHYS
+0
+Users git commits the changes with the -am flag the message: "create an EFI partition, and use GPT instead of MSDOS partition tables."
+0
+User navigates to /home/fai/config/class and lists the contents in the folder
+0
+User inspects file 10-base-classes via cat
+0
+User inspects file 20-hwdetect.sh via cat
+0
+User checks contents in folder before inspecting file 50-host-classes via cat
+0
+User opens up file 50-host-classes and edits it to update the echo -n "FAIBASE GRUB DHCPC DEMO "; to echo -n "FAIBASE DHCPC DEMO ";. Additionally, a if statement check is added to see if the directory /sys/firmware/efi exists. It echos BOOTEFI GRUBEFI if it does and "BOOTBIOS GRUB " if it doesn't.
+0
+User executes git diff to check changes
+0
+User git commits the changes with the -am flag the message: "detect boot method, and select the right grub class so that the target system boots."
+0
+User navigates to /home/fai
+1
+User runs make-fai-cd.sh combining both stderr and stdout into a single stream being piped to tee make-fai-cd.out to log the outputs.
+0
+FAI finished it's basic components and now begins to install additional packages for a functional FAI installation.
+0
+FAI successfully installs the large set of additional packages. It now begins to the creation of the FAI-CD/ISO image creation.
+-1
+Combines all elements into a final fai_cd.iso file. 
+0
+User exits ssh session
+0
+User uses scp to transfer the created fai_cd.iso to /disk1/isos/fai_dvd-date`+%Y%m%d`.iso
+0
+User exits terminal session
