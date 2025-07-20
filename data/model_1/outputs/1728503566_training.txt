@@ -1,0 +1,48 @@
+0
+User checks the list of VMs with names matching faiserver via 'cm list | grep faiserver'
+0
+User gets the IP of faiserver-tearoff-12 via 'cm getip faiserver-tearoff-12'
+0
+User sshes into the ip of faiserver-tearoff-12 at 172.16.0.17
+0
+User checks who is logged in (only themselves) via 'w'
+0
+User navigates to /home/fai/config/scripts via a series of 'cd' and 'ls'
+0
+User checks for files with the name 'bastion' in them via 'find ./ -name *bastion*'
+0
+User navigates to /home/fai/config/scripts/SERVERWWWMRTG and outputs the contents of '40-bastionize.sh' via cat.
+0
+User navigates back to /home/fai/config/scripts and searches for the words 'a2dismod' and 'autoindex' in the files under the current directory and subdirectories with 'grep -R a2dismod autoindex *'
+0
+User searches for the exact string 'a2dismod autoindex' in the files under the current directory and subdirectories with 'grep -R "a2dismod autoindex" *'
+0
+User checks how replacing the first occurence of 'autoindex' with 'autoindex -f" on each line in the file SERVERIMPLICIT/40-bastionize.sh would look like via 'sed "s/autoindex/autoindex -f/" SERVERIMPLICIT/40-bastionize.sh'
+0
+User implements the change by replacing the first occurence of 'autoindex' with 'autoindex -f" in SERVERIMPLICIT/40-bastionize.sh
+0
+User implements the change by replacing the first occurence of 'autoindex' with 'autoindex -f" in files SERVERWIKIMEDIA/40-bastionize.sh, SERVERWORDPRESS/40-bastionize.sh, SERVERWWWMRTG/40-bastionize.sh. Basically, all files that were the output of 'grep -R "a2dismod autoindex" *'.
+0
+User checks the change made in SERVERWWWMRTG/40-bastionize.sh via cat.
+1
+User navigates to /home/fai and runs make-fai-cd.sh combining both stderr and stdout into a single stream being piped to tee make-fai-cd.out to log the outputs.
+0
+FAI finished it's basic components and now begins to install additional packages for a functional FAI installation.
+0
+FAI successfully installs the large set of additional packages. It now begins to the creation of the FAI-CD/ISO image creation.
+-1
+Combines all elements into a final fai_cd.iso file. 
+0
+User checks git diff
+0
+User git adds the changes and commits with the message: "add -f to a2dismod invocation disabling the autoindex module"
+0
+User exits ssh session
+0
+User uses scp to transfer the created fai_cd.iso in the ssh session to the local /disk1/isos/fai_dvd-date`+%Y%m%d`.iso but it fails due to lack of space
+0
+User removes file /disk1/isos/fai_dvd-20241006.iso
+0
+User uses scp to transfer the created fai_cd.iso in the ssh session to the local /disk1/isos/fai_dvd-date`+%Y%m%d`.iso successfully this time.
+0
+User session ends as he exits terminal
