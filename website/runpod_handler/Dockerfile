@@ -1,6 +1,6 @@
 FROM python:3.10-slim
 
-WORKDIR /app
+WORKDIR /
 
 # Install Python dependencies
 RUN pip install --upgrade pip
