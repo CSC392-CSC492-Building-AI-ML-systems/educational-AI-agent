@@ -4,7 +4,6 @@ WORKDIR /
 
 # Install Python dependencies
 RUN pip install --upgrade pip
-RUN pip install -r requirements.txt
 
 # Copy your handler file
 COPY handler.py requirements.txt ./
