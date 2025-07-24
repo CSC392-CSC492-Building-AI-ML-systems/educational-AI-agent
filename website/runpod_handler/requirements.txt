@@ -1,0 +1,4 @@
+runpod
+torch
+transformers
+safetensors
