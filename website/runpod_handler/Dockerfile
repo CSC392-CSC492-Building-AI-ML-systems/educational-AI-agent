@@ -10,4 +10,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY handler.py .
 
 # Start the container
-CMD ["python3", "-u", "/handler.py"]
+CMD ["python3", "-u", "handler.py"]
