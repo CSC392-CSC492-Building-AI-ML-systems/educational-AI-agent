@@ -1,19 +1,19 @@
 0
-User reattaches to a detached screen session to automate and test FAI-based VM installations
+User reattaches to a detached screen session
 0
-User retrieves previous command via reverse search to efficiently continue the system setup process without retyping
+User retrieves previous command via reverse search
 -1
-User uses scp to copy fai_cd.iso to remote host and enters password for authentication to transfer necessary installation image to the target machine
+User uses scp to copy fai_cd.iso to remote host and enters password for authentication
 1
-User enters a screen session displaying system resource usage to ensure system stability under setup load
+User enters a screen session displaying system resource usage
 0
-User attempts to reattach to screen session faiserver-tearoff-9 but fails because there is no screen to be resumed matching faiserver-tearoff-9
+User attempts to reattach to screen session faiserver-tearoff-9 but fails
 0
-User recalls and edits previous command using reverse search to delete a logical volume to prepare storage for new VM deployment
+User recalls and edits previous command using reverse search to delete a logical volume
 0
 User creates the virtual machine with image fai_dvd-20240722.iso
 0
-User checks available screen sessions and navigates into interactive session of 3Kingdoms to verify VM configuration for correct setup
+User checks available screen sessions and navigates into interactive session of 3Kingdoms
 -1
 User navigates to VM config directory
 1

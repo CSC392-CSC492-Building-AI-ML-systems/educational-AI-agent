@@ -1,92 +1,92 @@
 0
-User reattaches to a detached screen session to update the system from debian 11 to debian 12
+User reattaches to a detached screen session
 0
-User opens the configuration file package_config/FAIBASE with Emacs to edit base configuration for required package adjustments
+User opens the configuration file package_config/FAIBASE with Emacs
 -1
-User makes changes to FAIBASE and saves the changes to align base configurations with Debian 12 requirements
+User makes changes to FAIBASE and saves the changes
 1
-User reviews file changes via "git diff" to verify edits before staging
+User reviews file changes via "git diff"
 -1
-User exits "git diff" viewer after reviewing changes
+User exits "git diff" viewer
 1
-User stages the changes in FAIBASE record adjustments for version tracking
+User stages the changes in FAIBASE
 -1
-User commits the changes with message "python 2.7 no longer exists in debian 12." to document removal of deprecated packages
+User commits the changes with message "python 2.7 no longer exists in debian 12."
 1
-User reviews configuration changes using "git diff" to verify the previous commit
+User reviews configuration changes using "git diff"
 0
 User attempts to stages and commits changes in package_config/SERVERQEMU with message "the qemu system emulator is no longer in the qemu package, and we do not use it anyways." but fails
 0
 User stages changes in package_config/SERVER
 0
-User attempts to remove package_config/LINUXPMIDEV but fails due to local modifications, indicating uncommitted changes blocking cleanup
+User attempts to remove package_config/LINUXPMIDEV but fails due to local modifications
 -1
-User forcibly removes package_config/LINUXPMIDEV to clear outdated configurations despite local modifications
+User forcibly removes package_config/LINUXPMIDEV
 1
 User commits changes with message "remove LINUXPMIDEV class; lsof was last package in it, and it is not in debian 12?"
 0
-User reviews configuration changes using "git diff" to verify the commit was succeeded
+User reviews configuration changes using "git diff"
 0
-User stages changes in package_config/JUSER to update user-level package configurations under Debian 12
+User stages changes in package_config/JUSER
 0
-User searches for gnuplot-related packages to assess availability in Debian 12 and determine replacements or updates
+User searches for gnuplot-related packages
 0
-User opens package_config/JUSER with Emacs and makes changes to add gnuplot-nox for installation, replacing unavailable variants
+User opens package_config/JUSER with Emacs and makes changes to add gnuplot-nox for installation
 0
-User stages package_config/JUSER to record the changes
+User stages package_config/JUSER
 -1
 User commits changes with message "remove packages that are not in debian 12."
 1
-User reviews configuration changes using "git diff" to verify commit correctness
+User reviews configuration changes using "git diff"
 0
-User stages changes in package_config/JADMIN to prepare administrative package adjustments
+User stages changes in package_config/JADMIN
 -1
 User commits changes with message "remove clamav, update cruft to cruft-ng, install iotop only on physical machines, install telnet, and remove lsof."
 1
-User reviews configuration changes using "git diff" to confirm commit details
+User reviews configuration changes using "git diff"
 0
 User stages package_config/HWPHYS
 0
-User edits package_config/HWPHYS using Emacs to adjust package lists for physical machines
+User edits package_config/HWPHYS using Emacs
 0
-User stages package_config/HWPHYS after edits to prepare for commit
+User stages package_config/HWPHYS
 -1
 User commits changes with message "add more packages that we want on physical hosts."
 1
-User reviews configuration changes using "git diff" to verify commit
+User reviews configuration changes using "git diff"
 0
-User stages package_config/HOSTOFFICE after removing midori to update office configurations for Debian 12
+User stages package_config/HOSTOFFICE
 -1
 User commits with message "remove midori since it is not in debian 12."
 1
 User reviews configuration changes using "git diff"
 0
-User stages package_config/FAIBASE after moving HWPHYS out of FAIBASE
+User stages package_config/FAIBASE
 -1
 User commits with message "move packages for physical hosts out of FAIBASE."
 1
-User reviews configuration changes using "git diff" to verify edits
+User reviews configuration changes using "git diff"
 0
-User stages package_config/EADMIN to record updates on admin configurations
+User stages package_config/EADMIN
 -1
 User commits with message "update name of cruft, remove lsof (ss -tunlp is better), and install iotop only on physical machines."
 1
-User reviews configuration changes using "git diff" to verify edits
+User reviews configuration changes using "git diff"
 0
-User displays content in hooks/updatebase.DEFAULT to review the current hook script before renaming operations
+User displays content in hooks/updatebase.DEFAULT
 -1
-User stages hooks/updatebase.DEFAULT to prepare it for version-tracked rename
+User stages hooks/updatebase.DEFAULT
 0
-User removes hooks/updatebase.DEFAULT.source to clean up old filename
+User removes hooks/updatebase.DEFAULT.source
 0
 User commits changes with message "rename updatebase.DEFAULT.source to updatebase.DEFAULT"
 1
-User reviews configuration changes using "git diff" to confirm rename operation
+User reviews configuration changes using "git diff"
 0
-User stages changes in SERVERFAI, updating debian 11 to debian 12 
+User stages 
 -1
-User commits changes with message "migration from debian 11 to debian 12."
+User commits changes with message "
 1
-User changes directory up one level to prepare for environment build steps
+User changes directory up one level
 0
-User creates FAI nfsroot with debootstrap to deploy environment under Debian 12 using the finalized configurations
+User creates FAI nfsroot with debootstrap

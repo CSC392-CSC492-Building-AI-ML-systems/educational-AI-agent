@@ -1,24 +1,44 @@
 0
-User SSHs into 172.16.0.17
+User ssh to 172.16.0.17
 -1
-User navigates to /home/fai/config/scripts/GRUBEFI/ and edits 10-setup in Emacs to configure the system to boot off of GRUB by default, ensuring it works in the local EFI environment
+User navigates to /home/fai/config/scripts/GRUBEFI/ and lists directory contents
 -1
-User searches for "arno" across all configuration files in scripts/, FAIBASE/, and package_config/ to locate related configurations for review
+User displays contents in 10-setup
 0
-User finds SERVERWIFIDOG during inspection and moves it into ../package_config.old to deprecate this outdated package configuration
--1
-User stages and commits changes with message "do not install wifidog packages anymore." to inform others that the wifidog packages should no longer be installed
+User edits 10-setup in Emacs
 1
-User edits SERVERQEMU and SWFIREWALL in Emacs to update the installation setup
+User changes directory up one level and lists directory contents
 0
-User navigates back to the scripts/ directory, creates a new SWFIREWALL directory, copies 30-interface from FAIBASE into SWFIREWALL/, and edits the copied file in Emacs to break the software firewall into a separate class while allowing ping and SSH on the primary network interface
-1
-User stages and commits the changes that have been made
+User searches for "arno" in all files
 0
-User navigates back to /home/fai/ and runs make-fai-cd.sh to build the FAI CD with the updated installation setup
+User navigates to FAIBASE/ and displays contents in 30-interface
+0
+User navigates back to package_config/ and searches for "arno" in all files
+0
+User moves SERVERWIFIDOG into ../package_config.old
+0
+User stages and commits changes with message "do not install wifidog packages anymore."
+0
+User edits SERVERQEMU and SWFIREWALL in Emacs
+0
+User navigates back to scripts/ and creates SWFIREWALL directory
+0
+User navigates to SWFIREWALL/ and copies ../FAIBASE/30-interface into SWFIREWALL/
+0
+User edits 30-interface in Emacs
+0
+User checks git status
+0
+User stages and commits the changes with message "break having a software firewall into a separate class, and automatically let in ping, and ssh on the primary network interface."
+0
+User checks git diff
+0
+User stages and commits changes in 10-setup with message "boot off of grub by default."
+0
+User navigates back to /home/fai/ and runs make-fai-cd.sh to build FAI cd
 1
 User logs out from 172.16.0.17
 0
-User transfers the fai_cd.iso image via SCP from the FAI server to the local machine for deployment
+User transfers the fai_cd.iso image via SCP from the FAI server for deployment
 0
-User lists all directory contents locally to verify the successful transfer of the ISO and related files
+User lists all direc1 contents
