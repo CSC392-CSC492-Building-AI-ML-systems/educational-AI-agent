@@ -1,4 +1,6 @@
 0
+[GOAL_1] User prepares system configuration by cleaning old scripts and classes
+0
 User ssh to 172.16.0.17
 -1
 User navigates to /home/fai/config/scripts/GRUBEFI/ and lists directory contents
@@ -18,6 +20,10 @@ User navigates back to package_config/ and searches for "arno" in all files
 User moves SERVERWIFIDOG into ../package_config.old
 0
 User stages and commits changes with message "do not install wifidog packages anymore."
+0
+[GOAL_END_1] User completes cleaning of legacy boot and network configurations
+0
+[GOAL_2] User modularizes firewall logic and deploys updated FAI CD image
 0
 User edits SERVERQEMU and SWFIREWALL in Emacs
 0
@@ -42,3 +48,5 @@ User logs out from 172.16.0.17
 User transfers the fai_cd.iso image via SCP from the FAI server for deployment
 0
 User lists all direc1 contents
+0
+[GOAL_END_2] User finishes firewall modularization and deployment

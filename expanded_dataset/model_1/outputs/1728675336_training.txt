@@ -1,4 +1,6 @@
 0
+[GOAL_1] User modifies disk configuration for HWPHYS and commits changes
+0
 User logs into 172.16.0.17 via SSH
 -1
 User navigates to /home/fai/config/disk_config and lists directory contents
@@ -12,6 +14,10 @@ User opens HWPHYS in Emacs again to make further changes
 User checks the git diff again
 0
 User commits changes with message "remove single dash, was being interpreted as a filesystem option."
+0
+[GOAL_END_1] User completes configuration and commit of HWPHYS
+0
+[GOAL_2] User builds FAI CD and updates disk configuration with new options
 1
 User moves up two levels in the directory structure
 -1
@@ -26,6 +32,10 @@ User commits changes with message "an option is required. used rw."
 User moves up one level in the directory structure
 -1
 User runs make-fai-cd.sh script to build a FAI CD
+0
+[GOAL_END_2] User completes FAI CD rebuild using updated disk configuration
+0
+[GOAL_3] User updates automated installation settings and boot configuration for the FAI CD image
 1
 User navigates to config/package_config/ and lists directory contents
 0
@@ -47,7 +57,7 @@ User navigates to GRUB/ and lists directory contents
 1
 User moves up one level in the directory structure
 -1
-User tries to copy GRUB/ to GRUBEFI but gets "Permission denied"
+[Mistake] User tries to copy GRUB/ to GRUBEFI but gets "Permission denied". [Mistake Reason] Copying to protected location without sudo. [Mistake Result] System returns "Permission denied"
 0
 User creates a new directory called GRUBEFI
 0
@@ -82,6 +92,10 @@ User checks git diff
 User stages and commits disk_config/HWPHYS with message "make the fstab entry for raid arrays use UUIDs."
 0
 User stages and commits 10-setup with message "attempt to configure EFI booting. not yet perfect."
+0
+[GOAL_END_3] User finalizes and commits EFI boot configuration and related disk setup
+0
+[GOAL_4] User builds FAI CD and verifies installation image
 1
 User moves up three levels in the directory structure
 0
@@ -92,3 +106,5 @@ User logs out from 172.16.0.17
 User copies fai_cd.iso from 172.16.0.17 to /disk1/isos/fai_dvd-YYYYMMDD.iso
 0
 User exits local session
+0
+[GOAL_END_4] User completes deployment process by building and copying FAI ISO

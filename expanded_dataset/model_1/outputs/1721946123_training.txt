@@ -1,4 +1,6 @@
 0
+[GOAL_1] User prepares and deploys a bootable FAI CD image to set up a virtual machine
+0
 User reattaches to a detached screen session
 -1
 User installs essential packages, builds a bootable FAI CD image, and transfers it via SCP
@@ -6,6 +8,12 @@ User installs essential packages, builds a bootable FAI CD image, and transfers 
 User boots the virtual machine and waits for the system to fully start up
 2
 User installs necessary system packages again, builds a bootable ISO, and transfers it to a remote server
+0
+[SUCCESS_RESULT] Bootable ISO image successfully built and transferred to remote server; VM boot initiated
+0
+[GOAL_END_1] User completes FAI image preparation and deployment
+0
+[GOAL_2] User retries ISO generation and virtual machine boot to ensure configuration correctness
 0
 User reviews installed packages in Emacs and recalls a previous scp command to transfer a generated ISO to a remote server
 0
@@ -17,6 +25,10 @@ User boots the virtual machine and waits for the system to fully start up
 1
 User reviews installed packages in Emacs and recalls a previous scp command to transfer a generated ISO to a remote server
 0
+[GOAL_END_2] User completes second attempt to build and test bootable image
+0
+[GOAL_3] User prepares for future deployments by managing config files and SSH credentials
+0
 User navigates into the /home/fai/config directory and attempts to check the git status
 -1
 User lists all files in the /home/fai/config directory
@@ -24,3 +36,7 @@ User lists all files in the /home/fai/config directory
 User generates a new ssh key and enters password for authentication
 0
 User displays the generated public key
+0
+[SUCCESS_RESULT] SSH key generated and displayed successfully for future remote access
+0
+[GOAL_END_3] User finishes reviewing configuration and setting up SSH credentials

@@ -1,4 +1,6 @@
 0
+[GOAL_1] User modifies GRUB-related installation configuration files for FAI system
+0
 User logs into 172.16.0.17 via SSH
 -1
 User navigates to /home/fai/config/ and lists directory contents
@@ -15,10 +17,16 @@ User checks the git status
 0
 User stages and commits changes in GRUBEFI/10-setup with message "specify to use the X86_64 EFI grub image."
 0
+[GOAL_END_1] User finishes editing and committing GRUB configuration
+0
+[GOAL_2] User builds and transfers updated FAI CD image based on new configuration
+0
 User moves two levels up from the current directory and runs make-fai-cd.sh to build the FAI CD
 1
 User logs out 172.16.0.17
 0
 User copies fai_cd.iso from 172.16.0.17 to local /disk1/isos/fai_dvd-$(date).iso
+0
+[GOAL_END_2] User completes building and deploying FAI CD
 0
 User exits local session

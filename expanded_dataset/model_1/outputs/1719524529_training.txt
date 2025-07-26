@@ -1,4 +1,6 @@
 0
+[GOAL_1] User attempts to make some configuration changes related to Debian version updates
+0
 User reattaches to a detached screen session
 0
 User commits the changes with commit message 'libgnutls30-dev is not in debian 9.'
@@ -10,5 +12,9 @@ User exits git diff viewer
 User stages changes to package_config/SERVERNTOP
 -1
 User commits with the message 'ntop has become ntopng.'
-1
+0
 User attempts to stage changes to package_config/SERVERNAGIOS
+1
+[SUCCESS_UNKNOWN] Recording ends before the result of SERVERNAGIOS staging is observed
+0
+[GOAL_END_1] User completes configuration changes but the recording ends before the commit result can be determined

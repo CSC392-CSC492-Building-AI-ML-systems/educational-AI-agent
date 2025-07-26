@@ -1,6 +1,10 @@
 0
-User attempts to SSH into 172.16.0.17 but fails due to network issues
+[GOAL_1] User attempts to access remote system via tearoff session
+0
+[Mistake] User attempts to SSH into 172.16.0.17 but fails with "No route to host". [Mistake Reason] SSH connection attempt fails due to missing network route. [Mistake Result] SSH session could not be established
 0
 User lists available tearoff sessions and gets the IP addresses of these sessions
+0
+[GOAL_END_1] User completes attempt to access remote tearoff session
 0
 User exits the local terminal sessions
