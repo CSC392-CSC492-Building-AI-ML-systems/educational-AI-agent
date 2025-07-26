@@ -3,7 +3,7 @@ import runpod
 import torch
 
 # Load model and tokenizer from Hugging Face
-MODEL_ID = "cmdkp/autodocs_model_0"
+MODEL_ID = "nuhgooyin/autodocs_model_0_no_gguf"
 
 tokenizer = AutoTokenizer.from_pretrained(MODEL_ID, trust_remote_code=True)
 
