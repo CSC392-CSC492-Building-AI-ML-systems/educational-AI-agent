@@ -14,6 +14,18 @@ NETWORK_MODEL_PATH = "/runpod-volume/autodocs_model_0"
 def check_model_files_exist():
     """Check if all required model files exist in network storage"""
     if not os.path.exists(NETWORK_MODEL_PATH):
+        print("Model directory does not exist")
+        return False
+    
+    try:
+        model_files = os.listdir(NETWORK_MODEL_PATH)
+        print(f"Files in model directory: {model_files}")
+    except Exception as e:
+        print(f"Error reading model directory: {e}")
+        return False
+    
+    if not model_files:
+        print("Model directory is empty")
         return False
     
     required_files = [
@@ -22,19 +34,41 @@ def check_model_files_exist():
         "tokenizer.json"
     ]
     
-    # Check for model weights (either safetensors or pytorch format)
-    model_files = os.listdir(NETWORK_MODEL_PATH)
-    has_safetensors = any(f.endswith('.safetensors') for f in model_files)
+    # Check for model weights
+    has_safetensors_index = "model.safetensors.index.json" in model_files
+    has_sharded_safetensors = any(f.startswith("model-") and f.endswith(".safetensors") for f in model_files)
+    has_single_safetensors = "model.safetensors" in model_files
     has_pytorch = any(f.endswith('.bin') for f in model_files)
     
-    if not (has_safetensors or has_pytorch):
+    print(f"Has safetensors index: {has_safetensors_index}")
+    print(f"Has sharded safetensors: {has_sharded_safetensors}")
+    print(f"Has single safetensors: {has_single_safetensors}")
+    print(f"Has pytorch: {has_pytorch}")
+    
+    # For sharded models, we need both the index file and shard files
+    if has_safetensors_index and has_sharded_safetensors:
+        model_format_ok = True
+    elif has_single_safetensors or has_pytorch:
+        model_format_ok = True
+    else:
+        model_format_ok = False
+    
+    if not model_format_ok:
+        print("No valid model weight files found")
         return False
         
     # Check for required config files
+    missing_files = []
     for file in required_files:
-        if not os.path.exists(os.path.join(NETWORK_MODEL_PATH, file)):
-            return False
+        file_path = os.path.join(NETWORK_MODEL_PATH, file)
+        if not os.path.exists(file_path):
+            missing_files.append(file)
     
+    if missing_files:
+        print(f"Missing required files: {missing_files}")
+        return False
+    
+    print("All required model files found")
     return True
 
 def clean_and_setup_network_storage():
@@ -58,9 +92,32 @@ def clean_and_setup_network_storage():
 # Check if model already exists and is complete on network storage
 if check_model_files_exist():
     print("Model found on network storage. Loading existing model...")
-    tokenizer = AutoTokenizer.from_pretrained(NETWORK_MODEL_PATH, trust_remote_code=True)
-    model = AutoModelForCausalLM.from_pretrained(NETWORK_MODEL_PATH, trust_remote_code=True)
-    print("Model loaded successfully from network storage")
+    try:
+        tokenizer = AutoTokenizer.from_pretrained(NETWORK_MODEL_PATH, trust_remote_code=True)
+        model = AutoModelForCausalLM.from_pretrained(NETWORK_MODEL_PATH, trust_remote_code=True)
+        print("Model loaded successfully from network storage")
+    except Exception as e:
+        print(f"Error loading model from network storage: {e}")
+        print("Falling back to download...")
+        # Clean and prepare network storage
+        clean_and_setup_network_storage()
+        
+        print("Downloading model directly to network storage...")
+        tokenizer = AutoTokenizer.from_pretrained(
+            MODEL_ID, 
+            cache_dir="/runpod-volume/hf_cache",
+            trust_remote_code=True
+        )
+        model = AutoModelForCausalLM.from_pretrained(
+            MODEL_ID, 
+            cache_dir="/runpod-volume/hf_cache",
+            trust_remote_code=True
+        )
+        
+        print("Saving model to network storage for future use...")
+        tokenizer.save_pretrained(NETWORK_MODEL_PATH)
+        model.save_pretrained(NETWORK_MODEL_PATH)
+        print("Model saved successfully to network storage")
 else:
     print("Model not found on network storage. Downloading...")
     # Clean and prepare network storage
