@@ -10,10 +10,12 @@ if os.path.exists(NETWORK_MODEL_PATH):
     tokenizer = AutoTokenizer.from_pretrained(NETWORK_MODEL_PATH, trust_remote_code=True)
     model = AutoModelForCausalLM.from_pretrained(NETWORK_MODEL_PATH, trust_remote_code=True)
 else:
-    # Download and save to network storage
-    tokenizer = AutoTokenizer.from_pretrained(MODEL_ID, trust_remote_code=True)
-    model = AutoModelForCausalLM.from_pretrained(MODEL_ID, trust_remote_code=True)
+    # Download directly to network storage (bypasses local cache)
     os.makedirs(NETWORK_MODEL_PATH, exist_ok=True)
+    tokenizer = AutoTokenizer.from_pretrained(MODEL_ID, cache_dir=NETWORK_MODEL_PATH, trust_remote_code=True)
+    model = AutoModelForCausalLM.from_pretrained(MODEL_ID, cache_dir=NETWORK_MODEL_PATH, trust_remote_code=True)
+    
+    # Also save in standard format for faster loading
     tokenizer.save_pretrained(NETWORK_MODEL_PATH)
     model.save_pretrained(NETWORK_MODEL_PATH)
 
