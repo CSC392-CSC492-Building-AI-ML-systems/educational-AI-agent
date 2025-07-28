@@ -42,3 +42,38 @@ Usage Description:
   contextAsciinema for a sliding window of recent events.
 - Ensured all events match the Asciinema format for compatibility with models.
 ===============================================================================
+Source:  
+ChatGPT. "I want to build a simple visual representation of a tree of  
+terminal events, with a hierarchical structure that reflects  
+parent/child/sibling relationships. Can you help me design and implement  
+this into our frontend layout?"  
+ChatGPT, OpenAI, 23–24 July 2025, https://chat.openai.com/
+
+Affected Files:  
+- index.html  
+- style.css  
+- frontend.js  
+
+Usage Description:  
+- Designed a 3-column dashboard layout in index.html using semantic  
+  sections:  
+  - Left Column: Contains the Event Tree, visually structured as a  
+    nested <ul> with CSS indentation based on event depth  
+    (.depth-0, .depth-1, etc.).  
+  - Middle Column: Hosts the xterm.js terminal and the parent  
+    annotation box displayed above it.  
+  - Right Column: Displays a sibling annotation area for contextual  
+    reference.  
+
+- Implemented styling in style.css to match a dark, modern UI:  
+  - Defined a reusable .boxy class for consistent framed containers.  
+  - Used CSS Grid (.dashboard) with spacing and column definitions.  
+  - Customized scrollbars and added visual emphasis to elements like  
+    the current event.  
+
+- In frontend.js, connected terminal input logic to update annotation  
+  field using updateAnnotation() when a command is submitted.  
+
+- Resulting interface closely follows the original visual mock-up,  
+  with hierarchy, scrollable boxes, and command-annotation feedback.
+  ===============================================================================

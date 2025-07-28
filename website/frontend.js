@@ -25,13 +25,9 @@ const term = new Terminal({
   cols: 80,
 });
 
-// create annotation box for displaying event annotations
-const annotationBox = document.getElementById('annotationBox');
-
-// helper function to update the annotation box after each event
-function updateAnnotation(text) {
-  annotationBox.value = text;
-}
+// element that shows the latest annotation under the tree
+const currentNoteEl = document.getElementById('currentNote');
+const updateAnnotation = txt => (currentNoteEl.textContent = txt);
 
 // open xterm terminal and display intro message
 term.open(document.getElementById('terminal'));

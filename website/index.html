@@ -1,29 +1,71 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>AutoDocs AI</title>
-    <link rel="stylesheet" href="node_modules/@xterm/xterm/css/xterm.css" />
-    <script src="node_modules/@xterm/xterm/lib/xterm.js"></script>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-  <div class="container">
-    <h1>AutoDocs AI Terminal</h1>
-    <p>A browser-based terminal for testing and interaction.</p>
-  
-    <!-- new annotation area -->
-    <label for="annotationBox" class="annotation-label">Latest Annotation</label>
-    <textarea id="annotationBox" class="annotation-box" readonly>
-  ⟨ waiting for first event ⟩
-    </textarea>
-  
-    <!-- existing terminal -->
-    <div id="terminal"></div>
-  </div>
 
-  <script src="frontend.js"></script>
-</body>
+    <!-- xterm & page styles -->
+    <link rel="stylesheet" href="node_modules/@xterm/xterm/css/xterm.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="node_modules/@xterm/xterm/lib/xterm.js"></script>
+    <script defer src="frontend.js"></script>
+  </head>
+
+  <body>
+    <header class="site-header">
+      <h1>AutoDocs AI Terminal</h1>
+      <p>A browser-based terminal for testing and interaction.</p>
+    </header>
+
+    <!-- ─────────────── 3-column dashboard ─────────────── -->
+    <main class="dashboard">
+      <!-- COLUMN 1 ––––––––––––––––––––––––––––––––––––––– -->
+      <section class="left-rail">
+        <button id="uploadBtn">Upload Asciinema</button>
+
+        <div class="tree-wrap">
+          <h3>Event&nbsp;Tree</h3>
+          <ul id="eventTree">
+            <!-- placeholder content -->
+            <li class="depth-0">Parent (D:0)</li>
+            <li class="depth-1 current">Current&nbsp;Event (D:1)</li>
+            <li class="depth-2">Sub-event 1 (D:2)</li>
+            <li class="depth-2">Sub-event 2 (D:2)</li>
+            <li class="depth-2">Sub-event 3 (D:2)</li>
+          </ul>
+        </div>
+
+        <!-- annotation of the currently-selected event -->
+        <div class="current-note boxy">
+          <h4>Annotation (D:1)</h4>
+          <p id="currentNote">⟨ no command yet ⟩</p>
+        </div>
+      </section>
+
+      <!-- COLUMN 2 ––––––––––––––––––––––––––––––––––––––– -->
+      <section class="middle-rail">
+        <!-- parent-annotation sits above the terminal -->
+        <textarea
+          id="parentAnnotation"
+          class="noteBox"
+          placeholder="⟨annotation of the parent of the current event⟩"
+          readonly
+        ></textarea>
+
+        <div id="terminal" class="terminal-pane"></div>
+      </section>
+
+      <!-- COLUMN 3 ––––––––––––––––––––––––––––––––––––––– -->
+      <section class="right-rail">
+        <textarea
+          id="siblingAnnotation"
+          class="noteBox"
+          placeholder="⟨annotation of the parent's sibling⟩"
+          readonly
+        ></textarea>
+      </section>
+    </main>
+  </body>
 </html>
 
 
