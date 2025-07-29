@@ -1,3 +1,14 @@
+document.getElementById('uploadBtn').onclick = () =>
+  document.getElementById('txtFile').click();
+
+document.getElementById('txtFile').onchange = e => {
+  const file = e.target.files[0];
+  if (!file) return;
+  const reader = new FileReader();
+  reader.onload = () => loadTxtAndBuildTree(reader.result);
+  reader.readAsText(file);
+};
+
 // create a WebSocket connection to the server
 const socket = new WebSocket("ws://localhost:8080");
 socket.onopen = () => {

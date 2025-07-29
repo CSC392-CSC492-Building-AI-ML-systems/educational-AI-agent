@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="style.css" />
     <script defer src="node_modules/@xterm/xterm/lib/xterm.js"></script>
     <script defer src="frontend.js"></script>
+    <script defer src="tree.js"></script>
   </head>
 
   <body>
@@ -19,26 +20,23 @@
 
     <!-- ─────────────── 3-column dashboard ─────────────── -->
     <main class="dashboard">
-      <!-- COLUMN 1 ––––––––––––––––––––––––––––––––––––––– -->
+      <!-- COLUMN 1 -->
       <section class="left-rail">
         <button id="uploadBtn">Upload Asciinema</button>
+        <input type="file" id="txtFile" accept=".txt" hidden />
 
         <div class="tree-wrap">
-          <h3>Event&nbsp;Tree</h3>
+          <h3>Event Tree</h3>
+
+          <!-- start EMPTY; tree.js will fill this UL -->
           <ul id="eventTree">
-            <!-- placeholder content -->
-            <li class="depth-0">Parent (D:0)</li>
-            <li class="depth-1 current">Current&nbsp;Event (D:1)</li>
-            <li class="depth-2">Sub-event 1 (D:2)</li>
-            <li class="depth-2">Sub-event 2 (D:2)</li>
-            <li class="depth-2">Sub-event 3 (D:2)</li>
+            <li class="placeholder">No file loaded …</li>
           </ul>
         </div>
 
-        <!-- annotation of the currently-selected event -->
         <div class="current-note boxy">
-          <h4>Annotation (D:1)</h4>
-          <p id="currentNote">⟨ no command yet ⟩</p>
+          <h4 id="currentDepthLabel">Annotation</h4>
+          <p id="currentNote">⟨ upload a file first ⟩</p>
         </div>
       </section>
 
