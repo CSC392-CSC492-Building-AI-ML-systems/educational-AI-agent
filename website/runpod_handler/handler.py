@@ -1,6 +1,6 @@
 import os
 import shutil
-from transformers import AutoModelForCausalLM, AutoTokenizer, TextGenerationPipeline, BitsAndBytesConfig
+from transformers import AutoModelForCausalLM, AutoTokenizer, TextGenerationPipeline
 import runpod
 
 # Set environment variables to use network storage
@@ -54,12 +54,7 @@ if check_model_files_exist():
     tokenizer = AutoTokenizer.from_pretrained(NETWORK_MODEL_PATH, trust_remote_code=True)
     model = AutoModelForCausalLM.from_pretrained(
         NETWORK_MODEL_PATH,
-        trust_remote_code=True,
-        quantization_config=BitsAndBytesConfig(
-            load_in_8bit=True,
-            llm_int8_enable_fp32_cpu_offload=True
-        ),
-        device_map="auto"
+        trust_remote_code=True
     )
 else:
     print("Model not found on network storage. Downloading...")
@@ -74,12 +69,7 @@ else:
     model = AutoModelForCausalLM.from_pretrained(
         MODEL_ID,
         cache_dir=HF_CACHE_DIR,
-        trust_remote_code=True,
-        quantization_config=BitsAndBytesConfig(
-            load_in_8bit=True,
-            llm_int8_enable_fp32_cpu_offload=True
-        ),
-        device_map="auto"
+        trust_remote_code=True
     )
 
     print("Saving model to network storage...")
