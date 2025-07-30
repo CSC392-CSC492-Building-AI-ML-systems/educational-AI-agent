@@ -9,7 +9,7 @@ os.environ['TRANSFORMERS_CACHE'] = '/runpod-volume/hf_cache'
 os.environ['HF_HUB_CACHE'] = '/runpod-volume/hf_cache'
 
 MODEL_ID = "nuhgooyin/autodocs_model_0_no_gguf"
-NETWORK_MODEL_PATH = "/runpod-volume/autodocs_model_0"
+NETWORK_MODEL_PATH = "/runpod-volume/autodocs_model0_storage"
 HF_CACHE_DIR = "/runpod-volume/hf_cache"
 
 def check_model_files_exist():
