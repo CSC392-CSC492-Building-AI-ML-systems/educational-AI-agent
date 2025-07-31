@@ -8,6 +8,7 @@ os.environ['TRANSFORMERS_CACHE'] = '/runpod-volume/hf_cache'
 os.environ['HF_HUB_CACHE'] = '/runpod-volume/hf_cache'
 
 MODEL_ID = "nuhgooyin/autodocs_model_0_no_gguf"
+# autodocs_model0_storage
 
 def load_model():
     """Load model with optimized settings"""
