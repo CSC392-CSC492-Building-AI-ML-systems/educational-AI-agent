@@ -129,8 +129,7 @@ Please preserve the original structure as much as possible."
 ChatGPT, OpenAI, 23 July 2025, https://chat.openai.com/
 
 Affected Files:
-
-live_parser.py
+- live_parser.py
 
 Usage Description:
 - Refactored parse_recording() to accept a line-by-line stream (e.g., sys.stdin) 

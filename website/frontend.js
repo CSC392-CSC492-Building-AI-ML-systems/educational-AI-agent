@@ -65,18 +65,18 @@ term.onKey(e => {
     })
   );
 
-  // Below is just to test whether the annotation box updates correctly
-  // Build up command as user types
-  if (e.domEvent.key === 'Enter') {
-    updateAnnotation(`the last event was: ${command}`);
-    command = ''; // Reset for next input
-  } else if (e.domEvent.key === 'Backspace') {
-    // Remove last character (basic handling, won't match terminal exactly)
-    command = command.slice(0, -1);
-  } else if (e.domEvent.key.length === 1) {
-    // Add normal printable characters only
-    command += char;
-  }
+  // // Below is just to test whether the annotation box updates correctly
+  // // Build up command as user types
+  // if (e.domEvent.key === 'Enter') {
+  //   updateAnnotation(`the last event was: ${command}`);
+  //   command = ''; // Reset for next input
+  // } else if (e.domEvent.key === 'Backspace') {
+  //   // Remove last character (basic handling, won't match terminal exactly)
+  //   command = command.slice(0, -1);
+  // } else if (e.domEvent.key.length === 1) {
+  //   // Add normal printable characters only
+  //   command += char;
+  // }
 });
 
 
