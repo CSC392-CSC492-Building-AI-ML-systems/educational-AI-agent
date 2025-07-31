@@ -19,13 +19,26 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy application code
 COPY handler.py .
 
-# Set environment variables
+# Set environment variables for Python
 ENV PYTHONUNBUFFERED=1
-ENV HF_HOME=/runpod-volume/hf_cache
-ENV TRANSFORMERS_CACHE=/runpod-volume/hf_cache
-ENV HF_HUB_CACHE=/runpod-volume/hf_cache
 
+# Set environment variables for Hugging Face caching
+# These will direct all HF downloads to the network storage
+ENV HF_HOME=/runpod-volume
+ENV TRANSFORMERS_CACHE=/runpod-volume/transformers
+ENV HF_HUB_CACHE=/runpod-volume/hub
+ENV HF_DATASETS_CACHE=/runpod-volume/datasets
+
+# Additional environment variables for optimization
+ENV PYTORCH_CUDA_ALLOC_CONF=max_split_size_mb:128
+ENV HF_HUB_DISABLE_SYMLINKS_WARNING=1
+
+# Debug: Show disk usage during build (this will show build-time disk usage)
 RUN df -h
+
+# Create cache directories (these will be created in the image layer, 
+# but the actual /runpod-volume will be mounted at runtime)
+RUN mkdir -p /runpod-volume/transformers /runpod-volume/hub /runpod-volume/datasets
 
 # Run the handler
 CMD ["python", "handler.py"]
