@@ -92,7 +92,7 @@ def handler(job):
     """Handle inference requests"""
     job_input = job.get("input", {})
     prompt = job_input.get("prompt", "")
-    max_new_tokens = job_input.get("max_new_tokens", 128)
+    max_new_tokens = job_input.get("max_new_tokens", 128000)
     temperature = job_input.get("temperature", 0.7)
     do_sample = job_input.get("do_sample", True)
 
