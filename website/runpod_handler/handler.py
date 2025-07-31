@@ -77,7 +77,8 @@ try:
     pipe = TextGenerationPipeline(
         model=model, 
         tokenizer=tokenizer,
-        device_map="auto"
+        return_full_text=False,  # Only return generated text, not the prompt
+        clean_up_tokenization_spaces=True
     )
     print("Pipeline ready! ✅")
     
@@ -104,8 +105,7 @@ def handler(job):
             max_new_tokens=max_new_tokens, 
             temperature=temperature,
             do_sample=do_sample,
-            pad_token_id=tokenizer.eos_token_id,
-            return_full_text=False
+            pad_token_id=tokenizer.eos_token_id
         )
         
         return {"output": output[0]["generated_text"]}
