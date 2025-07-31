@@ -1,5 +1,7 @@
 0
 User sshes into 172.16.0.17
+1
+[GOAL_1] User wants to build a FAI-CD iso image using aptitude without some extra packages.
 0
 User navigates to /home/fai/config/package_config$ to check it's contents via ls
 0
@@ -22,6 +24,8 @@ FAI finished it's basic components and now begins to install additional packages
 FAI successfully installs the large set of additional packages. It now beings to the creation of the FAI-CD/ISO image creation.
 -1
 Combines all elements into a final fai_cd.iso file. 
+-1  
+[GOAL_END_1] User finishes attempt to create a minimal, scoped FAI‑CD ISO without recommended packages or the moved package classes.  
 0
 User exits ssh session and uses scp to download the newly created fai_cd.iso
 0

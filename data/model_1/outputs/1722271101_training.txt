@@ -7,7 +7,7 @@ User uses debsums with grep -v OK to identify files that have failed checksum ve
 0
 User identifies that /usr/sbin/fai-cd belongs to package fai-server to via dpkg
 1
-User begins to customize and enhance the fai-cd script to make GRUB module configuration more flexible and easier to manage via command-line options.
+[GOAL_1] User begins to customize and enhance the fai-cd script to make GRUB module configuration more flexible and easier to manage via command-line options.
 0
 User creates a copy of /usr/sbin/fai-cd as /usr/sbin/fai-cd.modified.
 0
@@ -19,7 +19,7 @@ User uses diff -u to gain more information.
 0
 User begins editing /usr/sbin/fai-cd by opening it up using emacs.
 0
-User finish editing file and exists back into the terminal.
+User finish editing file and exits back into the terminal.
 0
 User creates a copy of /usr/sbin/fai-cd as /usr/sbin/fai-cd.modified.
 0
@@ -29,4 +29,6 @@ User uses diff to check the difference in their edited version including a chang
 0
 User enters emacs to modify the edited version to modify the -g to -G for assigning grub modules.
 -1
+[GOAL_END_1] User finishes customizing the `fai-cd` script with enhanced GRUB module support via command-line options.
+0
 User ends session

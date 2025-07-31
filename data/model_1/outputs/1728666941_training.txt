@@ -1,6 +1,8 @@
 0
 User sshes into 172.16.0.17
 1
+[GOAL_1] Create a FAI CD ISO reflecting the changes in the boot RAID partition members disks
+1
 User begins editing QEMUCLIENT via emacs after checking it exists via ls
 0
 User updates disk1.1 to disk1.2 as the primary member for /boot RAID
@@ -20,6 +22,8 @@ FAI finished it's basic components and now begins to install additional packages
 FAI successfully installs the large set of additional packages. It now begins to the creation of the FAI-CD/ISO image creation.
 -1
 Combines all elements into a final fai_cd.iso file. 
+-1
+[GOAL_END_1] Successfully created and downloaded a FAI CD ISO reflecting updated RAID boot partition members (disk1.2 primary, disk1.3 secondary)
 0
 User exits ssh session and uses scp to download the newly created fai_cd.iso to /disk1/isos/fai_dvd-date`+%Y%m%d`.iso
 0

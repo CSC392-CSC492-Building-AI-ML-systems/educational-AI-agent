@@ -1,5 +1,7 @@
-1
+0
 User utilized screen -dr.
+1
+[GOAL_1] User begins configuring FAI and system services for automated installs and deployment.
 1
 User commits a Initial FAI configurations, including a "temporary hack" for package installation.
 0
@@ -22,5 +24,7 @@ User performed a git remove and committed the change of a historical configurati
 User adds and commits change to print errors.
 0
 User adds and commits change to allow demo user to login.
--2
+-1
 User checks git diff and stares at it mindlessly as the session ends
+-1
+[GOAL_END_1] User completes initial round of FAI and system service configuration for deployment.

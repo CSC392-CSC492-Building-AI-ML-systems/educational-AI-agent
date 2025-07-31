@@ -1,4 +1,8 @@
+1
+[GOAL_1] User inspects the contents of the '/disk1/' directory
 0
 User lists the contents of the '/disk1/' directory in long format, including hidden files.
 0
 User exits the current terminal session after clearing the input line.
+-1
+[GOAL_END_1] User completes inspection of the '/disk1/' directory and exits the terminal.

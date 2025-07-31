@@ -1,8 +1,12 @@
+1
+[GOAL_1] User sets up the required development environment and annotates relevant systems.
 0
 User attempts to type 'ccm', then corrects the input to 'apt install gcc libc6-dev libsodium-dev make autoconf'.
--1
+0
 User sets a note for 'faiserver-tearoff-12' as "Primary FAI server.".
 0
 User views existing notes for 'faiserver-tearoff-12' and 'nullhost-tearoff-6'.
-1
+0
 User exits the terminal session.
+-1
+[GOAL_END_1] User finishes tasks

@@ -1,0 +1,204 @@
+0
+User launches GNU screen via 'screen' before closing it.
+0
+User runs 'cm list' to check all currently available VM containers. 
+0
+User runs 'cm getip' to check the IP addresses of the VM containers.
+0
+User sshes into faiserver-tearoff-12 at IP: 172.16.0.17. 
+0
+User navigates to /home/fai/config and lists out the contents via 'ls'
+0
+User runs 'git diff' to check for changes made
+1
+[GOAL_1] User sets up the FAI configuration repository and commits core configuration changes for automated Debian installs.
+0
+[Mistake] User attempts to git add disk_config/HWPHYS but receives permission denied. [Mistake Reason] No access permission as user demo [Mistake Result] File is not added to staging area
+0
+User runs 'su' to switch to superuser permissions
+0
+User succesfully adds the file disk_config/HWPHYS and commits the change with message: "update physical disk layout to remove a swap partition, or separate partitions for /usr and /var."
+0
+User checks git diff
+0
+User git adds file class/10-base-classes and commits the change with the message: "handle dpkg changing an arguement."
+0
+User checks git diff
+0
+User git adds file class/50-host-classes and commits the change with the message: "fall back to using lscpu, rather than bios scanning for detecting a hypervisor."
+0
+User checks git diff
+0
+User git adds and commits the remaining changes with the message: "move forward to jessie, which is in debian archives."
+-1
+[GOAL_END_1] User completes initial round of FAI configuration version control commits.
+1
+[GOAL_2] User builds and transfers a custom FAI installation ISO to remote storage.
+0
+User navigates to /home/fai
+0
+[Mistake] User runs "time ./make-fai-cd.sh 1>make-fai-cd.out 2>&1" but cancels it. [Mistake Reason] Incorrect command wanted. Human Error. [Mistake Result] Comamnd is cancelled.
+1
+User runs make-fai-cd.sh combining both stderr and stdout into a single stream being piped to tee make-fai-cd.out to log the outputs.
+0
+FAI finished it's basic components and now begins to install additional packages for a functional FAI installation.
+-1
+Combines all elements into a final fai_cd.iso file. 
+0
+User writes out the command 'scp fai_cd.iso demo@faiserver:/disk1/isos/fai-dvd'
+0
+User runs the monitoring tool iotop on demo@stephost and checks the contents of disk1/isos/
+0
+User returns back to faiserver:/home/fai and modifies the earlier command to 'scp fai_cd.iso demo@faiserver:/disk1/isos/fai_dvd-`date +%Y%m%d`.iso' 
+0
+User runs 'scp fai_cd.iso demo@faiserver:/disk1/isos/fai_dvd-`date +%Y%m%d`.iso' but receives error due to unknown hostname
+1
+User modifies and runs command to 'scp fai_cd.iso demo@172.16.0.1:/disk1/isos/fai_dvd-`date +%Y%m%d`.iso'
+-1
+[Mistake] Connection was blocked due to change in SSH key triggering security warning and host key verification failure. [Mistake Reason] SSH key change [Mistake Result] No file was transfered
+0
+User updates their ssh key entry for IP address 172.16.0.1 with 'ssh-keygen -f "/root/.ssh/known_hosts" -R 172.16.0.1'
+0
+User now runs 'scp fai_cd.iso demo@172.16.0.1:/disk1/isos/fai_dvd-`date +%Y%m%d`.iso' to transfer the created fai_cd.iso to /disk1/isos/fai_dvd-date`+%Y%m%d`.iso
+0
+User returns terminal back to the demo@stephost and checks the folder with the newly added iso file.
+0
+User checks for more information of the files using 'ls -la'
+-1
+[GOAL_END_2] User successfully creates and stores fai_cd.iso on the remote host.
+1
+[GOAL_3] User deploys and boots the custom FAI ISO in a new KVM VM, configuring GRUB for serial-console installation.
+0
+User returns terminal back to faiserver:/home/fai#
+0
+User returns terminal back to the demo@stephost
+0
+User runs 'cm list' to check all currently available VM containers. 
+0
+User kills fai-server-tearoff-9 via 'sudo cm kill faiserver-tearoff-9'. It receives a error attempting to remove additional meta files from it that does not exist.
+0
+User runs 'su' to switch to superuser permissions on demo@stephost
+0
+[Mistake] User runs 'createvm faiserver tearoff fai_dvd-20240531.iso' but receives command not found [Mistake Reason] Human Error [Mistake Result] Nothing happens
+0
+User navigates to /disk1/isos and runs it again, while running user launchs a new bash shell, which clears the screen and returns them to a clean prompt at demo@stephost
+0
+User checks all activate GNU screens via 'sudo screen -ls'
+0
+User reattachs to the screen session 'preseed-faiserver-tearoff-9' using 'sudo screen -r 125'
+0
+User navigates via 'cd ~' and runs 'export PS1="sh>"'
+0
+The terminal runs 'sudo ./startup-kvm.sh preseed-tearoff-faiserver-9' launching the creation of a new KVM VM
+0
+User configures GRUB via 'serial --unit=0 --speed=115200 --word=8 --parity=no --stop=1'
+0
+User configures GRUB via 'terminal_input serial console' and 'terminal_output serial console'
+0
+User configures GRUB via 'linux (hd96)/boot/vmlinuz console=ttyS0,115200 console=tty0 boot=live FAI-FLAGS="verbose,createvt" FAI_ACTION=install FAI_CONFIG_SRC=file:///var/lib/fai/config rd.live.image root=live:CDLABEL=FAI_CD hostname=faiserver'
+0
+User configures GRUB via 'initrd (hd96)/boot/initrd.img'
+0
+User executes 'boot' to start the boot process
+0
+User returns to (qemu) state before going back to GRUB boot menu
+0
+User reachs the grub bootloader menu indicating two options 'Debian GNU/Linux' and '*Advanced options for Debian GNU/Linux'
+0
+User selects '*Advanced options for Debian GNU/Linux' and reaches the GRUB submenu for advanced boot options.
+0
+User runs out '#send \x011' on the qemu monitor console returning the terminal screen to the monitor prompt
+0
+User runs 'quit' to exit the QEMU monitor console returning back to 'demo@stephost' with the screen being terminated. \
+0
+User returns back to 'stephost:/disk1/isos#'
+0
+User returns back to demo@stephost
+0
+User resets terminal clearing the screen to just demo@stephost
+-1
+[GOAL_END_3] User completes VM boot test using the custom FAI ISO.
+1
+[GOAL_4] User refines package configuration by installing, testing, and purging services for performance tuning.
+0
+User navigates to /usr/share/createvm/templates and checks the folder contents
+0
+User runs 'sudo emacs init_fai_grub2.tt' to edit init_fai_grub2.tt in removing the original multi-step qemu prompt handling code to replace it with a simplified immediate quit command.
+0
+User returns the screen stephost:/disk1/isos and runs 'cm start faiserver-tearoff-9'
+0
+User enters 'faiserver-tearoff-9' via 'sudo screen -r faiserver-tearoff-9'
+0
+User enters password to login to server.
+0
+User runs 'ip addr' to check current network information.
+0
+User detaches from '135032.faiserver-tearoff-9' returning to stephost:/disk1/isos#
+0
+User ssh into faiserver-tearoff-9 or 172.16.0.18
+0
+User runs 'dpkg -l | less' to check installed packages
+0
+User switches screens back to faiserver:/home/fai# and checks the installed packages there with 'dpkg -l | less'
+0
+User runs 'sudo apt remove grub2'
+0
+User runs 'dpkg -l | less' to check installed packages
+0
+User runs 'man irqba' to check man page of irqba
+0
+User navigates to /home/fai/config/package_config and checks contents
+0
+User edits file HWPHYS to add irqbalance for performance testing hardware (as noted by the comment added)
+0
+User runs 'apt remove irqbalance'
+0
+User returns to screen demo@stephost:~$
+0
+[Mistake] User runs 'sudo apt install irqbalance' but receives error due to failed to fetch. [Mistake Reason] apt package out of date [Mistake Result] irqbalance not installed
+0
+User runs 'sudo apt update'
+0
+User runs 'sudo apt install irqbalance' succesfully this time
+0
+User runs 'sudo service irqbalance start' to monitor and balance CPU cores automatically
+0
+User runs 'sudo dmesg' to print out the kernel ring buffer
+0
+User runs 'sudo irqbalance --help' to check how ot use irqbalance
+0
+[Mistake] User attempts to run 'sudo journalctl -xue irqbalance' and 'sudo journalctl -xue irqbalance.service' but receives error Invalid Argument [Mistake Reason] Human Error [Mistake Result] Nothing happens
+0
+User navigates to /var/log and runs 'sudo grep irqbalance *'
+0
+[Mistake] User attempts to run 'sudo modprobe regmap_irq' but fails due to not finding regmap_irq [Mistake Reason] regmap_irq not existing [Mistake Result] module modprobe is not loaded
+0
+User runs 'find /lib/modules/6.6.13-amd64/ -name regmap'
+0
+User returns screen to '/home/fai/config/package_config'
+0
+User edits HWPHYS and comments out irqbalance adding a commenting saying 'FIXME: how do we productively use this?'
+0
+User runs 'dpkg -l | less' to check installed packages
+0
+User runs 'sudo dpkg --purge irqbalance'
+0
+User runs 'dpkg -l | less' to check installed packages
+0
+User runs 'dpkg -L libcap-ng0'
+0
+user runs 'apt remove libcap-ng0'
+0
+User runs 'dpkg -l | less' to check installed packages
+0
+User runs 'dpkg --purge libcap-ng0'
+0
+User runs 'dpkg -l | less' to check installed packages
+0
+User runs 'sudo apt remove libnuma1'
+0
+User runs 'sudo dpkg --purge libnuma1'
+0
+User runs 'dpkg -l | less' to check installed packages as session ends
+-1
+[GOAL_END_4] User finalizes package cleanup and tuning in the FAI configuration.

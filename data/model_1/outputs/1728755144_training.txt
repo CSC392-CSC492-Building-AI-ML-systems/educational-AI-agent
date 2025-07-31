@@ -1,0 +1,32 @@
+0
+User connects to remote server via SSH using the command 'ssh 172.16.0.17' and enters password
+1
+[GOAL_1] User is building and retrieving a customized FAI ISO image from a remote server to resolve a previous boot configuration issue caused by a missing space between BOOTEFI and GRUBEFI
+1
+User navigates to /home/fai/config/class and begins editing file '50-host-classes'
+-1
+User adds a space to the end of 'BOOTEFI GRUBEFI' and saves the file
+0
+[Mistake] User runs git diff but opens up the help information [Mistake Reason] Needs sudo [Mistake Result] Opened up the git diff help page
+0
+User runs git diff with sudo and sees the changes they made
+0
+User adds and commits the file change with message: "fix missing space"
+0
+User navigates to /home/fai
+1
+User runs make-fai-cd.sh combining both stderr and stdout into a single stream being piped to tee make-fai-cd.out to log the outputs.
+0
+FAI finished it's basic components and now begins to install additional packages for a functional FAI installation.
+0
+FAI successfully installs the large set of additional packages. It now begins to the creation of the FAI-CD/ISO image creation.
+-1
+Combines all elements into a final fai_cd.iso file. 
+0
+User exits ssh session
+0
+User runs 'scp 172.16.0.17:/home/fai/fai_cd.iso /disk1/isos/fai_dvd-`date +%Y%m%d`.iso' to transfer the created fai_cd.iso to /disk1/isos/fai_dvd-date`+%Y%m%d`.iso
+0
+[GOAL_END_1] User successfully fixed the boot class formatting issue by inserting a missing space, rebuilt the FAI ISO, and transferred it locally. 
+0
+User exits asciinema session
