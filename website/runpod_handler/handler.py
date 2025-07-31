@@ -1,5 +1,4 @@
 import os
-import shutil
 from transformers import AutoModelForCausalLM, AutoTokenizer, TextGenerationPipeline
 import runpod
 
@@ -9,90 +8,67 @@ os.environ['TRANSFORMERS_CACHE'] = '/runpod-volume/hf_cache'
 os.environ['HF_HUB_CACHE'] = '/runpod-volume/hf_cache'
 
 MODEL_ID = "nuhgooyin/autodocs_model_0_no_gguf"
-NETWORK_MODEL_PATH = "/runpod-volume/autodocs_model0_storage"
-HF_CACHE_DIR = "/runpod-volume/hf_cache"
 
-def check_model_files_exist():
-    """Check if all required model files exist in network storage"""
-    if not os.path.exists(NETWORK_MODEL_PATH):
-        return False
-
-    model_files = os.listdir(NETWORK_MODEL_PATH)
-    if not model_files:
-        return False
-
-    required_files = [
-        "config.json",
-        "tokenizer_config.json",
-        "tokenizer.json"
-    ]
-
-    has_weights = (
-        "model.safetensors" in model_files or
-        "model.safetensors.index.json" in model_files or
-        any(f.endswith(".bin") for f in model_files)
-    )
-
-    for file in required_files:
-        if not os.path.exists(os.path.join(NETWORK_MODEL_PATH, file)):
-            return False
-
-    return has_weights
-
-def clean_and_setup_network_storage():
-    """Prepare network volume"""
-    if os.path.exists(NETWORK_MODEL_PATH):
-        shutil.rmtree(NETWORK_MODEL_PATH)
-    if os.path.exists(HF_CACHE_DIR):
-        shutil.rmtree(HF_CACHE_DIR)
-    os.makedirs(NETWORK_MODEL_PATH, exist_ok=True)
-    os.makedirs(HF_CACHE_DIR, exist_ok=True)
-
-# Load model from network storage if exists, else download and save
-if check_model_files_exist():
-    print("Loading model from network storage...")
-    tokenizer = AutoTokenizer.from_pretrained(NETWORK_MODEL_PATH, trust_remote_code=True)
-    model = AutoModelForCausalLM.from_pretrained(
-        NETWORK_MODEL_PATH,
-        trust_remote_code=True
-    )
-else:
-    print("Model not found on network storage. Downloading...")
-    clean_and_setup_network_storage()
-
+def load_model():
+    """Load model with optimized settings"""
+    print(f"Loading model: {MODEL_ID}")
+    
+    # Load tokenizer
+    print("Loading tokenizer...")
     tokenizer = AutoTokenizer.from_pretrained(
         MODEL_ID,
-        cache_dir=HF_CACHE_DIR,
-        trust_remote_code=True
+        trust_remote_code=True,
+        use_fast=True  # Use fast tokenizer if available
     )
-
+    
+    # Load model with memory optimizations
+    print("Loading model...")
     model = AutoModelForCausalLM.from_pretrained(
         MODEL_ID,
-        cache_dir=HF_CACHE_DIR,
-        trust_remote_code=True
+        trust_remote_code=True,
+        low_cpu_mem_usage=True,
+        device_map="auto",  # Automatically distribute model across available devices
+        torch_dtype="auto"  # Use optimal dtype
     )
+    
+    return model, tokenizer
 
-    print("Saving model to network storage...")
-    tokenizer.save_pretrained(NETWORK_MODEL_PATH)
-    model.save_pretrained(NETWORK_MODEL_PATH)
-    print("Saved successfully.")
+# Load model and tokenizer
+model, tokenizer = load_model()
 
 # Create inference pipeline
-pipe = TextGenerationPipeline(model=model, tokenizer=tokenizer)
+print("Creating inference pipeline...")
+pipe = TextGenerationPipeline(
+    model=model, 
+    tokenizer=tokenizer,
+    device_map="auto"
+)
+print("Pipeline ready!")
 
 def handler(job):
     job_input = job.get("input", {})
     prompt = job_input.get("prompt", "")
     max_new_tokens = job_input.get("max_new_tokens", 128)
     temperature = job_input.get("temperature", 0.7)
+    do_sample = job_input.get("do_sample", True)
 
     if not prompt:
         return {"error": "No prompt provided."}
 
     try:
-        output = pipe(prompt, max_new_tokens=max_new_tokens, temperature=temperature)
+        # Generate with additional parameters for better control
+        output = pipe(
+            prompt, 
+            max_new_tokens=max_new_tokens, 
+            temperature=temperature,
+            do_sample=do_sample,
+            pad_token_id=tokenizer.eos_token_id,
+            return_full_text=False  # Only return generated text, not the prompt
+        )
+        
         return {"output": output[0]["generated_text"]}
     except Exception as e:
         return {"error": f"Generation failed: {str(e)}"}
 
-runpod.serverless.start({"handler": handler})
+if __name__ == "__main__":
+    runpod.serverless.start({"handler": handler})
