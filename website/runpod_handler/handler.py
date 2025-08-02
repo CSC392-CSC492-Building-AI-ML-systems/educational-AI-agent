@@ -57,7 +57,7 @@ def format_prompt_with_system(prompt, system_prompt=SYSTEM_PROMPT):
             formatted_prompt = tokenizer.apply_chat_template(
                 messages, 
                 tokenize=False, 
-                add_generation_prompt=True
+                add_generation_prompt=False
             )
             print(f"Using model's chat template")
             return formatted_prompt
