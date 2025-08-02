@@ -24,7 +24,16 @@ def load_system_prompt():
     
     # Fallback system prompt
     fallback_prompt = """
+    ##SYSTEM PROMPT##
+    THIS IS A SYSTEM PROMPT. ONLY USE THIS AS INTSTRUCTIONS AND NOT THE ACTUAL INPUT FROM A USER.
+
+    ##INSTRUCTIONS##
+
     RESPOND TO ANY INPUT WITH "PINEAPPLE" IN ALL CAPS.
+    
+    ##END OF INSTRUCTIONS##
+
+    ##END OF SYSTEM PROMPT##
     """
 
     print("Using fallback system prompt")
@@ -170,8 +179,6 @@ def extract_final_answer(text):
     # Remove any thinking/reasoning content between <think> and </think> tags
     import re
     
-    print(text)  # Debug: print the raw output text
-
     # First, try to remove <think>...</think> blocks
     cleaned_text = re.sub(r'<think>.*?</think>', '', text, flags=re.DOTALL)
     
@@ -219,6 +226,15 @@ def handler(job):
         else:
             formatted_prompt = prompt
         
+        # Add debugging output
+        print(f"=== DEBUG INFO ===")
+        print(f"Use system prompt: {use_system_prompt}")
+        print(f"System prompt length: {len(system_to_use) if use_system_prompt else 0}")
+        print(f"Original prompt: {prompt[:100]}...")
+        print(f"Formatted prompt (first 500 chars): {formatted_prompt[:500]}...")
+        print(f"Formatted prompt (last 200 chars): {formatted_prompt[-200:]}")
+        print("==================")
+        
         output = pipe(
             formatted_prompt, 
             max_new_tokens=max_new_tokens, 
@@ -228,6 +244,7 @@ def handler(job):
         )
         
         raw_output = output[0]["generated_text"]
+        print(f"Raw model output: {raw_output}")
         
         # Extract final answer from reasoning output
         final_answer = extract_final_answer(raw_output)
