@@ -35,18 +35,19 @@ def load_system_prompt():
 # Load system prompt at startup
 SYSTEM_PROMPT = load_system_prompt()
 
-# Chat template fallback if model doesn't have one
-CHAT_TEMPLATE = """<|system|>
-{system_prompt}<|end|>
-<|user|>
-{user_prompt}<|end|>
-<|assistant|>
+# DeepSeek/Llama chat template - this is the key fix
+CHAT_TEMPLATE = """<|begin_of_text|><|start_header_id|>system<|end_header_id|>
+
+{system_prompt}<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+{user_prompt}<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
 """
 
 def format_prompt_with_system(prompt, system_prompt=SYSTEM_PROMPT):
     """Format user prompt with system prompt using model's chat template"""
     
-    # Try to use the model's built-in chat template
+    # Try to use the model's built-in chat template first
     if hasattr(tokenizer, 'chat_template') and tokenizer.chat_template:
         try:
             messages = [
@@ -61,26 +62,15 @@ def format_prompt_with_system(prompt, system_prompt=SYSTEM_PROMPT):
             print(f"Using model's chat template")
             return formatted_prompt
         except Exception as e:
-            print(f"Chat template failed: {e}, using fallback")
+            print(f"Chat template failed: {e}, using DeepSeek/Llama fallback")
     
-    # Fallback to custom template
+    # Fallback to DeepSeek/Llama template
     formatted_prompt = CHAT_TEMPLATE.format(
         system_prompt=system_prompt,
         user_prompt=prompt
     )
-    print(f"Using fallback chat template")
+    print(f"Using DeepSeek/Llama chat template")
     return formatted_prompt
-    """Check available disk space in key locations"""
-    locations = ["/", "/runpod-volume", "/tmp"]
-    
-    print("=== Disk Space Check ===")
-    for location in locations:
-        if os.path.exists(location):
-            total, used, free = shutil.disk_usage(location)
-            print(f"{location:15} - Total: {total//1024**3:3d}GB, Used: {used//1024**3:3d}GB, Free: {free//1024**3:3d}GB")
-        else:
-            print(f"{location:15} - Does not exist")
-    print("========================")
 
 def verify_cache_setup():
     """Verify that cache directories are properly set up"""
@@ -125,6 +115,11 @@ def load_model():
         use_fast=True
     )
     
+    # Ensure pad token is set for DeepSeek models
+    if tokenizer.pad_token is None:
+        tokenizer.pad_token = tokenizer.eos_token
+        print("Set pad_token to eos_token for DeepSeek model")
+    
     # Load model
     print("Loading model...")
     model = AutoModelForCausalLM.from_pretrained(
@@ -140,15 +135,15 @@ def load_model():
     # Display loaded system prompt
     print("=== System Prompt Configuration ===")
     print(f"System prompt length: {len(SYSTEM_PROMPT)} characters")
-    # print(f"First 150 characters: {SYSTEM_PROMPT[:150]}...")
+    print(f"First 200 characters: {SYSTEM_PROMPT[:200]}...")
     print("===================================")
     
     # Test system prompt functionality
-    # print("=== Testing System Prompt ===")
-    # test_prompt = "Hello"
-    # formatted_test = format_prompt_with_system(test_prompt)
-    # print(f"Sample formatted prompt preview:\n{formatted_test[:200]}...")
-    # print("==============================")
+    print("=== Testing System Prompt ===")
+    test_prompt = "Hello"
+    formatted_test = format_prompt_with_system(test_prompt)
+    print(f"Sample formatted prompt preview:\n{formatted_test[:300]}...")
+    print("==============================")
     
     # Final disk space check
     print("=== Post-Loading Disk Space ===")
@@ -181,7 +176,7 @@ def handler(job):
     """Handle inference requests with system prompt support"""
     job_input = job.get("input", {})
     prompt = job_input.get("prompt", "")
-    max_new_tokens = job_input.get("max_new_tokens", 128000)
+    max_new_tokens = job_input.get("max_new_tokens", 512)  # Reduced from 128000
     temperature = job_input.get("temperature", 0.7)
     do_sample = job_input.get("do_sample", True)
     
@@ -200,12 +195,19 @@ def handler(job):
         else:
             formatted_prompt = prompt
         
+        # Add some debug logging
+        print(f"=== Generation Request ===")
+        print(f"Using system prompt: {use_system_prompt}")
+        print(f"Max new tokens: {max_new_tokens}")
+        print(f"Formatted prompt length: {len(formatted_prompt)}")
+        print("==========================")
+        
         output = pipe(
             formatted_prompt, 
             max_new_tokens=max_new_tokens, 
             temperature=temperature,
             do_sample=do_sample,
-            pad_token_id=tokenizer.eos_token_id
+            pad_token_id=tokenizer.pad_token_id
         )
         
         return {"output": output[0]["generated_text"]}
