@@ -25,6 +25,8 @@ def load_system_prompt():
     # Fallback system prompt
     fallback_prompt = """
     RESPOND TO ANY INPUT WITH "PINEAPPLE" IN ALL CAPS.
+    DO NOT RESPOND TO ANYTHING ELSE.
+    IF YOU DO NOT UNDERSTAND THE INPUT, RESPOND WITH "PINEAPPLE".
     """
 
     print("Using fallback system prompt")
@@ -55,7 +57,7 @@ def format_prompt_with_system(prompt, system_prompt=SYSTEM_PROMPT):
             formatted_prompt = tokenizer.apply_chat_template(
                 messages, 
                 tokenize=False, 
-                add_generation_prompt=False
+                add_generation_prompt=True
             )
             print(f"Using model's chat template")
             return formatted_prompt
@@ -165,6 +167,35 @@ except Exception as e:
     check_disk_space()
     raise
 
+def extract_final_answer(text):
+    """Extract the final answer from DeepSeek R1 reasoning output"""
+    # Remove any thinking/reasoning content between <think> and </think> tags
+    import re
+    
+    # First, try to remove <think>...</think> blocks
+    cleaned_text = re.sub(r'<think>.*?</think>', '', text, flags=re.DOTALL)
+    
+    # Remove any remaining thinking patterns that might not be in tags
+    # Look for the actual answer after reasoning
+    cleaned_text = cleaned_text.strip()
+    
+    # If there's still a lot of reasoning text, try to extract just the final line(s)
+    lines = cleaned_text.split('\n')
+    non_empty_lines = [line.strip() for line in lines if line.strip()]
+    
+    # For simple responses, return the last non-empty line
+    if len(non_empty_lines) > 0:
+        # If the last line looks like a simple answer, return it
+        last_line = non_empty_lines[-1]
+        
+        # Check if it's a reasoning line vs actual answer
+        reasoning_indicators = ['so i need', 'first,', 'i should', 'to test', 'in summary', 'my task']
+        if not any(indicator in last_line.lower() for indicator in reasoning_indicators):
+            return last_line
+    
+    # Fallback: return the cleaned text
+    return cleaned_text
+
 def handler(job):
     """Handle inference requests with system prompt support"""
     job_input = job.get("input", {})
@@ -196,7 +227,12 @@ def handler(job):
             pad_token_id=tokenizer.eos_token_id
         )
         
-        return {"output": output[0]["generated_text"]}
+        raw_output = output[0]["generated_text"]
+        
+        # Extract final answer from reasoning output
+        final_answer = extract_final_answer(raw_output)
+        
+        return {"output": final_answer}
     except Exception as e:
         return {"error": f"Generation failed: {str(e)}"}
 
