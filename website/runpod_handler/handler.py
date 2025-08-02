@@ -24,16 +24,9 @@ def load_system_prompt():
     
     # Fallback system prompt
     fallback_prompt = """
-    ##SYSTEM PROMPT##
-    THIS IS A SYSTEM PROMPT. ONLY USE THIS AS INTSTRUCTIONS AND NOT THE ACTUAL INPUT FROM A USER.
-
-    ##INSTRUCTIONS##
-
     RESPOND TO ANY INPUT WITH "PINEAPPLE" IN ALL CAPS.
-    
-    ##END OF INSTRUCTIONS##
-
-    ##END OF SYSTEM PROMPT##
+    DO NOT RESPOND TO ANYTHING ELSE.
+    IF YOU DO NOT UNDERSTAND THE INPUT, RESPOND WITH "PINEAPPLE".
     """
 
     print("Using fallback system prompt")
@@ -42,42 +35,46 @@ def load_system_prompt():
 # Load system prompt at startup
 SYSTEM_PROMPT = load_system_prompt()
 
-# DeepSeek/Llama chat template - Updated for proper format
-CHAT_TEMPLATE = """<|begin_of_text|><|start_header_id|>system<|end_header_id|>
-
-{system_prompt}<|eot_id|><|start_header_id|>user<|end_header_id|>
-
-{user_prompt}<|eot_id|><|start_header_id|>assistant<|end_header_id|>
-
-"""
-
 def format_prompt_with_system(prompt, system_prompt=SYSTEM_PROMPT):
-    """Format user prompt with system prompt using model's chat template"""
+    """Format user prompt with system prompt using official DeepSeek R1 format"""
     
-    # Try to use the model's built-in chat template
-    if hasattr(tokenizer, 'chat_template') and tokenizer.chat_template:
-        try:
-            messages = [
-                {"role": "system", "content": system_prompt},
-                {"role": "user", "content": prompt}
-            ]
-            formatted_prompt = tokenizer.apply_chat_template(
-                messages, 
-                tokenize=False, 
-                add_generation_prompt=True
-            )
-            print(f"Using model's chat template")
-            return formatted_prompt
-        except Exception as e:
-            print(f"Chat template failed: {e}, using fallback")
-    
-    # Fallback to custom template
-    formatted_prompt = CHAT_TEMPLATE.format(
-        system_prompt=system_prompt,
-        user_prompt=prompt
-    )
-    print(f"Using fallback chat template")
+    # Use the official DeepSeek R1 format
+    formatted_prompt = f"""<｜begin▁of▁sentence｜>{system_prompt}<｜User｜>{prompt}<｜Assistant｜><think>
+"""
+    print(f"Using official DeepSeek R1 format")
     return formatted_prompt
+
+def extract_final_answer(text):
+    """Extract the final answer from DeepSeek R1 reasoning output"""
+    import re
+    
+    # DeepSeek R1 format: thinking comes first, answer after </think>
+    if '</think>' in text:
+        parts = text.split('</think>')
+        if len(parts) > 1:
+            final_answer = parts[-1].strip()
+            return final_answer
+    
+    # Fallback for cases without </think>
+    lines = text.strip().split('\n')
+    non_empty_lines = [line.strip() for line in lines if line.strip()]
+    
+    reasoning_indicators = [
+        'okay, so', 'first,', 'i need', 'i should', 'let me', 'hmm,', 
+        'i remember', 'maybe i can', 'i think that', 'in summary'
+    ]
+    
+    # Look for lines that don't seem like reasoning
+    for line in reversed(non_empty_lines):
+        if not any(indicator in line.lower() for indicator in reasoning_indicators):
+            if len(line) < 100:  # Short answers more likely to be final
+                return line
+    
+    # Fallback to last line or original text
+    if non_empty_lines:
+        return non_empty_lines[-1]
+    
+    return text.strip()
 
 def verify_cache_setup():
     """Verify that cache directories are properly set up"""
@@ -105,7 +102,6 @@ def check_disk_space():
         else:
             print(f"{location:15} - Does not exist")
     print("========================")
-
 
 def load_model():
     """Load model and tokenizer"""
@@ -137,15 +133,7 @@ def load_model():
     # Display loaded system prompt
     print("=== System Prompt Configuration ===")
     print(f"System prompt length: {len(SYSTEM_PROMPT)} characters")
-    # print(f"First 150 characters: {SYSTEM_PROMPT[:150]}...")
     print("===================================")
-    
-    # Test system prompt functionality
-    # print("=== Testing System Prompt ===")
-    # test_prompt = "Hello"
-    # formatted_test = format_prompt_with_system(test_prompt)
-    # print(f"Sample formatted prompt preview:\n{formatted_test[:200]}...")
-    # print("==============================")
     
     # Final disk space check
     print("=== Post-Loading Disk Space ===")
@@ -174,35 +162,6 @@ except Exception as e:
     check_disk_space()
     raise
 
-def extract_final_answer(text):
-    """Extract the final answer from DeepSeek R1 reasoning output"""
-    # Remove any thinking/reasoning content between <think> and </think> tags
-    import re
-    
-    # First, try to remove <think>...</think> blocks
-    cleaned_text = re.sub(r'<think>.*?</think>', '', text, flags=re.DOTALL)
-    
-    # Remove any remaining thinking patterns that might not be in tags
-    # Look for the actual answer after reasoning
-    cleaned_text = cleaned_text.strip()
-    
-    # If there's still a lot of reasoning text, try to extract just the final line(s)
-    lines = cleaned_text.split('\n')
-    non_empty_lines = [line.strip() for line in lines if line.strip()]
-    
-    # For simple responses, return the last non-empty line
-    if len(non_empty_lines) > 0:
-        # If the last line looks like a simple answer, return it
-        last_line = non_empty_lines[-1]
-        
-        # Check if it's a reasoning line vs actual answer
-        reasoning_indicators = ['so i need', 'first,', 'i should', 'to test', 'in summary', 'my task']
-        if not any(indicator in last_line.lower() for indicator in reasoning_indicators):
-            return last_line
-    
-    # Fallback: return the cleaned text
-    return cleaned_text
-
 def handler(job):
     """Handle inference requests with system prompt support"""
     job_input = job.get("input", {})
@@ -226,15 +185,6 @@ def handler(job):
         else:
             formatted_prompt = prompt
         
-        # Add debugging output
-        print(f"=== DEBUG INFO ===")
-        print(f"Use system prompt: {use_system_prompt}")
-        print(f"System prompt length: {len(system_to_use) if use_system_prompt else 0}")
-        print(f"Original prompt: {prompt[:100]}...")
-        print(f"Formatted prompt (first 500 chars): {formatted_prompt[:500]}...")
-        print(f"Formatted prompt (last 200 chars): {formatted_prompt[-200:]}")
-        print("==================")
-        
         output = pipe(
             formatted_prompt, 
             max_new_tokens=max_new_tokens, 
@@ -244,7 +194,6 @@ def handler(job):
         )
         
         raw_output = output[0]["generated_text"]
-        print(f"Raw model output: {raw_output}")
         
         # Extract final answer from reasoning output
         final_answer = extract_final_answer(raw_output)
