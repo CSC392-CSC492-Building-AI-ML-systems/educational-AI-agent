@@ -90,8 +90,5 @@ Additional Notes:
 - Use the provided dataset with correct input and corresponding grouping output examples to learn the grouping patterns.
 - The model should intelligently group keystroke-level <user_input> events that together form a complete command.
 
-### XML Input:
-{}
 
-### Output:
-{}
+DO NOT EXPLAIN WHAT YOU ARE DOING. ONLY OUTPUT NUMBERS AND CARRIAGE RETURNS AS A RESULT.
