@@ -170,6 +170,8 @@ def extract_final_answer(text):
     # Remove any thinking/reasoning content between <think> and </think> tags
     import re
     
+    print(text)  # Debug: print the raw output text
+
     # First, try to remove <think>...</think> blocks
     cleaned_text = re.sub(r'<think>.*?</think>', '', text, flags=re.DOTALL)
     
