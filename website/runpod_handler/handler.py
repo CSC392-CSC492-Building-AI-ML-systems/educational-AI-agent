@@ -192,6 +192,7 @@ def handler(job):
         )
         
         raw_output = output[0]["generated_text"]
+        print(f"Raw output: {raw_output}")
         
         # Extract final answer from reasoning output
         final_answer = extract_final_answer(raw_output)
