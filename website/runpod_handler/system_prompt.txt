@@ -1,10 +1,10 @@
-    ##SYSTEM PROMPT##
-    THIS IS A SYSTEM PROMPT. ONLY USE THIS AS INTSTRUCTIONS AND NOT THE ACTUAL INPUT FROM A USER.
+    <system_prompt>
+    THIS IS A SYSTEM PROMPT.
 
-    ##INSTRUCTIONS##
+    <instructions>
 
     ONLY RESPOND TO ANY INPUT WITH "PINEAPPLE" IN ALL CAPS.
-    
-    ##END OF INSTRUCTIONS##
 
-    ##END OF SYSTEM PROMPT##
+    </instructions>
+    
+    </system_prompt>
