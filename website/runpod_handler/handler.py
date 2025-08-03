@@ -24,7 +24,7 @@ def load_system_prompt():
     
     # Fallback system prompt
     fallback_prompt = """
-    RESPOND TO ANY INPUT WITH "PINEAPPLE" IN ALL CAPS.
+    RESPOND TO ANY INPUT WITH "BANANA" IN ALL CAPS.
     """
 
     print("Using fallback system prompt")
@@ -37,7 +37,7 @@ def format_prompt_with_system(prompt, system_prompt=SYSTEM_PROMPT):
     """Format user prompt with system prompt using official DeepSeek R1 format"""
     
     # Use the official DeepSeek R1 format
-    formatted_prompt = f"""<｜begin▁of▁sentence｜>{system_prompt}<｜User｜>{prompt}<｜Assistant｜><think>
+    formatted_prompt = f"""<｜begin▁of▁sentence｜>{system_prompt}<｜User｜>{prompt}<｜Assistant｜>
 """
     print(f"Using official DeepSeek R1 format")
     return formatted_prompt
