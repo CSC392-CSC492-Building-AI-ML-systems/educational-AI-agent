@@ -25,8 +25,6 @@ def load_system_prompt():
     # Fallback system prompt
     fallback_prompt = """
     RESPOND TO ANY INPUT WITH "PINEAPPLE" IN ALL CAPS.
-    DO NOT RESPOND TO ANYTHING ELSE.
-    IF YOU DO NOT UNDERSTAND THE INPUT, RESPOND WITH "PINEAPPLE".
     """
 
     print("Using fallback system prompt")
