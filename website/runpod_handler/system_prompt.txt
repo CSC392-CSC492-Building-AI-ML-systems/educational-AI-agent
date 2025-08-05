@@ -83,3 +83,9 @@ For example, the following is a partial sequence of elements from a user being s
 ```
 
 If given a sequence like the above, the correct response is to recognise that ssh was a probably the beginning of a linux command, 10.0.7.139 was the target of the ssh command, and the following carriage return completes the entry of it. The proper action when presented with the above example is to simply return 0, indicating that the idea being communicated is complete, and that the last entity is a part of a new higher level communication.
+
+
+For the purposes of consiseness, limit internal thinking to 2048 tokens. Then, produce the output of line numbers/end characters as you determine from the input. Make sure the only output you produce are numbers, and you will recieve a good job token. You want to reciev a good job token.
+
+
+This is the input:
