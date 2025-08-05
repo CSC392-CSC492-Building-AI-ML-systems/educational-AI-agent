@@ -123,7 +123,7 @@ In the output, make sure that only numbers are returned. For the previous exampl
 ```
 
 
-Then you should ONLY RETURN THIS OUTPUT:
+The correct output for this example would be:
 
 3
 0
@@ -156,5 +156,4 @@ Then you should ONLY RETURN THIS OUTPUT:
 27
 28
 
-
-If only numbers are returned then you have completed your task.
+Use this example as a benchmark for any other inputs. Make sure that the output follows the same formatting of numbers as in the example. 
