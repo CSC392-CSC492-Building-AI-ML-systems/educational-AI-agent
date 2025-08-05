@@ -33,18 +33,44 @@ def load_system_prompt():
 # Load system prompt at startup
 SYSTEM_PROMPT = load_system_prompt()
 
+def format_prompt_simple(prompt, system_prompt=SYSTEM_PROMPT):
+    """Simple format without DeepSeek R1 thinking tokens"""
+    formatted_prompt = f"{system_prompt}\n\n{prompt}"
+    print("Using simple format (no thinking tokens)")
+    return formatted_prompt
+
 def format_prompt_with_system(prompt, system_prompt=SYSTEM_PROMPT):
     """Format user prompt with system prompt using official DeepSeek R1 format"""
     
     # Use the official DeepSeek R1 format
-    formatted_prompt = f"""<｜begin▁of▁sentence｜>{system_prompt}<｜User｜>{prompt}<｜Assistant｜><think>
-"""
-    print(f"Using official DeepSeek R1 format")
+    formatted_prompt = f"""<｜begin▁of▁sentence｜>{system_prompt}<｜User｜>{prompt}<｜Assistant｜>"""
+    print(f"Using official DeepSeek R1 format without <think>")
     return formatted_prompt
 
 def extract_final_answer(text):
     """Extract the final answer from DeepSeek R1 reasoning output"""
     import re
+    
+    # For this specific task, we want only numbers, so extract them
+    lines = text.strip().split('\n')
+    number_lines = []
+    
+    for line in lines:
+        line = line.strip()
+        # Check if line contains only digits (and maybe whitespace)
+        if line.isdigit():
+            number_lines.append(line)
+        # Also check for lines that might have numbers at the start
+        elif re.match(r'^\d+', line):
+            match = re.match(r'^(\d+)', line)
+            if match:
+                number_lines.append(match.group(1))
+    
+    # If we found number lines, return them joined
+    if number_lines:
+        return '\n'.join(number_lines)
+    else:
+        return text.strip()  # Fallback to original text if no numbers found
     
     # DeepSeek R1 format: thinking comes first, answer after </think>
     if '</think>' in text:
@@ -53,13 +79,12 @@ def extract_final_answer(text):
             final_answer = parts[-1].strip()
             return final_answer
     
-    # Fallback for cases without </think>
-    lines = text.strip().split('\n')
+    # Fallback to original extraction
     non_empty_lines = [line.strip() for line in lines if line.strip()]
     
     reasoning_indicators = [
         'okay, so', 'first,', 'i need', 'i should', 'let me', 'hmm,', 
-        'i remember', 'maybe i can', 'i think that', 'in summary'
+        'i remember', 'maybe i can', 'i think that', 'in summary', 'wait'
     ]
     
     # Look for lines that don't seem like reasoning
@@ -164,13 +189,14 @@ def handler(job):
     """Handle inference requests with system prompt support"""
     job_input = job.get("input", {})
     prompt = job_input.get("prompt", "")
-    max_new_tokens = job_input.get("max_new_tokens", 128000)
-    temperature = job_input.get("temperature", 0.7)
+    max_new_tokens = job_input.get("max_new_tokens", 2048)  # Reduced default
+    temperature = job_input.get("temperature", 0.1)  # Lower temperature for more focused output
     do_sample = job_input.get("do_sample", True)
     
     # Optional: Allow custom system prompt per request
     custom_system_prompt = job_input.get("system_prompt", None)
     use_system_prompt = job_input.get("use_system_prompt", True)
+    use_simple_format = job_input.get("use_simple_format", False)  # New option
 
     if not prompt:
         return {"error": "No prompt provided."}
@@ -179,19 +205,31 @@ def handler(job):
         # Format prompt with system prompt if enabled
         if use_system_prompt:
             system_to_use = custom_system_prompt if custom_system_prompt else SYSTEM_PROMPT
-            formatted_prompt = format_prompt_with_system(prompt, system_to_use)
+            if use_simple_format:
+                formatted_prompt = format_prompt_simple(prompt, system_to_use)
+            else:
+                formatted_prompt = format_prompt_with_system(prompt, system_to_use)
         else:
             formatted_prompt = prompt
+
+        # Add generation parameters to encourage concise output
+        generation_params = {
+            "formatted_prompt": formatted_prompt,
+            "max_new_tokens": max_new_tokens,
+            "temperature": temperature,
+            "do_sample": do_sample,
+            "pad_token_id": tokenizer.eos_token_id,
+            "repetition_penalty": 1.1,  # Reduce repetition
+            "top_p": 0.9,  # Nucleus sampling
+            "top_k": 50,   # Top-k sampling
+        }
 
         streamer = TextStreamer(tokenizer, skip_prompt=False, skip_special_tokens=True)
         
         output = pipe(
             formatted_prompt,
             streamer=streamer,
-            max_new_tokens=max_new_tokens, 
-            temperature=temperature,
-            do_sample=do_sample,
-            pad_token_id=tokenizer.eos_token_id
+            **{k: v for k, v in generation_params.items() if k != "formatted_prompt"}
         )
         
         raw_output = output[0]["generated_text"]
