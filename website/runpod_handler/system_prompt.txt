@@ -18,8 +18,4 @@ OUTPUT RULES:
 - If the sequence completes the communication: output 0
 - No explanations, no text, only numbers
 
-EXAMPLE:
-If you see: user types "ssh 10.0.7.138" then presses enter, then system shows "Password:" 
-The ssh command is complete, so output 0 for the system password prompt.
-
 Remember: ONLY OUTPUT NUMBERS.
