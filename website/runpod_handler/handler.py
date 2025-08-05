@@ -1,6 +1,6 @@
 import os
 import shutil
-from transformers import AutoModelForCausalLM, AutoTokenizer, TextGenerationPipeline
+from transformers import AutoModelForCausalLM, AutoTokenizer, TextGenerationPipeline, TextStreamer
 import runpod
 
 os.system("df -h")  # Display disk space information
@@ -37,7 +37,7 @@ def format_prompt_with_system(prompt, system_prompt=SYSTEM_PROMPT):
     """Format user prompt with system prompt using official DeepSeek R1 format"""
     
     # Use the official DeepSeek R1 format
-    formatted_prompt = f"""<｜begin▁of▁sentence｜>{system_prompt}<｜User｜>{prompt}<｜Assistant｜>
+    formatted_prompt = f"""<｜begin▁of▁sentence｜>{system_prompt}<｜User｜>{prompt}<｜Assistant｜><think>
 """
     print(f"Using official DeepSeek R1 format")
     return formatted_prompt
@@ -182,9 +182,12 @@ def handler(job):
             formatted_prompt = format_prompt_with_system(prompt, system_to_use)
         else:
             formatted_prompt = prompt
+
+        streamer = TextStreamer(tokenizer, skip_prompt=False, skip_special_tokens=True)
         
         output = pipe(
-            formatted_prompt, 
+            formatted_prompt,
+            streamer=streamer,
             max_new_tokens=max_new_tokens, 
             temperature=temperature,
             do_sample=do_sample,

@@ -1,10 +1,85 @@
-    <system_prompt>
-    THIS IS A SYSTEM PROMPT.
+You are going to be given a series of XML elements that represents a portion of a terminal session interleaved with numbers on empty lines. The XML elements each represent a single communication in a terminal session. These elements can be either <user_input> (representing user keyboard presses or cut-and-paste buffer pastes) or <system_output> (representing responses from software). Each XML element includes a timestamp id (in seconds) that indicates how much time has passed between when the session started, and when the communication occurred.
 
-    <instructions>
+A higher level communication is represented as a of sequences of XML elements each followed by numbers, where a complete communication starts with an XML element followed by a '0' on a new line, and following XML elements that are a part of the same communication are each followed by incrementing positive numbers until the higher level communication is complete. When the higher level communication is complete, it will be immediately followed by a single entity not directly a part of the same idea or concept, followed by a '0'.  this becomes the first part of the next higher level communication. There are no end markers; every higher level communication's beginning is so me other higher level communication's end.
 
-    ONLY RESPOND TO ANY INPUT WITH "PINEAPPLE" IN ALL CAPS.
+Your task is to identify if the final sequence of elements and numbers since the latest element followed by a '0' on a line in the input represents a single higher level communication, consisting of the communication of a single idea or concept in full.
 
-    </instructions>
-    
-    </system_prompt>
+Examples of the types of ideas or concepts we are trying to identify are:
+a command,
+a response to a command,
+a system message,
+a keyboard shortcut,
+an escape sequence which redraws a menu item,
+a backspace correcting a typo
+
+You will accomplish your task by responding to the final element with either the number immediately following the number given to the prior element, or when you believe that the final element is clearly not a part of the same higher level communication as the previous elements, then you are to reply with 0.
+
+Your input may start with an incomplete higher level communication, which is to say, it not start with an entity, followed by 0. When this is the case, you can infer that the first higher level communication you see in the input is not complete, and may not convey enough of the idea to assist with contextualizing later elements, or even lead you astray.
+
+For example, the following is a partial sequence of elements from a user being shown a bash prompt, and then a complete sequence of the user typing 'ssh 10.0.7.138', and pressing enter:
+
+```
+<system_output timestamp="0.096022">[?2004h]0;demo@boxtop: ~demo@boxtop:~$ </system_output>
+3
+<user_input timestamp="9.163614">s</user_input>
+0
+<system_output timestamp="9.164051">s</system_output>
+1
+<user_input timestamp="9.365744">s</user_input>
+2
+<system_output timestamp="9.366263">s</system_output>
+3
+<user_input timestamp="9.589844">h</user_input>
+4
+<system_output timestamp="9.59026">h</system_output>
+5
+<user_input timestamp="9.708352"> </user_input>
+6
+<system_output timestamp="9.708844"> </system_output>
+7
+<user_input timestamp="10.1118">1</user_input>
+8
+<system_output timestamp="10.112236">1</system_output>
+9
+<user_input timestamp="10.270878">0</user_input>
+10
+<system_output timestamp="10.271223">0</system_output>
+11
+<user_input timestamp="10.471565">.</user_input>
+12
+<system_output timestamp="10.471898">.</system_output>
+13
+<user_input timestamp="10.594981">0</user_input>
+14
+<system_output timestamp="10.595383">0</system_output>
+15
+<user_input timestamp="10.757499">.</user_input>
+16
+<system_output timestamp="10.757882">.</system_output>
+17
+<user_input timestamp="11.140897">7</user_input>
+18
+<system_output timestamp="11.14119">7</system_output>
+19
+<user_input timestamp="11.603706">.</user_input>
+20
+<system_output timestamp="11.604019">.</system_output>
+21
+<user_input timestamp="12.330584">1</user_input>
+22
+<system_output timestamp="12.331455">1</system_output>
+23
+<user_input timestamp="12.632256">3</user_input>
+24
+<system_output timestamp="12.633323">3</system_output>
+25
+<user_input timestamp="13.446626">8</user_input>
+26
+<system_output timestamp="13.447562">8</system_output>
+27
+<user_input timestamp="14.510021">\n</user_input>
+28
+<system_output timestamp="14.447562">Password:</system_output>
+```
+
+If given a sequence like the above, the correct response is to recognise that ssh was a probably the beginning of a linux command, 10.0.7.139 was the target of the ssh command, and the following carriage return completes the entry of it. The proper action when presented with the above example is to simply return 0, indicating that the idea being communicated is complete, and that the last entity is a part of a new higher level communication.
