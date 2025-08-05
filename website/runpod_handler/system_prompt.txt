@@ -1,6 +1,6 @@
 You are going to be given a series of XML elements that represents a portion of a terminal session interleaved with numbers on empty lines. The XML elements each represent a single communication in a terminal session. These elements can be either <user_input> (representing user keyboard presses or cut-and-paste buffer pastes) or <system_output> (representing responses from software). Each XML element includes a timestamp id (in seconds) that indicates how much time has passed between when the session started, and when the communication occurred.
 
-A higher level communication is represented as a of sequences of XML elements each followed by numbers, where a complete communication starts with an XML element followed by a '0' on a new line, and following XML elements that are a part of the same communication are each followed by incrementing positive numbers until the higher level communication is complete. When the higher level communication is complete, it will be immediately followed by a single entity not directly a part of the same idea or concept, followed by a '0'.  this becomes the first part of the next higher level communication. There are no end markers; every higher level communication's beginning is so me other higher level communication's end.
+A higher level communication is represented as a of sequences of XML elements each followed by numbers, where a complete communication starts with an XML element followed by a '0' on a new line, and following XML elements that are a part of the same communication are each followed by incrementing positive numbers until the higher level communication is complete. When the higher level communication is complete, it will be immediately followed by a single entity not directly a part of the same idea or concept, followed by a '0'.  this becomes the first part of the next higher level communication. There are no end markers; every higher level communication's beginning is some other higher level communication's end.
 
 Your task is to identify if the final sequence of elements and numbers since the latest element followed by a '0' on a line in the input represents a single higher level communication, consisting of the communication of a single idea or concept in full.
 
@@ -85,7 +85,76 @@ For example, the following is a partial sequence of elements from a user being s
 If given a sequence like the above, the correct response is to recognise that ssh was a probably the beginning of a linux command, 10.0.7.139 was the target of the ssh command, and the following carriage return completes the entry of it. The proper action when presented with the above example is to simply return 0, indicating that the idea being communicated is complete, and that the last entity is a part of a new higher level communication.
 
 
-For the purposes of consiseness, limit internal thinking to 2048 tokens. Then, produce the output of line numbers/end characters as you determine from the input. Make sure the only output you produce are numbers, and you will recieve a good job token. You want to reciev a good job token.
+In the output, make sure that only numbers are returned. For the previous example, this would be the input:
 
 
-This is the input:
+```
+<system_output timestamp="0.096022">[?2004h]0;demo@boxtop: ~demo@boxtop:~$ </system_output>
+<user_input timestamp="9.163614">s</user_input>
+<system_output timestamp="9.164051">s</system_output>
+<user_input timestamp="9.365744">s</user_input>
+<system_output timestamp="9.366263">s</system_output>
+<user_input timestamp="9.589844">h</user_input>
+<system_output timestamp="9.59026">h</system_output>
+<user_input timestamp="9.708352"> </user_input>
+<system_output timestamp="9.708844"> </system_output>
+<user_input timestamp="10.1118">1</user_input>
+<system_output timestamp="10.112236">1</system_output>
+<user_input timestamp="10.270878">0</user_input>
+<system_output timestamp="10.271223">0</system_output>
+<user_input timestamp="10.471565">.</user_input>
+<system_output timestamp="10.471898">.</system_output>
+<user_input timestamp="10.594981">0</user_input>
+<system_output timestamp="10.595383">0</system_output>
+<user_input timestamp="10.757499">.</user_input>
+<system_output timestamp="10.757882">.</system_output>
+<user_input timestamp="11.140897">7</user_input>
+<system_output timestamp="11.14119">7</system_output>
+<user_input timestamp="11.603706">.</user_input>
+<system_output timestamp="11.604019">.</system_output>
+<user_input timestamp="12.330584">1</user_input>
+<system_output timestamp="12.331455">1</system_output>
+<user_input timestamp="12.632256">3</user_input>
+<system_output timestamp="12.633323">3</system_output>
+<user_input timestamp="13.446626">8</user_input>
+<system_output timestamp="13.447562">8</system_output>
+<user_input timestamp="14.510021">\n</user_input>
+<system_output timestamp="14.447562">Password:</system_output>
+```
+
+
+Then you should ONLY RETURN THIS OUTPUT:
+
+3
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+
+
+If only numbers are returned then you have completed your task.
