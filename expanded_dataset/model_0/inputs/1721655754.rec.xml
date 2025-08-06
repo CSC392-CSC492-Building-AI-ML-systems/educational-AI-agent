@@ -1,0 +1,1500 @@
+<?xml version="1.0" ?>
+<recording version="2" width="239" height="196" timestamp="1721655755">
+  <system_output timestamp="0.006021">[?2004hdemo@stephost:~$ </system_output>
+  <user_input timestamp="0.628786">OA</user_input>
+  <system_output timestamp="0.629074">asciinema rec `date +%s`.rec --stdin</system_output>
+  <user_input timestamp="1.087143">OA</user_input>
+  <system_output timestamp="1.08742">
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cscreen -dr[K</system_output>
+  <user_input timestamp="1.712689">
+</user_input>
+  <system_output timestamp="1.713108">
+[?2004l
+</system_output>
+  <system_output timestamp="1.755007">[r[m[2J[H[?7h[?1;4;6l[?1049h[22;0;0t[4l[?1h=[0m(B[1;196r</system_output>
+  <system_output timestamp="1.789581">[H[2J[H[2JGet: 2 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 statgrab i386 0.92.1-1.1 [99.4 kB]
+Fetched 219 kB in 0s (3,182 kB/s)
+install_packages: executing  aptitude -R -d -o Aptitude::Log=/dev/null -o Aptitude::CmdLine::Ignore-Trust-Violations=yes -o APT::Get::AllowUnauthenticated=true -o Acquire::AllowInsecureRepositories=true -o DPkg::force-conflicts::=yes -o Dir::State=/usr/fai/mirror/aptcache/var/lib/apt -o Dir::Log=/usr/fai/mirror/aptcache/var/log/apt -o Dir::State::extended_states=/usr/fai/mirror/aptcache/var/lib/apt/lists/extended_states -o Dir::State::status=/usr/fai/mirror/aptcache/statefile -o Dir::Cache=/usr/fai/mirror/aptcache/var/cache/apt -o Dir::State=/usr/fai/mirror/aptcache/var/cache/apt -o Dir::Cache::Archives</system_output>
+  <system_output timestamp="1.789693">=/usr/fai/mirror/aptcache/var/cache/apt/archives -o Dir::Etc=/usr/fai/mirror/aptcache/etc/apt/ -o Dir::State::Lists=/usr/fai/mirror/aptcache/var/lib/apt/lists/ -y install git-core
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Reading extended state information...
+Initializing package states...
+Writing extended state information...
+Building tag database...
+Note: selecting "git" instead of the virtual package "git-core"
+The following NEW packages will be installed:
+Th
+dpkg{a} gcc-12-base{a} git git-man{a} libacl1{a} libbrotli1{a} libbz2-1.0{a} libc6{a} libcom-err2{a} libcrypt1{a} libcurl3-gnutls{a} libdb5.3{a} liberror-perl{a} libexpat1{a} libffi8{a} libgcc-s1{a} libgdbm-compat4{a} libgdbm6{a} libgmp10{a} libgnutls30{a} libgssapi-krb5-2{a} libhogweed6{a} libidn2-0{a} libk5crypto3{a} libkeyutils1{a} libkrb5-3{a} libkrb5support0{a} libldap-2.5-0{a} liblzma5{a} libmd0{a} libnettle8{a} libnghttp2-14{a} libp11-kit0{a} libpcre2-8-0{a} libperl5.36{a} libpsl5{a} librtmp1{a} </system_output>
+  <system_output timestamp="1.79006">libsasl2-2{a} libsasl2-modules-db{a} libselinux1{a} libssh2-1{a} libssl3{a} libtasn1-6{a} libunistring2{a} libzstd1{a} perl{a} perl-base{a} perl-modules-5.36{a} tar{a} zlib1g{a}
+The following packages are RECOMMENDED but will NOT be installed:
+Th
+ca-certificates krb5-locales less libldap-common libsasl2-modules netbase openssh-client patch publicsuffix
+0 packages upgraded, 50 newly installed, 0 to remove and 0 not upgraded.
+Need to get 0 B/34.1 MB of archives. After unpacking 154 MB will be used.
+Writing extended state information...
+install_packages: executing  aptitude -R -d -o Aptitude::Log=/dev/null -o Aptitude::CmdLine::Ignore-Trust-Violations=yes -o APT::Get::AllowUnauthenticated=true -o Acquire::AllowInsecureRepositories=true -o DPkg::force-conflicts::=yes -o Dir::State=/usr/fai/mirror/aptcache/var/lib/apt -o Dir::Log=/usr/fai/mirror/aptcache/var/log/apt -o Dir::State::extended_states=/usr/fai/mirror/aptcache/var/lib/apt/lists/extended_states -o Dir::State::status=/usr/fai/mirror/aptcache/statefil</system_output>
+  <system_output timestamp="1.790161">e -o Dir::Cache=/usr/fai/mirror/aptcache/var/cache/apt -o Dir::State=/usr/fai/mirror/aptcache/var/cache/apt -o Dir::Cache::Archives=/usr/fai/mirror/aptcache/var/cache/apt/archives -o Dir::Etc=/usr/fai/mirror/aptcache/etc/apt/ -o Dir::State::Lists=/usr/fai/mirror/aptcache/var/lib/apt/lists/ -y install git-core
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Reading extended state information...
+Initializing package states...
+Writing extended state information...
+Building tag database...
+Note: selecting "git" instead of the virtual package "git-core"
+The following NEW packages will be installed:
+Th
+dpkg{a} gcc-12-base{a} git git-man{a} libacl1{a} libbrotli1{a} libbz2-1.0{a} libc6{a} libcom-err2{a} libcrypt1{a} libcurl3-gnutls{a} libdb5.3{a} liberror-perl{a} libexpat1{a} libffi8{a} libgcc-s1{a} libgdbm-compat4{a} libgdbm6{a} libgmp10{a} libgnutls30{a} libgssapi-krb5-2{a} libhogweed6{a} libidn2-0{a} libk5crypto3{a} libkeyutils1{a} libkrb5-3{a} libkrb5support0{a} libldap-2.5-0{a} liblzma5{a} libmd0{a} libnettle8{a} libnghttp2-14{a} libp11-kit0{a} libpcre2-8-0{a} libperl5.36{a} libpsl5{a} librtmp1{a} libsasl2-2{a} libsasl2-modules-db{a} libselinux1{a} libssh2-1{a} libssl3{a} libtasn1-6{a} libunistring2{a} libzstd1{a} perl{a} perl-base{a} perl-modules-5.36{a} tar{a} zlib1g{a}
+The following packages are RECOMMENDED but will NOT be installed:
+Th
+ca-certificates krb5-locales less libldap-common libsasl2-modules netbase openssh-client patch publicsuffix
+0 packages upgraded, 50 newly installed, 0 to remove and 0 not upgraded.
+Need to get 0 B/34.1 MB of archives. After unpacking 154 MB will be used.
+Writing extended state information...
+install_packages: executing  aptitude -R -d -o Aptitude::Log=/dev/null -o Aptitude::CmdLine::Ignore-Trust-Violations=yes -o APT::Get::AllowUnauthenticated=true -o Acquire::AllowInsecureRepositories=true -o DPkg::force-conflicts::=yes -o Dir::State=/usr/fai/mirror/aptcache/var/lib/apt -o Dir::Log=/usr/fai/mirror/aptcache/var/log/apt -o Dir::State:</system_output>
+  <system_output timestamp="1.790585">:extended_states=/usr/fai/mirror/aptcache/var/lib/apt/lists/extended_states -o Dir::State::status=/usr/fai/mirror/aptcache/statefile -o Dir::Cache=/usr/fai/mirror/aptcache/var/cache/apt -o Dir::State=/usr/fai/mirror/aptcache/var/cache/apt -o Dir::Cache::Archives=/usr/fai/mirror/aptcache/var/cache/apt/archives -o Dir::Etc=/usr/fai/mirror/aptcache/etc/apt/ -o Dir::State::Lists=/usr/fai/mirror/aptcache/var/lib/apt/lists/ -y install xorg
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Reading extended state information...
+Initializing package states...
+Writing extended state information...
+Building tag database...
+The following NEW packages will be installed:
+Th
+adduser{a} bsdextrautils{a} coreutils{a} cpp{a} cpp-12{a} debconf{a} dpkg{a} fontconfig-config{a} fonts-dejavu-core{a} gcc-12-base{a} groff-base{a} keyboard-configuration{a} libacl1{a} libatomic1{a} libattr1{a} libaudit-common{a} libaudit1{a} libblkid1{a} libbrotli1{a} libbsd0{a} libbz2-1.0{a} libc6{a} libcap-ng0{a} libcap2{a} libcrypt1{a} libdb5.3{a} libdbus-1-3{a} libdrm-amdgpu1{a} libdrm-common{a} libdrm-intel1{a} libdrm-nouveau2{a} libdrm-radeon1{a} libdrm2{a} libedit2{a} libegl-mesa0{a} libegl1{a} libelf1{a} libepoxy0{a} libevdev2{a} libexpat1{a} libffi8{a} libfontconfig1{a} libfontenc1{a} libfreetype6{a} libgbm1{a} libgcc-s1{a} libgcrypt20{a} libgdbm6{a} libgl1{a} libgl1-mesa-dri{a} libglapi-mesa{a} libglib2.0-0{a} libglu1-mesa{a} libglvnd0{a} libglx-mesa0{a} libglx0{a} libgmp10{a} libgpg-error0{a} libgudev-1.0-0{a} libice6{a} libicu72{a} libinput-bin{a} libinput10{a} libisl23{a} libkmod2{a} libllvm15{a} liblocale-gettext-perl{a} liblz4-1{a} liblzma5{a} libmd0{a} libmount1{a} libmpc3{a} libmpfr6{a} libmtdev1{a} libopengl0{a} libpam-modules{a} libpam-modules-bin{a} libpam0g{a} libpciaccess0{a} libpcre2-8-0{a} libpipeline1{a} libpixman-1-0{a} libpng16-16{a} libseccomp2{a} libselinux1{a} libsemanage-common{a} libsemanage2{a} libsensors-config{a} libsensors5{a} libsepol2{a} libsm6{a} libsmartcols1{a} libssl3{a} libstdc++6{a} libsystemd0{a} libtinfo6{a} libuchardet0{a} libudev1{a} libunwind8{a} libutempter0{a} libuuid1{a} libwacom-common{a} libwacom9{a} libwayland-client0{a} libwayland-server0{a} libx11-6{a} libx11-data{a} libx11-xcb1{a} libxatracker2{a} libxau6{a} libxaw7{a} libxcb-damage0{a} libxcb-dri2-0{a} libxcb-dri3-0{a} libxcb-glx0{a} libxcb-present0{a} libxcb-randr0{a} libxcb-shape0{a} libxcb-shm0{a} libxcb-sync1{a} libxcb-xfixes0{a} libxcb1{a} libxcomposite1{a} libxcursor1{a} libxcvt0{a} libxdmcp6{a} libxext6{</system_output>
+  <system_output timestamp="1.790708">a} libxfixes3{a} libxfont2{a} libxft2{a} libxi6{a} libxinerama1{a} libxkbfile1{a} libxml2{a} libxmu6{a} libxmuu1{a} libxpm4{a} libxrandr2{a} libxrender1{a} libxshmfence1{a} libxt6{a} libxtst6{a} libxv1{a} libxxf86dga1{a} libxxf86vm1{a} libz3-4{a} libzstd1{</system_output>
+  <system_output timestamp="1.790805">a} lsb-base{a} man-db{a} passwd{a} perl-base{a} sysvinit-utils{a} tar{a} udev{a} x11-apps{a} x11-common{a} x11-session-utils{a} x11-utils{a} x11-xkb-utils{a} x11-xserver-utils{a} xauth{a} xbitmaps{a} xfonts-100dpi{a} xfonts-75dpi{a} xfonts-base{a} xfonts-encodings{a} xfonts-scalable{a} xfonts-utils{a} xinit{a} xkb-data{a} xorg xorg-docs-core{a} xserver-common{a} xserver-xorg{a} xserver-xorg-core{a} xserver-xorg-input-all{a} xserver-xorg-input-libinput{a} xserver-xorg-video-all{a} xserver-xorg-video-amdgpu{a} xserver-xorg-video-ati{a} xserver-xorg-video-fbdev{a} xserver-xorg-video-nouveau{a} xserver-xorg-video-radeon{a} xserver-xorg-video-vesa{a} xserver-xorg-video-vmware{a} xterm{a} zlib1g{a}
+The following packages are RECOMMENDED but will NOT be installed:
+Th
+apt-utils dbus debconf-i18n libglib2.0-data libgpg-error-l10n libidn2-0 libpam-elogind libpam-systemd sensible-utils shared-mime-info uuid-runtime xcvt xdg-user-dirs xserver-xorg-input-wacom xserver-xorg-legacy xserver-xorg-video-intel xserver-xorg-vid</system_output>
+  <system_output timestamp="1.79116">eo-qxl
+0 packages upgraded, 187 newly installed, 0 to remove and 0 not upgraded.
+Need to get 24.5 MB/127 MB of archives. After unpacking 443 MB will be used.
+Writing extended state information...
+Get: 1 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 libxatracker2 i386 22.3.6-1+deb12u1 [2,030 kB]
+Get: 2 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 libxcb-damage0 i386 1.15-1 [105 kB]
+Get: 3 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 libxcvt0 i386 0.1.2-1 [5,696 B]
+Get: 4 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 libxfont2 i386 1:2.0.6-1 [140 kB]
+Get: 5 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 x11-apps i386 7.7+9 [680 kB]
+Get: 6 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 x11-session-utils i386 7.7+5 [75.9 kB]
+Get: 7 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 xfonts-100dpi all 1:1.0.5 [3,819 kB]
+Get: 8 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 xfonts-75dpi all 1:1.0.5 [3,365 kB]
+Get: 9 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 xfonts-base all 1:1.0.5+nmu1 [5,895 kB]
+Get: 10 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 xfonts-scalable all 1:1.0.3-1.3 [306 kB]
+Get: 11 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 xinit i386 1.4.0-1 [50.2 kB]
+Get: 12 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 xserver-common all 2:21.1.7-3+deb12u7 [2,383 kB]
+Get: 13 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 xserver-xorg-core i386 2:21.1.7-3+deb12u7 [3,784 kB]
+Get: 14 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 xserver-xorg-video-amdgpu i386 23.0.0-1 [144 kB]
+Get: 15 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 xserver-xorg-video-radeon i386 1:19.1.0-3 [510 kB]
+Get: 16 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 xserver-xorg-video-ati i386 1:19.1.0-3 [363 kB]
+Get: 17 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 xserver-xorg-video-fbdev i386 1:0.5.0-2 [26.0 kB]
+Get: 18 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 xserver-xorg-video-nouveau i386 1:1.0.17-2 [335 kB]
+Get: 19 htt</system_output>
+  <system_output timestamp="1.791255">p://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 xserver-xorg-video-vesa i386 1:2.5.0-1+b1 [33.4 kB]
+Get: 20 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 xserver-xorg-video-vmware i386 1:13.3.0-3.1+b1 [120 kB]
+Get: 21 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 xserver-xorg-video-all i386 1:7.7+23 [38.7 kB]
+Get: 22 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 xserver-xorg-input-libinput i386 1.2.1-1+b1 [67.5 kB]
+Get: 23 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 xserver-xorg-input-all i386 1:7.7+23 [38.7 kB]
+Get: 24 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 xserver-xorg i386 1:7.7+23 [94.2 kB]
+Get: 25 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 xorg-docs-core all 1:1.7.1-1.2 [84.2 kB]
+Get: 26 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 xorg i386 1:7.7+23 [39.1 kB]
+Fetched 24.5 MB in 1s (34.9 MB/s)
+install_packages: executing  aptitude -R -d -o Aptitude::Log=/dev/null -o Aptitude::CmdLine::Ignore-Trust-Violations=yes -o APT::Get::AllowUnauthenticated=true -o Acquire::AllowInsecureRepositories=true -o DPkg::force-conflicts::=yes -o Dir::State=/usr/fai/mirror/aptcache/var/lib/apt -o Dir::Log=/usr/fai/mirror/aptcache/var/log/apt -o Dir::State::extended_states=/usr/fai/mirror/aptcache/var/lib/apt/lists/extended_states -o Dir::State::status=/usr/fai/mirror/aptcache/statefile -o Dir::Cache=/usr/fai/mirror/aptcache/var/cache/apt -o Dir::State=/</system_output>
+  <system_output timestamp="1.791536">usr/fai/mirror/aptcache/var/cache/apt -o Dir::Cache::Archives=/usr/fai/mirror/aptcache/var/cache/apt/archives -o Dir::Etc=/usr/fai/mirror/aptcache/etc/apt/ -o Dir::State::Lists=/usr/fai/mirror/aptcache/var/lib/apt/lists/ -y install xscreensaver
+Reading pa</system_output>
+  <system_output timestamp="1.791685">ckage lists...
+Building dependency tree...
+Reading state information...
+Reading extended state information...
+Initializing package states...
+Writing extended state information...
+Building tag database...
+The following NEW packages will be installed:
+Th
+adduser{a} adwaita-icon-theme{a} at-spi2-common{a} ca-certificates{a} dbus{a} dbus-bin{a} dbus-daemon{a} dbus-session-bus-common{a} dbus-system-bus-common{a} dbus-user-session{a} dconf-gsettings-backend{a} dconf-service{a} debconf{a} dmsetup{a} dpkg{a} fontconfig{a} fontconfig-config{a} fonts-dejavu-core{a} gcc-12-base{a} gtk-update-icon-cache{a} hicolor-icon-theme{a} init-system-helpers{a} libacl1{a} libapparmor1{a} libargon2-1{a} libatk-bridge2.0-0{a} libatk1.0-0{a} libatspi2.0-0{a} libaudit-common{a} libaudit1{a} libavahi-client3{a} libavahi-common-data{a} libavahi-common3{a} libblkid1{a} libbrotli1{a} libbsd0{a} libbz2-1.0{a} libc6{a} libcairo-gobject2{a} libcairo2{a} libcap-ng0{a} libcap2{a} libclone-perl{a} libcolord2{a} libcom-err2{a} libcrypt1{a} libcryptsetup12{a} libcups2{a} libdatrie1{a} libdb5.3{a} libdbus-1-3{a} libdconf1{a} libdeflate0{a} libdevmapper1.02.1{a} libencode-locale-perl{a} libepoxy0{a} libexpat1{a} libfdisk1{a} libffi8{a} libfile-find-rule-perl{a} libfile-listing-perl{a} libfontconfig1{a} libfreetype6{a} libfribidi0{a} libgcc-s1{a} libgcrypt20{a} libgdbm-compat4{a} libgdbm6{a} libgdk-pixbuf-2.0-0{a} libgdk-pixbuf2.0-common{a} libglib2.0-0{a} libgmp10{a} libgnutls30{a} libgpg-error0{a} libgraphite2-3{a} libgssapi-krb5-2{a} libgtk-3-0{a} libgtk-3-common{a} libharfbuzz0b{a} libhogweed6{a} libhtml-parser-perl{a} libhtml-tagset-perl{a} libhtml-tree-perl{a} libhttp-cookies-perl{a} libhttp-date-perl{a} libhttp-message-perl{a} libhttp-negotiate-perl{a} libice6{a} libicu72{a} libidn2-0{a} l</system_output>
+  <system_output timestamp="1.791764">ibio-html-perl{a} libio-socket-ssl-perl{a} libip4tc2{a} libjbig0{a} libjpeg62-turbo{a} libjson-c5{a} libk5crypto3{a} libkeyutils1{a} libkmod2{a} libkrb5-3{a} libkrb5support0{a} liblcms2-2{a} liblerc4{a} liblwp-mediatypes-perl{a} liblwp-protocol-https-perl{a} liblz4-1{a} liblzma5{a} libmd0{a} libmount1{a} libncursesw6{a} libnet-http-perl{a} libnet-ssleay-perl{a} libnettle8{a} libnumber-compare-perl{a} libp11-kit0{a} libpam-modules{a} libpam-modules-bin{a} libpam-runtime{a} libpam-systemd{a} libpam0g{a} libpa</system_output>
+  <system_output timestamp="1.792011">ngo-1.0-0{a} libpangocairo-1.0-0{a} libpangoft2-1.0-0{a} libpcre2-8-0{a} libperl5.36{a} libpixman-1-0{a} libpng16-16{a} libproc2-0{a} libregexp-ipv6-perl{a} libseccomp2{a} libselinux1{a} libsemanage-common{a} libsemanage2{a} libsepol2{a} libsm6{a} libsmartcols1{a} libssl3{a} libstdc++6{a} libsystemd-shared{a} libsystemd0{a} libtasn1-6{a} libtext-glob-perl{a} libthai-data{a} libthai0{a} libtiff6{a} libtimedate-perl{a} libtinfo6{a} libtry-tiny-perl{a} libudev1{a} libunistring2{a} liburi-perl{a} libuuid1{a} libwayland-client0{a} libwayland-cursor0{a} libwayland-egl1{a} libwebp7{a} libwww-perl{a} libwww-robotrules-perl{a} libx11-6{a} libx11-data{a} libxau6{a} libxcb-render0{a} libxcb-shm0{a} libxcb1{a} libxcomposite1{a} libxcursor1{a} libxdamage1{a} libxdmcp6{a} libxext6{a} libxfixes3{a} libxft2{a} libxi6{a} libxinerama1{a} libxkbcommon0{a} libxml2{a} libxrandr2{a} libxrender1{a} libxt6{a} libxxf86vm1{a} libzstd1{a} lsb-base{a} mount{a} netbase{a} openssl{a} passwd{a} perl{a} perl-base{a} perl-modules-5.36{a} perl-openssl-defaults{a} procps{a} shared-mime-info{a} systemd{a} systemd-sysv{a} sysvinit-utils{a} tar{a} usrmerge{a} x11-common{a} xkb-data{a} xscreensaver xscreensaver-data{a} zlib1g{a}
+The following packages are RECOMMENDED but will NOT be installed:
+Th
+</system_output>
+  <system_output timestamp="1.792081">apt-utils at-spi2-core chrony debconf-i18n fonts-urw-base35 krb5-locales libdata-dump-perl libgdk-pixbuf2.0-bin libglib2.0-data libgpg-error-l10n libgpm2 libgtk-3-bin libhtml-form-perl libhtml-format-perl libhttp-daemon-perl libjpeg-turbo-progs libmailtool</system_output>
+  <system_output timestamp="1.792304">s-perl libnss-systemd librsvg2-common miscfiles ntpsec openntpd psmisc sensible-utils systemd-timesyncd uuid-runtime wamerican wamerican-huge wamerican-insane wamerican-large wamerican-small wbrazilian wbritish wbritish-huge wbritish-insane wbritish-large wbritish-small wbulgarian wcanadian wcanadian-huge wcanadian-insane wcanadian-large wcanadian-small wcatalan wdanish wdutch wesperanto wfaroese wfrench wgalician-minimos wgerman-medical witalian wngerman wnorwegian wogerman wpolish wportuguese wspanish wswedish wswiss wukrainian xdg-user-dirs xfonts-100dpi
+0 packages upgraded, 201 newly installed, 0 to remove and 0 not upgraded.
+Need to get 823 kB/77.5 MB of archives. After unpacking 299 MB will be used.
+Writing extended state information...
+Get: 1 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 xscreensaver-data i386 6.06+dfsg1-3+deb12u1 [379 kB]
+Get: 2 http://127.0.0.1:3142/ftp.de.debian.org/debian bookworm/main i386 xscreensaver i386 6.06+dfsg1-3+deb12u1 [445 kB]
+Fetched 823 kB in 0s (6,617 kB/s)
+Calling reprepro
+Exporting indices...
+/usr/bin/fai-mirror finished.
+Number of packages in the mirror: 2233
+Mirror size and location: 1.5G  /usr/fai/mirror
+Copying the nfsroot to CD image
+Copying the config space to CD image
+Copying </system_output>
+  <system_output timestamp="1.792438">the mirror to CD image
+Filesystem[5C1K-blocks[4CUsed Available Use% Mounted on
+udev[13C1017032[7C0   1017032   0% /dev
+tmpfs[13C205912[5C492[4C205420   1% /run
+/dev/sda2[8C5672824 3671320   1689712  69% /
+tmpfs[12C1029548[7C0   1029548   0% /dev/shm
+tmpfs[15C5120[7C0[6C5120   0% /run/lock
+none[13C1029548[7C4   1029544   1% /tmp
+/dev/sda1[10C87847   41251[5C41981  50% /boot
+/dev/sda3[8C8404412 5150000   2858176  65% /home
+tmpfs[12C1647280   13888   1633392   1% /home/fai/nfsroot/var/lib/dpkg
+tmpfs[12C1647280[4C3840   1643440   1% /home/fai/nfsroot/var/cache
+Parallel mksquashfs: Using 4 processors
+Creating 4.0 filesystem on /home/tmp/fai-cd.3qhBqn/LiveOS/squashfs.img, block size 131072.
+[======================================</system_output>
+  <system_output timestamp="1.792646">=====================\] 22172/22172 100%
+
+Exportable Squashfs 4.0 filesystem, zstd compressed, data block size 131072[67D
+compressed data, compressed metadata, compressed fragments,[59D
+compressed xattrs, compressed ids[33D
+duplicates are removed
+Filesystem size 1888198.35 Kbytes (1843.94 Mbytes)[42D
+66.53% of uncompressed filesystem size (2837977.57 Kbytes)
+Inode table size 21553 bytes (21.05 Kbytes)[35D
+24.26% of uncompressed inode table size (88830 bytes)
+Directory table size 56 bytes (0.05 Kbyt</system_output>
+  <system_output timestamp="1.792717">es)[35D
+96.55% of uncompressed directory table size (58 bytes)
+Number of duplicate files found 0
+Number of inodes 3
+Number of files 1
+Number of fragments 0
+Number of symbolic links 0
+Number of device nodes 0
+Number of fifo nodes 0
+Number of socket nodes 0
+Number of directories 2
+Number of hard-links 0
+Number of ids (unique uids + gids) 1
+Number of uids 1[8D
+root (0)
+Number of gids 1[8D
+root (0)
+mkfs.fat 4.2 (2021-01-31)
+Writing FAI CD-ROM image to fai_cd.iso. This may need some time.
+xorriso 1.5.4 : RockRidge filesystem manipulator, libburnia project.
+
+ISO image size and filename: 1.9G[7Cfai_cd.iso
+
+real[4C19m32.506s
+user[4C13m23.617s
+sys[5C2m23.087s
+demo@faiserver:/home/fai$[?2004h </system_output>
+  <user_input timestamp="3.596496"/>
+  <system_output timestamp="3.599207">
+(reverse-i-search)`': [K</system_output>
+  <user_input timestamp="3.929681">s</user_input>
+  <system_output timestamp="3.939207">s': sudo bash -c 'time ./make-fai-cd.[7ms[27mh 2&gt;&amp;1 | tee make-fai-cd.out'</system_output>
+  <user_input timestamp="4.161898">c</user_input>
+  <system_output timestamp="4.176577">
+(reverse-i-search)`sc': [7msc[27mp fai_cd.iso demo@172.16.0.1:/disk1/isos/fai_dvd-`date +%Y%m%d`.iso
+(reverse-i-search)`sc': </system_output>
+  <user_input timestamp="4.474095">p</user_input>
+  <system_output timestamp="4.494799">[1@p': [7mscp[27m</system_output>
+  <user_input timestamp="4.952093">
+</user_input>
+  <system_output timestamp="4.973484">
+[1@demo@faiserver:/home/fai$ scp
+[?2004l</system_output>
+  <system_output timestamp="5.566753">demo@172.16.0.1's password: </system_output>
+  <user_input timestamp="6.863513">P</user_input>
+  <user_input timestamp="7.008584">h</user_input>
+  <user_input timestamp="7.422171">4</user_input>
+  <user_input timestamp="7.629982">b</user_input>
+  <user_input timestamp="7.959574">0</user_input>
+  <user_input timestamp="8.415284">S</user_input>
+  <user_input timestamp="8.726288">8</user_input>
+  <user_input timestamp="9.225414">
+</user_input>
+  <system_output timestamp="9.230882">
+</system_output>
+  <system_output timestamp="9.35824">fai_cd.iso                                                                                                                                                                                                     0%    0     0.0KB/s   --:-- ETA</system_output>
+  <system_output timestamp="10.360357">
+fai_cd.iso                                                                                                                                                                                                     1%   29MB  28.6MB/s   01:05 ETA</system_output>
+  <system_output timestamp="11.359577">
+fai_cd.iso                                                                                                                                                                                                     3%   70MB  29.9MB/s   01:00 ETA</system_output>
+  <system_output timestamp="12.359777">
+fai_cd.iso                                                                                                                                                                                                     6%  116MB  31.5MB/s   00:56 ETA</system_output>
+  <system_output timestamp="13.361342">
+fai_cd.iso                                                                                                                                                                                                     8%  161MB  32.9MB/s   00:52 ETA</system_output>
+  <system_output timestamp="14.365815">
+fai_cd.iso                                                                                                                                                                                                    10%  206MB  34.1MB/s   00:49 ETA</system_output>
+  <system_output timestamp="15.360454">
+fai_cd.iso                                                                                                                                                                                                    10%  208MB  30.8MB/s   00:54 ETA</system_output>
+  <system_output timestamp="16.360424">
+fai_cd.iso                                                                                                                                                                                                    10%  208MB  27.8MB/s   01:00 ETA</system_output>
+  <system_output timestamp="17.360571">
+fai_cd.iso                                                                                                                                                                                                    10%  208MB  25.0MB/s   01:07 ETA</system_output>
+  <system_output timestamp="18.361686">
+fai_cd.iso                                                                                                                                                                                                    11%  226MB  24.2MB/s   01:08 ETA</system_output>
+  <system_output timestamp="19.361198">
+fai_cd.iso                                                                                                                                                                                                    14%  268MB  26.1MB/s   01:02 ETA</system_output>
+  <system_output timestamp="20.362303">
+fai_cd.iso                                                                                                                                                                                                    16%  313MB  27.9MB/s   00:56 ETA</system_output>
+  <system_output timestamp="21.370439">
+fai_cd.iso                                                                                                                                                                                                    18%  358MB  29.6MB/s   00:51 ETA</system_output>
+  <system_output timestamp="22.364459">
+fai_cd.iso                                                                                                                                                                                                    21%  403MB  31.1MB/s   00:47 ETA</system_output>
+  <system_output timestamp="23.363881">
+fai_cd.iso                                                                                                                                                                                                    23%  448MB  32.6MB/s   00:44 ETA</system_output>
+  <system_output timestamp="24.364076">
+fai_cd.iso                                                                                                                                                                                                    26%  493MB  33.8MB/s   00:41 ETA</system_output>
+  <system_output timestamp="25.364397">
+fai_cd.iso                                                                                                                                                                                                    28%  536MB  34.7MB/s   00:39 ETA</system_output>
+  <system_output timestamp="26.364535">
+fai_cd.iso                                                                                                                                                                                                    29%  567MB  34.3MB/s   00:38 ETA</system_output>
+  <system_output timestamp="27.364691">
+fai_cd.iso                                                                                                                                                                                                    31%  600MB  34.2MB/s   00:37 ETA</system_output>
+  <system_output timestamp="28.364485">
+fai_cd.iso                                                                                                                                                                                                    33%  633MB  34.1MB/s   00:37 ETA</system_output>
+  <system_output timestamp="29.372112">
+fai_cd.iso                                                                                                                                                                                                    34%  660MB  33.3MB/s   00:37 ETA</system_output>
+  <system_output timestamp="30.370819">
+fai_cd.iso                                                                                                                                                                                                    36%  691MB  33.1MB/s   00:36 ETA</system_output>
+  <system_output timestamp="31.36558">
+fai_cd.iso                                                                                                                                                                                                    37%  712MB  31.9MB/s   00:37 ETA</system_output>
+  <system_output timestamp="32.370695">
+fai_cd.iso                                                                                                                                                                                                    38%  733MB  30.8MB/s   00:37 ETA</system_output>
+  <system_output timestamp="33.372485">
+fai_cd.iso                                                                                                                                                                                                    40%  775MB  31.9MB/s   00:35 ETA</system_output>
+  <system_output timestamp="34.367556">
+fai_cd.iso                                                                                                                                                                                                    42%  812MB  32.5MB/s   00:33 ETA</system_output>
+  <system_output timestamp="35.367758">
+fai_cd.iso                                                                                                                                                                                                    44%  850MB  33.0MB/s   00:31 ETA</system_output>
+  <system_output timestamp="36.367913">
+fai_cd.iso                                                                                                                                                                                                    46%  874MB  32.1MB/s   00:31 ETA</system_output>
+  <system_output timestamp="37.373459">
+fai_cd.iso                                                                                                                                                                                                    47%  896MB  31.1MB/s   00:32 ETA</system_output>
+  <system_output timestamp="38.368276">
+fai_cd.iso                                                                                                                                                                                                    49%  934MB  31.8MB/s   00:30 ETA</system_output>
+  <system_output timestamp="39.371945">
+fai_cd.iso                                                                                                                                                                                                    51%  970MB  32.2MB/s   00:28 ETA</system_output>
+  <system_output timestamp="40.368899">
+fai_cd.iso                                                                                                                                                                                                    52% 1003MB  32.3MB/s   00:27 ETA</system_output>
+  <system_output timestamp="41.368857">
+fai_cd.iso                                                                                                                                                                                                    53% 1014MB  30.2MB/s   00:29 ETA</system_output>
+  <system_output timestamp="42.36977">
+fai_cd.iso                                                                                                                                                                                                    54% 1041MB  29.8MB/s   00:28 ETA</system_output>
+  <system_output timestamp="43.369414">
+fai_cd.iso                                                                                                                                                                                                    56% 1075MB  30.3MB/s   00:27 ETA</system_output>
+  <system_output timestamp="44.369257">
+fai_cd.iso                                                                                                                                                                                                    58% 1117MB  31.4MB/s   00:24 ETA</system_output>
+  <system_output timestamp="45.374133">
+fai_cd.iso                                                                                                                                                                                                    61% 1160MB  32.6MB/s   00:22 ETA</system_output>
+  <system_output timestamp="46.369838">
+fai_cd.iso                                                                                                                                                                                                    62% 1188MB  32.2MB/s   00:22 ETA</system_output>
+  <system_output timestamp="47.370797">
+fai_cd.iso                                                                                                                                                                                                    62% 1188MB  29.0MB/s   00:24 ETA</system_output>
+  <system_output timestamp="48.370563">
+fai_cd.iso                                                                                                                                                                                                    62% 1188MB  26.1MB/s   00:27 ETA</system_output>
+  <system_output timestamp="49.370775">
+fai_cd.iso                                                                                                                                                                                                    62% 1188MB  23.5MB/s   00:30 ETA</system_output>
+  <system_output timestamp="50.371487">
+fai_cd.iso                                                                                                                                                                                                    63% 1198MB  22.0MB/s   00:31 ETA</system_output>
+  <system_output timestamp="51.371262">
+fai_cd.iso                                                                                                                                                                                                    65% 1238MB  23.9MB/s   00:27 ETA</system_output>
+  <system_output timestamp="52.370896">
+fai_cd.iso                                                                                                                                                                                                    67% 1281MB  25.8MB/s   00:23 ETA</system_output>
+  <system_output timestamp="53.371945">
+fai_cd.iso                                                                                                                                                                                                    69% 1324MB  27.5MB/s   00:20 ETA</system_output>
+  <system_output timestamp="54.372423">
+fai_cd.iso                                                                                                                                                                                                    72% 1367MB  29.1MB/s   00:18 ETA</system_output>
+  <system_output timestamp="55.375476">
+fai_cd.iso                                                                                                                                                                                                    74% 1408MB  30.2MB/s   00:16 ETA</system_output>
+  <system_output timestamp="56.371673">
+fai_cd.iso                                                                                                                                                                                                    76% 1450MB  31.4MB/s   00:14 ETA</system_output>
+  <system_output timestamp="57.371636">
+fai_cd.iso                                                                                                                                                                                                    78% 1486MB  31.9MB/s   00:12 ETA</system_output>
+  <system_output timestamp="58.377761">
+fai_cd.iso                                                                                                                                                                                                    79% 1513MB  31.4MB/s   00:12 ETA</system_output>
+  <system_output timestamp="59.372217">
+fai_cd.iso                                                                                                                                                                                                    81% 1541MB  31.1MB/s   00:11 ETA</system_output>
+  <system_output timestamp="60.378688">
+fai_cd.iso                                                                                                                                                                                                    82% 1572MB  31.0MB/s   00:10 ETA</system_output>
+  <system_output timestamp="61.378468">
+fai_cd.iso                                                                                                                                                                                                    84% 1603MB  31.0MB/s   00:09 ETA</system_output>
+  <system_output timestamp="62.376461">
+fai_cd.iso                                                                                                                                                                                                    86% 1633MB  31.0MB/s   00:08 ETA</system_output>
+  <system_output timestamp="63.376328">
+fai_cd.iso                                                                                                                                                                                                    87% 1658MB  30.4MB/s   00:07 ETA</system_output>
+  <system_output timestamp="64.377481">
+fai_cd.iso                                                                                                                                                                                                    87% 1659MB  27.4MB/s   00:08 ETA</system_output>
+  <system_output timestamp="65.376659">
+fai_cd.iso                                                                                                                                                                                                    89% 1691MB  27.8MB/s   00:07 ETA</system_output>
+  <system_output timestamp="66.377086">
+fai_cd.iso                                                                                                                                                                                                    90% 1719MB  27.9MB/s   00:06 ETA</system_output>
+  <system_output timestamp="67.376901">
+fai_cd.iso                                                                                                                                                                                                    92% 1756MB  28.8MB/s   00:04 ETA</system_output>
+  <system_output timestamp="68.382385">
+fai_cd.iso                                                                                                                                                                                                    94% 1785MB  28.8MB/s   00:03 ETA</system_output>
+  <system_output timestamp="69.377554">
+fai_cd.iso                                                                                                                                                                                                    96% 1822MB  29.6MB/s   00:02 ETA</system_output>
+  <system_output timestamp="70.402095">
+fai_cd.iso                                                                                                                                                                                                    97% 1856MB  30.0MB/s   00:01 ETA</system_output>
+  <system_output timestamp="71.048958">
+fai_cd.iso                                                                                                                                                                                                   100% 1896MB  30.7MB/s   01:01    
+</system_output>
+  <system_output timestamp="71.160354">[?2004hdemo@faiserver:/home/fai$ </system_output>
+  <user_input timestamp="332.14622"/>
+  <user_input timestamp="332.581016">1</user_input>
+  <system_output timestamp="332.596719">]0;screen[?2004l[H[2J[22;2t]2;screenTasks:[1m 379 [0mtotal,[1m   1 [0mrunning,[1m 374 [0msleeping,[1m   0 [0mstopped,[1m   4 [0mzombie
+%Cpu(s):[1m  1.8 [0mus,[1m  2.7 [0msy,[1m  0.0 [0mni,[1m 94.5 [0mid,[1m  0.9 [0mwa,[1m  0.0 [0mhi,[1m  0.1 [0msi,[1m  0.0 [0mst
+MiB Mem :[1m  15944.1 [0mtotal,[1m   1886.8 [0mfree,[1m   5208.9 [0mused,[1m   9197.1 [0mbuff/cache
+MiB Swap:[1m   3072.0 [0mtotal,[1m   3004.7 [0mfree,[1m     67.2 [0mused.[1m  10735.2 [0mavail Mem
+
+[7m    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND                                                                                                                                                                
+ 
+[0m922426 root[6C20   0 3324084   2.1g  30848 S   7.9  13.3 107:14.11 kvm
+3791259 root[6C20   0 1565776 454232  29312 S   1.3   2.8[6C6,13 kvm
+3792672 root[6C20   0 1669972 455916  29440 S   1.0   2.8 347:35.83 kvm
+379
+7489 root[6C20   0[4C9384   5248  </system_output>
+  <system_output timestamp="332.597179"> 2944 S   0.7   0.0[5C15,21 top
+ 
+120968 demo[6C20   0   13232   6528   2048 S   0.7   0.0   3:39.10 screen
+3791783 root[6C20   0 1693992 445716  29184 S   0.7   2.7 237:44.50 kvm[68D
+1 root[6C20   0   23924  15136  10112 S   0.3   0.1  13:55.62 systemd[74D
+721 root[6C20   0   10988   6784   2048 S   0.3   0.0   9:01.73 mdadm
+ 
+725602 Debian-+  20   0   25748  12672   9088 S   0.3   0.1   4:53.34 snmpd
+ 
+915346 demo[6C20   0   17288   7072   4992 S   0.3   0.0   0:27.36 sshd
+[1m 956814 root      20   0    6808   5120   2688 R   0.3   0.0   0:00.09 top                                                                                                                                                                    
+ 
+[0m956816 root[6C20   0   28268   4196   2432 S   0.3   0.0   0:00.01 (udev-worker)
+3791357 root[6C20   0  939644  58448  36748 S   0.3   0.4  22:01.49 fail2ban-server[80D
+2 root[6C20   0[7C0[6C0[6C0 S   0.0   0.0   0:08.89 kthreadd[73D
+3 root[6C20   0[7C0[6C0[6C0 S   0.0   0.0   0:00.00 pool_workqueue_release[87D
+4 root[7C0 -20[7C0[6C0[6C0 I   0.0   0.0   0:00.00 kworker/R-rcu_g[80D
+5 root[7C0 -20[7C0[6C0[6C0 I   0.0   0.0   0:00.00 kworker/R-rcu_p[80D
+6 root[7C0 -20[7C0[6C0[6C0 I   0.0   0.0   0:00.00 kworker/R-slub_[80D
+7 root[7C0 -20[7C0[6C0[6C0 I   0.0   0.0   0:00.00 kworker/R-netns[81D
+12 root[7C0 -20[7C0[6C0[6C0 I   0.0   0.0   0:00.00 kworker/R-mm_pe[81D
+13 root[6C20   0[7C0[6C0[6C0 I   0.0   0.0   0:00.00 rcu_tasks_kthread[83D
+14 root[6C20   0[7C0[6C0[6C0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread[88D
+15 root[6C20   0[7C0[6C0[6C0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread[89D
+16 root[6C20   0[7C0[6C0[6C0 S   0.0   0.0   4:17.54 ksoftirqd/0[77D
+17 root[6C20   0[7C0[6C0[6C0 I   0.0   0.0  18:55.07 rcu_preempt[77D
+18 root[6Crt   0[7C0[6C0[6C0 S   0.0   0.0   0:33.92 migration/0[77D
+19 root[5C-51   0[7C0[6C0[6C0 S   0.0   0.0   0:00.00 idle_inject/0[79D
+20 root[6C20   0[7C0[6C0[6C0 S   0.0   0.0   0:00.00 cpuhp/0[73D
+21 root[6C20   0[7C0[6C0[6C0 S   0.0   0.0   0:00.00 cpuhp/2[73D
+22 root[5C-51   0[7C0[6C0[6C0 S   0.0   0.0   0:00.00 idle_inject/2[79D
+23 root[6Crt   0[7C0[6C0[6C0 S   0.0   0.0   0:33.01 migration/2[77D
+24 root[6C20   0[7C0[6C0[6C0 S   0.0   0.0   3:41.70 ksoftirqd/2[77D
+26 root[7C0 -20[7C0[6C0[6C0 I   0.0   0.0   0:00.00 kworker/2:0H-events_highpri[93D
+27 root[6C20   0[7C0[6C0[6C0 S   0.0   0.0   0:00.00 cpuhp/1[73D
+28 root[5C-51   0[7C0[6C0[6C0 S   0.0   0.0   0:00.00 idle_inject/1[79D
+29 root[6Crt   0[7C0[6C0[6C0 S   0.0   0.0   0:32.64 migration/1[77D
+30 root[6C20   0[7C0[6C0[6C0 S   0.0   0.0   6:58.14 ksoftirqd/1[77D
+32 root[7C0 -20[7C0[6C0[6C0 I   0.0   0.0   0:00.00 kworker/1:0H-events_highpri[93D
+33 root[6C20   0[7C0[6C0[6C0 S   0.0   0.0   0:00.00 cpuhp/3[73D
+34 root[5C-51   0[7C0[6C0[6C0 S   0.0   0.0   0:00.00 idle_inject/3[79D
+35 root[6Crt   0[7C0[6C0[6C0 S   0.0   0.0   0:32.15 migration/3[77D
+36 root[6C20   0[7C0[6C0[6C0 S   0.0   0.0   3:30.24 ksoftirqd/3[77D
+38 root[7C0 -20[7C0[6C0[6C0 I   0.0   0.0   0:00.00 kworker/3:0H-events_highpri[93D
+43 root[6C20   0[7C0[6C0[6C0 S   0.0   0.0   0:00.02 kdevtmpfs[75D
+44 root[7C0 -20[7C0[6C0[6C0 I   0</system_output>
+  <system_output timestamp="332.597346">.0   0.0   0:00.00 kworker/R-inet_[81D
+45 root[6C20   0[7C0[6C0[6C0 S   0.0   0.0   0:00.00 kauditd[73D
+47 root[6C20   0[7C0[6C0[6C0 S   0.0   0.0   0:05.21 khungtaskd[76D
+48 root[6C20   0[7C0[6C0[6C0 S   0.0   0.0   0:00.00 oom_reaper[76D
+49 root[7C0 -20[7C0[6C0[6C0 I   0.0   0.0   0:00.00 kworker/R-write[81D
+50 root[6C20   0[7C0[6C0[6C0 S   0.0   0.0  46:40.88 kcompactd0[76D
+51 root[6C25   5[7C0[6C0[6C0 S   0.0   0.0   0:00.00 ksmd[70D
+52 root[6C39  19[7C0[6C0[6C0 S   0.0   0.0   2:32.34 khugepaged[76D
+53 root[7C0 -20[7C0[6C0[6C0 I   0.0   0.0   0:00.00 kworker/R-kinte[81D
+54 root[7C0 -20[7C0[6C0[6C0 I   0.0   0.0   0:00.00 kworker/R-kbloc[81D
+55 root[7C0 -20[7C0[6C0[6C0 I   0.0   0.0   0:00.00 kworker/R-blkcg[81D
+58 root[7C0 -20[7C0[6C0[6C0 I   0.0   0.0   0:00.00 kworker/R-tpm_d[81D
+59 root[7C0 -20[7C0[6C0[6C0 I   0.0   0.0   0:00.00 kworker/R-edac-[81D
+60 root[7C0 -20[7C0[6C0[6C0 I   0.0   0.0   0:00.00 kworker/R-devfr[81D
+61 root[7C0 -20</system_output>
+  <system_output timestamp="332.597499">[7C0[6C0[6C0 I   0.0   0.0  11:05.08 kworker/2:1H-kblockd[86D
+62 root[6C20   0[7C0[6C0[6C0 S   0.0   0.0   4:40.18 kswapd0[73D
+69 root[7C0 -20[7C0[6C0[6C0 I   0.0   0.0   0:00.00 kworker/R-kthro[81D
+71 root[5C-51   0[7C0[6C0[6C0 S   0.0   0.0   0:00.00 irq/25-aerdrv[79D
+72 root[5C-51   0[7C0[6C0[6C0 S   0.0   0.0   0:00.00 irq/27-aerdrv[79D
+73 root[7C0 -20[7C0[6C0[6C0 I   0.0   0.0   0:00.00 kworker/R-acpi_[81D
+74 root[7C0 -20[7C0[6C0[6C0 I   0.0   0.0   0:00.00 kworker/R-mld[79D
+75 root[7C0 -20[7C0[6C0[6C0 I   0.0   0.0   0:00.00 kworker/R-ipv6_[81D
+77 root[7C0 -20[7C0[6C0[6C0 I   0.0   0.0  11:06.67 kworker/3:1H-kblockd[86D
+81 root[7C0 -20[7C0[6C0[6C0 I   0.0   0.0   0:00.00 kworker/R-kstrp[81D
+83 root[7C0 -20[7C0[6C0[6C0 I   0.0   0.0   0:00.00 kworker/u17:0[80D
+160 root[7C0 -20[7C0[6C0[6C0 I   0.0   0.0  24:33.62 kworker/1:1H-kblockd[87D
+173 root[7C0 -20[7C0[6C0[6C0 I   0.0   0.0  11:58.27 kworker/0:1H-kblockd[87D
+193 root[7C0 -20[7C0[6C0[6C0 I   0.0   0.0   0:00.00 kworker/R-ata_s[82D
+194 root[6C20   0[7C0[6C0[6C0 S   0.0   0.0   0:00.00 scsi_eh_0[76D
+195 root[7C0 -20[7C0[6C0[6C0 I   0.0   0.0   0:00.00 kworker/R-scsi_[82D
+199 root[7C0 -20[7C0[6C0[6C0 I   0.0   0.0   0:00.0</system_output>
+  <system_output timestamp="332.598027">0 kworker/R-md[79D
+200 root[7C0 -20[7C0[6C0[6C0 I   0.0   0.0   0:00.00 kworker/R-md_bi[82D
+213 root[7C0 -20[7C0[6C0[6C0 I   0.0   0.0   0:00.00 kworker/R-raid5[82D
+232 root[7C0 -20[7C0[6C0[6C0 I   0.0   0.0   0:00.00 kworker/R-uas[80D
+259 root[6C20   0[7C0[6C0[6C0 S   0.0   0.0   0:00.00 scsi_eh_3[76D
+260 root[7C0 -20[7C0[6C0[6C0 I   0.0   0.0   0:00.00 kworker/R-scsi_[82D
+261 root[6C20   0[7C0[6C0[6C0 S   0.0   0.0  31:42.88 usb-storage[78D
+272 root[6C20   0[7C0[6C0[6C0 S   0.0   0.0   0:00.00 scsi_eh_4[76D
+273 root[7C0 -20[7C0[6C0[6C0 I   0.0   0.0   0:00.00 kworker/R-scsi_[82D
+274 root[6C20   0[7C0[6C0[6C0 S   0.0   0.0  12:34.59 usb-storage[78D
+282 root[6C20   0[7C0[6C0[6C0 S   0.0   0.0   0:00.00 scsi_eh_5[76D
+283 root[7C0 -20[7C0[6C0[6C0 I   0.0   0.0   0:00.00 kworker/R-scsi_[82D
+288 root[6C20   0[7C0[6C0[6C0 S   0.0   0.0   0:00.00 scsi_eh_6[76D
+289 root[7C0 -20[7C0[6C0[6C0 I   0.0   0.0   0:00.00 kworker/R-scsi_[82D
+290 root[6C20   0[7C0[6C0[6C0 S   0.0   0.0  32:34.93 usb-storage[78D
+291 root[6C20   0[7C0[6C0[6C0 S   0.0   0.0   0:00.00 scsi_eh_7[76D
+292 root[7C0 -20[7C0[6C0[6C0 I   0.0   0.0   0:00.00 kworker/R-scsi_[82D
+293 root[6C20   0[7C0[6C0[6C0 S   0.0   0.0  12:29.33 usb-storage[78D
+314 root[6C20   0[7C0[6C0[6C0 S   0.0   0.0 205:31.59 md4_raid5[76D
+318 root[6C20   0[7C0[6C0[6C0 S   0.0   0.0 216:36.25 md1_raid6[76D
+319 root[6C20   0[7C0[6C0[6C0 S   0.0   0.0  56:38.02 md0_raid6[76D
+327 root[7C0 -20[7C0[6C0[6C0 I   0.0   0.0   0:00.00 kworker/R-kdmfl[82D
+332 root[7C0 -20[7C0[6C0[6C0 I   0.0   0.0   0:00.00 kworker/R-dm_bu[82D
+333 root[7C0 -20[7C0[6C0[6C0 I   0.0   0.0   0:00.00 kworker/R-kdmfl[82D
+334 root[7C0 -20[7C0[6C0[6C0 I   0.0   0.0   0:00.00 kworker/R-kdmfl[82D
+335 root[7C0 -20[7C0[6C0[6C0 I   0.0   0.0   0:00.00 kworker/R-kdmfl[82D
+336 root[7C0 -20[7C0[6C0[6C0 I   0.0   0.0   0:00.00 kworker/R-kdmfl[82D
+337 root[7C0 -20[7C0[6C0[6C0 I   0.0   0.0   0:00.00 kworker/R-ksnap[82D
+338 root[7C0 -20[7C0[6C0[6C0 I   0.0   0.0   0:00.00 kworker/R-kcopy[82D
+365 root[7C0 -20[7C0[6C0[6C0 I   0.0   0.0   0:00.00 kworker/R-kdmfl[82D
+368 root[7C0 -20[7C0[6C0[6C0 I   0.0   0.0   0:00.00 kworker/R-kdmfl[82D
+375 root[7C0 -20[7C0[6C0[6C0 I   0.0   0.0   0:00.00 kworker/R-kdmfl[82D
+376 root[7C0 -20[7C0[6C0[6C0 I   0.0   0.0   0:00.00 kworker/R-kdmfl[82D
+377 root[7C0 -20[7C0[6C0[6C0 I   0.0   0.0   0:00.00 kworker/R-ksnap[82D
+378 root[7C0 -20[7C0[6C0[6C0 I   0.0   0.0   0:00.00 kworker/R-kcopy[82D
+432 root[7C0 -20[7C0[6C0[6C0 I   0.0   0.0   0:00.00 kworker/R-kdmfl[82D
+433 root[7C0 -20[7C0[6C0[6C0 I   0.0   0.0   0:00.00 kworker/R-kdmfl[82D
+435 root[7C0 -20[7C0[6C0[6C0 I   0.0   0.0   0:00.00 kworker/R-kdmfl[82D
+438 root[7C0 -20[7C0[6C0[6C0 I   0.0   0.0   0:00.00 kworker/R-kdmfl[82D
+439 root[7C0 -20[7C0[6C0[6C0 I   0.0   0.0   0:00.00 kworker/R-ksnap[82D
+440 root[7C0 -20[7C0[6C0[6C0 I   0.0   0.0   0:00.00 kworker/R-kcopy[82D
+468 root[6C20   0[7C0[6C0[6C0 S   0.0   0.0   0:01.89 md128_raid1[78D
+471 root[6C20   0[7C0[6C0[6C0 S   0.0   0.0  28:04.34 md2_raid6[76D
+474 root[6C20   0[7C0[6C0[6C0 S   0.0   0.0   1:04.46 md3_raid6[76D
+477 root[7C0 -20[7C0[6C0[6C0 I   0.0   0.0   0:00.00 kworker/R-kdmfl[82D
+481 root[7C0 -20[7C0[6C0[6C0 I   0.0   0.0   0:00.00 kworker/R-kdmfl[82D
+482 root[7C0 -20[7C0[6C0[6C0 I   0.0   0.0   0:00.00 kworker/R-kdmfl[82D
+483 root[7C0 -20[7C0[6C0[6C0 I   0.0   </system_output>
+  <system_output timestamp="332.598822">0.0   0:00.00 kworker/R-kdmfl[82D
+484 root[7C0 -20[7C0[6C0[6C0 I   0.0   0.0   0:00.00 kworker/R-ksnap[82D
+485 root[7C0 -20[7C0[6C0[6C0 I   0.0   0.0   0:00.00 kworker/R-kcopy[82D
+512 root[7C0 -20[7C0[6C0[6C0 I   0.0   0.0   0:00.00 kworker/R-kdmfl[82D
+513 root[7C0 -20[7C0[6C0[6C0 I   0.0   0.0   0:00.00 kworker/R-kdmfl[82D
+514 root[7C0 -20[7C0[6C0[6C0 I   0.0   0.0   0:00.00 kworker/R-kdmfl[82D
+515 root[7C0 -20[7C0[6C0[6C0 I   0.0   0.0   0:00.00 kworker/R-kdmfl[82D
+516 root[7C0 -20[7C0[6C0[6C0 I   0.0   0.0   0:00.00 kworker/R-ksnap[82D
+519 root[7C0 -20[7C0[6C0[6C0 I   0.0   0.0   0:00.00 kworker/R-kcopy[82D
+534 root[6C20   0[7C0[6C0[6C0 S   0.0   0.0   2:23.61 jbd2/md2-8[77D
+535 root[7C0 -20[7C0[6C0[6C0 I   0.0   0.0   0:00.00 kworker/R-ext4-[82D
+612 root[7C0 -20[7C0[6C0[6C0 I   0.0   0.0   0:00.00 kworker/R-rpcio[82D
+613 root[7C0 -20[7C0[6C0[6C0 I   0.0   0.0   0:00.00 kworker/R-xprti[82D
+730 root[6C20   0[7C0[6C0[6C0 S   0.0   0.0   0:00.00 ccp-1-q2[75D
+731 root[6C20   0[7C0[6C0[6C0 S   0.0   0.0   0:00.00 ccp-1-q3[75D
+732 root[6C20   0[7C0[6C0[6C0 S   0.0   0.0   0:00.00 ccp-1-q4[75D
+733 root[6C20   0[7C0[6C0[6C0 S   0.0   0.0   0:02.64 hwrng[72D
+751 root[5C-51   0[7C0[6C0[6C0 S   0.0   0.0   0:00.00 watchdogd[76D
+777 root[7C0 -20[7C0[6C0[6C0 I   0.0   0.0   0:00.00 kworker/R-crypt[82D
+967 root[7C0 -20[7C0[6C0[6C0 I   0.0   0.0   0:00.00 kworker/R-ext4-[82D
+970 root[6C20   0[7C0[6C0[6C0 S   0.0   0.0   0:03.68 jbd2/dm-0-8[78D
+971 root[7C0 -20[7C0[6C0[6C0 I   0.0   0.0   0:00.00 kworker/R-ext4-[82D
+977 root[6C20   0[7C0[6C0[6C0 S   0.0   0.0   0:00.02 jbd2/md4-8[77D
+978 root[7C0 -20[7C0[6C0[6C0 I   0.0   0.0   0:00.00 kworker/R-ext4-
+   
+1031 m</system_output>
+  <system_output timestamp="332.599126">essage+  20   0[4C8872   3968   3328 S   0.0   0.0   0:19.16 dbus-daemon
+   
+1043 root[6C20   0   12656   4736   4096 S   0.0   0.0   0:08.85 smartd
+   
+1045 root[6C20   0   21448   9768   6528 S   0.0   0.1   0:23.56 systemd-logind
+   
+1143 root[6C20   0[4C6860   2816   1792 S   0.0   0.0   0:28.71 dhclient
+   
+1156 mrtg[6C20   0   30428  23664   3456 S   0.0   0.1  18:13.62 mrtg
+   
+1344 root[7C0 -20[7C0[6C0[6C0 I   0.0   0.0   0:00.00 kworker/R-iscsi
+   
+1369 root[6C20   0[4C8976   4864   4224 S   0.0   0.0   0:00.05 login
+   
+1972 root[6C20   0   29264   3596   1912 S   0.0   0.0   4:39.57 kerneloops
+   
+2363 demo[6C20   0   21636  12800   9600 S   0.0   0.1   0:06.24 systemd
+   
+2364 demo[6C20   0   24016   2048   1664 S   0.0   0.0   0:00.00 (sd-pam)
+   
+2382 demo[6C20   0[4C5600   2688   2560 S   0.0   0.0   0:00.05 bash
+   
+2418 root[6C20   0[4C8952   4352   4096 S   0.0   0.0   0:00.03 su
+   
+2419 root[6C20   0[4C5596   2560   2432 S   0.0   0.0   0:00.04 bash
+   
+2424 root[6C20   0[4C7748   2820   1664 S   0.0   0.0  65:37.04 screen
+   
+2425 root[6C20   0[4C4536   2944   2560 S   0.0   0.0   0:00.20 bash
+   
+2429 root[6C20   0[4C4544   2816   2560 S   0.0   0.0   0:00.10 bash
+   
+2496 root[6C20   0[4C4428   2688   2560 S   0.0   0.0   0:00.01 bash
+   
+2528 root[7C0 -20[7C0[6C0[6C0 I   0.0   0.0   0:00.00 kworker/R-kdmfl
+   
+2529 root[7C0 -20[7C0[6C0[6C0 I   0.0   0.0   0:00.00 kworker/R-kdmfl
+   
+2530 root[7C0 -20[7C0[6C0[6C0 I   0.0   0.0   0:00.00 kworker/R-kdmfl
+   
+2532 root[7C0 -20[7C0[6C0[6C0 I   0.0   0.0   0:00.00 kworker/R-kdmfl
+   
+2533 root[7C0 -20[7C0[6C0[6C0 I   0.0   0.0   0:00.00 kworker/R-ksnap
+   
+2536 root[7C0 -20[7C0[6C0[6C0 I   0.0   0.0   0:00.00 kworker/R-kcopy
+   
+2581 root[7C0 -20[7C0[6C0[6C0 I   0.0   0.0   0:00.00 kworker/R-kdmfl
+   
+2585 root[7C0 -20[7C0[6C0[6C0 I   0.0   0.0   0:00.00 kworker/R-kdmfl
+   
+2589 root[7C0 -20[7C0[6C0[6C0 I   0.0   0.0   0:00.00 kworker/R-kdmfl
+   
+2592 root[7C0 -20[7C0[6C0[6C0 I   0.0   0.0   0:00.00 kworker/R-kdmfl
+   
+2625 root[7C0 -20[7C0[6C0[6C0 I   0.0   0.0   0:00.00 kworker/R-kdmfl
+   
+2626 root[7C0 -20[7C0[6C0[6C0 I   0.0   0.0   0:00.00 kworker/R-kdmfl
+   
+2636 root[7C0 -20[7C0[6C0[6C0 I   0.0   0.0   0:00.00 kworker/R-kdmfl
+   
+2638 root[7C0 -20[7C0[6C0[6C0 I   0.0   0.0   0:00.00 kworker/R-kdmfl
+   
+2639 root[7C0 -20[7C0[6C0[6C0 I   0.0   0.0   0:00.00 kworker/R-kdmfl
+   
+2640 root[7C0 -20[7C0[6C0[6C0 I   0.0   0.0   0:00.00 kworker/R-ksnap
+   
+2641 root[7C0 -20[7C0[6C0[6C0 I   0.0   0.0   0:00.00 kworker/R-kcopy
+   
+2692 root[7C0 -20[7C0[6C0[6C0 I   0.0   0.0   0:00.00 kworker/R-kdmfl
+   
+4346 root[6C20   0[4C2496   1152   1152 S   0.0   0.0   0:00.00 cat
+   
+5096 root[6C20   0[4C2496   1024   1024 S   0.0   0.0   0:00.00 cat
+   
+6736 root[6C20   0[4C2496   1024   1024 S   0.0   0.0   0:00.00 cat
+   
+7486 root[6C20   0[4C2496   1152   1152 S   0.0   0.0   0:00.00 cat
+   
+7929 root[6C20   0[4C6096   2432   2048 S   0.0   0.0   0:28.94 dhclient
+   
+7964 root[6C20   0   19680   8832   8576 S   0.0   0.1   0:00.09 sshd
+   
+7970 demo[6C20   0   19812   4616   4224 S   0.0   0.0  16:48.18 sshd
+   
+7971 demo[6C20   0[4C8628   2688   2688 S   0.0   0.0   0:00.10 bash
+  
+13207 root[6C20   0[4C2496   1152   1152 S   0.0   0.0   0:00.00 cat
+stephost:/disk1/isos#]0;]0;screen[?2004h </system_output>
+  <user_input timestamp="334.530692">OA</user_input>
+  <system_output timestamp="334.531353">top</system_output>
+  <user_input timestamp="334.881664">OA</user_input>
+  <system_output timestamp="334.882216">screen -r faiserver-tearoff-9</system_output>
+  <user_input timestamp="336.69349">
+</user_input>
+  <system_output timestamp="336.694443">
+[?2004l</system_output>
+  <system_output timestamp="336.704556">There is no screen to be resumed matching faiserver-tearoff-9.
+</system_output>
+  <system_output timestamp="336.705851">[?2004hstephost:/disk1/isos# </system_output>
+  <user_input timestamp="338.524844"/>
+  <system_output timestamp="338.525596">
+(reverse-i-search)`': </system_output>
+  <user_input timestamp="338.924428">c</user_input>
+  <system_output timestamp="338.924971">c': s[7mc[27mreen -r faiserver-tearoff-9
+(reverse-i-search)`c': s</system_output>
+  <user_input timestamp="339.20127">m</user_input>
+  <system_output timestamp="339.202066">m': [7mcm[27m start</system_output>
+  <user_input timestamp="339.399944"> </user_input>
+  <system_output timestamp="339.400675">[1@ ': [7mcm [27m</system_output>
+  <user_input timestamp="339.776006">k</user_input>
+  <system_output timestamp="339.776715">k': [7mcm k[27mill</system_output>
+  <user_input timestamp="340.801321">
+</user_input>
+  <system_output timestamp="340.80207">
+[4Pstephost:/disk1/isos# cm k
+[?2004l</system_output>
+  <system_output timestamp="341.260978">  Logical volume "faiserver-tearoff-9" successfully removed.
+</system_output>
+  <system_output timestamp="341.348077">rm: cannot remove '/var/lib/createvm/arno/tearoff-faiserver-9-*': No such file or directory
+</system_output>
+  <system_output timestamp="341.348524">[?2004hstephost:/disk1/isos# </system_output>
+  <user_input timestamp="342.705528">OA</user_input>
+  <system_output timestamp="342.705953">cm kill faiserver-tearoff-9</system_output>
+  <user_input timestamp="343.022768">OA</user_input>
+  <system_output timestamp="343.023453">
+stephost:/disk1/isos# [2@screen -r faiserver-tearoff-9</system_output>
+  <user_input timestamp="343.319579">OA</user_input>
+  <system_output timestamp="343.320112">
+stephost:/disk1/isos# top[K</system_output>
+  <user_input timestamp="343.739102">OA</user_input>
+  <system_output timestamp="343.73964">screen -r faiserver-tearoff-9</system_output>
+  <user_input timestamp="344.119019">OA</user_input>
+  <system_output timestamp="344.119486">
+stephost:/disk1/isos# [Pcm start faiserver-tearoff-9</system_output>
+  <user_input timestamp="344.563668">OA</user_input>
+  <system_output timestamp="344.56437">
+stephost:/disk1/isos# top[K</system_output>
+  <user_input timestamp="345.089087">OA</user_input>
+  <system_output timestamp="345.08972">createvm faiserver tearoff fai_dvd-20240721.iso </system_output>
+  <user_input timestamp="345.407923">OA</user_input>
+  <system_output timestamp="345.408656">
+stephost:/disk1/isos# c[21Pm kill faiserver-tearoff-9</system_output>
+  <user_input timestamp="345.835764">OB</user_input>
+  <system_output timestamp="345.836497">
+stephost:/disk1/isos# createvm faiserver tearoff fai_dvd-20240721.iso </system_output>
+  <user_input timestamp="346.59597">
+</user_input>
+  <system_output timestamp="346.59642">
+[?2004l</system_output>
+  <user_input timestamp="347.471184"/>
+  <system_output timestamp="347.471915">^C</system_output>
+  <user_input timestamp="347.919007"/>
+  <system_output timestamp="347.919765">^C</system_output>
+  <user_input timestamp="348.111142"/>
+  <system_output timestamp="348.111606">^C</system_output>
+  <user_input timestamp="348.300823"/>
+  <system_output timestamp="348.301144">^C</system_output>
+  <system_output timestamp="350.093609">
+[?2004hstephost:/disk1/isos# </system_output>
+  <user_input timestamp="351.058572">OA</user_input>
+  <system_output timestamp="351.059339">createvm faiserver tearoff fai_dvd-20240721.iso </system_output>
+  <user_input timestamp="352.822059"></user_input>
+  <system_output timestamp="352.822686"> </system_output>
+  <user_input timestamp="353.50299"></user_input>
+  <system_output timestamp="353.503744"> </system_output>
+  <user_input timestamp="353.541005"></user_input>
+  <system_output timestamp="353.541667"> </system_output>
+  <user_input timestamp="353.581124"></user_input>
+  <system_output timestamp="353.581746"> </system_output>
+  <user_input timestamp="353.619916"></user_input>
+  <system_output timestamp="353.620568"> </system_output>
+  <user_input timestamp="353.658414"></user_input>
+  <system_output timestamp="353.659277"> </system_output>
+  <user_input timestamp="353.698519"></user_input>
+  <system_output timestamp="353.69929"> </system_output>
+  <user_input timestamp="353.718894"></user_input>
+  <system_output timestamp="353.719702"> </system_output>
+  <user_input timestamp="353.932396">	</user_input>
+  <system_output timestamp="354.04336">[?5h[?5l</system_output>
+  <user_input timestamp="354.240046">	</user_input>
+  <system_output timestamp="354.250943">
+fai_dvd-20240604.iso    fai_dvd-20240630-2.iso  fai_dvd-20240630.iso    fai_dvd-20240710.iso    fai_dvd-20240711.iso    fai_dvd-20240712.iso    fai_dvd-20240714.iso    fai_dvd-20240721.iso    fai_dvd-20240722.iso
+stephost:/disk1/isos# createvm faiserver tearoff fai_dvd-20240</system_output>
+  <user_input timestamp="355.009451">7</user_input>
+  <system_output timestamp="355.010109">7</system_output>
+  <user_input timestamp="355.594674">2</user_input>
+  <system_output timestamp="355.595059">2</system_output>
+  <user_input timestamp="355.750425">2</user_input>
+  <system_output timestamp="355.750744">2</system_output>
+  <user_input timestamp="356.086487">	</user_input>
+  <system_output timestamp="356.094955">.iso </system_output>
+  <user_input timestamp="356.614823">
+</user_input>
+  <system_output timestamp="356.615634">
+[?2004l</system_output>
+  <user_input timestamp="358.395186"/>
+  <user_input timestamp="359.143245">4</user_input>
+  <system_output timestamp="359.144326">]0;]0;screen[H[2J]2;screen[1m[37m[40mgrub&gt; serial --unit=0 --speed=115200 --word=8 --parity=no --stop=1                 giftserver -- GIFT image processor system.                                      lampserver -- A LAMP (Linux, Apache, MySQL, PHP) stack.                     
+grub&gt; terminal_output serial console                                            
+grub&gt; linux (hd96)/boot/vmlinuz console=ttyS0,115200 console=tty0 boot=live FAI-                                                                                
+FLAGS="verbose,createvt" FAI_ACTION=install FAI_CONFIG_SRC=file:///var/lib/fai/c      Use the   and   keys to select which entry is highlighted.                      Press enter to boot the selected OS, `e' to edit the commands            
+onfig rd.live.image root=live:CDLABEL=FAI_CD hostname=faiserver quiet           
+grub&gt; initrd (hd96)/boot/initrd.img                                                The highlighted entry will be executed automatically in 16s.                 
+grub&gt; boot                                                                      
+[0m[37m[40mchown: invalid group: '_rpc:root'[1m                                               
+[0m[37m[40mStarting systemd-udevd version 252.26-1~deb12u2[1m                                 
+[0m[37m[40mlosetup: /run/initramfs/squashfs/LiveOS/ext3fs.img: Warning: file does not fit i
+nto a 512-byte sector; the end of the file will be ignored.[1m                     
+[0m[37m[40mINIT: version 3.06 booting[1m                                                      
+[0m[37m[40mINIT: No inittab.d directory found[1m                           mmands             
+[0m[37m[40mKernel currently running: [1m               -line.                                 
+[0m[37m</system_output>
+  <system_output timestamp="359.144681">[40m#endx 6.1.0-22-686-pae i686 GNU/Linux[1m                       4s.                 
+[0m#SESSION 'local' DIED.[37m[40mT_IMAGE=(hd96)/boot/vmlinuz console=ttyS0,115200 console=t
+[174B[39m[49m#SESSION 'gts' ACTIVATED.
+
+Goodbye from TinTin++
+
+
+[screen is terminating]
+demo@stephost:/disk1/isos$]0;]0;screen[?2004h </system_output>
+  <user_input timestamp="360.522341">OA</user_input>
+  <system_output timestamp="360.522904">sudo screen -r 95</system_output>
+  <user_input timestamp="362.020611">OA</user_input>
+  <user_input timestamp="362.503117">OA</user_input>
+  <system_output timestamp="362.503653">[2Pls</system_output>
+  <user_input timestamp="363.023649">
+</user_input>
+  <system_output timestamp="363.024496">
+[?2004l</system_output>
+  <system_output timestamp="363.03723">[sudo] password for demo: </system_output>
+  <user_input timestamp="364.734378">P</user_input>
+  <user_input timestamp="364.936338">h</user_input>
+  <user_input timestamp="365.098828">4</user_input>
+  <user_input timestamp="365.319911">b</user_input>
+  <user_input timestamp="365.68182">0</user_input>
+  <user_input timestamp="366.143374">S</user_input>
+  <user_input timestamp="366.523965">8</user_input>
+  <user_input timestamp="366.927708">
+</user_input>
+  <system_output timestamp="366.928344">
+</system_output>
+  <system_output timestamp="366.945918">There are screens on:
+[8C1014438.preseed-faiserver-tearoff-9[5C(07/22/2024 02:48:39 PM)[8C(Detached)
+[8C922423.faiserver-tearoff-12[5C(07/21/2024 05:53:33 PM)[8C(Detached)
+[8C3792670.wikiserver-tearoff-3[4C(07/07/2024 08:43:33 PM)[8C(Detached)
+[8C3791781.nullhost-tearoff-10[5C(07/07/2024 08:43:28 PM)[8C(Detached)
+[8C3791257.nullhost-tearoff-6[6C(07/07/2024 08:43:23 PM)[8C(Detached)
+[8C2424.tty1.stephost[6C(05/30/2024 06:08:28 PM)[8C(Detached)
+6 Sockets in /run/screen/S-root.
+</system_output>
+  <system_output timestamp="366.948741">[?2004hdemo@stephost:/disk1/isos$ </system_output>
+  <user_input timestamp="367.696922">OA</user_input>
+  <system_output timestamp="367.697596">sudo screen -ls</system_output>
+  <user_input timestamp="369.106366"></user_input>
+  <system_output timestamp="369.106975">[K</system_output>
+  <user_input timestamp="369.293186"></user_input>
+  <system_output timestamp="369.293664">[K</system_output>
+  <user_input timestamp="369.562739">r</user_input>
+  <system_output timestamp="369.563355">r</system_output>
+  <user_input timestamp="369.894021"> </user_input>
+  <system_output timestamp="369.894449"> </system_output>
+  <user_input timestamp="370.144103">1</user_input>
+  <system_output timestamp="370.144688">1</system_output>
+  <user_input timestamp="370.353403">0</user_input>
+  <system_output timestamp="370.354037">0</system_output>
+  <user_input timestamp="370.564285">0</user_input>
+  <system_output timestamp="370.564949">0</system_output>
+  <user_input timestamp="371.133075"></user_input>
+  <system_output timestamp="371.133707">[K</system_output>
+  <user_input timestamp="371.345256">1</user_input>
+  <system_output timestamp="371.345926">1</system_output>
+  <user_input timestamp="371.638968">
+</user_input>
+  <system_output timestamp="371.639724">
+[?2004l</system_output>
+  <system_output timestamp="371.681224">[H</system_output>
+  <system_output timestamp="371.686016">[H[2J[H[2J]2;TinTin++]0;]0;TinTin++[173;28H[1m[33m3Kingdoms [37m- [4m[33mhttp://3k.org[24m[0m[1m[33m[0m[1m[33m                            
+
+[0m[37mBased around the mighty town of Pinnacle, three main realms beckon the player
+to explore.  These kingdoms are: Fantasy, a vast medieval realm of orcs, elves,
+dragons, and a myriad of other creatures; Science, a post-apocalyptic, war-torn
+world set in the not-so-distant future; and Chaos, a transient realm where the
+realities of Fantasy and Science collide to produce unimaginable results.
+ 
+3Kingdoms combines all these features, and so much more, to give the player an
+experience that will stay with them for the rest of their lives.  Come live the
+adventure and find out for yourself</system_output>
+  <system_output timestamp="371.686203"> why 3K is the best there is!
+
+[1mTo connect to 3Kingdoms enter: #session 3K 3k.org 3000                          
+
+[0m[36m      ####################################################################
+      #[37m                                        </system_output>
+  <system_output timestamp="371.686748">                          [36m#
+      #[37m                    T I N T I N + +   2.02.20                     [36m#
+      #[37m                                                                  [36m#
+      #[37m      Code by Peter Unold, Bill Reis, and Igor van den Hoven      [36m#
+      #[37m                                                                  [36m#
+      ####################################################################
+
+[39m#TRYING TO LAUNCH 'local' RUNNING 'bash'.
+stephost:/disk1/isos#[?2004h 
+</system_output>
+  <user_input timestamp="372.898984">c</user_input>
+  <system_output timestamp="373.019517">c</system_output>
+  <user_input timestamp="373.170528">d</user_input>
+  <system_output timestamp="373.191185">d</system_output>
+  <user_input timestamp="373.29683"> </user_input>
+  <system_output timestamp="373.312892"> </system_output>
+  <user_input timestamp="373.71362">~</user_input>
+  <system_output timestamp="373.727494">~</system_output>
+  <user_input timestamp="374.075146">
+</user_input>
+  <system_output timestamp="374.092579">
+</system_output>
+  <system_output timestamp="374.092784">[?2004l[?2004hstephost:~# </system_output>
+  <system_output timestamp="374.102558">export PS1="sh&gt;"
+[?2004l[?2004hsh&gt;</system_output>
+  <system_output timestamp="374.112705">cd /var/local/createvm/preseed/faiserver-bd959cd313360289fa63564a993c069738c9b
+b7c2-12884901888/
+[?2004l[?2004hsh&gt;</system_output>
+  <system_output timestamp="374.122812">sudo ./startup-kvm.sh preseed-tearoff-faiserver-9
+[?2004l</system_output>
+  <system_output timestamp="374.173056">Running: /usr/bin/kvm -m 1G -boot d -drive file=/dev/tearoff/faiserver-tearoff-bd959cd313360289fa63564a993c069738c9b7c2-12884901888,index=0,media=disk,format=raw -drive file=/disk1/isos/fai_dvd-20240722.iso,index=1,media=cdrom  -net none
+-rtc base=localtime -monitor pty -name preseed-tearoff-faiserver-9 -smp threads=4 -display curses -vga vmware -serial file:/tmp/preseed-tearoff-faiserver-9
+</system_output>
+  <system_output timestamp="377.179584">Monitor is attached to 79
+</system_output>
+  <system_output timestamp="377.199919">[?2004hsh&gt;</system_output>
+  <system_output timestamp="377.210872">export TERM=vt100
+</system_output>
+  <system_output timestamp="377.211194">[?2004l[?2004hsh&gt;</system_output>
+  <system_output timestamp="377.220098">sudo screen -r preseed-tearoff-faiserver-9
+[?2004l</system_output>
+  <system_output timestamp="377.240356">[H[H[2J[H[2J</system_output>
+  <system_output timestamp="377.260311">QEMU 9.0.2 monitor - type 'help' for more information
+(qemu) </system_output>
+  <system_output timestamp="379.280451">[H[H[2J[1m[37m[40m                       GNU GRUB  version 2.06-13+deb12u1                                                                                                        
+                                                                                   +------------------------------------------------------+                        |    FAI-CD        (c) Thomas Lange, lange@debian.org  |                    
+
+   |    FAI 6.0.3+deb12u1 build 2024 Jul 21 - 23:39      |                         +-</system_output>
+  <system_output timestamp="379.28127">-----------------------------------------------------+                     
+  [0m[30m[43m*Boot OS from first partition on first disk                                 [1m[37m[40m     nekohost -- Rescue system -- safe as kittens, no install performed.             faiserver -- Server for creating this CD.                                   
+
+   qemuhost -- QEMU server, designed for running the images on this CD in VMs      wikiserver -- Trac/Apache wiki server.                                       
+   postserver -- mail server.                                                      giftserver -- GIFT image processor system.                                      lampserver -- A LAMP (Linux, Apache, MySQL, PHP) stack.                     
+
+   kalliserver -- Kallithea, a git hosting service. For software distribution                                                                                   
+                                                                                      Use the   and   keys to select which entry is highlighted.                      Press enter to boot the selected OS, `e' to edit the commands            
+
+</system_output>
+  <system_output timestamp="379.281432">      before booting or `c' for a command-line.                                    The highlighted entry will be executed automatically in 16s.                 
+                                                                                [2;1H</system_output>
+  <system_output timestamp="379.302266">[0m[37m[40m[H                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                     </system_output>
+  <system_output timestamp="379.303207">                           
+                                                                                [49m[39m[K[37m[40m[C  [H[39m[49m[37m[40m                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+</system_output>
+  <system_output timestamp="379.303365">                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+          </system_output>
+  <system_output timestamp="379.305407">                                                                      
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                              </system_output>
+  <system_output timestamp="379.305526">                                                  
+                                                                                
+                                                                                
+                                                                                
+                                                                                [49m[39m[K[37m[40m[C  [H[1m[0m[1m[37m[40m                       GNU GRUB  version 2.06-13+deb12u1                     </system_output>
+  <system_output timestamp="379.305588">   
+                                                                                
+                                                                                
+   +------------------------------------------------------+                     
+   | </system_output>
+  <system_output timestamp="379.306366">   FAI-CD        (c) Thomas Lange, lange@debian.org  |                     
+   |    FAI 6.0.3+deb12u1 build 2024 Jul 21 - 23:39      |                      
+   +------------------------------------------------------+                     
+  [0m[30m[43m*Boot OS from first partition on first disk                                 [1m[0m[1m[37m[40m  
+   nekohost -- Rescue system -- safe as kittens, no install performed.          
+   faiserver -- Server for creating this CD.                                    
+   qemuhost -- QEMU server, designed for running the images on this CD in VMs   
+   wikiserver -- Trac/Apache wiki server.                                       
+   postserver -- mail server.                                                   
+</system_output>
+  <system_output timestamp="379.306648">
+   giftserver -- GIFT image processor system.                                   
+   lampserver -- A LAMP (Linux, Apache, MySQL, PHP) stack.                      
+   kalliserver -- Kallithea, a git hosting service. For software distribution   
+                                                                                
+                                                                                
+      Use the   and   keys to select which entry is highlighted.                
+      Press enter to boot the selected OS, `e' to edit the commands             
+      before booting or `c' for a command-line.                                 
+   The highlighted entry will be executed automatically in 16s.                 
+                                                                                [49m[0m[K[1m[37m[40m[C  [H[0m[37m[40m</system_output>
+  <system_output timestamp="379.664128">[22;61H[1m[0m[1m[37m[40m5[H[0m[37m[40m</system_output>
+  <system_output timestamp="380.653334">[22;61H[1m[0m[1m[37m[40m4[H[0m[37m[40m</system_output>
+  <system_output timestamp="381.33944">[C
+
+[1m[0m[1m[37m[40m  Minimal BASH-like line editing is supported. For the first word, TAB        
+   lists possible command completions. Anywhere else TAB lists possible[7C 
+   device or file completions. ESC at any time exits.      [19C 
+   </system_output>
+  <system_output timestamp="381.340395">                                                [6C [20C 
+                                                           [19C 
+grub&gt;                                                                          
+                                                                      [8C 
+                                            [34C 
+                                                                               
+                                         [37C 
+                             [49C 
+                                             [33C 
+                                                          [20C 
+                                                                                
+ 
+                                                                              [19;7H                                                          [58D
+                                                             
+                                         
+   
+                                                        </system_output>
+  <system_output timestamp="381.340685">    [8;7H[0m[37m[40m</system_output>
+  <system_output timestamp="383.408749">[1m[0m[1m[37m[40mse[0m[37m[40m</system_output>
+  <system_output timestamp="383.4392">[1m[0m[1m[37m[40mri[0m[37m[40m</system_output>
+  <system_output timestamp="383.469373">[1m[0m[1m[37m[40ma[0m[37m[40m</system_output>
+  <system_output timestamp="383.499588">[1m[0m[1m[37m[40ml [0m[37m[40m</system_output>
+  <system_output timestamp="383.529892">[1m[0m[1m[37m[40m-[0m[37m[40m</system_output>
+  <system_output timestamp="383.560158">[1m[0m[1m[37m[40m-u[0m[37m[40m</system_output>
+  <system_output timestamp="383.590351">[1m[0m[1m[37m[40mn[0m[37m[40m</system_output>
+  <system_output timestamp="383.620685">[1m[0m[1m[37m[40mit[0m[37m[40m</system_output>
+  <system_output timestamp="383.650931">[1m[0m[1m[37m[40m=[0m[37m[40m</system_output>
+  <system_output timestamp="383.681254">[1m[0m[1m[37m[40m0 [0m[37m[40m</system_output>
+  <system_output timestamp="383.71142">[1m[0m[1m[37m[40m-[0m[37m[40m</system_output>
+  <system_output timestamp="383.741743">[1m[0m[1m[37m[40m-s[0m[37m[40m</system_output>
+  <system_output timestamp="383.772081">[1m[0m[1m[37m[40mp[0m[37m[40m</system_output>
+  <system_output timestamp="383.802483">[1m[0m[1m[37m[40mee[0m[37m[40m</system_output>
+  <system_output timestamp="383.832733">[1m[0m[1m[37m[40md[0m[37m[40m</system_output>
+  <system_output timestamp="383.862978">[1m[0m[1m[37m[40m=1[0m[37m[40m</system_output>
+  <system_output timestamp="383.893308">[1m[0m[1m[37m[40m1[0m[37m[40m</system_output>
+  <system_output timestamp="383.923363">[1m[0m[1m[37m[40m52[0m[37m[40m</system_output>
+  <system_output timestamp="383.953786">[1m[0m[1m[37m[40m0[0m[37m[40m</system_output>
+  <system_output timestamp="383.983839">[1m[0m[1m[37m[40m0 [0m[37m[40m</system_output>
+  <system_output timestamp="384.014209">[1m[0m[1m[37m[40m-[0m[37m[40m</system_output>
+  <system_output timestamp="384.044681">[1m[0m[1m[37m[40m-w[0m[37m[40m</system_output>
+  <system_output timestamp="384.074791">[1m[0m[1m[37m[40mo[0m[37m[40m</system_output>
+  <system_output timestamp="384.105205">[1m[0m[1m[37m[40mrd[0m[37m[40m</system_output>
+  <system_output timestamp="384.135302">[1m[0m[1m[37m[40m=[0m[37m[40m</system_output>
+  <system_output timestamp="384.16569">[1m[0m[1m[37m[40m8 [0m[37m[40m</system_output>
+  <system_output timestamp="384.195736">[1m[0m[1m[37m[40m-[0m[37m[40m</system_output>
+  <system_output timestamp="384.22615">[1m[0m[1m[37m[40m-p[0m[37m[40m</system_output>
+  <system_output timestamp="384.256543">[1m[0m[1m[37m[40ma[0m[37m[40m</system_output>
+  <system_output timestamp="384.286694">[1m[0m[1m[37m[40mri[0m[37m[40m</system_output>
+  <system_output timestamp="384.316935">[1m[0m[1m[37m[40mt[0m[37m[40m</system_output>
+  <system_output timestamp="384.347253">[1m[0m[1m[37m[40my=[0m[37m[40m</system_output>
+  <system_output timestamp="384.37746">[1m[0m[1m[37m[40mn[0m[37m[40m</system_output>
+  <system_output timestamp="384.407779">[1m[0m[1m[37m[40mo [0m[37m[40m</system_output>
+  <system_output timestamp="384.427999">[1m[0m[1m[37m[40m-[0m[37m[40m</system_output>
+  <system_output timestamp="384.458244">[1m[0m[1m[37m[40m-s[0m[37m[40m</system_output>
+  <system_output timestamp="384.488673">[1m[0m[1m[37m[40mt[0m[37m[40m</system_output>
+  <system_output timestamp="384.518729">[1m[0m[1m[37m[40mop[0m[37m[40m</system_output>
+  <system_output timestamp="384.549109">[1m[0m[1m[37m[40m=[0m[37m[40m</system_output>
+  <system_output timestamp="384.579809">[1m[0m[1m[37m[40m1
+[0m[37m[40m</system_output>
+  <system_output timestamp="384.609686">[1m[0m[1m[37m[40mgrub&gt; [0m[37m[40m</system_output>
+  <system_output timestamp="386.679986">[1m[0m[1m[37m[40mte[0m[37m[40m</system_output>
+  <system_output timestamp="386.710256">[1m[0m[1m[37m[40mrm[0m[37m[40m</system_output>
+  <system_output timestamp="386.740568">[1m[0m[1m[37m[40mi[0m[37m[40m</system_output>
+  <system_output timestamp="386.770862">[1m[0m[1m[37m[40mna[0m[37m[40m</system_output>
+  <system_output timestamp="386.801045">[1m[0m[1m[37m[40ml[0m[37m[40m</system_output>
+  <system_output timestamp="386.831351">[1m[0m[1m[37m[40m_[0m[37m[40m</system_output>
+  <system_output timestamp="386.86191">[1m[0m[1m[37m[40mo[0m[37m[40m</system_output>
+  <system_output timestamp="386.89196">[1m[0m[1m[37m[40mut[0m[37m[40m</system_output>
+  <system_output timestamp="386.922471">[1m[0m[1m[37m[40mp[0m[37m[40m</system_output>
+  <system_output timestamp="386.952828">[1m[0m[1m[37m[40mut[0m[37m[40m</system_output>
+  <system_output timestamp="386.982895">[C</system_output>
+  <system_output timestamp="387.013279">[1m[0m[1m[37m[40mse[0m[37m[40m</system_output>
+  <system_output timestamp="387.043487">[1m[0m[1m[37m[40mr[0m[37m[40m</system_output>
+  <system_output timestamp="387.073925">[1m[0m[1m[37m[40mia[0m[37m[40m</system_output>
+  <system_output timestamp="387.104222">[1m[0m[1m[37m[40ml[0m[37m[40m</system_output>
+  <system_output timestamp="387.134517">[C[1m[0m[1m[37m[40mc[0m[37m[40m</system_output>
+  <system_output timestamp="387.164893">[1m[0m[1m[37m[40mo[0m[37m[40m</system_output>
+  <system_output timestamp="387.195104">[1m[0m[1m[37m[40mns[0m[37m[40m</system_output>
+  <system_output timestamp="387.225589">[1m[0m[1m[37m[40mo[0m[37m[40m</system_output>
+  <system_output timestamp="387.255738">[1m[0m[1m[37m[40mle[0m[37m[40m</system_output>
+  <system_output timestamp="387.286508">
+</system_output>
+  <system_output timestamp="387.287109">[1m[0m[1m[37m[40mgrub&gt; [0m[37m[40m</system_output>
+  <system_output timestamp="389.326863">[1m[0m[1m[37m[40mli[0m[37m[40m</system_output>
+  <system_output timestamp="389.35695">[1m[0m[1m[37m[40mnu[0m[37m[40m</system_output>
+  <system_output timestamp="389.387186">[1m[0m[1m[37m[40mx[0m[37m[40m</system_output>
+  <system_output timestamp="389.417355">[C</system_output>
+  <system_output timestamp="389.447565">[1m[0m[1m[37m[40m([0m[37m[40m</system_output>
+  <system_output timestamp="389.477927">[1m[0m[1m[37m[40mhd[0m[37m[40m</system_output>
+  <system_output timestamp="389.508147">[1m[0m[1m[37m[40m9[0m[37m[40m</system_output>
+  <system_output timestamp="389.538423">[1m[0m[1m[37m[40m6[0m[37m[40m</system_output>
+  <system_output timestamp="389.568746">[1m[0m[1m[37m[40m)[0m[37m[40m</system_output>
+  <system_output timestamp="389.588862">[1m[0m[1m[37m[40m/b[0m[37m[40m</system_output>
+  <system_output timestamp="389.619149">[1m[0m[1m[37m[40mo[0m[37m[40m</system_output>
+  <system_output timestamp="389.649487">[1m[0m[1m[37m[40mot[0m[37m[40m</system_output>
+  <system_output timestamp="389.679674">[1m[0m[1m[37m[40m/[0m[37m[40m</system_output>
+  <system_output timestamp="389.709986">[1m[0m[1m[37m[40mvm[0m[37m[40m</system_output>
+  <system_output timestamp="389.740243">[1m[0m[1m[37m[40ml[0m[37m[40m</system_output>
+  <system_output timestamp="389.770584">[1m[0m[1m[37m[40min[0m[37m[40m</system_output>
+  <system_output timestamp="389.800794">[1m[0m[1m[37m[40mu[0m[37m[40m</system_output>
+  <system_output timestamp="389.831031">[1m[0m[1m[37m[40mz [0m[37m[40m</system_output>
+  <system_output timestamp="389.861357">[1m[0m[1m[37m[40mc[0m[37m[40m</system_output>
+  <system_output timestamp="389.891555">[1m[0m[1m[37m[40mon[0m[37m[40m</system_output>
+  <system_output timestamp="389.921825">[1m[0m[1m[37m[40ms[0m[37m[40m</system_output>
+  <system_output timestamp="389.952142">[1m[0m[1m[37m[40mol[0m[37m[40m</system_output>
+  <system_output timestamp="389.982411">[1m[0m[1m[37m[40me[0m[37m[40m</system_output>
+  <system_output timestamp="390.012754">[1m[0m[1m[37m[40m=t[0m[37m[40m</system_output>
+  <system_output timestamp="390.042887">[1m[0m[1m[37m[40mt[0m[37m[40m</system_output>
+  <system_output timestamp="390.073298">[1m[0m[1m[37m[40my[0m[37m[40m</system_output>
+  <system_output timestamp="390.103379">[1m[0m[1m[37m[40mS[0m[37m[40m</system_output>
+  <system_output timestamp="390.133646">[1m[0m[1m[37m[40m0,[0m[37m[40m</system_output>
+  <system_output timestamp="390.163904">[1m[0m[1m[37m[40m1[0m[37m[40m</system_output>
+  <system_output timestamp="390.194239">[1m[0m[1m[37m[40m15[0m[37m[40m</system_output>
+  <system_output timestamp="390.224572">[1m[0m[1m[37m[40m2[0m[37m[40m</system_output>
+  <system_output timestamp="390.254719">[1m[0m[1m[37m[40m00[0m[37m[40m</system_output>
+  <system_output timestamp="390.284895">[C</system_output>
+  <system_output timestamp="390.315209">[1m[0m[1m[37m[40mco[0m[37m[40m</system_output>
+  <system_output timestamp="390.345605">[1m[0m[1m[37m[40mn[0m[37m[40m</system_output>
+  <system_output timestamp="390.375726">[1m[0m[1m[37m[40mso[0m[37m[40m</system_output>
+  <system_output timestamp="390.406105">[1m[0m[1m[37m[40ml[0m[37m[40m</system_output>
+  <system_output timestamp="390.436392">[1m[0m[1m[37m[40me=[0m[37m[40m</system_output>
+  <system_output timestamp="390.466573">[1m[0m[1m[37m[40mt[0m[37m[40m</system_output>
+  <system_output timestamp="390.496845">[1m[0m[1m[37m[40mty[0m[37m[40m</system_output>
+  <system_output timestamp="390.52722">[1m[0m[1m[37m[40m0[0m[37m[40m</system_output>
+  <system_output timestamp="390.557492">[C[1m[0m[1m[37m[40mb[0m[37m[40m</system_output>
+  <system_output timestamp="390.587538">[1m[0m[1m[37m[40mo[0m[37m[40m</system_output>
+  <system_output timestamp="390.617769">[1m[0m[1m[37m[40mot[0m[37m[40m</system_output>
+  <system_output timestamp="390.648018">[1m[0m[1m[37m[40m=[0m[37m[40m</system_output>
+  <system_output timestamp="390.678303">[1m[0m[1m[37m[40mli[0m[37m[40m</system_output>
+  <system_output timestamp="390.708579">[1m[0m[1m[37m[40mv[0m[37m[40m</system_output>
+  <system_output timestamp="390.72878">[1m[0m[1m[37m[40me [0m[37m[40m</system_output>
+  <system_output timestamp="390.759079">[1m[0m[1m[37m[40mF[0m[37m[40m</system_output>
+  <system_output timestamp="390.819517">[1m[0m[1m[37m[40mA[0m[37m[40m</system_output>
+  <system_output timestamp="390.849844">[1m[0m[1m[37m[40mI[0m[37m[40m</system_output>
+  <system_output timestamp="390.880618">[1m[0m[1m[37m[40m-
+[0m[37m[40m</system_output>
+  <system_output timestamp="390.910356">[1m[0m[1m[37m[40mF[0m[37m[40m</system_output>
+  <system_output timestamp="390.940427">[1m[0m[1m[37m[40mL[0m[37m[40m</system_output>
+  <system_output timestamp="391.001001">[1m[0m[1m[37m[40mA[0m[37m[40m</system_output>
+  <system_output timestamp="391.031167">[1m[0m[1m[37m[40mG[0m[37m[40m</system_output>
+  <system_output timestamp="391.061429">[1m[0m[1m[37m[40mS[0m[37m[40m</system_output>
+  <system_output timestamp="391.091689">[1m[0m[1m[37m[40m=[0m[37m[40m</system_output>
+  <system_output timestamp="391.121934">[1m[0m[1m[37m[40m"[0m[37m[40m</system_output>
+  <system_output timestamp="391.152267">[1m[0m[1m[37m[40mv[0m[37m[40m</system_output>
+  <system_output timestamp="391.182375">[1m[0m[1m[37m[40me[0m[37m[40m</system_output>
+  <system_output timestamp="391.212743">[1m[0m[1m[37m[40mrb[0m[37m[40m</system_output>
+  <system_output timestamp="391.242934">[1m[0m[1m[37m[40mo[0m[37m[40m</system_output>
+  <system_output timestamp="391.273089">[1m[0m[1m[37m[40mse[0m[37m[40m</system_output>
+  <system_output timestamp="391.303339">[1m[0m[1m[37m[40m,[0m[37m[40m</system_output>
+  <system_output timestamp="391.333795">[1m[0m[1m[37m[40mcr[0m[37m[40m</system_output>
+  <system_output timestamp="391.364089">[1m[0m[1m[37m[40me[0m[37m[40m</system_output>
+  <system_output timestamp="391.394377">[1m[0m[1m[37m[40mat[0m[37m[40m</system_output>
+  <system_output timestamp="391.424541">[1m[0m[1m[37m[40me[0m[37m[40m</system_output>
+  <system_output timestamp="391.454785">[1m[0m[1m[37m[40mvt[0m[37m[40m</system_output>
+  <system_output timestamp="391.485225">[1m[0m[1m[37m[40m"[0m[37m[40m</system_output>
+  <system_output timestamp="399.34762">[C[1m[0m[1m[37m[40mF[0m[37m[40m</system_output>
+  <system_output timestamp="399.40826">[1m[0m[1m[37m[40mA[0m[37m[40m</system_output>
+  <system_output timestamp="399.438412">[1m[0m[1m[37m[40mI[0m[37m[40m</system_output>
+  <system_output timestamp="399.468846">[1m[0m[1m[37m[40m_[0m[37m[40m</system_output>
+  <system_output timestamp="399.529313">[1m[0m[1m[37m[40mA[0m[37m[40m</system_output>
+  <system_output timestamp="399.559495">[1m[0m[1m[37m[40mC[0m[37m[40m</system_output>
+  <system_output timestamp="399.579588">[1m[0m[1m[37m[40mT[0m[37m[40m</system_output>
+  <system_output timestamp="399.640149">[1m[0m[1m[37m[40mI[0m[37m[40m</system_output>
+  <system_output timestamp="399.670444">[1m[0m[1m[37m[40mO[0m[37m[40m</system_output>
+  <system_output timestamp="399.700647">[1m[0m[1m[37m[40mN[0m[37m[40m</system_output>
+  <system_output timestamp="399.7309">[1m[0m[1m[37m[40m=[0m[37m[40m</system_output>
+  <system_output timestamp="399.761254">[1m[0m[1m[37m[40mi[0m[37m[40m</system_output>
+  <system_output timestamp="399.791507">[1m[0m[1m[37m[40mns[0m[37m[40m</system_output>
+  <system_output timestamp="399.821784">[1m[0m[1m[37m[40mt[0m[37m[40m</system_output>
+  <system_output timestamp="399.852038">[1m[0m[1m[37m[40mal[0m[37m[40m</system_output>
+  <system_output timestamp="399.882327">[1m[0m[1m[37m[40ml[0m[37m[40m</system_output>
+  <system_output timestamp="399.912568">[C</system_output>
+  <system_output timestamp="399.942738">[1m[0m[1m[37m[40mF[0m[37m[40m</system_output>
+  <system_output timestamp="399.973102">[1m[0m[1m[37m[40mA[0m[37m[40m</system_output>
+  <system_output timestamp="400.003141">[1m[0m[1m[37m[40mI[0m[37m[40m</system_output>
+  <system_output timestamp="400.063646">[1m[0m[1m[37m[40m_[0m[37m[40m</system_output>
+  <system_output timestamp="400.093989">[1m[0m[1m[37m[40mC[0m[37m[40m</system_output>
+  <system_output timestamp="400.124171">[1m[0m[1m[37m[40mO[0m[37m[40m</system_output>
+  <system_output timestamp="400.184966">[1m[0m[1m[37m[40mN[0m[37m[40m</system_output>
+  <system_output timestamp="400.214996">[1m[0m[1m[37m[40mF[0m[37m[40m</system_output>
+  <system_output timestamp="400.245419">[1m[0m[1m[37m[40mI[0m[37m[40m</system_output>
+  <system_output timestamp="400.306">[1m[0m[1m[37m[40mG[0m[37m[40m</system_output>
+  <system_output timestamp="400.336001">[1m[0m[1m[37m[40m_[0m[37m[40m</system_output>
+  <system_output timestamp="400.366317">[1m[0m[1m[37m[40mS[0m[37m[40m</system_output>
+  <system_output timestamp="400.426792">[1m[0m[1m[37m[40mR[0m[37m[40m</system_output>
+  <system_output timestamp="400.457082">[1m[0m[1m[37m[40mC[0m[37m[40m</system_output>
+  <system_output timestamp="400.487344">[1m[0m[1m[37m[40m=[0m[37m[40m</system_output>
+  <system_output timestamp="400.517603">[1m[0m[1m[37m[40mfi[0m[37m[40m</system_output>
+  <system_output timestamp="400.547774">[1m[0m[1m[37m[40ml[0m[37m[40m</system_output>
+  <system_output timestamp="400.577982">[1m[0m[1m[37m[40me[0m[37m[40m</system_output>
+  <system_output timestamp="400.608229">[1m[0m[1m[37m[40m:[0m[37m[40m</system_output>
+  <system_output timestamp="400.638439">[1m[0m[1m[37m[40m//[0m[37m[40m</system_output>
+  <system_output timestamp="400.668732">[1m[0m[1m[37m[40m/[0m[37m[40m</system_output>
+  <system_output timestamp="400.698967">[1m[0m[1m[37m[40mva[0m[37m[40m</system_output>
+  <system_output timestamp="400.729302">[1m[0m[1m[37m[40mr[0m[37m[40m</system_output>
+  <system_output timestamp="400.759439">[1m[0m[1m[37m[40m/l[0m[37m[40m</system_output>
+  <system_output timestamp="400.779586">[1m[0m[1m[37m[40mi[0m[37m[40m</system_output>
+  <system_output timestamp="400.809873">[1m[0m[1m[37m[40mb/[0m[37m[40m</system_output>
+  <system_output timestamp="400.840127">[1m[0m[1m[37m[40mf[0m[37m[40m</system_output>
+  <system_output timestamp="400.870403">[1m[0m[1m[37m[40mai[0m[37m[40m</system_output>
+  <system_output timestamp="400.900625">[1m[0m[1m[37m[40m/[0m[37m[40m</system_output>
+  <system_output timestamp="400.931249">[1m[0m[1m[37m[40mc
+o[0m[37m[40m</system_output>
+  <system_output timestamp="400.961257">[1m[0m[1m[37m[40mn[0m[37m[40m</system_output>
+  <system_output timestamp="400.99139">[1m[0m[1m[37m[40mfi[0m[37m[40m</system_output>
+  <system_output timestamp="401.021641">[1m[0m[1m[37m[40mg[0m[37m[40m</system_output>
+  <system_output timestamp="401.051935">[C[1m[0m[1m[37m[40mr[0m[37m[40m</system_output>
+  <system_output timestamp="401.082259">[1m[0m[1m[37m[40md[0m[37m[40m</system_output>
+  <system_output timestamp="401.112505">[1m[0m[1m[37m[40m.l[0m[37m[40m</system_output>
+  <system_output timestamp="401.142776">[1m[0m[1m[37m[40mi[0m[37m[40m</system_output>
+  <system_output timestamp="401.173255">[1m[0m[1m[37m[40mve[0m[37m[40m</system_output>
+  <system_output timestamp="401.203349">[1m[0m[1m[37m[40m.[0m[37m[40m</system_output>
+  <system_output timestamp="401.233625">[1m[0m[1m[37m[40mim[0m[37m[40m</system_output>
+  <system_output timestamp="401.264046">[1m[0m[1m[37m[40ma[0m[37m[40m</system_output>
+  <system_output timestamp="401.294181">[1m[0m[1m[37m[40mge[0m[37m[40m</system_output>
+  <system_output timestamp="401.3245">[C</system_output>
+  <system_output timestamp="401.354702">[1m[0m[1m[37m[40mro[0m[37m[40m</system_output>
+  <system_output timestamp="401.385234">[1m[0m[1m[37m[40mo[0m[37m[40m</system_output>
+  <system_output timestamp="401.415255">[1m[0m[1m[37m[40mt=[0m[37m[40m</system_output>
+  <system_output timestamp="401.44545">[1m[0m[1m[37m[40ml[0m[37m[40m</system_output>
+  <system_output timestamp="401.475702">[1m[0m[1m[37m[40miv[0m[37m[40m</system_output>
+  <system_output timestamp="401.505927">[1m[0m[1m[37m[40me[0m[37m[40m</system_output>
+  <system_output timestamp="401.536156">[1m[0m[1m[37m[40m:[0m[37m[40m</system_output>
+  <system_output timestamp="401.566375">[1m[0m[1m[37m[40mC[0m[37m[40m</system_output>
+  <system_output timestamp="401.62697">[1m[0m[1m[37m[40mD[0m[37m[40m</system_output>
+  <system_output timestamp="401.657288">[1m[0m[1m[37m[40mL[0m[37m[40m</system_output>
+  <system_output timestamp="401.687557">[1m[0m[1m[37m[40mA[0m[37m[40m</system_output>
+  <system_output timestamp="401.748125">[1m[0m[1m[37m[40mB[0m[37m[40m</system_output>
+  <system_output timestamp="401.778192">[1m[0m[1m[37m[40mE[0m[37m[40m</system_output>
+  <system_output timestamp="401.808482">[1m[0m[1m[37m[40mL[0m[37m[40m</system_output>
+  <system_output timestamp="401.838652">[1m[0m[1m[37m[40m=[0m[37m[40m</system_output>
+  <system_output timestamp="401.869128">[1m[0m[1m[37m[40mF[0m[37m[40m</system_output>
+  <system_output timestamp="401.929346">[1m[0m[1m[37m[40mA[0m[37m[40m</system_output>
+  <system_output timestamp="401.959604">[1m[0m[1m[37m[40mI[0m[37m[40m</system_output>
+  <system_output timestamp="401.979709">[1m[0m[1m[37m[40m_[0m[37m[40m</system_output>
+  <system_output timestamp="402.040278">[1m[0m[1m[37m[40mC[0m[37m[40m</system_output>
+  <system_output timestamp="402.07043">[1m[0m[1m[37m[40mD[0m[37m[40m</system_output>
+  <system_output timestamp="402.100619">[C</system_output>
+  <system_output timestamp="402.130922">[1m[0m[1m[37m[40mho[0m[37m[40m</system_output>
+  <system_output timestamp="402.161219">[1m[0m[1m[37m[40ms[0m[37m[40m</system_output>
+  <system_output timestamp="402.191409">[1m[0m[1m[37m[40mtn[0m[37m[40m</system_output>
+  <system_output timestamp="402.221752">[1m[0m[1m[37m[40ma[0m[37m[40m</system_output>
+  <system_output timestamp="402.251985">[1m[0m[1m[37m[40mme[0m[37m[40m</system_output>
+  <system_output timestamp="402.282274">[1m[0m[1m[37m[40m=[0m[37m[40m</system_output>
+  <system_output timestamp="402.312657">[1m[0m[1m[37m[40mfa[0m[37m[40m</system_output>
+  <system_output timestamp="402.342821">[1m[0m[1m[37m[40mi[0m[37m[40m</system_output>
+  <system_output timestamp="402.373315">[1m[0m[1m[37m[40mse[0m[37m[40m</system_output>
+  <system_output timestamp="402.403329">[1m[0m[1m[37m[40mr[0m[37m[40m</system_output>
+  <system_output timestamp="402.433715">[1m[0m[1m[37m[40mve[0m[37m[40m</system_output>
+  <system_output timestamp="402.463875">[1m[0m[1m[37m[40mr[0m[37m[40m</system_output>
+  <system_output timestamp="402.494258">[C[1m[0m[1m[37m[40mq[0m[37m[40m</system_output>
+  <system_output timestamp="402.524576">[1m[0m[1m[37m[40mu[0m[37m[40m</system_output>
+  <system_output timestamp="402.554687">[1m[0m[1m[37m[40mie[0m[37m[40m</system_output>
+  <system_output timestamp="402.585107">[1m[0m[1m[37m[40mt[0m[37m[40m</system_output>
+  <system_output timestamp="402.615426">
+</system_output>
+  <system_output timestamp="403.572658">[1m[0m[1m[37m[40mgrub&gt; [0m[37m[40m</system_output>
+  <system_output timestamp="405.641942">[1m[0m[1m[37m[40min[0m[37m[40m</system_output>
+  <system_output timestamp="405.672117">[1m[0m[1m[37m[40mit[0m[37m[40m</system_output>
+  <system_output timestamp="405.702475">[1m[0m[1m[37m[40mr[0m[37m[40m</system_output>
+  <system_output timestamp="405.732756">[1m[0m[1m[37m[40md [0m[37m[40m</system_output>
+  <system_output timestamp="405.76302">[1m[0m[1m[37m[40m([0m[37m[40m</system_output>
+  <system_output timestamp="405.793347">[1m[0m[1m[37m[40mh[0m[37m[40m</system_output>
+  <system_output timestamp="405.823542">[1m[0m[1m[37m[40md[0m[37m[40m</system_output>
+  <system_output timestamp="405.853755">[1m[0m[1m[37m[40m96[0m[37m[40m</system_output>
+  <system_output timestamp="405.884004">[1m[0m[1m[37m[40m)[0m[37m[40m</system_output>
+  <system_output timestamp="405.914224">[1m[0m[1m[37m[40m/[0m[37m[40m</system_output>
+  <system_output timestamp="405.944524">[1m[0m[1m[37m[40mb[0m[37m[40m</system_output>
+  <system_output timestamp="405.974699">[1m[0m[1m[37m[40moo[0m[37m[40m</system_output>
+  <system_output timestamp="406.004984">[1m[0m[1m[37m[40mt[0m[37m[40m</system_output>
+  <system_output timestamp="406.035249">[1m[0m[1m[37m[40m/i[0m[37m[40m</system_output>
+  <system_output timestamp="406.065582">[1m[0m[1m[37m[40mn[0m[37m[40m</system_output>
+  <system_output timestamp="406.095769">[1m[0m[1m[37m[40mit[0m[37m[40m</system_output>
+  <system_output timestamp="406.126121">[1m[0m[1m[37m[40mr[0m[37m[40m</system_output>
+  <system_output timestamp="406.156383">[1m[0m[1m[37m[40md.[0m[37m[40m</system_output>
+  <system_output timestamp="406.186553">[1m[0m[1m[37m[40mi[0m[37m[40m</system_output>
+  <system_output timestamp="406.216813">[1m[0m[1m[37m[40mmg[0m[37m[40m</system_output>
+  <system_output timestamp="406.247308">
+</system_output>
+  <system_output timestamp="413.985498">[1m[0m[1m[37m[40mgrub&gt; [0m[37m[40m</system_output>
+  <system_output timestamp="416.053395">[1m[0m[1m[37m[40mbo[0m[37m[40m</system_output>
+  <system_output timestamp="416.08365">[1m[0m[1m[37m[40mot[0m[37m[40m</system_output>
+  <system_output timestamp="416.114113">
+</system_output>
+  <system_output timestamp="416.952022">                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                    </system_output>
+  <system_output timestamp="416.952194">                                                            
+                                                                                
+                                                                                [49m[39m[K[37m[40m[C  
+[8A[39m[49m[37m[40m</system_output>
+  <system_output timestamp="416.982079">[1m[0m[1m[37m[40m                                                                                
+                                                                                
+                                                                      </system_output>
+  <system_output timestamp="416.98241">          
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                [49m[0m[K[1m[37m[40m[C  
+[8A[0m[37m[40m</system_output>
+  <system_output timestamp="419.744993">chown: invalid group: '_rpc:root'
+[39m[49m[37m[40m</system_output>
+  <system_output timestamp="419.775293">Starting systemd-udevd version 252.26-1~deb12u2
+[39m[49m[37m[40m</system_output>
+  <system_output timestamp="421.612086">losetup: /run/initramfs/squashfs/LiveOS/ext3fs.img: Warning: file does not fit i
+nto a 512-byte sector; the end of the file will be ignored.
+[39m[49m[37m[40m</system_output>
+  <system_output timestamp="423.144697">INIT: version 3.06 booting
+[39m[49m[37m[40m</system_output>
+  <system_output timestamp="423.174924">INIT: No inittab.d directory found
+[39m[49m[37m[40m</system_output>
+  <system_output timestamp="423.316093">
+
+[H[49m[22B[1;23r[39m[23;1H
+
+
+</system_output>
+  <system_output timestamp="423.316379">[37m[40m                                                                                [49m[39m[K[37m[40m[C  
+[A[39m[49m[37m[40m                                                                                
+[A                          </system_output>
+  <system_output timestamp="423.316538">                                                      
+[3AKernel currently running: 
+Linux 6.1.0-22-686-pae i686 GNU/Linux
+Kernel parameters: BOOT_IMAGE=(hd96)/boot/vmlinuz console=ttyS0,115200 console=t
+ty0 boot=live FAI-FLAGS=verbose,createvt FAI_ACTION=install FAI_CONFIG_SRC=file:
+///var/lib/fai/config rd.live.image root=live:CDLABEL=FAI_CD hostname=faiserver
+quiet
+[A[A[39m[49m[37m[40m</system_output>
+  <system_output timestamp="423.346439">
+
+[49m[39m
+[37m[40m                                                                                [49m[39m[K[37m[40m[C  
+FAI_FLAGS:
+[A[A[39m[49m[37m[40m</system_output>
+  <system_output timestamp="423.648718">
+
+[49m[39m
+[37m[40m                                                                                [49m[39m[K[37m[40m[C  
+Starting hotplug events dispatcher: systemd-udevd.
+[A[A[39m[49m[37m[40m</system_output>
+  <system_output timestamp="423.679256">
+
+[49m[39m
+[37m[40m                                                                                [49m[39m[K[37m[40m[C  
+Synthesizing the initial hotplug events (subsystems)...done.
+[A[A[39m[49m[37m[40m</system_output>
+  <system_output timestamp="423.739901">
+
+[49m[39m
+</system_output>
+  <system_output timestamp="423.740743">[37m[40m                                                                                [49m[39m[K[37m[40m[C  
+Synthesizing the initial hotplug events (devices)...done.
+[A[A[39m[49m[37m[40m</system_output>
+  <system_output timestamp="424.113496">[H[49m[39mMMMMMMM[37m[40m                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                [H[1m[0m[1m[37m[40m                       GNU GRUB  version 2.06-13+deb12u1                        
+                                                    </system_output>
+  <system_output timestamp="424.113877">                            
+   Minimal BASH-like line editing is supported. For the first word, TAB         
+   lists possible command completions. Anywhere else TAB lists possible         
+   device or file completions. ESC at any time exits.                           
+                                                                                
+                                                                                
+[14B[0m[37m[40m</system_output>
+  <user_input timestamp="442.364461">
+</user_input>
+  <user_input timestamp="454.757024">
+</user_input>
+  <system_output timestamp="459.377922">[39m[49m[37m[40m[H                                                                                
+                                                                                </system_output>
+  <system_output timestamp="459.378624">
+                                                                           </system_output>
+  <system_output timestamp="459.38821">     
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+</system_output>
+  <system_output timestamp="459.388508">                                                                                
+                                                                                
+                                                                                
+</system_output>
+  <system_output timestamp="459.388834">                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                    </system_output>
+  <system_output timestamp="459.388903">                                                            
+                                                                                
+                                                                                
+                                                                                
+                                                                                [49m[39m[K[37m[40m[C  [H[12;34H[1m[0m[1m[34m[40mVGA Blank mode[H[0m[37m[40m</system_output>
+  <system_output timestamp="459.408298">[39m[49m[37m[40m                                                                                
+                                                                                
+                                                                        </system_output>
+  <system_output timestamp="459.408676">        
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                    </system_output>
+  <system_output timestamp="459.408741">                                                            
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                        </system_output>
+  <system_output timestamp="459.408806">                                        
+                                                                                
+                                                                                
+                                                                                
+                                                                                [49m[39m[K[37m[40m[C  [H</system_output>
+  <system_output timestamp="459.448323">Booting from DVD/CD...
+[39m[49m[37m[40m</system_output>
+  <system_output timestamp="459.619814">[H[1m[0m[1m[37m[40m                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                             </system_output>
+  <system_output timestamp="459.620054">   
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+            
+[11A[0m[37m[40m</system_output>
+  <system_output timestamp="459.650156">[1;24H[1m[0m[1m[37m[40mGNU GRUB  version 2.06-13+deb12u1
+
+                                                                               
+   +------------------------------------------------------+[19C 
+   |    FAI-CD[8C(c) Thomas Lange, lange@debian.org  |[19C 
+   |    FAI 6.0.3+deb12u1 build 2024 Jul 21 - 23:39[6C|[20C 
+   +------------------------------------------------------+[19C 
+  [0m[30m[43m*Boot OS from first partition on first disk                               [1m[0m[1m[3</system_output>
+  <system_output timestamp="459.650407">7m[40m   
+</system_output>
+  <system_output timestamp="459.650791">  [76C 
+  [76C 
+  [76C 
+  [76C 
+  [10C                                                                    
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+      Use the   and   keys to select which entry is highlighted.                
+      Press enter to boot the selected OS, `e' to edit the commands             
+      before booting or `c' for a command-line.                              </system_output>
+  <system_output timestamp="459.65098">   
+                                                                                
+                                                                                [49m[0m[K[1m[37m[40m[C  
+[21A[0m[37m[40m</system_output>
+  <system_output timestamp="459.680353">[8;77H[30m[43m  [9;4H[1m[0m[1m[37m[40mnekohost -- Rescue system -- safe as kittens, no install performed.
+   
+faiserver -- Server for creating this CD.
+   
+qemuhost -- QEMU server, designed for running the images on this CD in VMs 
+   
+wikiserver -- Trac/Apache wiki server.
+   
+postserver -- mail server.
+   
+giftserver -- GIFT image processor system.
+   
+lampserver -- A LAMP (Linux, Apache, MySQL, PHP) stack.
+   
+kalliserver -- Kallithea, a git hosting service. For software distribution   [22;4HThe highlighted entry will be executed automatically in 20s.
+[20A[0m[37m[40m</system_output>
+  <system_output timestamp="460.698722">[22;60H[1m[0m[1m[37m[40m19
+[20A[0m[37m[40m</system_output>
+  <system_output timestamp="461.667186">[39m[49m[H[H[2JQEMU 9.0.2 monitor - type 'help' for more information
+(qemu) </system_output>
+  <system_output timestamp="463.684999">q[Kqu[Kqui[Kquit[K
+</system_output>
+  <system_output timestamp="463.806238">[H[H[2J[1m[37m[40m                       GNU GRUB  version 2.06-13+deb12u1                        
+                                                                                
+                                                                    </system_output>
+  <system_output timestamp="463.806482">            
+   +------------------------------------------------------+                     
+   |    FAI-CD        (c) Thomas Lange, lange@debian.org  |                     
+   |    FAI 6.0.3+deb12u1 build 2024 Jul 21 - 23:39      |                      
+   +------------------------------------------------------+                     
+  [0m[30m[43m*Boot OS from first partition on first disk                                 [1m[37m[40m     nekohost -- Rescue system -- safe as kittens, no install performed.             faiserver -- Server for creating this CD.                                   
+
+   qemuhost -- QEMU server, designed for running the images on this CD in VMs      wikiserver -- Trac/Apache wiki server.                                       
+   postserver -- mail server.                                                      giftserver -- GIFT image processor system.                                      lampserver -- A LAMP (Linux, Apache, MySQL, PHP) stack.                     
+
+   kalliserver -- Kallithea, a git hosting service. For software distribution                                                                                   
+                                                                                      Use the   and   keys to select which entry is highlighted.                      Press enter to boot the selected OS, `e' to edit the commands            
+
+</system_output>
+  <system_output timestamp="463.806672">      before booting or `c' for a command-line.                                    The highlighted entry will be executed automatically in 17s.                 
+                                                                                [2;1H[0m[21B[K</system_output>
+  <system_output timestamp="463.948272">
+[screen is terminating]
+</system_output>
+  <system_output timestamp="463.957467">[?2004hsh&gt;</system_output>
+  <user_input timestamp="468.165104">#</user_input>
+  <system_output timestamp="468.174737">#</system_output>
+  <user_input timestamp="468.555694">e</user_input>
+  <system_output timestamp="468.558217">e</system_output>
+  <user_input timestamp="468.654063">n</user_input>
+  <system_output timestamp="468.659141">n</system_output>
+  <user_input timestamp="468.890296">d</user_input>
+  <system_output timestamp="468.891739">d</system_output>
+  <user_input timestamp="469.561233">
+</user_input>
+  <system_output timestamp="469.569995">
+</system_output>
+  <system_output timestamp="469.570726">[?25l#SESSION 'local' DIED.
+[196;1H[?12l[?25h[H[196;1H#SESSION 'gts' ACTIVATED.
+[H[196;1H[1;196r[196;1H
+[H[195B
+Goodbye from TinTin++
+
+</system_output>
+  <system_output timestamp="469.574205">[?2004l]2;screen]0;]0;screen
+</system_output>
+  <system_output timestamp="469.575094">[screen is terminating]
+</system_output>
+  <system_output timestamp="469.584672">[?2004hdemo@stephost:/disk1/isos$ </system_output>
+  <system_output timestamp="23318.874384">[?2004l[?1l&gt;]0;]2;screen[23;2t[196;1H
+[?1049l[23;0;0t</system_output>
+  <system_output timestamp="23318.905271">[remote detached from 120968.pts-29.stephost]
+</system_output>
+  <system_output timestamp="23318.907234">[?2004hdemo@stephost:~$ </system_output>
+</recording>

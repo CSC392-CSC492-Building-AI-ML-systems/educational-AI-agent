@@ -1,0 +1,86 @@
+0
+User sshes into 172.16.0.17
+0
+User navigates to /home/fai/config/class and lists the contents in the folder
+0
+User executes grep HWPHYS *
+0
+User begins editing file 50-host-classes with emacs and removes HWPHYS from the echo of when $HOSTNAME is qemuhost.
+0
+User checks the change with git diff
+0
+User git commits the changes with the -am flag the message: "remove redundant HWPHYS class declaration; detected nowadays."
+0
+User navigates to /home/fai/config/scripts/FAIBASE and cat 40-misc.sh
+0
+User edits 40-misc.sh with emacs. Comments out the if check for etc/default/rcS commenting that it does not exist anymore.
+0
+User git commits the changes with the -am flag the message: "remove reference to no longer existing /etc/default/rcS."
+0
+User navigates to /home/fai/config/scripts/SERVERDHCP and lists the contents in the folder
+0
+User cat 60-dhcpd
+0
+User lists out the files in ../../files/etc/dhcp/ and ../../files/etc/dhcp/dhcpd.conf/
+0
+User cat ../../files/etc/dhcp/dhcpd.conf/QEMUSRVR
+0
+User outputs ../../files/etc/dhcp/dhcpd.conf/QEMUSRVR into a pipe to less via cat.
+0
+User git rm ../../files/etc/dhcp/dhcpd.conf/QEMUSRVR
+0
+User lists out the files in ../../files/etc/dhcp/dhcpd.conf/ and /home/fai/config/scripts/SERVERDHCP
+0
+User git moves SERVERDHCP/60-dhcpd to SERVERWIFIDOG/
+0
+User git commits the changes the message: "only try to copy a dhcp.conf into place for wifidog, for now."
+0
+User navigates to /home/fai/config/scripts/SERVERDNS and lists the contents in the folder
+0
+User cat 20-copy_bind_configurations.sh
+0
+User navigates to /home/fai/config/scripts and executes grep -R die *
+0
+User executes head -n 1 FAIBASE/40-misc.sh
+0
+User lists the files in the current folder before navigating to /home/fai/config/scripts/SERVERDNS
+0
+User edits 20-copy_bind_configurations.sh to remove the function keyword at function die ().
+0
+User checks the changes made with git diff
+0
+User git adds the changes before commiting with the message: "remove function keyword, not posix syntax compatible."
+0
+User navigates to /home/fai/config/scripts/SERVERWWWMRTG and lists the contents in the folder
+0
+User views 10-copy_mrtg_cfg.sh with less
+0
+User edits 10-copy_mrtg_cfg.sh and changes the two su commands to be executed as user mrtg instead of nfrg
+0
+User executes git diff and is hit with it's help screen
+0
+User executes git diff with the a sudo this time to show changes
+0
+User git adds the changes before commiting with the message: "fix using the wrong username when creating directories in /etc/mrtg."
+0
+User edits 40-bastionize.sh using emacs commenting out the line "$ROOTCMD a2dismod authz_default" explaining with a comment above it that it no longer exists.
+0
+User git adds the changes before commiting with the message: "comment out removing module that does not exist."
+0
+User navigates to /home/fai
+1
+User runs make-fai-cd.sh combining both stderr and stdout into a single stream being piped to tee make-fai-cd.out to log the outputs.
+0
+FAI finished it's basic components and now begins to install additional packages for a functional FAI installation.
+0
+FAI successfully installs the large set of additional packages. It now begins to the creation of the FAI-CD/ISO image creation.
+-1
+Combines all elements into a final fai_cd.iso file. 
+0
+User exits ssh session
+0
+User removes all files of type /disk1/isos/fai_dvd-2024071*
+0
+User uses scp to transfer the created fai_cd.iso to /disk1/isos/fai_dvd-date`+%Y%m%d`.iso
+0
+User exits terminal session

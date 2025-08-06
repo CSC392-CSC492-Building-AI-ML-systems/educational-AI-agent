@@ -1,18 +1,44 @@
-# List of paths to the model 1 output plain text files (copy relative path and paste here)
-plain_text_list = ["models/Model 1/scripts/temp/1727009412_training.txt",
-                   "models/Model 1/scripts/temp/1727009556_training.txt",
-                   "models/Model 1/scripts/temp/1727009592_training.txt",
-                   "models/Model 1/scripts/temp/first_julia_rec_training.txt",
-                   "models/Model 1/scripts/temp/rene.annotated1_training.txt",
-                   "models/Model 1/scripts/temp/renee_rec2_training.txt"]
+import sys
+import os
 
-# List of paths to the model 1 input parsed xml files (copy relative path and paste here)
-parsed_xml_list = ["models/Model 1/scripts/temp/1727009412_parsed.xml",
-                   "models/Model 1/scripts/temp/1727009556_parsed.xml",
-                   "models/Model 1/scripts/temp/1727009592_parsed.xml",
-                   "models/Model 1/scripts/temp/first_julia_rec_parsed.xml",
-                   "models/Model 1/scripts/temp/rene.annotated1_parsed.xml",
-                   "models/Model 1/scripts/temp/renee_rec2_parsed.xml"]
+# I run it with: python models/model_3/scripts/parser2.py data/model_1/outputs data/model_1/inputs data/model_3/parsed
+if len(sys.argv) != 4:
+    print("Usage: python your_script_name.py <plain_text_input_folder> <parsed_xml_input_folder> <output_folder>")
+    sys.exit(1)
+
+current_path = os.path.dirname(os.path.abspath(__file__))
+current_path = os.path.dirname(os.path.dirname(os.path.dirname(current_path)))
+
+plain_text_input_folder = os.path.join(current_path, sys.argv[1])
+parsed_xml_input_folder = os.path.join(current_path, sys.argv[2])
+base_output_folder = os.path.join(current_path, sys.argv[3])
+
+def get_file_pairs(xml_folder, txt_folder):
+    if not os.path.isdir(xml_folder):
+        print(f"Error: XML folder not found: {xml_folder}")
+        sys.exit(1)
+    if not os.path.isdir(txt_folder):
+        print(f"Error: TXT folder not found: {txt_folder}")
+        sys.exit(1)
+
+    xml_files = sorted([f for f in os.listdir(xml_folder) if f.lower().endswith('.xml')])
+    xml_paths = []
+    txt_paths = []
+
+    for xml_file in xml_files:
+        base = os.path.splitext(xml_file)[0]
+        base = base.replace('_parsed', '')
+        xml_path = os.path.join(xml_folder, xml_file)
+        txt_path = os.path.join(txt_folder, base + '_training.txt')
+
+        if os.path.exists(txt_path):
+            xml_paths.append(xml_path)
+            txt_paths.append(txt_path)
+
+    return xml_paths, txt_paths
+
+parsed_xml_list, plain_text_list = get_file_pairs(parsed_xml_input_folder, plain_text_input_folder)
+
 
 # Note: Each path in plain_text_list at index i corresponds to the parsed xml 
 # file at index i in parsed_xml_list
@@ -69,7 +95,9 @@ def combine_xml_with_training(xml_path, training_path):
         i += 1
     
     # Write output file
-    output_path = xml_path.replace('.xml', '_combined.xml')
+    xml_filename = os.path.basename(xml_path)
+    output_filename = xml_filename.replace('.xml', '_combined.xml')
+    output_path = os.path.join(base_output_folder, output_filename)
     with open(output_path, 'w', encoding='utf-8') as f:
         f.write('\n'.join(modified_lines))
     
@@ -77,6 +105,7 @@ def combine_xml_with_training(xml_path, training_path):
 
 # Process each pair of files
 for xml_path, training_path in zip(parsed_xml_list, plain_text_list):
+
     try:
         combine_xml_with_training(xml_path, training_path)
     except Exception as e:

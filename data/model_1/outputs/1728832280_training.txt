@@ -1,0 +1,34 @@
+0
+User connects to remote server via SSH using the command 'ssh 172.16.0.17' and enters password
+1
+[GOAL_1] User is creating a customized FAI CD image with modified GRUB package configuration and transferring the final ISO.
+0
+User navigates to /home/fai/config/package_config/ and lists contents in directory
+0
+User inspects file GRUBEFI using 'less'
+0
+User edits file GRUBEFI using emacs removing the '-bin' for both grub-efi-amd64 and grub-efi-ia32 lines.
+0
+User inspects changes with 'git diff'
+0
+User opens up file GRUBEFI again but does no changes
+0
+User git adds and commits the changes with message: "install more than the grub binaries."
+0
+User navigates to /home/fai
+1
+User runs make-fai-cd.sh combining both stderr and stdout into a single stream being piped to tee make-fai-cd.out to log the outputs.
+0
+FAI finished it's basic components and now begins to install additional packages for a functional FAI installation.
+0
+FAI successfully installs the large set of additional packages. It now begins to the creation of the FAI-CD/ISO image creation.
+-1
+Combines all elements into a final fai_cd.iso file. 
+0
+User exits ssh session
+0
+User runs 'scp 172.16.0.17:/home/fai/fai_cd.iso /disk1/isos/fai_dvd-`date +%Y%m%d`.iso' to transfer the created fai_cd.iso to /disk1/isos/fai_dvd-date`+%Y%m%d`.iso
+-1
+[GOAL_END_1] User successfully customized GRUB package selection for FAI, built the FAI ISO image, and transferred it to the local system.
+0
+User exits asciinema session

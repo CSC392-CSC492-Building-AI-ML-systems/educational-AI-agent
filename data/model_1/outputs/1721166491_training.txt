@@ -1,0 +1,78 @@
+0
+User runs 'screen -dr' to reattach to a detached screen session. Previous session logs indicate the creation of a iso file but failed due to disk space.
+0
+User runs 'df' to check the disk space.
+1
+[GOAL_1] User attempts to remove unneeded packages and extra files to clear up disk space.
+0
+User runs 'deborphan' to check packages that no other package depends on
+0
+[Mistake] User attempts to run 'sudo apt remove deborphan' but cancels the operation manually. [Mistake Reason] Human error [Mistake Result] Would have resulted in the removal of package deborphan
+0
+User runs 'sudo apt remove `deborphan`' to remove the output of 'deborphan' (the orphan packages).
+0
+User runs 'sudo apt remove `deborphan`' to remove the the newly orphaned packages.
+0
+User runs 'sudo apt remove `deborphan`' to remove the the newly orphaned packages.
+0
+User runs 'sudo apt autoremove' from the recommendation of 'sudo apt remove `deborphan`'.
+0
+User inspects all installed packages via listing them 'dpkg -l' and showing it from 'less'.
+0
+User runs 'sudo apt remove gcc-9-base' to remove the package gcc-9-base.
+0
+User runs 'sudo apt remove gcc-10-base' to remove the package gcc-10-base.
+0
+User runs 'sudo apt autoremove' again to remove unnecessary packages.
+0
+User checks diskspace again via 'df'
+0
+User inspects all installed packages via listing them 'dpkg -l' and showing it from 'less'.
+0
+User inspects all installed packages again via listing them 'dpkg -l' and showing it from 'less'.
+0
+User runs 'sudo apt remove ntpdate' to remove the package ntpdate.
+0
+User checks the help page for 'ntdig'
+0
+User checks diskspace again via 'df'
+0
+User enters copy mode and scrolls up their terminal to earlier logs.
+0
+User checks contents in current folder via 'ls'
+0
+User navigates to /var/cache and checks disk usage via 'sudo du -sk *'.
+0
+User navigates to /var/cache/apt/archives and lists it's contents via 'ls'.
+0
+[Mistake] User attempts to cd partial/ but gets block by permission denied. [Mistake Reason] Needed elevated permissions [Mistake Result] Permission Denied
+0
+User lists item in partial/ via sudo ls to discover it's empty.
+0
+[Mistake] User navigates to /var/cache and attempts to remove file apt-cacher but receives a error. User does it again with sudo with success. [Mistake Reason] Required elevated permissions [Mistake Result] Permission Denied
+0
+User checks 'ls' and checks disk space via 'df'.\
+0
+User inspects all installed packages via listing them 'dpkg -l' and showing it from 'less'.
+0
+[Mistake] User returns to /var and after checking the contents via 'ls', inspects their sizes with 'du' with most files indicating permission issues. [Mistake Reason] Required elevated permissions [Mistake Result] Permission Denied
+0
+User uses sudo with the du to show the sizes
+0
+User navigates to /var/lib and checks the file sizes there via 'du'.
+0
+User navigates to /var/lib/clamav and removes all files in clamav-7963b03bd56db689a01f8f69ac998c31.tmp/clamav-68b3db7b0fb3dda2789a9bd53ba2cb40.tmp via rm -rf.
+0
+User navigates back to /var and checks the file sizes via 'du'.
+-1
+[GOAL_END_1] User finishes attempts to remove unneeded packages and extra files to clear up disk space.
+0
+User navigates to /home/fai and 1 runs make-fai-cd.sh combining both stderr and stdout into a single stream being piped to tee make-fai-cd.out to log the outputs.
+0
+FAI finished it's basic components and now begins to install additional packages for a functional FAI installation.
+0
+FAI successfully installs the large set of additional packages. It now begins to the creation of the FAI-CD/ISO image creation.
+-1
+[SUCCESS_FAILURE] It fails to create the final iso file due to disk space shortage.
+0
+User exists screen and session ends.

@@ -1,0 +1,1004 @@
+<?xml version="1.0" ?>
+<recording version="2" width="212" height="59" timestamp="1719524530">
+  <system_output timestamp="0.009324">[?2004hdemo@stephost:~$ </system_output>
+  <user_input timestamp="0.595493">[A</user_input>
+  <system_output timestamp="0.596001">asciinema rec `date +%s`.rec --stdin</system_output>
+  <user_input timestamp="0.975378">[A</user_input>
+  <system_output timestamp="0.975903">
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cscreen -dr[K</system_output>
+  <user_input timestamp="1.563696">
+</user_input>
+  <system_output timestamp="1.564251">
+[?2004l
+</system_output>
+  <system_output timestamp="1.597135">[r[m[2J[H[?7h[?1;4;6l[?1049h[22;0;0t[4l[?1h=[0m(B[1;59r</system_output>
+  <system_output timestamp="1.611646">[H[2J[H[2J mysql-server
+[31m-php5-mysql
+[32m+
++# FIXME: PHP5 does not exist in debian 9+. also, php-mysql is known for being full of holes.
++#php5-mysql
+[1m[39mdiff --git a/package_config/SERVERNAGIOS b/package_config/SERVERNAGIOS
+index 1dde395..0c224f7 100644
+--- a/package_config/SERVERNAGIOS
++++ b/package_config/SERVERNAGIOS
+[0m[36m@@ -1,7 +1,10 @@
+[32m+# A server for the nagios monitoring system.
++
+[39mPACKAGES aptitude
+[31m-nagios3
+-
+[39mnagios-plugins
+ 
+nagios-snmp-plugins
+[3</system_output>
+  <system_output timestamp="1.61175">1m-
+[39m#for lockfile
+[31m-procmail
+[39m\ No newline at end of file
+[32m+procmail
++
++# FIXME: nagios3 does not exist in Debian 9.
++# PACKAGES aptitude
++# nagios3
+[1m[39mdiff --git a/package_config/SERVERNTOP b/package_config/SERVERNTOP
+index 187c80d..ae180d4 100644
+--- a/package_config/SERVERNTOP
++++ b/package_config/SERVERNTOP
+[0m[36m@@ -1,2 +1,3 @@
+[32m+# a server for NTop, the network traffic monitoring system.
++
+[39mPACKAGES aptitude
+[31m-ntop
+[39m\ No newline at end of file
+[32m+ntopng
+[39m\ No newline at end of file
+[1mdiff --git a/package_config/SERVERQEMUDEV b/package_config/SERVERQEMUDEV
+index 88f2e6e..61e29e5 100644
+--- a/package_config/SERVERQEMUDEV
++++ b/package_config/SERVERQEMUDEV
+[0m[36m@@ -1,10 +1,14 @@
+[32m+# packages required when developing with the QEMU codebase.
++
+[39mPACKAGES aptitude
+ 
+libx11-dev
+ 
+libsdl1.2-dev
+ 
+texi2html
+[31m-libgnutls30-dev
+-
+[39mlibasound2-dev
+ 
+libgpmg1-dev
+ 
+nasm
+ 
+asciidoc
+ 
+debhelper
+[32m+
++# FIXME: libgnutls30-dev does not exist in Debian 9
++#PACKAGES aptitude
++#libgnutls30-dev
+[39mdemo@faiserver:/home/fai/config$ sudo git add package_config/SERVERQEMUDEV
+sudo: unable to resolve host faiserver
+[sudo] password for demo:
+demo@faiserver:/home/fai/config$ git commit -m </system_output>
+  <user_input timestamp="9.070577">'</user_input>
+  <system_output timestamp="9.072963">'</system_output>
+  <user_input timestamp="10.720271">l</user_input>
+  <system_output timestamp="10.737154">l</system_output>
+  <user_input timestamp="10.959113">i</user_input>
+  <system_output timestamp="10.973543">i</system_output>
+  <user_input timestamp="11.138865">b</user_input>
+  <system_output timestamp="11.151208">b</system_output>
+  <user_input timestamp="11.979772">g</user_input>
+  <system_output timestamp="11.995704">g</system_output>
+  <user_input timestamp="12.610033">n</user_input>
+  <system_output timestamp="12.617998">n</system_output>
+  <user_input timestamp="12.807549">u</user_input>
+  <system_output timestamp="12.812345">u</system_output>
+  <user_input timestamp="13.276637">t</user_input>
+  <system_output timestamp="13.284125">t</system_output>
+  <user_input timestamp="13.748912">l</user_input>
+  <system_output timestamp="13.753906">l</system_output>
+  <user_input timestamp="14.2215">s</user_input>
+  <system_output timestamp="14.224323">s</system_output>
+  <user_input timestamp="14.632868">3</user_input>
+  <system_output timestamp="14.655506">3</system_output>
+  <user_input timestamp="15.434022">0</user_input>
+  <system_output timestamp="15.438418">0</system_output>
+  <user_input timestamp="16.359139">-</user_input>
+  <system_output timestamp="16.380292">-</system_output>
+  <user_input timestamp="16.637044">d</user_input>
+  <system_output timestamp="16.654611">d</system_output>
+  <user_input timestamp="16.773313">e</user_input>
+  <system_output timestamp="16.792319">e</system_output>
+  <user_input timestamp="17.140421">v</user_input>
+  <system_output timestamp="17.161716">v</system_output>
+  <user_input timestamp="17.354999"> </user_input>
+  <system_output timestamp="17.358507"> </system_output>
+  <user_input timestamp="17.586086">i</user_input>
+  <system_output timestamp="17.59358">i</system_output>
+  <user_input timestamp="17.821246">s</user_input>
+  <system_output timestamp="17.831576">s</system_output>
+  <user_input timestamp="17.95714"> </user_input>
+  <system_output timestamp="17.968805"> </system_output>
+  <user_input timestamp="18.233143">n</user_input>
+  <system_output timestamp="18.244084">n</system_output>
+  <user_input timestamp="18.410133">o</user_input>
+  <system_output timestamp="18.419873">o</system_output>
+  <user_input timestamp="18.607665">t</user_input>
+  <system_output timestamp="18.613771">t</system_output>
+  <user_input timestamp="18.764537"> </user_input>
+  <system_output timestamp="18.771889"> </system_output>
+  <user_input timestamp="19.038892">i</user_input>
+  <system_output timestamp="19.045024">i</system_output>
+  <user_input timestamp="19.215056">n</user_input>
+  <system_output timestamp="19.220675">n</system_output>
+  <user_input timestamp="19.39014"> </user_input>
+  <system_output timestamp="19.396766"> </system_output>
+  <user_input timestamp="19.723934">d</user_input>
+  <system_output timestamp="19.731037">d</system_output>
+  <user_input timestamp="19.860659">e</user_input>
+  <system_output timestamp="19.866995">e</system_output>
+  <user_input timestamp="20.05718">b</user_input>
+  <system_output timestamp="20.064504">b</system_output>
+  <user_input timestamp="20.173937">i</user_input>
+  <system_output timestamp="20.184374">i</system_output>
+  <user_input timestamp="20.393971">a</user_input>
+  <system_output timestamp="20.396699">a</system_output>
+  <user_input timestamp="20.566983">n</user_input>
+  <system_output timestamp="20.572732">n</system_output>
+  <user_input timestamp="20.724945"> </user_input>
+  <system_output timestamp="20.729804"> </system_output>
+  <user_input timestamp="21.180104">8</user_input>
+  <system_output timestamp="21.201946">8</system_output>
+  <user_input timestamp="21.861704"></user_input>
+  <system_output timestamp="21.864888">[K</system_output>
+  <user_input timestamp="21.998074">9</user_input>
+  <system_output timestamp="22.00322">9</system_output>
+  <user_input timestamp="22.212828">.</user_input>
+  <system_output timestamp="22.220161">.</system_output>
+  <user_input timestamp="22.662789">'</user_input>
+  <system_output timestamp="22.669594">'</system_output>
+  <user_input timestamp="23.214866">
+</user_input>
+  <system_output timestamp="23.220174">
+</system_output>
+  <system_output timestamp="23.225802">fatal: Unable to create '/home/fai/config/.git/index.lock': Permission denied
+</system_output>
+  <system_output timestamp="23.226387">demo@faiserver:/home/fai/config$ </system_output>
+  <user_input timestamp="24.610838">OA</user_input>
+  <system_output timestamp="24.613354">git commit -m 'libgnutls30-dev is not in debian 9.'</system_output>
+  <user_input timestamp="25.223665"/>
+  <user_input timestamp="25.499172">a</user_input>
+  <system_output timestamp="25.521539">
+demo@faiserver:/home/fai/config$ </system_output>
+  <user_input timestamp="25.97075">s</user_input>
+  <system_output timestamp="25.987239">[1@s</system_output>
+  <user_input timestamp="26.049478">u</user_input>
+  <system_output timestamp="26.06664">[1@u</system_output>
+  <user_input timestamp="26.229832">d</user_input>
+  <system_output timestamp="26.243159">[1@d</system_output>
+  <user_input timestamp="26.249994">o</user_input>
+  <system_output timestamp="26.262155">[1@o</system_output>
+  <user_input timestamp="26.388667"> </user_input>
+  <system_output timestamp="26.397211">[1@ </system_output>
+  <user_input timestamp="26.50764">
+</user_input>
+  <system_output timestamp="26.514049">
+</system_output>
+  <system_output timestamp="26.903185">sudo: unable to resolve host faiserver
+</system_output>
+  <system_output timestamp="26.905625">[sudo] password for demo: </system_output>
+  <user_input timestamp="28.898031">f</user_input>
+  <user_input timestamp="29.059342">a</user_input>
+  <user_input timestamp="29.159863">i
+</user_input>
+  <system_output timestamp="29.166194">
+</system_output>
+  <system_output timestamp="29.181284">[master 8c0686a] libgnutls30-dev is not in debian 9.
+</system_output>
+  <system_output timestamp="29.181531"> 1 file changed, 5 insertions(+), 1 deletion(-)
+</system_output>
+  <system_output timestamp="29.183796">demo@faiserver:/home/fai/config$ </system_output>
+  <user_input timestamp="30.693452">OA</user_input>
+  <system_output timestamp="30.715911">sudo git commit -m 'libgnutls30-dev is not in debian 9.'</system_output>
+  <user_input timestamp="30.890955">OA</user_input>
+  <system_output timestamp="30.899352">
+demo@faiserver:/home/fai/config$ [5Pgit commit -m 'libgnutls30-dev is not in debian 9.'</system_output>
+  <user_input timestamp="31.622037">OA</user_input>
+  <system_output timestamp="31.62872">
+demo@faiserver:/home/fai/config$ [10Psudo git add package_config/SERVERQEMUDEV</system_output>
+  <user_input timestamp="32.491987">OA</user_input>
+  <system_output timestamp="32.501812">
+demo@faiserver:/home/fai/config$ git diff[K</system_output>
+  <user_input timestamp="33.145545">
+</user_input>
+  <system_output timestamp="33.149251">
+</system_output>
+  <system_output timestamp="33.161394">[1mdiff --git a/files/etc/fai/NFSROOT/SERVERFAI b/files/etc/fai/NFSROOT/SERVERFAI[0m
+[1mindex ab14e2f..bb01794 100644[0m
+[1m--- a/files/etc/fai/NFSROOT/SERVERFAI[0m
+[1m+++ b/files/etc/fai/NFSROOT/SERVERFAI[0m
+[36m@@ -1,37 +1,49 @@[39m
+ # package list for creating the NFSROOT
+ 
+[31m-[39m
+ PACKAGES aptitude
+[31m-nfs-common fai-nfsroot module-init-tools isc-dhcp-client ssh rdate lshw hwinfo rpcbind[39m
+[31m-rsync lftp less dump e2fsprogs usbutils[39m
+[32m+[39m
+[32m+[39m[32m# from FAI.[39m
+[32m+[39m[32mnfs-common fai-nfsroot ssh rdate lshw rpcbind[39m
+ hwinfo psmisc pciutils hdparm smartmontools parted mdadm lvm2
+ dnsutils ntpdate dosfstools
+[31m-procinfo numactl dialog discover mdetect[39m
+[31m-moreutils console-common[39m
+[31m-iproute udev[39m
+[32m+[39m[32mprocinfo numactl dialog[39m
+[32m+[39m[32mconsole-common[39m
+[32m+[39m[32miproute2 moreutils udev[39m
+ xz-utils
+[31m-cupt[39m
+[32m+[39m[32mcurl wget- netcat-traditi</system_output>
+  <system_output timestamp="33.162967">onal[39m
+[32m+[39m[32mca-certificates # for get-config-dir-https[39m
+[32m+[39m[32mnmap[39m
+[32m+[39m
+[32m+[39m[32m# juri-isms.[39m
+[32m+[39m[32mdiscover[39m
+[32m+[39m[32mdump[39m
+[32m+[39m[32me2fsprogs[39m
+[32m+[39m[32misc-dhcp-client[39m[41m [49m
+[32m+[39m[32mless[39m
+[32m+[39m[32mlftp[39m
+[32m+[39m[32mmdetect[39m
+[32m+[39m[32mmodule-init-tools[39m
+[32m+[39m[32mrsync[39m
+[32m+[39m[32musbutils[39m
+ bzip2
+ emacs-nox
+ strace
+ dmraid
+ dmsetup
+[31m-#gddrescue[39m
+[32m+[39m[32mgddrescue[39m
+ bc
+ firmware-linux-free
+ read-edid
+ 
+[31m-# aparently it's live-boot for cd/usb, dracut for nfs...[39m
+[31m-[39m
+[31m-#dracut can replace live-boot[39m
+[31m-#dracut dracut-network live-boot- live-boot-initramfs-tools-[39m
+[32m+[39m[32m# dracut replaces live-boot and initramfs-tools[39m
+[32m+[39m[32mdracut-network dracut live-boot- initramfs-tools-[39m
+[32m+[39m[32mdracut-config-generic # for jessie add "deb http://fai-project.org/download jessie koeln"[39m
+ 
+:[K</system_output>
+  <user_input timestamp="33.952671"> </user_input>
+  <system_output timestamp="33.958368">[K</system_output>
+  <system_output timestamp="33.960005">[31m-# choose if you like live-boot or dracut inside the nfsroot[39m
+[31m-live-boot #live-boot-doc[39m
+[31m-[39m
+[31m-# FAI appears to be incompatible with systemd.[39m
+[32m+[39m[32m# FAI in jessie appears to be incompatible with systemd.[39m
+ #systemd libpam-systemd systemd-sysv sysvinit-
+[31m-sysvinit systemd- libpam-systemd- systemd-sysv-[39m
+[32m+[39m[32m#sysvinit systemd- libpam-systemd- systemd-sysv-[39m
+[32m+[39m
+[32m+[39m[32msysvinit-core systemd-sysv-[39m
+ 
+ # you should not edit the lines below
+ # architecture dependend list of packages that are installed
+[1mdiff --git a/files/etc/fai/apt/sources.list/HWPHYS b/files/etc/fai/apt/sources.list/HWPHYS[0m
+[1mindex abecd23..26dbeae 100644[0m
+[1m--- a/files/etc/</system_output>
+  <system_output timestamp="33.960182">fai/apt/sources.list/HWPHYS[0m
+[1m+++ b/files/etc/fai/apt/sources.list/HWPHYS[0m
+[36m@@ -1,12 +1,5 @@[39m
+ # These lines should work for many sites
+ # A more comprehensive example is at /usr/share/doc/fai-doc/examples/etc</system_output>
+  <system_output timestamp="33.961143">
+ 
+[31m-deb ftp://127.0.0.1/debian stable main[39m
+[32m+[39m[32mdeb ftp://127.0.0.1/debian stretch main[39m
+ #deb ftp://127.0.0.1/debian unstable main
+[31m-[39m
+[31m-#deb http://faiserver/ apache2-default/compucom/[39m
+[31m-[39m
+[31m-#deb http://ftp.debian.org/debian etch main contrib non-free[39m
+[31m-#deb http://ftp.debian.org/debian etch-proposed-updates main contrib non-free[39m
+[31m-[39m
+[31m-#deb http://security.debian.org/debian-security etch/updates main contrib non-free[39m
+[1mdiff --git a/files/etc/fai/apt/sources.list/QEMUCLIENT b/files/etc/fai/apt/sources.list/QEMUCLIENT[0m
+[1mindex f9d03d3..9b3c14e 100644[0m
+[1m--- a/files/etc/fai/apt/sources.list/QEMUCLIENT[0m
+[1m+++ b/files/etc/fai/apt/sources.list/QEMUCLIENT[0m
+[36m@@ -1,15 +1,10 @@[39m
+ # These lines should work for many sites
+ # A more comprehensive example is at /usr/share/doc/fai-doc/examples/etc
+ 
+[31m-#deb http://127.0.0.1:3142/faiserver/debian jessie main[39m
+[31m-deb http://127.0.0.</system_output>
+  <system_output timestamp="33.961315">1:3142/archive.debian.org/debian jessie main[39m
+[32m+[39m[32m#deb http://127.0.0.1:3142/faiserver/debian stretch main[39m
+[32m+[39m[32m# lang = none is to work around debian issue #880170[39m
+</system_output>
+  <system_output timestamp="33.961925">[32m+[39m[32mdeb [lang=none] http://127.0.0.1:3142/archive.debian.org/debian stretch main[39m
+ #deb http://127.0.0.1:3142/faiserver/debian unstable main
+ 
+[31m-#site specific packages[39m
+[31m-#deb http://127.0.0.1:3142/faiserver/ faikvm[39m
+[31m-[39m
+[31m-#security updates[39m
+[31m-#deb http://security.debian.org/debian-security stable/updates main[39m
+[31m-[39m
+ # repository that may contain newer fai packages
+ #deb http://fai-project.org/download stable koeln
+[1mdiff --git a/f</system_output>
+  <system_output timestamp="33.962079">iles/etc/fai/fai.conf/SERVERFAI b/files/etc/fai/fai.conf/SERVERFAI[0m
+[1mindex 9226aab..0bfb61d 100644[0m
+[1m--- a/files/etc/fai/fai.conf/SERVERFAI[0m
+[1m+++ b/files/etc/fai/fai.conf/SERVERFAI[0m
+:[K</system_output>
+  <user_input timestamp="34.529093"> </user_input>
+  <system_output timestamp="34.552286">[K</system_output>
+  <system_output timestamp="34.553809">[36m@@ -2,6 +2,3 @@[39m
+ 
+ # Account for saving log files and calling fai-chboot.
+ #LOGUSER=fai
+[31m-[39m
+[31m-# URL to access the fai config space[39m
+[31m-#FAI_CONFIG_SRC=nfs://yourservername/path/to/config/space[39m
+[1mdiff --git a/files/etc/fai/grub.cfg/SERVERFAI b/files/etc/fai/grub.cfg/SERVERFAI[0m
+[1mindex 8630d3e..6bc0ecb 100644[0m
+[1m--- a/files/etc/fai/grub.cfg/SERVERFAI[0m
+[1m+++ b/files/etc/fai/grub.cfg/SERVERFAI[0m
+[36m@@ -167,3 +167,42 @@[39m menuentry "betahost --</system_output>
+  <system_output timestamp="34.554504"> guaranteed broken, everything at once." {
+     initrd /boot/initrd.img
+ }
+ 
+[32m+[39m[32mmenuentry "Client standalone installation - select installation type from menu " {[39m
+[32m+[39m[32m    set gfxpayload=$resolution[39m
+[32m+[39m[32m    linux   /boot/vmlinuz FAI_FLAGS="menu,verbose,createvt" FAI_ACTION=install FAI_CONFIG_SRC=file:///var/lib/fai/config rd.live.image root=live:CDLABEL=FAI_CD rd.neednet ip=dhcp quiet[39m
+[32m+[39m[32m    initrd  /boot</system_output>
+  <system_output timestamp="34.555086">/initrd.img[39m
+[32m+[39m[32m}[39m
+[32m+[39m
+[32m+[39m
+[32m+[39m[32mmenuentry "FAI server installation - using external DHCP" {[39m
+[32m+[39m[32m    set gfxpayload=$resolution[39m
+[32m+[39m[32m    linux /boot/vmlinuz FAI_FLAGS="verbose,createvt" FAI_ACTION=install hostname=faiserver FAI_CONFIG_SRC=file:///var/lib/fai/config rd.live.image root=live:CDLABEL=FAI_CD rd.neednet ip=dhcp quiet[39m
+[32m+[39m[32m    initrd /boot/initrd.img[39m
+[32m+[39m[32m}[39m
+[32m+[39m
+[3</system_output>
+  <system_output timestamp="34.555295">2m+[39m[32mmenuentry "FAI server installation - using a fixed IP" {[39m
+[32m+[39m[32m    set gfxpayload=$resolution[39m
+[32m+[39m[32m    linux /boot/vmlinuz FAI_FLAGS="verbose,createvt" FAI_ACTION=install ip=192.168.33.250::192.168.33.1:255.255.255.0:faiserver:eth0:off FAI_CONFIG_SRC=file:///var/lib/fai/config rd.live.image root=live:CDLABEL=[39m [32m[39m[32mFAI_CD quiet[39m
+[32m+[39m[32m    initrd /boot/initrd.img[39m
+[32m+[39m[32m}[39m
+[32m+[39m
+[32m+[39m[32mmenuentry "R</system_output>
+  <system_output timestamp="34.556061">escue system, no installation" {[39m
+[32m+[39m[32m    set gfxpayload=$resolution[39m
+[32m+[39m[32m    linux /boot/vmlinuz FAI_FLAGS="verbose,createvt" FAI_ACTION=sysinfo FAI_CONFIG_SRC=file:///var/lib/fai/config rd.live.image root=live:CDLABEL=FAI_CD quiet[39m
+[32m+[39m[32m    initrd /boot/initrd.img[39m
+[32m+[39m[32m}[39m
+[32m+[39m
+[32m+[39m[32mmenuentry "Boot OS from first partition on first disk" {[39m
+[32m+[39m[32m    if [ -d (cd) ]; then[39m
+[32m+[39m[32m       chainloader (hd0)+1[39m
+[32m+[39m[32m    fi[39m
+[32m+[39m
+[32m+[39m[32m    if [ "$root" = "hd1" ]; then[39m
+[32m+[39m[32m       chainloader (hd0)+1[39m
+[32m+[39m[32m    fi[39m
+[32m+[39m
+[32m+[39m[32m    if [ "$root" = "hd0" ]; t</system_output>
+  <system_output timestamp="34.556364">hen[39m
+[32m+[39m[32m       set root=(hd1)[39m
+[32m+[39m[32m       chainloader (hd1)+1[39m
+[32m+[39m[32m   fi[39m
+[32m+[39m[32m}[39m
+[1mdiff --git a/files/etc/fai/nfsroot.conf/SERVERFAI b/files/etc/fai/nfsroot.conf/SERVERFAI[0m
+[1mindex db6e2ec..ea74326 100644[0m
+[1m--- a/files/etc/fai/nfsroot.conf/SERVERFAI[0m
+:[K</system_output>
+  <user_input timestamp="35.083154"> </user_input>
+  <system_output timestamp="35.10049">[K</system_output>
+  <system_output timestamp="35.101481">[1m+++ b/files/etc/fai/nfsroot.conf/SERVERFAI[0m
+[36m@@ -1,8 +1,8 @@[39m
+ # For a detailed description see nfsroot.conf(5)
+ 
+ # "&lt;suite&gt; &lt;mirror&gt;" for debootstrap
+[31m-#FAI_DEBOOTSTRAP="jessie http://127.0.0.1:3142/faiserver/debian"[39m
+[31m-F</system_output>
+  <system_output timestamp="35.101835">AI_DEBOOTSTRAP="jessie http://127.0.0.1:3142/archive.debian.org/debian"[39m
+[32m+[39m[32m#FAI_DEBOOTSTRAP="stretch http://127.0.0.1:3142/faiserver/debian"[39m
+</system_output>
+  <system_output timestamp="35.102998">[32m+[39m[32mFAI_DEBOOTSTRAP="stretch http://127.0.0.1:3142/archive.debian.org/debian"[39m
+ FAI_ROOTPW='$1$kBnWcO.E$djxB128U7dMkrltJHPf6d1'
+ 
+ NFSROOT=/srv/fai/nfsroot
+[1mdiff --git a/files/home/fai/make-fai-cd.sh/SERVERFAI b/files/home/fai/make-fai-cd.sh/SERVERFAI[0m
+[1mindex 4b1cbd6..2ea487a 100755[0m
+[1m--- a/files/home/fai/make-fai-cd.sh/SERVERFAI[0m
+[1m+++ b/files/home/fai/make-fai-cd.sh/SERVERFAI[0m
+[36m@@ -3,10 +3,10 @@[39m
+ NFSROOT=/home/fai/nfsroot
+ 
+ # just in case
+[31m-umount $NFSROOT/live/filesystem.dir/proc[39m
+[31m-umount $NFSROOT/live/filesystem.dir/sys[39m
+[31m-umount $NFSROOT/live/filesystem.dir/var/cache[39m
+[31m-umount $NFSROOT/live/filesystem.dir/var/lib/dpkg/[39m
+[32m+[39m[32mumount $NFSROOT/proc</system_output>
+  <system_output timestamp="35.103806">[39m
+[32m+[39m[32mumount $NFSROOT/sys[39m
+[32m+[39m[32mumount $NFSROOT/var/cache[39m
+[32m+[39m[32mumount $NFSROOT/var/lib/dpkg/[39m
+ 
+ rm -f fai_cd.iso
+ 
+[36m@@ -20,7 +20,7 @@[39m if [ "x$1" == "x" ] ; then
+        rm -rf $NFSROOT
+     fi
+ 
+[31m-    fai-make-nfsroot -l -v[39m
+[32m+[39m[32m    fai-make-nfsroot -v[39m
+     error=$?
+     if [ "$error" -ne "0" ]; then
+        echo "make-fai-nfsroot failed with exit code $error. exiting..."
+[36m@@ -61,6 +61,9 @@[39m cp /etc/</system_output>
+  <system_output timestamp="35.104008">fai/NFSROOT $filesdir/etc/fai/NFSROOT/SERVERFAI
+ # these vary based on host type.
+ cp /etc/fai/apt/sources.list $filesdir/etc/fai/apt/sources.list/$hosttype
+ 
+[32m+[39m[32mmkdir -p /home/tmp[39m
+[32m+[39m[32mexport TMPDIR=/home/tmp/[39m
+[32m</system_output>
+  <system_output timestamp="35.104589">+[39m
+ fai-cd -fm /usr/fai/mirror fai_cd.iso
+ error=$?
+ if [ "$error" -ne "0" ]; then
+[1mdiff --git a/package_config/DEFAULT b/package_config/DEFAULT[0m
+[1mindex 2e28f8e..73a48cf 100644[0m
+[1m--- a/package_config/DEFAULT[0m
+[1m+++ b/package_config/DEFAULT[0m
+[36m@@ -1,10 +1,10 @@[39m
+[32m+[39m[32m# the default package selections. useful for things we want installed everywhere.[39m
+ 
+[31m-PACKAGES aptitude CHROOT[39m
+:[K</system_output>
+  <user_input timestamp="35.533928"> </user_input>
+  <system_output timestamp="35.55009">[K</system_output>
+  <system_output timestamp="35.551609">[31m-linux-image-486-[39m
+[31m-[39m
+[32m+[39m[32m# for pretty much everyone.[39m
+ PACKAGES aptitude DHCPC
+ isc-dhcp-client
+ 
+[32m+[39m[32m# for non-EFI systems.[39m
+ PACKAGES aptitude GRUB
+ grub-pc lilo-
+ 
+[1mdiff --git a/package_config/HOSTOFFICE b/package_config/HOSTOFFICE[0m
+[1mindex b4fa0c1..480677c 100644[0m
+[1m--- a/package_config/HOSTOFFICE[0m
+[1m+++ b/package_config/HOSTOFFICE[0m
+[36m@@ -3,8 +3,6 @@[39m
+ PACKAGES aptitude
+ cups
+ gnash
+[31m-lightspark[39m
+[31m-browser-plugin-lightspark[39m
+ browser-plugin-gnash
+ iceweasel
+ midori
+[36m@@ -15,5 +13,11 @@[39m gnucash
+ gpgv
+ smbclient
+ libpam-ldap
+[31m-openjdk-7-jre[39m
+ k3b
+[32m+[39m
+[32m+[39m
+[32m+[39m[32m# FIXME: dropped after jessie:</system_output>
+  <system_output timestamp="35.552138">[39m
+[32m+[39m[32m#PACKAGES aptitude JESSIE[39m
+[32m+[39m[32m#browser-plugin-lightspark[39m
+[32m+[39m[32m#lightspark[39m
+[32m+[39m[32m#openjdk-7-jre[39m
+[1mdiff --git a/package_config/HW486 b/package_config/HW486[0m
+[1mdeleted file mode 100644[0m
+[1mindex 08ac576..0000000[0m
+[1m--- a/package_config/HW486[0m
+[1m+++ /dev/null[0m
+[36m@@ -1,2 +0,0 @@[39m
+[31m-PACKAGES aptitude[39m
+[31m-linux-image-486[39m
+[1mdiff --git a/package_config/HWAMD64 b/package_config/HWAMD64[0m
+[1mindex ab16952..df67c8f 100644[0m
+[1m--- a/package_config/HWAMD64[0m
+[1m+++ b/package_config/HWAMD64[0m
+[36m@@ -1,5 +1,9 @@[39m
+ # packages for 32 bit X86 machines, on AMD64 capable hardware.
+ 
+ PACKAGES aptitude
+[31m-linux-image-</system_output>
+  <system_output timestamp="35.552414">amd64[39m
+[31m-libc6-i686[39m
+\ No newline at end of file
+[32m+[39m[32mlinux-image-686-pae[39m
+[32m+[39m[32mlibc6-i686[39m
+[32m+[39m
+:[K</system_output>
+  <user_input timestamp="36.087246"> </user_input>
+  <system_output timestamp="36.098833">[K</system_output>
+  <system_output timestamp="36.100155">[32m+[39m[32m# FIXME: there is no amd64 image for i386 machines on stretch?[39m
+[32m+[39m[32m#PACKAGES aptitude[39m
+[32m+[39m[32m#linux-image-amd64[39m
+[1mdiff --git a/package_config/HWPHYS b/package_config/HWPHYS[0m
+[1mindex 2c8a79b..059297c 100644[0m
+[1m--- a/package_config/HWPHYS[0m
+[1m+++ b/package_config/HWPHYS[0m
+[36m@@ -6,6 +6,10 @@[39m flashrom
+ lm-sensors
+ x86info
+ 
+[32m+[39m[32m# for performance tuning hardware.[39m
+[32m+[39m[32m# FIXME: how do we productively use this?[39m
+[32m+[39m[32m#irqbalance[39m
+[32m+[39m
+ # for testing hardware.
+ memtest86+
+ smartmontools
+[36m@@ -13,3 +17,6 @@[39m smartmontools
+ # for physical disk layout support.
+ mdadm
+ lvm2
+[32m+[39m
+[32m+[39m[32m# for net</system_output>
+  <system_output timestamp="36.100742">work cards, mostly.[39m
+[32m+[39m[32mfirmware-linux-free[39m
+\ No newline at end of file
+[1mdiff --git a/package_config/JADMIN b/package_config/JADMIN[0m
+[1mindex 6e2ce7a..788833e 100644[0m
+[1m--- a/package_config/JADMIN[0m
+[1m+++ b/package_config/JADMIN[0m
+[36m@@ -1,4 +1,6 @@[39m
+[32m+[39m[32m# Tools for places where julia administrates things.[39m
+ PACKAGES aptitude
+[32m+[39m[32mbash-completion[39m
+ cruft
+ chkrootkit
+ clamav
+[36m@@ -9,11 +11,13 @@[39m gdb
+ gddrescue</system_output>
+  <system_output timestamp="36.100875">
+ iotop
+ lsof
+[32m+[39m[32mmanpages[39m
+ nmap
+ psmisc
+ sudo
+ sysstat
+ #tripwire
+[32m+[39m[32mtraceroute[39m
+ vrms
+ foremost
+ 
+[1mdiff --git a/package_config/JUSER b/package_config/JUSER[0m
+[1mindex 6ce1584..9d365ce 100644[0m
+[1m--- a/package_config/JUSER[0m
+[1m+++ b/package_config/JUSER[0m
+[36m@@ -6,7 +6,6 @@[39m dpkg-dev-el
+ fortunes-off 
+ fortunes-bofh-excuses 
+:[K</system_output>
+  <user_input timestamp="36.637542"> </user_input>
+  <system_output timestamp="36.645085">[K</system_output>
+  <system_output timestamp="36.646455"> gnuplot-nox
+[31m-liblink-grammar4-dev[39m
+ link-grammar
+ magit
+ ncftp 
+[36m@@ -28,4 +27,8 @@[39m chromium
+ iceweasel
+ abcde
+ 
+[31m-#FIXME: replaced grip with sound-juicer, but its not working on my laptop..[39m
+\ No newline at end of file
+[32m+[39m[32m#FIXME: replaced grip with sound-juicer, but its not working on my laptop..[39m
+[32m+[39m
+[32m+[39m[32m# FIXME: liblink-grammar4-dev does not exist in debian 9[39m
+[32m+[39m[32m#PACKAGES aptitude[39m
+[32m+[39m[32m#liblink-grammar4-dev[39m
+[1mdiff --git a/package_config/KERNELDEV b/package_config/KERNELDEV[0m
+[1mindex 198fd2f..8a64f29 100644[0m
+[1m--- a/package_config/KERNELDEV[0m
+[1m+++ b/package_config/KERNELDEV[0m
+[36m@@ -1,3 +1,7 @@[39m
+ PACKAGES aptitude
+[31m-kernel-package[39m
+ subversion
+[32m+[39m
+[32m+[39m[32m# FIXME: kernel-package does not exist in debian 9.[39m
+[32m+[39m[32m#PACKAGES aptitude[39m
+[32m+[39m[32m# kernel-package[39m</system_output>
+  <system_output timestamp="36.647404">
+[41m+[49m
+[1mdiff --git a/package_config/SERVERCREATEVM b/package_config/SERVERCREATEVM[0m
+[1mindex e8664e6..464507b 100644[0m
+[1m--- a/package_config/SERVERCREATEVM[0m
+[1m+++ b/package_config/SERVERCREATEVM[0m
+[36m@@ -1,8 +1,8 @@[39m
+[32m+[39m[32m# Services for a physical host to run "CreateVM" style VMs on top of.[39m
+ PACKAGES aptitude
+ kvm
+ procmail
+[31m-php5-pgsql[39m
+[31m-telnetd[39m
+ tintin++
+ nmap
+[31m-bridge-utils[39m
+\ No newline at end of file
+[32m+[39m[32mbridge-utils[39m
+[41m+[49m
+[1mdiff --git a/package_config/SERVERFAI b/package_config/SERVERFAI[0m
+[1mindex e968e88..8291cc6 100644[0m
+[1m--- a/package_config/SERVERFAI[0m
+[1m+++ b/package_config/SERVERFAI[0m
+[36m@@ -1,8 +1,11 @@[39m
+[32m+[39m[32m# a server which produces FAI CDs.[39m
+[32m+[39m
+ PACKAGES aptitude
+ debmirror 
+ apt-cacher-ng
+ apt-move 
+ genisoimage
+:[K</system_output>
+  <user_input timestamp="37.16575"> </user_input>
+  <system_output timestamp="37.174997">[K</system_output>
+  <system_output timestamp="37.17613">[32m+[39m[32msquashfs-tools[39m
+ subversion 
+ debhelper 
+ gnupg 
+[1mdiff --git a/package_config/SERVERIRCD b/package_config/SERVERIRCD[0m
+[1mindex a41c7d3..9f67f0a 100644[0m
+[1m--- a/package_config/SERVERIRCD[0m
+[1m+++ b/package_config/SERVERIRCD[0m
+[36m@@ -1,3 +1,7 @@[39m
+[31m-PACKAGES aptitude[39m
+[31m-ircd-ratbox[39m
+[31m-ratbox-services-pgsql[39m
+\ No newline at end of file
+[32m+[39m[32m# an IRC server.[39m
+[32m+[39m
+[32m+[39m[32m# FIXME: completely deprecated.[39m
+[32m+[39m[32m# FIXME: packages do not exist in debian 9[39m
+[32m+[39m[32m#PACKAGES aptitude[39m
+[32m+[39m[32m#ircd-ratbox[39m
+[32m+[39m[32m#ratbox-services-pgsql[39m
+\ No newline at end of file
+[1mdiff --git a/package_config/SERVERISCSI b/package_config/SERVERISCSI[0m
+[1mindex 434c19a..720b6e4 100644[0m
+[1m--- a/package_config/SERVERISCSI[0m
+[1m+++ b/package_config/SERVERISCSI[0m
+[36m@@ -1,3 +1,3 @@[39m
+[32m+[39m[32m# An ISCSI server; that is </system_output>
+  <system_output timestamp="37.176748">a server who makes their disks available over the network via the iscsi protocol.[39m
+ PACKAGES aptitude
+[31m-iscsitarget[39m
+[31m-iscsitarget-dkms[39m
+\ No newline at end of file
+[32m+[39m[32mtgt[39m
+[1mdiff --git a/package_config/SERVERMYSQL b/package_config/SERVERMYSQL[0m
+</system_output>
+  <system_output timestamp="37.177691">[1mindex ec2aa9f..fc0e56f 100644[0m
+[1m--- a/package_config/SERVERMYSQL[0m
+[1m+++ b/package_config/SERVERMYSQL[0m
+[36m@@ -1,3 +1,5 @@[39m
+ PACKAGES aptitude
+ mysql-server
+[31m-php5-mysql[39m
+[32m+[39m
+[32m+[39m[32m# FIXME: PHP5 does not exist in debian 9+. also, php-mysql is known for being full of holes.[39m
+[32m+[39m[32m#php5-mysql[39m
+[1mdiff --git a/package_config/SERVERNAGIOS b/package_config/SERVERNAGIOS[0m
+[1mindex 1dde395..0c224f7 100644[0m
+[1m--- a/package_config/SERVERNAGIOS[0m
+[1m+++ b/package_config/SERVERNAGIOS[0m
+[36m@@ -1,7 +1,10 @@[39m
+[32m+[39m[32m# A server for the nagios monitoring system.[39m
+ PACKAGES aptitude
+[31m-nagios3[39m
+ nagios-plugins
+ nagios-snmp-plugins
+[31m-[39m
+ #for lockfile
+[31m-procmail[39m
+\ No newline at end of file
+[32m+[39m[32mprocmail[39m
+:[K</system_output>
+  <user_input timestamp="37.654076"> </user_input>
+  <system_output timestamp="37.660635">[K</system_output>
+  <system_output timestamp="37.66143">[32m+[39m
+[32m+[39m[32m# FIXME: nagios3 does not exist in Debian 9.[39m
+[32m+[39m[32m# PACKAGES aptitude[39m
+[32m+[39m[32m# nagios3[39m
+[1mdiff --git a/package_config/SERVERNTOP b/package_config/SERVERNTOP[0m
+[1mindex 187c80d..ae180d4 100644[0m
+[1m--- a/package_config/SERVERNTOP[0m
+[1m+++ b/package_config/SERVERNTOP[0m
+[36m@@ -1,2 +1,3 @@[39m
+[32m+[39m[32m# a server for NTop, the network traffic monitoring system.[39m
+ PACKAGES aptitude
+[31m-ntop[39m
+\ No newline at end of file
+[32m+[39m[32mntopng[39m
+\ No newline at end of file
+[7m(END)[27m[K</system_output>
+  <user_input timestamp="38.184004"> </user_input>
+  <system_output timestamp="38.290491">
+[K[?5h[?5l[K[7m(END)[27m[K</system_output>
+  <user_input timestamp="1325.822228">q</user_input>
+  <system_output timestamp="1325.824706">
+[K</system_output>
+  <system_output timestamp="1325.826177">demo@faiserver:/home/fai/config$ </system_output>
+  <user_input timestamp="1326.244128">g</user_input>
+  <system_output timestamp="1326.261898">g</system_output>
+  <user_input timestamp="1326.404758">i</user_input>
+  <system_output timestamp="1326.419843">i</system_output>
+  <user_input timestamp="1326.730138">t</user_input>
+  <system_output timestamp="1326.738656">t</system_output>
+  <user_input timestamp="1326.791702"> </user_input>
+  <system_output timestamp="1326.797264"> </system_output>
+  <user_input timestamp="1327.070719">a</user_input>
+  <system_output timestamp="1327.077495">a</system_output>
+  <user_input timestamp="1327.172549">d</user_input>
+  <system_output timestamp="1327.176158">d</system_output>
+  <user_input timestamp="1327.394589">d</user_input>
+  <system_output timestamp="1327.415538">d</system_output>
+  <user_input timestamp="1327.557176"> </user_input>
+  <system_output timestamp="1327.573626"> </system_output>
+  <user_input timestamp="1328.406331">p</user_input>
+  <system_output timestamp="1328.425281">p</system_output>
+  <user_input timestamp="1328.649804">a</user_input>
+  <system_output timestamp="1328.665436">a</system_output>
+  <user_input timestamp="1329.135934">	</user_input>
+  <system_output timestamp="1329.166616">ckage_config/</system_output>
+  <user_input timestamp="1330.447802">S</user_input>
+  <system_output timestamp="1330.469502">S</system_output>
+  <user_input timestamp="1330.629886">E</user_input>
+  <system_output timestamp="1330.64787">E</system_output>
+  <user_input timestamp="1330.953428">R</user_input>
+  <system_output timestamp="1330.965001">R</system_output>
+  <user_input timestamp="1331.319114">V</user_input>
+  <system_output timestamp="1331.321778">V</system_output>
+  <user_input timestamp="1331.501919">E</user_input>
+  <system_output timestamp="1331.520518">E</system_output>
+  <user_input timestamp="1331.686589">R</user_input>
+  <system_output timestamp="1331.699127">R</system_output>
+  <user_input timestamp="1332.092126">N</user_input>
+  <system_output timestamp="1332.113015">N</system_output>
+  <user_input timestamp="1332.480519">T</user_input>
+  <system_output timestamp="1332.492608">T</system_output>
+  <user_input timestamp="1332.781453">	</user_input>
+  <system_output timestamp="1332.811375">OP </system_output>
+  <user_input timestamp="1333.484224"/>
+  <user_input timestamp="1333.808808">a</user_input>
+  <system_output timestamp="1333.828765"/>
+  <user_input timestamp="1334.25633">s</user_input>
+  <system_output timestamp="1334.262269">[1@s</system_output>
+  <user_input timestamp="1334.41669">u</user_input>
+  <system_output timestamp="1334.420539">[1@u</system_output>
+  <user_input timestamp="1334.577071">d</user_input>
+  <system_output timestamp="1334.595961">[1@d</system_output>
+  <user_input timestamp="1334.698">o</user_input>
+  <system_output timestamp="1334.713548">[1@o</system_output>
+  <user_input timestamp="1334.818775"> </user_input>
+  <system_output timestamp="1334.831339">[1@ </system_output>
+  <user_input timestamp="1334.959839">
+</user_input>
+  <system_output timestamp="1334.96927">
+</system_output>
+  <system_output timestamp="1334.978197">sudo: unable to resolve host faiserver
+</system_output>
+  <system_output timestamp="1334.982028">[sudo] password for demo: </system_output>
+  <user_input timestamp="1336.056806">f</user_input>
+  <user_input timestamp="1336.160109">a</user_input>
+  <user_input timestamp="1336.221248">i</user_input>
+  <user_input timestamp="1336.419802">
+</user_input>
+  <system_output timestamp="1336.437424">
+</system_output>
+  <system_output timestamp="1336.448473">demo@faiserver:/home/fai/config$ </system_output>
+  <user_input timestamp="1337.664634">OA</user_input>
+  <system_output timestamp="1337.666923">sudo git add package_config/SERVERNTOP </system_output>
+  <user_input timestamp="1337.807897">u</user_input>
+  <system_output timestamp="1337.825801">u</system_output>
+  <user_input timestamp="1338.658779"></user_input>
+  <system_output timestamp="1338.669195">[K</system_output>
+  <user_input timestamp="1339.468733">OA</user_input>
+  <system_output timestamp="1339.480764">
+demo@faiserver:/home/fai/config$ git diff[K</system_output>
+  <user_input timestamp="1339.995354">OA</user_input>
+  <system_output timestamp="1340.014998">sudo git commit -m 'libgnutls30-dev is not in debian 9.'</system_output>
+  <user_input timestamp="1341.042644">OD</user_input>
+  <system_output timestamp="1341.052943"/>
+  <user_input timestamp="1341.81093">OD</user_input>
+  <system_output timestamp="1341.828361"/>
+  <user_input timestamp="1342.158179"></user_input>
+  <system_output timestamp="1342.165919">[P.'</system_output>
+  <user_input timestamp="1342.82829"></user_input>
+  <system_output timestamp="1342.843037">[P.'</system_output>
+  <user_input timestamp="1342.847885"></user_input>
+  <system_output timestamp="1342.863069">[P.'</system_output>
+  <user_input timestamp="1342.889148"></user_input>
+  <system_output timestamp="1342.902978">[P.'</system_output>
+  <user_input timestamp="1342.929235"></user_input>
+  <system_output timestamp="1342.940626">[P.'</system_output>
+  <user_input timestamp="1342.969768"></user_input>
+  <system_output timestamp="1342.98039">[P.'</system_output>
+  <user_input timestamp="1343.030165"></user_input>
+  <system_output timestamp="1343.042573">[P.'</system_output>
+  <user_input timestamp="1343.069854"></user_input>
+  <system_output timestamp="1343.080829">[P.'</system_output>
+  <user_input timestamp="1343.108856"></user_input>
+  <system_output timestamp="1343.120672">[P.'</system_output>
+  <user_input timestamp="1343.149322"></user_input>
+  <system_output timestamp="1343.159436">[P.'</system_output>
+  <user_input timestamp="1343.190328"></user_input>
+  <system_output timestamp="1343.199754">[P.'</system_output>
+  <user_input timestamp="1343.210968"></user_input>
+  <system_output timestamp="1343.219923">[P.'</system_output>
+  <user_input timestamp="1343.250948"></user_input>
+  <system_output timestamp="1343.258418">[P.'</system_output>
+  <user_input timestamp="1343.311188"></user_input>
+  <system_output timestamp="1343.3181">[P.'</system_output>
+  <user_input timestamp="1343.352362"></user_input>
+  <system_output timestamp="1343.35694">[P.'</system_output>
+  <user_input timestamp="1343.39343"></user_input>
+  <system_output timestamp="1343.416965">[P.'</system_output>
+  <user_input timestamp="1343.433714"></user_input>
+  <system_output timestamp="1343.454885">[P.'</system_output>
+  <user_input timestamp="1343.474335"></user_input>
+  <system_output timestamp="1343.496238">[P.'</system_output>
+  <user_input timestamp="1343.515101"></user_input>
+  <system_output timestamp="1343.535706">[P.'</system_output>
+  <user_input timestamp="1343.536212"></user_input>
+  <system_output timestamp="1343.555327">[P.'</system_output>
+  <user_input timestamp="1343.577569"></user_input>
+  <system_output timestamp="1343.595689">[P.'</system_output>
+  <user_input timestamp="1343.638121"></user_input>
+  <system_output timestamp="1343.654495">[P.'</system_output>
+  <user_input timestamp="1343.677961"></user_input>
+  <system_output timestamp="1343.693471">[P.'</system_output>
+  <user_input timestamp="1343.698595"></user_input>
+  <system_output timestamp="1343.712951">[P.'</system_output>
+  <user_input timestamp="1343.757682"></user_input>
+  <system_output timestamp="1343.772346">[P.'</system_output>
+  <user_input timestamp="1343.797831"></user_input>
+  <system_output timestamp="1343.812927">[P.'</system_output>
+  <user_input timestamp="1343.83744"></user_input>
+  <system_output timestamp="1343.852493">[P.'</system_output>
+  <user_input timestamp="1343.878442"></user_input>
+  <system_output timestamp="1343.893255">[P.'</system_output>
+  <user_input timestamp="1343.918957"></user_input>
+  <system_output timestamp="1343.933852">[P.'</system_output>
+  <user_input timestamp="1343.957823"></user_input>
+  <system_output timestamp="1343.972962">[P.'</system_output>
+  <user_input timestamp="1343.999677"></user_input>
+  <system_output timestamp="1344.01222">[P.'</system_output>
+  <user_input timestamp="1344.039208"></user_input>
+  <system_output timestamp="1344.051351">[P.'</system_output>
+  <user_input timestamp="1344.078771"></user_input>
+  <system_output timestamp="1344.091918">[P.'</system_output>
+  <user_input timestamp="1344.316138"></user_input>
+  <system_output timestamp="1344.329658">[P.'</system_output>
+  <user_input timestamp="1344.986117">n</user_input>
+  <system_output timestamp="1345.004685">n.'</system_output>
+  <user_input timestamp="1345.409117">t</user_input>
+  <system_output timestamp="1345.425965">t.'</system_output>
+  <user_input timestamp="1346.034883">p</user_input>
+  <system_output timestamp="1346.043871">p.'</system_output>
+  <user_input timestamp="1347.346926"></user_input>
+  <system_output timestamp="1347.356145">[P.'</system_output>
+  <user_input timestamp="1347.608243">o</user_input>
+  <system_output timestamp="1347.616616">o.'</system_output>
+  <user_input timestamp="1347.913867">p</user_input>
+  <system_output timestamp="1347.935479">p.'</system_output>
+  <user_input timestamp="1348.483984"> </user_input>
+  <system_output timestamp="1348.49986"> .'</system_output>
+  <user_input timestamp="1348.850721">h</user_input>
+  <system_output timestamp="1348.856216">h.'</system_output>
+  <user_input timestamp="1349.012582">a</user_input>
+  <system_output timestamp="1349.031883">a.'</system_output>
+  <user_input timestamp="1349.276974">s</user_input>
+  <system_output timestamp="1349.292922">s.'</system_output>
+  <user_input timestamp="1349.419785"> </user_input>
+  <system_output timestamp="1349.433117"> .'</system_output>
+  <user_input timestamp="1349.783173">b</user_input>
+  <system_output timestamp="1349.793943">b.'</system_output>
+  <user_input timestamp="1349.925107">e</user_input>
+  <system_output timestamp="1349.931395">e.'</system_output>
+  <user_input timestamp="1350.182376">c</user_input>
+  <system_output timestamp="1350.190852">c.'</system_output>
+  <user_input timestamp="1350.303069">o</user_input>
+  <system_output timestamp="1350.308474">o.'</system_output>
+  <user_input timestamp="1350.526356">m</user_input>
+  <system_output timestamp="1350.532055">m.'</system_output>
+  <user_input timestamp="1350.66622">e</user_input>
+  <system_output timestamp="1350.673434">e.'</system_output>
+  <user_input timestamp="1350.848478"> </user_input>
+  <system_output timestamp="1350.855575"> .'</system_output>
+  <user_input timestamp="1351.08838">n</user_input>
+  <system_output timestamp="1351.095163">n.'</system_output>
+  <user_input timestamp="1351.853298">t</user_input>
+  <system_output timestamp="1351.859302">t.'</system_output>
+  <user_input timestamp="1352.357253">o</user_input>
+  <system_output timestamp="1352.378883">o.'</system_output>
+  <user_input timestamp="1352.702758">p</user_input>
+  <system_output timestamp="1352.719151">p.'</system_output>
+  <user_input timestamp="1353.406753">n</user_input>
+  <system_output timestamp="1353.413453">n.'</system_output>
+  <user_input timestamp="1353.853708">g</user_input>
+  <system_output timestamp="1353.871565">g.'</system_output>
+  <user_input timestamp="1354.804961">OC</user_input>
+  <system_output timestamp="1354.823037">.</system_output>
+  <user_input timestamp="1355.026766">OC</user_input>
+  <system_output timestamp="1355.040226">'</system_output>
+  <user_input timestamp="1355.206625">OC</user_input>
+  <system_output timestamp="1355.321027">[?5h[?5l</system_output>
+  <user_input timestamp="1355.85177">
+</user_input>
+  <system_output timestamp="1355.862405">
+</system_output>
+  <system_output timestamp="1355.869378">sudo: unable to resolve host faiserver
+</system_output>
+  <system_output timestamp="1355.886147">[master d86f03c] ntop has become ntopng.
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+</system_output>
+  <system_output timestamp="1355.88811">demo@faiserver:/home/fai/config$ </system_output>
+  <user_input timestamp="1359.030432">g</user_input>
+  <system_output timestamp="1359.032976">g</system_output>
+  <user_input timestamp="1359.28454">i</user_input>
+  <system_output timestamp="1359.301853">i</system_output>
+  <user_input timestamp="1359.684085">t</user_input>
+  <system_output timestamp="1359.696598">t</system_output>
+  <user_input timestamp="1359.871359"> </user_input>
+  <system_output timestamp="1359.883608"> </system_output>
+  <user_input timestamp="1360.252115">a</user_input>
+  <system_output timestamp="1360.255531">a</system_output>
+  <user_input timestamp="1360.398969">d</user_input>
+  <system_output timestamp="1360.402213">d</system_output>
+  <user_input timestamp="1360.609725">d</user_input>
+  <system_output timestamp="1360.630205">d</system_output>
+  <user_input timestamp="1360.865108"> </user_input>
+  <system_output timestamp="1360.879882"> </system_output>
+  <user_input timestamp="1362.423102">p</user_input>
+  <system_output timestamp="1362.439152">p</system_output>
+  <user_input timestamp="1362.591172">a</user_input>
+  <system_output timestamp="1362.602509">a</system_output>
+  <user_input timestamp="1362.863465">	</user_input>
+  <system_output timestamp="1362.898436">ckage_config/</system_output>
+  <user_input timestamp="1363.746923">S</user_input>
+  <system_output timestamp="1363.763878">S</system_output>
+  <user_input timestamp="1364.058366">E</user_input>
+  <system_output timestamp="1364.076541">E</system_output>
+  <user_input timestamp="1364.434789">	</user_input>
+  <system_output timestamp="1364.575363">[?5h[?5lRVER</system_output>
+  <user_input timestamp="1365.731571">N</user_input>
+  <system_output timestamp="1365.752255">N</system_output>
+  <user_input timestamp="1365.983898">A</user_input>
+  <system_output timestamp="1366.001665">A</system_output>
+  <user_input timestamp="1366.383805">	</user_input>
+  <system_output timestamp="1366.414731">GIOS </system_output>
+</recording>

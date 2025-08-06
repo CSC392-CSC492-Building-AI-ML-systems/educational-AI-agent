@@ -1,0 +1,4 @@
+0
+User executes the screen -dr command, reattaches to a detached screen session
+0
+User detaches from screen and ends session

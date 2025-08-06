@@ -1,0 +1,8 @@
+0
+[Mistake] User attempts to SSH into a remote host but fails password attempt [Mistake Reason] Human Error [Mistake Result] Failure to connect to ssh server
+0
+User tries again to ssh and successfully logs in on the second try.
+1
+User logs out of the SSH session to the remote server.
+-1
+User exits the current terminal session.

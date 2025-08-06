@@ -1,0 +1,36 @@
+1
+[Goal_1] User seeks to repair fai-cd such that grub hands off a working terminal to the linux kernel during boot
+0
+User sshes into 172.16.0.17
+0
+User navigates to home/fai and lists it's contents
+1
+User begins editing file /etc/fai/grub.cfg using emacs
+0
+User adds comment '# set our colour set'
+0
+User adds comment of "load video for EFI systems. required for the install to be visible."
+0
+User adds a function called load_efi_video to check whether GRUB platform is efi, if so, it loads two modules using insmod called efi_gop and efi_uga.
+0
+User adds load_efi_video function to every boot entry.
+-1
+User exits out of editing the file
+0
+[Mistake] User runs ./make-fai-cd.sh but cancels it. [Mistake Reason] ./make-fai-cd.sh requires root permission. [Mistake Result] ./make-fai-cd.sh shows many permission denied errors
+1
+User runs make-fai-cd.sh again but with sudo this time.
+0
+FAI finished it's basic components and now begins to install additional packages for a functional FAI installation.
+0
+FAI successfully installs the large set of additional packages. It now begins to the creation of the FAI-CD/ISO image creation.
+-1
+Combines all elements into a final fai_cd.iso file. 
+0
+User exits ssh session
+0
+[Goal_End_1] User finishes Goal_1
+0
+User uses scp to transfer the created fai_cd.iso in the ssh session to the local /disk1/isos/fai_dvd-date`+%Y%m%d`.iso successfully this time.
+0
+User session ends as he exits terminal

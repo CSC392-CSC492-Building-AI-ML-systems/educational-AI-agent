@@ -1,0 +1,78 @@
+<?xml version="1.0" ?>
+<recording version="2" width="319" height="92" timestamp="1728226474">
+<event depth="-2">
+  <system_output timestamp="0.015682">[?2004hstephost:/home/demo# </system_output>
+  <user_input timestamp="2.282893">c</user_input>
+  <system_output timestamp="2.283442">c</system_output>
+  <user_input timestamp="2.552257">m</user_input>
+  <system_output timestamp="2.552683">m</system_output>
+  <user_input timestamp="4.139679"></user_input>
+  <system_output timestamp="4.140085">[K</system_output>
+  <user_input timestamp="4.390538"></user_input>
+  <system_output timestamp="4.390966">[K</system_output>
+  <user_input timestamp="4.777737"></user_input>
+  <system_output timestamp="4.77815"/>
+  <user_input timestamp="6.004082">[A</user_input>
+  <system_output timestamp="6.004864">apt install gcc libc6-dev libsodium-dev make autoconf</system_output>
+  <user_input timestamp="6.952575">[B</user_input>
+  <system_output timestamp="6.953">
+<annotation>
+</annotation>
+</event>
+<event depth="-2">
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K</system_output>
+  <user_input timestamp="12.85589">[200~cm setnote faiserver-tearoff-12 &quot;Primary FAI server.&quot;[201~</user_input>
+  <system_output timestamp="12.856757">[7mcm setnote faiserver-tearoff-12 &quot;Primary FAI server.&quot;[27m</system_output>
+  <user_input timestamp="14.152779">
+</user_input>
+  <system_output timestamp="14.15334">
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccm setnote faiserver-tearoff-12 &quot;Primary FAI server.&quot;
+[?2004l
+</system_output>
+  <system_output timestamp="14.163313">[?2004hstephost:/home/demo# </system_output>
+<annotation>
+</annotation>
+</event>
+<event depth="-2">
+  <user_input timestamp="15.497635">c</user_input>
+  <system_output timestamp="15.498169">c</system_output>
+  <user_input timestamp="15.724468">m</user_input>
+  <system_output timestamp="15.724962">m</system_output>
+  <user_input timestamp="15.865877"> </user_input>
+  <system_output timestamp="15.866472"> </system_output>
+  <user_input timestamp="16.072386">n</user_input>
+  <system_output timestamp="16.072903">n</system_output>
+  <user_input timestamp="16.174299">o</user_input>
+  <system_output timestamp="16.174756">o</system_output>
+  <user_input timestamp="16.320433">t</user_input>
+  <system_output timestamp="16.320837">t</system_output>
+  <user_input timestamp="16.421968">e</user_input>
+  <system_output timestamp="16.422418">e</system_output>
+  <user_input timestamp="16.647262">s</user_input>
+  <system_output timestamp="16.647657">s</system_output>
+  <user_input timestamp="16.873734">
+</user_input>
+  <system_output timestamp="16.87454">
+[?2004l
+</system_output>
+  <system_output timestamp="16.883727">faiserver-tearoff-12: </system_output>
+  <system_output timestamp="16.885463">Primary FAI server.
+</system_output>
+  <system_output timestamp="16.886125">nullhost-tearoff-6: </system_output>
+  <system_output timestamp="16.892085">new implicitcad site
+</system_output>
+  <system_output timestamp="16.893434">[?2004hstephost:/home/demo# </system_output>
+<annotation>
+</annotation>
+</event>
+<event depth="-2">
+  <user_input timestamp="1157.616321"/>
+  <system_output timestamp="1157.61672">[?2004l
+
+</system_output>
+  <system_output timestamp="1157.617081">exit
+</system_output>
+<annotation>
+</annotation>
+</event>
+</recording>

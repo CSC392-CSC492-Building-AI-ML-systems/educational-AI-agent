@@ -1,0 +1,42 @@
+0
+User sshes into 172.16.0.17
+0
+User navigates to /home/fai and lists the contents in the folder
+0
+User navigates further into /home/fai/config and lists the contents of the folder
+0
+User navigates further into /home/fai/config/disk_config and lists the contents of the folder showing files HWPHYS and QEMUCLIENT
+0
+User uses emacs to edit the file HWPHYS but changes nothing as file is write protected.
+1
+User uses exists emacs and sudo's back in to edit HWPHYS
+0
+User removes the already commented code relating to a previous disk_config
+0
+User updates disk configuration /dev/sdbX to sdx on the RAID1 mirror disk.
+-1
+User exists out of of editing the file HWPHYS emacs.
+0
+User inspects the changes made in HWPHYS using git diff
+0
+User plans to commit the changes before stopping.
+0
+User uses emacs to edit the file HWPHYS and change the comment "DISASTER" to "asking for problems with systems with.. 25 disks"
+0
+User commits the changes with message: "harden disk configuration so that instead of failing when 2 disks are present and in the wrong order, 25 disks must be present to cause trouble."
+0
+User navigates back to /home/fai using cd ../../
+1
+User runs make-fai-cd.sh combining both stderr and stdout into a single stream being piped to tee make-fai-cd.out to log the outputs.
+0
+FAI finished it's basic components and now begins to install additional packages for a functional FAI installation.
+0
+FAI successfully installs the large set of additional packages. It now begins to the creation of the FAI-CD/ISO image creation.
+-1
+Combines all elements into a final fai_cd.iso file. 
+0
+User exits ssh session
+0
+User uses scp to transfer the created fai_cd.iso to /disk1/isos/fai_dvd-date`+%Y%m%d`.iso
+0
+User finishes session

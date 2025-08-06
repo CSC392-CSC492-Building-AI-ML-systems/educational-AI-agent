@@ -1,0 +1,26 @@
+0
+[GOAL_1] User modifies EFI boot configuration on remote host via git and attempts to commit changes
+0
+User logs into remote host 172.16.0.17 via SSH
+-1
+User navigates to /home/fai/config/ directory
+0
+[Mistake] User attempts to use git diff in a directory that is not a git repository. [Mistake Reason] Directory /home/fai/config/ is not under git version control. [Mistake Result] git returns "not a git repository" error
+0
+User lists all contents under the directory
+0
+User checks the git status
+0
+User checks the git diff using 'sudo'
+0
+User exits the git diff viewer
+0
+User stages the changes in files/etc/fai/grub.cfg/SERVERFAI using 'sudo'
+0
+User commits the changes with message 'attempt to make linux show video when booted from EFI.'
+1
+User exits the SSH session
+0
+User exits the local terminal session
+0
+[GOAL_END_1] User completes git-based modification of boot settings on remote host

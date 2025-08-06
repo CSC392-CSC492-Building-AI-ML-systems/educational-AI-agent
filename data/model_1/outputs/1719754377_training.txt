@@ -1,0 +1,196 @@
+0
+User searches and executes the screen -dr command, reattaches to a detached screen session showing user currently at demo@stephost:/disk1/isos$
+0
+User runs 'cm getip' to check the IP addresses of the VM containers.
+0
+User executes 'sudo screen -r faiserver-tearoff-21' entering a QEMU monitor before it goes to the VM's TTY/console.
+1
+[GOAL_1] User is trying to get networking working on a freshly built FAI VM so they can continue the automated install.
+0
+User logins and runs 'ip addr' to inspect the network information.
+0
+User detaches to a new screen at demo@faiserver:/home/fai$
+0
+User edits file config/files/etc/network/interfaces/DHCPC using emacs replacing all instances of 'eth0' with 'ens3' while moving back and forth between screens.
+0
+User begins executing the command 'time sudo ./make-fai-cd.sh'
+0
+User swaps screens before returning to the faiserver-tearoff-21
+0
+User inspects the file '/etc/network/interfaces' replacing all instances of 'eth0' with 'ens3' doing the same changes as the ealire DHCPC file. However, he adds a ';' at the end of the second ens3.
+0
+User runs 'sudo reboot' returning to the GNU GRUB screen.
+0
+User selects '*boot from first local disk' reaching another screen with two options.
+0
+User selects '*Debian GNU/Linux'
+0
+User detaches from the screen '2977978.faiserver-tearoff-21' returning back to 'demo@stephost:/disk1/isos$'
+0
+User runs 'cm getip' twice to check the IP addresses of the VM containers.
+0
+User checks past commands before executing 'sudo screen -r faiserver-tearoff-21'
+0
+User logins to the faiserver and runs 'ip addr'
+0
+[Mistake] User executes command 'sudo service networking restart' but receives error [Mistake Reason] Control proceses exited [Mistake Result] Failed to start network interfaces
+0
+User executes 'journalctl -xe' and 'sudo journalctl -xe' showing 'no entries' both times.
+0
+User executes 'systemctl status networking service' showing the earlier failure of exit code 1.
+0
+[Mistake] User runs 'ifup en3' receiving 'unknown interface en3' [Mistake Reason] Invalid interface [Mistake Result] Nothing occurs
+0
+User runs 'ip addr' and checks out contents in /etc/network/interfaces showing the earlier 'ens3' changes added.
+0
+User edits the file /etc/network/interfaces and removes the earlier added ';' at the end of the ens3.
+0
+User runs 'sudo ifup en3' successfully.
+-1
+[GOAL_END_1] After troubleshooting typo and interface naming, networking comes up successfully.
+0
+User detaches from '120968.pts-29.stephost' returning to demo@stephost:~$.
+0
+User runs 'screen -dr' returning to demo@stephost:/disk1/isos$. Logs indicate [detached from 2977978.faiserver-tearoff-21]
+0
+User runs 'cm getip' to check the IP addresses of the VM containers.
+0
+[Mistake] User fails to sshs into demo@172.16.0.20 or faiserver-tearoff-21 but fails due to host key. [Mistake Reason] Incorrect SSH key [Mistkae Result] Failure to ssh into session
+0
+User runs 'ssh-keygen -f '/home/demo/.ssh/known_hosts' -R '172.16.0.20' updating ssh key and successfully sshes this time resulting in demo@faiserver:~$.
+1
+[GOAL_2] User is trying to build the FAI-CD (custom install ISO) inside the VM with sufficient resources.
+0
+User runs 'dpkg -l | less' to check installed packages
+0
+User swaps screen to demo@faiserver:/home/fai where a fai_cd.iso was just created.
+0
+User runs 'dpkg -l | less' to check installed packages but swaps screen back to demo@faiserver:~$.
+0
+User checks disk space via 'df' and lsblk on both demo@faiserver:/home/fai and demo@faiserver:~$ screens.
+0
+User switches screen back to demo@faiserver:~$.
+0
+User navigates to /home/fai
+1
+User runs make-fai-cd.sh using time
+0
+FAI finished it's basic components and now begins to install additional packages for a functional FAI installation.
+-1
+[SUCCESS_FAILURE] make-fai-nfsroot failed with exit code 12
+0
+User executes 'sudo poweroff' causing the system to shutdown, closing the connection and moving the user to demo@stephost:/disk1/isos
+1
+User begins edits file /var/local/createvm/VMs/faiserver-tearoff-21/startup-variables.sh using emacs 
+-1
+User modifies 'MEM=384' to 'MEM=2048' and saves file
+0
+User runs 'sudo cm start faiserver-tearoff-21' starting up a new instance
+0
+User sshes into faiserver-tearoff-21 or ip address at 172.16.0.20
+1
+User navigates to /home/fai and runs sudo make-fai-cd.sh using time
+0
+FAI finished it's basic components and now begins to install additional packages for a functional FAI installation.
+0
+FAI successfully installs the large set of additional packages. It now begins to the creation of the FAI-CD/ISO image creation.
+-1
+Combines all elements into a final fai_cd.iso file. 
+-1
+[GOAL_END_2] Build is successful
+1
+[Goal_3] User is trying to copy the newly built ISO off the VM onto the host’s /disk1/isos
+0
+User reattaches to another screen of demo@faiserver:/home/fai and retrieves the command 'scp fai_cd.iso demo@172.16.0.1:/disk1/isos/fai_dvd-`date +%Y%m%d`.iso' before returning back to faiserver-tearoff-12
+0
+[Mistake] User executes 'scp fai_cd.iso demo@172.16.0.1:/disk1/isos/fai_dvd-`date +%Y%m%d`.iso' to transfer the created fai_cd.iso to demo@172.16.0.1:/disk1/isos/fai_dvd-`date +%Y%m%d`.iso but fails due to lack of space [Mistake Reason] Not enough disk space [Mistake Result] File failed to transfer
+0
+User switches screen to window 1 before switching to window 3
+0
+User checks contents at /usr/share/createvm/templates as well as disk space using 'ls' and 'df'
+0
+User navigates to 'disk1/isos' and checks it's detailed contents via 'ls' and 'ls -la'
+0
+User removes the file 'fai_dvd-20240609.iso' with 'rm fai_dvd-20240609.iso'
+0
+[Mistake] User returns to window 0 at 'demo@faiserver:/home/fai' and attempts to execute the command 'mountls' [Mistake Reason] command was not found [Mistake Result] The user is now in window 0
+0
+User investigates folder with 'ls' and 'ls -la'
+0
+User navigates back to window 1 followed by window 2 at demo@faiserver:/home/fai
+0
+User executes 'scp fai_cd.iso demo@172.16.0.1:/disk1/isos/fai_dvd-`date +%Y%m%d`-2.iso'
+0
+User returns to window 0 at demo@faiserver:/home/fai and executes the command 'date' to check the date.
+0
+User navigates back to window 1 and then window 2 at demo@faiserver:/home/fai
+0
+User logs out of the ssh connection
+0
+User begins looking at past executed commands before returning to window 0 at demo@faiserver:/home/fai
+0
+User executes 'scp fai_cd.iso demo@172.16.0.1:/disk1/isos/fai_dvd-`date +%Y%m%d`.iso'
+0
+User swaps back to window 2 at demo@stephost:/disk1/isos and lists the contents via 'ls'
+0
+User removes files 'fai_dvd-20240629.iso' and 'fai_cd-10-AMD64-20220221.iso' before checking contents of directory again
+0
+User cats out the contents of the file './update_symlinks.sh'
+0
+User runs './update_symlinks.sh' and checks the directory contents after with 'ls -la'
+0
+User swaps back to window 0 before swapping back to window 2
+0
+User checks disk space with 'df'
+0
+User swaps back to window 0
+0
+[Mistake] User runs 'scp fai_cd.iso demo@172.16.0.1:/disk1/isos/fai_dvd-`date +%Y%m%d`.iso' but receives no space on disk error again [Mistake Reason] Disk space is not enough [Mistake Result] File transfered unsuccessfully
+0
+User swaps back to window 2
+0
+User checks disk space with 'df'
+0
+User lists out the contents of the directory with 'ls -la'
+0
+User cats out the contents of the file '/proc/mdstat'
+0
+User checks out directory with 'ls' and 'ls -la'
+0
+User makes a new directory using 'sudo mkdir -p /disk2/isos/historic'.
+0
+User moves all file types fai_dvd-201* and fai_cd-debian_8-20220219.iso into the new folder
+0
+User swaps back to window 0 at demo@faiserver:/home/fai
+0
+User runs 'scp fai_cd.iso demo@172.16.0.1:/disk1/isos/fai_dvd-`date +%Y%m%d`.iso' and successfully transfers the file this time.
+-1
+[GOAL_END_3] After cleaning up old images and creating a historic archive, the ISO transfer finally succeeds.
+1
+[GOAL_4] User is tidying up file directories and archive old iso files
+0
+User swaps to window 2 and quits and logs out to demo@faiserver:/home/fai
+0
+User checks out network information with 'ip addr'
+0
+User executes 'sudo poweroff' causing the Broken pipe disconnect sending them back to stephost:/disk1/isos#
+0
+User swaps to window 2 followed by 3 and then 0 before going back to 3 at demo@stephost:/disk1/isos
+0
+User checks out the current directory with 'ls -la'
+0
+User checks out the file '/proc/mdstat'
+0
+User moves file 'BetaBrite-Messaging_Software-2_0.iso' to /disk2/isos/
+0
+User moves file 'Julia_Longtin-XRay-C-Spine-07_07-2015-10_12_2016-Dicom.iso' to /disk2/isos/
+0
+User moves file 'MKS_900_Series_Vacuum_Transducers.iso' to /disk2/isos/historic/
+0
+User checks disk space via 'df'
+0
+User moves file  'fai_dvd-20240604-2.iso' to /disk2/isos/historic/
+0
+User checks disk space via 'df'
+-1
+[GOAL_END_4] All legacy ISO files are organized, disk space reclaimed, and the user’s session ends cleanly.

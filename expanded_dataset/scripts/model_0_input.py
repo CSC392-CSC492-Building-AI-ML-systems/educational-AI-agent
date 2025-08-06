@@ -4,8 +4,6 @@ import xml.etree.ElementTree as ET
 import xml.dom.minidom
 import re
 import os
-import sys
-import argparse
 
 def remove_invalid_xml_chars(s):
     """
@@ -104,35 +102,42 @@ def prettify_xml(elem):
     return reparsed.toprettyxml(indent="  ")
 
 def main():
+    # Define the input and output directories:
+    input_dir = "expanded_dataset/raw"
+    output_dir = "expanded_dataset/model_0/inputs"
 
-	# WILL NEED TO GET INPUT FORM STDIN AND OUTPUT TO STDOUT
+    # Process every file in the input directory
+    for input_file_name in os.listdir(input_dir):
 
-	input_data = sys.stdin.read()
-	# output_data = parse_recording(input_data)
-	# sys.stdout.write(output_data)
+        output_file_name = input_file_name + ".xml"
 
-	#  need to figure out when the input ends
+        # Construct full paths.
+        input_file = os.path.join(input_dir, input_file_name)
+        output_file = os.path.join(output_dir, output_file_name)
 
-    # Set to True if you want to remove annotations from the output.
-    strip_annotations = True
+        # Set to True if you want to remove annotations from the output.
+        strip_annotations = True
 
-    # Parse the recording and handle errors.
-    try:
-        xml_root = parse_recording(input_data, strip_annotations=strip_annotations)
-    except Exception as e: 
-        print("Error parsing recording:", e)
-        return
+        # Parse the recording and handle errors.
+        try:
+            xml_root = parse_recording(input_file, strip_annotations=strip_annotations)
+        except Exception as e:
+            print("Error parsing recording:", e)
+            return
 
-    # Generate a pretty-printed XML string.
-    pretty_xml = prettify_xml(xml_root)
+        # Generate a pretty-printed XML string.
+        pretty_xml = prettify_xml(xml_root)
 
-    # Ensure the output directory exists (in case it doesn't).
-    os.makedirs(output_dir, exist_ok=True)
+        # Ensure the output directory exists (in case it doesn't).
+        os.makedirs(output_dir, exist_ok=True)
 
-    # Write the XML to the output file.
-    with open(output_file, "w", encoding="utf-8") as out_f:
-        out_f.write(pretty_xml)
-    print(f"XML written to {output_file}")
+        # Write the XML to the output file.
+        with open(output_file, "w", encoding="utf-8") as out_f:
+            out_f.write(pretty_xml)
+        print(f"XML written to {output_file}")
+
+    # Exit after processing all files
+    return
 
 if __name__ == "__main__":
     main()

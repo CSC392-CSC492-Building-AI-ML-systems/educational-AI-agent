@@ -1,0 +1,16 @@
+0
+[GOAL_1] User attempts to annotate a specific VM by adding a description to facilitate management
+0
+User lists all VMs with names and checks their IP addresses containing 'faiserver'
+0
+User checks cm command usage
+0
+[Mistake] User attempts to add a note to 'faiserver-tearoff-12' with description 'Primary FAI server.' but fails due to lack of write permission. [Mistake Reason] Missing elevated privileges (no sudo). [Mistake Result] Write operation denied by system
+-1
+[Mistake] User re-executes the failed command via 'sudo' but fails to enter password for authentication. [Mistake Reason] Authentication prompt not completed, password is not entered correctly. [Mistake Result] Elevated command not executed
+1
+User exits the terminal session
+0
+[SUCCESS_FAILURE] Goal_1 fails because neither the normal nor sudo version of the command completed successfully
+0
+[GOAL_END_1] User gives up attempt to annotate the VM and exits terminal

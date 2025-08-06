@@ -1,0 +1,42 @@
+0
+User connects to remote server via SSH using the command 'ssh 172.16.0.17' and enters password
+1
+[GOAL_1] User attempts to modify package configuration for GRUBEFI handling per architecture and for the bootloader to support GRUB directory explicity to rebuild the FAI CD iso image.
+0
+User navigates to /home/fai/config/package_config and lists out the content in the directory
+0
+[Mistake] User attempts to edit GRUBEFI before canceling it. [Mistake Reason] Human Error [Mistake Result] File is not opened
+0
+User edits GRUBEFI using sudo this time. They modify that grub-efi-ia32-bin should only be installed when building 32-bit (i386) architecture and that grub-efi-amd64-bin should be installed 64-bit (amd64) architecture builds.
+0
+User prints out the contents of ../class/50-host-classes with command 'cat ../class/50-host-classes'
+0
+User runs 'sudo git diff' indicating no changes
+0
+User runs 'sudo git status' showing that GRUBEFI is in the untracked files.
+0
+User adds and commits the GRUBEFI with message: "add grub for i686 and AMD64 machines."
+0
+User navigates to /home/fai/config/scripts/GRUBEFI and lists the contents in the directory
+0
+User prints out the contents of 10-setup twice with command 'cat 10-setup' and one with sudo
+0
+User edits the file 10-setup using emacs adding '--directory /usr/lib/grub/x86_64-efi/' to the end of '$ROOTCMD grub-install'
+0
+[Mistake] User runs git diff but opens up the help information [Mistake Reason] Needs sudo [Mistake Result] Opened up the git diff help page
+0
+User runs git diff with sudo and sees the changes they made
+0
+User navigates to /home/fai
+1
+User runs make-fai-cd.sh combining both stderr and stdout into a single stream being piped to tee make-fai-cd.out to log the outputs.
+0
+FAI finished it's basic components and now begins to install additional packages for a functional FAI installation.
+0
+FAI successfully installs the large set of additional packages. It now begins to the creation of the FAI-CD/ISO image creation.
+-1
+Combines all elements into a final fai_cd.iso file. 
+0
+[GOAL_END_1]: User successfully rebuilds the FAI installation image and generates the fai_cd.iso with their modifications included.
+0
+User session ends

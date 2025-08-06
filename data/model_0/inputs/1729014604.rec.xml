@@ -1,0 +1,561 @@
+<?xml version="1.0" ?>
+<recording version="2" width="239" height="196" timestamp="1729014605">
+  <system_output timestamp="0.006077">[?2004hdemo@stephost:~$ </system_output>
+  <user_input timestamp="0.713631"/>
+  <system_output timestamp="0.7142">
+(reverse-i-search)`': </system_output>
+  <user_input timestamp="1.068627">s</user_input>
+  <system_output timestamp="1.069376">s': sudo ddrescue /disk1/isos/fai_dvd-20241014.iso /dev/[7ms[27mdg --force</system_output>
+  <user_input timestamp="1.27396">s</user_input>
+  <system_output timestamp="1.274364">
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cs': [7mss[27mh 172.16.0.17[K</system_output>
+  <user_input timestamp="2.026591">
+</user_input>
+  <system_output timestamp="2.0271">
+[7Pdemo@stephost:~$ ss
+[?2004l
+</system_output>
+  <system_output timestamp="2.384955">
+demo@172.16.0.17's password: </system_output>
+  <user_input timestamp="3.066557">P</user_input>
+  <user_input timestamp="3.820775"></user_input>
+  <user_input timestamp="4.575745">f</user_input>
+  <user_input timestamp="4.745651">a</user_input>
+  <user_input timestamp="4.828659">i</user_input>
+  <user_input timestamp="4.97361">
+</user_input>
+  <system_output timestamp="4.974006">
+</system_output>
+  <system_output timestamp="5.167743">Linux faiserver 6.1.0-22-686-pae #1 SMP PREEMPT_DYNAMIC Debian 6.1.94-1 (2024-06-21) i686
+
+
+Plan your installation, and FAI installs your plan.
+
+Last login: Mon Oct 14 12:32:28 2024 from 172.16.0.1
+
+</system_output>
+  <system_output timestamp="5.283608">[?2004h]0;demo@faiserver: ~demo@faiserver:~$ </system_output>
+  <user_input timestamp="66.699379">c</user_input>
+  <system_output timestamp="66.701351">c</system_output>
+  <user_input timestamp="66.864521">d</user_input>
+  <system_output timestamp="66.874735">d</system_output>
+  <user_input timestamp="66.966774"> </user_input>
+  <system_output timestamp="66.971376"> </system_output>
+  <user_input timestamp="67.157811">/</user_input>
+  <system_output timestamp="67.16371">/</system_output>
+  <user_input timestamp="67.449914">h</user_input>
+  <system_output timestamp="67.468504">h</system_output>
+  <user_input timestamp="67.572869">o</user_input>
+  <system_output timestamp="67.58349">o</system_output>
+  <user_input timestamp="67.784045">m</user_input>
+  <system_output timestamp="67.794032">m</system_output>
+  <user_input timestamp="67.972673">e</user_input>
+  <system_output timestamp="67.984971">e</system_output>
+  <user_input timestamp="68.223107">/</user_input>
+  <system_output timestamp="68.23508">/</system_output>
+  <user_input timestamp="68.575497">f</user_input>
+  <system_output timestamp="68.580223">f</system_output>
+  <user_input timestamp="68.722007">a</user_input>
+  <system_output timestamp="68.735446">a</system_output>
+  <user_input timestamp="68.782699">i</user_input>
+  <system_output timestamp="68.792337">i</system_output>
+  <user_input timestamp="69.508913">/</user_input>
+  <system_output timestamp="69.521804">/</system_output>
+  <user_input timestamp="70.092814">c</user_input>
+  <system_output timestamp="70.103962">c</system_output>
+  <user_input timestamp="70.218265">o</user_input>
+  <system_output timestamp="70.238664">o</system_output>
+  <user_input timestamp="70.510942">f</user_input>
+  <system_output timestamp="70.52681">f</system_output>
+  <user_input timestamp="70.803709"></user_input>
+  <system_output timestamp="70.814439">[K</system_output>
+  <user_input timestamp="71.010682">n</user_input>
+  <system_output timestamp="71.029656">n</system_output>
+  <user_input timestamp="71.303813">f</user_input>
+  <system_output timestamp="71.317705">f</system_output>
+  <user_input timestamp="71.451687">i</user_input>
+  <system_output timestamp="71.471784">i</system_output>
+  <user_input timestamp="71.805076">	</user_input>
+  <system_output timestamp="71.830113">g/</system_output>
+  <user_input timestamp="72.409538">
+</user_input>
+  <system_output timestamp="72.419697">
+[?2004l
+</system_output>
+  <system_output timestamp="72.4207">[?2004h]0;demo@faiserver: /home/fai/configdemo@faiserver:/home/fai/config$ </system_output>
+  <user_input timestamp="72.722064">l</user_input>
+  <system_output timestamp="72.724912">l</system_output>
+  <user_input timestamp="72.995345">s</user_input>
+  <system_output timestamp="73.010999">s</system_output>
+  <user_input timestamp="73.1188">
+</user_input>
+  <system_output timestamp="73.126602">
+[?2004l
+</system_output>
+  <system_output timestamp="73.133487">[0m[01;34mclass[0m  [01;34mdebconf[0m  [01;34mdisk_config[0m  [01;34mfiles[0m  [01;34mhooks[0m  [01;34mpackage_config[0m  [01;34mpackage_config.old[0m  [01;34mscripts[0m
+</system_output>
+  <system_output timestamp="73.134519">[?2004h]0;demo@faiserver: /home/fai/configdemo@faiserver:/home/fai/config$ </system_output>
+  <user_input timestamp="76.119209">c</user_input>
+  <system_output timestamp="76.12133">c</system_output>
+  <user_input timestamp="76.334405">d</user_input>
+  <system_output timestamp="76.339168">d</system_output>
+  <user_input timestamp="76.463161"> </user_input>
+  <system_output timestamp="76.479143"> </system_output>
+  <user_input timestamp="76.719413">s</user_input>
+  <system_output timestamp="76.738007">s</system_output>
+  <user_input timestamp="76.955171">c</user_input>
+  <system_output timestamp="76.976741">c</system_output>
+  <user_input timestamp="77.191206">r</user_input>
+  <system_output timestamp="77.193335">r</system_output>
+  <user_input timestamp="77.426841">	</user_input>
+  <system_output timestamp="77.444403">ipts/</system_output>
+  <user_input timestamp="77.852722">
+</user_input>
+  <system_output timestamp="77.867226">
+[?2004l
+</system_output>
+  <system_output timestamp="77.868187">[?2004h]0;demo@faiserver: /home/fai/config/scriptsdemo@faiserver:/home/fai/config/scripts$ </system_output>
+  <user_input timestamp="78.213624">l</user_input>
+  <system_output timestamp="78.224779">l</system_output>
+  <user_input timestamp="78.489752">s</user_input>
+  <system_output timestamp="78.499629">s</system_output>
+  <user_input timestamp="78.704084">
+</user_input>
+  <system_output timestamp="78.716665">
+[?2004l
+</system_output>
+  <system_output timestamp="78.721101">[0m[01;34mDEMO[0m     [01;34mGRUB[0m     [01;34mISCSICLIENT[0m  [01;34mLAST[0m        [01;34mSERVERDHCP[0m      [01;34mSERVERDNS[0m        [01;34mSERVERDRUPAL[0m  [01;34mSERVERGIFT[0m      [01;34mSERVERMAIL[0m          [01;34mSERVERMAILSHL[0m  [01;34mSERVERNAGIOS[0m  [01;34mSERVERWIFIDOG[0m  [01;34mSERVERWIKIMEDIA[0m  [01;34mSERVERWWW[0m      [01;34mSERVERWWWOEMR[0m     [01;34mSERVERZONEMINDER[0m
+[01;34mFAIBASE[0m  [01;34mGRUBEFI[0m  [01;34mJADMIN[0m       [01;34mQEMUCLIENT[0m  [01;34mSERVERDHCPBOOT[0m  [01;34mSERVERDNSMASTER[0m  [01;34mSERVERFAI[0m     [01;34mSERVERIMPLICIT[0m  [01;34mSERVERMAILPARANOID[0m  [01;34mSERVERMRTG[0m     [01;34mSERVERSNMP[0m    [01;34mSERVERWIKI[0m     [01;34mSERVERWORDPRESS[0m  [01;34mSERVERWWWMRTG[0m  [01;34mSERVERWWWSSLONLY[0m
+</system_output>
+  <system_output timestamp="78.722385">[?2004h]0;demo@faiserver: /home/fai/config/scriptsdemo@faiserver:/home/fai/config/scripts$ </system_output>
+  <user_input timestamp="82.709512">c</user_input>
+  <system_output timestamp="82.711666">c</system_output>
+  <user_input timestamp="82.974117">d</user_input>
+  <system_output timestamp="82.983113">d</system_output>
+  <user_input timestamp="83.137016"> </user_input>
+  <system_output timestamp="83.149291"> </system_output>
+  <user_input timestamp="89.619791"></user_input>
+  <system_output timestamp="89.621716">[K</system_output>
+  <user_input timestamp="89.840105"></user_input>
+  <system_output timestamp="89.855194">[K</system_output>
+  <user_input timestamp="90.041092"></user_input>
+  <system_output timestamp="90.047302">[K</system_output>
+  <user_input timestamp="90.664847">c</user_input>
+  <system_output timestamp="90.68188">c</system_output>
+  <user_input timestamp="90.703907">a</user_input>
+  <system_output timestamp="90.719383">a</system_output>
+  <user_input timestamp="90.864633">t</user_input>
+  <system_output timestamp="90.872256">t</system_output>
+  <user_input timestamp="91.022533"> </user_input>
+  <system_output timestamp="91.025303"> </system_output>
+  <user_input timestamp="91.47697">F</user_input>
+  <system_output timestamp="91.487938">F</system_output>
+  <user_input timestamp="91.616514">A</user_input>
+  <system_output timestamp="91.623358">A</system_output>
+  <user_input timestamp="91.776414">I</user_input>
+  <system_output timestamp="91.796977">I</system_output>
+  <user_input timestamp="92.15256">B</user_input>
+  <system_output timestamp="92.163665">B</system_output>
+  <user_input timestamp="92.31205">A</user_input>
+  <system_output timestamp="92.32018">A</system_output>
+  <user_input timestamp="92.672383">	</user_input>
+  <system_output timestamp="92.696854">SE/</system_output>
+  <user_input timestamp="93.611487">2</user_input>
+  <system_output timestamp="93.629495">2</system_output>
+  <user_input timestamp="93.7527">0</user_input>
+  <system_output timestamp="93.76308">0</system_output>
+  <user_input timestamp="93.990817">	</user_input>
+  <system_output timestamp="94.006352">-copy-mirror </system_output>
+  <user_input timestamp="94.632152">
+</user_input>
+  <system_output timestamp="94.635583">
+[?2004l
+</system_output>
+  <system_output timestamp="94.640397">#! /bin/bash
+
+# TODO: if we install from network copy the package mirror via, e.g., wget
+
+[ -d /media/mirror ] || exit 0
+
+if ifclass QEMUCLIENT ; then
+    {
+	echo &quot;not copying debian mirror; this is a QEMU install.&quot;
+    }
+else
+    {
+	echo &quot;Copying Debian mirror from CD to local disk. This may take some time.&quot;
+	mkdir -p $target/var/www/debian
+	cp -a /media/mirror/* $target/var/www/debian
+    }
+fi</system_output>
+  <system_output timestamp="94.641098">[?2004h]0;demo@faiserver: /home/fai/config/scriptsdemo@faiserver:/home/fai/config/scripts$ </system_output>
+  <user_input timestamp="361.312008">c</user_input>
+  <system_output timestamp="361.314252">c</system_output>
+  <user_input timestamp="361.556382">d</user_input>
+  <system_output timestamp="361.563606">d</system_output>
+  <user_input timestamp="361.680673"> </user_input>
+  <system_output timestamp="361.699291"> </system_output>
+  <user_input timestamp="361.844771">.</user_input>
+  <system_output timestamp="361.852941">.</system_output>
+  <user_input timestamp="362.052537">.</user_input>
+  <system_output timestamp="362.065069">.</system_output>
+  <user_input timestamp="362.399492">
+</user_input>
+  <system_output timestamp="362.414976">
+[?2004l
+</system_output>
+  <system_output timestamp="362.415449">[?2004h]0;demo@faiserver: /home/fai/configdemo@faiserver:/home/fai/config$ </system_output>
+  <user_input timestamp="364.703905">c</user_input>
+  <system_output timestamp="364.717332">c</system_output>
+  <user_input timestamp="364.956905">d</user_input>
+  <system_output timestamp="364.96753">d</system_output>
+  <user_input timestamp="365.092124"> </user_input>
+  <system_output timestamp="365.102886"> </system_output>
+  <user_input timestamp="366.792112">f</user_input>
+  <system_output timestamp="366.793519">f</system_output>
+  <user_input timestamp="366.869298">i</user_input>
+  <system_output timestamp="366.871693">i</system_output>
+  <user_input timestamp="367.161784">	</user_input>
+  <system_output timestamp="367.187751">les/</system_output>
+  <user_input timestamp="367.980677">e</user_input>
+  <system_output timestamp="367.990821">e</system_output>
+  <user_input timestamp="368.236189">t</user_input>
+  <system_output timestamp="368.244692">t</system_output>
+  <user_input timestamp="368.430668">	</user_input>
+  <system_output timestamp="368.460217">c/</system_output>
+  <user_input timestamp="370.473435">a</user_input>
+  <system_output timestamp="370.491227">a</system_output>
+  <user_input timestamp="370.658606">l</user_input>
+  <system_output timestamp="370.662701">l</system_output>
+  <user_input timestamp="371.10843"></user_input>
+  <system_output timestamp="371.124481">[K</system_output>
+  <user_input timestamp="371.275369">p</user_input>
+  <system_output timestamp="371.297038">p</system_output>
+  <user_input timestamp="371.585291">	</user_input>
+  <system_output timestamp="371.59723"/>
+  <user_input timestamp="372.118799">t</user_input>
+  <system_output timestamp="372.124604">t</system_output>
+  <user_input timestamp="372.262348">	</user_input>
+  <system_output timestamp="372.287392">/</system_output>
+  <user_input timestamp="372.878729">
+</user_input>
+  <system_output timestamp="372.895613">
+[?2004l
+</system_output>
+  <system_output timestamp="372.896295">[?2004h]0;demo@faiserver: /home/fai/config/files/etc/aptdemo@faiserver:/home/fai/config/files/etc/apt$ </system_output>
+  <user_input timestamp="373.121526">l</user_input>
+  <system_output timestamp="373.124392">l</system_output>
+  <user_input timestamp="373.347154">s</user_input>
+  <system_output timestamp="373.352094">s</system_output>
+  <user_input timestamp="373.488077">
+</user_input>
+  <system_output timestamp="373.505155">
+[?2004l
+</system_output>
+  <system_output timestamp="373.510953">[0m[01;34msources.list[0m  [01;34msources.list.security[0m
+</system_output>
+  <system_output timestamp="373.51227">[?2004h]0;demo@faiserver: /home/fai/config/files/etc/aptdemo@faiserver:/home/fai/config/files/etc/apt$ </system_output>
+  <user_input timestamp="374.084902">c</user_input>
+  <system_output timestamp="374.096561">c</system_output>
+  <user_input timestamp="374.187029">a</user_input>
+  <system_output timestamp="374.194294">a</system_output>
+  <user_input timestamp="374.40838">t</user_input>
+  <system_output timestamp="374.421067">t</system_output>
+  <user_input timestamp="374.529569"> </user_input>
+  <system_output timestamp="374.538194"> </system_output>
+  <user_input timestamp="374.89637">s</user_input>
+  <system_output timestamp="374.899419">s</system_output>
+  <user_input timestamp="374.999519">o</user_input>
+  <system_output timestamp="375.016353">o</system_output>
+  <user_input timestamp="375.243037">	</user_input>
+  <system_output timestamp="375.257849">urces.list</system_output>
+  <user_input timestamp="375.693815">
+</user_input>
+  <system_output timestamp="375.706553">
+[?2004l
+</system_output>
+  <system_output timestamp="375.70938">cat: sources.list: Is a directory
+</system_output>
+  <system_output timestamp="375.71033">[?2004h]0;demo@faiserver: /home/fai/config/files/etc/aptdemo@faiserver:/home/fai/config/files/etc/apt$ </system_output>
+  <user_input timestamp="377.027913">c</user_input>
+  <system_output timestamp="377.033282">c</system_output>
+  <user_input timestamp="377.209297">d</user_input>
+  <system_output timestamp="377.224228">d</system_output>
+  <user_input timestamp="377.29123"> </user_input>
+  <system_output timestamp="377.302406"> </system_output>
+  <user_input timestamp="377.599101">s</user_input>
+  <system_output timestamp="377.610167">s</system_output>
+  <user_input timestamp="377.681184">o</user_input>
+  <system_output timestamp="377.685489">o</system_output>
+  <user_input timestamp="377.949773">	</user_input>
+  <system_output timestamp="377.966001">urces.list</system_output>
+  <user_input timestamp="378.358989">
+</user_input>
+  <system_output timestamp="378.361119">
+[?2004l
+</system_output>
+  <system_output timestamp="378.361687">[?2004h]0;demo@faiserver: /home/fai/config/files/etc/apt/sources.listdemo@faiserver:/home/fai/config/files/etc/apt/sources.list$ </system_output>
+  <user_input timestamp="378.78729">l</user_input>
+  <system_output timestamp="378.807564">l</system_output>
+  <user_input timestamp="379.035633">s</user_input>
+  <system_output timestamp="379.0404">s</system_output>
+  <user_input timestamp="379.177642">
+</user_input>
+  <system_output timestamp="379.195859">
+[?2004l
+</system_output>
+  <system_output timestamp="379.201162">DEFAULT  QEMUCLIENT
+</system_output>
+  <system_output timestamp="379.202248">[?2004h]0;demo@faiserver: /home/fai/config/files/etc/apt/sources.listdemo@faiserver:/home/fai/config/files/etc/apt/sources.list$ </system_output>
+  <user_input timestamp="380.671271">c</user_input>
+  <system_output timestamp="380.67522">c</system_output>
+  <user_input timestamp="380.814475">a</user_input>
+  <system_output timestamp="380.826692">a</system_output>
+  <user_input timestamp="380.998639">t</user_input>
+  <system_output timestamp="381.013993">t</system_output>
+  <user_input timestamp="381.139058"> </user_input>
+  <system_output timestamp="381.147941"> </system_output>
+  <user_input timestamp="381.651324">D</user_input>
+  <system_output timestamp="381.666257">D</system_output>
+  <user_input timestamp="381.713282">E</user_input>
+  <system_output timestamp="381.723318">E</system_output>
+  <user_input timestamp="382.024393">	</user_input>
+  <system_output timestamp="382.038061">FAULT </system_output>
+  <user_input timestamp="382.412264">
+</user_input>
+  <system_output timestamp="382.43164">
+[?2004l
+</system_output>
+  <system_output timestamp="382.479873"># via local partial mirror (was mirror on fai-cd)
+# note, this should be the &quot;most current&quot; debian distro used creating this cd.
+# if unstable was used, it should be sid.
+#deb file:///var/www/debian sid main
+
+# in case we are the CD installing.
+deb file:///media/mirror wheezy main
+
+deb http://http.us.debian.org/debian stable main
+deb-src http://http.us.debian.org/debian stable main
+
+#deb http://http.us.debian.org/debian unstable main
+#deb-src http://http.us.debian.org/debian unstable main
+
+deb http://security.debian.org/ stable/updates main</system_output>
+  <system_output timestamp="382.480829">[?2004h]0;demo@faiserver: /home/fai/config/files/etc/apt/sources.listdemo@faiserver:/home/fai/config/files/etc/apt/sources.list$ </system_output>
+  <user_input timestamp="385.43196">c</user_input>
+  <system_output timestamp="385.433996">c</system_output>
+  <user_input timestamp="385.619528">a</user_input>
+  <system_output timestamp="385.632631">a</system_output>
+  <user_input timestamp="385.850131">t</user_input>
+  <system_output timestamp="385.87019">t</system_output>
+  <user_input timestamp="385.993939"> </user_input>
+  <system_output timestamp="386.00971"> </system_output>
+  <user_input timestamp="386.370298">q</user_input>
+  <system_output timestamp="386.38158">q</system_output>
+  <user_input timestamp="386.495407">e</user_input>
+  <system_output timestamp="386.498447">e</system_output>
+  <user_input timestamp="386.784544">	</user_input>
+  <system_output timestamp="386.800952"/>
+  <user_input timestamp="387.323347"></user_input>
+  <system_output timestamp="387.326563">[K</system_output>
+  <user_input timestamp="387.509641"></user_input>
+  <system_output timestamp="387.526981">[K</system_output>
+  <user_input timestamp="387.989518">Q</user_input>
+  <system_output timestamp="388.005777">Q</system_output>
+  <user_input timestamp="388.135824">E</user_input>
+  <system_output timestamp="388.142355">E</system_output>
+  <user_input timestamp="388.426237">	</user_input>
+  <system_output timestamp="388.454185">MUCLIENT </system_output>
+  <user_input timestamp="388.820359">
+</user_input>
+  <system_output timestamp="388.839953">
+[?2004l
+</system_output>
+  <system_output timestamp="388.844472"># via local partial mirror (was mirror on fai-cd)
+# note, this should be the &quot;most current&quot; debian distro used creating this cd.
+# if unstable was used, it should be sid.
+#deb file:///var/www/debian sid main
+
+deb http://faiserver/debian stable main
+deb-src http://faiserver/debian stable main
+
+#deb http://faiserver/debian unstable main
+#deb-src http://faiserver/debian unstable main
+
+deb http://security.debian.org/ stable/updates main</system_output>
+  <system_output timestamp="388.845239">[?2004h]0;demo@faiserver: /home/fai/config/files/etc/apt/sources.listdemo@faiserver:/home/fai/config/files/etc/apt/sources.list$ </system_output>
+  <user_input timestamp="1692.552405"/>
+  <system_output timestamp="1692.554545">[?2004l
+
+</system_output>
+  <system_output timestamp="1692.55606">logout
+</system_output>
+  <system_output timestamp="1692.562469">Connection to 172.16.0.17 closed.
+
+</system_output>
+  <system_output timestamp="1692.566131">[?2004hdemo@stephost:~$ </system_output>
+  <user_input timestamp="1695.09585">c</user_input>
+  <system_output timestamp="1695.096236">c</system_output>
+  <user_input timestamp="1695.372936">d</user_input>
+  <system_output timestamp="1695.373354">d</system_output>
+  <user_input timestamp="1695.512227"> </user_input>
+  <system_output timestamp="1695.512631"> </system_output>
+  <user_input timestamp="1696.144235">/</user_input>
+  <system_output timestamp="1696.144698">/</system_output>
+  <user_input timestamp="1696.297003">e</user_input>
+  <system_output timestamp="1696.29766">e</system_output>
+  <user_input timestamp="1696.55384">t</user_input>
+  <system_output timestamp="1696.554288">t</system_output>
+  <user_input timestamp="1696.89989">c</user_input>
+  <system_output timestamp="1696.900311">c</system_output>
+  <user_input timestamp="1697.135491">	</user_input>
+  <system_output timestamp="1697.138832">/</system_output>
+  <user_input timestamp="1698.720255">a</user_input>
+  <system_output timestamp="1698.720705">a</system_output>
+  <user_input timestamp="1699.020259">p</user_input>
+  <system_output timestamp="1699.020697">p</system_output>
+  <user_input timestamp="1699.199817">a</user_input>
+  <system_output timestamp="1699.200304">a</system_output>
+  <user_input timestamp="1699.402158">c</user_input>
+  <system_output timestamp="1699.40254">c</system_output>
+  <user_input timestamp="1699.560786">h</user_input>
+  <system_output timestamp="1699.561264">h</system_output>
+  <user_input timestamp="1699.661207">e</user_input>
+  <system_output timestamp="1699.661683">e</system_output>
+  <user_input timestamp="1700.062847">2</user_input>
+  <system_output timestamp="1700.063477">2</system_output>
+  <user_input timestamp="1700.526931">/</user_input>
+  <system_output timestamp="1700.527666">/</system_output>
+  <user_input timestamp="1701.247202">s</user_input>
+  <system_output timestamp="1701.247671">s</system_output>
+  <user_input timestamp="1701.36687">i</user_input>
+  <system_output timestamp="1701.367711">i</system_output>
+  <user_input timestamp="1701.606361">t</user_input>
+  <system_output timestamp="1701.606726">t</system_output>
+  <user_input timestamp="1701.730302">e</user_input>
+  <system_output timestamp="1701.730809">e</system_output>
+  <user_input timestamp="1702.130314">s</user_input>
+  <system_output timestamp="1702.130789">s</system_output>
+  <user_input timestamp="1703.290597">-</user_input>
+  <system_output timestamp="1703.291037">-</system_output>
+  <user_input timestamp="1703.569607">a</user_input>
+  <system_output timestamp="1703.570003">a</system_output>
+  <user_input timestamp="1703.870769">v</user_input>
+  <system_output timestamp="1703.871297">v</system_output>
+  <user_input timestamp="1703.989928">a</user_input>
+  <system_output timestamp="1703.990341">a</system_output>
+  <user_input timestamp="1704.26903">	</user_input>
+  <system_output timestamp="1704.270208">ilable/</system_output>
+  <user_input timestamp="1704.707813">
+</user_input>
+  <system_output timestamp="1704.708266">
+[?2004l
+</system_output>
+  <system_output timestamp="1704.70866">[?2004hdemo@stephost:/etc/apache2/sites-available$ </system_output>
+  <user_input timestamp="1705.011109">l</user_input>
+  <system_output timestamp="1705.011644">l</system_output>
+  <user_input timestamp="1705.233159">s</user_input>
+  <system_output timestamp="1705.233626">s</system_output>
+  <user_input timestamp="1705.452492">
+</user_input>
+  <system_output timestamp="1705.452921">
+[?2004l
+</system_output>
+  <system_output timestamp="1705.458129">000-default.conf	    3dp.faikvm.com.conf~	coalminehistory.rocks.conf  fosscar.faikvm.com.conf   implicitcad.org.conf~	 krkconsulting.org.conf		 www.implicitcad.org.conf
+000-default.conf~	    anacostia.faikvm.com.conf	default-ssl.conf	    fosscar.faikvm.com.conf~  implicit.faikvm.com.conf	 mbp.faikvm.com.conf~
+000-default.conf.dpkg-dist  anacostia.faikvm.com.conf~	demo1.faikvm.com.conf	    fosscar.org.conf	      implicit.faikvm.com.conf~  tagurit.faikvm.com.conf
+3dp.faikvm.com.conf	    awiki1.faikvm.com.conf	demo2.faikvm.com.conf	    implicitcad.org.conf      kalli1.faikvm.com.conf	 www.coalminehistory.rocks.conf
+</system_output>
+  <system_output timestamp="1705.458966">[?2004hdemo@stephost:/etc/apache2/sites-available$ </system_output>
+  <user_input timestamp="1719.744471">c</user_input>
+  <system_output timestamp="1719.744889">c</system_output>
+  <user_input timestamp="1719.908713">a</user_input>
+  <system_output timestamp="1719.909135">a</system_output>
+  <user_input timestamp="1720.135913">t</user_input>
+  <system_output timestamp="1720.136473">t</system_output>
+  <user_input timestamp="1720.323305"> </user_input>
+  <system_output timestamp="1720.323903"> </system_output>
+  <user_input timestamp="1720.632914">0</user_input>
+  <system_output timestamp="1720.633334">0</system_output>
+  <user_input timestamp="1720.878868">0</user_input>
+  <system_output timestamp="1720.879408">0</system_output>
+  <user_input timestamp="1721.44657">	</user_input>
+  <system_output timestamp="1721.447197">0-default.conf</system_output>
+  <user_input timestamp="1722.121667">
+</user_input>
+  <system_output timestamp="1722.122048">
+[?2004l
+</system_output>
+  <system_output timestamp="1722.125089">&lt;VirtualHost *:80&gt;
+	# The ServerName directive sets the request scheme, hostname and port that
+	# the server uses to identify itself. This is used when creating
+	# redirection URLs. In the context of virtual hosts, the ServerName
+	# specifies what hostname must appear in the request's Host: header to
+	# match this virtual host. For the default virtual host (this file) this
+	# value is not decisive as it is used as a last resort host regardless.
+	# However, you must set it for any further virtual host explicitly.
+	#ServerName www.example.com
+
+	ServerAdmin julial@turinglace.com
+	DocumentRoot /var/www/
+
+	ProxyPreserveHost On
+
+	# Available loglevels: trace8, ..., trace1, debug, info, notice, warn,
+	# error, crit, alert, emerg.
+	# It is also possible to configure the loglevel for particular
+	# modules, e.g.
+	#LogLevel info ssl:warn
+
+	ErrorLog ${APACHE_LOG_DIR}/error.log
+	CustomLog ${APACHE_LOG_DIR}/access.log combined
+
+	# For most configuration files from conf-available/, which are
+	# enabled or disabled at a global level, it is possible to
+	# include a line for only one particular virtual host. For example the
+	# following line enables the CGI configuration for this host only
+	# after it has been globally disabled with &quot;a2disconf&quot;.
+	#Include conf-available/serve-cgi-bin.conf
+&lt;/VirtualHost&gt;
+
+# vim: syntax=apache ts=4 sw=4 sts=4 sr noet
+</system_output>
+  <system_output timestamp="1722.125998">[?2004hdemo@stephost:/etc/apache2/sites-available$ </system_output>
+  <user_input timestamp="1727.688967">g</user_input>
+  <system_output timestamp="1727.689508">g</system_output>
+  <user_input timestamp="1728.063217">r</user_input>
+  <system_output timestamp="1728.063662">r</system_output>
+  <user_input timestamp="1728.169052">e</user_input>
+  <system_output timestamp="1728.169663">e</system_output>
+  <user_input timestamp="1728.397748">p</user_input>
+  <system_output timestamp="1728.398454">p</system_output>
+  <user_input timestamp="1728.50105"> </user_input>
+  <system_output timestamp="1728.50153"> </system_output>
+  <user_input timestamp="1728.712227">d</user_input>
+  <system_output timestamp="1728.712717">d</system_output>
+  <user_input timestamp="1728.818875">e</user_input>
+  <system_output timestamp="1728.819345">e</system_output>
+  <user_input timestamp="1729.008867">b</user_input>
+  <system_output timestamp="1729.009259">b</system_output>
+  <user_input timestamp="1729.093138">i</user_input>
+  <system_output timestamp="1729.093682">i</system_output>
+  <user_input timestamp="1729.345077">a</user_input>
+  <system_output timestamp="1729.345531">a</system_output>
+  <user_input timestamp="1729.470938">n</user_input>
+  <system_output timestamp="1729.47163">n</system_output>
+  <user_input timestamp="1729.636115"> </user_input>
+  <system_output timestamp="1729.636577"> </system_output>
+  <user_input timestamp="1730.099055">*</user_input>
+  <system_output timestamp="1730.099483">*</system_output>
+  <user_input timestamp="1730.456404">
+</user_input>
+  <system_output timestamp="1730.457262">
+[?2004l
+</system_output>
+  <system_output timestamp="1730.46949">[?2004hdemo@stephost:/etc/apache2/sites-available$ </system_output>
+  <user_input timestamp="1738.464909"/>
+  <system_output timestamp="1738.46534">[?2004l
+
+exit
+</system_output>
+</recording>

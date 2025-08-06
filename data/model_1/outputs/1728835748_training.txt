@@ -1,0 +1,52 @@
+0
+User sshes into 172.16.0.17
+0
+User navigates to /home/fai/config and lists the contents in the folder
+0
+User navigates to /home/fai/config/scripts and lists the contents in the folder
+0
+User executes grep -R interfaces *
+0
+User navigates to /home/fai/config/scripts/FAIBASE
+0
+User enters file 30-interface via emacs but does no changes
+0
+User navigates back to /home/fai/config/files and lists the contents in the folder
+0
+User executes "find ./ -name *postinst"
+0
+User inspects file ./etc/resolv.conf/postinst via cat
+0
+User inspects etc/resolv.conf/SERVERDNSMASTER via cat
+0
+User copies etc/resolv.conf/postinst to etc/network/interfaces/ but receives a permission denied
+0
+User copies etc/resolv.conf/postinst to etc/network/interfaces/ but with sudo this time
+0
+User edits etc/network/interfaces/DHCPC using emacs to replace hardcoded eth0 to #PRIMARY_NIC#
+0
+User navigates back to /home/fai/config/scripts/FAIBASE and lists the contents in the folder
+0
+User enters file 30-interface via emacs and adds a condition check to see if $NIC1 is set and non-empty. If set, it updates $NIC1 to PRIMARY_NETWORK_INTERFACE before doing the original fcopy. If it's not set, the user added a error message to be printed.
+0
+User navigates to /home/fai/config and checks git status
+0
+User git adds the following files: files/etc/network/interfaces/DHCPC scripts/FAIBASE/30-interface files/etc/network/interfaces/postinst 
+0
+User commits the changes with the message: "use a postinst hook to configure /etc/network/interfaces with the right network card name from $NIC1."
+0
+User navigates to /home/fai via cd ..
+1
+User runs make-fai-cd.sh combining both stderr and stdout into a single stream being piped to tee make-fai-cd.out to log the outputs.
+0
+FAI finished it's basic components and now begins to install additional packages for a functional FAI installation.
+0
+FAI successfully installs the large set of additional packages. It now begins to the creation of the FAI-CD/ISO image creation.
+-1
+Combines all elements into a final fai_cd.iso file. 
+0
+User exits ssh session
+0
+User uses scp to transfer the created fai_cd.iso to /disk1/isos/fai_dvd-date`+%Y%m%d`.iso
+0
+User exits asciinema session

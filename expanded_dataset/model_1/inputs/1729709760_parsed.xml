@@ -1,0 +1,157 @@
+<?xml version="1.0" ?>
+<recording version="2" width="239" height="196" timestamp="1729709760">
+<event depth="-2">
+  <system_output timestamp="0.009863">[?2004hdemo@stephost:~$ </system_output>
+  <user_input timestamp="0.702988"/>
+  <system_output timestamp="0.703531">
+(reverse-i-search)`': </system_output>
+  <user_input timestamp="1.1797">s</user_input>
+  <system_output timestamp="1.180139">s': ls /disk1/iso[7ms[27m/</system_output>
+  <user_input timestamp="1.280237">s</user_input>
+  <system_output timestamp="1.280642">s': [7mss[27mh 172.16.0.17</system_output>
+  <user_input timestamp="2.090879">
+</user_input>
+  <system_output timestamp="2.09158">
+[7Pdemo@stephost:~$ ss
+[?2004l
+</system_output>
+  <system_output timestamp="5.182128">ssh: connect to host 172.16.0.17 port 22: No route to host
+
+</system_output>
+  <system_output timestamp="5.18472">[?2004hdemo@stephost:~$ </system_output>
+<annotation>
+</annotation>
+</event>
+<event depth="-2">
+  <user_input timestamp="10.853794">c</user_input>
+  <system_output timestamp="10.854191">c</system_output>
+  <user_input timestamp="10.9912">m</user_input>
+  <system_output timestamp="10.991707">m</system_output>
+  <user_input timestamp="11.130237"> </user_input>
+  <system_output timestamp="11.130674"> </system_output>
+  <user_input timestamp="11.38235">l</user_input>
+  <system_output timestamp="11.382804">l</system_output>
+  <user_input timestamp="11.480718">i</user_input>
+  <system_output timestamp="11.481144">i</system_output>
+  <user_input timestamp="11.735579">s</user_input>
+  <system_output timestamp="11.735966">s</system_output>
+  <user_input timestamp="12.071968">t</user_input>
+  <system_output timestamp="12.072358">t</system_output>
+  <user_input timestamp="12.272376">
+</user_input>
+  <system_output timestamp="12.2728">
+[?2004l
+</system_output>
+  <system_output timestamp="12.281363">implicitserver-tearoff-16: Runable,</system_output>
+  <system_output timestamp="12.325121">
+implicitserver-tearoff-17: Runable,</system_output>
+  <system_output timestamp="12.357844">
+wikiserver-tearoff-3: Runable,</system_output>
+  <system_output timestamp="12.390942"> Running
+qemuwordserver-tearoff-4: Runable,</system_output>
+  <system_output timestamp="12.447985">
+lampserver-tearoff-14: Runable,</system_output>
+  <system_output timestamp="12.47679">
+wikiserver-tearoff-5: Runable,</system_output>
+  <system_output timestamp="12.50905">
+drupalserver-tearoff-13: Runable,</system_output>
+  <system_output timestamp="12.540217">
+nullhost-tearoff-11: Runable,</system_output>
+  <system_output timestamp="12.571473">
+wikiserver-tearoff-2: Runable,</system_output>
+  <system_output timestamp="12.60376">
+faiserver-tearoff-8: Runable,</system_output>
+  <system_output timestamp="12.637011">
+faiserver-tearoff-9: Runable,</system_output>
+  <system_output timestamp="12.669585">
+faiserver-tearoff-1: Runable,</system_output>
+  <system_output timestamp="12.701202">
+faiserver-tearoff-19: Runable,</system_output>
+  <system_output timestamp="12.732028">
+nullhost-tearoff-10: Runable,</system_output>
+  <system_output timestamp="12.765329"> Running
+nullhost-tearoff-7: Runable,</system_output>
+  <system_output timestamp="12.797153">
+faiserver-tearoff-18: Runable,</system_output>
+  <system_output timestamp="12.827933">
+faiserver-tearoff-12: Runable,</system_output>
+  <system_output timestamp="12.859547">
+nullhost-tearoff-6: Runable,</system_output>
+  <system_output timestamp="12.888921"> Running
+nullhost-tearoff-15: Runable,</system_output>
+  <system_output timestamp="12.917907">
+</system_output>
+  <system_output timestamp="12.918222">[?2004hdemo@stephost:~$ </system_output>
+  <user_input timestamp="14.05423">c</user_input>
+  <system_output timestamp="14.05464">c</system_output>
+  <user_input timestamp="14.29567">m</user_input>
+  <system_output timestamp="14.296136">m</system_output>
+  <user_input timestamp="14.456392"> </user_input>
+  <system_output timestamp="14.456778"> </system_output>
+  <user_input timestamp="14.737939">g</user_input>
+  <system_output timestamp="14.738371">g</system_output>
+  <user_input timestamp="14.876556">e</user_input>
+  <system_output timestamp="14.876983">e</system_output>
+  <user_input timestamp="15.080168">t</user_input>
+  <system_output timestamp="15.080564">t</system_output>
+  <user_input timestamp="15.200862">i</user_input>
+  <system_output timestamp="15.201279">i</system_output>
+  <user_input timestamp="15.505959">p</user_input>
+  <system_output timestamp="15.506385">p</system_output>
+  <user_input timestamp="15.906575">
+</user_input>
+  <system_output timestamp="15.907029">
+[?2004l
+</system_output>
+  <system_output timestamp="15.928417">implicitserver-tearoff-16          172.16.0.19
+</system_output>
+  <system_output timestamp="15.940129">implicitserver-tearoff-17          172.16.0.21
+</system_output>
+  <system_output timestamp="15.947523">wikiserver-tearoff-3               172.16.0.3
+</system_output>
+  <system_output timestamp="15.952933">qemuwordserver-tearoff-4           172.16.0.2
+</system_output>
+  <system_output timestamp="15.958149">lampserver-tearoff-14              172.16.0.20
+</system_output>
+  <system_output timestamp="15.963161">wikiserver-tearoff-5               
+</system_output>
+  <system_output timestamp="15.968402">drupalserver-tearoff-13            172.16.0.6
+</system_output>
+  <system_output timestamp="15.973528">nullhost-tearoff-11                172.16.0.10
+</system_output>
+  <system_output timestamp="15.978879">wikiserver-tearoff-2               172.16.0.5
+</system_output>
+  <system_output timestamp="15.984315">faiserver-tearoff-8                
+</system_output>
+  <system_output timestamp="15.99002">faiserver-tearoff-9                172.16.0.13
+</system_output>
+  <system_output timestamp="15.995767">faiserver-tearoff-1                172.16.0.16
+</system_output>
+  <system_output timestamp="16.001823">faiserver-tearoff-19               172.16.0.14
+</system_output>
+  <system_output timestamp="16.007452">nullhost-tearoff-10                172.16.0.2
+</system_output>
+  <system_output timestamp="16.013117">nullhost-tearoff-7                 172.16.0.11
+</system_output>
+  <system_output timestamp="16.018695">faiserver-tearoff-18               
+</system_output>
+  <system_output timestamp="16.024383">faiserver-tearoff-12               172.16.0.17
+</system_output>
+  <system_output timestamp="16.029894">nullhost-tearoff-6                 172.16.0.4
+</system_output>
+  <system_output timestamp="16.035493">nullhost-tearoff-15                172.16.0.16
+</system_output>
+  <system_output timestamp="16.035788">[?2004hdemo@stephost:~$ </system_output>
+<annotation>
+</annotation>
+</event>
+<event depth="-2">
+  <user_input timestamp="37.74898"/>
+  <system_output timestamp="37.749405">[?2004l
+
+exit
+</system_output>
+<annotation>
+</annotation>
+</event>
+</recording>

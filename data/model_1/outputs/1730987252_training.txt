@@ -1,0 +1,6 @@
+0
+[Mistake] The user attempts to SSH into a remote host but the connection fails due to "ssh: connect to host 172.16.0.17 port 22: No route to host" [Mistake Reason] Network unreachable [Mistake Result] Connection failed with "No route to host"
+0
+The user lists the status of various "tearoff" servers.
+0
+The user exits the current terminal session.

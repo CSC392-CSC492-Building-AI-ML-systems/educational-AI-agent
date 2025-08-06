@@ -1,0 +1,6 @@
+0
+User explores cm commands and identify existing server instances.
+0
+[Mistake] User attempts to connect to 172.16.0.17 without verifying network accessibility. [Mistake Reason] Network connectivity not validated beforehand [Mistake Result] SSH connection fails with "No route to host"
+0
+User exits the session

@@ -1,0 +1,50 @@
+0
+User executes the screen -dr command, reattaches to a detached screen session showing user currently at faiserver:/home/fai#
+0
+User runs command './cd_build_lint.sh make-fai-cd.out  | grep ERROR' to check for all lines that contain ERROR
+0
+User runs 'apt-cache search libapache2-mod-php'
+0
+User runs 'grep -R php5 config/*' to find all files with php5 in them
+0
+User runs 'grep -R FIXME config/*'
+1
+[GOAL_1] User configures the FAI package configuration to include ZoneMinder for a Debian 9-based build.
+1
+User begins edits file 'config/package_config/SERVERZONEMINDER'
+0
+User uncomments both 'zoneminder' and 'PACKAGES aptitude JESSIE'
+0
+User modifies 'JESSIE' to 'DEBIAN_9-'
+-1
+User finish modifying file
+1
+User runs make-fai-cd.sh combining both stderr and stdout into a single stream being piped to tee make-fai-cd.out to log the outputs.
+0
+FAI finished it's basic components and now begins to install additional packages for a functional FAI installation.
+-1
+[SUCCESS_FAILURE] Program fails with 'fai-mirror failed with exit code 3'
+-1
+[GOAL_END_1] User’s attempt to build a Debian 9 FAI ISO including ZoneMinder failed due to a mirror error.
+1
+[GOAL_2] User adjusts the ZoneMinder package configuration to target Debian 8 in order to work around the mirror failure.
+0
+User runs './cd_build_lint.sh make-fai-cd.out  | grep ERROR | grep zone' to investigate error
+1
+User begins edits file 'config/package_config/SERVERZONEMINDER'
+0
+User comments out both 'zoneminder' and 'PACKAGES aptitude DEBIAN_9'
+0
+User modifies 'DEBIAN_9-' to 'DEBIAN_8'
+-1
+User saves changes and exits emacs
+1
+User investigates make-fai-cd.sh failure by checking out make-fai-cd.out with less
+0
+User searches for 'DEBIAN_' in the text
+-1
+User exits less
+0
+User detaches out of screen '120968.pts-29.stephost'
+-1
+[GOAL_END_2] User concludes debugging session after switching FAI package configuration to Debian 8 to address the mirror failure.

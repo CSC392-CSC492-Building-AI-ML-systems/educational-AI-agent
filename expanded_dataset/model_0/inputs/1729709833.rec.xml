@@ -1,0 +1,3059 @@
+<?xml version="1.0" ?>
+<recording version="2" width="239" height="196" timestamp="1729709833">
+  <system_output timestamp="0.00698">[?2004hdemo@stephost:~$ </system_output>
+  <user_input timestamp="0.869675">c</user_input>
+  <system_output timestamp="0.870191">c</system_output>
+  <user_input timestamp="1.007152">m</user_input>
+  <system_output timestamp="1.007453">m</system_output>
+  <user_input timestamp="1.145386"> </user_input>
+  <system_output timestamp="1.145702"> </system_output>
+  <user_input timestamp="1.421766">l</user_input>
+  <system_output timestamp="1.42207">l</system_output>
+  <user_input timestamp="1.519538">i</user_input>
+  <system_output timestamp="1.519819">i</system_output>
+  <user_input timestamp="1.79942">s</user_input>
+  <system_output timestamp="1.799786">s</system_output>
+  <user_input timestamp="2.115168">t</user_input>
+  <system_output timestamp="2.115452">t</system_output>
+  <user_input timestamp="2.553191">
+</user_input>
+  <system_output timestamp="2.553652">
+[?2004l
+</system_output>
+  <system_output timestamp="2.561648">implicitserver-tearoff-16: Runable,</system_output>
+  <system_output timestamp="2.617195">
+implicitserver-tearoff-17: Runable,</system_output>
+  <system_output timestamp="2.65504">
+wikiserver-tearoff-3: Runable,</system_output>
+  <system_output timestamp="2.693706"> Running
+qemuwordserver-tearoff-4: Runable,</system_output>
+  <system_output timestamp="2.73243">
+lampserver-tearoff-14: Runable,</system_output>
+  <system_output timestamp="2.776051">
+wikiserver-tearoff-5: Runable,</system_output>
+  <system_output timestamp="2.816673">
+drupalserver-tearoff-13: Runable,</system_output>
+  <system_output timestamp="2.856423">
+nullhost-tearoff-11: Runable,</system_output>
+  <system_output timestamp="2.896752">
+wikiserver-tearoff-2: Runable,</system_output>
+  <system_output timestamp="2.940888">
+faiserver-tearoff-8: Runable,</system_output>
+  <system_output timestamp="2.980376">
+faiserver-tearoff-9: Runable,</system_output>
+  <system_output timestamp="3.020685">
+faiserver-tearoff-1: Runable,</system_output>
+  <system_output timestamp="3.060899">
+faiserver-tearoff-19: Runable,</system_output>
+  <system_output timestamp="3.101224">
+nullhost-tearoff-10: Runable,</system_output>
+  <system_output timestamp="3.141526"> Running
+nullhost-tearoff-7: Runable,</system_output>
+  <system_output timestamp="3.18257">
+faiserver-tearoff-18: Runable,</system_output>
+  <system_output timestamp="3.223573">
+faiserver-tearoff-12: Runable,</system_output>
+  <system_output timestamp="3.261899"> Running
+nullhost-tearoff-6: Runable,</system_output>
+  <system_output timestamp="3.299776"> Running
+nullhost-tearoff-15: Runable,</system_output>
+  <system_output timestamp="3.337727">
+</system_output>
+  <system_output timestamp="3.338087">[?2004h</system_output>
+  <system_output timestamp="3.338183">demo@stephost:~$ </system_output>
+  <user_input timestamp="633.89317"/>
+  <system_output timestamp="633.893833">
+(reverse-i-search)`': </system_output>
+  <user_input timestamp="634.261943">s</user_input>
+  <system_output timestamp="634.262369">s': cm li[7ms[27mt</system_output>
+  <user_input timestamp="634.509724">s</user_input>
+  <system_output timestamp="634.510374">s': [7mss[27mh 172.16.0.17</system_output>
+  <user_input timestamp="634.731202">h</user_input>
+  <system_output timestamp="634.731641">[1@h': [7mssh[27m</system_output>
+  <user_input timestamp="635.279476">
+</user_input>
+  <system_output timestamp="635.279955">
+[8Pdemo@stephost:~$ ssh
+[?2004l
+</system_output>
+  <system_output timestamp="635.691266">
+demo@172.16.0.17's password: </system_output>
+  <user_input timestamp="637.058759">fa</user_input>
+  <user_input timestamp="637.138265">i</user_input>
+  <user_input timestamp="637.256104">
+</user_input>
+  <system_output timestamp="637.256562">
+</system_output>
+  <system_output timestamp="637.390507">Linux faiserver 6.1.0-22-686-pae #1 SMP PREEMPT_DYNAMIC Debian 6.1.94-1 (2024-06-21) i686
+
+
+Plan your installation, and FAI installs your plan.
+
+Last login: Wed Oct 16 21:01:37 2024 from 172.16.0.1
+
+</system_output>
+  <system_output timestamp="637.643648">[?2004h]0;demo@faiserver: ~demo@faiserver:~$ </system_output>
+  <user_input timestamp="643.333613">c</user_input>
+  <system_output timestamp="643.335803">c</system_output>
+  <user_input timestamp="643.589161">d</user_input>
+  <system_output timestamp="643.602938">d</system_output>
+  <user_input timestamp="643.693645"> </user_input>
+  <system_output timestamp="643.708596"> </system_output>
+  <user_input timestamp="643.926226">/</user_input>
+  <system_output timestamp="643.934599">/</system_output>
+  <user_input timestamp="644.245803">h</user_input>
+  <system_output timestamp="644.263442">h</system_output>
+  <user_input timestamp="644.330468">o</user_input>
+  <system_output timestamp="644.345999">o</system_output>
+  <user_input timestamp="644.499348">m</user_input>
+  <system_output timestamp="644.514838">m</system_output>
+  <user_input timestamp="644.606259">e</user_input>
+  <system_output timestamp="644.617992">e</system_output>
+  <user_input timestamp="644.878072">/</user_input>
+  <system_output timestamp="644.887572">/</system_output>
+  <user_input timestamp="645.234965">f</user_input>
+  <system_output timestamp="645.242412">f</system_output>
+  <user_input timestamp="645.363635">a</user_input>
+  <system_output timestamp="645.366245">a</system_output>
+  <user_input timestamp="645.449777">i</user_input>
+  <system_output timestamp="645.468176">i</system_output>
+  <user_input timestamp="645.74899">/</user_input>
+  <system_output timestamp="645.760254">/</system_output>
+  <user_input timestamp="646.279716">c</user_input>
+  <system_output timestamp="646.29855">c</system_output>
+  <user_input timestamp="646.409498">o</user_input>
+  <system_output timestamp="646.421672">o</system_output>
+  <user_input timestamp="646.708746">n</user_input>
+  <system_output timestamp="646.712843">n</system_output>
+  <user_input timestamp="647.110274">f</user_input>
+  <system_output timestamp="647.127407">f</system_output>
+  <user_input timestamp="647.194593">i</user_input>
+  <system_output timestamp="647.211363">i</system_output>
+  <user_input timestamp="647.405708">g</user_input>
+  <system_output timestamp="647.418924">g</system_output>
+  <user_input timestamp="647.661186">
+</user_input>
+  <system_output timestamp="647.666278">
+[?2004l
+</system_output>
+  <system_output timestamp="647.669686">[?2004h]0;demo@faiserver: /home/fai/configdemo@faiserver:/home/fai/config$ </system_output>
+  <user_input timestamp="648.341027">g</user_input>
+  <system_output timestamp="648.345931">g</system_output>
+  <user_input timestamp="648.466085">i</user_input>
+  <system_output timestamp="648.469855">i</system_output>
+  <user_input timestamp="648.764157">t</user_input>
+  <system_output timestamp="648.780694">t</system_output>
+  <user_input timestamp="648.870741"> </user_input>
+  <system_output timestamp="648.88291"> </system_output>
+  <user_input timestamp="649.082916">l</user_input>
+  <system_output timestamp="649.090888">l</system_output>
+  <user_input timestamp="649.253268">o</user_input>
+  <system_output timestamp="649.256163">o</system_output>
+  <user_input timestamp="649.489228">g</user_input>
+  <system_output timestamp="649.5088">g</system_output>
+  <user_input timestamp="649.638369">
+</user_input>
+  <system_output timestamp="649.654562">
+[?2004l
+</system_output>
+  <system_output timestamp="649.713237">fatal: detected dubious ownership in repository at '/home/fai/config'
+To add an exception for this directory, call:
+
+	git config --global --add safe.directory /home/fai/config
+</system_output>
+  <system_output timestamp="649.714325">[?2004h]0;demo@faiserver: /home/fai/configdemo@faiserver:/home/fai/config$ </system_output>
+  <user_input timestamp="651.416184">s</user_input>
+  <system_output timestamp="651.428863">s</system_output>
+  <user_input timestamp="651.52174">u</user_input>
+  <system_output timestamp="651.532883">u</system_output>
+  <user_input timestamp="651.734423">d</user_input>
+  <system_output timestamp="651.741001">d</system_output>
+  <user_input timestamp="651.756054">o</user_input>
+  <system_output timestamp="651.761487">o</system_output>
+  <user_input timestamp="651.905638"> </user_input>
+  <system_output timestamp="651.928907"> </system_output>
+  <user_input timestamp="652.13974">g</user_input>
+  <system_output timestamp="652.161517">g</system_output>
+  <user_input timestamp="652.242561">i</user_input>
+  <system_output timestamp="652.245344">i</system_output>
+  <user_input timestamp="652.517842">t</user_input>
+  <system_output timestamp="652.53746">t</system_output>
+  <user_input timestamp="652.668157"> </user_input>
+  <system_output timestamp="652.68039"> </system_output>
+  <user_input timestamp="652.879612">l</user_input>
+  <system_output timestamp="652.891507">l</system_output>
+  <user_input timestamp="652.986113">o</user_input>
+  <system_output timestamp="652.995769">o</system_output>
+  <user_input timestamp="653.196582">g</user_input>
+  <system_output timestamp="653.205711">g</system_output>
+  <user_input timestamp="653.516159">
+</user_input>
+  <system_output timestamp="653.533482">
+[?2004l
+</system_output>
+  <system_output timestamp="653.92833">sudo: unable to resolve host faiserver: Name or service not known
+</system_output>
+  <system_output timestamp="653.934785">[sudo] password for demo: </system_output>
+  <user_input timestamp="655.571613">f</user_input>
+  <user_input timestamp="655.655169">a</user_input>
+  <user_input timestamp="655.697343">i</user_input>
+  <user_input timestamp="655.865307">
+</user_input>
+  <system_output timestamp="655.88475">
+</system_output>
+  <system_output timestamp="656.164382">[?1h=
+</system_output>
+  <system_output timestamp="656.169935">[33mcommit f2add431fe1dbdfd2be2034631362fa5506bfbb9[m[33m ([m[1;36mHEAD -&gt; [m[1;32mmaster[m[33m)[m[m
+Author: Julia Longtin &lt;julia.longtin@gmail.com&gt;[m
+Date:   Wed Oct 16 22:05:37 2024 +0100[m
+[m
+    boot off of grub by default.[m
+</system_output>
+  <system_output timestamp="656.194916">[m
+[33mcommit a25943f4bbb357d425e3ecde1b2ffd2e7941fefe[m[m
+Author: Julia Longtin &lt;julia.longtin@gmail.com&gt;[m
+Date:   Wed Oct 16 22:05:10 2024 +0100[m
+[m
+    break having a software firewall into a separate class, and automatically let in ping, and ssh on the primary network interface.[m
+</system_output>
+  <system_output timestamp="656.197185">[m
+[33mcommit 86f6b108ec6fdea2c6101046447744980831be59[m[m
+Author: Julia Longtin &lt;julia.longtin@gmail.com&gt;[m
+Date:   Wed Oct 16 21:24:36 2024 +0100[m
+[m
+    do not install wifidog packages anymore.[m
+</system_output>
+  <system_output timestamp="656.202586">[m
+[33mcommit 94d6d051a26279b88d0d0b1a0c455760ab99843c[m[m
+Author: Julia Longtin &lt;julia.longtin@gmail.com&gt;[m
+Date:   Tue Oct 15 19:53:13 2024 +0100[m
+[m
+    update the security URLs for debian, and use a debian mirror in germany by default.[m
+</system_output>
+  <system_output timestamp="656.208751">[m
+[33mcommit 5e17c2082f979fe912d54f06c0cf1a324afa69c3[m[m
+Author: Julia Longtin &lt;julia.longtin@gmail.com&gt;[m
+Date:   Tue Oct 15 19:29:22 2024 +0100[m
+[m
+    stop copying the mirror to the target; we have good internet, and local mirrors.[m
+</system_output>
+  <system_output timestamp="656.211828">[m
+[33mcommit 01d0ab76fd21b391ae96f911ee213fb6d17d837a[m[m
+Author: Julia Longtin &lt;julia.longtin@gmail.com&gt;[m
+Date:   Mon Oct 14 12:34:23 2024 +0100[m
+[m
+    switch back to aptitude so recommends are not pulled in, and move some package classes out of scope, for now.[m
+</system_output>
+  <system_output timestamp="656.222888">[m
+[33mcommit 8ec1f57df8e46b4d1943a054d1a2b5506ec1c4a2[m[m
+Author: Julia Longtin &lt;julia.longtin@gmail.com&gt;[m
+Date:   Sun Oct 13 22:31:17 2024 +0100[m
+[m
+    move from using aptitude to just the install action.[m
+</system_output>
+  <system_output timestamp="656.225938">[m
+[33mcommit 7ca7111a759c8f570a4a0be192bc43ab3f52d3a1[m[m
+Author: Julia Longtin &lt;julia.longtin@gmail.com&gt;[m
+Date:   Sun Oct 13 20:42:56 2024 +0100[m
+[m
+    add a class for 3d printing workflows.[m
+</system_output>
+  <system_output timestamp="656.233596">[m
+[33mcommit 9d27f5f60b2c74319e261447df5c758876629469[m[m
+Author: Julia Longtin &lt;julia.longtin@gmail.com&gt;[m
+Date:   Sun Oct 13 18:55:51 2024 +0100[m
+[m
+    stop enabling SSH x11 forwarding by default.[m
+</system_output>
+  <system_output timestamp="656.236608">[m
+[33mcommit fbe3016009e42b565073addd37cdcefc891f8935[m[m
+Author: Julia Longtin &lt;julia.longtin@gmail.com&gt;[m
+Date:   Sun Oct 13 17:49:09 2024 +0100[m
+[m
+    use a postinst hook to configure /etc/network/interfaces with the right network card name from $NIC1.[m
+</system_output>
+  <system_output timestamp="656.250133">[m
+[33mcommit 6214cec988f93eb06c3564edf2784f63cfd389f9[m[m
+Author: Julia Longtin &lt;julia.longtin@gmail.com&gt;[m
+Date:   Sun Oct 13 16:12:38 2024 +0100[m
+[m
+    install more than the grub binaries.[m
+</system_output>
+  <system_output timestamp="656.264949">[m
+[33mcommit 61d845306cda07cc16f2fc2a8ea1b29a3028585a[m[m
+Author: Julia Longtin &lt;julia.longtin@gmail.com&gt;[m
+Date:   Sun Oct 13 15:00:16 2024 +0100[m
+[m
+    specify to use the X86_64 EFI grub image.[m
+</system_output>
+  <system_output timestamp="656.273129">[m
+[33mcommit 298a916a5eaae0d466759b79cd3ad14b1030e355[m[m
+Author: Julia Longtin &lt;julia.longtin@gmail.com&gt;[m
+Date:   Sun Oct 13 14:59:43 2024 +0100[m
+[m
+    move installing grub-pc into the GRUB package class, and comment out the ia32 grub package.[m
+</system_output>
+  <system_output timestamp="656.275954">[m
+[33mcommit f83721a37dceec51ef05c1e201241f8fbaedf4c8[m[m
+Author: Julia Longtin &lt;julia.longtin@gmail.com&gt;[m
+Date:   Sat Oct 12 21:13:19 2024 +0100[m
+[m
+    add grub for i686 and AMD64 machines.[m
+</system_output>
+  <system_output timestamp="656.278865">[m
+[33mcommit 3c919c69fff65181e6650e608c6a4c1b91705a62[m[m
+Author: Julia Longtin &lt;julia.longtin@gmail.com&gt;[m
+Date:   Sat Oct 12 18:47:26 2024 +0100[m
+[m
+    fix missing space.[m
+</system_output>
+  <system_output timestamp="656.281798">[m
+[33mcommit 96402ebd17240eaaa1dfa2ad09d38f6f821274bc[m[m
+Author: Julia Longtin &lt;julia.longtin@gmail.com&gt;[m
+Date:   Sat Oct 12 14:56:30 2024 +0100[m
+[m
+    comment out removing module that does not exist.[m
+</system_output>
+  <system_output timestamp="656.288263">[m
+[33mcommit eb9c65908dd32bf532dbe6c631bbb15292a5ecd6[m[m
+Author: Julia Longtin &lt;julia.longtin@gmail.com&gt;[m
+Date:   Sat Oct 12 14:50:49 2024 +0100[m
+[m
+    fix using the wrong username when creating directories in /etc/mrtg.[m
+</system_output>
+  <system_output timestamp="656.29306">[m
+[33mcommit a60ef744513e20386f903fc0deee404b3b9d5139[m[m
+Author: Julia Longtin &lt;julia.longtin@gmail.com&gt;[m
+Date:   Sat Oct 12 14:40:14 2024 +0100[m
+[m
+    remove function keyword, not posix syntax compatible.[m
+</system_output>
+  <system_output timestamp="656.30197">[m
+[33mcommit 53dc181c2d597e37adae6b7df2c518475e600ef0[m[m
+Author: Julia Longtin &lt;julia.longtin@gmail.com&gt;[m
+Date:   Sat Oct 12 14:34:26 2024 +0100[m
+[m
+    only try to copy a dhcp.conf into place for wifidog, for now.[m
+</system_output>
+  <system_output timestamp="656.305169">[m
+[33mcommit cdc53d4aa71c5bd85b3468089336d0527493e099[m[m
+Author: Julia Longtin &lt;julia.longtin@gmail.com&gt;[m
+Date:   Sat Oct 12 14:28:15 2024 +0100[m
+[m
+    remove reference to no longer existing /etc/default/rcS.[m
+</system_output>
+  <system_output timestamp="656.308606">[m
+[33mcommit 8b7e506d059600174c9d6c1a5ffc535e843027fa[m[m
+Author: Julia Longtin &lt;julia.longtin@gmail.com&gt;[m
+Date:   Sat Oct 12 14:21:00 2024 +0100[m
+[m
+    remove redundant HWPHYS class declaration; detected nowadays.[m
+</system_output>
+  <system_output timestamp="656.317105">[m
+[33mcommit 5c8fded7041212c2d3c06294ae056095e57f00bb[m[m
+Author: Julia Longtin &lt;julia.longtin@gmail.com&gt;[m
+Date:   Fri Oct 11 21:49:53 2024 +0100[m
+[m
+    attempt to configure EFI booting. not yet perfect.[m
+</system_output>
+  <system_output timestamp="656.328397">[m
+[33mcommit e3831e246760b72b1e30ef76c8850678eabc6240[m[m
+Author: Julia Longtin &lt;julia.longtin@gmail.com&gt;[m
+Date:   Fri Oct 11 21:49:21 2024 +0100[m
+[m
+    make the fstab entry for raid arrays use UUIDs.[m
+</system_output>
+  <system_output timestamp="656.331743">[m
+[33mcommit b4fc77ccc7f2c5822ea349b6b3f8c8201309c35b[m[m
+Author: Julia Longtin &lt;julia.longtin@gmail.com&gt;[m
+Date:   Fri Oct 11 20:44:49 2024 +0100[m
+[m
+    an option is required. used rw.[m
+</system_output>
+  <system_output timestamp="656.334621">[m
+[33mcommit 99e98dfe820407d77ef97cc1c62cc2f61e25ae65[m[m
+Author: Julia Longtin &lt;julia.longtin@gmail.com&gt;[m
+Date:   Fri Oct 11 20:37:41 2024 +0100[m
+[m
+    remove single dash, was being interpreted as a filesystem option.[m
+</system_output>
+  <system_output timestamp="656.352099">[m
+[33mcommit 87f2d66a46f7cd68b18d618b15fecf21d9f87b4d[m[m
+Author: Julia Longtin &lt;julia.longtin@gmail.com&gt;[m
+Date:   Fri Oct 11 18:16:43 2024 +0100[m
+[m
+    increment the partition numbers for boot and our VG, now that we have an EFI partition.[m
+</system_output>
+  <system_output timestamp="656.355398">[m
+[33mcommit 5b939ca01e3a54608bfc23ffbf00b92213c9f2a5[m[m
+Author: Julia Longtin &lt;julia.longtin@gmail.com&gt;[m
+Date:   Fri Oct 11 16:45:51 2024 +0100[m
+[m
+    detect boot method, and select the right grub class so that the target system boots.[m
+</system_output>
+  <system_output timestamp="656.360369">[m
+[33mcommit 81707362c80cb47a7d7a20396020ed7399f91d56[m[m
+Author: Julia Longtin &lt;julia.longtin@gmail.com&gt;[m
+Date:   Fri Oct 11 16:26:04 2024 +0100[m
+[m
+    create an EFI partition, and use GPT instead of MSDOS partition tables.[m
+</system_output>
+  <system_output timestamp="656.363306">[m
+[33mcommit 32ef2b6ba460eded22aba35f1f9d17ab752b50a1[m[m
+Author: Julia Longtin &lt;julia.longtin@gmail.com&gt;[m
+Date:   Fri Oct 11 11:48:29 2024 +0100[m
+[m
+    harden disk configuration so that instead of failing when 2 disks are present and in the wrong order, 25 disks must be present to cause trouble.[m
+</system_output>
+  <system_output timestamp="656.375399">[m
+[33mcommit 720dd7eb0b783e1ce36bf7fba97bac2b25038da7[m[m
+Author: Julia Longtin &lt;julia.longtin@gmail.com&gt;[m
+Date:   Wed Oct 9 21:52:25 2024 +0100[m
+[m
+    add -f to a2dismod invocation disabling the autoindex module.[m
+</system_output>
+  <system_output timestamp="656.378535">[m
+[33mcommit 86227f7d1e65d90f6fe3ffc298d296a2be9a7d78[m[m
+Author: Julia Longtin &lt;julia.longtin@gmail.com&gt;[m
+Date:   Sun Oct 6 18:45:47 2024 +0100[m
+[m
+    attempt to make linux show video when booted from EFI.[m
+</system_output>
+  <system_output timestamp="656.381384">[m
+[33mcommit 9be7a7c6f6c35e60919787511354bf8bc7ade200[m[m
+Author: Julia Longtin &lt;julia.longtin@gmail.com&gt;[m
+Date:   Mon Jul 29 00:00:29 2024 +0100[m
+[m
+    migration from debian 11 to debian 12.[m
+</system_output>
+  <system_output timestamp="656.384605">[m
+[33mcommit 13e913bc89d4cba0c32618fe34f38953e58a4c65[m[m
+Author: Julia Longtin &lt;julia.longtin@gmail.com&gt;[m
+Date:   Sun Jul 28 23:51:54 2024 +0100[m
+:[K</system_output>
+  <user_input timestamp="681.690686">q</user_input>
+  <system_output timestamp="681.748388">
+[K[?1l&gt;</system_output>
+  <system_output timestamp="681.752392">[?2004h]0;demo@faiserver: /home/fai/configdemo@faiserver:/home/fai/config$ </system_output>
+  <user_input timestamp="682.536515">g</user_input>
+  <system_output timestamp="682.550827">g</system_output>
+  <user_input timestamp="682.675673">i</user_input>
+  <system_output timestamp="682.697052">i</system_output>
+  <user_input timestamp="682.993383">t</user_input>
+  <system_output timestamp="683.008933">t</system_output>
+  <user_input timestamp="683.113434"> </user_input>
+  <system_output timestamp="683.134108"> </system_output>
+  <user_input timestamp="684.212766">d</user_input>
+  <system_output timestamp="684.22684">d</system_output>
+  <user_input timestamp="684.352727">i</user_input>
+  <system_output timestamp="684.373736">i</system_output>
+  <user_input timestamp="684.533265">f</user_input>
+  <system_output timestamp="684.540586">f</system_output>
+  <user_input timestamp="684.771718">f</user_input>
+  <system_output timestamp="684.788415">f</system_output>
+  <user_input timestamp="684.949872"> </user_input>
+  <system_output timestamp="684.957173"> </system_output>
+  <user_input timestamp="685.651721">m</user_input>
+  <system_output timestamp="685.662979">m</system_output>
+  <user_input timestamp="685.771554">a</user_input>
+  <system_output timestamp="685.790429">a</system_output>
+  <user_input timestamp="685.992169">s</user_input>
+  <system_output timestamp="685.997357">s</system_output>
+  <user_input timestamp="686.291225">t</user_input>
+  <system_output timestamp="686.311581">t</system_output>
+  <user_input timestamp="686.452342">e</user_input>
+  <system_output timestamp="686.45742">e</system_output>
+  <user_input timestamp="686.648689">r</user_input>
+  <system_output timestamp="686.668178">r</system_output>
+  <user_input timestamp="687.232923">~</user_input>
+  <system_output timestamp="687.23616">~</system_output>
+  <user_input timestamp="687.635114">1</user_input>
+  <system_output timestamp="687.656235">1</system_output>
+  <user_input timestamp="687.933656">
+</user_input>
+  <system_output timestamp="687.944185">
+[?2004l
+</system_output>
+  <system_output timestamp="687.949072">warning: Not a git repository. Use --no-index to compare two paths outside a working tree
+usage: git diff --no-index [&lt;options&gt;] &lt;path&gt; &lt;path&gt;
+
+Diff output format options
+    -p, --patch           generate patch
+    -s</system_output>
+  <system_output timestamp="687.950034">, --no-patch        suppress diff output
+    -u                    generate patch
+    -U, --unified[=&lt;n&gt;]   generate diffs with &lt;n&gt; lines context
+    -W, --function-context
+                          generate diffs with &lt;n&gt; lines context
+    --raw                 generate the diff in raw format
+    --patch-with-raw</system_output>
+  <system_output timestamp="687.95143">      synonym for '-p --raw'
+    --patch-with-stat     synonym for '-p --stat'
+    --numstat             machine friendly --stat
+</system_output>
+  <system_output timestamp="687.952473">    --shortstat           output only the last line of --stat
+    -X, --dirstat[=&lt;param1,param2&gt;...]
+                          output the distribution of relative amount of changes for each sub-directory
+    --cumulative          synonym for --dirstat=cumulative
+    --dirstat-by-file[=&lt;param1,param2&gt;...]
+                          synonym for --dirstat=files,param1,param2...
+    --check               warn if changes introduce conflict markers or whitespace errors
+    --summary             condensed summary such as creations, renames and mode changes
+    --name-only           show only names of changed files
+    --name-status         show only names and status of changed files
+    --stat[=&lt;width&gt;[,&lt;name-width&gt;[,&lt;count&gt;]]]
+                          generate diffstat
+    --stat-width &lt;width&gt;  generate diffstat with a given width
+    --stat-name-width &lt;width&gt;
+                          generate diffstat with a given name width
+    --stat-graph-width &lt;width&gt;
+                          generate diffstat with a given graph width
+    --stat-count &lt;count&gt;  generate diffstat with limited lines
+    --compact-summary     generate compact summary in diffstat
+    --binary              output a binary diff that can be applied
+    --full-index          show full pre- and post-image object names on the "index" lines
+    --color[=&lt;when&gt;]      show colored diff
+    --ws-error-highlight &lt;kind&gt;
+                          highlight whitespace errors in the 'context', 'old' or 'new' lines in the diff
+    -z                    do not munge pathnames and use NULs as output field terminators in --raw or --numstat
+    --abbrev[=&lt;n&gt;]        use &lt;n&gt; digits to display object names
+    --src-prefix &lt;prefix&gt;
+                          show the given source prefix instead of "a/"
+    --dst-prefix &lt;prefix&gt;
+                          show the given destination prefix instead of "b/"
+    --line-prefix &lt;prefix&gt;
+                          prepend an additional prefix to every line of output
+    --no-prefix           do not show any source or destination prefix
+    --inter-hunk-context &lt;n&gt;
+                          show context between diff hunks up to the specified number of lines
+    --output-indicator-new &lt;char&gt;
+                          specify the character to indicate a new line instead of '+'
+    --output-indicator-old &lt;char&gt;
+                          specify the character to indicate an old line instead of '-'
+    --output-indicator-context &lt;char&gt;
+                          specify the character to indicate a context instead of ' '
+
+Diff rename options
+    -B, --break-rewrites[=&lt;n&gt;[/&lt;m&gt;]]
+                          break complete rewrite changes into pairs of delete and create
+    -M, --find-renames[=&lt;n&gt;]
+                          detect renames
+    -D, --irreversible-delete
+                          omit the preimage for deletes
+    -C, --find-copies[=&lt;n&gt;]
+                          detect copies
+    --find-copies-harder</system_output>
+  <system_output timestamp="687.953524">  use unmodified files as source to find copies
+    --no-renames          disable rename detection
+    --rename-empty        use empty blobs as rename source
+    --follow              continue listing the history of a file beyond renames
+    -l &lt;n&gt;                prevent rename/copy detection if the number of rename/copy targets exceeds given limit
+
+Diff algorithm options
+    --minimal             produce the smallest possible diff
+    -w, --ignore-all-space
+                          ignore whitespace when comparing lines
+    -b, --ignore-space-change
+                          ignore changes in amount of whitespace
+    --ignore-space-at-eol
+                          ignore changes in whitespace at EOL
+    --ignore-cr-at-eol    ignore carrier-return at the end of line
+    --ignore-blank-lines  ignore changes whose lines are all blank
+    -I, --ignore-matching-lines &lt;regex&gt;
+                          ignore changes whose all lines match &lt;regex&gt;
+    --indent-heuristic    heuristic to shift diff hunk boundaries for easy reading
+    --patience            generate diff using the "patience diff" algorithm
+    --histogram           generate diff using the "histogram diff" algorithm
+    --diff-algorithm &lt;algorithm&gt;
+                          choose a diff algorithm
+    --anchored &lt;text&gt;     generate diff using the "anchored diff" algorithm
+    --word-diff[=&lt;mode&gt;]  show word diff, using &lt;mode&gt; to delimit changed words
+    --word-diff-regex &lt;regex&gt;
+                          use &lt;regex&gt; to decide what a word is
+    --color-words[=&lt;regex&gt;]
+                          equivalent to --word-diff=color --word-diff-regex=&lt;regex&gt;
+    --color-moved[=&lt;mode&gt;]
+                          moved lines of code are colored differently
+    --color-moved-ws &lt;mode&gt;
+                          how white spaces are ignored in --color-moved
+
+Other diff options
+    --relative[=&lt;prefix&gt;]
+                          when run from subdir, exclude changes outside and show relative paths
+    -a, --text            treat all </system_output>
+  <system_output timestamp="687.953714">files as text
+    -R                    swap two inputs, reverse the diff
+    --exit-code           exit with 1 if there were differences, 0 otherwise
+    --quiet               disable all output of the program
+    --ext-diff            allow an external diff helper to be executed
+    --textconv            run external text conversion filters when comparing binary files
+    --ignore-submodules[=&lt;when&gt;]
+                          ignore changes to submodules in the diff generation
+    --submodule[=&lt;format&gt;]
+                          specify how differences in submodules are shown
+    --ita-invisible-in-index
+                          hide 'git add -N' entries from the index
+    --ita-visible-in-index
+                          treat 'git add -N' entries as real in the index
+    -S &lt;string&gt;           look for differences that change the number of occurrences of the specified string
+    -G &lt;regex&gt;            look for differences that change the number of occurrences of the specified regex
+    --pickaxe-all</system_output>
+  <system_output timestamp="687.95444">         show all changes in the changeset with -S or -G
+    --pickaxe-regex       treat &lt;string&gt; in -S as extended POSIX regular expression
+    -O &lt;file&gt;             control the order in which files appear in the output
+    --rotate-to &lt;path&gt;    show the change in the specified path first
+    --skip-to &lt;path&gt;      skip the output to the specified path
+    --find-object &lt;object-id&gt;
+                          look for differences that change the number of occurrences of the specified object
+    --diff-filter [(A|C|D|M|R|T|U|X|B)...[*]]
+                          select files by diff type
+    --output</system_output>
+  <system_output timestamp="687.954973"> &lt;file&gt;       output to a specific file
+
+</system_output>
+  <system_output timestamp="687.955817">[?2004h]0;demo@faiserver: /home/fai/configdemo@faiserver:/home/fai/config$ </system_output>
+  <user_input timestamp="689.293588">[A</user_input>
+  <system_output timestamp="689.295629">git diff master~1</system_output>
+  <user_input timestamp="689.833376"/>
+  <system_output timestamp="689.846692"/>
+  <user_input timestamp="690.330295">s</user_input>
+  <system_output timestamp="690.339459">[1@s</system_output>
+  <user_input timestamp="690.449076">u</user_input>
+  <system_output timestamp="690.456769">[1@u</system_output>
+  <user_input timestamp="690.569257">d</user_input>
+  <system_output timestamp="690.573124">[1@d</system_output>
+  <user_input timestamp="690.648708">o</user_input>
+  <system_output timestamp="690.654077">[1@o</system_output>
+  <user_input timestamp="690.770579"> </user_input>
+  <system_output timestamp="690.789616">[1@ </system_output>
+  <user_input timestamp="690.912597">
+</user_input>
+  <system_output timestamp="690.925433">
+[?2004l
+</system_output>
+  <system_output timestamp="690.936901">sudo: unable to resolve host faiserver: Name or service not known
+</system_output>
+  <system_output timestamp="690.951173">[?1h=
+</system_output>
+  <system_output timestamp="691.467194">[1mdiff --git a/scripts/GRUBEFI/10-setup b/scripts/GRUBEFI/10-setup[m[m
+[1mindex fc1a9bd..5740a4c 100755[m[m
+[1m--- a/scripts/GRUBEFI/10-setup[m[m
+[1m+++ b/scripts/GRUBEFI/10-setup[m[m
+[36m@@ -10,5 +10,9 @@[m [m$ROOTCMD grub-install --directory /usr/lib/grub/x86_64-efi/[m[m
+ # generate a config file[m[m
+ $ROOTCMD update-grub2[m[m
+ [m[m
+[32m+[m[32m# copy the grub EFI binary into the location for the default EFI binary.[m[m
+[32m+[m[32m$ROOTCMD mkdir /boot/efi/EFI/Boot/[m[m
+[32m+[m[32m$ROOTCMD cp /boot/efi/EFI/debian/grubx64.efi /boot/efi/EFI/Boot/bootx64.efi[m[m
+[32m+[m[m
+ exit $error[m[m
+ [m[m
+</system_output>
+  <system_output timestamp="691.479828">
+[K[?1l&gt;</system_output>
+  <system_output timestamp="691.481621">[?2004h]0;demo@faiserver: /home/fai/configdemo@faiserver:/home/fai/config$ </system_output>
+  <user_input timestamp="705.575238">[A</user_input>
+  <system_output timestamp="705.577295">sudo git diff master~1</system_output>
+  <user_input timestamp="705.974138"></user_input>
+  <system_output timestamp="705.992186">[K</system_output>
+  <user_input timestamp="706.396412">2</user_input>
+  <system_output timestamp="706.403714">2</system_output>
+  <user_input timestamp="706.626384">
+</user_input>
+  <system_output timestamp="706.631397">
+[?2004l
+</system_output>
+  <system_output timestamp="706.640706">sudo: unable to resolve host faiserver: Name or service not known
+</system_output>
+  <system_output timestamp="706.654902">[?1h=
+</system_output>
+  <system_output timestamp="706.790127">[1mdiff --git a/class/50-host-classes b/class/50-host-classes[m[m
+[1mindex 2804e2a..c5dbe11 100755[m[m
+[1m--- a/class/50-host-classes[m[m
+[1m+++ b/class/50-host-classes[m[m
+[36m@@ -47,7 +47,7 @@[m [mcase $HOSTNAME in[m[m
+        faiserver)[m[m
+                echo -n "JADMIN DEVHOST SERVERFAI JUSER" ;;[m[m
+        qemuhost)[m[m
+[31m-               echo -n "JADMIN DEVHOST SERVERFTP SERVERDHCP SERVERDHCPBOOT SERVERDNS SERVERSNMP SERVERWWW SERVERWWWMRTG SERVERQEMU SERVERQEMUDEV SERVERCREATEVM SERVERCREATEVMDEV SERVERWWWCREATEVM" ;;[m[m
+[32m+[m               [32mecho -n "JADMIN DEVHOST SERVERFTP SERVERDHCP SERVERDHCPBOOT SERVERDNS SERVERSNMP SERVERWWW SERVERWWWMRTG SERVERQEMU SERVERQEMUDEV SERVERCREATEVM SERVERCREATEVMDEV SERVERWWWCREATEVM SWFIREWALL" ;;[m[m
+        wikiserver)[m[m
+                echo -n "JADMIN JUSER SERVERSNMP SERVERWIKI SERVERWWW" ;;[m[m
+        awikiserver)[m[m
+[1mdiff --git a/package_config/SERVERQEMU b/package_config/SERVERQEMU[m[m
+[1mindex 15c8aef</system_output>
+  <system_output timestamp="706.791165">..02ea099 100644[m[m
+[1m--- a/package_config/SERVERQEMU[m[m
+[1m+++ b/package_config/SERVERQEMU[m[m
+[36m@@ -6,6 +6,5 @@[m [mmultipath-tools[m[m
+ multipath-tools-boot[m[m
+ open-iscsi[m[m
+ qemu-kvm[m[m
+[31m-arno-iptables-firewall[m[m
+ [m[m
+ [m[m
+[1mdiff --git a/package_config/SWFIREWALL b/package_config/SWFIREWALL[m[m
+[1mnew file mode 100644[m[m
+[1mindex 0000000..5121839[m[m
+[1m--- /dev/null[m[m
+[1m+++ b/package_config/SWFIREWALL[m[m
+[36m@@ -0,0 +1,4 @@[m[m
+[32m+[m[32m# Systems with this class will have a software firewall, provided by arno-iptables-firewall.[m[m
+[32m+[m[m
+[32m+[m[32mPACKAGES aptitude[m[m
+[32m+[m[32marno-iptables-firewall[m[m
+[1mdiff --git a/scripts/GRUBEFI/10-setup b/scripts/GRUBEFI/10-setup[m[m
+[1mindex fc1a9bd..5740a4c 100755[m[m
+[1m--- a/scripts/GRUBEFI/10-setup[m[m
+[1m+++ b/scripts/GRUBEFI/10-setup[m[m
+[36m@@ -10,5 +10,9 @@[m [m$ROOTCMD grub-install --directory /usr/lib/grub/x86_64-efi/[m[m
+ # generate a config </system_output>
+  <system_output timestamp="706.791607">file[m[m
+ $ROOTCMD update-grub2[m[m
+ [m[m
+[32m+[m[32m# copy the grub EFI binary into the location for the default EFI binary.[m[m
+[32m+[m[32m$ROOTCMD mkdir /boot/efi/EFI/Boot/[m[m
+[32m+[m[32m$ROOTCMD cp /boot/efi/EFI/debian/grubx64.efi /boot/efi/EFI/Boot/bootx64.efi[m[m
+[32m+[m[m
+ exit $error[m[m
+ [m[m
+</system_output>
+  <system_output timestamp="706.793231">
+[K[?1l&gt;</system_output>
+  <system_output timestamp="706.797265">[?2004h]0;demo@faiserver: /home/fai/configdemo@faiserver:/home/fai/config$ </system_output>
+  <user_input timestamp="712.837308">[A</user_input>
+  <system_output timestamp="712.838356">sudo git diff master~2</system_output>
+  <user_input timestamp="713.422259"></user_input>
+  <system_output timestamp="713.430105">[K</system_output>
+  <user_input timestamp="713.902989">3</user_input>
+  <system_output timestamp="713.920462">3</system_output>
+  <user_input timestamp="714.463621">
+</user_input>
+  <system_output timestamp="714.469036">
+[?2004l
+</system_output>
+  <system_output timestamp="714.478">sudo: unable to resolve host faiserver: Name or service not known
+</system_output>
+  <system_output timestamp="714.492401">[?1h=
+</system_output>
+  <system_output timestamp="714.574436">[1mdiff --git a/class/50-host-classes b/class/50-host-classes[m[m
+[1mindex 2804e2a..c5dbe11 100755[m[m
+[1m--- a/class/50-host-classes[m[m
+[1m+++ b/class/50-host-classes[m[m
+[36m@@ -47,7 +47,7 @@[m [mcase $HOSTNAME in[m[m
+        faiserver)[m[m
+                echo -n "JADMIN DEVHOST SERVERFAI JUSER" ;;[m[m
+        qemuhost)[m[m
+[31m-               echo -n "JADMIN DEVHOST SERVERFTP SERVERDHCP SERVERDHCPBOOT SERVERDNS SERVERSNMP SERVERWWW SERVERWWWMRTG SERVERQEMU SERVERQEMUDEV SERVERCREATEVM SERVERCREATEVMDEV SERVERWWWCREATEVM" ;;[m[m
+[32m+[m               [32mecho -n "JADMIN DEVHOST SERVERFTP SERVERDHCP SERVERDHCPBOOT SERVERDNS SERVERSNMP SERVERWWW SERVERWWWMRTG SERVERQEMU SERVERQEMUDEV SERVERCREATEVM SERVERCREATEVMDEV SERVERWWWCREATEVM SWFIREWALL" ;;[m[m
+        wikiserver)[m[m
+                echo -n "JADMIN JUSER SERVERSNMP SERVERWIKI SERVERWWW" ;;[m[m
+        awikiserver)[m[m
+[1mdiff --git a/package_config/SERVERWIFIDOG b/package_config.old/SERVERWIFIDOG[m[m
+[1msim</system_output>
+  <system_output timestamp="714.575458">ilarity index 100%[m[m
+[1mrename from package_config/SERVERWIFIDOG[m[m
+[1mrename to package_config.old/SERVERWIFIDOG[m[m
+[1mdiff --git a/package_config/SERVERQEMU b/package_config/SERVERQEMU[m[m
+[1mindex 15c8aef..02ea099 100644[m[m
+[1m--- a/package_config/SERVERQEMU[m[m
+[1m+++ b/package_config/SERVERQEMU[m[m
+[36m@@ -6,6 +6,5 @@[m [mmultipath-tools[m[m
+ multipath-tools-boot[m[m
+ open-iscsi[m[m
+ qemu-kvm[m[m
+[31m-arno-iptables-firewall[m[m
+ [m[m
+ [m[m
+[1mdiff --git a/package_config/SWFIREWALL b/package_config/SWFIREWALL[m[m
+[1mnew file mode 100644[m[m
+[1mindex 0000000..5121839[m[m
+[1m--- /dev/null[m[m
+[1m+++ b/package_config/SWFIREWALL[m[m
+[36m@@ -0,0 +1,4 @@[m[m
+[32m+[m[32m# Systems with this class will have a software firewall, provided by arno-iptables-firewall.[m[m
+[32m+[m[m
+[32m+[m[32mPACKAGES aptitude[m[m
+[32m+[m[32marno-iptables-firewall[m[m
+[1mdiff --git a/scripts/GRUBEFI/10-setup b/scripts/GRUBEFI/10-setup[m[m
+[1mindex fc1a9</system_output>
+  <system_output timestamp="714.576636">bd..5740a4c 100755[m[m
+[1m--- a/scripts/GRUBEFI/10-setup[m[m
+[1m+++ b/scripts/GRUBEFI/10-setup[m[m
+[36m@@ -10,5 +10,9 @@[m [m$ROOTCMD grub-install --directory /usr/lib/grub/x86_64-efi/[m[m
+ # generate a config file[m[m
+ $ROOTCMD update-grub2[m[m
+ [m[m
+[32m+[m[32m# copy the grub EFI binary into the location for the default EFI binary.[m[m
+[32m+[m[32m$ROOTCMD mkdir /boot/efi/EFI/Boot/[m[m
+[32m+[m[32m$ROOTCMD cp /boot/efi/EFI/debian/grubx64.efi /boot/efi/EFI/Boot/bootx64.efi[m[m
+[32m+[m[m
+ exit $error[m[m
+ [m[m
+</system_output>
+  <system_output timestamp="714.577557">
+[K[?1l&gt;</system_output>
+  <system_output timestamp="714.581177">[?2004h]0;demo@faiserver: /home/fai/configdemo@faiserver:/home/fai/config$ </system_output>
+  <user_input timestamp="725.292469">[A</user_input>
+  <system_output timestamp="725.294744">sudo git diff master~3</system_output>
+  <user_input timestamp="726.827214"></user_input>
+  <system_output timestamp="726.839002">[K</system_output>
+  <user_input timestamp="727.659622">4</user_input>
+  <system_output timestamp="727.664189">4</system_output>
+  <user_input timestamp="729.955891">
+</user_input>
+  <system_output timestamp="729.963615">
+[?2004l
+</system_output>
+  <system_output timestamp="729.975102">sudo: unable to resolve host faiserver: Name or service not known
+</system_output>
+  <system_output timestamp="729.989883">[?1h=
+</system_output>
+  <system_output timestamp="730.070298">[1mdiff --git a/class/50-host-classes b/class/50-host-classes[m[m
+[1mindex 2804e2a..c5dbe11 100755[m[m
+[1m--- a/class/50-host-classes[m[m
+[1m+++ b/class/50-host-classes[m[m
+[36m@@ -47,7 +47,7 @@[m [mcase $HOSTNAME in[m[m
+        faiserver)[m[m
+                echo -n "JADMIN DEVHOST SERVERFAI JUSER" ;;[m[m
+        qemuhost)[m[m
+[31m-               echo -n "JADMIN DEVHOST SERVERFTP SERVERDHCP SERVERDHCPBOOT SERVERDNS SERVERSNMP SERVERWWW SERVERWWWMRTG SERVERQEMU SERVERQEMUDEV SERVERCREATEVM SERVERCREATEVMDEV SERVERWWWCREATEVM" ;;[m[m
+[32m+[m               [32mecho -n "JADMIN DEVHOST SERVERFTP SERVERDHCP SERVERDHCPBOOT SERVERDNS SERVERSNMP SERVERWWW SERVERWWWMRTG SERVERQEMU SERVERQEMUDEV SERVERCREATEVM SERVERCREATEVMDEV SERVERWWWCREATEVM SWFIREWALL" ;;[m[m
+        wikiserver)[m[m
+                echo -n "JADMIN JUSER SERVERSNMP SERVERWIKI SERVERWWW" ;;[m[m
+        awikiserver)[m[m
+[1mdiff --git a/files/etc/apt/sources.list/DEFAULT b/files/etc/apt/sources.list/DEFAULT[m[m</system_output>
+  <system_output timestamp="730.071736">
+[1mindex 9ac9cf9..e791d56 100644[m[m
+[1m--- a/files/etc/apt/sources.list/DEFAULT[m[m
+[1m+++ b/files/etc/apt/sources.list/DEFAULT[m[m
+[36m@@ -3,13 +3,10 @@[m[m
+ # if unstable was used, it should be sid.[m[m
+ #deb file:///var/www/debian sid main[m[m
+ [m[m
+[31m-# in case we are the CD installing.[m[m
+[31m-deb file:///media/mirror wheezy main[m[m
+[32m+[m[32mdeb http://ftp.de.debian.org/debian stable main[m[m
+[32m+[m[32mdeb-src http://ftp.de.debian.org/debian stable main[m[m
+ [m[m
+[31m-deb http://http.us.debian.org/debian stable main[m[m
+[31m-deb-src http://http.us.debian.org/debian stable main[m[m
+[32m+[m[32m#deb http://ftp.de.debian.org/debian unstable main[m[m
+[32m+[m[32m#deb-src http://ftp.de.debian.org/debian unstable main[m[m
+ [m[m
+[31m-#deb http://http.us.debian.org/debian unstable main[m[m
+[31m-#deb-src http://http.us.debian.org/debian unstable main[m[m
+[31m-[m[m
+[31m-deb http://security.debian.org/ stable/updates main[m[m
+\ No newline at end of file[m[m
+[32m+[m[32mdeb http://security.debian.org/debian-security stable-security main[m[m
+\ No newline at end of file[m[m
+[1mdiff --git a/files/etc/apt/sources.list/QEMUCLIENT b/files/etc/apt/sources.list/QEMUCLIENT[m[m
+[1mindex 44032de..e21e4fe 100644[m[m
+[1m--- a/files/etc/apt/sources.list/QEMUCLIENT[m[m
+[1m+++ b/files/etc/apt/sources.list/QEMUCLIENT[m[m
+[36m@@ -9,4 +9,4 @@[m [mdeb-src http://faiserver/debian stable main[m[m
+ #deb http://faiserver/debian unstable main[m[m
+ #deb-src http://faiserver/debian unstable main[m[m
+ [m[m
+[31m-deb http://security.debian.org/ stable/updates main[m[m
+\ No newline at end of file[m[m
+[32m+[m[32mdeb http://security.debian.org/debian-security stable-security main[m[m
+\ No newline at end of file[m[m
+[1mdiff --git a/package_config/SERVERWIFIDOG b/package_config.old/SERVERWIFIDOG[m[m
+[1msimilarity index 100%[m[m
+[1mrename from package_config/SERVERWIFIDOG[m[m
+[1mrename to package_config.old/SERVERWIFIDOG[m[m
+[</system_output>
+  <system_output timestamp="730.072485">1mdiff --git a/package_config/SERVERQEMU b/package_config/SERVERQEMU[m[m
+[1mindex 15c8aef..02ea099 100644[m[m
+[1m--- a/package_config/SERVERQEMU[m[m
+[1m+++ b/package_config/SERVERQEMU[m[m
+[36m@@ -6,6 +6,5 @@[m [mmultipath-tools[m[m
+ multipath-tools-boot[m[m
+ open-iscsi[m[m
+ qemu-kvm[m[m
+[31m-arno-iptables-firewall[m[m
+ [m[m
+ [m[m
+[1mdiff --git a/package_config/SWFIREWALL b/package_config/SWFIREWALL[m[m
+[1mnew file mode 100644[m[m
+[1mindex 0000000..5121839[m[m
+[1m--- /dev/null[m[m
+[1m+++ b/package_config/SWFIREWALL[m[m
+[36m@@ -0,0 +1,4 @@[m[m
+[32m+[m[32m# Systems with this class will have a software firewall, provided by arno-iptables-firewall.[m[m
+[32m+[m[m
+[32m+[m[32mPACKAGES aptitude[m[m
+[32m+[m[32marno-iptables-firewall[m[m
+[1mdiff --git a/scripts/GRUBEFI/10-setup b/scripts/GRUBEFI/10-setup[m[m
+[1mindex fc1a9bd..5740a4c 100755[m[m
+[1m--- a/scripts/GRUBEFI/10-setup[m[m
+[1m+++ b/scripts/GRUBEFI/10-setup[m[m
+[36m@@ -10,5 +10,9 @@[</system_output>
+  <system_output timestamp="730.073536">m [m$ROOTCMD grub-install --directory /usr/lib/grub/x86_64-efi/[m[m
+ # generate a config file[m[m
+ $ROOTCMD update-grub2[m[m
+ [m[m
+[32m+[m[32m# copy the grub EFI binary into the location for the default EFI binary.[m[m
+[32m+[m[32m$ROOTCMD mkdir /boot/efi/EFI/Boot/[m[m
+[32m+[m[32m$ROOTCMD cp /boot/efi/EFI/debian/grubx64.efi /boot/efi/EFI/Boot/bootx64.efi[m[m
+[32m+[m[m
+ exit $error[m[m
+ [m[m
+</system_output>
+  <system_output timestamp="730.074957">
+[K[?1l&gt;</system_output>
+  <system_output timestamp="730.079011">[?2004h]0;demo@faiserver: /home/fai/configdemo@faiserver:/home/fai/config$ </system_output>
+  <user_input timestamp="742.198276">[A</user_input>
+  <system_output timestamp="742.200205">sudo git diff master~4</system_output>
+  <user_input timestamp="743.374633"></user_input>
+  <system_output timestamp="743.376603">[K</system_output>
+  <user_input timestamp="744.227148">5</user_input>
+  <system_output timestamp="744.248281">5</system_output>
+  <user_input timestamp="744.791541">
+</user_input>
+  <system_output timestamp="744.797892">
+[?2004l
+</system_output>
+  <system_output timestamp="744.804368">sudo: unable to resolve host faiserver: Name or service not known
+</system_output>
+  <system_output timestamp="744.815839">[?1h=
+</system_output>
+  <system_output timestamp="744.879688">[1mdiff --git a/class/50-host-classes b/class/50-host-classes[m[m
+[1mindex 2804e2a..c5dbe11 100755[m[m
+[1m--- a/class/50-host-classes[m[m
+[1m+++ b/class/50-host-classes[m[m
+[36m@@ -47,7 +47,7 @@[m [mcase $HOSTNAME in[m[m
+        faiserver)[m[m
+                echo -n "JADMIN DEVHOST SERVERFAI JUSER" ;;[m[m
+        qemuhost)[m[m
+[31m-               echo -n "JADMIN DEVHOST SERVERFTP SERVERDHCP SERVERDHCPBOOT SERVERDNS SERVERSNMP SERVERWWW SERVERWWWMRTG SERVERQEMU SERVERQEMUDEV SERVERCREATEVM SERVERCREATEVMDEV SERVERWWWCREATEVM" ;;[m[m
+[32m+[m               [32mecho -n "JADMIN DEVHOST SERVERFTP SERVERDHCP SERVERDHCPBOOT SERVERDNS SERVERSNMP SERVERWWW SERVERWWWMRTG SERVERQEMU SERVERQEMUDEV SERVERCREATEVM SERVERCREATEVMDEV SERVERWWWCREATEVM SWFIREWALL" ;;[m[m
+        wikiserver)[m[m
+                echo -n "JADMIN JUSER SERVERSNMP SERVERWIKI SERVERWWW" ;;[m[m
+        awikiserver)[m[m
+[1mdiff --git a/files/etc/apt/sources.list/DEFAULT b/files/etc/apt/sources.list/DEFAULT[m[m</system_output>
+  <system_output timestamp="744.880692">
+[1mindex 9ac9cf9..e791d56 100644[m[m
+[1m--- a/files/etc/apt/sources.list/DEFAULT[m[m
+[1m+++ b/files/etc/apt/sources.list/DEFAULT[m[m
+[36m@@ -3,13 +3,10 @@[m[m
+ # if unstable was used, it should be sid.[m[m
+ #deb file:///var/www/debian sid main[m[m
+ [m[m
+[31m-# in case we are the CD installing.[m[m
+[31m-deb file:///media/mirror wheezy main[m[m
+[32m+[m[32mdeb http://ftp.de.debian.org/debian stable main[m[m
+[32m+[m[32mdeb-src http://ftp.de.debian.org/debian stable main[m[m
+ [m[m
+[31m-deb http://http.us.debian.org/debian stable main[m[m
+[31m-deb-src http://http.us.debian.org/debian stable main[m[m
+[32m+[m[32m#deb http://ftp.de.debian.org/debian unstable main[m[m
+[32m+[m[32m#deb-src http://ftp.de.debian.org/debian unstable main[m[m
+ [m[m
+[31m-#deb http://http.us.debian.org/debian unstable main[m[m
+[31m-#deb-src http://http.us.debian.org/debian unstable main[m[m
+[31m-[m[m
+[31m-deb http://security.debian.org/ stable/updates main[m[m
+\ No newline at </system_output>
+  <system_output timestamp="744.882012">end of file[m[m
+[32m+[m[32mdeb http://security.debian.org/debian-security stable-security main[m[m
+\ No newline at end of file[m[m
+[1mdiff --git a/files/etc/apt/sources.list/QEMUCLIENT b/files/etc/apt/sources.list/QEMUCLIENT[m[m
+[1mindex 44032de..e21e4fe 100644[m[m
+[1m--- a/files/etc/apt/sources.list/QEMUCLIENT[m[m
+[1m+++ b/files/etc/apt/sources.list/QEMUCLIENT[m[m
+[36m@@ -9,4 +9,4 @@[m [mdeb-src http://faiserver/debian stable main[m[m
+ #deb http://faiserver/debian unstable main[m[m
+ #deb-src http://faiserver/debian unstable main[m[m
+ [m[m
+[31m-deb http://security.debian.org/ stable/updates main[m[m
+\ No newline at end of file[m[m
+[32m+[m[32mdeb http://security.debian.org/debian-security stable-security main[m[m
+\ No newline at end of file[m[m
+[1mdiff --git a/package_config/SERVERWIFIDOG b/package_config.old/SERVERWIFIDOG[m[m
+[1msimilarity index 100%[m[m
+[1mrename from package_config/SERVERWIFIDOG[m[m
+[1mrename to package_config.old/SERVERWIFIDOG[m[m
+[</system_output>
+  <system_output timestamp="744.882563">1mdiff --git a/package_config/SERVERQEMU b/package_config/SERVERQEMU[m[m
+[1mindex 15c8aef..02ea099 100644[m[m
+[1m--- a/package_config/SERVERQEMU[m[m
+[1m+++ b/package_config/SERVERQEMU[m[m
+[36m@@ -6,6 +6,5 @@[m [mmultipath-tools[m[m
+ multipath-tools-boot[m[m
+ open-iscsi[m[m
+ qemu-kvm[m[m
+[31m-arno-iptables-firewall[m[m
+ [m[m
+ [m[m
+[1mdiff --git a/package_config/SWFIREWALL b/package_config/SWFIREWALL[m[m
+[1mnew file mode 100644[m[m
+[1mindex 0000000..5121839[m[m
+[1m--- /dev/null[m[m
+[1m+++ b/package_config/SWFIREWALL[m[m
+[36m@@ -0,0 +1,4 @@[m[m
+[32m+[m[32m# Systems with this class will have a software firewall, provided by arno-iptables-firewall.[m[m
+[32m+[m[m
+[32m+[m[32mPACKAGES aptitude[m[m
+[32m+[m[32marno-iptables-firewall[m[m
+[1mdiff --git a/scripts/FAIBASE/20-copy-mirror b/scripts/FAIBASE/20-copy-mirror[m[m
+[1mdeleted file mode 100755[m[m
+[1mindex 7541df2..0000000[m[m
+[1m--- a/scripts/FAIBASE/20-copy-mirror[m[m
+[1m+++ /dev/null[m[m
+[36m@@ -1,17 +0,0 @@[m[m
+[31m-#! /bin/bash[m[m
+[31m-[m[m
+[31m-# TODO: if we install from network copy the package mirror via, e.g., wget[m[m
+[31m-[m[m
+[31m-[ -d /media/mirror ] || exit 0[m[m
+[31m-[m[m
+[31m-if ifclass QEMUCLIENT ; then[m[m
+[31m-    {[m[m
+[31m-       echo "not copying debian mirror; this is a QEMU install."[m[m
+[31m-    }[m[m
+[31m-else[m[m
+[31m-    {[m[m
+[31m-       echo "Copying Debian mirror from CD to local disk. This may take some time."[m[m
+[31m-       mkdir -p $target/var/www/debian[m[m
+[31m-       cp -a /media/mirror/* $target/var/www/debian[m[m
+[31m-    }[m[m
+[31m-fi[m[m
+\ No newline at end of file[m[m
+[1mdiff --git a/scripts/GRUBEFI/10-setup b/scripts/GRUBEFI/10-setup[m[m
+[1mindex fc1a9bd..5740a4c 100755[m[m
+[1m--- a/scripts/GRUBEFI/10-setup[m[m
+[1m+++ b/scripts/GRUBEFI/10-setup[m[m
+[36m@@ -10,5 +10,9 @@[m [m$ROOTCMD grub-install --directory /usr/lib/grub/x86_64-efi/[m[m
+ # generate a config file[m[m
+ $ROOTCMD update-grub2[m[m
+ [m[m
+[32m+[m[32m# copy the grub EFI binary into the location for the default EFI binary.[m[m
+[32m+[m[32m$ROOTCMD mkdir /boot/efi/EFI/Boot/[m[m
+[32m+[m[32m$ROOTCMD cp /boot/efi/EFI/debian/grubx64.efi /boot/efi/EFI/Boot/bootx64.efi[m[m
+[32m+[m[m
+ exit $error[m[m
+ [m[m
+</system_output>
+  <system_output timestamp="744.883876">
+[K[?1l&gt;</system_output>
+  <system_output timestamp="744.887569">[?2004h]0;demo@faiserver: /home/fai/configdemo@faiserver:/home/fai/config$ </system_output>
+  <user_input timestamp="758.342788">[A</user_input>
+  <system_output timestamp="758.345121">sudo git diff master~5</system_output>
+  <user_input timestamp="759.480696"></user_input>
+  <system_output timestamp="759.485481">[K</system_output>
+  <user_input timestamp="761.033101">6</user_input>
+  <system_output timestamp="761.035238">6</system_output>
+  <user_input timestamp="761.514075">
+</user_input>
+  <system_output timestamp="761.523743">
+[?2004l
+</system_output>
+  <system_output timestamp="761.533266">sudo: unable to resolve host faiserver: Name or service not known
+</system_output>
+  <system_output timestamp="761.5485">[?1h=
+</system_output>
+  <system_output timestamp="761.626992">[1mdiff --git a/class/50-host-classes b/class/50-host-classes[m[m
+[1mindex 2804e2a..c5dbe11 100755[m[m
+[1m--- a/class/50-host-classes[m[m
+[1m+++ b/class/50-host-classes[m[m
+[36m@@ -47,7 +47,7 @@[m [mcase $HOSTNAME in[m[m
+        faiserver)[m[m
+                echo -n "JADMIN DEVHOST SERVERFAI JUSER" ;;[m[m
+        qemuhost)[m[m
+[31m-               echo -n "JADMIN DEVHOST SERVERFTP SERVERDHCP SERVERDHCPBOOT SERVERDNS SERVERSNMP SERVERWWW SERVERWWWMRTG SERVERQEMU SERVERQEMUDEV SERVERCREATEVM SERVERCREATEVMDEV SERVERWWWCREATEVM" ;;[m[m
+[32m+[m               [32mecho -n "JADMIN DEVHOST SERVERFTP SERVERDHCP SERVERDHCPBOOT SERVERDNS SERVERSNMP SERVERWWW SERVERWWWMRTG SERVERQEMU SERVERQEMUDEV SERVERCREATEVM SERVERCREATEVMDEV SERVERWWWCREATEVM SWFIREWALL" ;;[m[m
+        wikiserver)[m[m
+                echo -n "JADMIN JUSER SERVERSNMP SERVERWIKI SERVERWWW" ;;[m[m
+        awikiserver)[m[m
+[1mdiff --git a/files/etc/apt/sources.list/DEFAULT b/files/etc/apt/sources.list/DEFAULT[m[m</system_output>
+  <system_output timestamp="761.627201">
+[1mindex 9ac9cf9..e791d56 100644[m[m
+[1m--- a/files/etc/apt/sources.list/DEFAULT[m[m
+[1m+++ b/files/etc/apt/sources.list/DEFAULT[m[m
+[36m@@ -3,13 +3,10 @@[m[m
+ # if unstable was used, it should be sid.[m[m
+ #deb file:///var/www/debian sid main[m[m
+ [m[m
+[31m-# in case we are the CD installing.[m[m
+[31m-deb file:///media/mirror wheezy main[m[m
+[32m+[m[32mdeb http://ftp.de.debian.org/debian stable main[m[m
+[32m+[m[32mdeb-src http://ftp.de.debian.org/debian stable main[m[m
+ [m[m
+[31m-deb http://http.us.debian.org/debian stable main[m[m
+[31m-deb-src http://http.us.debian.org/debian stable main[m[m
+[32m+[m[32m#deb http://ftp.de.debian.org/debian unstable main[m[m
+[32m+[m[32m#deb-src http://ftp.de.debian.org/debian unstable main[m[m
+ [m[m
+[31m-#deb http://http.us.debian.org/debian unstable main[m[m
+[31m-#deb-src http://http.us.debian.org/debian unstable main[m[m
+[31m-[m[m
+[31m-deb http://security.debian.org/ stable/updates main[m[m
+\ No newline at </system_output>
+  <system_output timestamp="761.628073">end of file[m[m
+[32m+[m[32mdeb http://security.debian.org/debian-security stable-security main[m[m
+\ No newline at end of file[m[m
+[1mdiff --git a/files/etc/apt/sources.list/QEMUCLIENT b/files/etc/apt/sources.list/QEMUCLIENT[m[m
+[1mindex 44032de..e21e4fe 100644[m[m
+[1m--- a/files/etc/apt/sources.list/QEMUCLIENT[m[m
+[1m+++ b/files/etc/apt/sources.list/QEMUCLIENT[m[m
+[36m@@ -9,4 +9,4 @@[m [mdeb-src http://faiserver/debian stable main[m[m
+ #deb http://faiserver/debian unstable main[m[m
+ #deb-src http://faiserver/debian unstable main[m[m
+ [m[m
+[31m-deb http://security.debian.org/ stable/updates main[m[m
+\ No newline at end of file[m[m
+[32m+[m[32mdeb http://security.debian.org/debian-security stable-security main[m[m
+\ No newline at end of file[m[m
+[1mdiff --git a/package_config.old/HOSTSTEP b/package_config.old/HOSTSTEP[m[m
+[1mnew file mode 100644[m[m
+[1mindex 0000000..e096926[m[m
+[1m--- /dev/null[m[m
+[1m+++ b/package_config.old/HOSTSTEP[m[m
+[36m@@ -0,0</system_output>
+  <system_output timestamp="761.628957"> +1,3 @@[m[m
+[32m+[m[32mPACKAGES aptitude[m[m
+[32m+[m[32mafterstep[m[m
+[32m+[m[32mxdm[m[m
+[1mdiff --git a/package_config.old/HOSTXFCE b/package_config.old/HOSTXFCE[m[m
+[1mnew file mode 100644[m[m
+[1mindex 0000000..70220c8[m[m
+[1m--- /dev/null[m[m
+[1m+++ b/package_config.old/HOSTXFCE[m[m
+[36m@@ -0,0 +1,3 @@[m[m
+[32m+[m[32mPACKAGES aptitude[m[m
+[32m+[m[32mxfce4[m[m
+[32m+[m[32mxdm[m[m
+[1mdiff --git a/package_config.old/OPENWRTDEV b/package_config.old/OPENWRTDEV[m[m
+[1mnew file mode 100644[m[m
+[1mindex 0000000..61cc70e[m[m
+[1m--- /dev/null[m[m
+[1m+++ b/package_config.old/OPENWRTDEV[m[m
+[36m@@ -0,0 +1,3 @@[m[m
+[32m+[m[32mPACKAGES aptitude[m[m
+[32m+[m[32msubversion[m[m
+[32m+[m[32munzip[m[m
+[1mdiff --git a/package_config/SERVERWIFIDOG b/package_config.old/SERVERWIFIDOG[m[m
+[1msimilarity index 90%[m[m
+[1mrename from package_config/SERVERWIFIDOG[m[m
+[1mrename to package_config.old/SERVERWIFIDOG[m[m
+[1mindex 4a4830f..c119e0a 100644[m[m
+[1m--- a/package_config/SERVERWIFIDOG[m[m
+[1m+++ b/package_config.old/SERVERWIFIDOG[m[m
+[36m@@ -1,5 +1,5 @@[m[m
+ # A server for the wifidog municipal networking package.[m[m
+[31m-PACKAGES install[m[m
+[32m+[m[32mPACKAGES aptitude[m[m
+ #arpwatch[m[m
+ php-pear[m[m
+ bzip2[m[m
+</system_output>
+  <system_output timestamp="761.74148">[36m@@ -11,7 +11,7 @@[m [mfirefox-esr[m[m
+ tftp[m[m
+ [m[m
+ # FIXME: PHP5 does not exist in debian 9+[m[m
+[31m-#PACKAGES install[m[m
+[32m+[m[32m#PACKAGES aptitude[m[m
+ #php5-pgsql[m[m
+ #php5-curl[m[m
+ #php5-mcrypt[m[m
+[1mdiff --git a/package_config/DEFAULT b/package_config/DEFAULT[m[m
+[1mindex be7e676..e5187e9 100644[m[m
+[1m--- a/package_config/DEFAULT[m[m
+[1m+++ b/package_config/DEFAULT[m[m
+[36m@@ -1,6 +1,6 @@[m[m
+ # the default package selections. useful for things we want installed everywhere.[m[m
+ [m[m
+ # for pretty much everyone.[m[m
+[31m-PACKAGES install DHCPC[m[m
+[32m+[m[32mPACKAGES aptitude DHCPC[m[m
+ isc-dhcp-client[m[m
+ [m[m
+[1mdiff --git a/package_config/DEMO b/package_config/DEMO[m[m
+[1mindex 8467c3f..81892e2 100644[m[m
+[1m--- a/package_config/DEMO[m[m
+[1m+++ b/package_config/DEMO[m[m
+[36m@@ -1,8 +1,8 @@[m[m
+ # some packages we need on a demo machine[m[m
+ [m[m
+[31m-PACKAGES install[m[m
+[32m+[m[32mPACKAGES aptitude[</system_output>
+  <system_output timestamp="761.74271">m[m
+ fortune-mod fortunes[m[m
+ [m[m
+ # only when also class XORG is defined[m[m
+[31m-PACKAGES install XORG[m[m
+[32m+[m[32mPACKAGES aptitude XORG[m[m
+ afterstep[m[m
+[1mdiff --git a/package_config/DEVHOST b/package_config/DEVHOST[m[m
+[1mindex d8bb741..42a046b 100644[m[m
+[1m--- a/package_config/DEVHOST[m[m
+[1m+++ b/package_config/DEVHOST[m[m
+[36m@@ -1,4 +1,4 @@[m[m
+[31m-PACKAGES install[m[m
+[32m+[m[32mPACKAGES aptitude[m[m
+ build-essential[m[m
+ cvs[m[m
+ devscripts[m[m
+[1mdiff --git a/package_config/EADMIN b/package_config/EADMIN[m[m
+[1mindex 88b9b41..f0f5263 100644[m[m
+[1m--- a/package_config/EADMIN[m[m
+[1m+++ b/package_config/EADMIN[m[m
+[36m@@ -1,4 +1,4 @@[m[m
+[31m-PACKAGES install[m[m
+[32m+[m[32mPACKAGES aptitude[m[m
+ cruft-ng[m[m
+ chkrootkit[m[m
+ gdb[m[m
+[36m@@ -7,5 +7,5 @@[m [mnmap[m[m
+ vrms[m[m
+ magit[m[m
+ [m[m
+[31m-PACKAGES install HWPHYS[m[m
+[32m+[m[32mPACKAGES aptitude HWPHYS[m[m
+ iotop[m[m
+[1mdiff --git a/package_config/FAIBASE b/package_config/FAIBASE[m[m
+[1mindex 0984644..fd9850c 100644[m[m
+[1m--- a/package_config/FAIBASE[m[m
+[1m+++ b/package_config/FAIBASE[m[m
+[36m@@ -1,4 +1,4 @@[m[m
+[31m-PACKAGES install[m[m
+[32m+[m[32mPACKAGES aptitude[m[m
+ isc-dhcp-client tcpdump deborphan[m[m
+ emacs-nox[m[m
+ screen[m[m
+[1mdiff --git a/package_config/GIFTDEV b/package_config/GIFTDEV[m[m
+[1mindex 89ea763..15e922c 100644[m[m
+[1m--- a/package_config/GIFTDEV[m[m
+[1m+++ b/package_config/GIFTDEV[m[m
+[36m@@ -1,4 +1,4 @@[m[m
+[31m-PACKAGES install[m[m
+[32m+[m[32mPACKAGES aptitude[m[m
+ automake[m[m
+ autoconf[m[m
+ cdbs[m[m
+[1mdiff --git a/package_config/GRUB b/package_config/GRUB[m[m
+[1mindex 4f8a1a5..b384fd0 100644[m[m
+[1m--- a/package_config/GRUB[m[m
+[1m+++ b/package_config/GRUB[m[m
+[36m@@ -1,6 +1,6 @@[m[m
+ # Grub, for BIOS booting systems.[m[m
+ [m[m
+ # for non-EFI systems.[m[m
+[31m-PACKAGES install GRUB[m[m
+[32m+[m[32mPACKAGES aptitude GRUB[m[m</system_output>
+  <system_output timestamp="761.743433">
+ grub-pc[m[m
+ [m[m
+[1mdiff --git a/package_config/GRUBEFI b/package_config/GRUBEFI[m[m
+[1mindex 8d042f6..386f8c0 100644[m[m
+[1m--- a/package_config/GRUBEFI[m[m
+[1m+++ b/package_config/GRUBEFI[m[m
+[36m@@ -1,7 +1,7 @@[m[m
+ # the grub EFI support packages.[m[m
+[31m-#PACKAGES install HW686[m[m
+[32m+[m[32m#PACKAGES aptitude HW686[m[m
+ #grub-efi-ia32[m[m
+:[K</system_output>
+  <user_input timestamp="765.90166">q</user_input>
+  <system_output timestamp="765.905273">
+[K[?1l&gt;</system_output>
+  <system_output timestamp="765.909401">[?2004h]0;demo@faiserver: /home/fai/configdemo@faiserver:/home/fai/config$ </system_output>
+  <user_input timestamp="766.36028">[A</user_input>
+  <system_output timestamp="766.375216">sudo git diff master~6</system_output>
+  <user_input timestamp="766.979794"></user_input>
+  <system_output timestamp="766.991106">[K</system_output>
+  <user_input timestamp="767.76086">7</user_input>
+  <system_output timestamp="767.778057">7</system_output>
+  <user_input timestamp="768.376367">
+</user_input>
+  <system_output timestamp="768.390973">
+[?2004l
+</system_output>
+  <system_output timestamp="768.401291">sudo: unable to resolve host faiserver: Name or service not known
+</system_output>
+  <system_output timestamp="768.412731">[?1h=
+</system_output>
+  <system_output timestamp="768.555526">[1mdiff --git a/class/50-host-classes b/class/50-host-classes[m[m
+[1mindex 2804e2a..c5dbe11 100755[m[m
+[1m--- a/class/50-host-classes[m[m
+[1m+++ b/class/50-host-classes[m[m
+[36m@@ -47,7 +47,7 @@[m [mcase $HOSTNAME in[m[m
+        faiserver)[m[m
+                echo -n "JADMIN DEVHOST SERVERFAI JUSER" ;;[m[m
+        qemuhost)[m[m
+[31m-               echo -n "JADMIN DEVHOST SERVERFTP SERVERDHCP SERVERDHCPBOOT SERVERDNS SERVERSNMP SERVERWWW SERVERWWWMRTG SERVERQEMU SERVERQEMUDEV SERVERCREATEVM SERVERCREATEVMDEV SERVERWWWCREATEVM" ;;[m[m
+[32m+[m               [32mecho -n "JADMIN DEVHOST SERVERFTP SERVERDHCP SERVERDHCPBOOT SERVERDNS SERVERSNMP SERVERWWW SERVERWWWMRTG SERVERQEMU SERVERQEMUDEV SERVERCREATEVM SERVERCREATEVMDEV SERVERWWWCREATEVM SWFIREWALL" ;;[m[m
+        wikiserver)[m[m
+                echo -n "JADMIN JUSER SERVERSNMP SERVERWIKI SERVERWWW" ;;[m[m
+        awikiserver)[m[m
+[1mdiff --git a/files/etc/apt/sources.list/DEFAULT b/files/etc/apt/sources.list/DEFAULT[m[m</system_output>
+  <system_output timestamp="768.556286">
+[1mindex 9ac9cf9..e791d56 100644[m[m
+[1m--- a/files/etc/apt/sources.list/DEFAULT[m[m
+[1m+++ b/files/etc/apt/sources.list/DEFAULT[m[m
+[36m@@ -3,13 +3,10 @@[m[m
+ # if unstable was used, it should be sid.[m[m
+ #deb file:///var/www/debian sid main[m[m
+ [m[m
+[31m-# in case we are the CD installing.[m[m
+[31m-deb file:///media/mirror wheezy main[m[m
+[32m+[m[32mdeb http://ftp.de.debian.org/debian stable main[m[m
+[32m+[m[32mdeb-src http://ftp.de.debian.org/debian stable main[m[m
+ [m[m
+[31m-deb http://http.us.debian.org/debian stable main[m[m
+[31m-deb-src http://http.us.debian.org/debian stable main[m[m
+[32m+[m[32m#deb http://ftp.de.debian.org/debian unstable main[m[m
+[32m+[m[32m#deb-src http://ftp.de.debian.org/debian unstable main[m[m
+ [m[m
+[31m-#deb http://http.us.debian.org/debian unstable main[m[m
+[31m-#deb-src http://http.us.debian.org/debian unstable main[m[m
+[31m-[m[m
+[31m-deb http://security.debian.org/ stable/updates main[m[m
+\ No newline at </system_output>
+  <system_output timestamp="768.556654">end of file[m[m
+[32m+[m[32mdeb http://security.debian.org/debian-security stable-security main[m[m
+\ No newline at end of file[m[m
+[1mdiff --git a/files/etc/apt/sources.list/QEMUCLIENT b/files/etc/apt/sources.list/QEMUCLIENT[m[m
+[1mindex 44032de..e21e4fe 100644[m[m
+[1m--- a/files/etc/apt/sources.list/QEMUCLIENT[m[m
+[1m+++ b/files/etc/apt/sources.list/QEMUCLIENT[m[m
+[36m@@ -9,4 +9,4 @@[m [mdeb-src http://faiserver/debian stable main[m[m
+ #deb http://faiserver/debian unstable main[m[m
+ #deb-src http://faiserver/debian unstable main[m[m
+ [m[m
+[31m-deb http://security.debian.org/ stable/updates main[m[m
+\ No newline at end of file[m[m
+[32m+[m[32mdeb http://security.debian.org/debian-security stable-security main[m[m
+\ No newline at end of file[m[m
+[1mdiff --git a/package_config/HOSTSTEP b/package_config.old/HOSTSTEP[m[m
+[1msimilarity index 100%[m[m
+[1mrename from package_config/HOSTSTEP[m[m
+[1mrename to package_config.old/HOSTSTEP[m[m
+[1mdiff --git a/packa</system_output>
+  <system_output timestamp="768.557636">ge_config/HOSTXFCE b/package_config.old/HOSTXFCE[m[m
+[1msimilarity index 100%[m[m
+[1mrename from package_config/HOSTXFCE[m[m
+[1mrename to package_config.old/HOSTXFCE[m[m
+[1mdiff --git a/package_config/OPENWRTDEV b/package_config.old/OPENWRTDEV[m[m
+[1msimilarity index 100%[m[m
+[1mrename from package_config/OPENWRTDEV[m[m
+[1mrename to package_config.old/OPENWRTDEV[m[m
+[1mdiff --git a/package_config/SERVERWIFIDOG b/package_config.old/SERVERWIFIDOG[m[m
+[1msimilarity index 100%[m[m
+[1mrename from package_config/SERVERWIFIDOG[m[m
+[1mrename to package_config.old/SERVERWIFIDOG[m[m
+[1mdiff --git a/package_config/SERVERQEMU b/package_config/SERVERQEMU[m[m
+[1mindex 15c8aef..02ea099 100644[m[m
+[1m--- a/package_config/SERVERQEMU[m[m
+[1m+++ b/package_config/SERVERQEMU[m[m
+[36m@@ -6,6 +6,5 @@[m [mmultipath-tools[m[m
+ multipath-tools-boot[m[m
+ open-iscsi[m[m
+ qemu-kvm[m[m
+[31m-arno-iptables-firewall[m[m
+ [m[m
+ [m[m
+[1mdiff --git a/package_config/SWFIREWALL b/package_config/SWFIREWALL[m[m
+[1mnew file mode 100644[m[m
+[1mindex 0000000..5121839[m[m
+[1m--- /dev/null[m[m
+[1m+++ b/package_config/SWFIREWALL[m[m
+[36m@@ -0,0 +1,4 @@[m[m
+[32m+[m[32m# Systems with this class will have a software firewall, provided by arno-iptables-firewall.[m[m
+[32m+[m[m
+</system_output>
+  <system_output timestamp="768.558268">[32m+[m[32mPACKAGES aptitude[m[m
+[32m+[m[32marno-iptables-firewall[m[m
+[1mdiff --git a/scripts/FAIBASE/20-copy-mirror b/scripts/FAIBASE/20-copy-mirror[m[m
+[1mdeleted file mode 100755[m[m
+[1mindex 7541df2..0000000[m[m
+[1m--- a/scripts/FAIBASE/20-copy-mirror[m[m
+[1m+++ /dev/null[m[m
+[36m@@ -1,17 +0,0 @@[m[m
+[31m-#! /bin/bash[m[m
+[31m-[m[m
+[31m-# TODO: if we install from network copy the package mirror via, e.g., wget[m[m
+[31m-[m[m
+[31m-[ -d /media/mirror ] || exit 0[m[m
+[31m-[m[m
+[31m-if ifclass QEMUCLIENT ; then[m[m
+[31m-    {[m[m
+[31m-       echo "not copying debian mirror; this is a QEMU install."[m[m
+[31m-    }[m[m
+[31m-else[m[m
+[31m-    {[m[m
+[31m-       echo "Copying Debian mirror from CD to local disk. This may take some time."[m[m
+[31m-       mkdir -p $target/var/www/debian[m[m
+[31m-       cp -a /media/mirror/* $target/var/www/debian[m[m
+[31m-    }[m[m
+[31m-fi[m[m
+\ No newline at end of file[m[m
+[1mdiff --git a/scripts/GR</system_output>
+  <system_output timestamp="768.559035">UBEFI/10-setup b/scripts/GRUBEFI/10-setup[m[m
+[1mindex fc1a9bd..5740a4c 100755[m[m
+[1m--- a/scripts/GRUBEFI/10-setup[m[m
+[1m+++ b/scripts/GRUBEFI/10-setup[m[m
+[36m@@ -10,5 +10,9 @@[m [m$ROOTCMD grub-install --directory /usr/lib/grub/x86_64-efi/[m[m
+ # generate a config file[m[m
+ $ROOTCMD update-grub2[m[m
+ [m[m
+[32m+[m[32m# copy the grub EFI binary into the location for the default EFI binary.[m[m
+[32m+[m[32m$ROOTCMD mkdir /boot/efi/EFI/Boot/[m[m
+[32m+[m[32m$ROOTCMD cp /boot/efi/EFI/debian/grubx64.efi /boot/efi/EFI/Boot/bootx64.efi[m[m
+[32m+[m[m
+ exit $error[m[m
+ [m[m
+</system_output>
+  <system_output timestamp="768.560642">
+[K[?1l&gt;</system_output>
+  <system_output timestamp="768.564142">[?2004h]0;demo@faiserver: /home/fai/configdemo@faiserver:/home/fai/config$ </system_output>
+  <user_input timestamp="792.865644">[A</user_input>
+  <system_output timestamp="792.867714">sudo git diff master~7</system_output>
+  <user_input timestamp="794.349293"></user_input>
+  <system_output timestamp="794.360011">[K</system_output>
+  <user_input timestamp="794.951317">8</user_input>
+  <system_output timestamp="794.963447">8</system_output>
+  <user_input timestamp="795.691862">
+</user_input>
+  <system_output timestamp="795.709841">
+[?2004l
+</system_output>
+  <system_output timestamp="795.718956">sudo: unable to resolve host faiserver: Name or service not known
+</system_output>
+  <system_output timestamp="795.735406">[?1h=
+</system_output>
+  <system_output timestamp="795.761759">[1mdiff --git a/class/50-host-classes b/class/50-host-classes[m[m
+[1mindex 2804e2a..c5dbe11 100755[m[m
+[1m--- a/class/50-host-classes[m[m
+[1m+++ b/class/50-host-classes[m[m
+[36m@@ -47,7 +47,7 @@[m [mcase $HOSTNAME in[m[m
+        faiserver)[m[m
+                echo -n "JADMIN DEVHOST SERVERFAI JUSER" ;;[m[m
+        qemuhost)[m[m
+[31m-               echo -n "JADMIN DEVHOST SERVERFTP SERVERDHCP SERVERDHCPBOOT SERVERDNS SERVERSNMP SERVERWWW SERVERWWWMRTG SERVERQEMU SERVERQEMUDEV SERVERCREATEVM SERVERCREATEVMDEV SERVERWWWCREATEVM" ;;[m[m
+[32m+[m               [32mecho -n "JADMIN DEVHOST SERVERFTP SERVERDHCP SERVERDHCPBOOT SERVERDNS SERVERSNMP SERVERWWW SERVERWWWMRTG SERVERQEMU SERVERQEMUDEV SERVERCREATEVM SERVERCREATEVMDEV SERVERWWWCREATEVM SWFIREWALL" ;;[m[m
+        wikiserver)[m[m
+                echo -n "JADMIN JUSER SERVERSNMP SERVERWIKI SERVERWWW" ;;[m[m
+        awikiserver)[m[m
+[1mdiff --git a/files/etc/apt/sources.list/DEFAULT b/files/etc/apt/sources.list/DEFAULT[m[m</system_output>
+  <system_output timestamp="795.761982">
+[1mindex 9ac9cf9..e791d56 100644[m[m
+[1m--- a/files/etc/apt/sources.list/DEFAULT[m[m
+[1m+++ b/files/etc/apt/sources.list/DEFAULT[m[m
+[36m@@ -3,13 +3,10 @@[m[m
+ # if unstable was used, it should be sid.[m[m
+ #deb file:///var/www/debian sid main[m[m
+ [m[m
+[31m-# in case we are the CD installing.[m[m
+[31m-deb file:///media/mirror wheezy main[m[m
+[32m+[m[32mdeb http://ftp.de.debian.org/debian stable main[m[m
+[32m+[m[32mdeb-src http://ftp.de.debian.org/debian stable main[m[m
+ [m[m
+[31m-deb http://http.us.debian.org/debian stable main[m[m
+[31m-deb-src http://http.us.debian.org/debian stable main[m[m
+[32m+[m[32m#deb http://ftp.de.debian.org/debian unstable main[m[m
+[32m+[m[32m#deb-src http://ftp.de.debian.org/debian unstable main[m[m
+ [m[m
+[31m-#deb http://http.us.debian.org/debian unstable main[m[m
+[31m-#deb-src http://http.us.debian.org/debian unstable main[m[m
+[31m-[m[m
+[31m-deb http://security.debian.org/ stable/updates main[m[m
+\ No newline at </system_output>
+  <system_output timestamp="795.764264">end of file[m[m
+[32m+[m[32mdeb http://security.debian.org/debian-security stable-security main[m[m
+\ No newline at end of file[m[m
+[1mdiff --git a/files/etc/apt/sources.list/QEMUCLIENT b/files/etc/apt/sources.list/QEMUCLIENT[m[m
+[1mindex 44032de..e21e4fe 100644[m[m
+[1m--- a/files/etc/apt/sources.list/QEMUCLIENT[m[m
+[1m+++ b/files/etc/apt/sources.list/QEMUCLIENT[m[m
+[36m@@ -9,4 +9,4 @@[m [mdeb-src http://faiserver/debian stable main[m[m
+ #deb http://faiserver/debian unstable main[m[m
+ #deb-src http://faiserver/debian unstable main[m[m
+ [m[m
+[31m-deb http://security.debian.org/ stable/updates main[m[m
+\ No newline at end of file[m[m
+[32m+[m[32mdeb http://security.debian.org/debian-security stable-security main[m[m
+\ No newline at end of file[m[m
+[1mdiff --git a/package_config/HOSTSTEP b/package_config.old/HOSTSTEP[m[m
+[1msimilarity index 100%[m[m
+[1mrename from package_config/HOSTSTEP[m[m
+[1mrename to package_config.old/HOSTSTEP[m[m
+[1mdiff --git a/package_config/HOSTXFCE b/package_config.old/HOSTXFCE[m[m
+[1msimilarity index 100%[m[m
+[1mrename from package_config/HOSTXFCE[m[m
+[1mrename to package_config.old/HOSTXFCE[m[m
+[1mdiff --git a/package_config/OPENWRTDEV b/package_config.old/OPENWRTDEV[m[m
+[1msimilarity index 100%[m[m
+[1mrename from package_config/OPENWRTDEV[m[m
+[1mrename to package_config.old/OPENWRTDEV[m[m
+[1mdiff --git a/package_config/SERVERWIFIDOG b/package_config.old/SERVERWIFIDOG[m[m
+[1msimilarity index 100%[m[m
+[1mrename from package_config/SERVERWIFIDOG[m[m
+[1mrename to package_config.old/SERVERWIFIDOG[m[m
+[1mdiff --git a/package_config/PRINTERDEV b/package_config/PRINTERDEV[m[m
+[1mnew file mode 100644[m[m
+[1mindex 0000000..9791c4b[m[m
+[1m--- /dev/null[m[m
+[1m+++ b/package_config/PRINTERDEV[m[m
+[36m@@ -0,0 +1,9 @@[m[m
+[32m+[m[32m# packages for 3d printing.[m[m
+[32m+[m[m
+[32m+[m[32m# check STL files.[m[m
+[32m+[m[32mPACKAGES aptitude[m[m
+[32m+[m[32madmesh[m[m
+[32m+[m[m
+[32m+[m[32m# i don't remember why i have this installed.[m[m
+[32m+[m[32mPACKAGES aptitude XORG[m[m
+[32m+[m[32mgeomview[m[m
+\ No newline at end of file[m[m
+[1mdiff --git a/package_config/SERVERQEMU b/package_config/SERVERQEMU[m[m
+[1mindex 15c8aef..02ea099 100644[m[m
+[1m--- a/package_config/SERVERQEMU[m[m
+</system_output>
+  <system_output timestamp="795.765223">[1m+++ b/package_config/SERVERQEMU[m[m
+[36m@@ -6,6 +6,5 @@[m [mmultipath-tools[m[m
+ multipath-tools-boot[m[m
+ open-iscsi[m[m
+ qemu-kvm[m[m
+[31m-arno-iptables-firewall[m[m
+ [m[m
+ [m[m
+[1mdiff --git a/package_config/SWFIREWALL b/package_config/SWFIREWALL[m[m
+[1mnew file mode 100644[m[m
+[1mindex 0000000..5121839[m[m
+[1m--- /dev/null[m[m
+[1m+++ b/package_config/SWFIREWALL[m[m
+[36m@@ -0,0 +1,4 @@[m[m
+[32m+[m[32m# Systems with this class will have a software firewall, provided by arno-iptables-firewall.[m[m
+[32m+[m[m
+[32m+[m[32mPACKAGES aptitude[m[m
+[32m+[m[32marno-iptables-firewall[m[m
+[1mdiff --git a/scripts/FAIBASE/20-copy-mirror b/scripts/FAIBASE/20-copy-mirror[m[m
+[1mdeleted file mode 100755[m[m
+[1mindex 7541df2..0000000[m[m
+[1m--- a/scripts/FAIBASE/20-copy-mirror[m[m
+[1m+++ /dev/null[m[m
+[36m@@ -1,17 +0,0 @@[m[m
+[31m-#! /bin/bash[m[m
+[31m-[m[m
+[31m-# TODO: if we install from network copy the package mirror via, e.g., wget[m[m</system_output>
+  <system_output timestamp="795.765735">
+[31m-[m[m
+[31m-[ -d /media/mirror ] || exit 0[m[m
+[31m-[m[m
+[31m-if ifclass QEMUCLIENT ; then[m[m
+[31m-    {[m[m
+[31m-       echo "not copying debian mirror; this is a QEMU install."[m[m
+[31m-    }[m[m
+[31m-else[m[m
+[31m-    {[m[m
+[31m-       echo "Copying Debian mirror from CD to local disk. This may take some time."[m[m
+[31m-       mkdir -p $target/var/www/debian[m[m
+[31m-       cp -a /media/mirror/* $target/var/www/debian[m[m
+[31m-    }[m[m
+[31m-fi[m[m
+\ No newline at end of file[m[m
+[1mdiff --git a/scripts/GRUBEFI/10-setup b/scripts/GRUBEFI/10-setup[m[m
+[1mindex fc1a9bd..5740a4c 100755[m[m
+[1m--- a/scripts/GRUBEFI/10-setup[m[m
+[1m+++ b/scripts/GRUBEFI/10-setup[m[m
+[36m@@ -10,5 +10,9 @@[m [m$ROOTCMD grub-install --directory /usr/lib/grub/x86_64-efi/[m[m
+ # generate a config file[m[m
+ $ROOTCMD update-grub2[m[m
+ [m[m
+[32m+[m[32m# copy the grub EFI binary into the location for the default EFI binary.[m[m
+[32m+[m[32m$ROOTCMD mkdir /boot/efi/EFI/Boot/[m[m
+[32m+[m[32m$ROOTCMD cp /boot/efi/EFI/debian/grubx64.efi /boot/efi/EFI/Boot/bootx64.efi[m[m
+[32m+[m[m
+ exit $error[m[m
+ [m[m
+</system_output>
+  <system_output timestamp="795.767751">
+[K[?1l&gt;</system_output>
+  <system_output timestamp="795.771676">[?2004h]0;demo@faiserver: /home/fai/configdemo@faiserver:/home/fai/config$ </system_output>
+  <user_input timestamp="817.323516">[A</user_input>
+  <system_output timestamp="817.32621">sudo git diff master~8</system_output>
+  <user_input timestamp="818.637592"></user_input>
+  <system_output timestamp="818.639509">[K</system_output>
+  <user_input timestamp="819.633823">9</user_input>
+  <system_output timestamp="819.646587">9</system_output>
+  <user_input timestamp="820.189546">
+</user_input>
+  <system_output timestamp="820.191753">
+[?2004l
+</system_output>
+  <system_output timestamp="820.203143">sudo: unable to resolve host faiserver: Name or service not known
+</system_output>
+  <system_output timestamp="820.219022">[?1h=
+</system_output>
+  <system_output timestamp="820.271574">[1mdiff --git a/class/50-host-classes b/class/50-host-classes[m[m
+[1mindex 2804e2a..c5dbe11 100755[m[m
+[1m--- a/class/50-host-classes[m[m
+[1m+++ b/class/50-host-classes[m[m
+[36m@@ -47,7 +47,7 @@[m [mcase $HOSTNAME in[m[m
+        faiserver)[m[m
+                echo -n "JADMIN DEVHOST SERVERFAI JUSER" ;;[m[m
+        qemuhost)[m[m
+[31m-               echo -n "JADMIN DEVHOST SERVERFTP SERVERDHCP SERVERDHCPBOOT SERVERDNS SERVERSNMP SERVERWWW SERVERWWWMRTG SERVERQEMU SERVERQEMUDEV SERVERCREATEVM SERVERCREATEVMDEV SERVERWWWCREATEVM" ;;[m[m
+[32m+[m               [32mecho -n "JADMIN DEVHOST SERVERFTP SERVERDHCP SERVERDHCPBOOT SERVERDNS SERVERSNMP SERVERWWW SERVERWWWMRTG SERVERQEMU SERVERQEMUDEV SERVERCREATEVM SERVERCREATEVMDEV SERVERWWWCREATEVM SWFIREWALL" ;;[m[m
+        wikiserver)[m[m
+                echo -n "JADMIN JUSER SERVERSNMP SERVERWIKI SERVERWWW" ;;[m[m
+        awikiserver)[m[m
+[1mdiff --git a/files/etc/apt/sources.list/DEFAULT b/files/etc/apt/sources.list/DEFAULT[m[m</system_output>
+  <system_output timestamp="820.273939">
+[1mindex 9ac9cf9..e791d56 100644[m[m
+[1m--- a/files/etc/apt/sources.list/DEFAULT[m[m
+[1m+++ b/files/etc/apt/sources.list/DEFAULT[m[m
+[36m@@ -3,13 +3,10 @@[m[m
+ # if unstable was used, it should be sid.[m[m
+ #deb file:///var/www/debian sid main[m[m
+ [m[m
+[31m-# in case we are the CD installing.[m[m
+[31m-deb file:///media/mirror wheezy main[m[m
+[32m+[m[32mdeb http://ftp.de.debian.org/debian stable main[m[m
+[32m+[m[32mdeb-src http://ftp.de.debian.org/debian stable main[m[m
+ [m[m
+[31m-deb http://http.us.debian.org/debian stable main[m[m
+[31m-deb-src http://http.us.debian.org/debian stable main[m[m
+[32m+[m[32m#deb http://ftp.de.debian.org/debian unstable main[m[m
+[32m+[m[32m#deb-src http://ftp.de.debian.org/debian unstable main[m[m
+ [m[m
+[31m-#deb http://http.us.debian.org/debian unstable main[m[m
+[31m-#deb-src http://http.us.debian.org/debian unstable main[m[m
+[31m-[m[m
+[31m-deb http://security.debian.org/ stable/updates main[m[m
+\ No newline at end of file[m[m
+[32m+[m[32mdeb http://security.debian.org/debian-security stable-security main[m[m
+\ No newline at end of file[m[m
+[1mdiff --git a/files/etc/apt/sources.list/QEMUCLIENT b/files/etc/apt/sources.list/QEMUCLIENT[m[m
+[1mindex 44032de..e21e4fe 100644[m[m
+[1m--- a/files/etc/apt/sources.list/QEMUCLIENT[m[m
+[1m+++ b/files/etc/apt/sources.list/QEMUCLIENT[m[m
+[36m@@ -9,4 +9,4 @@[m [mdeb-src http://faiserver/debian stable main[m[m
+ #deb http://faiserver/debian unstable main[m[m
+ #deb-src http://faiserver/debian unstable main[m[m
+ [m[m
+[31m-deb http://security.debian.org/ stable/updates main[m[m
+\ No newline at end of file[m[m
+[32m+[m[32mdeb http://security.debian.org/debian-security stable-security main[m[m
+\ No newline at end of file[m[m
+[1mdiff --git a/files/etc/ssh/ssh_config/FAIBASE b/files/etc/ssh/ssh_config/FAIBASE[m[m
+[1mdeleted file mode 100644[m[m
+[1mindex f3f8c2f..0000000[m[m
+[1m--- a/files/etc/ssh/ssh_config/FAIBASE[m[m
+[1m+++ /dev/null[m[m
+[36m@@ -1,51 +0,0 @@[m[m
+[31m-[m[m
+[31m-# This is the ssh client system-wide configuration file.  See[m[m
+[31m-# ssh_config(5) for more information.  This file provides defaults for[m[m
+[31m-# users, and the values can be changed in per-user configuration files[m[m
+[31m-# or on the command line.[m[m
+[31m-[m[m
+[31m-# Configuration data is parsed as follows:[m[m
+[31m-#  1. command line options[m[m
+[31m-#  2. user-specific file[m[m
+[31m-#  3. system-wide file[m[m
+[31m-# Any configuration value is only changed the first time it is set.[m[m
+[31m-# Thus, host-specific definitions should be at the beginning of the[m[m
+[31m-# configuration file, and defaults at the end.[m[m
+[31m-[m[m
+[31m-# Site-wide defaults for some commonly used options.  For a comprehensive[m[m
+[31m-# list of available options, their meanings and defaults, please see the[m[m
+[31m-# ssh_config(5) man page.[m[m
+[31m-[m[m
+[31m-Host *[m[m
+[31m-#   ForwardAgent no[m[m
+[31m-   ForwardX11 yes[m[m
+[31m-#   ForwardX11Trusted yes[m[m
+[31m-#   RhostsRSAAuthentication no[m[m
+[31m-#   RSAAuthentication yes[m[m
+[31m-#   PasswordAuthentication yes[m[m
+[31m-#   HostbasedAuthentication no[m[m
+[31m-#   GSSAPIAuthentication no[m[m
+[31m-#   GSSAPIDelegateCredentials no[m[m
+</system_output>
+  <system_output timestamp="820.279913">[31m-#   GSSAPIKeyExchange no[m[m
+[31m-#   GSSAPITrustDNS no[m[m
+[31m-#   BatchMode no[m[m
+[31m-#   CheckHostIP yes[m[m
+[31m-#   AddressFamily any[m[m
+[31m-#   ConnectTimeout 0[m[m
+[31m-#   StrictHostKeyChecking ask[m[m
+[31m-#   IdentityFile ~/.ssh/identity[m[m
+[31m-#   IdentityFile ~/.ssh/id_rsa[m[m
+[31m-#   IdentityFile ~/.ssh/id_dsa[m[m
+[31m-#   Port 22[m[m
+[31m-#   Protocol 2,1[m[m
+[31m-#   Cipher 3des[m[m
+[31m-#   Ciphers aes128-cbc,3des-cbc,blowfish-cbc,cast128-cbc,arcfour,aes192-cbc,aes256-cbc[m[m
+[31m-#   MACs hmac-md5,hmac-sha1,umac-64@openssh.com,hmac-ripemd160[m[m
+[31m-#   EscapeChar ~[m[m
+[31m-#   Tunnel no[m[m
+[31m-#   TunnelDevice any:any[m[m
+[31m-#   PermitLocalCommand no[m[m
+[31m-    SendEnv LANG LC_*[m[m
+[31m-    HashKnownHosts yes[m[m
+[31m-    GSSAPIAuthentication yes[m[m
+[31m-    GSSAPIDelegateCredentials no[m[m
+[1mdiff --git a/package_config/HOSTSTEP b/package_config.old/HOSTSTEP[m[m
+[1msimilarity index 100%[m[m
+[</system_output>
+  <system_output timestamp="820.281101">1mrename from package_config/HOSTSTEP[m[m
+[1mrename to package_config.old/HOSTSTEP[m[m
+[1mdiff --git a/package_config/HOSTXFCE b/package_config.old/HOSTXFCE[m[m
+[1msimilarity index 100%[m[m
+[1mrename from package_config/HOSTXFCE[m[m
+[1mrename to package_config.old/HOSTXFCE[m[m
+[1mdiff --git a/package_config/OPENWRTDEV b/package_config.old/OPENWRTDEV[m[m
+[1msimilarity index 100%[m[m
+[1mrename from package_config/OPENWRTDEV[m[m
+[1mrename to package_config.old/OPENWRTDEV[m[m
+[1mdiff --git a/package_config/SERVERWIFIDOG b/package_config.old/SERVERWIFIDOG[m[m
+[1msimilarity index 100%[m[m
+[1mrename from package_config/SERVERWIFIDOG[m[m
+[1mrename to package_config.old/SERVERWIFIDOG[m[m
+[1mdiff --git a/package_config/PRINTERDEV b/package_config/PRINTERDEV[m[m
+[1mnew file mode 100644[m[m
+[1mindex 0000000..9791c4b[m[m
+[1m--- /dev/null[m[m
+[1m+++ b/package_config/PRINTERDEV[m[m
+[36m@@ -0,0 +1,9 @@[m[m
+[32m+[m[32m# packages for 3d printing.[m[m
+[32m+[m[m
+[32m+[m[32m# check STL files.[m[m
+[32m+[m[32mPACKAGES aptitude[m[m
+[32m+[m[32madmesh[m[m
+[32m+[m[m
+[32m+[m[32m# i don't remember why i have this installed.[m[m
+[32m+[m[32mPACKAGES aptitude XORG[m[m
+[32m+[m[32mgeomview[m[m
+\ No newline at end of file[m[m
+[1mdiff --git a/package_config/SERVERQEMU b/package_config/SERVERQEMU[m[m
+[1mindex 15c8aef..02ea099 100644[m[m
+[1m--- a/package_config/SERVERQEMU[m[m
+[1m+++ b/package_config/SERVERQEMU[m[m
+[36m@@ -6,6 +6,5 @@[m [mmultipath-tools[m[m
+ multipath-tools-boot[m[m
+ open-iscsi[m[m
+ qemu-kvm[m[m
+[31m-arno-iptables-firewall[m[m
+ [m[m
+ [m[m
+[1mdiff --git a/package_config/SWFIREWALL b/package_config/SWFIREWALL[m[m
+[1mnew file mode 100644[m[m
+[1mindex 0000000..5121839[m[m
+[1m--- /dev/null[m[m
+[1m+++ b/package_config/SWFIREWALL[m[m
+[36m@@ -0,0 +1,4 @@[m[m
+[32m+[m[32m# Systems with this class will have a software firewall, provided by arno-iptables-firewall.[m[m
+[32m+[m[m
+[32m+[m</system_output>
+  <system_output timestamp="820.282439">[32mPACKAGES aptitude[m[m
+[32m+[m[32marno-iptables-firewall[m[m
+[1mdiff --git a/scripts/FAIBASE/10-misc b/scripts/FAIBASE/10-misc[m[m
+[1mindex c4351b7..3d88c45 100755[m[m
+[1m--- a/scripts/FAIBASE/10-misc[m[m
+[1m+++ b/scripts/FAIBASE/10-misc[m[m
+[36m@@ -51,6 +51,6 @@[m [m$ROOTCMD install-keymap $KEYMAP || true[m[m
+ # dumpkeys | gzip -9f &gt;$target/etc/console/boottime.kmap.gz[m[m
+ [m[m
+ # enable ssh X11 forwarding[m[m
+[31m-fcopy /etc/ssh/ssh_config[m[m
+[32m+[m[32m#fcopy /etc/ssh/ssh_config[m[m
+ [m[m
+ exit $error[m[m
+[1mdiff --git a/scripts/FAIBASE/20-copy-mirror b/scripts/FAIBASE/20-copy-mirror[m[m
+[1mdeleted file mode 100755[m[m
+[1mindex 7541df2..0000000[m[m
+[1m--- a/scripts/FAIBASE/20-copy-mirror[m[m
+[1m+++ /dev/null[m[m
+[36m@@ -1,17 +0,0 @@[m[m
+[31m-#! /bin/bash[m[m
+[31m-[m[m
+[31m-# TODO: if we install from network copy the package mirror via, e.g., wget[m[m
+[31m-[m[m
+[31m-[ -d /media/mirror ] || exit 0[m[m
+[31m-[m[m
+[31m-if ifclass QEMUCLIENT ; then[m[m
+[31m-    {[m[m
+[31m-       echo "not copying debian mirror; this is a QEMU install."[m[m
+[31m-    }[m[m
+[31m-else[m[m
+[31m-    {[m[m
+[31m-       echo "Copying Debian mirror from CD to local disk. This may take some time."[m[m
+[31m-       mkdir -p $target/var/www/debian[m[m
+</system_output>
+  <system_output timestamp="820.282927">[31m-       cp -a /media/mirror/* $target/var/www/debian[m[m
+[31m-    }[m[m
+[31m-fi[m[m
+:[K</system_output>
+  <user_input timestamp="832.451931"> </user_input>
+  <system_output timestamp="832.454382">
+[K</system_output>
+  <system_output timestamp="832.454849">\ No newline at end of file[m[m
+[1mdiff --git a/scripts/GRUBEFI/10-setup b/scripts/GRUBEFI/10-setup[m[m
+[1mindex fc1a9bd..5740a4c 100755[m[m
+[1m--- a/scripts/GRUBEFI/10-setup[m[m
+[1m+++ b/scripts/GRUBEFI/10-setup[m[m
+[36m@@ -10,5 +10,9 @@[m [m$ROOTCMD grub-install --directory /usr/lib/grub/x86_64-efi/[m[m
+ # generate a config file[m[m
+ $ROOTCMD update-grub2[m[m
+ [m[m
+[32m+[m[32m# copy the grub EFI binary into the location for the default EFI binary.[m[m
+[32m+[m[32m$ROOTCMD mkdir /boot/efi/EFI/Boot/[m[m
+[32m+[m[32m$ROOTCMD cp /boot/efi/EFI/debian/grubx64.efi /boot/efi/EFI/Boot/bootx64.efi[m[m
+[32m+[m[m
+ exit $error[m[m
+ [m[m
+[7m(END)[27m[K</system_output>
+  <user_input timestamp="835.202788">q</user_input>
+  <system_output timestamp="835.206224">
+[K[?1l&gt;</system_output>
+  <system_output timestamp="835.210494">[?2004h]0;demo@faiserver: /home/fai/configdemo@faiserver:/home/fai/config$ </system_output>
+  <user_input timestamp="837.639779">[A</user_input>
+  <system_output timestamp="837.641405">sudo git diff master~9</system_output>
+  <user_input timestamp="838.241595"></user_input>
+  <system_output timestamp="838.255099">[K</system_output>
+  <user_input timestamp="838.676045">1</user_input>
+  <system_output timestamp="838.687793">1</system_output>
+  <user_input timestamp="839.130963">0</user_input>
+  <system_output timestamp="839.138657">0</system_output>
+  <user_input timestamp="839.588419">
+</user_input>
+  <system_output timestamp="839.610931">
+[?2004l
+</system_output>
+  <system_output timestamp="839.619715">sudo: unable to resolve host faiserver: Name or service not known
+</system_output>
+  <system_output timestamp="839.633685">[?1h=
+</system_output>
+  <system_output timestamp="839.801419">[1mdiff --git a/class/50-host-classes b/class/50-host-classes[m[m
+[1mindex 2804e2a..c5dbe11 100755[m[m
+[1m--- a/class/50-host-classes[m[m
+[1m+++ b/class/50-host-classes[m[m
+[36m@@ -47,7 +47,7 @@[m [mcase $HOSTNAME in[m[m
+        faiserver)[m[m
+                echo -n "JADMIN DEVHOST SERVERFAI JUSER" ;;[m[m
+        qemuhost)[m[m
+[31m-               echo -n "JADMIN DEVHOST SERVERFTP SERVERDHCP SERVERDHCPBOOT SERVERDNS SERVERSNMP SERVERWWW SERVERWWWMRTG SERVERQEMU SERVERQEMUDEV SERVERCREATEVM SERVERCREATEVMDEV SERVERWWWCREATEVM" ;;[m[m
+[32m+[m               [32mecho -n "JADMIN DEVHOST SERVERFTP SERVERDHCP SERVERDHCPBOOT SERVERDNS SERVERSNMP SERVERWWW SERVERWWWMRTG SERVERQEMU SERVERQEMUDEV SERVERCREATEVM SERVERCREATEVMDEV SERVERWWWCREATEVM SWFIREWALL" ;;[m[m
+        wikiserver)[m[m
+                echo -n "JADMIN JUSER SERVERSNMP SERVERWIKI SERVERWWW" ;;[m[m
+        awikiserver)[m[m
+[1mdiff --git a/files/etc/apt/sources.list/DEFAULT b/files/etc/apt/sources.list/DEFAULT[m[m</system_output>
+  <system_output timestamp="839.802989">
+[1mindex 9ac9cf9..e791d56 100644[m[m
+[1m--- a/files/etc/apt/sources.list/DEFAULT[m[m
+[1m+++ b/files/etc/apt/sources.list/DEFAULT[m[m
+[36m@@ -3,13 +3,10 @@[m[m
+ # if unstable was used, it should be sid.[m[m
+ #deb file:///var/www/debian sid main[m[m
+ [m[m
+[31m-# in case we are the CD installing.[m[m
+[31m-deb file:///media/mirror wheezy main[m[m
+[32m+[m[32mdeb http://ftp.de.debian.org/debian stable main[m[m
+[32m+[m[32mdeb-src http://ftp.de.debian.org/debian stable main[m[m
+ [m[m
+[31m-deb http://http.us.debian.org/debian stable main[m[m
+[31m-deb-src http://http.us.debian.org/debian stable main[m[m
+[32m+[m[32m#deb http://ftp.de.debian.org/debian unstable main[m[m
+[32m+[m[32m#deb-src http://ftp.de.debian.org/debian unstable main[m[m
+ [m[m
+[31m-#deb http://http.us.debian.org/debian unstable main[m[m
+[31m-#deb-src http://http.us.debian.org/debian unstable main[m[m
+[31m-[m[m
+[31m-deb http://security.debian.org/ stable/updates main[m[m
+\ No newline at </system_output>
+  <system_output timestamp="839.803847">end of file[m[m
+[32m+[m[32mdeb http://security.debian.org/debian-security stable-security main[m[m
+\ No newline at end of file[m[m
+[1mdiff --git a/files/etc/apt/sources.list/QEMUCLIENT b/files/etc/apt/sources.list/QEMUCLIENT[m[m
+[1mindex 44032de..e21e4fe 100644[m[m
+[1m--- a/files/etc/apt/sources.list/QEMUCLIENT[m[m
+[1m+++ b/files/etc/apt/sources.list/QEMUCLIENT[m[m
+[36m@@ -9,4 +9,4 @@[m [mdeb-src http://faiserver/debian stable main[m[m
+ #deb http://faiserver/debian unstable main[m[m
+ #deb-src http://faiserver/debian unstable main[m[m
+ [m[m
+[31m-deb http://security.debian.org/ stable/updates main[m[m
+\ No newline at end of file[m[m
+[32m+[m[32mdeb http://security.debian.org/debian-security stable-security main[m[m
+\ No newline at end of file[m[m
+[1mdiff --git a/files/etc/network/interfaces/DHCPC b/files/etc/network/interfaces/DHCPC[m[m
+[1mindex bf35059..dc1f163 100644[m[m
+[1m--- a/files/etc/network/interfaces/DHCPC[m[m
+[1m+++ b/files/etc/network/interfaces/DHCPC[m[m
+[36m@@ -1,4 +1,4 @@[m[m
+ # generated by FAI[m[m
+[31m-auto lo eth0[m[m
+[32m+[m[32mauto lo #PRIMARY_NETWORK_INTERFACE#[m[m
+ iface lo inet loopback[m[m
+[31m-iface eth0 inet dhcp[m[m
+[32m+[m[32miface #PRIMARY_NETWORK_INTERFACE# inet dhcp[m[m
+[1mdiff --git a/files/etc/network/interfaces/postinst b/files/etc/network/interfaces/postinst[m[m
+[1mnew file mode 100755[m[m
+[1mindex 0000000..2663e35[m[m
+[1m--- /dev/null[m[m
+[1m+++ b/files/etc/network/interfaces/postinst[m[m
+[36m@@ -0,0 +1,10 @@[m[m
+[32m+[m[32m#! /bin/bash[m[m
+[32m+[m[m
+[32m+[m[32merror=0 ; trap "error=$((error|1))" ERR[m[m
+[32m+[m[m
+[32m+[m[32mset -a[m[m
+[32m+[m[m
+[32m+[m[32mperl -pi -e 's/#(\w+)#/$ENV{$1}/g' $2[m[m
+[32m+[m[m
+[32m+[m[32mexit $error[m[m
+[32m+[m[m
+[1mdiff --git a/files/etc/ssh/ssh_config/FAIBASE b/files/etc/ssh/ssh_config/FAIBASE[m[m
+[1mdeleted file mode 100644[m[m
+[1mindex f3f8c2f..0000000[m[m
+[1m--- a/files/etc/ssh/ssh_config/FAIBASE[m[m
+[1m+++ /dev/null[m[m
+[36m@@ -1,51 +0,0 @@[m[m
+[31m-[m[m
+[31m-# This is the ssh client system-wide configuration file.  See[m[m
+[31m-# ssh_config(5) for more information.  This file provides defaults for[m[m
+[31m-# users, and the values can be changed in per-user configuration files[m[m
+</system_output>
+  <system_output timestamp="839.804974">[31m-# or on the command line.[m[m
+[31m-[m[m
+[31m-# Configuration data is parsed as follows:[m[m
+[31m-#  1. command line options[m[m
+[31m-#  2. user-specific file[m[m
+[31m-#  3. system-wide file[m[m
+[31m-# Any configuration value is only changed the first time it is set.[m[m
+[31m-# Thus, host-specific definitions should be at the beginning of the[m[m
+[31m-# configuration file, and defaults at the end.[m[m
+[31m-[m[m
+[31m-# Site-wide defaults for some commonly used options.  For a comprehensive[m[m
+[31m-# list of available options, their meanings and defaults, please see the[m[m
+[31m-# ssh_config(5) man page.[m[m
+[31m-[m[m
+[31m-Host *[m[m
+[31m-#   ForwardAgent no[m[m
+[31m-   ForwardX11 yes[m[m
+[31m-#   ForwardX11Trusted yes[m[m
+[31m-#   RhostsRSAAuthentication no[m[m
+[31m-#   RSAAuthentication yes[m[m
+[31m-#   PasswordAuthentication yes[m[m
+[31m-#   HostbasedAuthentication no[m[m
+[31m-#   GSSAPIAuthentication no[m[m
+[31m-#   GSSAPIDelegateCr</system_output>
+  <system_output timestamp="839.806526">edentials no[m[m
+[31m-#   GSSAPIKeyExchange no[m[m
+[31m-#   GSSAPITrustDNS no[m[m
+[31m-#   BatchMode no[m[m
+[31m-#   CheckHostIP yes[m[m
+[31m-#   AddressFamily any[m[m
+[31m-#   ConnectTimeout 0[m[m
+[31m-#   StrictHostKeyChecking ask[m[m
+[31m-#   IdentityFile ~/.ssh/identity[m[m
+[31m-#   IdentityFile ~/.ssh/id_rsa[m[m
+[31m-#   IdentityFile ~/.ssh/id_dsa[m[m
+[31m-#   Port 22[m[m
+[31m-#   Protocol 2,1[m[m
+[31m-#   Cipher 3des[m[m
+[31m-#   Ciphers aes128-cbc,3des-cbc,blowfish-cbc,cast128-cbc,arcfour,aes192-cbc,aes256-cbc[m[m
+[31m-#   MACs hmac-md5,hmac-sha1,umac-64@openssh.com,hmac-ripemd160[m[m
+[31m-#   EscapeChar ~[m[m
+[31m-#   Tunnel no[m[m
+[31m-#   TunnelDevice any:any[m[m
+[31m-#   PermitLocalCommand no[m[m
+[31m-    SendEnv LANG LC_*[m[m
+[31m-    HashKnownHosts yes[m[m
+[31m-    GSSAPIAuthentication yes[m[m
+[31m-    GSSAPIDelegateCredentials no[m[m
+[1mdiff --git a/package_config/HOSTSTEP b/package_config.old/HOSTSTEP[m[m
+[1msimilarity index 100%[m[m
+[1mrename from package_config/HOSTSTEP[m[m
+[1mrename to package_config.old/HOSTSTEP[m[m
+[1mdiff --git a/package_config/HOSTXFCE b/package_config.old/HOSTXFCE[m[m
+[1msimilarity index 100%[m[m
+[1mrename from package_config/HOSTXFCE[m[m
+[1mrename to package_config.old/HOSTXFCE[m[m
+[1mdiff --git a/package_config/OPENWRTDEV b/package_config.old/OPENWRTDEV[m[m
+[1msimilarity index 100%[m[m
+[1mrename from package_config/OPENWRTDEV[m[m
+[1mrename to package_config.old/OPENWRTDEV[m[m
+[1mdiff --git a/package_config/SERVERWIFIDOG b/package_config.old/SERVERWIFIDOG[m[m
+[1msimilarity index 100%[m[m
+[1mrename from package_config/SERVERWIFIDOG[m[m
+[1mrename to package_config.old/SERVERWIFIDOG[m[m
+[1mdiff --git a/package_config/PRINTERDEV b/package_config/PRINTERDEV[m[m
+[1mnew file mode 100644[m[m
+[1mindex 0000000..9791c4b[m[m
+[1m--- /dev/null[m[m
+[1m+++ b/package_config/PRINTERDEV[m[m
+[36m@@ -0,0 +1,9 @@[m[m
+[32m+[m[32m# packages for 3d printing.[m[m
+[32m+[m[m
+[32m+[m[32m# check STL files.[m[m
+[32m+[m[32mPACKAGES aptitude[m[m
+[32m+[m[32madmesh[m[m
+[32m+[m[m
+[32m+[m[32m# i don't remember why i have this installed.[m[m
+[32m+[m[32mPACKAGES aptitude XORG[m[m
+[32m+[m[32mgeomview[m[m
+\ No newline at end of file[m[m
+[1mdiff --git a/package_config/SERVERQEMU b/package_config/SERVERQEMU[m[m
+[1mindex 15c8aef..02ea099 100644[m[m
+[1m--- a/package_config/SERVERQEMU[m[m
+[1m+++ b/package_config/SERVERQEMU[m[m
+[36m@@ -6,6 +6,5 @@[m [mmultipath-tools[m[m
+ multipath-tools-boot[m[m
+ open-iscsi[m[m
+ qemu-kvm[m[m
+[31m-arno-iptables-firewall[m[m
+ [m[m
+ [m[m
+[1mdiff --git a/package_config/SWFIREWALL b/package_config/SWFIREWALL[m[m
+[1mnew file mode 100644[m[m
+[1mindex 0000000..5121839[m[m
+[1m--- /dev/null[m[m
+[1m+++ b/package_config/SWFIREWALL[m[m
+[36m@@ -0,0 +1,4 @@[m[m
+[32m+[m[32m# Systems with this class will have a software firewall, provided by arno-iptables-firewall.[m[m
+[32</system_output>
+  <system_output timestamp="839.807324">m+[m[m
+[32m+[m[32mPACKAGES aptitude[m[m
+[32m+[m[32marno-iptables-firewall[m[m
+[1mdiff --git a/scripts/FAIBASE/10-misc b/scripts/FAIBASE/10-misc[m[m
+[1mindex c4351b7..3d88c45 100755[m[m
+[1m--- a/scripts/FAIBASE/10-misc[m[m
+[1m+++ b/scripts/FAIBASE/10-misc[m[m
+</system_output>
+  <system_output timestamp="839.820798">[36m@@ -51,6 +51,6 @@[m [m$ROOTCMD install-keymap $KEYMAP || true[m[m
+ # dumpkeys | gzip -9f &gt;$target/etc/console/boottime.kmap.gz[m[m
+ [m[m
+ # enable ssh X11 forwarding[m[m
+:[K</system_output>
+  <user_input timestamp="841.653769"> </user_input>
+  <system_output timestamp="841.656772">
+[K</system_output>
+  <system_output timestamp="841.658314">[31m-fcopy /etc/ssh/ssh_config[m[m
+[32m+[m[32m#fcopy /etc/ssh/ssh_config[m[m
+ [m[m
+ exit $error[m[m
+[1mdiff --git a/scripts/FAIBASE/20-copy-mirror b/scripts/FAIBASE/20-copy-mirror[m[m
+[1mdeleted file mode 100755[m[m
+[1mindex 7541df2..0000000[m[m
+[1m--- a/scripts/FAIBASE/20-copy-mirror[m[m
+[1m+++ /dev/null[m[m
+[36m@@ -1,17 +0,0 @@[m[m
+[31m-#! /bin/bash[m[m
+[31m-[m[m
+[31m-# TODO: if we install from network copy the package mirror via, e.g., wget[m[m
+[31m-[m[m
+[31m-[ -d /media/mirror ] || exit 0[m[m
+[31m-[m[m
+[31m-if ifclass QEMUCLIENT ; then[m[m
+[31m-    {[m[m
+[31m-       echo "not copying debian mirror; this is a QEMU install."[m[m
+[31m-    }[m[m
+[31m-else[m[m
+[31m-    {[m[m
+[31m-       echo "Copying Debian mirror from CD to local disk. This may take some time."[m[m
+[31m-       mkdir -p $target/var/www/debian[m[m
+[31m-       cp -a /media/mirror/* $target/var/www/debian[m[m
+[31m-    }[m[m
+[31m-fi[m[m
+\ No newline at end of file[m</system_output>
+  <system_output timestamp="841.65855">[m
+[1mdiff --git a/scripts/FAIBASE/30-interface b/scripts/FAIBASE/30-interface[m[m
+[1mindex 34d4301..9931134 100755[m[m
+[1m--- a/scripts/FAIBASE/30-interface[m[m
+[1m+++ b/scripts/FAIBASE/30-interface[m[m
+[36m@@ -24,8 +24,12 @@[m [merror=0 ; trap "error=$((error|1))" ERR[m[m
+ #      [ -n "$NETWORK" ] &amp;&amp; echo "localnet $NETWORK" &gt; $target/etc/networks[m[m
+ #fi[m[m
+ [m[m
+[31m-# here fcopy is mostly used, when installing a client for running in a[m[m
+[31m-# different subnet than during the installation  [m[m
+[31m-fcopy -iM /etc/network/interfaces /etc/networks[m[m
+[32m+[m[32mif [ -n "$NIC1" ] ; then[m[m
+[32m+[m[32m    export PRIMARY_NETWORK_INTERFACE=$NIC1[m[m
+[32m+[m[32m    fcopy -iM /etc/network/interfaces /etc/networks[m[m
+[32m+[m[32melse[m[m
+[32m+[m[32m    echo "could not find network interface."[m[m
+[32m+[m[32m    export error=1[m[m
+[32m+[m[32mfi[m[m
+ [m[m
+ exit $error[m[m
+[1mdiff --git a/scripts/GRUBEFI/10-setup b/scripts/GRUBEFI/10-setup[m[m
+[1mindex fc1a9bd..5740a4c 100755[m[m
+[1m--- a/scripts/GRUBEFI/10-setup[m[m
+[1m+++ b/scripts/GRUBEFI/10-setup[m[m
+[36m@@ -10,5 +10,9 @@[m [m$ROOTCMD grub-install --directory /usr/lib/grub/x86_64-efi/[m[m
+ # generate a config file[m[m
+ $ROOTCMD update-grub2[m[m
+ [m[m
+[32m+[m[32m# copy the grub EFI binary into the location for the default EFI binary.[m[m
+[32m+[m[32m$ROOTCMD mkdir /boot/efi/EFI/Boot/[m[m
+[32m+[m[32m$ROOTCMD cp /boot/efi/EFI/debian/grubx64.efi /boot/efi/EFI/Boot/bootx64.efi[m[m
+[32m+[m[m
+ exit $error[m[m
+ [m[m
+[7m(END)[27m[K</system_output>
+  <user_input timestamp="843.759406">q</user_input>
+  <system_output timestamp="843.763413">
+[K[?1l&gt;</system_output>
+  <system_output timestamp="843.767486">[?2004h]0;demo@faiserver: /home/fai/configdemo@faiserver:/home/fai/config$ </system_output>
+  <user_input timestamp="845.209027">[A</user_input>
+  <system_output timestamp="845.211192">sudo git diff master~10</system_output>
+  <user_input timestamp="848.244182"> </user_input>
+  <system_output timestamp="848.246308"> </system_output>
+  <user_input timestamp="849.891346">s</user_input>
+  <system_output timestamp="849.89354">s</system_output>
+  <user_input timestamp="850.205632">c</user_input>
+  <system_output timestamp="850.225415">c</system_output>
+  <user_input timestamp="850.412316">r</user_input>
+  <system_output timestamp="850.430874">r</system_output>
+  <user_input timestamp="850.644026">	</user_input>
+  <system_output timestamp="850.714014">ipts/</system_output>
+  <user_input timestamp="851.444721">g</user_input>
+  <system_output timestamp="851.454713">g</system_output>
+  <user_input timestamp="851.823418"></user_input>
+  <system_output timestamp="851.845673">[K</system_output>
+  <user_input timestamp="852.306009">G</user_input>
+  <system_output timestamp="852.322589">G</system_output>
+  <user_input timestamp="852.599051">R</user_input>
+  <system_output timestamp="852.610327">R</system_output>
+  <user_input timestamp="852.745753">U</user_input>
+  <system_output timestamp="852.751673">U</system_output>
+  <user_input timestamp="853.106379">	</user_input>
+  <system_output timestamp="853.145726">B</system_output>
+  <user_input timestamp="854.390642">E</user_input>
+  <system_output timestamp="854.394579">E</system_output>
+  <user_input timestamp="854.693925">	</user_input>
+  <system_output timestamp="854.728025">FI/</system_output>
+  <user_input timestamp="855.240072">1</user_input>
+  <system_output timestamp="855.255913">1</system_output>
+  <user_input timestamp="855.643614">	</user_input>
+  <system_output timestamp="855.689454">0-setup</system_output>
+  <user_input timestamp="856.391575">
+</user_input>
+  <system_output timestamp="856.402062">
+</system_output>
+  <system_output timestamp="856.402278">[?2004l
+</system_output>
+  <system_output timestamp="856.414011">sudo: unable to resolve host faiserver: Name or service not known
+</system_output>
+  <system_output timestamp="856.428578">[?1h=
+</system_output>
+  <system_output timestamp="856.429043">[1mdiff --git a/scripts/GRUBEFI/10-setup b/scripts/GRUBEFI/10-setup[m[m
+[1mindex fc1a9bd..5740a4c 100755[m[m
+[1m--- a/scripts/GRUBEFI/10-setup[m[m
+[1m+++ b/scripts/GRUBEFI/10-setup[m[m
+[36m@@ -10,5 +10,9 @@[m [m$ROOTCMD grub-install --directory /usr/lib/grub/x86_64-efi/[m[m
+ # generate a config file[m[m
+ $ROOTCMD update-grub2[m[m
+ [m[m
+[32m+[m[32m# copy the grub EFI binary into the location for the default EFI binary.[m[m
+[32m+[m[32m$ROOTCMD mkdir /boot/efi/EFI/Boot/[m[m
+[32m+[m[32m$ROOTCMD cp /boot/efi/EFI/debian/grubx64.efi /boot/efi/EFI/Boot/bootx64.efi[m[m
+[32m+[m[m
+ exit $error[m[m
+ [m[m
+</system_output>
+  <system_output timestamp="856.476136">
+[K[?1l&gt;</system_output>
+  <system_output timestamp="856.480574">[?2004h]0;demo@faiserver: /home/fai/configdemo@faiserver:/home/fai/config$ </system_output>
+  <user_input timestamp="857.742365">[A</user_input>
+  <system_output timestamp="857.760031">sudo git diff master~10 scripts/GRUBEFI/10-setup</system_output>
+  <user_input timestamp="858.305023">[D</user_input>
+  <system_output timestamp="858.321398"/>
+  <user_input timestamp="858.974451">[D[D</user_input>
+  <system_output timestamp="858.977408"/>
+  <user_input timestamp="859.014918">[D</user_input>
+  <system_output timestamp="859.019008"/>
+  <user_input timestamp="859.055458">[D</user_input>
+  <system_output timestamp="859.061182"/>
+  <user_input timestamp="859.114866">[D</user_input>
+  <system_output timestamp="859.123657"/>
+  <user_input timestamp="859.135079">[D</user_input>
+  <system_output timestamp="859.143462"/>
+  <user_input timestamp="859.216782">[D[D</user_input>
+  <system_output timestamp="859.22602"/>
+  <user_input timestamp="859.277491">[D</user_input>
+  <system_output timestamp="859.288467"/>
+  <user_input timestamp="859.298176">[D</user_input>
+  <system_output timestamp="859.308719"/>
+  <user_input timestamp="859.318804">[D</user_input>
+  <system_output timestamp="859.328394"/>
+  <user_input timestamp="859.358718">[D</user_input>
+  <system_output timestamp="859.369072"/>
+  <user_input timestamp="859.400368">[D</user_input>
+  <system_output timestamp="859.411303"/>
+  <user_input timestamp="859.442381">[D</user_input>
+  <system_output timestamp="859.452838"/>
+  <user_input timestamp="859.485447">[D</user_input>
+  <system_output timestamp="859.49376"/>
+  <user_input timestamp="859.526659">[D</user_input>
+  <system_output timestamp="859.535074"/>
+  <user_input timestamp="859.568323">[D</user_input>
+  <system_output timestamp="859.575847"/>
+  <user_input timestamp="859.609328">[D</user_input>
+  <system_output timestamp="859.615803"/>
+  <user_input timestamp="859.648921">[D</user_input>
+  <system_output timestamp="859.656104"/>
+  <user_input timestamp="859.689689">[D</user_input>
+  <system_output timestamp="859.696451"/>
+  <user_input timestamp="859.729518">[D</user_input>
+  <system_output timestamp="859.737325"/>
+  <user_input timestamp="859.76996">[D</user_input>
+  <system_output timestamp="859.77648"/>
+  <user_input timestamp="859.810128">[D</user_input>
+  <system_output timestamp="859.81715"/>
+  <user_input timestamp="860.270251">[D</user_input>
+  <system_output timestamp="860.272142"/>
+  <user_input timestamp="860.473447">[D</user_input>
+  <system_output timestamp="860.478354"/>
+  <user_input timestamp="860.796063"></user_input>
+  <system_output timestamp="860.809362">[1P</system_output>
+  <user_input timestamp="861.137129">2</user_input>
+  <system_output timestamp="861.143141">[1@2</system_output>
+  <user_input timestamp="861.41932">
+</user_input>
+  <system_output timestamp="861.430442">
+[?2004l
+</system_output>
+  <system_output timestamp="861.439283">sudo: unable to resolve host faiserver: Name or service not known
+</system_output>
+  <system_output timestamp="861.454369">[?1h=
+</system_output>
+  <system_output timestamp="861.468992">[1mdiff --git a/scripts/GRUBEFI/10-setup b/scripts/GRUBEFI/10-setup[m[m
+[1mindex c6669f3..5740a4c 100755[m[m
+[1m--- a/scripts/GRUBEFI/10-setup[m[m
+[1m+++ b/scripts/GRUBEFI/10-setup[m[m
+[36m@@ -5,9 +5,14 @@[m [merror=0 ; trap "error=$((error|1))" ERR[m[m
+ #fcopy -Uv boot/grub/grub.cfg[m[m
+ [m[m
+ # install grub.[m[m
+[31m-$ROOTCMD grub-install[m[m
+[32m+[m[32m$ROOTCMD grub-install --directory /usr/lib/grub/x86_64-efi/[m[m
+[32m+[m[m
+ # generate a config file[m[m
+ $ROOTCMD update-grub2[m[m
+ [m[m
+[32m+[m[32m# copy the grub EFI binary into the location for the default EFI binary.[m[m
+[32m+[m[32m$ROOTCMD mkdir /boot/efi/EFI/Boot/[m[m
+[32m+[m[32m$ROOTCMD cp /boot/efi/EFI/debian/grubx64.efi /boot/efi/EFI/Boot/bootx64.efi[m[m
+[32m+[m[m
+ exit $error[m[m
+ [m[m
+</system_output>
+  <system_output timestamp="861.470287">
+[K[?1l&gt;</system_output>
+  <system_output timestamp="861.473366">[?2004h</system_output>
+  <system_output timestamp="861.473696">]0;demo@faiserver: /home/fai/configdemo@faiserver:/home/fai/config$ </system_output>
+  <user_input timestamp="865.819016">[A</user_input>
+  <system_output timestamp="865.821125">sudo git diff master~20 scripts/GRUBEFI/10-setup</system_output>
+  <user_input timestamp="866.361224">[D</user_input>
+  <system_output timestamp="866.367934"/>
+  <user_input timestamp="867.018487">[D[D</user_input>
+  <system_output timestamp="867.023518"/>
+  <user_input timestamp="867.059184">[D</user_input>
+  <system_output timestamp="867.064592"/>
+  <user_input timestamp="867.121677">[D</user_input>
+  <system_output timestamp="867.127103"/>
+  <user_input timestamp="867.162311">[D</user_input>
+  <system_output timestamp="867.170305"/>
+  <user_input timestamp="867.203453">[D</user_input>
+  <system_output timestamp="867.213753"/>
+  <user_input timestamp="867.244457">[D</user_input>
+  <system_output timestamp="867.255645"/>
+  <user_input timestamp="867.285207">[D</user_input>
+  <system_output timestamp="867.296705"/>
+  <user_input timestamp="867.326711">[D</user_input>
+  <system_output timestamp="867.338043"/>
+  <user_input timestamp="867.367549">[D</user_input>
+  <system_output timestamp="867.379494"/>
+  <user_input timestamp="867.407896">[D</user_input>
+  <system_output timestamp="867.420686"/>
+  <user_input timestamp="867.427884">[D</user_input>
+  <system_output timestamp="867.440551"/>
+  <user_input timestamp="867.489123">[D</user_input>
+  <system_output timestamp="867.503101"/>
+  <user_input timestamp="867.50951">[D</user_input>
+  <system_output timestamp="867.524244"/>
+  <user_input timestamp="867.550758">[D</user_input>
+  <system_output timestamp="867.566291"/>
+  <user_input timestamp="867.611523">[D</user_input>
+  <system_output timestamp="867.631085"/>
+  <user_input timestamp="867.652414">[D</user_input>
+  <user_input timestamp="867.671923">[D</user_input>
+  <system_output timestamp="867.67299"/>
+  <user_input timestamp="867.692786">[D</user_input>
+  <system_output timestamp="867.693261"/>
+  <system_output timestamp="867.71456"/>
+  <user_input timestamp="867.732568">[D</user_input>
+  <system_output timestamp="867.73577"/>
+  <user_input timestamp="867.774173">[D</user_input>
+  <system_output timestamp="867.776714"/>
+  <user_input timestamp="867.815054">[D</user_input>
+  <system_output timestamp="867.82012"/>
+  <user_input timestamp="867.855582">[D</user_input>
+  <system_output timestamp="867.861337"/>
+  <user_input timestamp="867.896237">[D</user_input>
+  <system_output timestamp="867.905183"/>
+  <user_input timestamp="868.468187">[D</user_input>
+  <system_output timestamp="868.472629"/>
+  <user_input timestamp="868.859299"></user_input>
+  <system_output timestamp="868.87488">[1P</system_output>
+  <user_input timestamp="869.224457">3</user_input>
+  <system_output timestamp="869.234633">[1@3</system_output>
+  <user_input timestamp="869.80032">
+</user_input>
+  <system_output timestamp="869.820964">
+[?2004l
+</system_output>
+  <system_output timestamp="869.830174">sudo: unable to resolve host faiserver: Name or service not known
+</system_output>
+  <system_output timestamp="869.846931">[?1h=
+</system_output>
+  <system_output timestamp="869.917823">[1mdiff --git a/scripts/GRUBEFI/10-setup b/scripts/GRUBEFI/10-setup[m[m
+[1mnew file mode 100755[m[m
+[1mindex 0000000..5740a4c[m[m
+[1m--- /dev/null[m[m
+[1m+++ b/scripts/GRUBEFI/10-setup[m[m
+[36m@@ -0,0 +1,18 @@[m[m
+[32m+[m[32m#! /bin/bash[m[m
+[32m+[m[m
+[32m+[m[32merror=0 ; trap "error=$((error|1))" ERR[m[m
+[32m+[m[m
+[32m+[m[32m#fcopy -Uv boot/grub/grub.cfg[m[m
+[32m+[m[m
+[32m+[m[32m# install grub.[m[m
+[32m+[m[32m$ROOTCMD grub-install --directory /usr/lib/grub/x86_64-efi/[m[m
+[32m+[m[m
+[32m+[m[32m# generate a config file[m[m
+[32m+[m[32m$ROOTCMD update-grub2[m[m
+[32m+[m[m
+[32m+[m[32m# copy the grub EFI binary into the location for the default EFI binary.[m[m
+[32m+[m[32m$ROOTCMD mkdir /boot/efi/EFI/Boot/[m[m
+[32m+[m[32m$ROOTCMD cp /boot/efi/EFI/debian/grubx64.efi /boot/efi/EFI/Boot/bootx64.efi[m[m
+[32m+[m[m
+[32m+[m[32mexit $error[m[m
+[32m+[m[m
+</system_output>
+  <system_output timestamp="869.919752">
+[K[?1l&gt;</system_output>
+  <system_output timestamp="869.923745">[?2004h]0;demo@faiserver: /home/fai/configdemo@faiserver:/home/fai/config$ </system_output>
+  <user_input timestamp="879.916661">[A</user_input>
+  <system_output timestamp="879.918818">sudo git diff master~30 scripts/GRUBEFI/10-setup</system_output>
+  <user_input timestamp="882.164018">[D</user_input>
+  <system_output timestamp="882.165958"/>
+  <user_input timestamp="883.088061">[C</user_input>
+  <system_output timestamp="883.109044">[C</system_output>
+  <user_input timestamp="883.586526"></user_input>
+  <system_output timestamp="883.604241">[K</system_output>
+  <user_input timestamp="884.257737"></user_input>
+  <system_output timestamp="884.269296">[K</system_output>
+  <user_input timestamp="884.297701"></user_input>
+  <system_output timestamp="884.307365">[K</system_output>
+  <user_input timestamp="884.357056"></user_input>
+  <system_output timestamp="884.365027">[K</system_output>
+  <user_input timestamp="884.377187"></user_input>
+  <system_output timestamp="884.385693">[K</system_output>
+  <user_input timestamp="884.416318"></user_input>
+  <system_output timestamp="884.425404">[K</system_output>
+  <user_input timestamp="884.476473"></user_input>
+  <system_output timestamp="884.484477">[K</system_output>
+  <user_input timestamp="884.496688"></user_input>
+  <system_output timestamp="884.504243">[K</system_output>
+  <user_input timestamp="884.5371"></user_input>
+  <system_output timestamp="884.542628">[K</system_output>
+  <user_input timestamp="884.577419"></user_input>
+  <system_output timestamp="884.581832">[K</system_output>
+  <user_input timestamp="884.61699"></user_input>
+  <system_output timestamp="884.620758">[K</system_output>
+  <user_input timestamp="884.656331"></user_input>
+  <system_output timestamp="884.660522">[K</system_output>
+  <user_input timestamp="884.694375"></user_input>
+  <system_output timestamp="884.700704">[K</system_output>
+  <user_input timestamp="884.733412"></user_input>
+  <system_output timestamp="884.73842">[K</system_output>
+  <user_input timestamp="884.773713"></user_input>
+  <system_output timestamp="884.778085">[K</system_output>
+  <user_input timestamp="884.831879"></user_input>
+  <system_output timestamp="884.836249">[K</system_output>
+  <user_input timestamp="884.89028"></user_input>
+  <system_output timestamp="884.895695">[K</system_output>
+  <user_input timestamp="884.91027"></user_input>
+  <system_output timestamp="884.915429">[K</system_output>
+  <user_input timestamp="884.950124"></user_input>
+  <system_output timestamp="884.955011">[K</system_output>
+  <user_input timestamp="884.989079"></user_input>
+  <system_output timestamp="884.993302">[K</system_output>
+  <user_input timestamp="885.029499"></user_input>
+  <system_output timestamp="885.032257">[K</system_output>
+  <user_input timestamp="885.246254"></user_input>
+  <system_output timestamp="885.266649">[K</system_output>
+  <user_input timestamp="885.463673"></user_input>
+  <system_output timestamp="885.480854">[K</system_output>
+  <user_input timestamp="885.661362"></user_input>
+  <system_output timestamp="885.676851">[K</system_output>
+  <user_input timestamp="885.875884">p</user_input>
+  <system_output timestamp="885.892939">p</system_output>
+  <user_input timestamp="886.17242">a</user_input>
+  <system_output timestamp="886.185037">a</system_output>
+  <user_input timestamp="886.464122">	</user_input>
+  <system_output timestamp="886.494001">ckage_config</system_output>
+  <user_input timestamp="887.614444">/</user_input>
+  <system_output timestamp="887.634621">/</system_output>
+  <user_input timestamp="887.973478">g</user_input>
+  <system_output timestamp="887.99051">g</system_output>
+  <user_input timestamp="888.267889">	</user_input>
+  <system_output timestamp="888.313101"/>
+  <user_input timestamp="888.581898"></user_input>
+  <system_output timestamp="888.600083">[K</system_output>
+  <user_input timestamp="889.09384">G</user_input>
+  <system_output timestamp="889.105999">G</system_output>
+  <user_input timestamp="889.348606">	</user_input>
+  <system_output timestamp="889.391116"/>
+  <user_input timestamp="890.218273">R</user_input>
+  <system_output timestamp="890.227999">R</system_output>
+  <user_input timestamp="890.476797">	</user_input>
+  <system_output timestamp="890.509161">UB</system_output>
+  <user_input timestamp="891.558677">E</user_input>
+  <system_output timestamp="891.563109">E</system_output>
+  <user_input timestamp="891.83768">	</user_input>
+  <system_output timestamp="891.88067">FI</system_output>
+  <user_input timestamp="892.707127">
+</user_input>
+  <system_output timestamp="892.723351">
+</system_output>
+  <system_output timestamp="892.723783">[?2004l
+</system_output>
+  <system_output timestamp="892.735698">sudo: unable to resolve host faiserver: Name or service not known
+</system_output>
+  <system_output timestamp="892.752319">[?1h=
+</system_output>
+  <system_output timestamp="892.753777">[1mdiff --git a/package_config/GRUBEFI b/package_config/GRUBEFI[m[m
+[1mnew file mode 100644[m[m
+[1mindex 0000000..386f8c0[m[m
+[1m--- /dev/null[m[m
+[1m+++ b/package_config/GRUBEFI[m[m
+[36m@@ -0,0 +1,7 @@[m[m
+[32m+[m[32m# the grub EFI support packages.[m[m
+[32m+[m[32m#PACKAGES aptitude HW686[m[m
+[32m+[m[32m#grub-efi-ia32[m[m
+[32m+[m[m
+[32m+[m[32mPACKAGES aptitude HWAMD64[m[m
+[32m+[m[32mgrub-efi-amd64[m[m
+[32m+[m[m
+</system_output>
+  <system_output timestamp="892.755291">
+[K[?1l&gt;</system_output>
+  <system_output timestamp="892.76017">[?2004h]0;demo@faiserver: /home/fai/configdemo@faiserver:/home/fai/config$ </system_output>
+  <user_input timestamp="896.096771">[A</user_input>
+  <system_output timestamp="896.09881">sudo git diff master~30 package_config/GRUBEFI</system_output>
+  <user_input timestamp="896.546735">[D</user_input>
+  <system_output timestamp="896.563356"/>
+  <user_input timestamp="897.178045">[D</user_input>
+  <system_output timestamp="897.189809"/>
+  <user_input timestamp="897.242114">[D</user_input>
+  <system_output timestamp="897.248074"/>
+  <user_input timestamp="897.26245">[D</user_input>
+  <system_output timestamp="897.268132"/>
+  <user_input timestamp="897.304385">[D</user_input>
+  <system_output timestamp="897.307664"/>
+  <user_input timestamp="897.346004">[D</user_input>
+  <system_output timestamp="897.365972"/>
+  <user_input timestamp="897.387123">[D</user_input>
+  <system_output timestamp="897.405457"/>
+  <user_input timestamp="897.428454">[D</user_input>
+  <system_output timestamp="897.445022"/>
+  <user_input timestamp="897.470777">[D</user_input>
+  <system_output timestamp="897.482952"/>
+  <user_input timestamp="897.491215">[D</user_input>
+  <system_output timestamp="897.503079"/>
+  <user_input timestamp="897.55723">[D</user_input>
+  <system_output timestamp="897.562621"/>
+  <user_input timestamp="897.578622">[D</user_input>
+  <system_output timestamp="897.580964"/>
+  <user_input timestamp="897.622008">[D</user_input>
+  <system_output timestamp="897.639111"/>
+  <user_input timestamp="897.663966">[D</user_input>
+  <system_output timestamp="897.678243"/>
+  <user_input timestamp="897.706432">[D</user_input>
+  <system_output timestamp="897.717693"/>
+  <user_input timestamp="897.748126">[D</user_input>
+  <system_output timestamp="897.756995"/>
+  <user_input timestamp="897.789106">[D</user_input>
+  <system_output timestamp="897.795526"/>
+  <user_input timestamp="897.831578">[D</user_input>
+  <system_output timestamp="897.835336"/>
+  <user_input timestamp="897.874461">[D</user_input>
+  <system_output timestamp="897.89412"/>
+  <user_input timestamp="900.403238">[D</user_input>
+  <system_output timestamp="900.405188"/>
+  <user_input timestamp="900.695191">[D</user_input>
+  <system_output timestamp="900.707787"/>
+  <user_input timestamp="900.977939">[D</user_input>
+  <system_output timestamp="900.994084"/>
+  <user_input timestamp="901.296605">[D</user_input>
+  <system_output timestamp="901.31524"/>
+  <user_input timestamp="901.615617">[D</user_input>
+  <system_output timestamp="901.617866"/>
+  <user_input timestamp="902.193459"></user_input>
+  <system_output timestamp="902.20327">[1P</system_output>
+  <user_input timestamp="902.554007">2</user_input>
+  <system_output timestamp="902.571405">[1@2</system_output>
+  <user_input timestamp="902.998324">
+</user_input>
+  <system_output timestamp="903.015031">
+[?2004l
+</system_output>
+  <system_output timestamp="903.02495">sudo: unable to resolve host faiserver: Name or service not known
+</system_output>
+  <system_output timestamp="903.040967">[?1h=
+</system_output>
+  <system_output timestamp="903.042626">[1mdiff --git a/package_config/GRUBEFI b/package_config/GRUBEFI[m[m
+[1mnew file mode 100644[m[m
+[1mindex 0000000..386f8c0[m[m
+[1m--- /dev/null[m[m
+[1m+++ b/package_config/GRUBEFI[m[m
+[36m@@ -0,0 +1,7 @@[m[m
+[32m+[m[32m# the grub EFI support packages.[m[m
+[32m+[m[32m#PACKAGES aptitude HW686[m[m
+[32m+[m[32m#grub-efi-ia32[m[m
+[32m+[m[m
+[32m+[m[32mPACKAGES aptitude HWAMD64[m[m
+[32m+[m[32mgrub-efi-amd64[m[m
+[32m+[m[m
+</system_output>
+  <system_output timestamp="903.043683">
+[K[?1l&gt;</system_output>
+  <system_output timestamp="903.047033">[?2004h]0;demo@faiserver: /home/fai/configdemo@faiserver:/home/fai/config$ </system_output>
+  <user_input timestamp="907.78697">[A</user_input>
+  <system_output timestamp="907.788916">sudo git diff master~20 package_config/GRUBEFI</system_output>
+  <user_input timestamp="908.510892">[D</user_input>
+  <system_output timestamp="908.518933"/>
+  <user_input timestamp="909.156708">[D</user_input>
+  <system_output timestamp="909.167739"/>
+  <user_input timestamp="909.196311">[D</user_input>
+  <system_output timestamp="909.207999"/>
+  <user_input timestamp="909.252912">[D</user_input>
+  <system_output timestamp="909.267986"/>
+  <user_input timestamp="909.29271">[D</user_input>
+  <system_output timestamp="909.308543"/>
+  <user_input timestamp="909.333132">[D</user_input>
+  <system_output timestamp="909.34946"/>
+  <user_input timestamp="909.370787">[D</user_input>
+  <system_output timestamp="909.389957"/>
+  <user_input timestamp="909.411566">[D</user_input>
+  <system_output timestamp="909.42995"/>
+  <user_input timestamp="909.450754">[D</user_input>
+  <system_output timestamp="909.469909"/>
+  <user_input timestamp="909.489899">[D</user_input>
+  <system_output timestamp="909.510246"/>
+  <user_input timestamp="909.527762">[D</user_input>
+  <system_output timestamp="909.529626"/>
+  <user_input timestamp="909.547919">[D</user_input>
+  <system_output timestamp="909.56995"/>
+  <user_input timestamp="909.587036">[D</user_input>
+  <system_output timestamp="909.590081"/>
+  <user_input timestamp="909.626306">[D</user_input>
+  <system_output timestamp="909.630028"/>
+  <user_input timestamp="909.665864">[D</user_input>
+  <system_output timestamp="909.670419"/>
+  <user_input timestamp="909.705584">[D</user_input>
+  <system_output timestamp="909.711347"/>
+  <user_input timestamp="909.744189">[D</user_input>
+  <system_output timestamp="909.751279"/>
+  <user_input timestamp="909.801794">[D</user_input>
+  <system_output timestamp="909.812529"/>
+  <user_input timestamp="909.841234">[D</user_input>
+  <system_output timestamp="909.852074"/>
+  <user_input timestamp="909.879518">[D</user_input>
+  <system_output timestamp="909.891065"/>
+  <user_input timestamp="909.937436">[D</user_input>
+  <system_output timestamp="909.952427"/>
+  <user_input timestamp="909.996352">[D</user_input>
+  <system_output timestamp="910.014375"/>
+  <user_input timestamp="910.290197">[D</user_input>
+  <system_output timestamp="910.296992"/>
+  <user_input timestamp="910.562831">[D</user_input>
+  <system_output timestamp="910.58386"/>
+  <user_input timestamp="910.915983"></user_input>
+  <system_output timestamp="910.926883">[1P</system_output>
+  <user_input timestamp="911.131331">1</user_input>
+  <system_output timestamp="911.149594">[1@1</system_output>
+  <user_input timestamp="911.388797">
+</user_input>
+  <system_output timestamp="911.392179">
+[?2004l
+</system_output>
+  <system_output timestamp="911.401504">sudo: unable to resolve host faiserver: Name or service not known
+</system_output>
+  <system_output timestamp="911.416542">[?1h=
+</system_output>
+  <system_output timestamp="911.418604">
+[K[?1l&gt;</system_output>
+  <system_output timestamp="911.422524">[?2004h]0;demo@faiserver: /home/fai/configdemo@faiserver:/home/fai/config$ </system_output>
+  <user_input timestamp="913.349821">[A</user_input>
+  <system_output timestamp="913.351765">sudo git diff master~10 package_config/GRUBEFI</system_output>
+  <user_input timestamp="914.197229">[D</user_input>
+  <system_output timestamp="914.219502"/>
+  <user_input timestamp="914.857046">[D[D</user_input>
+  <system_output timestamp="914.865377"/>
+  <user_input timestamp="914.894759">[D</user_input>
+  <system_output timestamp="914.906707"/>
+  <user_input timestamp="914.933158">[D</user_input>
+  <system_output timestamp="914.94759"/>
+  <user_input timestamp="914.971873">[D</user_input>
+  <system_output timestamp="914.988595"/>
+  <user_input timestamp="915.030382">[D[D</user_input>
+  <system_output timestamp="915.051193"/>
+  <user_input timestamp="915.090824">[D</user_input>
+  <system_output timestamp="915.093086"/>
+  <user_input timestamp="915.110153">[D</user_input>
+  <system_output timestamp="915.11276"/>
+  <user_input timestamp="915.149668">[D</user_input>
+  <system_output timestamp="915.15337"/>
+  <user_input timestamp="915.190041">[D</user_input>
+  <system_output timestamp="915.195059"/>
+  <user_input timestamp="915.248951">[D</user_input>
+  <system_output timestamp="915.257125"/>
+  <user_input timestamp="915.288662">[D</user_input>
+  <system_output timestamp="915.298338"/>
+  <user_input timestamp="915.32888">[D</user_input>
+  <system_output timestamp="915.338776"/>
+  <user_input timestamp="915.348989">[D</user_input>
+  <system_output timestamp="915.359111"/>
+  <user_input timestamp="915.42965">[D</user_input>
+  <system_output timestamp="915.442159"/>
+  <user_input timestamp="915.469592">[D</user_input>
+  <system_output timestamp="915.482315"/>
+  <user_input timestamp="915.509904">[D</user_input>
+  <system_output timestamp="915.524283"/>
+  <user_input timestamp="915.528237">[D</user_input>
+  <system_output timestamp="915.545236"/>
+  <user_input timestamp="915.567706">[D</user_input>
+  <system_output timestamp="915.588071"/>
+  <user_input timestamp="915.608127">[D</user_input>
+  <system_output timestamp="915.629013"/>
+  <user_input timestamp="915.646218">[D</user_input>
+  <system_output timestamp="915.648615"/>
+  <user_input timestamp="916.219103"></user_input>
+  <system_output timestamp="916.223586">[1P package_config/GRUBEFI</system_output>
+  <user_input timestamp="917.14316">5</user_input>
+  <system_output timestamp="917.158109">5 package_config/GRUBEFI</system_output>
+  <user_input timestamp="917.630956">
+</user_input>
+  <system_output timestamp="917.634772">
+[?2004l
+</system_output>
+  <system_output timestamp="917.644423">sudo: unable to resolve host faiserver: Name or service not known
+</system_output>
+  <system_output timestamp="917.660333">[?1h=
+</system_output>
+  <system_output timestamp="917.66345">[1mdiff --git a/package_config/GRUBEFI b/package_config/GRUBEFI[m[m
+[1mnew file mode 100644[m[m
+[1mindex 0000000..386f8c0[m[m
+[1m--- /dev/null[m[m
+[1m+++ b/package_config/GRUBEFI[m[m
+[36m@@ -0,0 +1,7 @@[m[m
+[32m+[m[32m# the grub EFI support packages.[m[m
+[32m+[m[32m#PACKAGES aptitude HW686[m[m
+[32m+[m[32m#grub-efi-ia32[m[m
+[32m+[m[m
+[32m+[m[32mPACKAGES aptitude HWAMD64[m[m
+[32m+[m[32mgrub-efi-amd64[m[m
+[32m+[m[m
+</system_output>
+  <system_output timestamp="917.665512">
+[K[?1l&gt;</system_output>
+  <system_output timestamp="917.669782">[?2004h]0;demo@faiserver: /home/fai/configdemo@faiserver:/home/fai/config$ </system_output>
+  <user_input timestamp="938.190858">s</user_input>
+  <system_output timestamp="938.192952">s</system_output>
+  <user_input timestamp="938.333144">u</user_input>
+  <system_output timestamp="938.346258">u</system_output>
+  <user_input timestamp="938.498118">d</user_input>
+  <system_output timestamp="938.502074">d</system_output>
+  <user_input timestamp="938.580046">o</user_input>
+  <system_output timestamp="938.595569">o</system_output>
+  <user_input timestamp="938.682253"> </user_input>
+  <system_output timestamp="938.691107"> </system_output>
+  <user_input timestamp="938.823982">a</user_input>
+  <system_output timestamp="938.827212">a</system_output>
+  <user_input timestamp="938.947694">p</user_input>
+  <system_output timestamp="938.961073">p</system_output>
+  <user_input timestamp="939.068151">t</user_input>
+  <system_output timestamp="939.078085">t</system_output>
+  <user_input timestamp="939.190853"> </user_input>
+  <system_output timestamp="939.192945"> </system_output>
+  <user_input timestamp="939.456636">c</user_input>
+  <system_output timestamp="939.460058">c</system_output>
+  <user_input timestamp="939.70092">a</user_input>
+  <system_output timestamp="939.709926">a</system_output>
+  <user_input timestamp="939.947037">c</user_input>
+  <system_output timestamp="939.956361">c</system_output>
+  <user_input timestamp="940.235336">h</user_input>
+  <system_output timestamp="940.248359">h</system_output>
+  <user_input timestamp="940.578843">e</user_input>
+  <system_output timestamp="940.597699">e</system_output>
+  <user_input timestamp="940.821125"> </user_input>
+  <system_output timestamp="940.827435"> </system_output>
+  <user_input timestamp="941.129495">s</user_input>
+  <system_output timestamp="941.134398">s</system_output>
+  <user_input timestamp="941.316313">e</user_input>
+  <system_output timestamp="941.330784">e</system_output>
+  <user_input timestamp="941.479113">a</user_input>
+  <system_output timestamp="941.485368">a</system_output>
+  <user_input timestamp="942.19352"></user_input>
+  <system_output timestamp="942.200007">[K</system_output>
+  <user_input timestamp="942.851023"></user_input>
+  <system_output timestamp="942.867509">[K</system_output>
+  <user_input timestamp="942.891185"></user_input>
+  <system_output timestamp="942.904548">[K</system_output>
+  <user_input timestamp="942.932975"></user_input>
+  <system_output timestamp="942.943374">[K</system_output>
+  <user_input timestamp="942.974373"></user_input>
+  <system_output timestamp="942.981666">[K</system_output>
+  <user_input timestamp="943.015396"></user_input>
+  <system_output timestamp="943.019889">[K</system_output>
+  <user_input timestamp="943.055924"></user_input>
+  <system_output timestamp="943.076134">[K</system_output>
+  <user_input timestamp="943.098583"></user_input>
+  <system_output timestamp="943.114641">[K</system_output>
+  <user_input timestamp="943.137753"></user_input>
+  <system_output timestamp="943.15324">[K</system_output>
+  <user_input timestamp="943.629516"></user_input>
+  <system_output timestamp="943.634673">[K</system_output>
+  <user_input timestamp="943.976094">-</user_input>
+  <system_output timestamp="943.99704">-</system_output>
+  <user_input timestamp="944.63265">c</user_input>
+  <system_output timestamp="944.646623">c</system_output>
+  <user_input timestamp="944.735357">a</user_input>
+  <system_output timestamp="944.744">a</system_output>
+  <user_input timestamp="944.899246">c</user_input>
+  <system_output timestamp="944.916415">c</system_output>
+  <user_input timestamp="945.591094">h</user_input>
+  <system_output timestamp="945.595631">h</system_output>
+  <user_input timestamp="945.691173">e</user_input>
+  <system_output timestamp="945.711978">e</system_output>
+  <user_input timestamp="945.935014"> </user_input>
+  <system_output timestamp="945.943034"> </system_output>
+  <user_input timestamp="946.160886">s</user_input>
+  <system_output timestamp="946.174679">s</system_output>
+  <user_input timestamp="946.305558">e</user_input>
+  <system_output timestamp="946.308623">e</system_output>
+  <user_input timestamp="946.426317">a</user_input>
+  <system_output timestamp="946.442451">a</system_output>
+  <user_input timestamp="946.570331">r</user_input>
+  <system_output timestamp="946.578452">r</system_output>
+  <user_input timestamp="946.797945">c</user_input>
+  <system_output timestamp="946.810341">c</system_output>
+  <user_input timestamp="946.920701">h</user_input>
+  <system_output timestamp="946.924533">h</system_output>
+  <user_input timestamp="947.06618"> </user_input>
+  <system_output timestamp="947.072451"> </system_output>
+  <user_input timestamp="947.332086">g</user_input>
+  <system_output timestamp="947.341795">g</system_output>
+  <user_input timestamp="947.657925">r</user_input>
+  <system_output timestamp="947.664857">r</system_output>
+  <user_input timestamp="947.779088">u</user_input>
+  <system_output timestamp="947.799125">u</system_output>
+  <user_input timestamp="948.006072">b</user_input>
+  <system_output timestamp="948.009005">b</system_output>
+  <user_input timestamp="948.695987">-</user_input>
+  <system_output timestamp="948.69945">-</system_output>
+  <user_input timestamp="948.838947">e</user_input>
+  <system_output timestamp="948.849629">e</system_output>
+  <user_input timestamp="949.185085">f</user_input>
+  <system_output timestamp="949.194868">f</system_output>
+  <user_input timestamp="949.470099">i</user_input>
+  <system_output timestamp="949.484868">i</system_output>
+  <user_input timestamp="949.634306">
+</user_input>
+  <system_output timestamp="949.638267">
+[?2004l
+</system_output>
+  <system_output timestamp="949.652549">sudo: unable to resolve host faiserver: Name or service not known
+</system_output>
+  <system_output timestamp="950.058933">di-netboot-assistant - Debian-Installer netboot assistant
+</system_output>
+  <system_output timestamp="950.156091">grub-efi-ia32-signed - GRand Unified Bootloader, version 2 (i386 UEFI signed by Debian)
+grub-efi - GRand Unified Bootloader, version 2 (dummy package)
+grub-efi-amd64 - GRand Unified Bootloader, version 2 (EFI-AMD64 version)
+grub-efi-amd64-bin - GRand Unified Bootloader, version 2 (EFI-AMD64 modules)
+grub-efi-amd64-dbg - GRand Unified Bootloader, version 2 (EFI-AMD64 debug files)
+grub-efi-ia32 - GRand Unified Bootloader, version 2 (EFI-IA32 version)
+grub-efi-ia32-bin - GRand Unified Bootloader, version 2 (EFI-IA32 modules)
+</system_output>
+  <system_output timestamp="950.156613">grub-efi-ia32-dbg - GRand Unified Bootloader, version 2 (EFI-IA32 debug files)
+grub-efi-ia32-signed-template - GRand Unified Bootloader, version 2 (EFI-IA32 signing template)
+</system_output>
+  <system_output timestamp="950.574185">[?2004h]0;demo@faiserver: /home/fai/configdemo@faiserver:/home/fai/config$ </system_output>
+  <user_input timestamp="2152.677785">[A</user_input>
+  <system_output timestamp="2152.679802">sudo apt-cache search grub-efi</system_output>
+  <user_input timestamp="2153.722692">[A</user_input>
+  <system_output timestamp="2153.742896">git diff master~15 package_config/GRUBEFI</system_output>
+  <user_input timestamp="2154.16416">[A</user_input>
+  <system_output timestamp="2154.185384">0[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C</system_output>
+  <user_input timestamp="2154.777309">[B</user_input>
+  <system_output timestamp="2154.792865">5[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C</system_output>
+  <user_input timestamp="2155.263529"></user_input>
+  <system_output timestamp="2155.271677">[K</system_output>
+  <user_input timestamp="2155.917488"></user_input>
+  <system_output timestamp="2155.935728">[K[K[K</system_output>
+  <user_input timestamp="2155.939113"></user_input>
+  <system_output timestamp="2155.956349">[K</system_output>
+  <user_input timestamp="2155.979997"></user_input>
+  <system_output timestamp="2155.998571">[K</system_output>
+  <user_input timestamp="2156.021941"></user_input>
+  <system_output timestamp="2156.039149">[K</system_output>
+  <user_input timestamp="2156.063079"></user_input>
+  <system_output timestamp="2156.08183">[K</system_output>
+  <user_input timestamp="2156.10525"></user_input>
+  <system_output timestamp="2156.123081">[K</system_output>
+  <user_input timestamp="2156.147072"></user_input>
+  <system_output timestamp="2156.163464">[K</system_output>
+  <user_input timestamp="2156.189424"></user_input>
+  <system_output timestamp="2156.206532">[K</system_output>
+  <user_input timestamp="2156.230386"></user_input>
+  <system_output timestamp="2156.248287">[K</system_output>
+  <user_input timestamp="2156.251902"></user_input>
+  <system_output timestamp="2156.269524">[K</system_output>
+  <user_input timestamp="2156.292911"></user_input>
+  <system_output timestamp="2156.310733">[K</system_output>
+  <user_input timestamp="2156.334665"></user_input>
+  <system_output timestamp="2156.352795">[K</system_output>
+  <user_input timestamp="2156.377786"></user_input>
+  <system_output timestamp="2156.395728">[K</system_output>
+  <user_input timestamp="2156.419785"></user_input>
+  <system_output timestamp="2156.436162">[K</system_output>
+  <user_input timestamp="2156.463116"></user_input>
+  <system_output timestamp="2156.476791">[K</system_output>
+  <user_input timestamp="2156.484018"></user_input>
+  <system_output timestamp="2156.497597">[K</system_output>
+  <user_input timestamp="2156.546383"></user_input>
+  <system_output timestamp="2156.560406">[K</system_output>
+  <user_input timestamp="2156.821769"></user_input>
+  <system_output timestamp="2156.835085">[K</system_output>
+  <user_input timestamp="2157.074756"></user_input>
+  <system_output timestamp="2157.08472">[K</system_output>
+  <user_input timestamp="2157.309304">d</user_input>
+  <system_output timestamp="2157.315595">d</system_output>
+  <user_input timestamp="2157.392446">i</user_input>
+  <system_output timestamp="2157.399577">i</system_output>
+  <user_input timestamp="2157.7702">	</user_input>
+  <system_output timestamp="2157.80596">sk_config/</system_output>
+  <user_input timestamp="2158.29723">	</user_input>
+  <system_output timestamp="2158.33038"/>
+  <user_input timestamp="2158.701371">	</user_input>
+  <system_output timestamp="2158.744984">
+HWPHYS      QEMUCLIENT  
+</system_output>
+  <system_output timestamp="2158.745431">]0;demo@faiserver: /home/fai/configdemo@faiserver:/home/fai/config$ sudo git diff master~15 disk_config/</system_output>
+  <user_input timestamp="2160.177872">H</user_input>
+  <system_output timestamp="2160.179989">H</system_output>
+  <user_input timestamp="2160.653413">W</user_input>
+  <system_output timestamp="2160.664948">W</system_output>
+  <user_input timestamp="2161.127501">P</user_input>
+  <system_output timestamp="2161.134641">P</system_output>
+  <user_input timestamp="2161.500497">	</user_input>
+  <system_output timestamp="2161.532994">HYS</system_output>
+  <user_input timestamp="2161.909796">
+</user_input>
+  <system_output timestamp="2161.920472">
+</system_output>
+  <system_output timestamp="2161.920655">[?2004l
+</system_output>
+  <system_output timestamp="2161.934165">sudo: unable to resolve host faiserver: Name or service not known
+</system_output>
+  <system_output timestamp="2161.940048">[sudo] password for demo: </system_output>
+  <user_input timestamp="2164.013795">fa</user_input>
+  <user_input timestamp="2164.054502">i</user_input>
+  <user_input timestamp="2164.136118">
+</user_input>
+  <system_output timestamp="2164.155647">
+</system_output>
+  <system_output timestamp="2164.169378">[?1h=
+</system_output>
+  <system_output timestamp="2164.170651">
+[K[?1l&gt;</system_output>
+  <system_output timestamp="2164.173836">[?2004h]0;demo@faiserver: /home/fai/configdemo@faiserver:/home/fai/config$ </system_output>
+  <user_input timestamp="2165.400962">[A</user_input>
+  <system_output timestamp="2165.402741">sudo git diff master~15 disk_config/HWPHYS</system_output>
+  <user_input timestamp="2165.918529">[D</user_input>
+  <system_output timestamp="2165.922896"/>
+  <user_input timestamp="2166.576979">[D</user_input>
+  <system_output timestamp="2166.583334"/>
+  <user_input timestamp="2166.617501">[D</user_input>
+  <system_output timestamp="2166.624084"/>
+  <user_input timestamp="2166.657251">[D</user_input>
+  <system_output timestamp="2166.664413"/>
+  <user_input timestamp="2166.699768">[D</user_input>
+  <system_output timestamp="2166.706523"/>
+  <user_input timestamp="2166.741899">[D</user_input>
+  <system_output timestamp="2166.748181"/>
+  <user_input timestamp="2166.783676">[D</user_input>
+  <system_output timestamp="2166.789678"/>
+  <user_input timestamp="2166.803267">[D</user_input>
+  <system_output timestamp="2166.809595"/>
+  <user_input timestamp="2166.843812">[D</user_input>
+  <system_output timestamp="2166.850648"/>
+  <user_input timestamp="2166.885836">[D</user_input>
+  <system_output timestamp="2166.891994"/>
+  <user_input timestamp="2166.928974">[D</user_input>
+  <system_output timestamp="2166.934632"/>
+  <user_input timestamp="2166.970641">[D</user_input>
+  <system_output timestamp="2166.974868"/>
+  <user_input timestamp="2166.992119">[D</user_input>
+  <system_output timestamp="2166.995276"/>
+  <user_input timestamp="2167.05574">[D</user_input>
+  <system_output timestamp="2167.058041"/>
+  <user_input timestamp="2167.09721">[D</user_input>
+  <system_output timestamp="2167.10024"/>
+  <user_input timestamp="2167.138248">[D</user_input>
+  <system_output timestamp="2167.141066"/>
+  <user_input timestamp="2167.200572">[D</user_input>
+  <system_output timestamp="2167.203195"/>
+  <user_input timestamp="2167.220697">[D</user_input>
+  <system_output timestamp="2167.224507"/>
+  <user_input timestamp="2167.240726">[D</user_input>
+  <system_output timestamp="2167.245122"/>
+  <user_input timestamp="2167.79778"></user_input>
+  <system_output timestamp="2167.804931">[1P disk_config/HWPHYS</system_output>
+  <user_input timestamp="2168.046173"></user_input>
+  <system_output timestamp="2168.053833">[1P disk_config/HWPHYS</system_output>
+  <user_input timestamp="2168.417259">3</user_input>
+  <system_output timestamp="2168.428155">3 disk_config/HWPHYS</system_output>
+  <user_input timestamp="2168.728287">0</user_input>
+  <system_output timestamp="2168.739266">0 disk_config/HWPHYS</system_output>
+  <user_input timestamp="2168.934387">
+</user_input>
+  <system_output timestamp="2168.947658">
+[?2004l
+</system_output>
+  <system_output timestamp="2168.957099">sudo: unable to resolve host faiserver: Name or service not known
+</system_output>
+  <system_output timestamp="2168.973453">[?1h=
+</system_output>
+  <system_output timestamp="2168.978652">[1mdiff --git a/disk_config/HWPHYS b/disk_config/HWPHYS[m[m
+[1mindex 3847d51..8ce94ce 100644[m[m
+[1m--- a/disk_config/HWPHYS[m[m
+[1m+++ b/disk_config/HWPHYS[m[m
+[36m@@ -5,19 +5,15 @@[m[m
+ #[m[m
+ # &lt;type&gt; &lt;mountpoint&gt; &lt;size in mb&gt; [mount options]                     [;extras][m[m
+ [m[m
+[31m-disk_config disk1 bootable:1[m[m
+[31m-primary            -   64-256          -       -[m[m
+[31m-primary            -   0-              -       -[m[m
+[32m+[m[32mdisk_config disk1 disklabel:gpt fstabkey:uuid bootable:1[m[m
+[32m+[m[32mp=efi      /boot/efi   64-128          vfat    rw[m[m
+[32m+[m[32mp=boot     -           64-256          -       -[m[m
+[32m+[m[32mp=raid     -           0-              -       -[m[m
+ [m[m
+[31m-# more does not work.[m[m
+[31m-#disk_config raid[m[m
+[31m-#raid1     /boot       disk1.1,disk2,2:missing ext2    rw,errors=remount-ro[m[m
+[31m-#raid1     -           disk1.3,disk2.3:missing -       -[m[m
+[31m-[m[m
+[31m-#FIXME: works, but h</system_output>
+  <system_output timestamp="2168.980011">ard device path == BAD, asking for DISASTER.[m[m
+[31m-disk_config raid[m[m
+[31m-raid1      /boot       disk1.1,/dev/sdb1:missing       ext2    rw,errors=remount-ro[m[m
+[31m-raid1      -           disk1.2,/dev/sdb2:missing       -       -[m[m
+[32m+[m[32m#FIXME: works, but hard device path == BAD, asking for problems with systems with.. 25 disks.[m[m
+[32m+[m[32mdisk_config raid fstabkey:uuid[m[m
+[32m+[m[32mraid1      /boot       disk1.2,sdz:missing     ext2    rw,errors=remount-ro[m[m
+[32m+[m[32mraid1      -           disk1.3,sdz:missing     -       -[m[m
+ [m[m
+ disk_config lvm[m[m
+ vg faibase md1[m[m
+</system_output>
+  <system_output timestamp="2168.980789">
+[K[?1l&gt;</system_output>
+  <system_output timestamp="2168.984349">[?2004h]0;demo@faiserver: /home/fai/configdemo@faiserver:/home/fai/config$ </system_output>
+  <user_input timestamp="2192.495031">d</user_input>
+  <system_output timestamp="2192.496245">d</system_output>
+  <user_input timestamp="2192.80486">o</user_input>
+  <system_output timestamp="2192.811397">o</system_output>
+  <user_input timestamp="2192.948058">e</user_input>
+  <system_output timestamp="2192.967933">e</system_output>
+  <user_input timestamp="2193.688912"></user_input>
+  <system_output timestamp="2193.694595">[K</system_output>
+  <user_input timestamp="2193.897389"></user_input>
+  <system_output timestamp="2193.910073">[K</system_output>
+  <user_input timestamp="2194.081901"></user_input>
+  <system_output timestamp="2194.084293">[K</system_output>
+  <user_input timestamp="2194.269315"></user_input>
+  <system_output timestamp="2194.284511"/>
+  <user_input timestamp="5932.590745"/>
+  <system_output timestamp="5932.592767">[?2004l
+
+logout
+</system_output>
+  <system_output timestamp="5932.650585">Connection to 172.16.0.17 closed.
+
+</system_output>
+  <system_output timestamp="5932.65418">[?2004hdemo@stephost:~$ </system_output>
+  <user_input timestamp="5934.348747">c</user_input>
+  <system_output timestamp="5934.349252">c</system_output>
+  <user_input timestamp="5934.495294">a</user_input>
+  <system_output timestamp="5934.49569">a</system_output>
+  <user_input timestamp="5934.763498">t</user_input>
+  <system_output timestamp="5934.764107">t</system_output>
+  <user_input timestamp="5934.950581"> </user_input>
+  <system_output timestamp="5934.951136"> </system_output>
+  <user_input timestamp="5935.329037">/</user_input>
+  <system_output timestamp="5935.329549">/</system_output>
+  <user_input timestamp="5935.825843">r</user_input>
+  <system_output timestamp="5935.826267">r</system_output>
+  <user_input timestamp="5935.889947">u</user_input>
+  <system_output timestamp="5935.890403">u</system_output>
+  <user_input timestamp="5936.284748">n</user_input>
+  <system_output timestamp="5936.285335">n</system_output>
+  <user_input timestamp="5936.699174">/</user_input>
+  <system_output timestamp="5936.699657">/</system_output>
+  <user_input timestamp="5937.119188">m</user_input>
+  <system_output timestamp="5937.119575">m</system_output>
+  <user_input timestamp="5937.492896">d</user_input>
+  <system_output timestamp="5937.493374">d</system_output>
+  <user_input timestamp="5937.660167">a</user_input>
+  <system_output timestamp="5937.660615">a</system_output>
+  <user_input timestamp="5937.84749">d</user_input>
+  <system_output timestamp="5937.847944">d</system_output>
+  <user_input timestamp="5938.054597">	</user_input>
+  <system_output timestamp="5938.055352">m/</system_output>
+  <user_input timestamp="5938.553816">m</user_input>
+  <system_output timestamp="5938.554185">m</system_output>
+  <user_input timestamp="5938.699901">a</user_input>
+  <system_output timestamp="5938.700538">a</system_output>
+  <user_input timestamp="5938.949832">p</user_input>
+  <system_output timestamp="5938.950097">p</system_output>
+  <user_input timestamp="5939.279591">	</user_input>
+  <system_output timestamp="5939.280195"> </system_output>
+  <user_input timestamp="5939.821895">
+</user_input>
+  <system_output timestamp="5939.822423">
+[?2004l
+</system_output>
+  <system_output timestamp="5939.825366">cat: /run/mdadm/map</system_output>
+  <system_output timestamp="5939.825542">: Permission denied
+</system_output>
+  <system_output timestamp="5939.82634">[?2004hdemo@stephost:~$ </system_output>
+  <user_input timestamp="5940.88235">[A</user_input>
+  <system_output timestamp="5940.882703">cat /run/mdadm/map </system_output>
+  <user_input timestamp="5942.529059"/>
+  <system_output timestamp="5942.529462">
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C</system_output>
+  <user_input timestamp="5943.295383"/>
+  <system_output timestamp="5943.29576">[K</system_output>
+  <user_input timestamp="5944.453149"/>
+  <system_output timestamp="5944.453639">[?2004l
+
+exit
+</system_output>
+</recording>
