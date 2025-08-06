@@ -11,6 +11,7 @@ RULES:
 1. Complete communications end when the concept is finished
 2. Examples: typing a command + enter, system showing a prompt, error message
 3. Look at the final elements to see if they form a complete thought
+4. Make sure terminate events with an output: 0
 
 OUTPUT RULES:
 - Output ONLY numbers, one per line
