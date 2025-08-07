@@ -5,7 +5,7 @@ import runpod
 
 os.system("df -h")  # Display disk space information
 
-MODEL_ID = "cmdkp/autodocs_model_0"
+MODEL_ID = "cmdkp/autodocs_model_0"  # nuhgooyin/autodocs_model_0_no_gguf
 
 def load_system_prompt():
     """Load system prompt from file with fallback"""
