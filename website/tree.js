@@ -10,44 +10,59 @@ function parseModel1(raw) {
   return events;
 }
 
-/* 2. build hierarchical tree */
+/* 2. build hierarchical tree using 0/1/-1 markers */
 function buildTree(events) {
-  const root  = { children: [] };
-  const stack = [{ node: root, depth: -Infinity }];
-  for (const ev of events) {
-    while (ev.depth <= stack.at(-1).depth) stack.pop();
-    const parent = stack.at(-1).node;
-    ev.__parent = parent===root ? null : parent;
-    parent.children.push(ev);
-    stack.push({ node: ev, depth: ev.depth });
-  }
+  const root = { children: [] };
+  const stack = [root];
+
+  events.forEach(ev => {
+    const top = stack[stack.length - 1];
+    ev.__parent = top === root ? null : top;
+
+    if (ev.depth === 1) {
+      // start a new goal block
+      top.children.push(ev);
+      stack.push(ev);
+    } else if (ev.depth === -1) {
+      // end current goal block (final child)
+      top.children.push(ev);
+      stack.pop();
+    } else {
+      // regular event (0) goes under current parent
+      top.children.push(ev);
+    }
+  });
+
   return root.children;
 }
 
-/* 3. render it into the UL#eventTree */
+/* 3. render into UL#eventTree */
 function labelFor(n) {
-  const m = n.summary.match(/'([^']+)'/);
+  const m   = n.summary.match(/'([^']+)'/);
   const raw = m ? m[1] : n.summary;
-  return raw.length>25 ? raw.slice(0,22)+'…' : raw;
+  return raw.length > 25 ? raw.slice(0,22) + '…' : raw;
 }
+
 function renderTree(tree, mountEl) {
   mountEl.innerHTML = '';
 
   function walk(nodes, depth) {
     const ul = document.createElement('ul');
     ul.className = `depth-group depth-${depth}`;
-    for (const n of nodes) {
+
+    nodes.forEach(n => {
       const li = document.createElement('li');
       li.className = `depth-${depth}`;
-      li.dataset.id   = n.id;                // ← give it an ID
+      li.dataset.id = n.id;
 
-      // 1) stop clicks from bubbling past *this* node
+      // click to select only this node
       li.addEventListener('click', e => {
         e.stopPropagation();
+        window.currentSelectedNode = n;
         selectNode(n);
       });
 
-      // arrow / spacer logic stays the same
+      // arrow or spacer
       if (n.children.length) {
         const arrow = document.createElement('span');
         arrow.className = 'arrow';
@@ -55,31 +70,32 @@ function renderTree(tree, mountEl) {
         arrow.addEventListener('click', e => {
           e.stopPropagation();
           const childUl = li.querySelector('ul');
-          const isVisible = childUl.style.display !== 'none';
-          childUl.style.display   = isVisible ? 'none' : '';
-          arrow.textContent       = isVisible ? '▶' : '▼';
+          const visible = childUl.style.display !== 'none';
+          childUl.style.display = visible ? 'none' : '';
+          arrow.textContent       = visible ? '▶' : '▼';
         });
         li.appendChild(arrow);
       } else {
-        li.appendChild(document.createElement('span'))
-          .className = 'arrow-spacer';
+        const spacer = document.createElement('span');
+        spacer.className = 'arrow-spacer';
+        li.appendChild(spacer);
       }
 
-      // label
+      // label text
       const label = document.createElement('span');
-      label.className = 'label'; 
+      label.className = 'label';
       label.textContent = labelFor(n);
       li.appendChild(label);
 
-      // recurse
+      // recurse into children
       if (n.children.length) {
-        walk(n.children, depth + 1).forEach(childUl =>
-          li.appendChild(childUl)
-        );
+        const [childUl] = walk(n.children, depth + 1);
+        li.appendChild(childUl);
       }
 
       ul.appendChild(li);
-    }
+    });
+
     return [ul];
   }
 
@@ -87,22 +103,33 @@ function renderTree(tree, mountEl) {
   mountEl.appendChild(rootUl);
 }
 
-/* 4. click behavior */
+/* 4. select and highlight */
 function selectNode(node) {
+  // highlight
   document.querySelectorAll('#eventTree li')
     .forEach(li => li.classList.toggle('current', li.dataset.id == node.id));
-  document.getElementById('currentNote').textContent = node.summary;
+
+  // current annotation
+  document.getElementById('currentNote').textContent =
+    node.summary;
   document.getElementById('currentDepthLabel').textContent =
     `Annotation (D:${node.depth})`;
+
+  // parent annotation
   document.getElementById('parentAnnotation').value =
-    node.__parent?.summary||'';
-  const sib = node.__parent?.children?.find(c=>c!==node);
-  document.getElementById('siblingAnnotation').value = sib?.summary||'';
+    node.__parent?.summary || '';
+
+  // instead of sibling, show the very last (most recent) event loaded:
+  const all = window._treeEvents || [];
+  const last = all[all.length - 1];
+  document.getElementById('siblingAnnotation').value =
+    last?.summary || '';
 }
 
-/* 5. expose the loader as a global */
+/* 5. expose loader */
 window.loadTxtAndBuildTree = function(rawTxt) {
   const evs  = parseModel1(rawTxt);
+  window._treeEvents = evs;                    // ← stash full list
   const tree = buildTree(evs);
   renderTree(tree, document.getElementById('eventTree'));
   if (evs.length) selectNode(evs[0]);

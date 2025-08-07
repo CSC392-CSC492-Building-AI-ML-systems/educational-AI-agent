@@ -140,3 +140,40 @@ Usage Description:
   changes to allow for live parsing.
 - Maintained support for handling annotations (optional via strip_annotations).
 =================================================================================
+Source:  
+ChatGPT. "Implement a feedback button with logic such that users can select any
+event and enter custom feedback which is stored and can later be accessed by a
+show feedback button."  
+ChatGPT, OpenAI, 7 August 2025, https://chat.openai.com/
+
+Affected Files:  
+- frontend.js  
+- index.html  
+- style.css  
+
+Usage Description:  
+- In frontend.js:  
+  - Fixed feedback submission by referencing currentSelectedNode instead  
+    of window.currentSelectedNode, ensuring .id is valid.  
+  - Saved edited feedback into feedbackMap upon submit, making it  
+    visible later via the “Show Feedback” modal.  
+  - Hooked window.selectNode to update currentSelectedNode on click.
+
+- In index.html:  
+  - Added two feedback buttons ("Enter Feedback" and "Show Feedback")  
+    inside a .feedback-controls container within the header.  
+  - Wired buttons to open/close modal elements and edit feedback per  
+    event.
+
+- In style.css:  
+  - Reused the #uploadBtn style to match button appearance across all  
+    three UI buttons.  
+  - Applied consistent white background, padding, and hover behavior  
+    for feedback buttons.  
+  - Positioned .feedback-controls in the top-right corner using  
+    position: absolute inside a relative header.
+
+- Final result enables per-event feedback input and review, styled  
+  consistently with the upload button, and integrated directly into the  
+  interactive event viewer.
+  =================================================================================
