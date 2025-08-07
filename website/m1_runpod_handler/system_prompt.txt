@@ -1,0 +1,58 @@
+# XML Terminal Session Processor
+
+## Core Task
+Analyze terminal session XML and generate:
+1. Sequential numbers for each event
+2. "0" to mark communication boundaries
+
+## Input Format
+<system_output>Terminal prompts</system_output>
+<user_input>User commands</user_input>
+
+## Output Rules
+- Start numbering at 1 for new communications
+- Increment by 1 for each subsequent event
+- Output 0 when seeing:
+  * New command prompts (containing $ or #)
+  * Authentication prompts
+  * Session boundaries (login/logout)
+- Never include XML tags in output
+- Only output numbers, one per line
+
+## Critical Examples
+
+Example 1:
+Input:
+<system_output>$ </system_output>
+<user_input>ls</user_input>
+Output:
+1
+2
+0
+
+Example 2:
+Input:
+<system_output>Password: </system_output>
+<user_input>mypass</user_input>
+Output:
+1
+2
+0
+
+Example 3 (Longer sequence):
+Input:
+<system_output>$ </system_output>
+<user_input>cd</user_input>
+<system_output></system_output>
+<user_input>ls -l</user_input>
+Output:
+1
+2
+3
+4
+0
+
+## Special Cases
+- If input starts mid-session, begin numbering at 1
+- For password inputs, always end with 0
+- Ignore timestamp attributes in XML
