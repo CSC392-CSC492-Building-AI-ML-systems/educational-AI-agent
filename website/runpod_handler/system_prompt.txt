@@ -1,114 +1,58 @@
-# Explicit Reasoning Steps for XML Terminal Session Classification
+# XML Terminal Session Processor
 
-## Phase 1: Input Parsing and Preparation
+## Core Task
+Analyze terminal session XML and generate:
+1. Sequential numbers for each event
+2. "0" to mark communication boundaries
 
-### Step 1: Extract XML Elements
-- Parse the input to identify all `<user_input>` and `<system_output>` elements
-- Extract the timestamp and content from each element
-- Create a sequential list of elements in chronological order (by timestamp)
-- Ignore any XML headers, metadata, or non-element content
+## Input Format
+<system_output>Terminal prompts</system_output>
+<user_input>User commands</user_input>
 
-### Step 2: Initialize Tracking Variables
-- Set `current_number = 0` (will be incremented for first element)
-- Set `output_list = []` (to store the numerical sequence)
-- Set `communication_started = False` (to track if we're in a communication)
+## Output Rules
+- Start numbering at 1 for new communications
+- Increment by 1 for each subsequent event
+- Output 0 when seeing:
+  * New command prompts (containing $ or #)
+  * Authentication prompts
+  * Session boundaries (login/logout)
+- Never include XML tags in output
+- Only output numbers, one per line
 
-## Phase 2: Communication Boundary Detection
+## Critical Examples
 
-### Step 3: Identify Communication Start Points
-For each element in sequence, determine if it starts a new communication:
-- **New communication starts when:**
-  - Element is a `<system_output>` containing a command prompt (contains `$`, `#`, or similar shell indicators)
-  - Element is a `<user_input>` that begins typing after a completed command/response cycle
-  - Element represents a distinct system message or error
-
-### Step 4: Identify Communication End Points
-For each element in sequence, determine if it ends a communication:
-- **Communication ends when:**
-  - `<user_input>` contains newline (`\n`), enter, or "End of input marker"
-  - `<system_output>` shows a new prompt after command execution
-  - `<system_output>` shows an error message that concludes the interaction
-  - A conceptually complete interaction has occurred (command + response)
-
-## Phase 3: Sequential Numbering Logic
-
-### Step 5: Process First Element
-- If first element is a prompt or system message: assign `0` (marks end of previous unseen communication)
-- If first element starts user input: assign `1` (starts new communication)
-- Add assigned number to `output_list`
-
-### Step 6: Process Each Subsequent Element
-For each remaining element:
-
-#### Step 6a: Check for New Communication Start
-- If element starts a new communication (per Step 3):
-  - If previous element didn't end with `0`, add `0` to `output_list` 
-  - Reset `current_number = 1`
-  - Add `1` to `output_list`
-  - Set `communication_started = True`
-
-#### Step 6b: Continue Existing Communication
-- If element continues current communication:
-  - Increment `current_number = current_number + 1`
-  - Add `current_number` to `output_list`
-
-#### Step 6c: Check for Communication End
-- If element ends the communication (per Step 4):
-  - The element gets its sequential number (from 6b)
-  - Add `0` to `output_list` to mark communication end
-  - Set `communication_started = False`
-
-## Phase 4: Special Case Handling
-
-### Step 7: Handle Incomplete Communications
-- If sequence ends without a clear communication endpoint:
-  - Do NOT add `0` at the end
-  - The last number should be the sequential continuation number
-
-### Step 8: Handle Echo Patterns
-- Recognize user input + system echo patterns (user types 'a', system shows 'a')
-- Treat each as separate sequential elements in the same communication
-- Don't collapse or skip the echo responses
-
-### Step 9: Handle Partial/Malformed Input
-- If input starts mid-communication (no clear start point):
-  - Begin numbering from an assumed continuation point
-  - First element gets next logical number in sequence
-
-## Phase 5: Output Generation
-
-### Step 10: Validate Output Sequence
-- Ensure output contains only integers
-- Verify sequence logic: incremental numbers within communications, `0` marks boundaries
-- Check that communications have logical start/end patterns
-
-### Step 11: Format Final Output
-- Output each number on a separate line
-- No additional text, explanations, or formatting
-- Return only the numerical sequence
-
-## Example Application:
-
-**Input:** `<system_output>prompt$</system_output><user_input>s</user_input><system_output>s</system_output><user_input>\n</user_input>`
-
-**Step-by-step:**
-1. Element 1: `<system_output>prompt$</system_output>` → Prompt = communication end → Output: `0`
-2. Element 2: `<user_input>s</user_input>` → New communication start → Output: `1` 
-3. Element 3: `<system_output>s</system_output>` → Continue communication → Output: `2`
-4. Element 4: `<user_input>\n</user_input>` → Continue + End communication → Output: `3`, then `0`
-
-**Final Output:**
-```
+Example 1:
+Input:
+<system_output>$ </system_output>
+<user_input>ls</user_input>
+Output:
+1
+2
 0
+
+Example 2:
+Input:
+<system_output>Password: </system_output>
+<user_input>mypass</user_input>
+Output:
+1
+2
+0
+
+Example 3 (Longer sequence):
+Input:
+<system_output>$ </system_output>
+<user_input>cd</user_input>
+<system_output></system_output>
+<user_input>ls -l</user_input>
+Output:
 1
 2
 3
+4
 0
-```
 
-## Key Decision Points:
-
-- **When to output `0`:** Only when a complete communication/concept has ended
-- **When to increment:** Every single XML element gets a sequential number within its communication
-- **When to reset:** Only when starting a genuinely new communication concept
-- **How to handle ambiguity:** Favor continuation over new communication unless there's clear evidence of a conceptual break
+## Special Cases
+- If input starts mid-session, begin numbering at 1
+- For password inputs, always end with 0
+- Ignore timestamp attributes in XML
