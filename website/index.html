@@ -8,15 +8,42 @@
     <link rel="stylesheet" href="node_modules/@xterm/xterm/css/xterm.css" />
     <link rel="stylesheet" href="style.css" />
     <script defer src="node_modules/@xterm/xterm/lib/xterm.js"></script>
-    <script defer src="frontend.js"></script>
     <script defer src="tree.js"></script>
+    <script defer src="frontend.js"></script>
   </head>
 
   <body>
     <header class="site-header">
       <h1>AutoDocs AI Terminal</h1>
       <p>A browser-based terminal for testing and interaction.</p>
+
+      <!-- feedback controls -->
+      <div class="feedback-controls">
+        <button id="feedbackBtn">Enter Feedback</button>
+        <button id="showFeedbackBtn">Show Feedback</button>
+      </div>
     </header>
+
+    <!-- ENTER FEEDBACK MODAL -->
+    <div id="feedbackModal" class="modal">
+      <div class="modal-content">
+        <h3>Feedback for Selected Event</h3>
+        <textarea id="feedbackInput" rows="6"></textarea>
+        <div class="modal-buttons">
+          <button id="submitFeedback">Submit</button>
+          <button id="cancelFeedback">Cancel</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- SHOW FEEDBACK LIST MODAL -->
+    <div id="feedbackListModal" class="modal">
+      <div class="modal-content">
+        <h3>All Feedback</h3>
+        <ul id="feedbackList"></ul>
+        <button id="closeFeedbackList">Close</button>
+      </div>
+    </div>
 
     <!-- ─────────────── 3-column dashboard ─────────────── -->
     <main class="dashboard">
@@ -43,10 +70,11 @@
       <!-- COLUMN 2 ––––––––––––––––––––––––––––––––––––––– -->
       <section class="middle-rail">
         <!-- parent-annotation sits above the terminal -->
+        <h4 class="note-title">Parent Annotation</h4>
         <textarea
           id="parentAnnotation"
           class="noteBox"
-          placeholder="⟨annotation of the parent of the current event⟩"
+          placeholder=""
           readonly
         ></textarea>
 
@@ -55,26 +83,14 @@
 
       <!-- COLUMN 3 ––––––––––––––––––––––––––––––––––––––– -->
       <section class="right-rail">
+        <h4 class="note-title">Most Recent Event</h4>
         <textarea
           id="siblingAnnotation"
           class="noteBox"
-          placeholder="⟨annotation of the parent's sibling⟩"
+          placeholder=""
           readonly
         ></textarea>
       </section>
     </main>
   </body>
 </html>
-
-
-<!-- 
-NOTE: will need to install:
-
-npm install @xterm/xterm  // for terminal UI
-npm install node-pty@latest  // for terminal emulation
-npm install ws  // for WebSocket support
-npm install concurrently  // for running both server and client in development
-npm install live-server // for serving static files in development
-
-and will be able to run everything with: npm start
- -->

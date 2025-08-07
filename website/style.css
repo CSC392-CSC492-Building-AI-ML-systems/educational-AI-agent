@@ -77,8 +77,17 @@ body {
   transition: background-color 0.1s ease;
 }
 
-#eventTree li:hover {
+/* Make each label an inline-block so padding + bg works */
+#eventTree li span.label {
+  display: inline-block;
+  transition: background-color 0.1s ease;
+}
+
+/* On li hover, only shade the label */
+#eventTree li:hover > span.label {
   background-color: rgba(67, 66, 66, 0.726);
+  padding: 2px 6px;
+  border-radius: 4px;
   cursor: pointer;
 }
 .depth-1 { margin-left: 12px; }
@@ -173,6 +182,14 @@ body {
   line-height: 1.4;
 }
 
+#uploadBtn {
+  position: fixed;
+  top: 16px;
+  left: 16px;
+  z-index: 100;
+  width: 200px;
+}
+
 /* tighter indentation so depth0/1 get more space */
 .depth-1 { margin-left: 8px; }
 .depth-2 { margin-left: 16px; }
@@ -186,4 +203,66 @@ body {
   display: inline-block;
   /* reserve room for the arrow + indent, adjust as needed */
   max-width: calc(100% - 1.2em);
+}
+
+.note-title {
+  margin: 0 0 6px;
+  font-size: 20px;
+  color: #ccc;
+  font-weight: 500;
+  text-align: center;
+}
+
+.modal {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.6);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+.modal-content {
+  background: #222;
+  padding: 16px;
+  border-radius: 6px;
+  width: 400px;
+  max-width: 90%;
+  color: #eee;
+}
+.modal textarea {
+  width: 100%;
+  margin: 8px 0;
+  resize: vertical;
+}
+.modal-buttons {
+  text-align: right;
+}
+.modal button {
+  margin-left: 8px;
+}
+
+/* header feedback controls, top-right */
+/* reuse upload‐button styles for feedback controls */
+.feedback-controls {
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  z-index: 1000;
+  display: flex;
+  gap: 8px;
+}
+.feedback-controls button {
+  padding: 12px 0;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  background: #ffffff;
+  color: #000;
+  cursor: pointer;
+  width: 200px;
+}
+.feedback-controls button:hover {
+  background: #e6e6e6;
 }
