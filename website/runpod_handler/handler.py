@@ -5,7 +5,8 @@ import runpod
 
 os.system("df -h")  # Display disk space information
 
-MODEL_ID = "cmdkp/autodocs_model_0"  # nuhgooyin/autodocs_model_0_no_gguf
+# NOTE: THE HUGGINGFACE REPO CAN'T CONTAIN THE GGUF FILE, SO WE USE THE NO_GGUF VERSION!!!
+MODEL_ID = "nuhgooyin/autodocs_model_0_no_gguf"  # cmdkp/autodocs_model_0
 
 def load_system_prompt():
     """Load system prompt from file with fallback"""
