@@ -1,7 +1,7 @@
 import os
 import shutil
 import re  # NEW: Added for better output processing
-from transformers import AutoModelForCausalLM, AutoTokenizer, TextGenerationPipeline, TextStreamer
+from transformers import AutoModelForCausalLM, AutoTokenizer, TextGenerationPipeline, TextStreamer, torch
 import runpod
 
 # NEW: Better disk space monitoring
@@ -101,6 +101,19 @@ def process_output(raw_text):
     return '\n'.join(valid_sequence) if valid_sequence else "1"
 
 
+def check_disk_space():
+    """Check available disk space in key locations"""
+    locations = ["/", "/runpod-volume", "/tmp"]
+    
+    print("=== Disk Space Check ===")
+    for location in locations:
+        if os.path.exists(location):
+            total, used, free = shutil.disk_usage(location)
+            print(f"{location:15} - Total: {total//1024**3:3d}GB, Used: {used//1024**3:3d}GB, Free: {free//1024**3:3d}GB")
+        else:
+            print(f"{location:15} - Does not exist")
+    print("========================")
+
 def load_model():
     """Load model with better error handling"""
     try:
@@ -142,19 +155,6 @@ except Exception as e:
     print("Final disk space check:")
     check_disk_space()
     raise
-
-def check_disk_space():
-    """Check available disk space in key locations"""
-    locations = ["/", "/runpod-volume", "/tmp"]
-    
-    print("=== Disk Space Check ===")
-    for location in locations:
-        if os.path.exists(location):
-            total, used, free = shutil.disk_usage(location)
-            print(f"{location:15} - Total: {total//1024**3:3d}GB, Used: {used//1024**3:3d}GB, Free: {free//1024**3:3d}GB")
-        else:
-            print(f"{location:15} - Does not exist")
-    print("========================")
 
 def handler(job):
     """Handle inference requests with system prompt support"""
