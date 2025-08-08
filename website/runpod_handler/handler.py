@@ -143,6 +143,19 @@ except Exception as e:
     check_disk_space()
     raise
 
+def check_disk_space():
+    """Check available disk space in key locations"""
+    locations = ["/", "/runpod-volume", "/tmp"]
+    
+    print("=== Disk Space Check ===")
+    for location in locations:
+        if os.path.exists(location):
+            total, used, free = shutil.disk_usage(location)
+            print(f"{location:15} - Total: {total//1024**3:3d}GB, Used: {used//1024**3:3d}GB, Free: {free//1024**3:3d}GB")
+        else:
+            print(f"{location:15} - Does not exist")
+    print("========================")
+
 def handler(job):
     """Handle inference requests with system prompt support"""
     job_input = job.get("input", {})
