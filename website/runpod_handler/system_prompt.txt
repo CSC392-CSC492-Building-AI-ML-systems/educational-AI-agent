@@ -18,39 +18,31 @@ Analyze terminal session XML and generate:
   * Session boundaries (login/logout)
 - Never include XML tags in output
 - Only output numbers, one per line
+## Example Application:
 
-## Critical Examples
+**Input:** `<system_output>prompt$</system_output><user_input>s</user_input><system_output>s</system_output><user_input>\n</user_input>`
 
-Example 1:
-Input:
-<system_output>$ </system_output>
-<user_input>ls</user_input>
-Output:
-1
-2
+**Step-by-step:**
+1. Element 1: `<system_output>prompt$</system_output>` → Prompt = communication end → Output: `0`
+2. Element 2: `<user_input>s</user_input>` → New communication start → Output: `1` 
+3. Element 3: `<system_output>s</system_output>` → Continue communication → Output: `2`
+4. Element 4: `<user_input>\n</user_input>` → Continue + End communication → Output: `3`, then `0`
+
+**Final Output:**
+```
 0
-
-Example 2:
-Input:
-<system_output>Password: </system_output>
-<user_input>mypass</user_input>
-Output:
-1
-2
-0
-
-Example 3 (Longer sequence):
-Input:
-<system_output>$ </system_output>
-<user_input>cd</user_input>
-<system_output></system_output>
-<user_input>ls -l</user_input>
-Output:
 1
 2
 3
-4
 0
+```
+
+## Key Decision Points:
+
+- **When to output `0`:** Only when a complete communication/concept has ended
+- **When to increment:** Every single XML element gets a sequential number within its communication
+- **When to reset:** Only when starting a genuinely new communication concept
+- **How to handle ambiguity:** Favor continuation over new communication unless there's clear evidence of a conceptual break
 
 ## Special Cases
 - If input starts mid-session, begin numbering at 1
