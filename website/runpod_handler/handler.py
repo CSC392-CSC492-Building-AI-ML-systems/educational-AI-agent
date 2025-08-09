@@ -1,7 +1,7 @@
 import os
 import shutil
 import re  # NEW: Added for better output processing
-from transformers import AutoModelForCausalLM, AutoTokenizer, TextGenerationPipeline, TextStreamer, torch
+from transformers import AutoModelForCausalLM, AutoTokenizer, TextGenerationPipeline, TextStreamer
 import runpod
 
 # NEW: Better disk space monitoring
