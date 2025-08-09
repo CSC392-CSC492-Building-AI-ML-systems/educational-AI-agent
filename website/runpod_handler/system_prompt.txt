@@ -95,11 +95,11 @@ The user typed "ssh 10.0.7.138" and then pressed Enter. This completes the SSH c
 ```
 
 ## Key Decision Points:
-
 - **When to output `0`:** Only when a complete communication/concept has ended
 - **When to increment:** Every single XML element gets a sequential number within its communication
 - **When to reset:** Only when starting a genuinely new communication concept
 - **How to handle ambiguity:** Favor continuation over new communication unless there's clear evidence of a conceptual break
+- **Finish analyzing input:** After one complete iteration of classifying do not repeat cycle again
 
 ## Special Cases
 - If input starts mid-session, begin numbering at 1
