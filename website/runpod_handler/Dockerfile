@@ -30,6 +30,11 @@ ENV TRANSFORMERS_CACHE=/runpod-volume/transformers
 ENV HF_HUB_CACHE=/runpod-volume/hub
 ENV HF_DATASETS_CACHE=/runpod-volume/datasets
 
+# Critical: Force temporary files to network storage too
+ENV TMPDIR=/runpod-volume/tmp
+ENV TEMP=/runpod-volume/tmp
+ENV TMP=/runpod-volume/tmp
+
 # Additional environment variables for optimization
 ENV PYTORCH_CUDA_ALLOC_CONF=max_split_size_mb:128
 ENV HF_HUB_DISABLE_SYMLINKS_WARNING=1
@@ -39,7 +44,7 @@ RUN df -h
 
 # Create cache directories (these will be created in the image layer, 
 # but the actual /runpod-volume will be mounted at runtime)
-RUN mkdir -p /runpod-volume/transformers /runpod-volume/hub /runpod-volume/datasets
+RUN mkdir -p /runpod-volume/transformers /runpod-volume/hub /runpod-volume/datasets /runpod-volume/tmp
 
 # Run the handler
 CMD ["python", "handler.py"]

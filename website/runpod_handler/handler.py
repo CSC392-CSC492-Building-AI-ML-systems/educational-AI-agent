@@ -1,11 +1,13 @@
 import os
 import shutil
+import gc
+import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer, TextGenerationPipeline, TextStreamer
 import runpod
 
 os.system("df -h")  # Display disk space information
 
-MODEL_ID = "deepseek-ai/DeepSeek-R1-Distill-Llama-8B"
+MODEL_ID = "deepseek-ai/DeepSeek-R1-Distill-Llama-8B"  # nuhgooyin/autodocs_model_0_no_gguf
 
 def load_system_prompt():
     """Load system prompt from file with fallback"""
@@ -99,6 +101,37 @@ def extract_final_answer(text):
     
     return text.strip()
 
+# def aggressive_cleanup():
+#     """Aggressive cleanup to free disk space"""
+#     print("=== Performing Aggressive Cleanup ===")
+    
+#     # Clear Python cache
+#     os.system("find / -name '*.pyc' -delete 2>/dev/null")
+#     os.system("find / -name '__pycache__' -type d -exec rm -rf {} + 2>/dev/null")
+    
+#     # Clear pip cache
+#     os.system("pip cache purge")
+    
+#     # Clear apt cache (if available)
+#     os.system("apt-get clean 2>/dev/null")
+    
+#     # Clear tmp directories
+#     for tmp_dir in ["/tmp", "/var/tmp"]:
+#         if os.path.exists(tmp_dir):
+#             try:
+#                 shutil.rmtree(tmp_dir)
+#                 os.makedirs(tmp_dir, exist_ok=True)
+#                 print(f"Cleared {tmp_dir}")
+#             except:
+#                 pass
+    
+#     # Force garbage collection
+#     gc.collect()
+#     if torch.cuda.is_available():
+#         torch.cuda.empty_cache()
+#         torch.cuda.synchronize()
+    
+#     print("=== Cleanup Complete ===")
 def verify_cache_setup():
     """Verify that cache directories are properly set up"""
     print("=== Cache Setup Verification ===")
@@ -127,7 +160,7 @@ def check_disk_space():
     print("========================")
 
 def load_model():
-    """Load model and tokenizer"""
+    """Load model and tokenizer with 40GB network storage"""
     check_disk_space()
     verify_cache_setup()
     
@@ -138,17 +171,19 @@ def load_model():
     tokenizer = AutoTokenizer.from_pretrained(
         MODEL_ID,
         trust_remote_code=True,
-        use_fast=True
+        use_fast=True,
+        cache_dir="/runpod-volume"
     )
     
-    # Load model
+    # Load model - should fit easily in 40GB network storage
     print("Loading model...")
     model = AutoModelForCausalLM.from_pretrained(
         MODEL_ID,
         trust_remote_code=True,
         low_cpu_mem_usage=True,
         device_map="auto",
-        torch_dtype="auto"
+        torch_dtype="auto",
+        cache_dir="/runpod-volume"
     )
     
     print("Model loaded successfully!")
@@ -174,7 +209,7 @@ try:
     pipe = TextGenerationPipeline(
         model=model, 
         tokenizer=tokenizer,
-        return_full_text=False,  # Only return generated text, not the prompt
+        return_full_text=False,
         clean_up_tokenization_spaces=True
     )
     print("Pipeline ready!")
@@ -189,14 +224,14 @@ def handler(job):
     """Handle inference requests with system prompt support"""
     job_input = job.get("input", {})
     prompt = job_input.get("prompt", "")
-    max_new_tokens = job_input.get("max_new_tokens", 2048)  # Reduced default
+    max_new_tokens = job_input.get("max_new_tokens", 2048)  # Restored to original
     temperature = job_input.get("temperature", 0.1)  # Lower temperature for more focused output
     do_sample = job_input.get("do_sample", True)
     
     # Optional: Allow custom system prompt per request
     custom_system_prompt = job_input.get("system_prompt", None)
     use_system_prompt = job_input.get("use_system_prompt", True)
-    use_simple_format = job_input.get("use_simple_format", False)  # New option
+    use_simple_format = job_input.get("use_simple_format", False)
 
     if not prompt:
         return {"error": "No prompt provided."}
@@ -212,17 +247,16 @@ def handler(job):
         else:
             formatted_prompt = prompt
 
-        # Add generation parameters to encourage concise output
+        # Generation parameters 
         generation_params = {
             "formatted_prompt": formatted_prompt,
             "max_new_tokens": max_new_tokens,
             "temperature": temperature,
             "do_sample": do_sample,
             "pad_token_id": tokenizer.eos_token_id,
-            # new params
-            "repetition_penalty": 1.1,  # Reduce repetition
-            "top_p": 0.9,  # Nucleus sampling
-            "top_k": 50,   # Top-k sampling
+            "repetition_penalty": 1.1,
+            "top_p": 0.9,
+            "top_k": 50,
         }
 
         streamer = TextStreamer(tokenizer, skip_prompt=False, skip_special_tokens=True)
@@ -230,7 +264,7 @@ def handler(job):
         output = pipe(
             formatted_prompt,
             streamer=streamer,
-            **{k: v for k, v in generation_params.items() if k != "formatted_prompt"}
+            **generation_params
         )
         
         raw_output = output[0]["generated_text"]
