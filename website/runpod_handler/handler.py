@@ -223,7 +223,6 @@ def handler(job):
             "repetition_penalty": 1.1,  # Reduce repetition
             "top_p": 0.9,  # Nucleus sampling
             "top_k": 40,   # Top-k sampling
-            "num_beams": 2,        # Added beam search
             "early_stopping": True  # Stop when logical 
         }
 
