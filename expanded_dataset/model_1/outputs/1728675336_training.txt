@@ -1,42 +1,46 @@
 0
 [GOAL_1] User modifies disk configuration for HWPHYS and commits changes
-0
+-1
 User logs into 172.16.0.17 via SSH
--1
-User navigates to /home/fai/config/disk_config and lists directory contents
 0
-User edits HWPHYS in Emacs
+User navigates to /home/fai/config/disk_config and lists directory contents
 -1
+User edits HWPHYS in Emacs
+0
 User checks the git diff for HWPHYS
 0
 User opens HWPHYS in Emacs again to make further changes
 0
 User checks the git diff again
-0
+1
 User commits changes with message "remove single dash, was being interpreted as a filesystem option."
 0
 [GOAL_END_1] User completes configuration and commit of HWPHYS
+1
+[SUCCESS_RESULT] Disk configuration for HWPHYS updated and committed successfully
 0
 [GOAL_2] User builds FAI CD and updates disk configuration with new options
-1
+-1
 User moves up two levels in the directory structure
 -1
 User executes the FAI CD build script
 0
 User edits config/disk_config/HWPHYS in Emacs
-1
+0
 User navigates to config/
--1
-User commits changes with message "an option is required. used rw."
 1
+User commits changes with message "an option is required. used rw."
+0
 User moves up one level in the directory structure
--1
+0
 User runs make-fai-cd.sh script to build a FAI CD
 0
 [GOAL_END_2] User completes FAI CD rebuild using updated disk configuration
+1
+[SUCCESS_RESULT] FAI CD rebuilt successfully with updated disk configuration options
 0
 [GOAL_3] User updates automated installation settings and boot configuration for the FAI CD image
-1
+-1
 User navigates to config/package_config/ and lists directory contents
 0
 User displays contents in DEMO
@@ -90,21 +94,25 @@ User edits 10-setup in Emacs
 User checks git diff
 0
 User stages and commits disk_config/HWPHYS with message "make the fstab entry for raid arrays use UUIDs."
-0
+1
 User stages and commits 10-setup with message "attempt to configure EFI booting. not yet perfect."
 0
 [GOAL_END_3] User finalizes and commits EFI boot configuration and related disk setup
+1
+[SUCCESS_RESULT] Automated installation settings and EFI boot configuration updated and committed successfully, but further changes needs to be made
 0
 [GOAL_4] User builds FAI CD and verifies installation image
-1
+-1
 User moves up three levels in the directory structure
-0
+-1
 User executes make-fai-cd.sh to build the FAI CD
-1
-User logs out from 172.16.0.17
 0
+User logs out from 172.16.0.17
+1
 User copies fai_cd.iso from 172.16.0.17 to /disk1/isos/fai_dvd-YYYYMMDD.iso
 0
 User exits local session
 0
 [GOAL_END_4] User completes deployment process by building and copying FAI ISO
+1
+[SUCCESS_RESULT] FAI CD built and installation ISO copied successfully

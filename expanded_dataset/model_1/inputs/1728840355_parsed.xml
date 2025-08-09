@@ -199,6 +199,10 @@ Last login: Sun Oct 13 17:09:03 2024 from 172.16.0.1
   <system_output timestamp="896.755184">FAIBASE
 </system_output>
   <system_output timestamp="896.7565">[?2004h]0;demo@faiserver: /home/fai/config/files/etc/ssh/ssh_configdemo@faiserver:/home/fai/config/files/etc/ssh/ssh_config$ </system_output>
+<annotation>
+</annotation>
+</event>
+<event depth="-2">
   <user_input timestamp="900.179463">r</user_input>
   <system_output timestamp="900.181711">r</system_output>
   <user_input timestamp="900.434962">m</user_input>
@@ -977,6 +981,10 @@ fcopy /etc/ssh/ssh_config[K
 -r-xr-xr-x 1 root root   69 Sep 13  2010 [01;32mFAIBASE/50-use_tmpfs_on_tmp[0m
 </system_output>
   <system_output timestamp="1592.435137">[?2004h]0;demo@faiserver: /home/fai/config/scriptsdemo@faiserver:/home/fai/config/scripts$ </system_output>
+<annotation>
+</annotation>
+</event>
+<event depth="-2">
   <user_input timestamp="1773.747613">s</user_input>
   <system_output timestamp="1773.749533">s</system_output>
   <user_input timestamp="1773.889311">u</user_input>
@@ -1026,6 +1034,10 @@ Changes not staged for commit:
 
 </system_output>
   <system_output timestamp="1776.496027">[?2004h]0;demo@faiserver: /home/fai/config/scriptsdemo@faiserver:/home/fai/config/scripts$ </system_output>
+<annotation>
+</annotation>
+</event>
+<event depth="-2">
   <user_input timestamp="1777.148784">s</user_input>
   <system_output timestamp="1777.16434">s</system_output>
   <user_input timestamp="1777.250394">u</user_input>
@@ -2330,6 +2342,10 @@ EADMIN   GRUBEFI   HOSTSTEP          ISCSICLIENT  LAPTOP     SELINUX      SERVER
 FAIBASE  [00;90mGRUBEFI~[0m  HOSTXFCE          JADMIN       LATEXDEV   SERVERCACHE  SERVERFAI       SERVERISCSI     SERVERNTOP          SERVERREPRAP   SERVERWIFIDOG     SERVERWWW                SERVERWWWOEMR      XORG
 </system_output>
   <system_output timestamp="6648.980374">[?2004h]0;demo@faiserver: /home/fai/config/package_configdemo@faiserver:/home/fai/config/package_config$ </system_output>
+<annotation>
+</annotation>
+</event>
+<event depth="-2">
   <user_input timestamp="6679.14247">e</user_input>
   <system_output timestamp="6679.144537">e</system_output>
   <user_input timestamp="6679.323621">m</user_input>

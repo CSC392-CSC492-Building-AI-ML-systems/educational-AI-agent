@@ -1,26 +1,28 @@
 0
 [GOAL_1] User removes mirror-copying logic from FAI installation scripts
-0
-User logs into 172.16.0.17 via SSH
 -1
+User logs into 172.16.0.17 via SSH
+0
 User navigates to /home/fai/config/scripts/FAIBASE and lists directory contents
 0
 User displays contents in 20-copy-mirror
--1
+0
 User removes 20-copy-mirror
 0
 User commits changes with message "stop copying the mirror to the target; we have good internet, and local mirrors."
-1
+0
 [GOAL_END_1] User completes script cleanup and mirror logic removal
+1
+[SUCCESS_RESULT] Mirror-copying logic removed from FAI installation scripts and changes committed successfully
 0
 [GOAL_2] User updates apt sources to use internet and mirror URLs for installation
-0
-User navigates to /home/fai/config/files/etc/apt/sources.list and lists directory contents
 -1
+User navigates to /home/fai/config/files/etc/apt/sources.list and lists directory contents
+0
 User displays contents in DEFAULT
 0
 User removes DEFAULT
-1
+0
 User displays contents in QEMUCLIENT
 -1
 User moves QEMUCLIENT to DEFAULT
@@ -42,11 +44,13 @@ User checks git diff
 User stages and commits changes with message "update the security URLs for debian, and use a debian mirror in germany by default."
 0
 [GOAL_END_2] User finalizes apt sources updates and completes version control tracking
+1
+[SUCCESS_RESULT] Apt sources updated to use internet and mirror URLs, changes committed successfully
 0
 [GOAL_3] User builds and deploys updated FAI CD and removes outdated images
-0
+-1
 User navigates to /home/fai and runs make-fai-cd.shto build FAI CD
-1
+0
 User logs out from 172.16.0.17
 0
 User copies fai_cd.iso from the FAI server to local /disk1/isos/
@@ -56,7 +60,9 @@ User lists all contents under /disk1/isos/ that starts with fai_dvd
 User removes old FAI ISO images
 0
 User re-copies the latest FAI ISO from the server
+1
+User exits local session
 0
 [GOAL_END_3] User completes ISO refresh by cleaning and redeploying new build
 1
-User exits local session
+[SUCCESS_RESULT] Updated FAI CD built, old images removed, and latest ISO deployed successfully

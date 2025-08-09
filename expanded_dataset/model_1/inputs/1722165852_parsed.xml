@@ -2404,6 +2404,10 @@ demo@faiserver:/home/fai/config$ sudo git add package_config/SERVER</system_outp
   <system_output timestamp="153.522626">fatal: pathspec 'package_config/SERVERLINUXPMIDEV' did not match any files
 </system_output>
   <system_output timestamp="153.524152">[?2004hdemo@faiserver:/home/fai/config$ </system_output>
+<annotation>
+</annotation>
+</event>
+<event depth="-2">
   <user_input timestamp="154.161427">s</user_input>
   <system_output timestamp="154.165903">s</system_output>
   <user_input timestamp="154.287431">u</user_input>

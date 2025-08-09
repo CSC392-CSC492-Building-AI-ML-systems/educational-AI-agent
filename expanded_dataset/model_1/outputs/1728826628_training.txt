@@ -1,8 +1,8 @@
 0
 [GOAL_1] User modifies GRUB-related installation configuration files for FAI system
-0
-User logs into 172.16.0.17 via SSH
 -1
+User logs into 172.16.0.17 via SSH
+0
 User navigates to /home/fai/config/ and lists directory contents
 0
 User navigates to package_config/ and searches for the keyword grub in all files in this folder
@@ -10,23 +10,27 @@ User navigates to package_config/ and searches for the keyword grub in all files
 User opens and edits DEFAULT, GRUB, and ../class/50-host-classes in Emacs
 0
 User checks git diff
-0
+-1
 User stages and commits changes DEFAULT, GRUB, and ../class/50-host-classes with message "move installing grub-pc into the GRUB package class, and comment out the ia32 grub package."
 0
 User checks the git status
-0
+1
 User stages and commits changes in GRUBEFI/10-setup with message "specify to use the X86_64 EFI grub image."
 0
 [GOAL_END_1] User finishes editing and committing GRUB configuration
+1
+[SUCCESS_RESULT] GRUB installation configuration files updated and committed successfully
 0
 [GOAL_2] User builds and transfers updated FAI CD image based on new configuration
-0
+-1
 User moves two levels up from the current directory and runs make-fai-cd.sh to build the FAI CD
-1
+0
 User logs out 172.16.0.17
 0
 User copies fai_cd.iso from 172.16.0.17 to local /disk1/isos/fai_dvd-$(date).iso
 0
-[GOAL_END_2] User completes building and deploying FAI CD
-0
 User exits local session
+0
+[GOAL_END_2] User completes building and deploying FAI CD
+1
+[SUCCESS_RESULT] Updated FAI CD image built and transferred successfully

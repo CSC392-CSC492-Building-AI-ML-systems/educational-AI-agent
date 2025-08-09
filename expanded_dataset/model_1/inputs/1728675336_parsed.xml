@@ -116,6 +116,10 @@ Last login: Fri Oct 11 18:15:40 2024 from 172.16.0.1
   <system_output timestamp="49.922269">HWPHYS  QEMUCLIENT
 </system_output>
   <system_output timestamp="49.9232">[?2004h]0;demo@faiserver: /home/fai/config/disk_configdemo@faiserver:/home/fai/config/disk_config$ </system_output>
+<annotation>
+</annotation>
+</event>
+<event depth="-2">
   <user_input timestamp="51.632485">s</user_input>
   <system_output timestamp="51.636727">s</system_output>
   <user_input timestamp="51.711113">u</user_input>
@@ -340,6 +344,10 @@ faibase-_home   /home   50-             ext4    rw,errors=remount-ro[K
   <system_output timestamp="68.260854">[110;1H[K[?1004l[?2004l[&gt;4m[?1l&gt;[?12l[?25h[?1049l[23;0;0t[39;49m
 </system_output>
   <system_output timestamp="68.507434">[?2004h]0;demo@faiserver: /home/fai/config/disk_configdemo@faiserver:/home/fai/config/disk_config$ </system_output>
+<annotation>
+</annotation>
+</event>
+<event depth="-2">
   <user_input timestamp="85.75124">s</user_input>
   <system_output timestamp="85.753186">s</system_output>
   <user_input timestamp="85.900355">u</user_input>
@@ -392,6 +400,10 @@ faibase-_home   /home   50-             ext4    rw,errors=remount-ro[K
   <system_output timestamp="90.446299">
 [K[?1l&gt;</system_output>
   <system_output timestamp="90.450726">[?2004h]0;demo@faiserver: /home/fai/config/disk_configdemo@faiserver:/home/fai/config/disk_config$ </system_output>
+<annotation>
+</annotation>
+</event>
+<event depth="-2">
   <user_input timestamp="91.527867">s</user_input>
   <system_output timestamp="91.549082">s</system_output>
   <user_input timestamp="91.634363">u</user_input>
@@ -602,6 +614,10 @@ faibase-_home   /home   50-             ext4    rw,errors=remount-ro[K
   <system_output timestamp="100.309673">[110;1H[K[?1004l[?2004l[&gt;4m[?1l&gt;[?12l[?25h[?1049l[23;0;0t[39;49m
 </system_output>
   <system_output timestamp="100.32478">[?2004h]0;demo@faiserver: /home/fai/config/disk_configdemo@faiserver:/home/fai/config/disk_config$ </system_output>
+<annotation>
+</annotation>
+</event>
+<event depth="-2">
   <user_input timestamp="101.184848">[A</user_input>
   <system_output timestamp="101.190518">sudo emacs HWPHYS </system_output>
   <user_input timestamp="101.436229">[A</user_input>
@@ -878,6 +894,10 @@ faibase-_home   /home   50-             ext4    rw,errors=remount-ro[K
 [?2004l
 </system_output>
   <system_output timestamp="135.59772">[?2004h]0;demo@faiserver: /home/faidemo@faiserver:/home/fai$ </system_output>
+<annotation>
+</annotation>
+</event>
+<event depth="-2">
   <user_input timestamp="136.251942"/>
   <system_output timestamp="136.254928">
 (reverse-i-search)`': [K</system_output>
@@ -4640,6 +4660,10 @@ faibase-_home   /home   50-             ext4    rw,errors=remount-ro[K
 [?2004l
 </system_output>
   <system_output timestamp="547.654759">[?2004h]0;demo@faiserver: /home/fai/configdemo@faiserver:/home/fai/config$ </system_output>
+<annotation>
+</annotation>
+</event>
+<event depth="-2">
   <user_input timestamp="548.171542">s</user_input>
   <system_output timestamp="548.17364">s</system_output>
   <user_input timestamp="548.253081">u</user_input>
@@ -4780,6 +4804,10 @@ faibase-_home   /home   50-             ext4    rw,errors=remount-ro[K
 [?2004l
 </system_output>
   <system_output timestamp="753.288681">[?2004h]0;demo@faiserver: /home/faidemo@faiserver:/home/fai$ </system_output>
+<annotation>
+</annotation>
+</event>
+<event depth="-2">
   <user_input timestamp="754.783823"/>
   <system_output timestamp="754.807473">
 (reverse-i-search)`': [K</system_output>
@@ -12547,6 +12575,10 @@ DEMO     FAIBASE  HOSTBOX           HOSTXFCE  HWPHYS       JUSER     LAPTOP     
   <system_output timestamp="1308.487456">DEVHOST  GIFTDEV  HOSTOFFICE        HW686     ISCSICLIENT  KALLIDEV  LATEXDEV   QEMUCLIENT  SERVERCREATEVM  SERVERDRUPAL  SERVERGIFT  SERVERISCSI     SERVERMYSQL         SERVEROPENVPN  SERVERQEMUDEV  SERVERSLEEPERMUD  SERVERWIFIDOG  SERVERWIKIMEDIAPARANOID  SERVERWWWCREATEVM  SERVERWWWMRTG  SERVERWWWPHP5      XORG
 </system_output>
   <system_output timestamp="1308.488843">[?2004h]0;demo@faiserver: /home/fai/config/package_configdemo@faiserver:/home/fai/config/package_config$ </system_output>
+<annotation>
+</annotation>
+</event>
+<event depth="-2">
   <user_input timestamp="1310.08647">e</user_input>
   <system_output timestamp="1310.090443">e</system_output>
   <user_input timestamp="1310.209236">m</user_input>
@@ -12660,6 +12692,10 @@ PACKAGES aptitude XORG
 afterstep
 </system_output>
   <system_output timestamp="1325.85442">[?2004h]0;demo@faiserver: /home/fai/config/package_configdemo@faiserver:/home/fai/config/package_config$ </system_output>
+<annotation>
+</annotation>
+</event>
+<event depth="-2">
   <user_input timestamp="1335.113693">e</user_input>
   <system_output timestamp="1335.115736">e</system_output>
   <user_input timestamp="1335.234684">m</user_input>
@@ -12851,6 +12887,10 @@ afterstep
 </system_output>
   <system_output timestamp="1355.723113">class/          debconf/        disk_config/    files/          .git/           .gitignore      hooks/          package_config/ scripts/        
 ]0;demo@faiserver: /home/fai/config/package_configdemo@faiserver:/home/fai/config/package_config$ less ../</system_output>
+<annotation>
+</annotation>
+</event>
+<event depth="-2">
   <user_input timestamp="1356.534632">c</user_input>
   <system_output timestamp="1356.539237">c</system_output>
   <user_input timestamp="1356.793547">	</user_input>
@@ -12866,6 +12906,10 @@ afterstep
 </system_output>
   <system_output timestamp="1360.12266">10-base-classes               20-hwdetect.sh                50-host-classes               60-HACK-FIX_INSTALL_PACKAGES  DEMO.var                      efwrserver.var                FAIBASE.var                   GERMAN.var                    qemupostnwadm.var             qemupostserver.var            SERVERNAGIOS.var              SERVERWIKI.var                
 ]0;demo@faiserver: /home/fai/config/package_configdemo@faiserver:/home/fai/config/package_config$ less ../class/</system_output>
+<annotation>
+</annotation>
+</event>
+<event depth="-2">
   <user_input timestamp="1361.477979">5</user_input>
   <system_output timestamp="1361.499356">5</system_output>
   <user_input timestamp="1361.936486">	</user_input>
@@ -13386,6 +13430,10 @@ afterstep[K
   <system_output timestamp="1405.883767">[0m[01;34mclass[0m  [01;34mdebconf[0m  [01;34mdisk_config[0m  [01;34mfiles[0m  [01;34mhooks[0m  [01;34mpackage_config[0m  [01;34mscripts[0m
 </system_output>
   <system_output timestamp="1405.884588">[?2004h]0;demo@faiserver: /home/fai/configdemo@faiserver:/home/fai/config$ </system_output>
+<annotation>
+</annotation>
+</event>
+<event depth="-2">
   <user_input timestamp="1406.309593">c</user_input>
   <system_output timestamp="1406.330862">c</system_output>
   <user_input timestamp="1406.549188">d</user_input>
@@ -13417,6 +13465,10 @@ afterstep[K
   <system_output timestamp="1408.365719">[0m[01;34mDEMO[0m  [01;34mFAIBASE[0m  [01;34mGRUB[0m  [01;34mISCSICLIENT[0m  [01;34mJADMIN[0m  [01;34mLAST[0m  [01;34mQEMUCLIENT[0m  [01;34mSERVERDHCP[0m  [01;34mSERVERDHCPBOOT[0m  [01;34mSERVERDNS[0m  [01;34mSERVERDNSMASTER[0m  [01;34mSERVERDRUPAL[0m  [01;34mSERVERFAI[0m  [01;34mSERVERGIFT[0m  [01;34mSERVERIMPLICIT[0m  [01;34mSERVERMAIL[0m  [01;34mSERVERMAILPARANOID[0m  [01;34mSERVERMAILSHL[0m  [01;34mSERVERMRTG[0m  [01;34mSERVERNAGIOS[0m  [01;34mSERVERSNMP[0m  [01;34mSERVERWIFIDOG[0m  [01;34mSERVERWIKI[0m  [01;34mSERVERWIKIMEDIA[0m  [01;34mSERVERWORDPRESS[0m  [01;34mSERVERWWW[0m  [01;34mSERVERWWWMRTG[0m  [01;34mSERVERWWWOEMR[0m  [01;34mSERVERWWWSSLONLY[0m  [01;34mSERVERZONEMINDER[0m
 </system_output>
   <system_output timestamp="1408.366596">[?2004h]0;demo@faiserver: /home/fai/config/scriptsdemo@faiserver:/home/fai/config/scripts$ </system_output>
+<annotation>
+</annotation>
+</event>
+<event depth="-2">
   <user_input timestamp="1410.115001">c</user_input>
   <system_output timestamp="1410.117282">c</system_output>
   <user_input timestamp="1410.368653">d</user_input>
@@ -13445,6 +13497,10 @@ afterstep[K
   <system_output timestamp="1412.211463">[0m[01;32m10-setup[0m
 </system_output>
   <system_output timestamp="1412.21246">[?2004h]0;demo@faiserver: /home/fai/config/scripts/GRUBdemo@faiserver:/home/fai/config/scripts/GRUB$ </system_output>
+<annotation>
+</annotation>
+</event>
+<event depth="-2">
   <user_input timestamp="1413.860431">c</user_input>
   <system_output timestamp="1413.862496">c</system_output>
   <user_input timestamp="1414.093519">d</user_input>
@@ -13461,6 +13517,10 @@ afterstep[K
 [?2004l
 </system_output>
   <system_output timestamp="1414.695422">[?2004h]0;demo@faiserver: /home/fai/config/scriptsdemo@faiserver:/home/fai/config/scripts$ </system_output>
+<annotation>
+</annotation>
+</event>
+<event depth="-2">
   <user_input timestamp="1417.598893">c</user_input>
   <system_output timestamp="1417.600998">c</system_output>
   <user_input timestamp="1417.826556">p</user_input>
@@ -13562,6 +13622,10 @@ afterstep[K
   <system_output timestamp="1431.979033">sudo: unable to resolve host faiserver: Name or service not known
 </system_output>
   <system_output timestamp="1432.009567">[?2004h]0;demo@faiserver: /home/fai/config/scriptsdemo@faiserver:/home/fai/config/scripts$ </system_output>
+<annotation>
+</annotation>
+</event>
+<event depth="-2">
   <user_input timestamp="1433.113728">[A</user_input>
   <system_output timestamp="1433.116442">sudo mkdir GRUBEFI</system_output>
   <user_input timestamp="1434.516699">[A</user_input>
@@ -13667,6 +13731,10 @@ afterstep[K
   <system_output timestamp="1449.012514">sudo: unable to resolve host faiserver: Name or service not known
 </system_output>
   <system_output timestamp="1449.027004">[?2004h]0;demo@faiserver: /home/fai/config/scriptsdemo@faiserver:/home/fai/config/scripts$ </system_output>
+<annotation>
+</annotation>
+</event>
+<event depth="-2">
   <user_input timestamp="1450.952887">c</user_input>
   <system_output timestamp="1450.965069">c</system_output>
   <user_input timestamp="1451.146569">d</user_input>
@@ -13689,6 +13757,10 @@ afterstep[K
 [?2004l
 </system_output>
   <system_output timestamp="1453.54772">[?2004h]0;demo@faiserver: /home/fai/config/scripts/GRUBEFIdemo@faiserver:/home/fai/config/scripts/GRUBEFI$ </system_output>
+<annotation>
+</annotation>
+</event>
+<event depth="-2">
   <user_input timestamp="1454.230931">s</user_input>
   <system_output timestamp="1454.249279">s</system_output>
   <user_input timestamp="1454.315897">u</user_input>
@@ -14562,6 +14634,10 @@ $[33mROOTCMD[39;49m grub-install --directory /usr/lib/grub/i386-efi[K
 DEVHOST  GIFTDEV  HOSTBOX           HOSTXFCE    HWPHYS   JUSER        LAPTOP     OPENWRTDEV  SERVERCACHE  SERVERDNS       SERVERFTP     SERVERIRCD      SERVERMAILPARANOID  SERVERNTOP    SERVERQEMU     SERVERRORAILS  SERVERSQUID       SERVERWIKIMEDIA  SERVERWWW                SERVERWWWMAIL      SERVERWWWOPENCART  SERVERZONEMINDER
 </system_output>
   <system_output timestamp="2165.062153">[?2004h]0;demo@faiserver: /home/fai/config/package_configdemo@faiserver:/home/fai/config/package_config$ </system_output>
+<annotation>
+</annotation>
+</event>
+<event depth="-2">
   <user_input timestamp="2171.807418">e</user_input>
   <system_output timestamp="2171.809379">e</system_output>
   <user_input timestamp="2171.933648">m</user_input>
@@ -15191,6 +15267,10 @@ firmware-linux-free[K
   <system_output timestamp="3039.733981">DEVHOST  GIFTDEV  HASUNTRUSTEDDATA  HOSTSTEP    HWAMD64   JADMIN       KERNELDEV  OEMRDEV   SELINUX     SERVERDHCP      SERVERFAI     SERVERIMPLICIT  SERVERMAIL   SERVERNAGIOS        SERVERPGSQL    SERVERREPRAP   SERVERSNMP        SERVERWIKI     SERVERWORDPRESS          SERVERWWWGIFT      SERVERWWWOEMR  SERVERWWWSSL
 </system_output>
   <system_output timestamp="3039.734554">[?2004h]0;demo@faiserver: /home/fai/config/package_configdemo@faiserver:/home/fai/config/package_config$ </system_output>
+<annotation>
+</annotation>
+</event>
+<event depth="-2">
   <user_input timestamp="3041.357807">r</user_input>
   <system_output timestamp="3041.359759">r</system_output>
   <user_input timestamp="3041.618609">m</user_input>

@@ -120,6 +120,10 @@ Last login: Sun Oct  6 16:51:26 2024 from 172.16.0.1
 [?2004l
 </system_output>
   <system_output timestamp="26.935093">[?2004h]0;demo@faiserver: /home/fai/configdemo@faiserver:/home/fai/config$ </system_output>
+<annotation>
+</annotation>
+</event>
+<event depth="-2">
   <user_input timestamp="37.178971">g</user_input>
   <system_output timestamp="37.180967">g</system_output>
   <user_input timestamp="37.313591">i</user_input>
@@ -328,6 +332,10 @@ To add an exception for this directory, call:
 	git config --global --add safe.directory /home/fai/config
 </system_output>
   <system_output timestamp="46.226694">[?2004h]0;demo@faiserver: /home/fai/configdemo@faiserver:/home/fai/config$ </system_output>
+<annotation>
+</annotation>
+</event>
+<event depth="-2">
   <user_input timestamp="50.572229">s</user_input>
   <system_output timestamp="50.574257">s</system_output>
   <user_input timestamp="50.697758">u</user_input>
@@ -711,6 +719,10 @@ To add an exception for this directory, call:
 [K [KESCESC[K[[[K55[K~~
 [K
 [K:[K</system_output>
+<annotation>
+</annotation>
+</event>
+<event depth="-2">
   <user_input timestamp="62.45089">q</user_input>
   <system_output timestamp="62.513208">
 [K[?1l&gt;</system_output>

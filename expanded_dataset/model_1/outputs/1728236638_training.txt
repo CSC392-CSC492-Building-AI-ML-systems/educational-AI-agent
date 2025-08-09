@@ -1,6 +1,6 @@
 0
 [GOAL_1] User modifies EFI boot configuration on remote host via git and attempts to commit changes
-0
+-1
 User logs into remote host 172.16.0.17 via SSH
 -1
 User navigates to /home/fai/config/ directory
@@ -24,3 +24,5 @@ User exits the SSH session
 User exits the local terminal session
 0
 [GOAL_END_1] User completes git-based modification of boot settings on remote host
+1
+[SUCCESS_RESULT] EFI boot configuration changes committed successfully to the remote host repository

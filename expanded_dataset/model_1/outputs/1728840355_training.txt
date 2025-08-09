@@ -1,8 +1,8 @@
 0
 [GOAL_1] User disables SSH X11 forwarding by modifying FAIBASE scripts
-0
-User logs into 172.16.0.17 via SSH
 -1
+User logs into 172.16.0.17 via SSH
+0
 User navigates to /home/fai/config/files/etc/ssh/ssh_config and lists directory contents
 -1
 User removes FAIBASE
@@ -16,29 +16,31 @@ User edits FAIBASE/10-misc in Emacs
 User lists directory contents in FAIBASE/10-misc
 0
 User checks git status
-0
-User stages and commits changes in FAIBASE/10-misc with message "stop enabling SSH x11 forwarding by default."
 1
+User stages and commits changes in FAIBASE/10-misc with message "stop enabling SSH x11 forwarding by default."
+0
 [GOAL_END_1] User completes configuration to disable SSH X11 forwarding
+1
+[SUCCESS_RESULT] SSH X11 forwarding disabled via FAIBASE script update and changes committed successfully
 0
 [GOAL_2] User creates 3D printer configuration class and builds FAI CD
-0
-User navigates to /home/fai and runs make-fai-cd.sh to build FAI CD
-0
-[SUCCESS_FAILURE] User-initiated interruption prevents FAI CD from being built successfully
+-1
+User navigates to /home/fai and runs make-fai-cd.sh to build FAI CD, then interrupts the installation process
 0
 User navigates to /home/fai/config/package_config and lists directory contents
-0
+-1
 User edits PRINTERDEV in Emacs
-0
+1
 User stages and commits changes in PRINTERDEV with message "start add a class for 3d printing workflows."
 0
 User navigates to /home/fai and runs make-fai-cd.sh to build FAI CD
-1
+0
 User logs out from 172.16.0.17
 0
 User copies the fai_cd.iso image from the remote server
 0
-[GOAL_END_2] User completes 3D printer config and deployment via FAI CD
-0
 User exits local session
+0
+[GOAL_END_2] User completes 3D printer config and deployment via FAI CD
+1
+[SUCCESS_RESULT] 3D printer configuration class created and deployed successfully via FAI CD

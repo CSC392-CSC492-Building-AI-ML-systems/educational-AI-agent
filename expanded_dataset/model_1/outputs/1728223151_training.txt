@@ -1,6 +1,6 @@
 0
 [GOAL_1] User attempts to annotate a specific VM by adding a description to facilitate management
-0
+-1
 User lists all VMs with names and checks their IP addresses containing 'faiserver'
 0
 User checks cm command usage
@@ -11,6 +11,6 @@ User checks cm command usage
 1
 User exits the terminal session
 0
-[SUCCESS_FAILURE] Goal_1 fails because neither the normal nor sudo version of the command completed successfully
-0
 [GOAL_END_1] User gives up attempt to annotate the VM and exits terminal
+1
+[SUCCESS_FAILURE] Neither the normal nor sudo version of the command completed successfully
