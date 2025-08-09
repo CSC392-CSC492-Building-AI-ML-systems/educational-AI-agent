@@ -20,20 +20,77 @@ Analyze terminal session XML and generate:
 - Only output numbers, one per line
 ## Example Application:
 
-**Input:** `<system_output>prompt$</system_output><user_input>s</user_input><system_output>s</system_output><user_input>\n</user_input>`
+**Input:** `<system_output timestamp=\"0.096022\">[?2004h]0;demo@boxtop: ~demo@boxtop:~$ </system_output>\n <user_input timestamp=\"9.163614\">s</user_input>\n <system_output timestamp=\"9.164051\">s</system_output>\n <user_input timestamp=\"9.365744\">s</user_input>\n <system_output timestamp=\"9.366263\">s</system_output>\n <user_input timestamp=\"9.589844\">h</user_input>\n <system_output timestamp=\"9.59026\">h</system_output>\n <user_input timestamp=\"9.708352\"> </user_input>\n <system_output timestamp=\"9.708844\"> </system_output>\n <user_input timestamp=\"10.1118\">1</user_input>\n <system_output timestamp=\"10.112236\">1</system_output>\n <user_input timestamp=\"10.270878\">0</user_input>\n <system_output timestamp=\"10.271223\">0</system_output>\n <user_input timestamp=\"10.471565\">.</user_input>\n <system_output timestamp=\"10.471898\">.</system_output>\n <user_input timestamp=\"10.594981\">0</user_input>\n <system_output timestamp=\"10.595383\">0</system_output>\n <user_input timestamp=\"10.757499\">.</user_input>\n <system_output timestamp=\"10.757882\">.</system_output>\n <user_input timestamp=\"11.140897\">7</user_input>\n <system_output timestamp=\"11.14119\">7</system_output>\n <user_input timestamp=\"11.603706\">.</user_input>\n <system_output timestamp=\"11.604019\">.</system_output>\n <user_input timestamp=\"12.330584\">1</user_input>\n <system_output timestamp=\"12.331455\">1</system_output>\n <user_input timestamp=\"12.632256\">3</user_input>\n <system_output timestamp=\"12.633323\">3</system_output>\n <user_input timestamp=\"13.446626\">8</user_input>\n <system_output timestamp=\"13.447562\">8</system_output>\n <user_input timestamp=\"14.510021\"> (End of input marker or newline)</user_input>`
 
 **Step-by-step:**
-1. Element 1: `<system_output>prompt$</system_output>` → Prompt = communication end → Output: `0`
-2. Element 2: `<user_input>s</user_input>` → New communication start → Output: `1` 
-3. Element 3: `<system_output>s</system_output>` → Continue communication → Output: `2`
-4. Element 4: `<user_input>\n</user_input>` → Continue + End communication → Output: `3`, then `0`
+
+<system_output timestamp="0.096022">[?2004h]0;demo@boxtop: ~demo@boxtop:~$ </system_output> - Bash prompt (incomplete communication, starts at some number)
+<user_input timestamp="9.163614">s</user_input> - User types 's' (starts new communication)
+<system_output timestamp="9.164051">s</system_output> - System echoes 's'
+<user_input timestamp="9.365744">s</user_input> - User types 's'
+<system_output timestamp="9.366263">s</system_output> - System echoes 's'
+<user_input timestamp="9.589844">h</user_input> - User types 'h'
+<system_output timestamp="9.59026">h</system_output> - System echoes 'h'
+<user_input timestamp="9.708352"> </user_input> - User types space
+<system_output timestamp="9.708844"> </system_output> - System echoes space
+<user_input timestamp="10.1118">1</user_input> - User types '1'
+<system_output timestamp="10.112236">1</system_output> - System echoes '1'
+<user_input timestamp="10.270878">0</user_input> - User types '0'
+<system_output timestamp="10.271223">0</system_output> - System echoes '0'
+<user_input timestamp="10.471565">.</user_input> - User types '.'
+<system_output timestamp="10.471898">.</system_output> - System echoes '.'
+<user_input timestamp="10.594981">0</user_input> - User types '0'
+<system_output timestamp="10.595383">0</system_output> - System echoes '0'
+<user_input timestamp="10.757499">.</user_input> - User types '.'
+<system_output timestamp="10.757882">.</system_output> - System echoes '.'
+<user_input timestamp="11.140897">7</user_input> - User types '7'
+<system_output timestamp="11.14119">7</system_output> - System echoes '7'
+<user_input timestamp="11.603706">.</user_input> - User types '.'
+<system_output timestamp="11.604019">.</system_output> - System echoes '.'
+<user_input timestamp="12.330584">1</user_input> - User types '1'
+<system_output timestamp="12.331455">1</system_output> - System echoes '1'
+<user_input timestamp="12.632256">3</user_input> - User types '3'
+<system_output timestamp="12.633323">3</system_output> - System echoes '3'
+<user_input timestamp="13.446626">8</user_input> - User types '8'
+<system_output timestamp="13.447562">8</system_output> - System echoes '8'
+<user_input timestamp="14.510021"> (End of input marker or newline)</user_input> - User presses Enter
+
+The user typed "ssh 10.0.7.138" and then pressed Enter. This completes the SSH command entry, so the final element (the newline/enter) should be followed by 0 to indicate the communication is complete.
+
 
 **Final Output:**
 ```
+3
 0
 1
 2
 3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
 0
 ```
 
