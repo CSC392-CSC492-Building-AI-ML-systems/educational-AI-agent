@@ -25,10 +25,10 @@ ENV PYTHONUNBUFFERED=1
 
 # Set environment variables for Hugging Face caching
 # These will direct all HF downloads to the network storage
-ENV HF_HOME=/runpod-volume
-ENV TRANSFORMERS_CACHE=/runpod-volume
-ENV HF_HUB_CACHE=/runpod-volume
-ENV HF_DATASETS_CACHE=/runpod-volume
+ENV HF_HOME=/runpod-volume/huggingface
+ENV TRANSFORMERS_CACHE=/runpod-volume/huggingface
+ENV HF_HUB_CACHE=/runpod-volume/huggingface/hub
+ENV HF_DATASETS_CACHE=/runpod-volume/huggingface/datasets
 
 # Critical: Force temporary files to network storage too
 ENV TMPDIR=/runpod-volume/tmp
@@ -42,9 +42,9 @@ ENV HF_HUB_DISABLE_SYMLINKS_WARNING=1
 # Debug: Show disk usage during build (this will show build-time disk usage)
 RUN df -h
 
-# Create cache directories (these will be created in the image layer, 
-# but the actual /runpod-volume will be mounted at runtime)
-RUN mkdir -p /runpod-volume/tmp
+# Create cache directories and symbolic links to force all cache to network storage
+RUN mkdir -p /runpod-volume/huggingface/hub && \
+    mkdir -p /runpod-volume/tmp
 
 # Run the handler
 CMD ["python", "handler.py"]
