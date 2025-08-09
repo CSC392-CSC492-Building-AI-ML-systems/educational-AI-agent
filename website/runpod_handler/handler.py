@@ -5,9 +5,21 @@ import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer, TextGenerationPipeline, TextStreamer
 import runpod
 
+# Force all HuggingFace operations to use network storage - even override at runtime
+# os.environ['HF_HOME'] = '/runpod-volume'
+# os.environ['TRANSFORMERS_CACHE'] = '/runpod-volume'  # Remove deprecated sub-path
+# os.environ['HF_HUB_CACHE'] = '/runpod-volume'
+# os.environ['HF_DATASETS_CACHE'] = '/runpod-volume'
+# os.environ['TMPDIR'] = '/runpod-volume/tmp'
+# os.environ['TEMP'] = '/runpod-volume/tmp'
+# os.environ['TMP'] = '/runpod-volume/tmp'
+
+# Create directories if they don't exist
+os.makedirs("/runpod-volume/tmp", exist_ok=True)
+
 os.system("df -h")  # Display disk space information
 
-MODEL_ID = "deepseek-ai/DeepSeek-R1-Distill-Llama-8B"  # nuhgooyin/autodocs_model_0_no_gguf
+MODEL_ID = "deepseek-ai/DeepSeek-R1-Distill-Llama-8B"
 
 def load_system_prompt():
     """Load system prompt from file with fallback"""
@@ -101,37 +113,38 @@ def extract_final_answer(text):
     
     return text.strip()
 
-# def aggressive_cleanup():
-#     """Aggressive cleanup to free disk space"""
-#     print("=== Performing Aggressive Cleanup ===")
+def aggressive_cleanup():
+    """Aggressive cleanup to free disk space"""
+    print("=== Performing Aggressive Cleanup ===")
     
-#     # Clear Python cache
-#     os.system("find / -name '*.pyc' -delete 2>/dev/null")
-#     os.system("find / -name '__pycache__' -type d -exec rm -rf {} + 2>/dev/null")
+    # Clear Python cache
+    os.system("find / -name '*.pyc' -delete 2>/dev/null")
+    os.system("find / -name '__pycache__' -type d -exec rm -rf {} + 2>/dev/null")
     
-#     # Clear pip cache
-#     os.system("pip cache purge")
+    # Clear pip cache
+    os.system("pip cache purge")
     
-#     # Clear apt cache (if available)
-#     os.system("apt-get clean 2>/dev/null")
+    # Clear apt cache (if available)
+    os.system("apt-get clean 2>/dev/null")
     
-#     # Clear tmp directories
-#     for tmp_dir in ["/tmp", "/var/tmp"]:
-#         if os.path.exists(tmp_dir):
-#             try:
-#                 shutil.rmtree(tmp_dir)
-#                 os.makedirs(tmp_dir, exist_ok=True)
-#                 print(f"Cleared {tmp_dir}")
-#             except:
-#                 pass
+    # Clear tmp directories
+    for tmp_dir in ["/tmp", "/var/tmp"]:
+        if os.path.exists(tmp_dir):
+            try:
+                shutil.rmtree(tmp_dir)
+                os.makedirs(tmp_dir, exist_ok=True)
+                print(f"Cleared {tmp_dir}")
+            except:
+                pass
     
-#     # Force garbage collection
-#     gc.collect()
-#     if torch.cuda.is_available():
-#         torch.cuda.empty_cache()
-#         torch.cuda.synchronize()
+    # Force garbage collection
+    gc.collect()
+    if torch.cuda.is_available():
+        torch.cuda.empty_cache()
+        torch.cuda.synchronize()
     
-#     print("=== Cleanup Complete ===")
+    print("=== Cleanup Complete ===")
+
 def verify_cache_setup():
     """Verify that cache directories are properly set up"""
     print("=== Cache Setup Verification ===")
@@ -160,22 +173,24 @@ def check_disk_space():
     print("========================")
 
 def load_model():
-    """Load model and tokenizer with 40GB network storage"""
+    """Load model and tokenizer with aggressive cache control"""
     check_disk_space()
     verify_cache_setup()
     
     print(f"Loading model: {MODEL_ID}")
     
-    # Load tokenizer
+    # Load tokenizer with explicit cache control
     print("Loading tokenizer...")
     tokenizer = AutoTokenizer.from_pretrained(
         MODEL_ID,
         trust_remote_code=True,
         use_fast=True,
-        cache_dir="/runpod-volume"
+        cache_dir="/runpod-volume",
+        local_files_only=False,
+        force_download=False  # Use cache if available
     )
     
-    # Load model - should fit easily in 40GB network storage
+    # Load model with explicit cache control
     print("Loading model...")
     model = AutoModelForCausalLM.from_pretrained(
         MODEL_ID,
@@ -183,7 +198,10 @@ def load_model():
         low_cpu_mem_usage=True,
         device_map="auto",
         torch_dtype="auto",
-        cache_dir="/runpod-volume"
+        cache_dir="/runpod-volume",
+        local_files_only=False,
+        force_download=False,  # Use cache if available
+        resume_download=True   # Resume interrupted downloads
     )
     
     print("Model loaded successfully!")
@@ -249,7 +267,6 @@ def handler(job):
 
         # Generation parameters 
         generation_params = {
-            "formatted_prompt": formatted_prompt,
             "max_new_tokens": max_new_tokens,
             "temperature": temperature,
             "do_sample": do_sample,
@@ -274,6 +291,7 @@ def handler(job):
         final_answer = extract_final_answer(raw_output)
         
         return {"output": final_answer}
+        
     except Exception as e:
         return {"error": f"Generation failed: {str(e)}"}
 
