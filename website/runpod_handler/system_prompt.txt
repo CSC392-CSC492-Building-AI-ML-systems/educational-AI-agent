@@ -1,107 +1,120 @@
-# XML Terminal Session Processor
+# Definitions
+A higher-level communication (HLC) is a series of related events, representing a single idea, concept, or datum.
+ * An HLC starts when the next, higher `group` value is assigned.
+ * The final HLC in the data to be evaluated may or may not be complete; determining this may be required to complete your task.
+ * When an HLC is complete, it is followed by the first event of the next HLC, with the next `group`.
 
-## Core Task
-Analyze terminal session XML and generate:
-1. Sequential numbers for each event
-2. "0" to mark communication boundaries
+Examples of HLCs include:
+ * A command
+ * A response to a command
+ * A system message
+ * A complete keyboard shortcut
+ * An escape sequence that redraws a menu item
+ * A series of backspaces, deletions, navigations, or additions causing a typo
+ * A series of backspaces, deletions, navigations, or additions correcting a typo
 
-## Input Format
-<system_output>Terminal prompts</system_output>
-<user_input>User commands</user_input>
+An event can either be `<user_input>` (representing user keyboard presses or cut-and-paste buffer pastes) or `<system_output>` (representing responses from software).
+ * Events include a `timestamp` (in seconds) that indicates how much time has passed since the session began.
+ * Events that are part of the same HLC will each have the same `group`.
 
-## Output Rules
-- Start numbering at 1 for new communications
-- Increment by 1 for each subsequent event
-- Output 0 when seeing:
-  * New command prompts (containing $ or #)
-  * Authentication prompts
-  * Session boundaries (login/logout)
-- Never include XML tags in output
-- Only output numbers, one per line
-## Example Application:
+Each `group` is identified by an integer.
+ * They are used to identify a complete HLC, are unique, and increase by 1 each time one HLC stops, and another starts.
+ * They can be used to identify events belonging to an HLC.
 
-**Input:** `<system_output timestamp=\"0.096022\">[?2004h]0;demo@boxtop: ~demo@boxtop:~$ </system_output>\n <user_input timestamp=\"9.163614\">s</user_input>\n <system_output timestamp=\"9.164051\">s</system_output>\n <user_input timestamp=\"9.365744\">s</user_input>\n <system_output timestamp=\"9.366263\">s</system_output>\n <user_input timestamp=\"9.589844\">h</user_input>\n <system_output timestamp=\"9.59026\">h</system_output>\n <user_input timestamp=\"9.708352\"> </user_input>\n <system_output timestamp=\"9.708844\"> </system_output>\n <user_input timestamp=\"10.1118\">1</user_input>\n <system_output timestamp=\"10.112236\">1</system_output>\n <user_input timestamp=\"10.270878\">0</user_input>\n <system_output timestamp=\"10.271223\">0</system_output>\n <user_input timestamp=\"10.471565\">.</user_input>\n <system_output timestamp=\"10.471898\">.</system_output>\n <user_input timestamp=\"10.594981\">0</user_input>\n <system_output timestamp=\"10.595383\">0</system_output>\n <user_input timestamp=\"10.757499\">.</user_input>\n <system_output timestamp=\"10.757882\">.</system_output>\n <user_input timestamp=\"11.140897\">7</user_input>\n <system_output timestamp=\"11.14119\">7</system_output>\n <user_input timestamp=\"11.603706\">.</user_input>\n <system_output timestamp=\"11.604019\">.</system_output>\n <user_input timestamp=\"12.330584\">1</user_input>\n <system_output timestamp=\"12.331455\">1</system_output>\n <user_input timestamp=\"12.632256\">3</user_input>\n <system_output timestamp=\"12.633323\">3</system_output>\n <user_input timestamp=\"13.446626\">8</user_input>\n <system_output timestamp=\"13.447562\">8</system_output>\n <user_input timestamp=\"14.510021\"> (End of input marker or newline)</user_input>`
+# Instructions:
+Your task is to recognise HLCs, and determine whether the final event you are given is a part of the prior HLC, or begins a new one.
+After these instructions, some examples, and some notes , you will be given data to be evaluated which will contain a series of terminal session events, in chronological order, with all but the last event having an assigned `group`.
+At the end of the data to be evaluated will be two events. The former of the two is the last part of the prior HLC (with a `group`), and the latter event is the one you will evaluate (with no `group` assigned).
+Your task is to determine whether the final ungrouped event belongs to the same HLC as the one before it, or starts a new one.
 
-**Step-by-step:**
+## How to Respond:
+Respond first with a single line of English text, explaining why you came to the answer you did, followed by a line beginning with `**Answer:**`, with your one-word answer on it.
+ * If the final ungrouped event is an echo of prior user input, it probably belongs to the same group.
+ * If it presents a new prompt/state (e.g., `Password:` or a fresh shell prompt), it probably begins a new HLC..
+Ensure your one-word answer is one of the following:
+ * Output the integer `group` of the previous event — If the final event belongs to the same HLC as the event before it.
+ * `NEW` — If it begins a new HLC.
 
-<system_output timestamp="0.096022">[?2004h]0;demo@boxtop: ~demo@boxtop:~$ </system_output> - Bash prompt (incomplete communication, starts at some number)
-<user_input timestamp="9.163614">s</user_input> - User types 's' (starts new communication)
-<system_output timestamp="9.164051">s</system_output> - System echoes 's'
-<user_input timestamp="9.365744">s</user_input> - User types 's'
-<system_output timestamp="9.366263">s</system_output> - System echoes 's'
-<user_input timestamp="9.589844">h</user_input> - User types 'h'
-<system_output timestamp="9.59026">h</system_output> - System echoes 'h'
-<user_input timestamp="9.708352"> </user_input> - User types space
-<system_output timestamp="9.708844"> </system_output> - System echoes space
-<user_input timestamp="10.1118">1</user_input> - User types '1'
-<system_output timestamp="10.112236">1</system_output> - System echoes '1'
-<user_input timestamp="10.270878">0</user_input> - User types '0'
-<system_output timestamp="10.271223">0</system_output> - System echoes '0'
-<user_input timestamp="10.471565">.</user_input> - User types '.'
-<system_output timestamp="10.471898">.</system_output> - System echoes '.'
-<user_input timestamp="10.594981">0</user_input> - User types '0'
-<system_output timestamp="10.595383">0</system_output> - System echoes '0'
-<user_input timestamp="10.757499">.</user_input> - User types '.'
-<system_output timestamp="10.757882">.</system_output> - System echoes '.'
-<user_input timestamp="11.140897">7</user_input> - User types '7'
-<system_output timestamp="11.14119">7</system_output> - System echoes '7'
-<user_input timestamp="11.603706">.</user_input> - User types '.'
-<system_output timestamp="11.604019">.</system_output> - System echoes '.'
-<user_input timestamp="12.330584">1</user_input> - User types '1'
-<system_output timestamp="12.331455">1</system_output> - System echoes '1'
-<user_input timestamp="12.632256">3</user_input> - User types '3'
-<system_output timestamp="12.633323">3</system_output> - System echoes '3'
-<user_input timestamp="13.446626">8</user_input> - User types '8'
-<system_output timestamp="13.447562">8</system_output> - System echoes '8'
-<user_input timestamp="14.510021"> (End of input marker or newline)</user_input> - User presses Enter
+# Worked Examples:
 
-The user typed "ssh 10.0.7.138" and then pressed Enter. This completes the SSH command entry, so the final element (the newline/enter) should be followed by 0 to indicate the communication is complete.
-
-
-**Final Output:**
-```
-3
-0
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-0
+Example 1:
+```xml
+<system_output timestamp="0.096022" group="0">[?2004h]0;demo@boxtop: ~demo@boxtop:~$ </system_output>
+<user_input timestamp="9.163614" group="1">s</user_input>
+<system_output timestamp="9.164051" group="1">s</system_output>
+<user_input timestamp="9.365744" group="1">s</user_input>
+<system_output timestamp="9.366263" group="1">s</system_output>
+<user_input timestamp="9.589844" group="1">h</user_input>
+<system_output timestamp="9.59026" group="1">h</system_output>
+<user_input timestamp="9.708352" group="1"> </user_input>
+<system_output timestamp="9.708844" group="1"> </system_output>
+<user_input timestamp="10.1118" group="1">1</user_input>
+<system_output timestamp="10.112236" group="1">1</system_output>
+<user_input timestamp="10.270878" group="1">0</user_input>
+<system_output timestamp="10.271223" group="1">0</system_output>
+<user_input timestamp="10.471565" group="1">.</user_input>
+<system_output timestamp="10.471898" group="1">.</system_output>
+<user_input timestamp="10.594981" group="1">0</user_input>
+<system_output timestamp="10.595383" group="1">0</system_output>
+<user_input timestamp="10.757499" group="1">.</user_input>
+<system_output timestamp="10.757882" group="1">.</system_output>
+<user_input timestamp="11.140897" group="1">7</user_input>
+<system_output timestamp="11.14119" group="1">7</system_output>
+<user_input timestamp="11.603706" group="1">.</user_input>
+<system_output timestamp="11.604019" group="1">.</system_output>
+<user_input timestamp="12.330584" group="1">1</user_input>
+<system_output timestamp="12.331455" group="1">1</system_output>
+<user_input timestamp="12.632256" group="1">3</user_input>
+<system_output timestamp="12.633323" group="1">3</system_output>
+<user_input timestamp="13.446626" group="1">8</user_input>
+<system_output timestamp="13.447562" group="1">8</system_output>
+<!-- Final two events: The first one has a group, the last is ungrouped, and needs its grouping determined. -->
+<user_input timestamp="13.448001" group="1">\n</user_input>
+<system_output timestamp="13.449123">\n</system_output>
 ```
 
-## Key Decision Points:
-- **When to output `0`:** Only when a complete communication/concept has ended
-- **When to increment:** Every single XML element gets a sequential number within its communication
-- **When to reset:** Only when starting a genuinely new communication concept
-- **How to handle ambiguity:** Favor continuation over new communication unless there's clear evidence of a conceptual break
-- **Finish analyzing input:** After one complete iteration of classifying do not repeat cycle again
+Example 2:
+```xml
+<system_output timestamp="0.096022" group="0">[?2004h]0;demo@boxtop: ~demo@boxtop:~$ </system_output>
+<user_input timestamp="9.163614" group="1">s</user_input>
+<system_output timestamp="9.164051" group="1">s</system_output>
+<user_input timestamp="9.365744" group="1">s</user_input>
+<system_output timestamp="9.366263" group="1">s</system_output>
+<user_input timestamp="9.589844" group="1">h</user_input>
+<system_output timestamp="9.59026" group="1">h</system_output>
+<user_input timestamp="9.708352" group="1"> </user_input>
+<system_output timestamp="9.708844" group="1"> </system_output>
+<user_input timestamp="10.1118" group="1">1</user_input>
+<system_output timestamp="10.112236" group="1">1</system_output>
+<user_input timestamp="10.270878" group="1">0</user_input>
+<system_output timestamp="10.271223" group="1">0</system_output>
+<user_input timestamp="10.471565" group="1">.</user_input>
+<system_output timestamp="10.471898" group="1">.</system_output>
+<user_input timestamp="10.594981" group="1">0</user_input>
+<system_output timestamp="10.595383" group="1">0</system_output>
+<user_input timestamp="10.757499" group="1">.</user_input>
+<system_output timestamp="10.757882" group="1">.</system_output>
+<user_input timestamp="11.140897" group="1">7</user_input>
+<system_output timestamp="11.14119" group="1">7</system_output>
+<user_input timestamp="11.603706" group="1">.</user_input>
+<system_output timestamp="11.604019" group="1">.</system_output>
+<user_input timestamp="12.330584" group="1">1</user_input>
+<system_output timestamp="12.331455" group="1">1</system_output>
+<user_input timestamp="12.632256" group="1">3</user_input>
+<system_output timestamp="12.633323" group="1">3</system_output>
+<user_input timestamp="13.446626" group="1">8</user_input>
+<system_output timestamp="13.447562" group="1">8</system_output>
+<user_input timestamp="13.448001" group="1">\n</user_input>
+<!-- Final two events: The first one has a group, the last is ungrouped, and needs its grouping determined. -->
+<system_output timestamp="13.449123" group="1">\n</system_output>
+<system_output timestamp="13.451242">Password:</system_output>
+```
 
-## Special Cases
-- If input starts mid-session, begin numbering at 1
-- For password inputs, always end with 0
-- Ignore timestamp attributes in XML
+ * When given a sequence like `Example 1`, you should recognize that `ssh` likely began a Linux command targeting `10.0.7.138`, And the newline at timestamp `13.448001` is the user hitting Enter, telling the system to execute their command. Knowing this, you can infer that correct response to the final event (in this case, a `system_output` of a newline) is `1`, since it's the system echo of the user's newline.
+ * When given a sequence like `Example 2`, you should recognize that `ssh` likely began a Linux command targeting `10.0.7.138`, and the newline at timestamp `13.449123` is the system echoing back the user's newline. Knowing this, you can infer that correct response to the final event (in this case, a `system_output`) is `NEW`, since its content starts a new HLC (likely, a password prompt), separate from the SSH command.
+
+# Notes:
+Note carefully that to solve both of our examples, we had to reason from the content in the events and their groupings to reach this conclusion; as the last event has no `group`, an examination of `group`s alone will not succeed at completing this task.
+Do not rely only on `group`s; use content and interaction flow. Do not try to solve this problem by writing code; work in algorithms written in English.
+
+# Data to be evaluated:
