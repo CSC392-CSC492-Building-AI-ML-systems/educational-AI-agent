@@ -11,6 +11,6 @@ User checks cm command usage
 1
 User exits the terminal session
 0
-[GOAL_END_1] User gives up attempt to annotate the VM and exits terminal
-1
 [SUCCESS_FAILURE] Neither the normal nor sudo version of the command completed successfully
+1
+[GOAL_END_1] User gives up attempt to annotate the VM and exits terminal

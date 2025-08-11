@@ -10,10 +10,8 @@ User displays contents in 20-copy-mirror
 User removes 20-copy-mirror
 0
 User commits changes with message "stop copying the mirror to the target; we have good internet, and local mirrors."
-0
-[GOAL_END_1] User completes script cleanup and mirror logic removal
 1
-[SUCCESS_RESULT] Mirror-copying logic removed from FAI installation scripts and changes committed successfully
+[GOAL_END_1] User completes script cleanup and mirror logic removal
 0
 [GOAL_2] User updates apt sources to use internet and mirror URLs for installation
 -1
@@ -42,10 +40,8 @@ User copies DEFAULT to /etc/apt/sources.list, then refreshes package indexes
 User checks git diff
 0
 User stages and commits changes with message "update the security URLs for debian, and use a debian mirror in germany by default."
-0
-[GOAL_END_2] User finalizes apt sources updates and completes version control tracking
 1
-[SUCCESS_RESULT] Apt sources updated to use internet and mirror URLs, changes committed successfully
+[GOAL_END_2] User finalizes apt sources updates and completes version control tracking
 0
 [GOAL_3] User builds and deploys updated FAI CD and removes outdated images
 -1
@@ -62,7 +58,5 @@ User removes old FAI ISO images
 User re-copies the latest FAI ISO from the server
 1
 User exits local session
-0
-[GOAL_END_3] User completes ISO refresh by cleaning and redeploying new build
 1
-[SUCCESS_RESULT] Updated FAI CD built, old images removed, and latest ISO deployed successfully
+[GOAL_END_3] User completes ISO refresh by cleaning and redeploying new build

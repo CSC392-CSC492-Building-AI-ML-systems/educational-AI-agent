@@ -16,10 +16,8 @@ User stages the changes in FAIBASE
 User commits the changes with message "python 2.7 no longer exists in debian 12."
 1
 User reviews configuration changes using "git diff"
-0
-[GOAL_END_1] User completes upgrade of base configuration and verifies commit success
 1
-[SUCCESS_RESULT] Base configuration for Debian 12 updated and committed successfully
+[GOAL_END_1] User completes upgrade of base configuration and verifies commit success
 0
 [GOAL_2] User modifies multiple system package configs to align with Debian 12
 -1
@@ -30,6 +28,8 @@ User stages changes in package_config/SERVER
 [Mistake] User attempts to remove package_config/SERVERLINUXPMIDEV that does not exist in the repository. [Mistake Reason] The file 'package_config/SERVERLINUXPMIDEV' is not tracked or does not exist. [Mistake Result] git returns fatal error and no file is removed
 -1
 User attempts to remove package_config/LINUXPMIDEV
+0
+[SUCCESS_FAILURE] git rm failed due to local modifications blocking file removal
 1
 User forcibly removes package_config/LINUXPMIDEV
 0
@@ -88,19 +88,21 @@ User displays content in hooks/updatebase.DEFAULT
 User stages hooks/updatebase.DEFAULT
 0
 User removes hooks/updatebase.DEFAULT.source
-0
-User commits changes with message "rename updatebase.DEFAULT.source to updatebase.DEFAULT"
 1
-User reviews configuration changes using "git diff"
+User commits changes with message "rename updatebase.DEFAULT.source to updatebase.DEFAULT"
 0
-User stages changes in files/etc/fai/nfsroot.conf/SERVERFAI
+User reviews configuration changes using "git diff"
 -1
+User stages changes in files/etc/fai/nfsroot.conf/SERVERFAI
+1
 User commits changes with message "migration from debian 11 too debian 12."
 1
+[GOAL_END_2] User completes multi-package adjustments for Debian 12 migration
+0
+[GOAL_3] User attempts to set up the NFS root filesystem for FAI
+-1
 User changes directory up one level
 0
 User creates FAI nfsroot with debootstrap
-0
-[GOAL_END_2] User completes multi-package adjustments for Debian 12 migration
 1
-[SUCCESS_RESULT] All targeted package configurations updated and committed for Debian 12 migration
+[GOAL_END_3] User completes the set up of FAI nfsroot

@@ -6,7 +6,5 @@
 User lists available tearoff sessions and gets the IP addresses of these sessions
 0
 User exits the local terminal sessions
-0
-[GOAL_END_1] User completes attempt to access remote tearoff session
 1
-[SUCCESS_RESULT] Remote tearoff session access failed due to unreachable host
+[GOAL_END_1] User completes attempt to access remote tearoff session

@@ -30,9 +30,9 @@ def process_file(xml, txt, out):
 
 
 if __name__ == "__main__":
-    xml_dir = "expanded_dataset\model_0\inputs"
-    txt_dir = "expanded_dataset\model_0\outputs"
-    output_dir = "expanded_dataset\model_1\inputs"
+    xml_dir = "data\model_0\inputs"
+    txt_dir = "data\model_0\outputs"
+    output_dir = "data\model_1\inputs"
     os.makedirs(output_dir, exist_ok=True)
 
     # Get all XML files ending with .rec.xml

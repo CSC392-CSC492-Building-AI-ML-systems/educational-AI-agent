@@ -15,6 +15,6 @@ User commits with the message 'ntop has become ntopng.'
 1
 User attempts to stage changes to package_config/SERVERNAGIOS
 0
-[GOAL_END_1] User completes configuration changes but the recording ends before the commit result can be determined
-1
 [SUCCESS_UNKNOWN] Recording ends before the result of SERVERNAGIOS staging is observed
+1
+[GOAL_END_1] User completes configuration changes but the recording ends before the commit result can be determined

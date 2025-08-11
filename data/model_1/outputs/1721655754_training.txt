@@ -8,10 +8,8 @@ User retrieves previous command via reverse search
 User uses scp to copy fai_cd.iso to remote host and enters password for authentication
 1
 User enters a screen session displaying system resource usage
-0
-[GOAL_END_1] User completes image transfer and confirms system status
 1
-[SUCCESS_RESULT] Installation image successfully transferred and system verified
+[GOAL_END_1] User completes image transfer and confirms system status
 0
 [GOAL_2] User attempts to manage virtual machines by modifying volumes and launching with new ISO
 -1
@@ -19,14 +17,16 @@ User enters a screen session displaying system resource usage
 0
 User recalls and edits previous command using reverse search to delete a logical volume
 0
+[SUCCESS_FAILURE] Logical volume deletion succeeded, but system failed to clean up related files
+0
 User creates the virtual machine with image fai_dvd-20240722.iso
+0
+[SUCCESS_RESULT] Virtual machine created with specified ISO after volume modification
 0
 User checks available screen sessions and navigates into interactive session of 3Kingdoms
 -1
 User navigates to VM config directory
 1
 User exits the virtual machine screen session due to times out
-0
-[GOAL_END_2] User completes VM creation using updated disk image
 1
-[SUCCESS_RESULT] Virtual machine created with specified ISO after volume modification
+[GOAL_END_2] User completes VM creation using updated disk image

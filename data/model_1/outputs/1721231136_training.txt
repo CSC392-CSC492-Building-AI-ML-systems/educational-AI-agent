@@ -5,6 +5,6 @@ User reattaches to a detached screen session
 0
 User is disconnected from the remote session due to a timeout
 0
-[GOAL_END_1] User's attempt to resume session is interrupted by timeout
-1
 [SUCCESS_UNKNOWN] Session ends unexpectedly before user could perform any meaningful operations
+1
+[GOAL_END_1] User's attempt to resume session is interrupted by timeout

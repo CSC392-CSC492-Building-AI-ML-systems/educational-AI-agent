@@ -22,7 +22,5 @@ User commits the changes with message 'attempt to make linux show video when boo
 User exits the SSH session
 0
 User exits the local terminal session
-0
-[GOAL_END_1] User completes git-based modification of boot settings on remote host
 1
-[SUCCESS_RESULT] EFI boot configuration changes committed successfully to the remote host repository
+[GOAL_END_1] User completes git-based modification of boot settings on remote host

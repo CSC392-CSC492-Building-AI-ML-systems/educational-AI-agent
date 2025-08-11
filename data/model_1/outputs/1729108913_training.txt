@@ -20,10 +20,8 @@ User navigates back to package_config/ and searches for "arno" in all files
 User moves SERVERWIFIDOG into ../package_config.old
 0
 User stages and commits changes with message "do not install wifidog packages anymore."
-0
-[GOAL_END_1] User completes cleaning of legacy boot and network configurations
 1
-[SUCCESS_RESULT] Legacy boot script updated and obsolete network configuration class removed successfully
+[GOAL_END_1] User completes cleaning of legacy boot and network configurations
 0
 [GOAL_2] User modularizes firewall logic and deploys updated FAI CD image
 -1
@@ -50,7 +48,5 @@ User logs out from 172.16.0.17
 User transfers the fai_cd.iso image via SCP from the FAI server for deployment
 0
 User lists all direc1 contents
-0
-[GOAL_END_2] User finishes firewall modularization and deployment
 1
-[SUCCESS_RESULT] Firewall logic modularized and updated FAI CD image deployed successfully
+[GOAL_END_2] User finishes firewall modularization and deployment

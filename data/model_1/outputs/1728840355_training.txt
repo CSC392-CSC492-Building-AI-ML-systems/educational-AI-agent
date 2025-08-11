@@ -18,10 +18,8 @@ User lists directory contents in FAIBASE/10-misc
 User checks git status
 1
 User stages and commits changes in FAIBASE/10-misc with message "stop enabling SSH x11 forwarding by default."
-0
-[GOAL_END_1] User completes configuration to disable SSH X11 forwarding
 1
-[SUCCESS_RESULT] SSH X11 forwarding disabled via FAIBASE script update and changes committed successfully
+[GOAL_END_1] User completes configuration to disable SSH X11 forwarding
 0
 [GOAL_2] User creates 3D printer configuration class and builds FAI CD
 -1
@@ -35,12 +33,12 @@ User stages and commits changes in PRINTERDEV with message "start add a class fo
 0
 User navigates to /home/fai and runs make-fai-cd.sh to build FAI CD
 0
+[SUCCESS_FAILURE] User-initiated interruption prevents FAI CD from being built successfully
+0
 User logs out from 172.16.0.17
 0
 User copies the fai_cd.iso image from the remote server
 0
 User exits local session
-0
-[GOAL_END_2] User completes 3D printer config and deployment via FAI CD
 1
-[SUCCESS_RESULT] 3D printer configuration class created and deployed successfully via FAI CD
+[GOAL_END_2] User completes 3D printer config and deployment via FAI CD
