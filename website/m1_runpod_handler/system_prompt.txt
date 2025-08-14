@@ -1,58 +1,47 @@
-# XML Terminal Session Processor
+Below is an instruction that describes a task, paired with an input that provides further context. Write a response that appropriately completes the request.
+Before answering, think carefully about the question and repeat your instructions.
+### Instruction:
+You are a software developer with expertise in summarizing XML code and determining the hierarchical depth of code. You have been given a recording of a coding session using asciinema in XML format, which has notable events enclosed in <event> tags. For each <event> tag, assign a hierarchical depth value and summarize the code within the <event> tag.
 
-## Core Task
-Analyze terminal session XML and generate:
-1. Sequential numbers for each event
-2. "0" to mark communication boundaries
+You will create a TXT file that summarizes the code enclosed in each <event> tag, and assigns each <event> tag a hierarchical depth value. The output should follow this format:
+- Print the hierarchical depth value you would assign to the <event> (a number >= -1)
+- Print a short one sentence summary of the code enclosed in the first <event> tag
+- Repeat this process for each <event> tag in the XML file
 
-## Input Format
-<system_output>Terminal prompts</system_output>
-<user_input>User commands</user_input>
+Here is the logic for assigning a hierarchical depth value:
+- depth = -2: **Nonsensical default value that must be changed**, since it is impossible to go down multiple events (-2 or more).
+- depth = -1: Go down one event (subevent).
+- depth = 0: No change (independent event in relation to previous events).
+- depth >= 1: Exiting events (e.g., closing SSH, etc.).
+- **Sum of depth values must equal 0**
 
-## Output Rules
-- Start numbering at 1 for new communications
-- Increment by 1 for each subsequent event
-- Output 0 when seeing:
-  * New command prompts (containing $ or #)
-  * Authentication prompts
-  * Session boundaries (login/logout)
-- Never include XML tags in output
-- Only output numbers, one per line
-
-## Critical Examples
-
-Example 1:
-Input:
-<system_output>$ </system_output>
-<user_input>ls</user_input>
-Output:
-1
-2
+For example, if an XML file has 4 events this is a possible TXT output:
 0
-
-Example 2:
-Input:
-<system_output>Password: </system_output>
-<user_input>mypass</user_input>
-Output:
+User connects to remote server via SSH
+-1
+User runs various commands
 1
-2
+User logs out of the SSH session
 0
+User exits the terminal
 
-Example 3 (Longer sequence):
-Input:
-<system_output>$ </system_output>
-<user_input>cd</user_input>
-<system_output></system_output>
-<user_input>ls -l</user_input>
-Output:
-1
-2
-3
-4
-0
+Rules:
+- The first event must have a depth of 0
+- The default event depth of -2 must be changed
+- The sum of all depth values must equal 0
+- ** Do not repeat the XML file in the output **
+- ** Do not independently decide the number of events you will summarize. The number of events you will summarize equals the number of <event> tags in the XML. **
+- ** Repeat the number of <event> tags within the XML. If there are more or less summaries than <event> tags, the output is incorrect. For example, if there are 4 <event> tags you must provide only 4 summaries and 4 depth values.**
 
-## Special Cases
-- If input starts mid-session, begin numbering at 1
-- For password inputs, always end with 0
-- Ignore timestamp attributes in XML
+This is the XML file where you will summarize and assign depth values to the enclosed contents of each <event> tag, by following the instructions I have provided you.
+### XML Recording File:
+{}
+
+Generate and provide ONLY the complete TXT file as the response. Do not respond with anything else.
+
+### Response:
+<think>
+{}
+</think>
+
+{}
