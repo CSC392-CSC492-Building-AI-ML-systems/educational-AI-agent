@@ -1,110 +1,210 @@
 import os
 import shutil
-import re 
 from transformers import AutoModelForCausalLM, AutoTokenizer, TextGenerationPipeline, TextStreamer
 import runpod
 
-
-def log_disk_usage():
-    total, used, free = shutil.disk_usage("/")
-    print(f"Disk - Total: {total//1024**3}GB, Used: {used//1024**3}GB, Free: {free//1024**3}GB")
-
 os.system("df -h")  # Display disk space information
-log_disk_usage()  
 
 MODEL_ID = "deepseek-ai/DeepSeek-R1-Distill-Llama-8B"
 
 def load_system_prompt():
-    """Load and validate system prompt"""
-    with open('system_prompt.txt', 'r') as f:
-        content = f.read().strip()
-    return content
+    """Load system prompt from file with fallback"""
+    try:
+        with open('system_prompt.txt', 'r', encoding='utf-8') as f:
+            prompt = f.read().strip()
+            if prompt:
+                print("System prompt loaded from system_prompt.txt")
+                return prompt
+            else:
+                print("system_prompt.txt is empty, using fallback")
+    except FileNotFoundError:
+        print("system_prompt.txt not found, using fallback")
+    except Exception as e:
+        print(f"Error reading system_prompt.txt: {e}, using fallback")
+    
+    # Fallback system prompt
+    fallback_prompt = """
+    RESPOND TO ANY INPUT WITH "PINEAPPLE" IN ALL CAPS.
+    DO NOT RESPOND TO ANYTHING ELSE.
+    IF YOU DO NOT UNDERSTAND THE INPUT, RESPOND WITH "PINEAPPLE".
+    """
 
+    print("Using fallback system prompt")
+    return fallback_prompt
+
+# Load system prompt at startup
 SYSTEM_PROMPT = load_system_prompt()
 
-def format_prompt(user_input):
-    """Format with system prompt using clear delimiters"""
-    return f"{SYSTEM_PROMPT}\n\n## Current Input\n{user_input}\n\n## Output\n"
+def format_prompt_with_system(prompt, system_prompt=SYSTEM_PROMPT):
+    """Format user prompt with system prompt using official DeepSeek R1 format"""
+    
+    # Use the official DeepSeek R1 format
+    formatted_prompt=f"""<｜begin_of_sentence｜><｜User｜>{system_prompt}<data>{prompt}</data><｜Assistant｜><think>
+"""
+    print(f"Using official DeepSeek R1 format")
+    return formatted_prompt
 
-# Enhanced output processing
-def process_output(raw_text):
-    """Extract and validate numerical sequence"""
-    pass
+def extract_final_answer(text):
+    """Extract the final answer from DeepSeek R1 reasoning output"""
+    import re
+    
+    # DeepSeek R1 format: thinking comes first, answer after </think>
+    if '</think>' in text:
+        parts = text.split('</think>')
+        if len(parts) > 1:
+            final_answer = parts[-1].strip()
+            return final_answer
+    
+    # Fallback for cases without </think>
+    lines = text.strip().split('\n')
+    non_empty_lines = [line.strip() for line in lines if line.strip()]
+    
+    reasoning_indicators = [
+        'okay, so', 'first,', 'i need', 'i should', 'let me', 'hmm,', 
+        'i remember', 'maybe i can', 'i think that', 'in summary'
+    ]
+    
+    # Look for lines that don't seem like reasoning
+    for line in reversed(non_empty_lines):
+        if not any(indicator in line.lower() for indicator in reasoning_indicators):
+            if len(line) < 100:  # Short answers more likely to be final
+                return line
+    
+    # Fallback to last line or original text
+    if non_empty_lines:
+        return non_empty_lines[-1]
+    
+    return text.strip()
 
-# NEW: Optimized model loading
+def verify_cache_setup():
+    """Verify that cache directories are properly set up"""
+    print("=== Cache Setup Verification ===")
+    cache_vars = ['HF_HOME', 'TRANSFORMERS_CACHE', 'HF_HUB_CACHE', 'HF_DATASETS_CACHE']
+    
+    for var in cache_vars:
+        value = os.environ.get(var, 'Not set')
+        print(f"{var:20}: {value}")
+        if value != 'Not set' and not os.path.exists(value):
+            print(f"  Warning: Directory {value} does not exist")
+            os.makedirs(value, exist_ok=True)
+            print(f"  Created directory: {value}")
+    print("=================================")
+
+def check_disk_space():
+    """Check available disk space in key locations"""
+    locations = ["/", "/runpod-volume", "/tmp"]
+    
+    print("=== Disk Space Check ===")
+    for location in locations:
+        if os.path.exists(location):
+            total, used, free = shutil.disk_usage(location)
+            print(f"{location:15} - Total: {total//1024**3:3d}GB, Used: {used//1024**3:3d}GB, Free: {free//1024**3:3d}GB")
+        else:
+            print(f"{location:15} - Does not exist")
+    print("========================")
+
 def load_model():
-    """Load model with better error handling"""
-    try:
-        print("Loading tokenizer...")
-        tokenizer = AutoTokenizer.from_pretrained(
-            MODEL_ID,
-            trust_remote_code=True
-        )
-        
-        print("Loading model...")
-        model = AutoModelForCausalLM.from_pretrained(
-            MODEL_ID,
-            device_map="auto",
-            torch_dtype="auto",
-            low_cpu_mem_usage=True
-        )
-        
-        return model, tokenizer
-    except Exception as e:
-        log_disk_usage()
-        raise RuntimeError(f"Model loading failed: {str(e)}")
-
-# Load model
-try:
-    model, tokenizer = load_model()
-    pipe = TextGenerationPipeline(
-        model=model,
-        tokenizer=tokenizer,
-        device=0 if torch.cuda.is_available() else -1
+    """Load model and tokenizer"""
+    check_disk_space()
+    verify_cache_setup()
+    
+    print(f"Loading model: {MODEL_ID}")
+    
+    # Load tokenizer
+    print("Loading tokenizer...")
+    tokenizer = AutoTokenizer.from_pretrained(
+        MODEL_ID,
+        trust_remote_code=True,
+        use_fast=True
     )
+    
+    # Load model
+    print("Loading model...")
+    model = AutoModelForCausalLM.from_pretrained(
+        MODEL_ID,
+        trust_remote_code=True,
+        low_cpu_mem_usage=True,
+        device_map="auto",
+        torch_dtype="auto"
+    )
+    
+    print("Model loaded successfully!")
+    
+    # Display loaded system prompt
+    print("=== System Prompt Configuration ===")
+    print(f"System prompt length: {len(SYSTEM_PROMPT)} characters")
+    print("===================================")
+    
+    # Final disk space check
+    print("=== Post-Loading Disk Space ===")
+    check_disk_space()
+    
+    return model, tokenizer
+
+# Load model and tokenizer
+try:
+    print("Starting model loading process...")
+    model, tokenizer = load_model()
+    
+    # Create inference pipeline
+    print("Creating inference pipeline...")
+    pipe = TextGenerationPipeline(
+        model=model, 
+        tokenizer=tokenizer,
+        return_full_text=False,  # Only return generated text, not the prompt
+        clean_up_tokenization_spaces=True
+    )
+    print("Pipeline ready!")
+    
 except Exception as e:
-    print(f"Initialization failed: {e}")
-    exit(1)
+    print(f"Error during model loading: {str(e)}")
+    print("Final disk space check:")
+    check_disk_space()
+    raise
 
 def handler(job):
-    """Handle inference requests"""
+    """Handle inference requests with system prompt support"""
+    job_input = job.get("input", {})
+    prompt = job_input.get("prompt", "")
+    max_new_tokens = job_input.get("max_new_tokens", 128000)
+    temperature = job_input.get("temperature", 0.6)
+    do_sample = job_input.get("do_sample", True)
+    
+    # Optional: Allow custom system prompt per request
+    custom_system_prompt = job_input.get("system_prompt", None)
+    use_system_prompt = job_input.get("use_system_prompt", True)
+
+    if not prompt:
+        return {"error": "No prompt provided."}
+
     try:
-        job_input = job.get("input", {})
-        user_prompt = job_input.get("prompt", "")
+        # Format prompt with system prompt if enabled
+        if use_system_prompt:
+            system_to_use = custom_system_prompt if custom_system_prompt else SYSTEM_PROMPT
+            formatted_prompt = format_prompt_with_system(prompt, system_to_use)
+        else:
+            formatted_prompt = prompt
+
+        streamer = TextStreamer(tokenizer, skip_prompt=False, skip_special_tokens=True)
         
-        if not user_prompt:
-            return {"error": "Empty input"}
-        
-        # Generation parameters optimized for numbering task
-        generation_params = {
-            "max_new_tokens": 100,  # Reduced since we only need numbers
-            "temperature": 0.3,     # Balanced between creativity and determinism
-            "top_p": 0.9,
-            "top_k": 40,
-            "repetition_penalty": 1.2,
-            "do_sample": True,
-            "num_beams": 2,        # NEW: Added beam search
-            "early_stopping": True  # NEW: Stop when logical sequence completes
-        }
-        
-        # Format prompt (NEW: uses simplified formatting)
-        formatted_prompt = format_prompt(user_prompt)
-        
-        # Generate output
         output = pipe(
             formatted_prompt,
-            return_full_text=False,
-            **generation_params
+            streamer=streamer,
+            max_new_tokens=max_new_tokens, 
+            temperature=temperature,
+            do_sample=do_sample,
+            pad_token_id=tokenizer.eos_token_id
         )
         
-        # Process output
         raw_output = output[0]["generated_text"]
-        processed_output = process_output(raw_output)
+        print(f"Raw output: {raw_output}")
+        
+        # # Extract final answer from reasoning output
+        # final_answer = extract_final_answer(raw_output)
         
         return {"output": raw_output}
-    
     except Exception as e:
-        return {"error": str(e)}
+        return {"error": f"Generation failed: {str(e)}"}
 
 if __name__ == "__main__":
     runpod.serverless.start({"handler": handler})
