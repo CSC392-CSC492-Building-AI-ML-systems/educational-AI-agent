@@ -2,7 +2,7 @@
 // To start, assume orchastrator is going to pass in the first input (over websocket)
 
 
-
+require('dotenv').config();
 const WebSocket = require('ws');
 const { spawn } = require('child_process');
 const path = require('path');
@@ -27,6 +27,7 @@ wss.on('connection', ws => {
 
 	// handle incoming messages from the client
 	ws.on('message', message => {
+		console.log(`Received message from client: ${message}`);
 		// write the message to the parser0
 		if (pythonProcess.stdin.writable) {
 			pythonProcess.stdin.write(message + '\n');
@@ -35,23 +36,25 @@ wss.on('connection', ws => {
 
 
 	pythonProcess.stdout.on('data', async output => {
+    console.log("Python stdout:", output.toString());
 
-		// send parsed output to Runpod over HTTP
 
-		const runpod = runpodSdk(YOUR_API_KEY);
-		const endpoint = runpod.endpoint(ENDPOINT_ID);
-		const result = await endpoint.runSync({
-			"input": {
-				"prompt": output.toString().trim(),
-			},
-		});
+	// 	// send parsed output to Runpod over HTTP
 
-		// need to send the result back to the client
-		if (ws.readyState === WebSocket.OPEN) {
-			ws.send(JSON.stringify(result));
-		}	
-		// Log the result
-		console.log(result);
+	// 	const runpod = runpodSdk(YOUR_API_KEY);
+	// 	const endpoint = runpod.endpoint(ENDPOINT_ID);
+	// 	const result = await endpoint.runSync({
+	// 		"input": {
+	// 			"prompt": output.toString().trim(),
+	// 		},
+	// 	});
+
+	// 	// need to send the result back to the client
+	// 	if (ws.readyState === WebSocket.OPEN) {
+	// 		ws.send(JSON.stringify(result));
+	// 	}	
+	// 	// Log the result
+	// 	console.log(result);
 	});
 
 
@@ -61,7 +64,11 @@ wss.on('connection', ws => {
     });
 
 	ws.on('close', () => {
-		pythonProcess.kill();
+		// signal EOF to Python instead of killing immediately
+		if (pythonProcess.stdin.writable) {
+			pythonProcess.stdin.end();  // lets Python finish and print </recording>
+		}
 		console.log('Client disconnected');
 	});
+
 });

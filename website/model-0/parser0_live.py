@@ -22,32 +22,25 @@ def remove_invalid_xml_chars(s):
     """
     return re.sub(r'[\x00-\x08\x0B\x0C\x0E-\x1F]', '', s)
 
-def parse_recording(file_path, strip_annotations=False):
+def parse_recording_from_string(text, strip_annotations=False):
     """
-    Parse an asciinema recording file and return an XML ElementTree root.
-    
-    The file is expected to have a JSON header on the first non-empty line,
-    and then one JSON array per line for each terminal event.
-    
-    :param file_path: Path to the asciinema file.
-    :param strip_annotations: If True, do not include annotations.
-    :return: XML Element (root) of the generated XML tree.
+    Parse an asciinema recording from a string (instead of file).
     """
-    with open(file_path, 'r', encoding='utf-8') as f:
-        # Read all non-empty lines.
-        lines = [line for line in f if line.strip()]
-    
+    lines = [line for line in text.splitlines() if line.strip()]
+    if not lines:
+        raise ValueError("No input provided")
+
     try:
         header = json.loads(lines[0])
     except Exception as e:
         raise ValueError("Error parsing JSON header: " + str(e))
-    
+
     # Create the XML root element and add header attributes if available.
     root = ET.Element("recording")
     for key in ["version", "width", "height", "timestamp"]:
         if key in header:
             root.set(key, str(header[key]))
-    
+
     # Add annotations (if any) unless we are stripping them.
     if not strip_annotations and "librecode_annotations" in header:
         annotations_data = header["librecode_annotations"]
@@ -66,21 +59,17 @@ def parse_recording(file_path, strip_annotations=False):
                             ann_elem.set("end", str(ann["end"]))
                         # Remove any invalid XML characters from the annotation text.
                         ann_elem.text = remove_invalid_xml_chars(ann.get("text", ""))
-    
+
     # Process each terminal event (each subsequent line).
-    # Each event is expected to be a JSON array: [timestamp, type, text]
     for line in lines[1:]:
         try:
             event = json.loads(line)
-        except Exception as e:
-            print("Skipping line (could not parse JSON):", line)
+        except Exception:
             continue
-        
         if not isinstance(event, list) or len(event) < 3:
             continue
 
         timestamp, event_type, content = event[0], event[1], event[2]
-        # Depending on the event type, create a corresponding XML element.
         if event_type == "i":
             elem = ET.SubElement(root, "user_input")
             elem.set("timestamp", str(timestamp))
@@ -89,9 +78,6 @@ def parse_recording(file_path, strip_annotations=False):
             elem = ET.SubElement(root, "system_output")
             elem.set("timestamp", str(timestamp))
             elem.text = remove_invalid_xml_chars(content)
-        else:
-            # Unknown event type; skip.
-            continue
 
     return root
 
@@ -104,35 +90,56 @@ def prettify_xml(elem):
     return reparsed.toprettyxml(indent="  ")
 
 def main():
+    header_printed = False
+    print("<!-- Starting live recording session -->", file=sys.stderr)
 
-	# WILL NEED TO GET INPUT FORM STDIN AND OUTPUT TO STDOUT
-
-	input_data = sys.stdin.read()
-	# output_data = parse_recording(input_data)
-	# sys.stdout.write(output_data)
-
-	#  need to figure out when the input ends
-
-    # Set to True if you want to remove annotations from the output.
-    strip_annotations = True
-
-    # Parse the recording and handle errors.
     try:
-        xml_root = parse_recording(input_data, strip_annotations=strip_annotations)
-    except Exception as e: 
-        print("Error parsing recording:", e)
-        return
+        for line in sys.stdin:
+            line = line.strip()
+            if not line:
+                continue
 
-    # Generate a pretty-printed XML string.
-    pretty_xml = prettify_xml(xml_root)
+            try:
+                obj = json.loads(line)
+            except Exception as e:
+                print(f"<!-- Error parsing JSON: {e} -->", file=sys.stderr)
+                continue
 
-    # Ensure the output directory exists (in case it doesn't).
-    os.makedirs(output_dir, exist_ok=True)
+            # First line = header
+            if isinstance(obj, dict) and not header_printed:
+                version = obj.get("version", "2")
+                width = obj.get("width", 80)
+                height = obj.get("height", 24)
+                ts = obj.get("timestamp", 0)
+                print(f'<?xml version="1.0" ?>')
+                print(f'<recording version="{version}" width="{width}" height="{height}" timestamp="{ts}">')
+                header_printed = True
+                sys.stdout.flush()
+                continue
 
-    # Write the XML to the output file.
-    with open(output_file, "w", encoding="utf-8") as out_f:
-        out_f.write(pretty_xml)
-    print(f"XML written to {output_file}")
+            # Later lines = events
+            if isinstance(obj, list) and len(obj) == 3:
+                t, typ, data = obj
+                data = remove_invalid_xml_chars(data)
+
+                if typ == "o":
+                    print(f'  <system_output timestamp="{t}">{data}</system_output>')
+                elif typ == "i":
+                    print(f'  <user_input timestamp="{t}">{data}</user_input>')
+                else:
+                    print(f'  <!-- Unknown type {typ} -->')
+
+                sys.stdout.flush()
+
+        # When stdin closes → finish recording
+        if header_printed:
+            print("</recording>")
+            sys.stdout.flush()
+
+    except KeyboardInterrupt:
+        if header_printed:
+            print("</recording>")
+            sys.stdout.flush()
 
 if __name__ == "__main__":
     main()

@@ -1,120 +1,77 @@
+# Goal
+Your goal is to use a set of higher-level-communications (HLCs) and one final possibly incomplete HLC to assign a group to the last event, by determining whether it should be considered to be a part of the final HLC.
+
 # Definitions
-A higher-level communication (HLC) is a series of related events, representing a single idea, concept, or datum.
- * An HLC starts when the next, higher `group` value is assigned.
- * The final HLC in the data to be evaluated may or may not be complete; determining this may be required to complete your task.
- * When an HLC is complete, it is followed by the first event of the next HLC, with the next `group`.
+A higher-level communication (HLC) is a series of related events, representing a single idea, concept, or value.
+ * The first HLC starts at the beginning of the dataset you are evaluating.
+ * Events in an HLC are contiguous, no event from any other HLC will occur between the first and last event of a given HLC.
+ * HLCs are complete only when the content of the HLC represents an idea such as one of the examples given; You cannot reason about HLC membership without examining the content.
+ * Each HLC will have a unique `group` assigned.
 
 Examples of HLCs include:
- * A command
- * A response to a command
- * A system message
+ * A Bash shell prompt
+ * A Bash shell command
+ * A response to a shell command
  * A complete keyboard shortcut
- * An escape sequence that redraws a menu item
  * A series of backspaces, deletions, navigations, or additions causing a typo
  * A series of backspaces, deletions, navigations, or additions correcting a typo
 
-An event can either be `<user_input>` (representing user keyboard presses or cut-and-paste buffer pastes) or `<system_output>` (representing responses from software).
- * Events include a `timestamp` (in seconds) that indicates how much time has passed since the session began.
- * Events that are part of the same HLC will each have the same `group`.
+An event captures communication in a terminal session.
+ * Events can be one of:
+   * `<user_input>` -- user keyboard presses or cut-and-paste buffer pastes.
+   * `<system_output>` -- responses from software.
+ * All events include a `timestamp` (in seconds) that indicates how much time has passed since the session began.
+ * Events are always provided in non-decreasing timestamp order; ties are in-order in the dataset.
+ * Events that are part of the same HLC will have the same `group`, with the exception of the final HLC, which may need many events added to it to become a complete HLC.
+ * Only the last event will have a `sortme` attribute; there will only be one event with a `sortme` attribute in the dataset.
 
-Each `group` is identified by an integer.
- * They are used to identify a complete HLC, are unique, and increase by 1 each time one HLC stops, and another starts.
- * They can be used to identify events belonging to an HLC.
+Each `group` is identified by 0, or a positive integer.
+ * They are used to identify a HLC, are unique, contiguous, and increase by 1 in the dataset each time one HLC stops, and another starts.
+
+The last event is the event immediately prior to the dataset's end:
+ * The last event has a `sortme` attribute set to `True`.
+ * The last event has no group assigned. This implies nothing about its HLC membership.
+ * The last event has the highest `timestamp` in the dataset.
+ * The event before the last event is always a part of the final HLC.
+
+The final HLC is the last HLC in the dataset.
+ * The final HLC may or may not be complete.
+ * The final HLC always contains the event prior to the last event.
+ * The last event may or may not be a part of the final HLC.
 
 # Instructions:
-Your task is to recognise HLCs, and determine whether the final event you are given is a part of the prior HLC, or begins a new one.
-After these instructions, some examples, and some notes , you will be given data to be evaluated which will contain a series of terminal session events, in chronological order, with all but the last event having an assigned `group`.
-At the end of the data to be evaluated will be two events. The former of the two is the last part of the prior HLC (with a `group`), and the latter event is the one you will evaluate (with no `group` assigned).
-Your task is to determine whether the final ungrouped event belongs to the same HLC as the one before it, or starts a new one.
+You will be given a dataset to be evaluated within a pair of `data` tags which will contain a series of terminal session events. At the end of the dataset, you can find the final HLC, and the last event.
+
+Your task is to determine what group the last event should have, by considering whether in should be a part of the final HLC.
 
 ## How to Respond:
-Respond first with a single line of English text, explaining why you came to the answer you did, followed by a line beginning with `**Answer:**`, with your one-word answer on it.
- * If the final ungrouped event is an echo of prior user input, it probably belongs to the same group.
- * If it presents a new prompt/state (e.g., `Password:` or a fresh shell prompt), it probably begins a new HLC..
-Ensure your one-word answer is one of the following:
- * Output the integer `group` of the previous event — If the final event belongs to the same HLC as the event before it.
- * `NEW` — If it begins a new HLC.
 
-# Worked Examples:
+Respond with the following two items:
+ * An explanation in English less than or equal to 200 characters in length on why you believe the last event should be considered to be a part of the final HLC, or why it should not.
+   * Do not add code blocks, or other multi-line formatting.
+   * If you determine the last event should be considered a part of the final HLC, state what type of HLC you believe the final HLC to be, and whether you believe adding this event to the HLC would make it complete.
+ * An answer, either:
+   * The integer `group` of the final HLC -- If you mean to imply that the last event should be joined to the final HLC
+   * `NEW` -- If you mean to imply that an HLC should be assigned to the next integer after the current final HLC's `group`, and you mean to imply the last event should be in that new `group`
 
-Example 1:
-```xml
-<system_output timestamp="0.096022" group="0">[?2004h]0;demo@boxtop: ~demo@boxtop:~$ </system_output>
-<user_input timestamp="9.163614" group="1">s</user_input>
-<system_output timestamp="9.164051" group="1">s</system_output>
-<user_input timestamp="9.365744" group="1">s</user_input>
-<system_output timestamp="9.366263" group="1">s</system_output>
-<user_input timestamp="9.589844" group="1">h</user_input>
-<system_output timestamp="9.59026" group="1">h</system_output>
-<user_input timestamp="9.708352" group="1"> </user_input>
-<system_output timestamp="9.708844" group="1"> </system_output>
-<user_input timestamp="10.1118" group="1">1</user_input>
-<system_output timestamp="10.112236" group="1">1</system_output>
-<user_input timestamp="10.270878" group="1">0</user_input>
-<system_output timestamp="10.271223" group="1">0</system_output>
-<user_input timestamp="10.471565" group="1">.</user_input>
-<system_output timestamp="10.471898" group="1">.</system_output>
-<user_input timestamp="10.594981" group="1">0</user_input>
-<system_output timestamp="10.595383" group="1">0</system_output>
-<user_input timestamp="10.757499" group="1">.</user_input>
-<system_output timestamp="10.757882" group="1">.</system_output>
-<user_input timestamp="11.140897" group="1">7</user_input>
-<system_output timestamp="11.14119" group="1">7</system_output>
-<user_input timestamp="11.603706" group="1">.</user_input>
-<system_output timestamp="11.604019" group="1">.</system_output>
-<user_input timestamp="12.330584" group="1">1</user_input>
-<system_output timestamp="12.331455" group="1">1</system_output>
-<user_input timestamp="12.632256" group="1">3</user_input>
-<system_output timestamp="12.633323" group="1">3</system_output>
-<user_input timestamp="13.446626" group="1">8</user_input>
-<system_output timestamp="13.447562" group="1">8</system_output>
-<!-- Final two events: The first one has a group, the last is ungrouped, and needs its grouping determined. -->
-<user_input timestamp="13.448001" group="1">\n</user_input>
-<system_output timestamp="13.449123">\n</system_output>
+Use the following template to format your response:
+<!-- 200 or fewer characters in English here -->
+Answer: <!-- Integer or `NEW` here -->
+
+### Example Responses
+```
+The last Event belongs to the final HLC, because it continues the input of the `ssh` command at the Bash prompt.
+Answer: 1
 ```
 
-Example 2:
-```xml
-<system_output timestamp="0.096022" group="0">[?2004h]0;demo@boxtop: ~demo@boxtop:~$ </system_output>
-<user_input timestamp="9.163614" group="1">s</user_input>
-<system_output timestamp="9.164051" group="1">s</system_output>
-<user_input timestamp="9.365744" group="1">s</user_input>
-<system_output timestamp="9.366263" group="1">s</system_output>
-<user_input timestamp="9.589844" group="1">h</user_input>
-<system_output timestamp="9.59026" group="1">h</system_output>
-<user_input timestamp="9.708352" group="1"> </user_input>
-<system_output timestamp="9.708844" group="1"> </system_output>
-<user_input timestamp="10.1118" group="1">1</user_input>
-<system_output timestamp="10.112236" group="1">1</system_output>
-<user_input timestamp="10.270878" group="1">0</user_input>
-<system_output timestamp="10.271223" group="1">0</system_output>
-<user_input timestamp="10.471565" group="1">.</user_input>
-<system_output timestamp="10.471898" group="1">.</system_output>
-<user_input timestamp="10.594981" group="1">0</user_input>
-<system_output timestamp="10.595383" group="1">0</system_output>
-<user_input timestamp="10.757499" group="1">.</user_input>
-<system_output timestamp="10.757882" group="1">.</system_output>
-<user_input timestamp="11.140897" group="1">7</user_input>
-<system_output timestamp="11.14119" group="1">7</system_output>
-<user_input timestamp="11.603706" group="1">.</user_input>
-<system_output timestamp="11.604019" group="1">.</system_output>
-<user_input timestamp="12.330584" group="1">1</user_input>
-<system_output timestamp="12.331455" group="1">1</system_output>
-<user_input timestamp="12.632256" group="1">3</user_input>
-<system_output timestamp="12.633323" group="1">3</system_output>
-<user_input timestamp="13.446626" group="1">8</user_input>
-<system_output timestamp="13.447562" group="1">8</system_output>
-<user_input timestamp="13.448001" group="1">\n</user_input>
-<!-- Final two events: The first one has a group, the last is ungrouped, and needs its grouping determined. -->
-<system_output timestamp="13.449123" group="1">\n</system_output>
-<system_output timestamp="13.451242">Password:</system_output>
 ```
-
- * When given a sequence like `Example 1`, you should recognize that `ssh` likely began a Linux command targeting `10.0.7.138`, And the newline at timestamp `13.448001` is the user hitting Enter, telling the system to execute their command. Knowing this, you can infer that correct response to the final event (in this case, a `system_output` of a newline) is `1`, since it's the system echo of the user's newline.
- * When given a sequence like `Example 2`, you should recognize that `ssh` likely began a Linux command targeting `10.0.7.138`, and the newline at timestamp `13.449123` is the system echoing back the user's newline. Knowing this, you can infer that correct response to the final event (in this case, a `system_output`) is `NEW`, since its content starts a new HLC (likely, a password prompt), separate from the SSH command.
+The last Event belongs to a new HLC, because it contains the first characters of the response to the `ssh` command the user entered at the Bash prompt.
+Answer: NEW
+```
 
 # Notes:
-Note carefully that to solve both of our examples, we had to reason from the content in the events and their groupings to reach this conclusion; as the last event has no `group`, an examination of `group`s alone will not succeed at completing this task.
-Do not rely only on `group`s; use content and interaction flow. Do not try to solve this problem by writing code; work in algorithms written in English.
+ * Do not rely only on `group`s; use content and interaction flow. Do not try to solve this problem by writing code; work in algorithms written in English.
+ * Most of the time, the dataset will end in an incomplete HLC, even if you were to add the last element to the final HLC; this is normal, as we are processing terminal input as it arrives, not a complete terminal session.
+ * In a terminal session, if the remote software wants the user to see what they are typing, it has to repeat the characters back to the user. Echoed characters are common, and usually are a part of the same HLC.
 
-# Data to be evaluated:
+# Dataset to be evaluated:

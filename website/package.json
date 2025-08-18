@@ -7,13 +7,19 @@
   "type": "commonjs",
   "main": "main.js",
   "scripts": {
-    "start": "concurrently \"node tty.js\" \"live-server . --port=3000 --open=/index.html\""
+    "start": "concurrently \"node tty.js\" \"live-server . --port=3000 --open=/index.html\"",
+    "test": "jest --verbose --runInBand"
   },
   "dependencies": {
     "@xterm/xterm": "^5.5.0",
     "concurrently": "^9.1.2",
+    "dotenv": "^17.2.1",
     "live-server": "^1.2.2",
     "node-pty": "^1.0.0",
+    "runpod-sdk": "^1.1.2",
     "ws": "^8.18.2"
+  },
+  "devDependencies": {
+    "jest": "^30.0.5"
   }
 }
