@@ -1,5 +1,30 @@
 
 # ======== Helpers ========
+def _gt_segments(gt_file):
+    """
+    Read ground truth segments from a file.
+    
+    :param gt_file: Path to the ground truth file.
+    :return: List of segments.
+    """
+    segments = []
+    current = []
+
+    with open(gt_file, "r") as f:
+        for line in f:
+            n = int(line.strip())
+            if n == 0:
+                if current:
+                    segments.append(current)
+                    current = []
+            else:
+                current.append(n)
+    return segments
+
+def _segments_to_boundaries(segments):
+    starts = sorted(min(seg) for seg in segments if seg)
+    return starts[1:] if len(starts) >= 2 else []
+
 def _to_sets(segments):
     return [set(seg) for seg in segments]
 
@@ -17,8 +42,7 @@ def _greedy_match(pred, gt, k=0):
     Greedily match predicted boundaries to ground truth boundaries with tolerance k.
     Each ground truth boundary can be matched at most once.
 
-    Returns:
-        matches: number of matched boundaries.
+    :return: number of matched boundaries.
     """
     gt_used = [False] * len(gt)
     matches = 0
@@ -33,7 +57,7 @@ def _greedy_match(pred, gt, k=0):
                 continue
             dist = abs(p - g)
             if dist <= k:  # tolerance
-                if dist < best_dist or best_dist is None:
+                if best_dist is None or dist < best_dist:
                     best_dist = dist
                     best_i = i
         if best_i >= 0:
@@ -42,13 +66,12 @@ def _greedy_match(pred, gt, k=0):
     return matches
 
 # ======== Segmentation-Level Metrics ========
-def pred2gt(pred_segments, gt_segments):
+def _pred2gt(pred_segments, gt_segments):
     """
     For each predicted segment, find the best-matching ground truth segment by IoU over line sets.
     IoU is weighted by predicted segment size / total predicted lines.
 
-    Returns:
-        score: a float in [0, 1] representing the weighted match quality from prediction to ground truth.
+    :return: a float in [0, 1] representing the weighted match quality from prediction to ground truth.
     """
     if not gt_segments and not pred_segments:
         return 1.0
@@ -67,13 +90,12 @@ def pred2gt(pred_segments, gt_segments):
         score += best * (len(p) / total_pred)
     return score
 
-def gt2pred(pred_segments, gt_segments):
+def _gt2pred(pred_segments, gt_segments):
     """
     For each ground truth segment, find the best-matching predicted segment by IoU over line sets.
     IoU is weighted by ground truth segment size / total ground truth lines.
 
-    Returns:
-        score: a float in [0, 1] representing the weighted match quality from ground truth to prediction.
+    :return: a float in [0, 1] representing the weighted match quality from ground truth to prediction.
     """
     if not gt_segments and not pred_segments:
         return 1.0
@@ -96,11 +118,10 @@ def segmentation_similarity(pred_segments, gt_segments):
     """
     Compute a segmentation similarity that penalizes over/under segmentation.
 
-    Returns:
-        a float in [0, 1] representing the segmentation similarity. Higher is better.
+    :return: a float in [0, 1] representing the segmentation similarity. Higher is better.
     """
-    p2g = pred2gt(pred_segments, gt_segments)
-    g2p = gt2pred(pred_segments, gt_segments)
+    p2g = _pred2gt(pred_segments, gt_segments)
+    g2p = _gt2pred(pred_segments, gt_segments)
     return 0.5 * (p2g + g2p)
 
 def segmentation_rate(pred_segments, gt_segments):
@@ -130,3 +151,54 @@ def boundary_score(pred_boundaries, gt_boundaries, k=0):
     f1 = 2 * precision * recall / (precision + recall) if (precision + recall) > 0 else 0.0
 
     return {"Precision": precision, "Recall": recall, "F1": f1}
+
+# ======== Generate Final Report ========
+def generate_final_report(
+        pred_segments, 
+        gt_file, 
+        tolerance=0, 
+        score_weights={  # can change these weights to adjust the final score
+        "seg_similarity": 0.6,
+        "boundary_f1": 0.4,
+        "over_penalty": 0.25,
+        "under_penalty": 0.25,
+    }):
+    """
+    Generate a final report combining all metrics.
+    """
+    gt_segments = _gt_segments(gt_file)
+
+    seg_sim = segmentation_similarity(pred_segments, gt_segments)
+    rate = segmentation_rate(pred_segments, gt_segments)  # {"over_rate": x, "under_rate": y}
+
+    pred_b = _segments_to_boundaries(pred_segments)
+    gt_b = _segments_to_boundaries(gt_segments)
+    bnd_score = boundary_score(pred_b, gt_b, k=tolerance)     # {"Precision","Recall","F1"}
+
+    positive = score_weights["seg_similarity"] * seg_sim + score_weights["boundary_f1"] * bnd_score["F1"]
+    penalty = score_weights["over_penalty"] * rate["over_rate"] + score_weights["under_penalty"] * rate["under_rate"]
+    composite = positive * max(0.0, 1.0 - penalty)
+    composite = max(0.0, min(1.0, composite))
+
+    report = {
+        "counts": {
+            "pred_segments": len(pred_segments),
+            "gt_segments": len(gt_segments),
+            "pred_boundaries": len(pred_b),
+            "gt_boundaries": len(gt_b),
+        },
+        "group": {
+            "similarity": seg_sim,
+            "over_rate": rate["over_rate"],
+            "under_rate": rate["under_rate"],
+        },
+        "boundary": {
+            "tolerance": tolerance,
+            "Precision": bnd_score["Precision"],
+            "Recall": bnd_score["Recall"],
+            "F1": bnd_score["F1"],
+        },
+        "weights": score_weights,
+        "composite_score": composite,
+    }
+    return report
