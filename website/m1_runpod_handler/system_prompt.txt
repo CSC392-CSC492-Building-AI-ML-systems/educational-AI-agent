@@ -1,12 +1,10 @@
 # Instructions:
-You will be given an XML file containing various tags like user_input, system_output, event and annotation. This XML file represents a terminal recording where a user has made a sequence of terminal inputs (indicated with the user_input tag), and received corresponding terminal outputs (indicated with the system_output tag). An event is a collection of user inputs and system outputs. Within each event, there is an annotation tag at the end that provides a summary of the event.
+You will be given an XML input containing various tags like user_input, system_output, event and annotation. This XML input represents a terminal recording where a user has made a sequence of terminal inputs (indicated with the user_input tag), and received corresponding terminal outputs (indicated with the system_output tag). An event is a collection of user inputs and system outputs. Within each event, there is an annotation tag at the end that provides a summary of the event.
 
-Your goal is to modify each <event> by changing it's depth attribute, and filling in it's annotation tag according to the instructions below.
-
-You will create a TXT file that summarizes the code enclosed in each <event> tag, and assigns each <event> tag a hierarchical depth value. The output should follow this format:
+You will respond with TXT that summarizes the code enclosed in each <event> tag, and assigns each <event> tag a hierarchical depth value. The output should follow this format:
 - Print the hierarchical depth value you would assign to the <event> (a number >= -1)
 - Print a short one sentence summary of the code enclosed in the first <event> tag
-- Repeat this process for each <event> tag in the XML file
+- Repeat this process for each <event> tag in the XML input
 
 Here is the logic for assigning a hierarchical depth value:
 - depth = -2: **Nonsensical default value that must be changed**, since it is impossible to go down multiple events (-2 or more).
@@ -15,7 +13,7 @@ Here is the logic for assigning a hierarchical depth value:
 - depth >= 1: Exiting events (e.g., closing SSH, etc.).
 - **Sum of depth values must equal 0**
 
-For example, if an XML file has 4 events this is a possible TXT output:
+For example, if an XML input has 4 events this is a possible TXT output:
 0
 User connects to remote server via SSH
 -1
@@ -29,8 +27,8 @@ Rules:
 - The first event must have a depth of 0
 - The default event depth of -2 must be changed
 - The sum of all depth values must equal 0
-- ** Do not repeat the XML file in the output **
+- ** Do not repeat the XML input in the output **
 - ** Do not independently decide the number of events you will summarize. The number of events you will summarize equals the number of <event> tags in the XML. **
 - ** Repeat the number of <event> tags within the XML. If there are more or less summaries than <event> tags, the output is incorrect. For example, if there are 4 <event> tags you must provide only 4 summaries and 4 depth values.**
 
-Generate and provide ONLY the complete TXT file as the response. Do not respond with anything else.
+Generate and provide ONLY the complete TXT as the response. DO NOT RESPOND WITH ANYTHING ELSE.
