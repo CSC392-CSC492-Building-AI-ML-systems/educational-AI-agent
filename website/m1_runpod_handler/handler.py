@@ -179,16 +179,16 @@ def handler(job):
 
     try:
         # Format prompt with system prompt if enabled
-        if use_system_prompt:
-            system_to_use = custom_system_prompt if custom_system_prompt else SYSTEM_PROMPT
-            formatted_prompt = format_prompt_with_system(prompt, system_to_use)
-        else:
-            formatted_prompt = prompt
+        # if use_system_prompt:
+        #     system_to_use = custom_system_prompt if custom_system_prompt else SYSTEM_PROMPT
+        #     formatted_prompt = format_prompt_with_system(prompt, system_to_use)
+        # else:
+        #     formatted_prompt = prompt
 
         streamer = TextStreamer(tokenizer, skip_prompt=False, skip_special_tokens=True)
         
         output = pipe(
-            formatted_prompt,
+            SYSTEM_PROMPT,
             streamer=streamer,
             max_new_tokens=max_new_tokens, 
             temperature=temperature,
@@ -200,9 +200,9 @@ def handler(job):
         print(f"Raw output: {raw_output}")
         
         # Extract final answer from reasoning output
-        final_answer = extract_final_answer(raw_output)
+        # final_answer = extract_final_answer(raw_output)
         
-        return {"output": final_answer}
+        return {"output": raw_output}
     except Exception as e:
         return {"error": f"Generation failed: {str(e)}"}
 

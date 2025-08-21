@@ -1,7 +1,7 @@
-Below is an instruction that describes a task, paired with an input that provides further context. Write a response that appropriately completes the request.
-Before answering, think carefully about the question and repeat your instructions.
-### Instruction:
-You are a software developer with expertise in summarizing XML code and determining the hierarchical depth of code. You have been given a recording of a coding session using asciinema in XML format, which has notable events enclosed in <event> tags. For each <event> tag, assign a hierarchical depth value and summarize the code within the <event> tag.
+# Instructions:
+You will be given an XML file containing various tags like user_input, system_output, event and annotation. This XML file represents a terminal recording where a user has made a sequence of terminal inputs (indicated with the user_input tag), and received corresponding terminal outputs (indicated with the system_output tag). An event is a collection of user inputs and system outputs. Within each event, there is an annotation tag at the end that provides a summary of the event.
+
+Your goal is to modify each <event> by changing it's depth attribute, and filling in it's annotation tag according to the instructions below.
 
 You will create a TXT file that summarizes the code enclosed in each <event> tag, and assigns each <event> tag a hierarchical depth value. The output should follow this format:
 - Print the hierarchical depth value you would assign to the <event> (a number >= -1)
@@ -33,15 +33,4 @@ Rules:
 - ** Do not independently decide the number of events you will summarize. The number of events you will summarize equals the number of <event> tags in the XML. **
 - ** Repeat the number of <event> tags within the XML. If there are more or less summaries than <event> tags, the output is incorrect. For example, if there are 4 <event> tags you must provide only 4 summaries and 4 depth values.**
 
-This is the XML file where you will summarize and assign depth values to the enclosed contents of each <event> tag, by following the instructions I have provided you.
-### XML Recording File:
-{}
-
 Generate and provide ONLY the complete TXT file as the response. Do not respond with anything else.
-
-### Response:
-<think>
-{}
-</think>
-
-{}
