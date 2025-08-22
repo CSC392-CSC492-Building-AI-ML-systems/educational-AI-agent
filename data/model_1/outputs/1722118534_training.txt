@@ -28,3 +28,5 @@ User adds and commits change to allow demo user to login.
 User checks git diff and stares at it mindlessly as the session ends
 -1
 [GOAL_END_1] User completes initial round of FAI and system service configuration for deployment.
+0
+[SUCCESS_SUCCESS] User succesfully accomplished GOAL_1

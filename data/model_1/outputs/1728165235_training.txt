@@ -1,0 +1,52 @@
+0
+User runs 'cm list' to check all currently available VM containers. 
+0
+User sshes into faiserver-tearoff-12 at IP: 172.16.0.17.
+1
+[GOAL_1] Build a functional FAI installer and produce a bootable fai_cd.iso containing the configured packages and components.
+0
+User runs the command 'w' 
+1
+[GOAL_2] Validate system and package integrity and readiness for image creation by inspecting available VMs, checking disk and swap, verifying package checksums, and confirming mirror/config files.
+0
+User inspects current directory with 'ls -la' before navigating to /home/fai and inspecting that directory.
+0
+User runs 'cruft | head'
+0
+User then runs 'cruft' with less to see the full output 
+0
+User uses 'ls -la' to inspect directories '/usr/fai/' and '/usr/fai/mirror/'
+0
+User inspects disk space with 'df'
+0
+User runs 'cruft' with less to see the full output 
+0
+User executes 'grep mirror make-fai-cd.sh' looking for the word 'mirror' in the file 'make-fai-cd.sh'
+0
+[Mistake] User attempts to run 'debsums | heaed' [Mistake Reason] Human Error writing head incorrectly. [Mistake Result] Command is not found
+0
+User successfully run 'debsums | head'
+0
+User runs 'debsums | grep -v OK' to and gets no output
+0
+User prints out the file '/proc/swaps' using cat
+0
+User prints out the file 'zram_swap.sh' using cat showing the file is a init-style shell script to setup a ZRAM based swap
+-1
+[GOAL_END_2] Inspected VM list, SSHed into the server, ran w, ls -la, df, debsums (with corrected head), grepped the make script for mirrors, and viewed swap and zram setup files.
+0
+[SUCCESS_SUCCESS] User successfully accomplished the goal 2.
+1
+User runs 'sudo make-fai-cd.sh' 
+0
+FAI finished it's basic components and now begins to install additional packages for a functional FAI installation.
+0
+FAI successfully installs the large set of additional packages. It now begins to the creation of the FAI-CD/ISO image creation.
+-1
+Combines all elements into a final fai_cd.iso file. 
+-1
+[GOAL_END_1] User succesfully combined all elements into a final fai_cd.iso file.
+0
+[SUCCESS_SUCCESS] User successfully accomplished the goal 1.
+0
+User exits ssh session

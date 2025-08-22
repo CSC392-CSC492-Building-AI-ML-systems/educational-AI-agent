@@ -23,9 +23,9 @@ User runs make-fai-cd.sh combining both stderr and stdout into a single stream b
 0
 FAI finished it's basic components and now begins to install additional packages for a functional FAI installation.
 -1
-[SUCCESS_FAILURE] Program fails with 'fai-mirror failed with exit code 3'
--1
 [GOAL_END_1] User’s attempt to build a Debian 9 FAI ISO including ZoneMinder failed due to a mirror error.
+0
+[SUCCESS_FAILURE] Program fails with 'fai-mirror failed with exit code 3'
 1
 [GOAL_2] User adjusts the ZoneMinder package configuration to target Debian 8 in order to work around the mirror failure.
 0
@@ -48,3 +48,5 @@ User exits less
 User detaches out of screen '120968.pts-29.stephost'
 -1
 [GOAL_END_2] User concludes debugging session after switching FAI package configuration to Debian 8 to address the mirror failure.
+0
+[SUCCESS_SUCCESS] User succesfully accomplish GOAL_2

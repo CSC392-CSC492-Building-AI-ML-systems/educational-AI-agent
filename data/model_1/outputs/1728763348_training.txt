@@ -39,4 +39,6 @@ Combines all elements into a final fai_cd.iso file.
 0
 [GOAL_END_1]: User successfully rebuilds the FAI installation image and generates the fai_cd.iso with their modifications included.
 0
+[SUCCESS_SUCCESS] User succesfully accomplished GOAL_1
+0
 User session ends

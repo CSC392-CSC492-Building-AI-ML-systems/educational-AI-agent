@@ -31,4 +31,6 @@ User enters emacs to modify the edited version to modify the -g to -G for assign
 -1
 [GOAL_END_1] User finishes customizing the `fai-cd` script with enhanced GRUB module support via command-line options.
 0
+[SUCCESS_SUCCESS] User succesfully accomplished GOAL_1
+0
 User ends session

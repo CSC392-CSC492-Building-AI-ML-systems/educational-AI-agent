@@ -49,6 +49,8 @@ User runs 'sudo ifup en3' successfully.
 -1
 [GOAL_END_1] After troubleshooting typo and interface naming, networking comes up successfully.
 0
+[SUCCESS_SUCCESS] User succesfully accomplished GOAL_1
+0
 User detaches from '120968.pts-29.stephost' returning to demo@stephost:~$.
 0
 User runs 'screen -dr' returning to demo@stephost:/disk1/isos$. Logs indicate [detached from 2977978.faiserver-tearoff-21]
@@ -77,7 +79,7 @@ User runs make-fai-cd.sh using time
 0
 FAI finished it's basic components and now begins to install additional packages for a functional FAI installation.
 -1
-[SUCCESS_FAILURE] make-fai-nfsroot failed with exit code 12
+make-fai-nfsroot failed with exit code 12
 0
 User executes 'sudo poweroff' causing the system to shutdown, closing the connection and moving the user to demo@stephost:/disk1/isos
 1
@@ -98,8 +100,10 @@ FAI successfully installs the large set of additional packages. It now begins to
 Combines all elements into a final fai_cd.iso file. 
 -1
 [GOAL_END_2] Build is successful
+0
+[SUCCESS_SUCCESS] User succesfully accomplished GOAL_2
 1
-[Goal_3] User is trying to copy the newly built ISO off the VM onto the host’s /disk1/isos
+[GOAL_3] User is trying to copy the newly built ISO off the VM onto the host’s /disk1/isos
 0
 User reattaches to another screen of demo@faiserver:/home/fai and retrieves the command 'scp fai_cd.iso demo@172.16.0.1:/disk1/isos/fai_dvd-`date +%Y%m%d`.iso' before returning back to faiserver-tearoff-12
 0
@@ -166,6 +170,8 @@ User swaps back to window 0 at demo@faiserver:/home/fai
 User runs 'scp fai_cd.iso demo@172.16.0.1:/disk1/isos/fai_dvd-`date +%Y%m%d`.iso' and successfully transfers the file this time.
 -1
 [GOAL_END_3] After cleaning up old images and creating a historic archive, the ISO transfer finally succeeds.
+0
+[SUCCESS_SUCCESS] User succesfully accomplished GOAL_3
 1
 [GOAL_4] User is tidying up file directories and archive old iso files
 0
@@ -194,3 +200,5 @@ User moves file  'fai_dvd-20240604-2.iso' to /disk2/isos/historic/
 User checks disk space via 'df'
 -1
 [GOAL_END_4] All legacy ISO files are organized, disk space reclaimed, and the user’s session ends cleanly.
+0
+[SUCCESS_SUCCESS] User succesfully accomplished GOAL_4

@@ -27,6 +27,8 @@ Combines all elements into a final fai_cd.iso file.
 -1  
 [GOAL_END_1] User finishes attempt to create a minimal, scoped FAI‑CD ISO without recommended packages or the moved package classes.  
 0
+[SUCCESS_SUCCESS] User succesfully accomplished GOAL_1
+0
 User exits ssh session and uses scp to download the newly created fai_cd.iso
 0
 User exits terminal session

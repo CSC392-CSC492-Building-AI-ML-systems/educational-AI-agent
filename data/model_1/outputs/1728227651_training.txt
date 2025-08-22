@@ -6,3 +6,5 @@ User lists the contents of the '/disk1/' directory in long format, including hid
 User exits the current terminal session after clearing the input line.
 -1
 [GOAL_END_1] User completes inspection of the '/disk1/' directory and exits the terminal.
+0
+[SUCCESS_SUCCESS] User succesfully accomplished GOAL_1

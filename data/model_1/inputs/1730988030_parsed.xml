@@ -134,6 +134,10 @@ Last login: Thu Nov  7 14:00:26 2024 from 172.16.0.1
 </system_output>
   <system_output timestamp="17.034786">HWPHYS  QEMUCLIENT
 </system_output>
+<annotation>
+</annotation>
+</event>
+<event depth="-2">
   <system_output timestamp="17.035551">[?2004h]0;demo@faiserver: /home/fai/config/disk_configdemo@faiserver:/home/fai/config/disk_config$ </system_output>
   <user_input timestamp="18.499021">g</user_input>
   <system_output timestamp="18.501626">g</system_output>

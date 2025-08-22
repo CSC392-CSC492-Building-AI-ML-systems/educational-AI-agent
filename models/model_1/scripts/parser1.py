@@ -25,8 +25,11 @@ for xml_filename in xml_files:
     txt_filename = f"{base_name}.xml.txt"
     txt_filepath = os.path.join(txt_input_folder, txt_filename)
 
-    with open(xml_filepath, "r") as f:
-        data = f.readlines()
+    try:
+        with open(xml_filepath, "r") as f:
+            data = f.readlines()
+    except:
+        continue
     if not os.path.exists(txt_filepath):
         continue
     with open(txt_filepath, "r") as f:
@@ -46,7 +49,7 @@ for xml_filename in xml_files:
     parsed_filename = xml_filename.replace(".rec.xml", "_parsed.xml")
     output_filepath = os.path.join(output_folder, parsed_filename)
 
-    with open(output_filepath, "w") as f:
+    with open(output_filepath, "w", newline="\n") as f:
         f.writelines(xml_parsed)
 
 

@@ -1,0 +1,244 @@
+0
+User reattaches to a old screen via 'screen -dr' showing a failed fai-mirror with exit code 9.
+0
+User checks directory contents via 'ls'
+0
+User runs './cd_build_lint.sh make-fai-cd.out' to check the output logs of the failed earlier command.
+1
+[GOAL_1] Create a working FAI CD/ISO by finding and fixing package mismatches for Debian (update package_config files), free disk space, and re-run the build to produce a usable fai_cd.iso.
+0
+[Mistake] User pipes the output to 'grep -V STATUS' but accidently capitalizes the v. [Mistake Reason] Human typo [Mistake Result] Prints out the version info
+0
+User pipes the output of './cd_build_lint.sh make-fai-cd.out' to 'grep -v STATUS' this time searching for all lines without STATUS
+0
+User pipes the output of './cd_build_lint.sh make-fai-cd.out' to 'grep ERROR' searching for lines containing 'ERROR'
+0
+User runs 'grep lynx-cur config/package_config/*' and finds 'config/package_config/FAIBASE'
+0
+User edits file using 'sudo emacs config/package_config/FAIBASE' modifying 'lynx-cur' to 'lynx'
+0
+User pipes the output of './cd_build_lint.sh make-fai-cd.out' to 'grep ERROR' searching for lines containing 'ERROR'
+0
+User runs 'grep libmysql++ config/package_config/*' and finds 'config/package_config/GIFTDEV'
+0
+User opens up 'config/package_config/GIFTDEV' using 'sudo emacs config/package_config/GIFTDEV' commenting out 'libmysql++-dev' and adding a comment saying it is not in debian.
+0
+User swaps screen to window 1 at demo@faiserver:/home/fai$
+0
+User cats out file contents of /etc/debian_version showing 9.13
+0
+User returns to the window editing the file 'config/package_config/GIFTDEV' and adds a 10 to the debian comment before saving and exiting the file.
+0
+User pipes the output of './cd_build_lint.sh make-fai-cd.out' to 'grep ERROR' searching for lines containing 'ERROR'
+0
+User runs 'grep gnash config/package_config/*' and finds that 'config/package_config/HOSTOFFICE' contains two instances of it. 
+0
+User edits file 'config/package_config/HOSTOFFICE' using 'sudo emacs config/package_config/HOSTOFFICE' commenting out 'gnash' and 'browser-plugin-gnash' and adding comment that debian 10 does not have it before saving and exiting file.
+0
+User pipes the output of './cd_build_lint.sh make-fai-cd.out' to 'grep ERROR' searching for lines containing 'ERROR'
+0
+User executes command 'apt-cache search kvm'
+0
+User runs 'grep kvm config/package_config/*' and finds files 'config/package_config/SERVERCREATEVM' and 'config/package_config/SERVERCREATEVM' contains mentions of 'kvm'.
+0
+User edits file 'config/package_config/SERVERCREATEVM' using 'sudo emacs config/package_config/SERVERCREATEVM' modifying 'kvm' to 'qemu-kvm' before saving and exiting file.
+0
+User edits file 'config/package_config/SERVERQEMU' using 'sudo emacs config/package_config/SERVERQEMU' modifying 'kvm' to 'qemu-kvm' before saving and exiting file.
+0
+User pipes the output of './cd_build_lint.sh make-fai-cd.out' to 'grep ERROR' searching for lines containing 'ERROR'
+0
+User runs 'grep drupal config/package_config/*' and finds that 'config/package_config/SERVERDRUPAL' contains a instances of 'drupal7'.
+0
+User edits file 'config/package_config/SERVERDRUPAL' using 'sudo emacs config/package_config/SERVERDRUPAL' commenting out 'drupal7' and 'PACKAGES aptitude' and adding comment that says 'not in debian 10' before saving and exiting file.
+0
+User pipes the output of './cd_build_lint.sh make-fai-cd.out' to 'grep ERROR' searching for lines containing 'ERROR'
+0
+User switches to window 1 before returning back back to window 0 at demo@faiserver:/home/fai.
+0
+User runs 'grep gnuift config/package_config/*' and finds that 'config/package_config/SERVERGIFT' contains a instances of 'gnuift'.
+0
+User edits file 'config/package_config/SERVERGIFT' using 'sudo emacs config/package_config/SERVERGIFT' commenting out 'gnuift' and 'PACKAGES aptitude' and adding comment that says 'not in debian 10' before saving and exiting file.
+0
+User pipes the output of './cd_build_lint.sh make-fai-cd.out' to 'grep ERROR' searching for lines containing 'ERROR'
+0
+User switches to window 1 before returning back back to window 0 at demo@faiserver:/home/fai.
+0
+User runs 'grep mysql-server config/package_config/*' and finds that 'config/package_config/SERVERMYSQL' contains a instances of 'mysql-server'.
+0
+User edits file 'config/package_config/SERVERMYSQL' using 'sudo emacs config/package_config/SERVERMYSQL' commenting out 'mysql-server' and 'PACKAGES aptitude' and adding comment that says 'not in debian 10' before saving and exiting file.
+0
+User pipes the output of './cd_build_lint.sh make-fai-cd.out' to 'grep ERROR' searching for lines containing 'ERROR'
+0
+User runs 'grep iproute config/package_config/*' and finds that 'config/package_config/SERVERQEMU' contains a instances of 'iproute'.
+0
+User edits file 'config/package_config/SERVERQEMU' using 'sudo emacs config/package_config/SERVERQEMU' updating 'iproute' to 'iproute2'
+0
+User pipes the output of './cd_build_lint.sh make-fai-cd.out' to 'grep ERROR' searching for lines containing 'ERROR'
+0
+User runs 'grep xawtv config/package_config/*' and finds that 'config/package_config/SERVERZONEMINDER' contains a instances of 'xawtv'.
+0
+User edits file 'config/package_config/SERVERZONEMINDER' using 'sudo emacs config/package_config/SERVERZONEMINDER' commenting out 'xawtv' and 'PACKAGES aptitude' and adding comment that says 'not in debian 10' before saving and exiting file.
+0
+User pipes the output of './cd_build_lint.sh make-fai-cd.out' to 'grep ERROR' searching for lines containing 'ERROR'
+0
+User runs 'grep ttf-freefont config/package_config/*' and finds that 'config/package_config/XORG' contains a instances of 'ttf-freefont'.
+0
+User edits file 'config/package_config/XORG' using 'sudo emacs config/package_config/XORG' commenting out 'ttf-freefont' and adding comment that says 'not in debian 10' before saving and exiting file.
+0
+User pipes the output of './cd_build_lint.sh make-fai-cd.out' to 'grep ERROR' searching for lines containing 'ERROR'
+1
+User runs "sudo bash -c 'time ./make-fai-cd.sh | tee make-fai-cd.out'"
+0
+FAI finished it's basic components and now begins to install additional packages for a functional FAI installation.
+-1
+fai-mirror fails with error code 228.
+0
+User checks disk space usage via 'df'
+0
+[Mistake] User runs 'apt-cache clean' but receives error 'Invalid operation clean' [Mistake Reason] Lack of permission [MIstake Result] Nothing occurs
+0
+User reruns with sudo this time using 'sudo apt-cache clean'
+0
+User checks disk space usage via 'df'
+0
+User checks current directory contents with 'ls' before navigating to /var/cache/apt-cacher-ng$ and checking it's contents.
+0
+User navigates to '/var/cache/apt-cacher-ng/archive.debian.org/debian'
+0
+User looks for the files in the directory with less with the command 'find ./ | less'
+0
+User checks the contents of the directory with 'ls' before navigating to '/var/cache/apt-cacher-ng/archive.debian.org$' and checking it's contents.
+0
+User runs 'sudo rm -rf debian/' cleaning their disk space
+0
+User navigates back to /home/fai
+1
+User runs make-fai-cd.sh combining both stderr and stdout into a single stream being piped to tee make-fai-cd.out to log the outputs.
+0
+FAI finished it's basic components and now begins to install additional packages for a functional FAI installation.
+0
+FAI successfully installs the large set of additional packages. It now begins to the creation of the FAI-CD/ISO image creation.
+-1
+Combines all elements into a final fai_cd.iso file. 
+0
+User uses scp to download the newly created fai_cd.iso to 'demo@172.16.0.1:/disk1/isos/fai_dvd-`date +%Y%m%d`.iso'
+-1
+[GOAL_END_1] The user edited many config/package_config/* files (commenting or replacing packages like lynx, libmysql++-dev, gnash, kvm→qemu-kvm, drupal7, iproute→iproute2, ttf-freefont, etc.), cleaned apt cache and removed cached Debian files, re-ran the build, and produced a fai_cd.iso which was copied off the build host.
+0
+[SUCCESS_SUCCESS] User successfully finishes GOAL 1.
+0
+User switches screen window to 1 at 'demo@faiserver:/home/fai' where they earlier printed out the debian version
+1
+[GOAL_2] Validate the produced ISO by creating and booting a VM from it (start the VM, select the install/boot option, and confirm the installation boots cleanly).
+0
+User switches screen window to 2 at 'demo@stephost:/disk1/isos$'
+0
+User checks the directory via 'ls' and 'ls -la'
+0
+User switches screen window to 1 at 'demo@faiserver:/home/fai' where they earlier printed out the debian version
+0
+User powersoff the vm via 'sudo poweroff' returning to 'stephost:/disk1/isos'
+0
+User runs 'cm list' to check all currently available VM containers. 
+0
+User checks the directory contents at '/var/local/createvm/VMs/' using 'ls -la'
+0
+User checks contents at the directory at '/var/local/createvm/VMs/faiserver-tearoff-1/' using 'ls -la'
+0
+User checks contents at the directory at '/var/local/createvm/VMs/faiserver-tearoff-12/' using 'ls -la'
+0
+User checks contents at the directory at '/var/local/createvm/VMs/faiserver-tearoff-9/' using 'ls -la'
+0
+User runs 'cm kill faiserver-tearoff-9'
+0
+User checks contents at the directory at '/var/local/createvm/VMs/faiserver-tearoff-19/' using 'ls -la'
+0
+User runs 'cm kill faiserver-tearoff-19'
+0
+User checks contents at the directory at '/var/local/createvm/VMs/faiserver-tearoff-20/' using 'ls -la'
+0
+User runs 'cm kill faiserver-tearoff-20'
+0
+User runs 'cm kill faiserver-tearoff-21'
+0
+User runs 'cm list' to check all currently available VM containers. 
+0
+User runs 'cm kill faiserver-tearoff-18'
+0
+User runs 'cm list' to check all currently available VM containers. 
+0
+User checks directory contents via 'ls'
+0
+User swaps screen to window 2 followed by window 3 at 'demo@stephost:/disk1/isos$'
+0
+User swaps screen to window 2 'demo@stephost:/disk1/isos$'
+0
+User runs 'sudo createvm faiserver tearoff fai_dvd-20240710.iso' creating a new VM
+0
+User returns to window 3.
+0
+User moves to window 4 at 'demo@stephost:/disk1/isos$'
+0
+User checks the screens windows avaliable with 'sudo screen -ls' showing 6 active sockets twice.
+0
+User runs 'sudo screen -r 406' meaning they are entering faiserver-tearoff-9
+0
+User navigates to 'stephost:~#' lauching the KVM virtual machine using a startup script reaching the GRUB boot menu.
+0
+User selects 'boot from first local disk' and after it finishes returns out the window to 'demo@stephost:/disk1/isos'
+0
+User switches back to window 1 at 'stephost:/disk1/isos#'
+0
+User runs 'cm list' to check all currently available VM containers. 
+0
+User checks directory contents at '/var/local/createvm/VMs/'0
+0
+User runs 'cm start faiserver-tearoff-9' starting up the faiserver-tearoff-9
+0
+User enters the vm via 'screen -r faiserver-tearoff-9'
+0
+User selects the 'nekohost' boot option dropping them into a debug shell after the boot
+0
+User runs 'mount'
+0
+[Mistake] User runs 'fdisk -l /dev/sda' [Mistake Reason] command not found [Mistake Result] Nothing occurs
+0
+[Mistake] User runs 'partx' [Mistake Reason] Human error resulting in error message: 'bad usage' [Mistake Result] Nothing occurs
+0
+User checks the help manual of partx using 'partx --help'
+0
+[Mistake] User runs 'partx /dev/sda' and 'partx /dev/sdb' [Mistake Reason] Human error due to file not existing [Mistake Result] Nothing occurs
+0
+User checks the directory with 'ls /dev'
+0
+The earlier boot suddenly receives kernal panic sending them back to the qemu terminal
+0
+User runs 'system_reset' after a earlier failed attempt writing 'reset'
+0
+User switches to window 0, which is the GRUB boot screen.
+0
+User scrolls through options before residing on the 'Rescue system, no installation' option
+0
+User selects the option and after a reboot reaches 'root@debian:/tmp/fai#'
+0
+User runs 'fdisk -l /dev/sda' and checks disk space via 'df'
+0
+User navigates to '/target/var/log/fai/faiserver/last' and checks directory with 'ls -la'
+0
+User checks the file 'task_error' using cat receiving a value of 420
+0
+User checks the directory again with 'ls -la'
+0
+User checks the error logs using cat with 'cat error.log'
+0
+User switches screen's back to 'demo@faiserver:/home/fai' at window 0
+0
+User navigates to '/home/fai/config/scripts' and checks the directory contents
+0
+User switches screens until they return to 'demo@faiserver:/home/fai/config/scripts$'
+-1
+[GOAL_END_2] The user created and started a VM with the ISO, attempted to boot (selected the nekohost option), hit a kernel panic, dropped to a rescue shell, inspected logs (found task_error = 420) and was unable to complete a successful boot/validation.
+0
+[SUCCESS_FAILURE] User did not manage to accomplish GOAL_2.
+0
+User tries editing file 'FAIBASE/40-misc.sh' with emacs and then sudo but does no changes before session ends

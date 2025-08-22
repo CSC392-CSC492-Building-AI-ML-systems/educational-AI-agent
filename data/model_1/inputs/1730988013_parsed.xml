@@ -30,6 +30,10 @@ demo@172.16.0.17's password: </system_output>
 </system_output>
   <system_output timestamp="10.768878">
 </system_output>
+<annotation>
+</annotation>
+</event>
+<event depth="-2">
   <system_output timestamp="10.769305">[?2004hdemo@stephost:~$ </system_output>
   <user_input timestamp="11.542018">[A</user_input>
   <system_output timestamp="11.542496">ssh 172.16.0.17</system_output>

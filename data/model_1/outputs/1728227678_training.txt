@@ -1,0 +1,30 @@
+0
+User checks the contents at directory 'disk1/isos' starting with 'fai' using 'ls -la /disk1/isos/fai*' noting many iso files.
+0
+User runs 'cm list | grep faiserver' to check all currently available VM containers with the name faiserver.
+0
+User sshes into faiserver-tearoff-12 at IP: 172.16.0.17.
+1
+[GOAL_1] Build a functional FAI installation and produce a bootable FAI CD/ISO image on the remote VM.
+0
+User navigates to /home/fai and lists out the current contents of the directory
+0
+[Mistake] User runs './make-fai-cd.sh' but receives many permission denied errors and cancels the script [Mistake Reason] User does have necessary permission [Mistake Result] Permission denied
+1
+User runs 'sudo make-fai-cd.sh' this time and the script begins
+0
+FAI finished it's basic components and now begins to install additional packages for a functional FAI installation.
+0
+FAI successfully installs the large set of additional packages. It now begins to the creation of the FAI-CD/ISO image creation.
+-1
+Combines all elements into a final fai_cd.iso file. 
+-1
+[GOAL_END_1] The user ran the build script with sudo and produced fai_cd.iso on the remote host.
+0
+[SUCCESS_SUCCESS] User successfully accomplished the goal.
+0
+User exits ssh session returning to 'demo@stephost:~$'
+0
+User runs 'scp 172.16.0.17:/home/fai/fai_cd.iso /disk1/isos/fai_dvd-`date +%Y%m%d`.iso' to transfer the created fai_cd.iso to /disk1/isos/fai_dvd-date`+%Y%m%d`.iso
+0
+User asciinema session ends

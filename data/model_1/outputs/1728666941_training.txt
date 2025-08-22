@@ -25,6 +25,8 @@ Combines all elements into a final fai_cd.iso file.
 -1
 [GOAL_END_1] Successfully created and downloaded a FAI CD ISO reflecting updated RAID boot partition members (disk1.2 primary, disk1.3 secondary)
 0
+[SUCCESS_SUCCESS] User succesfully accomplished GOAL_1
+0
 User exits ssh session and uses scp to download the newly created fai_cd.iso to /disk1/isos/fai_dvd-date`+%Y%m%d`.iso
 0
 User exits terminal session

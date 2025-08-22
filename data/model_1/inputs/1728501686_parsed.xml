@@ -4,7 +4,7 @@
   <system_output timestamp="0.008864">[?2004hdemo@stephost:~$ </system_output>
   <user_input timestamp="172.464324">c</user_input>
   <system_output timestamp="172.464856">c</system_output>
-  <user_input timestamp="172.73518">m</user_input>
+  <user_input timestamp="172.73518">m</userinput>
   <system_output timestamp="172.735608">m</system_output>
   <user_input timestamp="172.859796"> </user_input>
   <system_output timestamp="172.860237"> </system_output>

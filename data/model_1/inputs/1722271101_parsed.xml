@@ -5076,6 +5076,10 @@ demo@faiserver:/home/fai$ diff
          J)  _OPTJ=1; sqopt=&quot;-comp xz&quot; ; arguments+=&quot; -J&quot;;;
          M)  nomirror=1 ;;
 </system_output>
+<annotation>
+</annotation>
+</event>
+<event depth="-2">
   <system_output timestamp="8652.868611">[?2004hdemo@faiserver:/home/fai$ </system_output>
   <user_input timestamp="8662.302568">OA</user_input>
   <system_output timestamp="8662.303877">diff -u /usr/sbin/fai-cd /usr/sbin/fai-cd.modified </system_output>

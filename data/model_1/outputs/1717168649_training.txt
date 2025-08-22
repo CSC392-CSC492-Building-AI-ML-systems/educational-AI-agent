@@ -32,6 +32,8 @@ User checks git diff
 User git adds and commits the remaining changes with the message: "move forward to jessie, which is in debian archives."
 -1
 [GOAL_END_1] User completes initial round of FAI configuration version control commits.
+0
+[SUCCESS_SUCCESS] User succesfully accomplished GOAL_1
 1
 [GOAL_2] User builds and transfers a custom FAI installation ISO to remote storage.
 0
@@ -66,6 +68,8 @@ User returns terminal back to the demo@stephost and checks the folder with the n
 User checks for more information of the files using 'ls -la'
 -1
 [GOAL_END_2] User successfully creates and stores fai_cd.iso on the remote host.
+0
+[SUCCESS_SUCCESS] User succesfully accomplished GOAL_2
 1
 [GOAL_3] User deploys and boots the custom FAI ISO in a new KVM VM, configuring GRUB for serial-console installation.
 0
@@ -118,6 +122,8 @@ User returns back to demo@stephost
 User resets terminal clearing the screen to just demo@stephost
 -1
 [GOAL_END_3] User completes VM boot test using the custom FAI ISO.
+0
+[SUCCESS_SUCCESS] User succesfully accomplished GOAL_3
 1
 [GOAL_4] User refines package configuration by installing, testing, and purging services for performance tuning.
 0
@@ -202,3 +208,5 @@ User runs 'sudo dpkg --purge libnuma1'
 User runs 'dpkg -l | less' to check installed packages as session ends
 -1
 [GOAL_END_4] User finalizes package cleanup and tuning in the FAI configuration.
+0
+[SUCCESS_SUCCESS] User succesfully accomplished GOAL_4

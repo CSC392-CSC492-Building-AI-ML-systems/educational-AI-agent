@@ -29,4 +29,6 @@ User runs 'scp 172.16.0.17:/home/fai/fai_cd.iso /disk1/isos/fai_dvd-`date +%Y%m%
 0
 [GOAL_END_1] User successfully fixed the boot class formatting issue by inserting a missing space, rebuilt the FAI ISO, and transferred it locally. 
 0
+[SUCCESS_SUCCESS] User succesfully accomplished GOAL_1
+0
 User exits asciinema session

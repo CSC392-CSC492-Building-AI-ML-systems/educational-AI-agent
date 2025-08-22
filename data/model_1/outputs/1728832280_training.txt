@@ -31,4 +31,6 @@ User runs 'scp 172.16.0.17:/home/fai/fai_cd.iso /disk1/isos/fai_dvd-`date +%Y%m%
 -1
 [GOAL_END_1] User successfully customized GRUB package selection for FAI, built the FAI ISO image, and transferred it to the local system.
 0
+[SUCCESS_SUCCESS] User succesfully accomplished GOAL_1
+0
 User exits asciinema session

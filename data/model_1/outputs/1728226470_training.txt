@@ -10,3 +10,5 @@ User views existing notes for 'faiserver-tearoff-12' and 'nullhost-tearoff-6'.
 User exits the terminal session.
 -1
 [GOAL_END_1] User finishes tasks
+0
+[SUCCESS_SUCCESS] User succesfully accomplished GOAL_1
