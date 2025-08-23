@@ -1,3 +1,19 @@
+// Orchestrator -> browser (tree updates)
+const orch = new WebSocket('ws://localhost:8090');
+orch.onopen = () => console.log('Orchestrator WS connected');
+
+orch.onmessage = (e) => {
+  try {
+    const msg = JSON.parse(e.data);
+    if (msg.type === 'model1.txt' || msg.type === 'tree_update') {
+      const txt = msg.data || msg.txt || '';
+      if (txt) loadTxtAndBuildTree(txt);
+    }
+  } catch (_) {}
+};
+orch.onerror = (err) => console.error('Orchestrator WS error:', err);
+orch.onclose = () => console.log('Orchestrator WS closed');
+
 // ───────── File upload / tree wiring ───────────────────────────────────────
 document.getElementById('uploadBtn').onclick = () =>
   document.getElementById('txtFile').click();
