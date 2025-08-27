@@ -46,12 +46,31 @@ wss.on('connection', ws => {
 				},
 			});
 
-			// need to send the result back to the client
-			if (ws.readyState === WebSocket.OPEN) {
-				ws.send(JSON.stringify(result));
-			}	
-			// Log the result
-			console.log(result);
+			// Parse and extract only the value after "Answer:"
+			console.log("RunPod result:", result);
+			if (result?.output?.output) {
+				const match = result.output.output.match(/Answer:\s*(\d+)/);
+				const answer = match ? match[1] : null;
+
+				if (answer) {
+					if (ws.readyState === WebSocket.OPEN) {
+						ws.send(answer); // Send only the number as a string
+					}
+					console.log(`Extracted Answer: ${answer}`);
+				} else {
+					console.log('No "Answer:" found in result output.');
+					if (ws.readyState === WebSocket.OPEN) {
+						ws.send('No answer found');
+					}
+				}
+			} else {
+				console.error('Unexpected result format from RunPod:', result);
+				if (ws.readyState === WebSocket.OPEN) {
+					ws.send('Error: Invalid response format');
+				}
+			}
+
+
 		} catch (error) {
 			console.error('Error calling RunPod endpoint:', error);
 			if (ws.readyState === WebSocket.OPEN) {
