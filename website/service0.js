@@ -38,7 +38,8 @@ wss.on('connection', ws => {
 	pythonProcess.stdout.on('data', async output => {
     	console.log("Python stdout:", output.toString());
 
-		// send parsed output to Runpod over HTTP output.toString().trim()
+		// send parsed output to Runpod over HTTP 
+		// replace "prompt": with output.toString().trim()
 		try {
 			const result = await endpoint.runSync({
 				"input": {

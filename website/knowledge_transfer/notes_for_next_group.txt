@@ -1,0 +1,10 @@
+BACKEND KNOWLEDGE TRANSFER:
+
+Currently the models endpoints (for model 0 and 1) are already set up on Runpod. However, outputs from the models may vary in consistancy. That needs to be addressed. To get a better understanding what the AutoDocs system should look like (mainly in terms of the backend and pipeline work) consider the Fullstack_Architecture_Design. To get a better understanding of where the previous group ended off, take a look at the *rough* attempts of ochestrator.js and service0.js which were still a work in progress. 
+
+Note that Runpod needs three items in the github folder it is connected to: Dockerfile, handler.py and requirements.txt. However, over the previous term, Runpod updated its website and changed many elements in their layout. So, their documentation should be consulted. The system_prompt.txt files were attempts to engineer correct and consistant output from the models instances hosted on Runpod. The original appeal of Runpod was that inputs and outputs could be sent and recieved from the model instances simply over HTTP. 
+
+The json_escaper.py program was created to help with the testing of the model instances as raw json could not be sent over HTTP. 
+
+Best luck to the next team.
+-----------------------------------------------------------------------------------------------------------------------------------------
